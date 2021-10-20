@@ -1,13 +1,11 @@
 ---
-id: P3BBvcqmBc96k9ikmJIpe
-title: SFM
+id: 0R61RLuT7e3hswR2v6o0w
+title: Static Factor Models
 desc: ''
-updated: 1634221231713
-created: 1634214910095
+updated: 1634735678765
+created: 1634735127231
+stub: true
 ---
-# Static Dynamic Factor Models
-
-[[PHD.factor_models]]
 
 This section presents details about (static) dynamic factor models, which has been the main 
 focus point up until now.

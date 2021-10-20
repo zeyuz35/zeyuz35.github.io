@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   
-  <title>DFM - Dendron</title>
+  <title>Meeting - Dendron</title>
   
 
   <link
@@ -43,22 +43,22 @@
 <meta name="description" content="Personal knowledge space">
 <meta name="author" content="">
 
-<link rel="canonical" href="https://zeyuz35.github.io//notes/T4FN6sDHfA9wxiZ7Dg5WX.html">
+<link rel="canonical" href="https://zeyuz35.github.io//notes/fHzGITjWkNNkiwsQpdex4.html">
 
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://zeyuz35.github.io//notes/T4FN6sDHfA9wxiZ7Dg5WX.html">
+<meta property="og:url" content="https://zeyuz35.github.io//notes/fHzGITjWkNNkiwsQpdex4.html">
 <meta property="og:description" content="Personal knowledge space">
 <meta property="og:image" content="https://zeyuz35.github.io/undefined">
 
 <meta name="twitter:card" content="summary">
 
-<meta name="twitter:url" content="https://zeyuz35.github.io//notes/T4FN6sDHfA9wxiZ7Dg5WX.html">
+<meta name="twitter:url" content="https://zeyuz35.github.io//notes/fHzGITjWkNNkiwsQpdex4.html">
 <meta name="twitter:description" content="Personal knowledge space">
 <meta name="twitter:image" content="https://zeyuz35.github.io/undefined">
 
 
-  <meta property="og:title" content="DFM - Dendron" />
-  <meta name="twitter:title" content="DFM - Dendron" />
+  <meta property="og:title" content="Meeting - Dendron" />
+  <meta name="twitter:title" content="Meeting - Dendron" />
   
 </head>
 
@@ -132,7 +132,7 @@
       
         
           <nav aria-label="Breadcrumb" class="breadcrumb-nav">
-            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://zeyuz35.github.io">PhD Root</a></li><li class="breadcrumb-nav-list-item">DFM</li></ol>
+            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://zeyuz35.github.io">PhD Root</a></li><li class="breadcrumb-nav-list-item">Meeting</li></ol>
           </nav>
         
       
@@ -168,10 +168,10 @@
 <div id="main" role="main">
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="DFM">
+    <meta itemprop="headline" content="Meeting">
     
-    <meta itemprop="datePublished" content="2021-10-14T23:36:32+00:00">
-    <meta itemprop="dateModified" content="2021-10-21T00:16:44+00:00">
+    <meta itemprop="datePublished" content="2021-10-15T01:30:43+00:00">
+    <meta itemprop="dateModified" content="2021-10-15T15:26:02+00:00">
 
     <div class="page__inner-wrap">
 
@@ -181,9 +181,75 @@
 
         
 
-        <h1 id="dfm"><a aria-hidden="true" class="anchor-heading" href="#dfm"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>DFM</h1>
-<h1 id="dynamic-factor-models"><a aria-hidden="true" class="anchor-heading" href="#dynamic-factor-models"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Dynamic Factor Models</h1>
-<p>This section details (truly) dynamic factor models. </p><span id="navId" data="T4FN6sDHfA9wxiZ7Dg5WX"></span>
+        <h1 id="meeting"><a aria-hidden="true" class="anchor-heading" href="#meeting"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Meeting</h1>
+<h1 id="meeting-notes"><a aria-hidden="true" class="anchor-heading" href="#meeting-notes"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Meeting Notes</h1>
+<p>Bring our main focus and try to answer a much more precise question:
+what happens to so called consistent estimators of the no. of factors when
+there is a structural break of some some?</p>
+<h2 id="focus-question"><a aria-hidden="true" class="anchor-heading" href="#focus-question"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Focus Question</h2>
+<p>How many static factors are estimated by various information criteria in the presence of structural breaks? </p>
+<h2 id="answers"><a aria-hidden="true" class="anchor-heading" href="#answers"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Answers</h2>
+<p>Existing information criteria are consistent for the number of static factors, under the assumption of no structural breaks at all (no breaks in loadings or factors). The conjecture (and what seems to be correct so far) is that existing methods will consistently estimate the number of factors, as given by equivalent representation, such that there are no structural breaks in the factors/factor loadings.</p>
+<p>However, finding such an equivalent representation has not been fully explored yet.</p>
+<p>BKW and HI formulate an equivalent representation theorem, which can precisely answer and
+reformulate breaks in the factor loading matrix as (potentially) extra factors. </p>
+<p>However, this is looking at breaks in the entire loading matrix itself.</p>
+<p>Also, this does not address how breaks in the factor dynamics or factor variance can affect
+the number of factors estimated.</p>
+<h2 id="empirical-motivation"><a aria-hidden="true" class="anchor-heading" href="#empirical-motivation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Empirical Motivation</h2>
+<p>The number of factors does change on FREDMD. In general, the number of factors has been empirically observed to be increasing over time in various macroeconomic datasets, not just American Data (put in references). This suggests that the breaks have been accumulating over time, resulting in a gradual increase in the number of factors.</p>
+<p><a title="Private" style="color: brown" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank">@stockChapter10Forecasting2006 (Private)</a></p>
+<p>Keep in mind that the economics literature tends to identify at most 4 primitive shocks, theoretically and empirically via estimation methods. </p>
+<p>When partitioned into regimes (either pre conceived or via some break data estimator), </p>
+<h4 id="other-empirical-notes"><a aria-hidden="true" class="anchor-heading" href="#other-empirical-notes"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Other empirical notes</h4>
+<p>Weighting the data to get rid of heteroskedasticity somehow does not affect the number of factors.</p>
+<h3 id="monte-carlo-study-results"><a aria-hidden="true" class="anchor-heading" href="#monte-carlo-study-results"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Monte Carlo Study Results</h3>
+<p>Below is summary table of how a DFM can "break" and what effect (if any) this has on the
+number of static factors in a representation. Presumably, any consistent criteria
+will estimate the number of static factors.</p>
+<p>Each change has been studied in the context of Monte Carlo simulations. Results </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Change</th><th>Effect</th><th>Comments</th><th>Confirmed in literature?</th></tr></thead><tbody><tr><td>Changes in variance of error term</td><td>No change</td><td>Perhaps unexpected, large changes in idiosyncratic term have no effect on factor estimation</td><td>Yes, see Bates et al</td></tr><tr><td>Change in loading matrix</td><td>Changes the number of factors</td><td>See equivalent representation theorem in  for precise number of factors</td><td>Yes, see Han and Inoue or Baltagi et al</td></tr><tr><td>Change in individual loadings</td><td>Doubles factors</td><td>Special case of change in loading matrix - type 1 break (all columns of loadings break idiosyncratically), however, how large this needs to be to affect it is unclear</td><td>Yes, but no results on orders</td></tr><tr><td>Change in variance of factors</td><td>NO change</td><td>This doesn't make sense, should be observationally equivalent to change in loadings</td><td>Baltagi et al make a comment that this cannot be distinguished from a change in loadings</td></tr><tr><td>Change in dynamics of factors</td><td>NO change</td><td>More work needed, but at present, does not make sense</td><td>No work on how to reconcile static with dynamic factors - not sure if necessary if static ones are consistent for dynamic space anyway?</td></tr></tbody></table><span id="navId" data="fHzGITjWkNNkiwsQpdex4"></span>
 
                 
       </section>
@@ -209,7 +275,7 @@
             
               <div class="d-flex mt-2">
               <p class="text-small text-grey-dk-000 mb-0 mr-2">
-                Page last modified: <span class="d-inline-block">10/21/2021</span>.
+                Page last modified: <span class="d-inline-block">10/15/2021</span>.
               </p>
             
                 

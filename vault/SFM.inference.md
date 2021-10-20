@@ -1,12 +1,11 @@
 ---
-id: 7REzqKuF741ZinA7rs8Cy
+id: LvkZzWN557soKo2Cg4JAc
 title: inference
 desc: ''
-updated: 1634215969506
-created: 1634215204620
-export_on_save:
-  html: true
+updated: 1634735327257
+created: 1634735273785
 ---
+
 # Inference for SFM
 
 ## Inference for PCA Estimator

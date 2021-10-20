@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   
-  <title>DFM - Dendron</title>
+  <title>Static Factor Models - Dendron</title>
   
 
   <link
@@ -43,22 +43,22 @@
 <meta name="description" content="Personal knowledge space">
 <meta name="author" content="">
 
-<link rel="canonical" href="https://zeyuz35.github.io//notes/T4FN6sDHfA9wxiZ7Dg5WX.html">
+<link rel="canonical" href="https://zeyuz35.github.io//notes/0R61RLuT7e3hswR2v6o0w.html">
 
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://zeyuz35.github.io//notes/T4FN6sDHfA9wxiZ7Dg5WX.html">
+<meta property="og:url" content="https://zeyuz35.github.io//notes/0R61RLuT7e3hswR2v6o0w.html">
 <meta property="og:description" content="Personal knowledge space">
 <meta property="og:image" content="https://zeyuz35.github.io/undefined">
 
 <meta name="twitter:card" content="summary">
 
-<meta name="twitter:url" content="https://zeyuz35.github.io//notes/T4FN6sDHfA9wxiZ7Dg5WX.html">
+<meta name="twitter:url" content="https://zeyuz35.github.io//notes/0R61RLuT7e3hswR2v6o0w.html">
 <meta name="twitter:description" content="Personal knowledge space">
 <meta name="twitter:image" content="https://zeyuz35.github.io/undefined">
 
 
-  <meta property="og:title" content="DFM - Dendron" />
-  <meta name="twitter:title" content="DFM - Dendron" />
+  <meta property="og:title" content="Static Factor Models - Dendron" />
+  <meta name="twitter:title" content="Static Factor Models - Dendron" />
   
 </head>
 
@@ -132,7 +132,7 @@
       
         
           <nav aria-label="Breadcrumb" class="breadcrumb-nav">
-            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://zeyuz35.github.io">PhD Root</a></li><li class="breadcrumb-nav-list-item">DFM</li></ol>
+            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://zeyuz35.github.io">PhD Root</a></li><li class="breadcrumb-nav-list-item">Static Factor Models</li></ol>
           </nav>
         
       
@@ -168,10 +168,10 @@
 <div id="main" role="main">
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="DFM">
+    <meta itemprop="headline" content="Static Factor Models">
     
-    <meta itemprop="datePublished" content="2021-10-14T23:36:32+00:00">
-    <meta itemprop="dateModified" content="2021-10-21T00:16:44+00:00">
+    <meta itemprop="datePublished" content="2021-10-21T00:05:27+00:00">
+    <meta itemprop="dateModified" content="2021-10-21T00:14:38+00:00">
 
     <div class="page__inner-wrap">
 
@@ -181,9 +181,29 @@
 
         
 
-        <h1 id="dfm"><a aria-hidden="true" class="anchor-heading" href="#dfm"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>DFM</h1>
-<h1 id="dynamic-factor-models"><a aria-hidden="true" class="anchor-heading" href="#dynamic-factor-models"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Dynamic Factor Models</h1>
-<p>This section details (truly) dynamic factor models. </p><span id="navId" data="T4FN6sDHfA9wxiZ7Dg5WX"></span>
+        <h1 id="static-factor-models"><a aria-hidden="true" class="anchor-heading" href="#static-factor-models"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Static Factor Models</h1>
+<p>This section presents details about (static) dynamic factor models, which has been the main
+focus point up until now.</p>
+<p>Importantly, note that the name itself is a bit of misnomer because the factors in this
+framework are estimated with a static representation - that is, dynamics of factors
+cannot be directly estimated or modelled. However, the assumptions behind the estimation
+stills allows for factors to be a dynamic process.</p>
+<h2 id="notation"><a aria-hidden="true" class="anchor-heading" href="#notation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Notation</h2>
+<h2 id="numerical-notes"><a aria-hidden="true" class="anchor-heading" href="#numerical-notes"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Numerical Notes</h2>
+<p>Here we outline some numerical/implementation details related to the actual estimation.</p>
+<p>The principal components are typically calculated by running an eigendecomposition on the variance matrix of some dataset. Normally, datasets are X = N x p with N much larger than p, and so this done via 1/(N - 1)(X'X).</p>
+<p>However, this is not always the case in macroeconomic data, which instead has the data structure X = T x N, where T and N are of similar dimensions (although typically T > N, N > T when quarterly/yearly data is used). In accordance with Bai and Ng's review chapter on DFMs, XX' is the "tilde" normalization, and X'X is the "bar" normalisation. In the literature, both are used depending on the model setup (one can be easier to work with than the other), but the "tilde" nroamlisation tends to be more common.</p>
+<p>Note that in R, X'X is the same as crossprod(), and XX' is the same as tcrossprod(). The former options are preferred for readability in general, even though they are slightly slower.</p>
+<p>In terms of saving on computational costs, whichever option which results in a covariance matrix of smaller dimensions is preferred, though asymptotically the theoretical results for either are the same.</p>
+<p>It should be noted that there is a lack of sign identification for the eigenvectors - each eigenvector is observationally equivalent to its negative. The eigenvalues themselves are not affected by this. For this reason, it is helpful and common to fix the signs, typically such that the first element of each eigenvector is positive. This is what the current implementation does by default.</p>
+<p>Although eigen() is the traditional backend, the algorithm behind this is considered to be numerically unstable and a bit outdated, particularly when there is very high multicollinearity. As such, the machine learning community tends to prefer using SVD on the covariance matrix instead of eigen, as this tends to be numerically more stable and faster. SVD is a generalisation of eigen for rectangular matrices, and can be shownt o be identical when the matrix is symmetric (covariance matrix).</p>
+<p>princomp() is usually the implementation preferred, as this provides an OOP interface with other useful methods, such as projecting new data using the decomposition. However, these extra features are typically not needed in macroeconomic analysis, so a much simpler interface using just eigen() or svd() is used instead.</p>
+<hr>
+<h2 id="children"><a aria-hidden="true" class="anchor-heading" href="#children"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Children</h2>
+<ol>
+<li><a href="https://zeyuz35.github.io/notes/lLflloV8xL2WPvlXN0DQQ.html">Simulation Designs</a></li>
+<li><a href="https://zeyuz35.github.io/notes/LvkZzWN557soKo2Cg4JAc.html">inference</a></li>
+</ol><span id="navId" data="0R61RLuT7e3hswR2v6o0w"></span>
 
                 
       </section>
