@@ -2,7 +2,7 @@
 id: lLflloV8xL2WPvlXN0DQQ
 title: Simulation Designs
 desc: ''
-updated: 1634735748377
+updated: 1634779671803
 created: 1634221372912
 ---
 # Simulation Designs
@@ -24,7 +24,7 @@ X = F \Lambda' + \mathbf{e}.
 $$
 which correspond to the individual, time slice, and whole panel representations respectively. 
 
-Note that it is the norm in the literature to consider a model setup where all breaks in DFMs are pushed into the loadings, due to the lack of separate identificable for the factors and loadings. 
+Note that it is the norm in the literature to consider a model setup where all breaks in DFMs are pushed into the loadings, due to the lack of separate identifiable for the factors and loadings. 
 
 However, confusingly, PCA will always estimate a set of factors and loadings assuming that there are *no* structural breaks, i.e. a set of time invariant loadings. As a consequence, because the loadings are forced to be time invariant, breaks are then pushed into the estimated factors, which can manifest as breaks in the so called "pseudo factors", or simply as more factors than is required. 
 

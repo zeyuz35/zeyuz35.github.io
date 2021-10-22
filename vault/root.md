@@ -2,7 +2,7 @@
 id: PhD
 title: PhD Root
 desc: ''
-updated: 1634735697763
+updated: 1634779652878
 created: 1595961348801
 stub: false
 ---
@@ -11,15 +11,13 @@ stub: false
 
 Welcome to my website!
 
-This website has been built using Dendron, and each topic has been.
+This website has been built using Dendron, and each topic has been collated into collapsible sections on the left hand side. Below is a high level overview showing how each section is connected for ease of navigation.
 
-## Current Summary
+@ figure out how to insert widget for overview here
 
+Furthermore, Dendron has incredibly powerful search functionality, even outside of working in raw .md files. Simply use the search bar at the top of the website to find something.
 
-## Meeting Summary
-
-
-## To Do List
+## Technical Specifications
 
 This is the master document for my PhD Thesis, investigating the issues that may arise from 
 structural breaks, in the context of large macroeconomic factor models.
@@ -33,7 +31,13 @@ via mermaid, and at least represent code chunks. It is unable, however, to direc
 interface with any programming languages, and should only serve as a notes guide and 
 literature review tool.
 
-## Todo List
+Note that because GitHub pages only builds websites from /docs/ occasionally, there is a bit of lag for this to update once pushed.
+## Current Summary
+
+
+## Meeting Summary
+
+## To do List
 
 Type up Bai and Ng assumptions
 
@@ -51,7 +55,10 @@ Fix up DFM
 - new eigen() DONE
 - DFM.fit DONE
 - vcov DONE
-- svd() backend
+- svd() backend DONE, but turns out to be slower
+- look into RSpectra package (supposedly faster eigen)
+- not sure whether to rename this to SFM or not (lots of legacy code that needs to be changed)
+
 
 Implement truly dynamic factor models (Forni) using Dynamic PCA
 - BIG task
@@ -68,3 +75,7 @@ Fix up BKW test
 - implement a general plot method which plots *something* on the y axis, but most importantly, date on the x axis with estimated break dates, and each partition labelled with the no. of factors as determined by some consistent estimator
 
 Fix up BE test
+- so that there is a consistent interface for accessing this
+
+
+

@@ -2,9 +2,9 @@
 id: fHzGITjWkNNkiwsQpdex4
 title: Meeting
 desc: ''
-updated: 1634271962041
+updated: 1634861888111
 created: 1634221843124
-bibliography: references.bib 
+bibliography: [references.bib]
 ---
 # Meeting Notes
 
