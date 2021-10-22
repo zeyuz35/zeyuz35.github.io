@@ -165,7 +165,7 @@
     <meta itemprop="headline" content="PhD Root">
     
     <meta itemprop="datePublished" content="2020-07-29T04:35:48+00:00">
-    <meta itemprop="dateModified" content="2021-10-21T00:14:57+00:00">
+    <meta itemprop="dateModified" content="2021-10-21T12:27:32+00:00">
 
     <div class="page__inner-wrap">
 
@@ -178,10 +178,10 @@
         <h1 id="phd-root"><a aria-hidden="true" class="anchor-heading" href="#phd-root"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>PhD Root</h1>
 <h1 id="phd-home-page"><a aria-hidden="true" class="anchor-heading" href="#phd-home-page"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>PhD Home Page</h1>
 <p>Welcome to my website!</p>
-<p>This website has been built using Dendron, and each topic has been.</p>
-<h2 id="current-summary"><a aria-hidden="true" class="anchor-heading" href="#current-summary"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Current Summary</h2>
-<h2 id="meeting-summary"><a aria-hidden="true" class="anchor-heading" href="#meeting-summary"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Meeting Summary</h2>
-<h2 id="to-do-list"><a aria-hidden="true" class="anchor-heading" href="#to-do-list"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>To Do List</h2>
+<p>This website has been built using Dendron, and each topic has been collated into collapsible sections on the left hand side. Below is a high level overview showing how each section is connected for ease of navigation.</p>
+<p>@ figure out how to insert widget for overview here</p>
+<p>Furthermore, Dendron has incredibly powerful search functionality, even outside of working in raw .md files. Simply use the search bar at the top of the website to find something.</p>
+<h2 id="technical-specifications"><a aria-hidden="true" class="anchor-heading" href="#technical-specifications"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Technical Specifications</h2>
 <p>This is the master document for my PhD Thesis, investigating the issues that may arise from
 structural breaks, in the context of large macroeconomic factor models.</p>
 <p>This document will be mostly documented within markdown files in an implementation/format
@@ -191,7 +191,10 @@ very complex linking and visualization.</p>
 via mermaid, and at least represent code chunks. It is unable, however, to directly
 interface with any programming languages, and should only serve as a notes guide and
 literature review tool.</p>
-<h2 id="todo-list"><a aria-hidden="true" class="anchor-heading" href="#todo-list"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Todo List</h2>
+<p>Note that because GitHub pages only builds websites from /docs/ occasionally, there is a bit of lag for this to update once pushed.</p>
+<h2 id="current-summary"><a aria-hidden="true" class="anchor-heading" href="#current-summary"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Current Summary</h2>
+<h2 id="meeting-summary"><a aria-hidden="true" class="anchor-heading" href="#meeting-summary"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Meeting Summary</h2>
+<h2 id="to-do-list"><a aria-hidden="true" class="anchor-heading" href="#to-do-list"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>To do List</h2>
 <p>Type up Bai and Ng assumptions</p>
 <p>Investigate Bates et al Assumptions</p>
 <p>Investigate consistency of using an estimated break point in conjunction with BNIC
@@ -204,7 +207,9 @@ This seems to be consistent using k_tilde that itself may be Op(1)</p>
 <li>new eigen() DONE</li>
 <li>DFM.fit DONE</li>
 <li>vcov DONE</li>
-<li>svd() backend</li>
+<li>svd() backend DONE, but turns out to be slower</li>
+<li>look into RSpectra package (supposedly faster eigen)</li>
+<li>not sure whether to rename this to SFM or not (lots of legacy code that needs to be changed)</li>
 </ul>
 <p>Implement truly dynamic factor models (Forni) using Dynamic PCA</p>
 <ul>
@@ -222,6 +227,9 @@ This seems to be consistent using k_tilde that itself may be Op(1)</p>
 <li>implement a general plot method which plots <em>something</em> on the y axis, but most importantly, date on the x axis with estimated break dates, and each partition labelled with the no. of factors as determined by some consistent estimator</li>
 </ul>
 <p>Fix up BE test</p>
+<ul>
+<li>so that there is a consistent interface for accessing this</li>
+</ul>
 <hr>
 <h2 id="children"><a aria-hidden="true" class="anchor-heading" href="#children"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Children</h2>
 <ol>
@@ -230,6 +238,7 @@ This seems to be consistent using k_tilde that itself may be Op(1)</p>
 <li><a href="https://zeyuz35.github.io/notes/GvwoAWaYZxq1czYi3t3k4.html">Factor Models</a></li>
 <li><a href="https://zeyuz35.github.io/notes/fHzGITjWkNNkiwsQpdex4.html">Meeting</a></li>
 <li><a href="https://zeyuz35.github.io/notes/0R61RLuT7e3hswR2v6o0w.html">Static Factor Models</a></li>
+<li><a href="https://zeyuz35.github.io/notes/y4xKTFSYJIsnW8pDbTmYg.html">Test</a></li>
 </ol><span id="navId" data="root"></span>
 
                 

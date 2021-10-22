@@ -2,7 +2,7 @@
 id: fHzGITjWkNNkiwsQpdex4
 title: Meeting
 desc: ''
-updated: 1634861888111
+updated: 1634863287413
 created: 1634221843124
 bibliography: [references.bib]
 ---
@@ -12,6 +12,7 @@ Bring our main focus and try to answer a much more precise question:
 what happens to so called consistent estimators of the no. of factors when
 there is a structural break of some some?
 
+@stockChapter10Forecasting2006
 ## Focus Question
 
 How many static factors are estimated by various information criteria in the presence of structural breaks? 
@@ -33,8 +34,6 @@ the number of factors estimated.
 ## Empirical Motivation
 
 The number of factors does change on FREDMD. In general, the number of factors has been empirically observed to be increasing over time in various macroeconomic datasets, not just American Data (put in references). This suggests that the breaks have been accumulating over time, resulting in a gradual increase in the number of factors.
-
-@stockChapter10Forecasting2006
 
 Keep in mind that the economics literature tends to identify at most 4 primitive shocks, theoretically and empirically via estimation methods. 
 
