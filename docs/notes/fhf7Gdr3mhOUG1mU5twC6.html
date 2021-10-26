@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   
-  <title>This page has not yet sprouted - Dendron</title>
+  <title>HAC - Dendron</title>
   
 
   <link
@@ -43,22 +43,22 @@
 <meta name="description" content="Personal knowledge space">
 <meta name="author" content="">
 
-<link rel="canonical" href="https://zeyuz35.github.io//notes/403.html">
+<link rel="canonical" href="https://zeyuz35.github.io//notes/fhf7Gdr3mhOUG1mU5twC6.html">
 
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://zeyuz35.github.io//notes/403.html">
+<meta property="og:url" content="https://zeyuz35.github.io//notes/fhf7Gdr3mhOUG1mU5twC6.html">
 <meta property="og:description" content="Personal knowledge space">
 <meta property="og:image" content="https://zeyuz35.github.io/undefined">
 
 <meta name="twitter:card" content="summary">
 
-<meta name="twitter:url" content="https://zeyuz35.github.io//notes/403.html">
+<meta name="twitter:url" content="https://zeyuz35.github.io//notes/fhf7Gdr3mhOUG1mU5twC6.html">
 <meta name="twitter:description" content="Personal knowledge space">
 <meta name="twitter:image" content="https://zeyuz35.github.io/undefined">
 
 
-  <meta property="og:title" content="This page has not yet sprouted - Dendron" />
-  <meta name="twitter:title" content="This page has not yet sprouted - Dendron" />
+  <meta property="og:title" content="HAC - Dendron" />
+  <meta name="twitter:title" content="HAC - Dendron" />
   
 </head>
 
@@ -131,6 +131,10 @@
     <div id="main-content-wrap" class="main-content-wrap">
       
         
+          <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://zeyuz35.github.io">PhD Root</a></li><li class="breadcrumb-nav-list-item"><a href="https://zeyuz35.github.io/notes/CQTUwoXQNcd0Y7la7IaAn.html">Appendix</a></li><li class="breadcrumb-nav-list-item">HAC</li></ol>
+          </nav>
+        
       
       <div id="main-content" class="main-content" role="main">
 
@@ -164,10 +168,10 @@
 <div id="main" role="main">
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="This page has not yet sprouted">
+    <meta itemprop="headline" content="HAC">
     
-    <meta itemprop="datePublished" content="2021-10-26T16:50:21+00:00">
-    <meta itemprop="dateModified" content="2021-10-26T16:50:21+00:00">
+    <meta itemprop="datePublished" content="2021-10-21T12:37:25+00:00">
+    <meta itemprop="dateModified" content="2021-10-22T11:17:41+00:00">
 
     <div class="page__inner-wrap">
 
@@ -177,9 +181,22 @@
 
         
 
-        <h1 id="this-page-has-not-yet-sprouted"><a aria-hidden="true" class="anchor-heading" href="#this-page-has-not-yet-sprouted"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>This page has not yet sprouted</h1>
-<p><a href="https://dendron.so/">Dendron</a> (the tool used to generate this site) lets authors selective publish content. You will see this page whenever you click on a link to an unpublished page</p>
-<p><img src="https://foundation-prod-assetspublic53c57cce-8cpvgjldwysl.s3-us-west-2.amazonaws.com/assets/images/not-sprouted.png"></p><span id="navId" data="403"></span>
+        <h1 id="hac"><a aria-hidden="true" class="anchor-heading" href="#hac"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>HAC</h1>
+<h1 id="hac-1"><a aria-hidden="true" class="anchor-heading" href="#hac-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>HAC</h1>
+<p>This document gives a brief overview of Heteroskedasticity and Autocorrelation Consistent covariance matric estimation, and how to implement them.</p>
+<p>[<a title="Private" style="color: brown" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank">@stockChapter10Forecasting2006 (Private)</a>]</p>
+<h2 id="motivation"><a aria-hidden="true" class="anchor-heading" href="#motivation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Motivation</h2>
+<p>Typically, any error terms are assumed to be fully idiosyncratic. That is, each <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>e</mi><mrow><mi>i</mi><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">e_{it}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span> is distributed i.i.d. across all cross sectional units and time.</p>
+<p>In time series analysis, serial correlation is a common occurrence and can inflate the usual estimated standard errors, making inference invalid/unreliable.</p>
+<p>In microeconomics, heterogeneity (cross sectional correlation) is the more common occurrence, similarly this can make estimated standard error inconsistent and subsequent inference unreliable. Note that in the context of OLS, HTSK does make OLS unbiased, but does make its standard errors invalid.</p>
+<p>Suppose we are interested in estimating the covariance matrix of a vector of time series, say <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mrow><mi>i</mi><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">X_{it}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span>, subject to possible serial correlation. Then the correlation matrix via the standard way will result in a likely very dense covariance matrix, which is incorrect.</p>
+<p>Additionally, the individual time series may themselves be cross sectionally correlated, adding an additional source of error for covariance matrix estimate.</p>
+<p>This is solved via the use of heteroskedasticity and autocorrelation consistent estimators.</p>
+<p>In R, this is (and many other covariance matrix estimators) are implemented via the sandwich package.</p>
+<p>Note that sandwich implements many advanced features by default, such as using an adaptively choosing bandwidth. This is usually the ``better" way for better finite sample performance, but because this is more subjective, and the literature is lazy and prefers to use a simpler method, they typically do not do this.</p>
+<h2 id="solution"><a aria-hidden="true" class="anchor-heading" href="#solution"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Solution</h2>
+<h2 id="historical"><a aria-hidden="true" class="anchor-heading" href="#historical"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Historical</h2>
+<h2 id="implementation-via-sandwich"><a aria-hidden="true" class="anchor-heading" href="#implementation-via-sandwich"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Implementation via sandwich</h2><span id="navId" data="fhf7Gdr3mhOUG1mU5twC6"></span>
 
                 
       </section>
@@ -205,7 +222,7 @@
             
               <div class="d-flex mt-2">
               <p class="text-small text-grey-dk-000 mb-0 mr-2">
-                Page last modified: <span class="d-inline-block">10/26/2021</span>.
+                Page last modified: <span class="d-inline-block">10/22/2021</span>.
               </p>
             
                 

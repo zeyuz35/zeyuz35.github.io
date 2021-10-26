@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   
-  <title>This page has not yet sprouted - Dendron</title>
+  <title>Datasets - Dendron</title>
   
 
   <link
@@ -43,22 +43,22 @@
 <meta name="description" content="Personal knowledge space">
 <meta name="author" content="">
 
-<link rel="canonical" href="https://zeyuz35.github.io//notes/403.html">
+<link rel="canonical" href="https://zeyuz35.github.io//notes/jtZSk246bVVDfJy6cdpS1.html">
 
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://zeyuz35.github.io//notes/403.html">
+<meta property="og:url" content="https://zeyuz35.github.io//notes/jtZSk246bVVDfJy6cdpS1.html">
 <meta property="og:description" content="Personal knowledge space">
 <meta property="og:image" content="https://zeyuz35.github.io/undefined">
 
 <meta name="twitter:card" content="summary">
 
-<meta name="twitter:url" content="https://zeyuz35.github.io//notes/403.html">
+<meta name="twitter:url" content="https://zeyuz35.github.io//notes/jtZSk246bVVDfJy6cdpS1.html">
 <meta name="twitter:description" content="Personal knowledge space">
 <meta name="twitter:image" content="https://zeyuz35.github.io/undefined">
 
 
-  <meta property="og:title" content="This page has not yet sprouted - Dendron" />
-  <meta name="twitter:title" content="This page has not yet sprouted - Dendron" />
+  <meta property="og:title" content="Datasets - Dendron" />
+  <meta name="twitter:title" content="Datasets - Dendron" />
   
 </head>
 
@@ -131,6 +131,10 @@
     <div id="main-content-wrap" class="main-content-wrap">
       
         
+          <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://zeyuz35.github.io">PhD Root</a></li><li class="breadcrumb-nav-list-item">Datasets</li></ol>
+          </nav>
+        
       
       <div id="main-content" class="main-content" role="main">
 
@@ -164,10 +168,10 @@
 <div id="main" role="main">
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="This page has not yet sprouted">
+    <meta itemprop="headline" content="Datasets">
     
-    <meta itemprop="datePublished" content="2021-10-26T16:50:21+00:00">
-    <meta itemprop="dateModified" content="2021-10-26T16:50:21+00:00">
+    <meta itemprop="datePublished" content="2021-10-26T13:01:34+00:00">
+    <meta itemprop="dateModified" content="2021-10-26T13:01:47+00:00">
 
     <div class="page__inner-wrap">
 
@@ -177,9 +181,32 @@
 
         
 
-        <h1 id="this-page-has-not-yet-sprouted"><a aria-hidden="true" class="anchor-heading" href="#this-page-has-not-yet-sprouted"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>This page has not yet sprouted</h1>
-<p><a href="https://dendron.so/">Dendron</a> (the tool used to generate this site) lets authors selective publish content. You will see this page whenever you click on a link to an unpublished page</p>
-<p><img src="https://foundation-prod-assetspublic53c57cce-8cpvgjldwysl.s3-us-west-2.amazonaws.com/assets/images/not-sprouted.png"></p><span id="navId" data="403"></span>
+        <h1 id="datasets"><a aria-hidden="true" class="anchor-heading" href="#datasets"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Datasets</h1>
+<h1 id="macroeconomic-datasets-compilation"><a aria-hidden="true" class="anchor-heading" href="#macroeconomic-datasets-compilation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Macroeconomic Datasets Compilation</h1>
+<p>This document contains a compilation of various macroeconomic datasets, and notes for any details that are necessary </p>
+<p>This is mostly because the documentation sources for all of these is messy and all over the place, are constantly updated, and are overall hard to keep track of in one place.</p>
+<p>Specific details about missing data (important!) etc are documented.</p>
+<h2 id="stock-and-watson"><a aria-hidden="true" class="anchor-heading" href="#stock-and-watson"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Stock and Watson</h2>
+<p>Stock and Watson pioneered the collection of macroeconomic datasets, and this is a pre-cursor/inspiration for the FRED databases later on. </p>
+<h2 id="fred-md-us"><a aria-hidden="true" class="anchor-heading" href="#fred-md-us"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>FRED-MD (US)</h2>
+<p>The most well known dataset, and the focus of many papers. </p>
+<p>The implementation of this is in FREDMD.R. This currently uses the fbi package as a pseudo-wrapper for applying the transformations, but this is not strictly necessary.</p>
+<h3 id="missing-data"><a aria-hidden="true" class="anchor-heading" href="#missing-data"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Missing Data</h3>
+<p>ANDENOx = New Orders for Nondefense Capital Goods, starts from 1968 03
+TWEXMMTH = Trade Weighted US DOllar Index , starts from 1973 02
+UMCSNETx = Consumer Sentiment Index, starts from 1978 02
+ACOGNO = New orders for Consumer Goods, starts from 1992 02
+VXOCLSx = VXO index, starts from 1962 07</p>
+<h2 id="fred-qd-us"><a aria-hidden="true" class="anchor-heading" href="#fred-qd-us"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>FRED-QD (US)</h2>
+<h2 id="au-md-australia"><a aria-hidden="true" class="anchor-heading" href="#au-md-australia"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>AU-MD (Australia)</h2>
+<h2 id="uk-md-uk"><a aria-hidden="true" class="anchor-heading" href="#uk-md-uk"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>UK-MD (UK)</h2>
+<h2 id="can-md-canada"><a aria-hidden="true" class="anchor-heading" href="#can-md-canada"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>CAN-MD (Canada)</h2>
+<hr>
+<h2 id="children"><a aria-hidden="true" class="anchor-heading" href="#children"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Children</h2>
+<ol>
+<li><a href="https://zeyuz35.github.io/notes/qG2B481xSr0LdJZXApqjH.html">Dataset Documentation</a></li>
+<li><a href="https://zeyuz35.github.io/notes/chmzLZHhU0FlSUga1u8jn.html">Dataset Extensions</a></li>
+</ol><span id="navId" data="jtZSk246bVVDfJy6cdpS1"></span>
 
                 
       </section>
