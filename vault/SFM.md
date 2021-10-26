@@ -2,10 +2,12 @@
 id: 0R61RLuT7e3hswR2v6o0w
 title: Static Factor Models
 desc: ''
-updated: 1634735678765
+updated: 1634867717818
 created: 1634735127231
 stub: true
 ---
+
+# Static Factor Models
 
 This section presents details about (static) dynamic factor models, which has been the main 
 focus point up until now.
@@ -16,6 +18,12 @@ cannot be directly estimated or modelled. However, the assumptions behind the es
 stills allows for factors to be a dynamic process.
 
 ## Notation
+
+A SFM has the following model representation:
+
+$$
+X_{it} = 
+$$
 
 ## Numerical Notes
 

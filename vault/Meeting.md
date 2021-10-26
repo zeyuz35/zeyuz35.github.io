@@ -2,7 +2,7 @@
 id: fHzGITjWkNNkiwsQpdex4
 title: Meeting
 desc: ''
-updated: 1634863287413
+updated: 1635210616971
 created: 1634221843124
 bibliography: [references.bib]
 ---
@@ -16,6 +16,16 @@ there is a structural break of some some?
 ## Focus Question
 
 How many static factors are estimated by various information criteria in the presence of structural breaks? 
+
+## Roadmap
+
+A collection of unanswered questions which may have potential.
+
+It is currently known that the most innovative and latest break fraction/points estimator rely on the second moments matrix of the pseudo factors. Unofortuntely this method cannot distinguish between a break in the factor variance and the factor loadings, because of a non-identification issue.
+
+Currently, everything is estimated and done via the static model setup. It is arguable that this is all that is necessary, but to date no attempt has been made to reconcile this with the dynamic factor model literature (this is quite difficult). 
+
+As an easy path into doing something for this, derive some results and show how breaks in dynamic factors can be represented as breaks in equivalent static factors? (don't seem too hard and hasn't been done so far).
 
 ## Answers
 

@@ -171,7 +171,7 @@
     <meta itemprop="headline" content="Static Factor Models">
     
     <meta itemprop="datePublished" content="2021-10-21T00:05:27+00:00">
-    <meta itemprop="dateModified" content="2021-10-21T00:14:38+00:00">
+    <meta itemprop="dateModified" content="2021-10-22T12:55:17+00:00">
 
     <div class="page__inner-wrap">
 
@@ -182,6 +182,7 @@
         
 
         <h1 id="static-factor-models"><a aria-hidden="true" class="anchor-heading" href="#static-factor-models"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Static Factor Models</h1>
+<h1 id="static-factor-models-1"><a aria-hidden="true" class="anchor-heading" href="#static-factor-models-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Static Factor Models</h1>
 <p>This section presents details about (static) dynamic factor models, which has been the main
 focus point up until now.</p>
 <p>Importantly, note that the name itself is a bit of misnomer because the factors in this
@@ -189,6 +190,8 @@ framework are estimated with a static representation - that is, dynamics of fact
 cannot be directly estimated or modelled. However, the assumptions behind the estimation
 stills allows for factors to be a dynamic process.</p>
 <h2 id="notation"><a aria-hidden="true" class="anchor-heading" href="#notation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Notation</h2>
+<p>A SFM has the following model representation:</p>
+<div class="math math-display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>X</mi><mrow><mi>i</mi><mi>t</mi></mrow></msub><mo>=</mo></mrow><annotation encoding="application/x-tex">X_{it} =</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span></span></span></span></span></div>
 <h2 id="numerical-notes"><a aria-hidden="true" class="anchor-heading" href="#numerical-notes"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Numerical Notes</h2>
 <p>Here we outline some numerical/implementation details related to the actual estimation.</p>
 <p>The principal components are typically calculated by running an eigendecomposition on the variance matrix of some dataset. Normally, datasets are X = N x p with N much larger than p, and so this done via 1/(N - 1)(X'X).</p>
@@ -201,6 +204,9 @@ stills allows for factors to be a dynamic process.</p>
 <hr>
 <h2 id="children"><a aria-hidden="true" class="anchor-heading" href="#children"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Children</h2>
 <ol>
+<li><a href="https://zeyuz35.github.io/notes/V5RkkOEtQUFg8rc2NA4D.html">Breaks in SFMs</a></li>
+<li><a href="https://zeyuz35.github.io/notes/UCKQQIP3xmPCV4pYAWA4e.html">Monte Carlo Designs</a></li>
+<li><a href="https://zeyuz35.github.io/notes/jSiN2bkem1FFXPxr496BQ.html">SFM Functions</a></li>
 <li><a href="https://zeyuz35.github.io/notes/lLflloV8xL2WPvlXN0DQQ.html">Simulation Designs</a></li>
 <li><a href="https://zeyuz35.github.io/notes/LvkZzWN557soKo2Cg4JAc.html">inference</a></li>
 </ol><span id="navId" data="0R61RLuT7e3hswR2v6o0w"></span>
@@ -229,7 +235,7 @@ stills allows for factors to be a dynamic process.</p>
             
               <div class="d-flex mt-2">
               <p class="text-small text-grey-dk-000 mb-0 mr-2">
-                Page last modified: <span class="d-inline-block">10/21/2021</span>.
+                Page last modified: <span class="d-inline-block">10/22/2021</span>.
               </p>
             
                 

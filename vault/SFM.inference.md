@@ -2,12 +2,15 @@
 id: LvkZzWN557soKo2Cg4JAc
 title: inference
 desc: ''
-updated: 1634735327257
+updated: 1635165509921
 created: 1634735273785
 ---
 
 # Inference for SFM
 
+This section collates some results regarding inference for static factor models. 
+
+See LSE notes for a broader overview of an interpretation of these.
 ## Inference for PCA Estimator
 
 Chamberlain and Rothschild introduce the first *approximate* factor models, which allow for the relaxation of the covariance of the errors terms.
