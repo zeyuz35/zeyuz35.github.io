@@ -2,13 +2,11 @@
 id: qDVp6IFHf6FiUdSgxwZMA
 title: LSE Notes
 desc: ''
-updated: 1635140794193
+updated: 1635319103289
 created: 1635122489982
 ---
 
-# Summary of LSE Notes
-
-Summary Document of Dynamic Factor Models COurse taught by Matteo Barigozzi at LSE.
+Summary Document of Dynamic Factor Models Course taught by Matteo Barigozzi at LSE.
 
 This is up to date with the literature as at 2014, thought the course was taught in 2018.
 

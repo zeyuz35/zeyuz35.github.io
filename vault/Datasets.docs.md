@@ -2,11 +2,9 @@
 id: qG2B481xSr0LdJZXApqjH
 title: Dataset Documentation
 desc: ''
-updated: 1635213816704
+updated: 1635229544907
 created: 1635213741965
 ---
-
-# Dataset Documentation
 
 A document explaining the implementation of how datasets are stored/used generally in R.
 
