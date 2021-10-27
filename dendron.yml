@@ -1,3 +1,4 @@
+version: 3
 useFMTitle: true
 useNoteTitleForLink: true
 noLegacyNoteRef: true
@@ -21,7 +22,6 @@ site:
         payload:
             - vault
     siteUrl: 'https://zeyuz35.github.io/'
-version: 3
 commands:
     lookup:
         note:
@@ -37,7 +37,6 @@ commands:
     insertNoteIndex:
         enableMarker: false
 workspace:
-    dendronVersion: 0.65.0
     vaults:
         -
             fsPath: vault
@@ -55,9 +54,9 @@ workspace:
     enableAutoCreateOnDefinition: false
     enableXVaultWikiLink: false
     enableRemoteVaultInit: true
-    workspaceVaultSyncMode: noCommit
-    enableAutoFoldFrontmatter: true
-    maxPreviewsCached: 10
-    maxNoteLength: 204800
     enableUserTags: true
     enableHashTags: true
+    workspaceVaultSyncMode: noCommit
+    enableAutoFoldFrontmatter: false
+    maxPreviewsCached: 10
+    maxNoteLength: 204800

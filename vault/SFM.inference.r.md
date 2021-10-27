@@ -2,13 +2,20 @@
 id: wQruEPvAQOC2xbS48WvgQ
 title: r Estimators
 desc: ''
-updated: 1635206686479
+updated: 1635319413605
 created: 1635206494435
+bibliography: [references.bib]
 ---
 
-# Estimators for the no. of static factors
+A summary for estimators of $r$, the number of static factors.
 
 ## Bai and Ng
+
+The most famous and widely used estimator
+
+## Ahn and Horenstein
+
+
 
 ## Onatski
 

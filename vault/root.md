@@ -1,13 +1,11 @@
 ---
 id: PhD
-title: PhD Root
+title: PhD Homepage
 desc: ''
-updated: 1635318940796
+updated: 1635319435721
 created: 1595961348801
 stub: false
 ---
-
-# PhD Home Page
 
 Welcome to my website!
 
