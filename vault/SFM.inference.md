@@ -2,7 +2,7 @@
 id: LvkZzWN557soKo2Cg4JAc
 title: inference
 desc: ''
-updated: 1635165509921
+updated: 1635335616938
 created: 1634735273785
 ---
 
@@ -16,7 +16,6 @@ See LSE notes for a broader overview of an interpretation of these.
 Chamberlain and Rothschild introduce the first *approximate* factor models, which allow for the relaxation of the covariance of the errors terms.
 
 Bai and Ng (2002) and Bai (2003) subsequently develop the inferential theory for the principal components estimator 
-asd
 
 
 Assumptions 1-4 are sufficient for the consistent estimation for the factors, their loadings, and the number of factors.
@@ -66,3 +65,9 @@ Assumptions 5-8 are then further introduced by Bai to develop the asymptotic dis
 8. 
 
 These make up the total 8 assumptions/regularity conditions, typically referred to as the Bai and Ng regularity conditions, and are considered standard in the literature.
+
+## Bai and Ng 2006
+
+Bai and Ng 2006 derive additional convergence rates for the PC estimator. Notably, due to the convergence rates derived, they show that it is OK to treat the estimated factors as subsequent regressors.
+
+

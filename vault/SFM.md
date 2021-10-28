@@ -2,7 +2,7 @@
 id: 0R61RLuT7e3hswR2v6o0w
 title: Static Factor Models
 desc: ''
-updated: 1635318016415
+updated: 1635403100234
 created: 1634735127231
 stub: true
 ---
@@ -59,3 +59,5 @@ In a follow up, Bai provides inferential results on the asymptotic distributions
 ## Breaks
 
 This is the main focus of the thesis, although note that breaks in DFMs have currently only been done in the context of static factor models. For more details, see [[SFM.break]].
+
+

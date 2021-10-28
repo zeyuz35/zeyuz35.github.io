@@ -2,7 +2,7 @@
 id: jtZSk246bVVDfJy6cdpS1
 title: Datasets
 desc: ''
-updated: 1635213707030
+updated: 1635403051699
 created: 1635213694758
 ---
 
@@ -14,11 +14,12 @@ This is mostly because the documentation sources for all of these is messy and a
 
 Specific details about missing data (important!) etc are documented.
 
-## Stock and Watson
+## US Data
+### Stock and Watson
 
 Stock and Watson pioneered the collection of macroeconomic datasets, and this is a pre-cursor/inspiration for the FRED databases later on. 
 
-## FRED-MD (US)
+### FRED-MD (US)
 
 The most well known dataset, and the focus of many papers. 
 
@@ -26,22 +27,32 @@ The implementation of this is in FREDMD.R. This currently uses the fbi package a
 
 ### Missing Data
 
-ANDENOx = New Orders for Nondefense Capital Goods, starts from 1968 03
-TWEXMMTH = Trade Weighted US DOllar Index , starts from 1973 02
-UMCSNETx = Consumer Sentiment Index, starts from 1978 02
-ACOGNO = New orders for Consumer Goods, starts from 1992 02
-VXOCLSx = VXO index, starts from 1962 07
+- ANDENOx = New Orders for Nondefense Capital Goods, starts from 1968 03
+- TWEXMMTH = Trade Weighted US DOllar Index , starts from 1973 02
+- UMCSNETx = Consumer Sentiment Index, starts from 1978 02
+- ACOGNO = New orders for Consumer Goods, starts from 1992 02
+- VXOCLSx = VXO index, starts from 1962 07
 
-
-
+ISM series were discontinued after 2016 after a falling out between FRED and ISM. These were kept in the dataset for legacy reasons, but present a missing data problem.
+The ISM series are:
+- ID 19 NAPMPI
+- ID 49 NAPMEI
+- ID 60 NAPM
+- ID 61 NAPMNOI
+- ID 62 NAPMSDI
+- ID 63 MAPMII
+- ID 112 NAPMPRI
 ## FRED-QD (US)
 
 
 
 ## AU-MD (Australia)
 
-
+Luke Hartigan's website provides an AUMD dataset, which though not continously updated, is quite large and available.
 
 ## UK-MD (UK)
 
+Phillipe Coulombe
 ## CAN-MD (Canada)
+
+CAN MD 
