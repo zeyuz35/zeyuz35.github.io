@@ -2,11 +2,9 @@
 id: dailP0MR8nIVqoelobEaN
 title: Linear Algebra
 desc: ''
-updated: 1635213665442
+updated: 1635454758738
 created: 1635165273731
 ---
-
-# Linear Algebra Results
 
 A document containing useful matrix algebra results for reference.
 

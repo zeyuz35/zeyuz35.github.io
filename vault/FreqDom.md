@@ -2,11 +2,9 @@
 id: ZIDZSAYP9a9L7jYhVMgcz
 title: Frequency Domain
 desc: ''
-updated: 1635143234813
+updated: 1635454765827
 created: 1634885462726
 ---
-
-# Frequency Domain Summary
 
 A summary of the frequency domain approach to time series, which was initially borne out of signals processing. This exists mainly because there exists some tools from that strand of literature which have spilled over into econometrics, namely dynamic principal components.
 

@@ -2,7 +2,7 @@
 id: jtZSk246bVVDfJy6cdpS1
 title: Datasets
 desc: ''
-updated: 1635403051699
+updated: 1636005066075
 created: 1635213694758
 ---
 
@@ -15,9 +15,22 @@ This is mostly because the documentation sources for all of these is messy and a
 Specific details about missing data (important!) etc are documented.
 
 ## US Data
+
+A note on transformation codes (from Ben).
+
+The SW and FREDMD tcodes are completely consistent with one another, despite what Ben suspected.
+
+However, some of these codes are controversial(?) in the literature. E.g. Unemployment should be kept level, FEDFUND should be kept level.
 ### Stock and Watson
 
 Stock and Watson pioneered the collection of macroeconomic datasets, and this is a pre-cursor/inspiration for the FRED databases later on. 
+
+Although considered to be outdated, they remain popular even among newer papers, in order for authors to reconcile/compare their results to what has been previously done.
+
+The following two are the most revelant ones that appear in the literature.
+
+SW2005
+SW2009
 
 ### FRED-MD (US)
 
@@ -53,6 +66,10 @@ Luke Hartigan's website provides an AUMD dataset, which though not continously u
 ## UK-MD (UK)
 
 Phillipe Coulombe
+
+Can Machine Learning catch the COVID19 recession?
+
+
 ## CAN-MD (Canada)
 
 CAN MD 

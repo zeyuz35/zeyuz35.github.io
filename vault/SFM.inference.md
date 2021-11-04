@@ -1,12 +1,10 @@
 ---
 id: LvkZzWN557soKo2Cg4JAc
-title: inference
+title: Static Factor Model Inference
 desc: ''
-updated: 1635335616938
+updated: 1636003717065
 created: 1634735273785
 ---
-
-# Inference for SFM
 
 This section collates some results regarding inference for static factor models. 
 
@@ -16,7 +14,6 @@ See LSE notes for a broader overview of an interpretation of these.
 Chamberlain and Rothschild introduce the first *approximate* factor models, which allow for the relaxation of the covariance of the errors terms.
 
 Bai and Ng (2002) and Bai (2003) subsequently develop the inferential theory for the principal components estimator 
-
 
 Assumptions 1-4 are sufficient for the consistent estimation for the factors, their loadings, and the number of factors.
 
@@ -69,5 +66,9 @@ These make up the total 8 assumptions/regularity conditions, typically referred 
 ## Bai and Ng 2006
 
 Bai and Ng 2006 derive additional convergence rates for the PC estimator. Notably, due to the convergence rates derived, they show that it is OK to treat the estimated factors as subsequent regressors.
+
+This is mostly relevant for formally justifying the use of estimated factors in a subsequent regression, say a FAVAR model.
+
+
 
 
