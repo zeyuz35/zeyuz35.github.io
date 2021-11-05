@@ -1,8 +1,8 @@
 ---
 id: ueU5R8eOYbexoIjS7AmzN
-title: GDFM Time/Frequency Domain
+title: 4 GDFM Time/Frequency Domain
 desc: ''
-updated: 1635129287257
+updated: 1636096555543
 created: 1635129104377
 ---
 

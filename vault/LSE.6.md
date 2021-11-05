@@ -1,8 +1,8 @@
 ---
 id: 1YM96sEzjQsZ7hfMhaXu2
-title: State Space Form
+title: 6 State Space Form
 desc: ''
-updated: 1635129329503
+updated: 1636096561355
 created: 1635129311506
 ---
 

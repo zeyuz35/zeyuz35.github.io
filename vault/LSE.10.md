@@ -1,8 +1,8 @@
 ---
 id: bwqmx24LGPIeMwqrHNii6
-title: Factor Models in Finance
+title: 10 Factor Models in Finance
 desc: ''
-updated: 1635140284767
+updated: 1636096575041
 created: 1635140055965
 ---
 

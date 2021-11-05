@@ -1,8 +1,8 @@
 ---
 id: AavBcuQY4HsfEEVlqK6iN
-title: Approximate Factor Model
+title: 3 Approximate Factor Model
 desc: ''
-updated: 1635129102724
+updated: 1636096551839
 created: 1635127716940
 ---
 
