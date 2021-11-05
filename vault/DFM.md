@@ -2,7 +2,7 @@
 id: T4FN6sDHfA9wxiZ7Dg5WX
 title: Dynamic Factor Models
 desc: ''
-updated: 1635315524154
+updated: 1636083204515
 created: 1634214992986
 ---
 
@@ -36,16 +36,13 @@ Note that because DPCA does not yield a consistent estimator of the common compo
 
 Forni's one sided filter approach....
 
-However, because factor can be allowed to have its own dynamics, DFMs can also be expressed more explicitly:
-
-$$
-
-$$
-
 Note that the
 
 
 ## Dynamic PCA
+
+Note that this is VERY intensive!
+Also, outputs don't make too much sense... Need to spend more time studying this
 
 freqdom package
 ## Dynamic PCA with Periodic Correlation
@@ -56,5 +53,7 @@ pcdpca package
 
 gdpc package (fucking mess)
 
-Methods etc are all broken and even the example code given does not work.
+Methods etc are all broken and even the example code given does not work - no idea how this was approved on CRAN
+
+
 
