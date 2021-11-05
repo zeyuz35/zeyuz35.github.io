@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   
-  <title>Dataset Documentation - Dendron</title>
+  <title>Roadmap - Dendron</title>
   
 
   <link
@@ -43,22 +43,22 @@
 <meta name="description" content="Personal knowledge space">
 <meta name="author" content="">
 
-<link rel="canonical" href="https://zeyuz35.github.io//notes/qG2B481xSr0LdJZXApqjH.html">
+<link rel="canonical" href="https://zeyuz35.github.io//notes/BMClpTRP3V8ITqM7R4kh0.html">
 
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://zeyuz35.github.io//notes/qG2B481xSr0LdJZXApqjH.html">
+<meta property="og:url" content="https://zeyuz35.github.io//notes/BMClpTRP3V8ITqM7R4kh0.html">
 <meta property="og:description" content="Personal knowledge space">
 <meta property="og:image" content="https://zeyuz35.github.io/undefined">
 
 <meta name="twitter:card" content="summary">
 
-<meta name="twitter:url" content="https://zeyuz35.github.io//notes/qG2B481xSr0LdJZXApqjH.html">
+<meta name="twitter:url" content="https://zeyuz35.github.io//notes/BMClpTRP3V8ITqM7R4kh0.html">
 <meta name="twitter:description" content="Personal knowledge space">
 <meta name="twitter:image" content="https://zeyuz35.github.io/undefined">
 
 
-  <meta property="og:title" content="Dataset Documentation - Dendron" />
-  <meta name="twitter:title" content="Dataset Documentation - Dendron" />
+  <meta property="og:title" content="Roadmap - Dendron" />
+  <meta name="twitter:title" content="Roadmap - Dendron" />
   
 </head>
 
@@ -132,7 +132,7 @@
       
         
           <nav aria-label="Breadcrumb" class="breadcrumb-nav">
-            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://zeyuz35.github.io">PhD Homepage</a></li><li class="breadcrumb-nav-list-item"><a href="https://zeyuz35.github.io/notes/jtZSk246bVVDfJy6cdpS1.html">Datasets</a></li><li class="breadcrumb-nav-list-item">Dataset Documentation</li></ol>
+            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://zeyuz35.github.io">PhD Homepage</a></li><li class="breadcrumb-nav-list-item">Roadmap</li></ol>
           </nav>
         
       
@@ -168,10 +168,10 @@
 <div id="main" role="main">
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Dataset Documentation">
+    <meta itemprop="headline" content="Roadmap">
     
-    <meta itemprop="datePublished" content="2021-10-26T13:02:21+00:00">
-    <meta itemprop="dateModified" content="2021-11-04T17:34:22+00:00">
+    <meta itemprop="datePublished" content="2021-10-29T08:04:31+00:00">
+    <meta itemprop="dateModified" content="2021-10-29T08:10:11+00:00">
 
     <div class="page__inner-wrap">
 
@@ -181,29 +181,31 @@
 
         
 
-        <h1 id="dataset-documentation"><a aria-hidden="true" class="anchor-heading" href="#dataset-documentation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Dataset Documentation</h1>
-<p>A document explaining the implementation of how datasets are stored/used generally in R.</p>
-<p>Note that this is mainly focused on the technical details, and notably omits anything to do with the actual data cleaning (see individual dataset pages for specifics).</p>
-<h2 id="macroxts-class"><a aria-hidden="true" class="anchor-heading" href="#macroxts-class"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>macroXTS class</h2>
-<p>All cleaned datasets are to be returned using the macroXTS class, which is a really just a wrapper around the wonderful xts() class.</p>
-<p>This is because xts() internally behaves like a numeric matrix, making it very easy to pass to things like scale(), unscale(), and most importantly, eigen() for DFM analysis.</p>
-<p>xts() itself also has helper methods which can easily extract/filter based on time.</p>
-<p>Additionally, ggfortify (despite it being large and clunky) provides many useful additional methods related to plotting.</p>
-<h3 id="methods-for-macroxts"><a aria-hidden="true" class="anchor-heading" href="#methods-for-macroxts"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Methods for macroXTS</h3>
-<p>macroXTS comes with unscale, level(), and descr() methods, in addition to the usual xts() methods we have access to.</p>
-<h2 id="constructor-function"><a aria-hidden="true" class="anchor-heading" href="#constructor-function"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Constructor Function</h2>
-<p>macroXTS() is the main constructor function, and takes in a level dataset, a coresponding vector of tcodes.</p>
-<p>The dataset can be of data.frame, xts, tsibble, as long as it has a valid date index.</p>
-<p>The general workflow should therefore be, clean using a data.frame() as a base class, then pass this + tcodes to macroXTS().</p>
-<div class="mermaid">
-  graph TD
-  A(data.csv) --> |Convert| B(data.frame/tsibble)
-  C(tcode.csv) --> |Convert| D(tcode vector)
-  B --> |Clean data using tidyverse/df| E(Cleaned df)
-  E --> |macroXTS| F(macroXTS obj)
-  D --> |macroXTS| F
-  F --> |eigen, etc| G(analysis)
-</div><span id="navId" data="qG2B481xSr0LdJZXApqjH"></span>
+        <h1 id="roadmap"><a aria-hidden="true" class="anchor-heading" href="#roadmap"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Roadmap</h1>
+<p>Focus Question: How many factors are detected in the presences of breaks?</p>
+<h2 id="to-do-list"><a aria-hidden="true" class="anchor-heading" href="#to-do-list"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>To Do List</h2>
+<p>Static Factors</p>
+<ul>
+<li>BNIC estimator</li>
+<li>AW estimator</li>
+<li>ON09 and ON10</li>
+<li>AHER and AHGR</li>
+</ul>
+<p>Dynamic Factors</p>
+<ul>
+<li>BN07</li>
+<li></li>
+</ul>
+<p>Break Date estimators</p>
+<ul>
+<li>Han and Inoue HI</li>
+<li>BKW Baltagi (simple one and sequential one)</li>
+<li>CDG</li>
+<li>MS Ma and Su</li>
+<li>BHS (Bai, Han and Shi)</li>
+<li>DBH (QMLE)</li>
+</ul>
+<p>Run the estimators across the dataset over time</p><span id="navId" data="BMClpTRP3V8ITqM7R4kh0"></span>
 
                 
       </section>
@@ -229,7 +231,7 @@
             
               <div class="d-flex mt-2">
               <p class="text-small text-grey-dk-000 mb-0 mr-2">
-                Page last modified: <span class="d-inline-block">11/4/2021</span>.
+                Page last modified: <span class="d-inline-block">10/29/2021</span>.
               </p>
             
                 

@@ -171,7 +171,7 @@
     <meta itemprop="headline" content="Datasets">
     
     <meta itemprop="datePublished" content="2021-10-26T13:01:34+00:00">
-    <meta itemprop="dateModified" content="2021-10-28T17:37:31+00:00">
+    <meta itemprop="dateModified" content="2021-11-04T16:51:06+00:00">
 
     <div class="page__inner-wrap">
 
@@ -187,8 +187,15 @@
 <p>This is mostly because the documentation sources for all of these is messy and all over the place, are constantly updated, and are overall hard to keep track of in one place.</p>
 <p>Specific details about missing data (important!) etc are documented.</p>
 <h2 id="us-data"><a aria-hidden="true" class="anchor-heading" href="#us-data"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>US Data</h2>
+<p>A note on transformation codes (from Ben).</p>
+<p>The SW and FREDMD tcodes are completely consistent with one another, despite what Ben suspected.</p>
+<p>However, some of these codes are controversial(?) in the literature. E.g. Unemployment should be kept level, FEDFUND should be kept level.</p>
 <h3 id="stock-and-watson"><a aria-hidden="true" class="anchor-heading" href="#stock-and-watson"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Stock and Watson</h3>
 <p>Stock and Watson pioneered the collection of macroeconomic datasets, and this is a pre-cursor/inspiration for the FRED databases later on. </p>
+<p>Although considered to be outdated, they remain popular even among newer papers, in order for authors to reconcile/compare their results to what has been previously done.</p>
+<p>The following two are the most revelant ones that appear in the literature.</p>
+<p>SW2005
+SW2009</p>
 <h3 id="fred-md-us"><a aria-hidden="true" class="anchor-heading" href="#fred-md-us"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>FRED-MD (US)</h3>
 <p>The most well known dataset, and the focus of many papers. </p>
 <p>The implementation of this is in FREDMD.R. This currently uses the fbi package as a pseudo-wrapper for applying the transformations, but this is not strictly necessary.</p>
@@ -216,15 +223,19 @@ The ISM series are:</p>
 <p>Luke Hartigan's website provides an AUMD dataset, which though not continously updated, is quite large and available.</p>
 <h2 id="uk-md-uk"><a aria-hidden="true" class="anchor-heading" href="#uk-md-uk"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>UK-MD (UK)</h2>
 <p>Phillipe Coulombe</p>
+<p>Can Machine Learning catch the COVID19 recession?</p>
 <h2 id="can-md-canada"><a aria-hidden="true" class="anchor-heading" href="#can-md-canada"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>CAN-MD (Canada)</h2>
 <p>CAN MD </p>
 <hr>
 <h2 id="children"><a aria-hidden="true" class="anchor-heading" href="#children"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Children</h2>
 <ol>
+<li><a href="https://zeyuz35.github.io/notes/oxdsOpVcDvBS6LK2g2u5q.html">AUMD</a></li>
 <li><a href="https://zeyuz35.github.io/notes/qG2B481xSr0LdJZXApqjH.html">Dataset Documentation</a></li>
 <li><a href="https://zeyuz35.github.io/notes/chmzLZHhU0FlSUga1u8jn.html">Dataset Extensions</a></li>
 <li><a href="https://zeyuz35.github.io/notes/fcutUIFEqfglhag1gNlwj.html">Datasets COVID issues</a></li>
 <li><a href="https://zeyuz35.github.io/notes/OCBJDED8DhgRzfr9tuqIE.html">FRED</a></li>
+<li><a href="https://zeyuz35.github.io/notes/HQNSmh6LzNUMVucvj1RWZ.html">LCDMA</a></li>
+<li><a href="https://zeyuz35.github.io/notes/npnnYVoOyuix5N0kKhX2O.html">UK</a></li>
 </ol><span id="navId" data="jtZSk246bVVDfJy6cdpS1"></span>
 
                 
@@ -251,7 +262,7 @@ The ISM series are:</p>
             
               <div class="d-flex mt-2">
               <p class="text-small text-grey-dk-000 mb-0 mr-2">
-                Page last modified: <span class="d-inline-block">10/28/2021</span>.
+                Page last modified: <span class="d-inline-block">11/4/2021</span>.
               </p>
             
                 

@@ -2,7 +2,7 @@
 id: wQruEPvAQOC2xbS48WvgQ
 title: r Estimators
 desc: ''
-updated: 1635497448771
+updated: 1636079101626
 created: 1635206494435
 bibliography: [references.bib]
 ---
@@ -23,7 +23,16 @@ MATLAB code is available from his website. However, this isn't too useful (for n
 
 ## Onatski (2010) ON10
 
-Related follow up, Onatski produces an actual method to determine the number of *factors*. Need to investigate if this refers to static or dynamic factors.
+Related follow up, Onatski produces an actual method to determine the number of static factors.
+
+Onatski states that this outperforms Bai and Ng in two key ways:
+
+- When the signal to noise ratio is low, Bai and Ng tend to underestimate the number of factors
+- When the degree of autocorrelation in the idiosyncratic error tends to be high, Bai and Ng conversely overestimate the number of factors
+
+Empirically on non-synthetic data, Onatski's method tends to estimate less factors than Bai and Ng, so presumably this means that the autocorrelation is high. As usual, it is unclear what is going on on real data.
+
+They do especially note however, that their estimator tends to underestimate when some of the static factors are very weak. This is plausible, if some of the lags of the factors (true dynamic factors) have very weak correlation coefficients. 
 
 Esitmate r as the largest value of $k$ for which the different between the $k$ and $k + 1$ eigenvalues of the covariance matrix exceeds a threshold.
 

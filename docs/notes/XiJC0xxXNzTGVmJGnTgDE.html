@@ -171,7 +171,7 @@
     <meta itemprop="headline" content="Static Factor Models with Markov Regime Switching">
     
     <meta itemprop="datePublished" content="2021-10-28T22:53:35+00:00">
-    <meta itemprop="dateModified" content="2021-10-28T23:07:46+00:00">
+    <meta itemprop="dateModified" content="2021-10-29T14:57:57+00:00">
 
     <div class="page__inner-wrap">
 
@@ -194,7 +194,46 @@
 <p>For their empirical study, they focused on financial data, for which this mya be arguably reasonable, but this is not the case at all for Macroeconomic data.</p>
 <p>For what it's worth, the frequency of switching increases a lot around crisis times/changes in volatility, so perhaps this is just another way of picking heteroskedasticity? Possible extension here.</p>
 <h2 id="implementation-details"><a aria-hidden="true" class="anchor-heading" href="#implementation-details"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Implementation Details</h2>
-<p>Holy hell this was complicated to get working, even with their spaghetti code.</p><span id="navId" data="XiJC0xxXNzTGVmJGnTgDE"></span>
+<p>Holy hell this was complicated to get working, even with their spaghetti code.</p>
+<p>This will return estimates of the regimes across time, and it tends to switch back and forwards a lot.</p>
+<p>These will need to be plotted with something like geom_rug().</p>
+<h3 id="dynamic-factor-model-with-markov-switching"><a aria-hidden="true" class="anchor-heading" href="#dynamic-factor-model-with-markov-switching"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Dynamic Factor Model with Markov Switching</h3>
+<p>There seems to actually be a very large literature on MS DFM. However, these are very old and all of them make the limited assumption that the data only has ONE common component (ONE factor).</p>
+<p>The paper by Liu and Chen is the first seminal paper (that I know of) is the first and ONLY paper that actually extends DFM to markov switching regimes.</p>
+<h4 id="liu-and-chen-statistica-sinica-paper"><a aria-hidden="true" class="anchor-heading" href="#liu-and-chen-statistica-sinica-paper"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Liu and Chen (Statistica Sinica Paper)</h4>
+<p>Give a panel of multivariate time series, and k regimes (typically 2 for convergence reasons), this paper proposes a DFM with factor switching according to a markov process.</p>
+<p>The underlying markov process is assumed to be latent (unobserved). Note that the algorithm can also work with an observed state variable if needed.</p>
+<p>I.e. DFM as usual, but the factor (spaces due to identification issues) switch in either regime.</p>
+<p>Algorithm: given a T x N panel, and k = 2 regimes, estimate:</p>
+<ul>
+<li>d = no. of factors in each regime</li>
+<li>tran_est = transition matrix</li>
+<li>P = probabilities of being in each regime</li>
+<li>A_est = column space of factors in each regime</li>
+<li>B_est = complement of column space of factors in each regime</li>
+<li>path = estimated path of latent state variable</li>
+<li>mu_est = estimated mean of data for each regime</li>
+</ul>
+<p>This paper mainly focused on financial data, and did not apply anything to macroeconomic data. </p>
+<p>One of the main (limitations) of this paper is that the estimated states are quite volatile and switch a lot. The paper itself presents the estimated states using rug plots (essentially one dimensional histograms). This seems to be OK for financial data (actually is it?), but is quite problematic for macroeconomic data.</p>
+<p>Crucial notes about interpretation</p>
+<p>The factor space is assumed to completely change in different regimes. This may or may not be reasonable.</p>
+<p>As a nice bonus, you can separately look at each regime. E.g. the first factor explain x% of the variation in regime 1, but only y% in regime 2.</p>
+<p>INFERENCE</p>
+<p>For Macroeconomics, Impulse Response Functions are very important.</p>
+<p>These are essentially, given an external shock to something, what will happen to the system?</p>
+<p>This is particularly popular for analysing uncertainty shocks. I.e. shocks to the noise term, or variance to the noise term, and seeing how GDP changes, etc.</p>
+<p>The extension of this to DFM, is not so straightforward.
+Ben says that something like specifying a law of motion of the variance is necessary in this case.</p>
+<p>LIMITATIONS FOR MACROECONOMICS</p>
+<p>The estimated regimes switch a LOT. </p>
+<p>Fixing/adjusting this to be smoother is not straightforward because the the estimation of the hidden states is done via the Viterbi algorithm.</p>
+<p>The transition probabilities are considered to be constant across the entire sample. This may not be reasonable for economics.</p>
+<p>Solutions: </p>
+<ul>
+<li>allow for time varying transition probabilities</li>
+<li>allow for "smoother" regime switching somehow</li>
+</ul><span id="navId" data="XiJC0xxXNzTGVmJGnTgDE"></span>
 
                 
       </section>
@@ -220,7 +259,7 @@
             
               <div class="d-flex mt-2">
               <p class="text-small text-grey-dk-000 mb-0 mr-2">
-                Page last modified: <span class="d-inline-block">10/28/2021</span>.
+                Page last modified: <span class="d-inline-block">10/29/2021</span>.
               </p>
             
                 
