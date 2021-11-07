@@ -1,12 +1,12 @@
 ---
 id: HQNSmh6LzNUMVucvj1RWZ
-title: LCDMA
+title: LCDMA (CAN-MD)
 desc: ''
-updated: 1636086219455
+updated: 1636284382081
 created: 1636077385863
 ---
 
-A Large Canadian Database for Macroeconomic Analysis. Split into vanilla (monthly), and Q (quarterly) versions.
+A Large Canadian Database for Macroeconomic Analysis. Authors seem to be unable to decide whether to keep the legacy name which is CAN-MD, or go with what the paper is published under. Split into vanilla (monthly), and Q (quarterly) versions.
 
 This is less well understood, so important series are just those that sound important.
 

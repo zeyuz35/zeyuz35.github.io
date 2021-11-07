@@ -2,13 +2,14 @@
 id: fhf7Gdr3mhOUG1mU5twC6
 title: HAC
 desc: ''
-updated: 1634861861135
+updated: 1636283478584
 created: 1634780245060
 ---
 
-# HAC
 
 This document gives a brief overview of Heteroskedasticity and Autocorrelation Consistent covariance matric estimation, and how to implement them.
+
+As the focus is mostly on time series data, there is more of an emphasis on the long run covariance matrix aspect of HAC.
 
 [@stockChapter10Forecasting2006]
 
@@ -37,3 +38,13 @@ Note that sandwich implements many advanced features by default, such as using a
 ## Historical
 
 ## Implementation via sandwich
+
+sandwich remains the *de facto* standard for implementing HAC. 
+
+Note that sandwich is very cutting edge and automatically implements many newer features in the literature, e.g. automatic bandwidth selection, etc.
+
+This is sometimes too advanced/complex for Monte Carlo studies. Importantly, to replicate the results of some papers, it is sometimes necessary to step down and make it less complicated.
+
+It is possible to specify a fixed bandwidth, etc and replicate the results of a simple, cruder implementation. For an example, see Baltagi et al implementation.
+
+

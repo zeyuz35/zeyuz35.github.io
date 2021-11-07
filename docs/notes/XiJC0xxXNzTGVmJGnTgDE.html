@@ -171,7 +171,7 @@
     <meta itemprop="headline" content="Static Factor Models with Markov Regime Switching">
     
     <meta itemprop="datePublished" content="2021-10-28T22:53:35+00:00">
-    <meta itemprop="dateModified" content="2021-10-29T14:57:57+00:00">
+    <meta itemprop="dateModified" content="2021-11-07T22:09:21+00:00">
 
     <div class="page__inner-wrap">
 
@@ -183,9 +183,10 @@
 
         <h1 id="static-factor-models-with-markov-regime-switching"><a aria-hidden="true" class="anchor-heading" href="#static-factor-models-with-markov-regime-switching"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Static Factor Models with Markov Regime Switching</h1>
 <p><a title="Private" style="color: brown" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank">#markov (Private)</a> <a title="Private" style="color: brown" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank">#regime (Private)</a></p>
+<p>Luke Hartigan's thesis also contains an approach to markov switching for factor models, however, haven't spent the time needed to read into it too much yet.</p>
 <p>Liu and Chen 2016 Statistica Sinica</p>
 <p>Does not seem to be a very well known paper, despite arguably being technically sound.</p>
-<p>An extension of static factor models which allows for factor loadings to switch according to an unosberved markov process.</p>
+<p>An extension of static factor models which allows for factor loadings to switch according to an unobserved markov process.</p>
 <p>Unfortunately estimating this is quite difficult, and the resulting estimates don't make too much sense.</p>
 <h2 id="notes"><a aria-hidden="true" class="anchor-heading" href="#notes"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Notes</h2>
 <p>This method only works reasonably well for 2 regimes, 3 regimes and above it requires a LOT of data for convergence.</p>
@@ -219,13 +220,13 @@
 <p>Crucial notes about interpretation</p>
 <p>The factor space is assumed to completely change in different regimes. This may or may not be reasonable.</p>
 <p>As a nice bonus, you can separately look at each regime. E.g. the first factor explain x% of the variation in regime 1, but only y% in regime 2.</p>
-<p>INFERENCE</p>
+<h5 id="inference"><a aria-hidden="true" class="anchor-heading" href="#inference"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>INFERENCE</h5>
 <p>For Macroeconomics, Impulse Response Functions are very important.</p>
 <p>These are essentially, given an external shock to something, what will happen to the system?</p>
 <p>This is particularly popular for analysing uncertainty shocks. I.e. shocks to the noise term, or variance to the noise term, and seeing how GDP changes, etc.</p>
 <p>The extension of this to DFM, is not so straightforward.
 Ben says that something like specifying a law of motion of the variance is necessary in this case.</p>
-<p>LIMITATIONS FOR MACROECONOMICS</p>
+<h5 id="limitations-for-macroeconomics"><a aria-hidden="true" class="anchor-heading" href="#limitations-for-macroeconomics"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>LIMITATIONS FOR MACROECONOMICS</h5>
 <p>The estimated regimes switch a LOT. </p>
 <p>Fixing/adjusting this to be smoother is not straightforward because the the estimation of the hidden states is done via the Viterbi algorithm.</p>
 <p>The transition probabilities are considered to be constant across the entire sample. This may not be reasonable for economics.</p>
@@ -259,7 +260,7 @@ Ben says that something like specifying a law of motion of the variance is neces
             
               <div class="d-flex mt-2">
               <p class="text-small text-grey-dk-000 mb-0 mr-2">
-                Page last modified: <span class="d-inline-block">10/29/2021</span>.
+                Page last modified: <span class="d-inline-block">11/7/2021</span>.
               </p>
             
                 

@@ -2,7 +2,7 @@
 id: T4FN6sDHfA9wxiZ7Dg5WX
 title: Dynamic Factor Models
 desc: ''
-updated: 1636083204515
+updated: 1636284147008
 created: 1634214992986
 ---
 
@@ -44,10 +44,13 @@ Note that the
 Note that this is VERY intensive!
 Also, outputs don't make too much sense... Need to spend more time studying this
 
+Beware of other misnomers in the literature! Someone else somewhere referred to dynamic PCA as simply PCA but run on lagged regressors - this is very different to what the rest of the literature at large says!
+
 freqdom package
 ## Dynamic PCA with Periodic Correlation
 
 pcdpca package
+Need to spend time to play around with this.
 
 ## Generalized Dynamic PCA
 

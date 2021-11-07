@@ -2,7 +2,7 @@
 id: GLHB2UVCnE6nVxFI7vDeE
 title: Empirical Study
 desc: ''
-updated: 1636095875394
+updated: 1636283884844
 created: 1636095716715
 ---
 
@@ -15,3 +15,6 @@ For now, focus on the task of inflation forecasting, as this is topical and popu
 We consider three different measures of inflation: the personal consumption expenditures (PCE) deflator, the CPI, and core CPI (CPI less food). Inflation rates are computed via $\pi_t = log(\pi_t - \pi_{t-1})$ (as opposed to the suggested transformation of 2nd log differences in Stock and Watson). 
 
 
+## Other Empirical Exercise (Placeholder)
+
+Placeholder for other empirical exercise, in case inflation forecasting does not work out.

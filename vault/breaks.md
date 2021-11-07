@@ -1,8 +1,8 @@
 ---
 id: SKUZ6b0dCeZkJQWeJkLAZ
-title: Breaks
+title: Structural Break P Values
 desc: ''
-updated: 1635405518117
+updated: 1636284316460
 created: 1635212376940
 ---
 

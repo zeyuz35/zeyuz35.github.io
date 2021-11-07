@@ -1,17 +1,19 @@
 ---
 id: XiJC0xxXNzTGVmJGnTgDE
 title: Static Factor Models with Markov Regime Switching
-updated: 1635479877335
+updated: 1636283361568
 created: 1635422015099
 ---
 
 #markov #regime
 
+Luke Hartigan's thesis also contains an approach to markov switching for factor models, however, haven't spent the time needed to read into it too much yet.
+
 Liu and Chen 2016 Statistica Sinica
 
 Does not seem to be a very well known paper, despite arguably being technically sound.
 
-An extension of static factor models which allows for factor loadings to switch according to an unosberved markov process.
+An extension of static factor models which allows for factor loadings to switch according to an unobserved markov process.
 
 Unfortunately estimating this is quite difficult, and the resulting estimates don't make too much sense.
 
@@ -68,7 +70,7 @@ The factor space is assumed to completely change in different regimes. This may 
 
 As a nice bonus, you can separately look at each regime. E.g. the first factor explain x% of the variation in regime 1, but only y% in regime 2.
 
-INFERENCE
+##### INFERENCE
 
 For Macroeconomics, Impulse Response Functions are very important.
 
@@ -79,7 +81,7 @@ This is particularly popular for analysing uncertainty shocks. I.e. shocks to th
 The extension of this to DFM, is not so straightforward.
 Ben says that something like specifying a law of motion of the variance is necessary in this case.
 
-LIMITATIONS FOR MACROECONOMICS
+##### LIMITATIONS FOR MACROECONOMICS
 
 The estimated regimes switch a LOT. 
 

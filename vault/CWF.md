@@ -1,8 +1,8 @@
 ---
 id: MsmFdXyWfizd5g8GGcObD
-title: CWF
+title: Covariance Weighted Forecasting
 desc: ''
-updated: 1636096333829
+updated: 1636283796362
 created: 1636095097255
 ---
 

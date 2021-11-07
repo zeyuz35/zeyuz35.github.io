@@ -1,20 +1,22 @@
 ---
 id: jMIh51K0sWXZgTJg24c1e
-title: Andrews Critical Values
+title: Structural Break Critical Values
 desc: ''
-updated: 1635143352952
+updated: 1636263478903
 created: 1635143251667
 ---
 
-# Andrews Critical Values
+Andrews (1993) derives a set of distributions and critical values for structural break tests. The tabulated critical values in these is referenced a lot. 
 
-A short summary of critical values derived and tabulated by Andrews 1993 for the supremum based test statistic, and Andrews 1994 exponential and mean test statistics that often show up in structural break tests.
+Andrews (1994) extends the idea of a supremum based test statistic to include a mean test and exponential test, and note that these may be more robust. Seemingly, in the literature people mostly focus on the supremum version, and note that the other two also agree with it. A set of tabulated critical values is also provided.
 
-## Sup-Wald/LR
+These two sets of critical values are used a lot, and due to computational intensity involved with formally simulating them, people are recommended to linearly interpolate these values. A new, crude interpolation implementation of this has made in R.
 
-## Exp-Wald/LR
+Hansen (1997) notices that the critical values are close to a chi-squared distribution, and proposes a much quicker way to calculate them, something similar to say a surface response regression.
 
-## Mean-Wald/LR
+Andrews (2003) then revises the original set of critical values, noticing that in some cases they were biased downwards for no apparent reason.
 
-## Implementation (new in R)
+Finally, Estrella (2003) proposes a much quicker and more tractable way of getting these p values, and this should be the end of this tedious strand of literature.
+
+Note that the main contemporary implementation of this is in strucchange using Hansen's approach, using a bunch of *hidden* functions, hence why these are not very well known. The documentation erroneously refers to these as supF, expF, and meanF distributions, but this is not precisely true, and they should be supWald, expWald, and meanWald distributions.
 
