@@ -62,7 +62,6 @@ At one point, oil futures were negative value.
 ## COVID19 (mid 2021 onwards, RIGHT NOW)
 
 This is separated from COVID19 section, and is focused more on the reopening phase.
-
 ### Inflation
 
 Inflation has been noted to have gone crazy.

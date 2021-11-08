@@ -2,7 +2,7 @@
 id: PhD
 title: PhD Homepage
 desc: ''
-updated: 1636096786854
+updated: 1636339917252
 created: 1595961348801
 stub: false
 ---
@@ -14,10 +14,15 @@ This website has been built using Dendron, and each topic has been collated into
 Dendron has incredibly powerful search functionality due to good indexing, even outside of working in raw .md files. Simply use the search bar at the top of the website to find something.
 
 Below is meant to be an interactive view of how the notes are laid out, but this functionality has not been implemented yet.
-## Research Roadmap
 
+See if there is a way to export a graph view as an image and hot link it here.
+## Quick Links
 
-## Meeting Summary
+[[roadmap]]
+
+[[Meeting]]
+
+[[TODO]]
 
 ## To do List
 

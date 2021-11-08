@@ -2,23 +2,39 @@
 id: dailP0MR8nIVqoelobEaN
 title: Linear Algebra
 desc: ''
-updated: 1636283703044
+updated: 1636343740473
 created: 1635165273731
 ---
 
-A document containing useful matrix algebra results for reference.
-
-## Other Results
+## Basic Definitions
 
 
+## Square Matrices
 
-## Eigenvalues and Eigenvectors
+1. trace(A)
+2. diag(A)
+3. trace(AB) = trace(BA)
+4. |A| = det(A)
+5. |AB| = |A||B|
+6. 
+7. 
+8. 
 
+## Positive Definite Matrices
+
+1. $x'Ax > 0$
+2. $B'AB > 0$ if $B$ is of full column rank
+3. $A^{-1} > 0$
+4. $rank(A) = p$
+
+## Matrix Decompositions
+
+### Eigenvalues and Eigenvectors
 Eigenvalues and Eigenvectors are only defined for square matrices. 
 
 The no. of non zero eigenvalues corresponds to the rank of the matrix.
 
-## Singular Value Decomposition
+### Singular Value Decomposition
 
 The generalisation of eigendecompositions to rectangular (non square) matrices.
 
@@ -44,3 +60,12 @@ Although eigen() is the traditional backend, the algorithm behind this is consid
 
 princomp() is usually the implementation preferred, as this provides an OOP interface with other useful methods, such as projecting new data using the decomposition. However, these extra features are typically not needed in macroeconomic analysis, so a much simpler interface using just eigen() or svd() is used instead.
 
+
+## Matrix Differentiation
+
+## Kronecker Products
+
+
+
+
+## Other Results
