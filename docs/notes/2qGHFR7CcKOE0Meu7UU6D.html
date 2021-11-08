@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   
-  <title>LCDMA (CAN-MD) - Ze Yu</title>
+  <title>Root_docs - Ze Yu</title>
   
 
   <link
@@ -43,22 +43,22 @@
 <meta name="description" content="Personal knowledge space">
 <meta name="author" content="">
 
-<link rel="canonical" href="https://zeyuz35.github.io//notes/HQNSmh6LzNUMVucvj1RWZ.html">
+<link rel="canonical" href="https://zeyuz35.github.io//notes/2qGHFR7CcKOE0Meu7UU6D.html">
 
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://zeyuz35.github.io//notes/HQNSmh6LzNUMVucvj1RWZ.html">
+<meta property="og:url" content="https://zeyuz35.github.io//notes/2qGHFR7CcKOE0Meu7UU6D.html">
 <meta property="og:description" content="Personal knowledge space">
 <meta property="og:image" content="https://zeyuz35.github.io/undefined">
 
 <meta name="twitter:card" content="summary">
 
-<meta name="twitter:url" content="https://zeyuz35.github.io//notes/HQNSmh6LzNUMVucvj1RWZ.html">
+<meta name="twitter:url" content="https://zeyuz35.github.io//notes/2qGHFR7CcKOE0Meu7UU6D.html">
 <meta name="twitter:description" content="Personal knowledge space">
 <meta name="twitter:image" content="https://zeyuz35.github.io/undefined">
 
 
-  <meta property="og:title" content="LCDMA (CAN-MD) - Ze Yu" />
-  <meta name="twitter:title" content="LCDMA (CAN-MD) - Ze Yu" />
+  <meta property="og:title" content="Root_docs - Ze Yu" />
+  <meta name="twitter:title" content="Root_docs - Ze Yu" />
   
 </head>
 
@@ -132,7 +132,7 @@
       
         
           <nav aria-label="Breadcrumb" class="breadcrumb-nav">
-            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://zeyuz35.github.io">PhD Homepage</a></li><li class="breadcrumb-nav-list-item"><a href="https://zeyuz35.github.io/notes/jtZSk246bVVDfJy6cdpS1.html">Datasets</a></li><li class="breadcrumb-nav-list-item">LCDMA (CAN-MD)</li></ol>
+            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://zeyuz35.github.io">PhD Homepage</a></li><li class="breadcrumb-nav-list-item">Root_docs</li></ol>
           </nav>
         
       
@@ -168,10 +168,10 @@
 <div id="main" role="main">
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="LCDMA (CAN-MD)">
+    <meta itemprop="headline" content="Root_docs">
     
-    <meta itemprop="datePublished" content="2021-11-05T12:56:25+00:00">
-    <meta itemprop="dateModified" content="2021-11-07T22:26:22+00:00">
+    <meta itemprop="datePublished" content="2021-11-05T18:17:15+00:00">
+    <meta itemprop="dateModified" content="2021-11-05T18:17:53+00:00">
 
     <div class="page__inner-wrap">
 
@@ -181,18 +181,19 @@
 
         
 
-        <h1 id="lcdma-can-md"><a aria-hidden="true" class="anchor-heading" href="#lcdma-can-md"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>LCDMA (CAN-MD)</h1>
-<p>A Large Canadian Database for Macroeconomic Analysis. Authors seem to be unable to decide whether to keep the legacy name which is CAN-MD, or go with what the paper is published under. Split into vanilla (monthly), and Q (quarterly) versions.</p>
-<p>This is less well understood, so important series are just those that sound important.</p>
-<p>Note that this dataset is VERY big, because this also includes FRED data inside it as well, presumably because Canada is affected by US a lot.</p>
-<p>There does exist a pre-transformed, balanced panel (imputed via an EM algorithm) for ease of use, however, just for consistency, we will start from the RAW data.</p>
-<h2 id="lcdma"><a aria-hidden="true" class="anchor-heading" href="#lcdma"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>LCDMA</h2>
-<p>Missing Data:</p>
-<p>Important Series:</p>
-<h2 id="lcdmaq"><a aria-hidden="true" class="anchor-heading" href="#lcdmaq"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>LCDMAQ</h2>
-<p>Quarterly version.</p>
-<p>Missing Data:</p>
-<p>Important Series:</p><span id="navId" data="HQNSmh6LzNUMVucvj1RWZ"></span>
+        <h1 id="root_docs"><a aria-hidden="true" class="anchor-heading" href="#root_docs"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Root_docs</h1>
+<h2 id="technical-specifications"><a aria-hidden="true" class="anchor-heading" href="#technical-specifications"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Technical Specifications</h2>
+<p>This is the master document for my PhD Thesis, investigating the issues that may arise from
+structural breaks, in the context of large macroeconomic factor models.</p>
+<p>This document will be mostly documented within markdown files in an implementation/format
+known as dendron, open source and most crucially allows for tagging, and creation of
+very complex linking and visualization.</p>
+<p>It is also able to seamlessly weave together maths via KaTeX (or MathJax), simple diagrams
+via mermaid, and at least represent code chunks. It is unable, however, to directly
+interface with any programming languages, and should only serve as a notes guide and
+literature review tool.</p>
+<p>Note that because GitHub pages only builds websites from /docs/ occasionally, there is a bit of lag for this to update once pushed.</p>
+<p>Dendron does not implement any ability to easily run/integrate code output, so annoyingly any output will need to be explicitly outputted from R, and inserted as "normal" images or tables. On the plus side, this is likely the approach I will have to go for more "proper" submissions using LaTeX proper anyway.</p><span id="navId" data="2qGHFR7CcKOE0Meu7UU6D"></span>
 
                 
       </section>
@@ -218,7 +219,7 @@
             
               <div class="d-flex mt-2">
               <p class="text-small text-grey-dk-000 mb-0 mr-2">
-                Page last modified: <span class="d-inline-block">11/7/2021</span>.
+                Page last modified: <span class="d-inline-block">11/5/2021</span>.
               </p>
             
                 

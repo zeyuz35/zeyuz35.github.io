@@ -2,11 +2,13 @@
 id: MsmFdXyWfizd5g8GGcObD
 title: Covariance Weighted Forecasting
 desc: ''
-updated: 1636283796362
+updated: 1636330395777
 created: 1636095097255
 ---
 
 Homepage section for covariance weighted forecasting, just to keep all notes and academic stuff related in the same note database.
+
+This is lifted straight from the motivation document that was put together at the start of this project. This was inexplicably jumbled up for some reason...
 
 ## Model Setup and Notation
 

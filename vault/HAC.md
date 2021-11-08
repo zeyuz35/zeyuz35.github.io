@@ -2,7 +2,7 @@
 id: fhf7Gdr3mhOUG1mU5twC6
 title: HAC
 desc: ''
-updated: 1636283478584
+updated: 1636329422041
 created: 1634780245060
 ---
 
@@ -33,7 +33,15 @@ Note that sandwich implements many advanced features by default, such as using a
 
 ## Solution
 
+### Kernels
 
+Bartlett kernel, leads to Newey-West estimator.
+
+Parzen window (cubic spline kernel).
+
+Both of the above guarantee that the covariance estimator will be positive semi-definite.
+
+Andrews (1991) studies the properties of kernels that guarantee positive semi definite estimators, and suggests a "quadratic spectral kernel" which has better convergence properties.
 
 ## Historical
 
@@ -46,5 +54,4 @@ Note that sandwich is very cutting edge and automatically implements many newer 
 This is sometimes too advanced/complex for Monte Carlo studies. Importantly, to replicate the results of some papers, it is sometimes necessary to step down and make it less complicated.
 
 It is possible to specify a fixed bandwidth, etc and replicate the results of a simple, cruder implementation. For an example, see Baltagi et al implementation.
-
 

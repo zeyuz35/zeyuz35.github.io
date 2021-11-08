@@ -171,7 +171,7 @@
     <meta itemprop="headline" content="HAC">
     
     <meta itemprop="datePublished" content="2021-10-21T12:37:25+00:00">
-    <meta itemprop="dateModified" content="2021-11-07T22:11:18+00:00">
+    <meta itemprop="dateModified" content="2021-11-08T10:57:02+00:00">
 
     <div class="page__inner-wrap">
 
@@ -195,6 +195,11 @@
 <p>In R, this is (and many other covariance matrix estimators) are implemented via the sandwich package.</p>
 <p>Note that sandwich implements many advanced features by default, such as using an adaptively choosing bandwidth. This is usually the ``better" way for better finite sample performance, but because this is more subjective, and the literature is lazy and prefers to use a simpler method, they typically do not do this.</p>
 <h2 id="solution"><a aria-hidden="true" class="anchor-heading" href="#solution"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Solution</h2>
+<h3 id="kernels"><a aria-hidden="true" class="anchor-heading" href="#kernels"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Kernels</h3>
+<p>Bartlett kernel, leads to Newey-West estimator.</p>
+<p>Parzen window (cubic spline kernel).</p>
+<p>Both of the above guarantee that the covariance estimator will be positive semi-definite.</p>
+<p>Andrews (1991) studies the properties of kernels that guarantee positive semi definite estimators, and suggests a "quadratic spectral kernel" which has better convergence properties.</p>
 <h2 id="historical"><a aria-hidden="true" class="anchor-heading" href="#historical"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Historical</h2>
 <h2 id="implementation-via-sandwich"><a aria-hidden="true" class="anchor-heading" href="#implementation-via-sandwich"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Implementation via sandwich</h2>
 <p>sandwich remains the <em>de facto</em> standard for implementing HAC. </p>
@@ -226,7 +231,7 @@
             
               <div class="d-flex mt-2">
               <p class="text-small text-grey-dk-000 mb-0 mr-2">
-                Page last modified: <span class="d-inline-block">11/7/2021</span>.
+                Page last modified: <span class="d-inline-block">11/8/2021</span>.
               </p>
             
                 
