@@ -2,7 +2,7 @@
 id: qGmGYptDKW2WLwlsu2xJw
 title: Empirical Stylized Facts
 desc: ''
-updated: 1636333138084
+updated: 1636333213887
 created: 1636331831859
 ---
 
@@ -21,12 +21,7 @@ A supply shock to crude oil, which is an input to almost everything. This result
 The do nothing approach was essentially was happened - the world adjusted to higher input costs of oil by innovating and becoming more efficient in petroleum use. In particular, Japanese motors became much more efficient.
 
 ### 1973 Yom Kippur War
-
-
-
 ### 1979 Iranian Revolution
-
-
 
 ## Great Moderation (1980s)
 
