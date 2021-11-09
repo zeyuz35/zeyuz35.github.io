@@ -2,7 +2,7 @@
 id: qG2B481xSr0LdJZXApqjH
 title: macroXTS Documentation
 desc: ''
-updated: 1636284229759
+updated: 1636427630120
 created: 1635213741965
 ---
 
@@ -26,7 +26,7 @@ macroXTS comes with unscale, level(), and descr() methods, in addition to the us
 
 ## Constructor Function
 
-macroXTS() is the main constructor function, and takes in a level dataset, a coresponding vector of tcodes.
+macroXTS() is the main constructor function, and takes in a level dataset, a corresponding vector of tcodes.
 
 The dataset can be of data.frame, xts, tsibble, as long as it has a valid date index.
 

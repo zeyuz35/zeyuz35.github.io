@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   
-  <title>macroXTS Documentation - Ze Yu</title>
+  <title>Fama_French - Ze Yu</title>
   
 
   <link
@@ -43,22 +43,22 @@
 <meta name="description" content="Personal knowledge space">
 <meta name="author" content="">
 
-<link rel="canonical" href="https://zeyuz35.github.io//notes/qG2B481xSr0LdJZXApqjH.html">
+<link rel="canonical" href="https://zeyuz35.github.io//notes/kdWEzmfE1rSZAZX1GwXsP.html">
 
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://zeyuz35.github.io//notes/qG2B481xSr0LdJZXApqjH.html">
+<meta property="og:url" content="https://zeyuz35.github.io//notes/kdWEzmfE1rSZAZX1GwXsP.html">
 <meta property="og:description" content="Personal knowledge space">
 <meta property="og:image" content="https://zeyuz35.github.io/undefined">
 
 <meta name="twitter:card" content="summary">
 
-<meta name="twitter:url" content="https://zeyuz35.github.io//notes/qG2B481xSr0LdJZXApqjH.html">
+<meta name="twitter:url" content="https://zeyuz35.github.io//notes/kdWEzmfE1rSZAZX1GwXsP.html">
 <meta name="twitter:description" content="Personal knowledge space">
 <meta name="twitter:image" content="https://zeyuz35.github.io/undefined">
 
 
-  <meta property="og:title" content="macroXTS Documentation - Ze Yu" />
-  <meta name="twitter:title" content="macroXTS Documentation - Ze Yu" />
+  <meta property="og:title" content="Fama_French - Ze Yu" />
+  <meta name="twitter:title" content="Fama_French - Ze Yu" />
   
 </head>
 
@@ -132,7 +132,7 @@
       
         
           <nav aria-label="Breadcrumb" class="breadcrumb-nav">
-            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://zeyuz35.github.io">PhD Homepage</a></li><li class="breadcrumb-nav-list-item"><a href="https://zeyuz35.github.io/notes/jtZSk246bVVDfJy6cdpS1.html">Datasets</a></li><li class="breadcrumb-nav-list-item">macroXTS Documentation</li></ol>
+            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://zeyuz35.github.io">PhD Homepage</a></li><li class="breadcrumb-nav-list-item"><a href="https://zeyuz35.github.io/notes/jtZSk246bVVDfJy6cdpS1.html">Datasets</a></li><li class="breadcrumb-nav-list-item">Fama_French</li></ol>
           </nav>
         
       
@@ -168,10 +168,10 @@
 <div id="main" role="main">
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="macroXTS Documentation">
+    <meta itemprop="headline" content="Fama_French">
     
-    <meta itemprop="datePublished" content="2021-10-26T13:02:21+00:00">
-    <meta itemprop="dateModified" content="2021-11-09T14:13:50+00:00">
+    <meta itemprop="datePublished" content="2021-11-09T14:01:54+00:00">
+    <meta itemprop="dateModified" content="2021-11-09T14:08:51+00:00">
 
     <div class="page__inner-wrap">
 
@@ -181,29 +181,18 @@
 
         
 
-        <h1 id="macroxts-documentation"><a aria-hidden="true" class="anchor-heading" href="#macroxts-documentation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>macroXTS Documentation</h1>
-<p>A document explaining the implementation of how datasets are stored/used generally in R.</p>
-<p>Note that this is mainly focused on the technical details, and notably omits anything to do with the actual data cleaning (see individual dataset pages for specifics).</p>
-<h2 id="macroxts-class"><a aria-hidden="true" class="anchor-heading" href="#macroxts-class"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>macroXTS class</h2>
-<p>All cleaned datasets are to be returned using the macroXTS class, which is a really just a wrapper around the wonderful xts() class.</p>
-<p>This is because xts() internally behaves like a numeric matrix, making it very easy to pass to things like scale(), unscale(), and most importantly, eigen() for DFM analysis.</p>
-<p>xts() itself also has helper methods which can easily extract/filter based on time.</p>
-<p>Additionally, ggfortify (despite it being large and clunky) provides many useful additional methods related to plotting.</p>
-<h3 id="methods-for-macroxts"><a aria-hidden="true" class="anchor-heading" href="#methods-for-macroxts"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Methods for macroXTS</h3>
-<p>macroXTS comes with unscale, level(), and descr() methods, in addition to the usual xts() methods we have access to.</p>
-<h2 id="constructor-function"><a aria-hidden="true" class="anchor-heading" href="#constructor-function"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Constructor Function</h2>
-<p>macroXTS() is the main constructor function, and takes in a level dataset, a corresponding vector of tcodes.</p>
-<p>The dataset can be of data.frame, xts, tsibble, as long as it has a valid date index.</p>
-<p>The general workflow should therefore be, clean using a data.frame() as a base class, then pass this + tcodes to macroXTS().</p>
-<div class="mermaid">
-  graph TD
-  A(data.csv) --> |Convert| B(data.frame/tsibble)
-  C(tcode.csv) --> |Convert| D(tcode vector)
-  B --> |Clean data using tidyverse/df| E(Cleaned df)
-  E --> |macroXTS| F(macroXTS obj)
-  D --> |macroXTS| F
-  F --> |eigen, etc| G(analysis)
-</div><span id="navId" data="qG2B481xSr0LdJZXApqjH"></span>
+        <h1 id="fama_french"><a aria-hidden="true" class="anchor-heading" href="#fama_french"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Fama_French</h1>
+<p>Fama French Data.</p>
+<p>Note that the goal in financial econometrics is to typically try to come up with factors which explain the <em>in sample</em> variation of returns.</p>
+<p>Fama French factors etc, were <em>never</em> intended to be used in any shape or form to be used for <em>prediction</em> of stock returns (not that this has stopped people from trying).</p>
+<p>Financial factors are really intended for investors to understand the different exposure effects in their portfolios.</p>
+<h2 id="3-factor-model"><a aria-hidden="true" class="anchor-heading" href="#3-factor-model"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>3 Factor Model</h2>
+<p>The most famous Fama French, the 3 factor model refers to the market factor (usual beta in finance), and the addition of Small Minus Big (SMB, size effect), and High Minus Low (HML, value effect) factor. </p>
+<p>The "factors" are the returns of a portfolio that longs Small stocks, and shorts Big stocks, where size is made according to a sort. The returns of this portfolio is then supposed to proxy for the underlying effect.</p>
+<h2 id="5-factor-model"><a aria-hidden="true" class="anchor-heading" href="#5-factor-model"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>5 Factor Model</h2>
+<p>Fama and French more recently introduce a 5 factor model. This is less well known.</p>
+<p>RMW is a profitability factor. </p>
+<p>CMA is conservative less aggresive.</p><span id="navId" data="kdWEzmfE1rSZAZX1GwXsP"></span>
 
                 
       </section>

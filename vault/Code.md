@@ -2,11 +2,13 @@
 id: MXHvc8bQbNRRVCB0UogRy
 title: Code Resources
 desc: ''
-updated: 1636422392111
+updated: 1636426847911
 created: 1636420962292
 ---
 
 Collection of Useful Code resources. Unfortunately most of this stuff is written in MATLAB...
+
+Some of this is a disaster and is written in GAUSS (ugh)
 
 Michael McCracken (FREDMD)
 
@@ -35,3 +37,8 @@ https://www.ssc.wisc.edu/~bhansen/progs/progs_paper.htm
 Gary Koop (Bayesian DFM stuff)
 
 https://sites.google.com/site/garykoop/home/computer-code-2?authuser=0
+
+James Morley 
+
+https://sites.google.com/site/jamescmorley/code?authuser=0
+
