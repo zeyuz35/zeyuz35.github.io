@@ -2,12 +2,10 @@
 id: 0R61RLuT7e3hswR2v6o0w
 title: Static Factor Models
 desc: ''
-updated: 1635403100234
+updated: 1636430576781
 created: 1634735127231
 stub: true
 ---
-
-# Static Factor Models
 
 This section presents details about (static) dynamic factor models, which has been the main 
 focus point up until now.
