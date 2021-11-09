@@ -2,13 +2,9 @@
 id: AavBcuQY4HsfEEVlqK6iN
 title: 3 Approximate Factor Model
 desc: ''
-updated: 1636096551839
+updated: 1636420769060
 created: 1635127716940
 ---
-
-# Approximate Factor Models
-
-This section focuses on approximate factor models. 
 
 Note that section 2 was focused on exact factor models, which assumed that $N$ was fixed, and was therefore skipped due to irrelevance.
 

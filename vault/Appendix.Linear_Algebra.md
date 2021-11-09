@@ -1,6 +1,6 @@
 ---
 id: dailP0MR8nIVqoelobEaN
-title: Linear Algebra
+title: Linear_Algebra
 desc: ''
 updated: 1636343740473
 created: 1635165273731

@@ -2,11 +2,13 @@
 id: T4FN6sDHfA9wxiZ7Dg5WX
 title: Dynamic Factor Models
 desc: ''
-updated: 1636284147008
+updated: 1636422678205
 created: 1634214992986
 ---
 
-This section details (truly) dynamic factor models. 
+## Nomenclature
+
+This thesis will refer to these as *dynamic* factor models, as opposed to *static* factor models. Confusingly, they are also referred to by Forni et al as *Generalized* Dynamic Factor Models. 
 
 Stock and Watson denote t a truly dynamic factor model as follows:
 
@@ -47,6 +49,8 @@ Also, outputs don't make too much sense... Need to spend more time studying this
 Beware of other misnomers in the literature! Someone else somewhere referred to dynamic PCA as simply PCA but run on lagged regressors - this is very different to what the rest of the literature at large says!
 
 freqdom package
+
+Will need to investigate how Barigozzi's factorcpt (which has been archived on CRAN for not passing checks) works.
 ## Dynamic PCA with Periodic Correlation
 
 pcdpca package
