@@ -1,0 +1,28 @@
+<h2 id="technical-specifications"><a aria-hidden="true" class="anchor-heading" href="#technical-specifications"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Technical Specifications</h2>
+<p>This is the master document for my PhD Thesis, investigating the issues that may arise from
+structural breaks, in the context of large macroeconomic factor models.</p>
+<p>This document will be mostly documented within markdown files in an implementation/format
+known as Dendron, open source and most crucially allows for tagging, and creation of
+very complex linking and visualization.</p>
+<p>It is also able to seamlessly weave together maths via KaTeX (or MathJax), simple diagrams
+via mermaid, and at least represent code chunks. It is unable, however, to directly
+interface with any programming languages, and should only serve as a notes guide and
+literature review tool.</p>
+<p>Note that because GitHub pages only builds websites from /docs/ occasionally, there is a bit of lag for this to update once pushed.</p>
+<h2 id="current-limitations"><a aria-hidden="true" class="anchor-heading" href="#current-limitations"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Current Limitations</h2>
+<h3 id="no-support-for-rendering-academic-citations"><a aria-hidden="true" class="anchor-heading" href="#no-support-for-rendering-academic-citations"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>No Support for rendering Academic Citations</h3>
+<p>Dendron does not have any support for properly rendering academic citations. Markdown style compatible citations are supported by VScode extensions such as Pandoc citer, but these are rendered as actual links. </p>
+<p>Rendering the same .md file via a pandoc based program.</p>
+<p>Therefore, for now, enter the citations in as you usually would. For something a bit more proper, you can simply render the same .md file using pandoc.</p>
+<p>Issue has requested on GitHub:</p>
+<p><a title="Private" style="color: brown" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank">https://github.com/dendronhq/dendron/issues/1605 (Private)</a></p>
+<p><a title="Private" style="color: brown" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank">https://github.com/dendronhq/dendron/issues/547 (Private)</a></p>
+<h2 id="no-renderexport-to-pdf"><a aria-hidden="true" class="anchor-heading" href="#no-renderexport-to-pdf"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>No render/export to PDF</h2>
+<p>No functionality to render/export to PDF. Closest we have is to open the preview as a HTML file, then convert that to a PDF.</p>
+<p>Similarly, the raw .md files can be rendered directly to .pdf via a pandoc approach. </p>
+<p>Advice: do everything in .md for now anyway.</p>
+<h2 id="narrow-stylesheet"><a aria-hidden="true" class="anchor-heading" href="#narrow-stylesheet"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Narrow stylesheet</h2>
+<p>Built websites using Dendron have a narrow stylesheet by default, </p>
+<h2 id="no-code-output"><a aria-hidden="true" class="anchor-heading" href="#no-code-output"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>No Code output</h2>
+<p>Dendron does not implement any ability to easily run/integrate code output, so annoyingly any output will need to be explicitly outputted from R, and inserted as "normal" images or tables. On the plus side, this is likely the approach I will have to go for more "proper" submissions using LaTeX proper anyway.</p>
+<p>Advice: Keep code output separate, and save into a folder called "plots" or something, then directly insert them in .md files.</p>

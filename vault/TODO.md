@@ -2,15 +2,17 @@
 id: BMClpTRP3V8ITqM7R4kh0
 title: To Do List
 desc: ''
-updated: 1636503427911
+updated: 1636526148937
 created: 1635455071285
 ---
 
 Focus Question: How many factors are detected in the presences of breaks?
 
-## To Do List
+Busywork
 
-Theoreotical
+- Retroactively add pandoc citations, now that a way to get them is working is (kind of) available
+
+Theoretical
 
 - Collate results representation theorems
 - HI representation

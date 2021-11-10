@@ -2,12 +2,14 @@
 id: T4FN6sDHfA9wxiZ7Dg5WX
 title: Dynamic Factor Models
 desc: ''
-updated: 1636513951031
+updated: 1636522732622
 created: 1634214992986
 geometry: margin=2cm
 bibliography: [references.bib]
 reference-section-title: References
 ---
+
+[@abarbanellAbnormalReturnsFundamental1998]
 
 ## Nomenclature
 

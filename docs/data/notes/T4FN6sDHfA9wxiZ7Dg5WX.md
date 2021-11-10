@@ -1,4 +1,6 @@
 
+[@abarbanellAbnormalReturnsFundamental1998]
+
 ## Nomenclature
 
 This thesis will refer to these as *dynamic* factor models, as opposed to *static* factor models. Confusingly, they are also referred to by Forni et al as *Generalized* Dynamic Factor Models. 

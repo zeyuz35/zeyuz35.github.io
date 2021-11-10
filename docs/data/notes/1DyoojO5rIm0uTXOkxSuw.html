@@ -1,0 +1,15 @@
+<p>Guide on how to get citations working.</p>
+<p>As mentioned in Dendron limitations section, Dendron does not currently support native rendering of academic citations (either in built in preview mode, or built to website).</p>
+<p>However, because Dendron just uses .md files files as a backend, it is possible to pass these to pandoc directly and knit them the "usual" way.</p>
+<p>A workflow that is fairly efficient is to use Pandoc Citer + vscode-pandoc.</p>
+<p>vscode-pandoc will require you adding in <code>--citeproc</code> in the pdf opt settings.</p>
+<p>Pandoc Citer requires you to add </p>
+<pre><code>geometry: margin=2cm
+bibliography: [references.bib]
+reference-section-title: References
+</code></pre>
+<p>to the front of every .md file YAML.</p>
+<p>In the meantime, this means that the built website is very annoying and won't have the references properly rendered. </p>
+<p>This method <em>should</em> be futureproof, because pandoc can directly convert .md files to .tex files (in fact this is already what it does in the backend).</p>
+<p>Note that however, pandoc is not perfect. Although Dendron links can be done with <code>[[]]</code>, pandoc does not render this correctly.</p>
+<p>This should not be too much of an issue for now, given that anything that needs to be properly rendered via pandoc shouldn't need cross document referencing anyway.</p>

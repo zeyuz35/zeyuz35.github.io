@@ -1,9 +1,11 @@
 
 Focus Question: How many factors are detected in the presences of breaks?
 
-## To Do List
+Busywork
 
-Theoreotical
+- Retroactively add pandoc citations, now that a way to get them is working is (kind of) available
+
+Theoretical
 
 - Collate results representation theorems
 - HI representation

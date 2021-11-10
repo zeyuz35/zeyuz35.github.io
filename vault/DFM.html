@@ -1,0 +1,26 @@
+<p><span class="citation" data-cites="abarbanellAbnormalReturnsFundamental1998">[@abarbanellAbnormalReturnsFundamental1998]</span></p>
+<h2 id="nomenclature">Nomenclature</h2>
+<p>This thesis will refer to these as <em>dynamic</em> factor models, as opposed to <em>static</em> factor models. Confusingly, they are also referred to by Forni et al as <em>Generalized</em> Dynamic Factor Models.</p>
+<p>Stock and Watson denote t a truly dynamic factor model as follows:</p>
+<p><span class="math display"><em>X</em><sub><em>i</em><em>t</em></sub> = <em>λ</em><sub><em>i</em></sub>(<em>L</em>)′<em>f</em><sub><em>t</em></sub> + <em>e</em><sub><em>i</em><em>t</em></sub></span></p>
+<p>where <span class="math inline"><em>f</em><sub><em>t</em></sub></span> is a <span class="math inline"><em>q</em></span> dimensional vector of dynamic factors, also known as primitive shocks, and <span class="math inline"><em>λ</em><sub><em>i</em></sub>(<em>L</em>)′</span> denotes the <span class="math inline"><em>q</em></span> dimensional lag polynomial, also called the “dynamic factor loadings”.</p>
+<p>Recall that the principal components estimate is formulated to estimate the <em>static</em> factors, which are written as</p>
+<p><span class="math display"><em>X</em><sub><em>t</em></sub> = <em>Λ</em><em>F</em><sub><em>t</em></sub> + <em>e</em><sub><em>t</em></sub></span></p>
+<p>For more details on the PC estimator, see [[SFM]] and its related sections.</p>
+<p>Estimating the dynamic factors directly has proven to be difficult, and is done mainly via dynamic principal components. Static principal components finds the closest approximation of the covariance matrix of <span class="math inline"><em>X</em><sub><em>t</em></sub></span>, among all covariance matrices of reduced rank. In contrast, dynamic principal components finds the closest approximation to the <em>spectrum</em> of <span class="math inline"><em>X</em><sub><em>t</em></sub></span>, among all possible spectral density matrices of reduced rank.</p>
+<p>Originally, Brillinger (1981)’s estimation algorithm generalizes static PCA to the frequency domain. The spectral dentisy of <span class="math inline"><em>X</em><sub><em>t</em></sub></span> is first estimated via some consistent spectral density estimator <span class="math inline"><em>Ŝ</em><sub><em>X</em><em>X</em></sub>(<em>ω</em>)</span>, at a given frequency <span class="math inline"><em>ω</em></span>. Next, the eigenvectors corresponding to the <span class="math inline"><em>q</em></span> largest eigenvalues of this matrix are computed. Then, an inverse Fourier Trasform of these eigenvectors yields estimators of the principal component time series using the formulas given.</p>
+<p>Note that because this was originally developed for classical factor analysis, the asymptotics of this under a large <span class="math inline"><em>N</em></span> dimension were not developed by the original author, though as expected asymptotic normality results hold.</p>
+<p>Subsequently, Forni et al (2000, 2004) study the properties of this algorithm, and establish inferential results for the resulting common component estimator. Dyanmic PCA is shown to provide piecewise consistent estimation of the component as <span class="math inline"><em>N</em></span>, <span class="math inline"><em>T</em></span> increase, and in their followup, this consistency holds if <span class="math inline"><em>N</em>, <em>T</em> → ∞</span> and <span class="math inline"><em>N</em>/<em>T</em> → 0</span>, suggesting that some caution to be exercised in finite samples if <span class="math inline"><em>N</em></span> is large relative to <span class="math inline"><em>T</em></span>.</p>
+<p>Note that because DPCA does not yield a consistent estimator of the common component</p>
+<p>Forni’s one sided filter approach….</p>
+<p>Note that the</p>
+<h2 id="dynamic-pca">Dynamic PCA</h2>
+<p>Note that this is VERY intensive! Also, outputs don’t make too much sense… Need to spend more time studying this</p>
+<p>Beware of other misnomers in the literature! Someone else somewhere referred to dynamic PCA as simply PCA but run on lagged regressors - this is very different to what the rest of the literature at large says!</p>
+<p>freqdom package</p>
+<p>Will need to investigate how Barigozzi’s factorcpt (which has been archived on CRAN for not passing checks) works.</p>
+<h2 id="dynamic-pca-with-periodic-correlation">Dynamic PCA with Periodic Correlation</h2>
+<p>pcdpca package Need to spend time to play around with this.</p>
+<h2 id="generalized-dynamic-pca">Generalized Dynamic PCA</h2>
+<p>gdpc package (fucking mess)</p>
+<p>Methods etc are all broken and even the example code given does not work - no idea how this was approved on CRAN</p>

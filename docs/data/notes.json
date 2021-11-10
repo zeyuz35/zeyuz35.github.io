@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1636516875344,
-      "created": 1636516875344,
+      "updated": 1636526427870,
+      "created": 1636526427870,
       "parent": null,
       "children": [],
       "data": {}
@@ -132,13 +132,13 @@
       "created": 1595961348801,
       "parent": null,
       "children": [
-        "jMIh51K0sWXZgTJg24c1e",
         "CQTUwoXQNcd0Y7la7IaAn",
         "AiXOWFsdvi3BPZxcUMjIi",
         "MsmFdXyWfizd5g8GGcObD",
         "MXHvc8bQbNRRVCB0UogRy",
         "T4FN6sDHfA9wxiZ7Dg5WX",
         "jtZSk246bVVDfJy6cdpS1",
+        "2qGHFR7CcKOE0Meu7UU6D",
         "qGmGYptDKW2WLwlsu2xJw",
         "GvwoAWaYZxq1czYi3t3k4",
         "ZIDZSAYP9a9L7jYhVMgcz",
@@ -153,8 +153,9 @@
         "AuDqSlWn0PlsSo8JdLgrR",
         "ElqQePaEuSSz7pSeO1gNc",
         "BMClpTRP3V8ITqM7R4kh0",
-        "SKUZ6b0dCeZkJQWeJkLAZ",
-        "y0rpX1u3Lz3vpUFro9TcW"
+        "FNflnQbSXuMwTtni2C8is",
+        "y0rpX1u3Lz3vpUFro9TcW",
+        "sGWUUgm41qGe8ckqnF76R"
       ],
       "data": {},
       "contentHash": "c6af9b2ed3aab77c392e8be93bbd7ee8",
@@ -163,6 +164,45 @@
         "nav_order": 0,
         "permalink": "/"
       }
+    },
+    "sGWUUgm41qGe8ckqnF76R": {
+      "id": "sGWUUgm41qGe8ckqnF76R",
+      "title": "Dedron",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "Dedron",
+      "updated": 1636525148952,
+      "created": 1636525148952,
+      "parent": "PhD",
+      "children": [
+        "1DyoojO5rIm0uTXOkxSuw"
+      ],
+      "data": {},
+      "stub": false
+    },
+    "1DyoojO5rIm0uTXOkxSuw": {
+      "id": "1DyoojO5rIm0uTXOkxSuw",
+      "title": "Citations",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "Dedron.citations",
+      "updated": 1636514221785,
+      "created": 1636511956938,
+      "parent": "sGWUUgm41qGe8ckqnF76R",
+      "children": [],
+      "data": {},
+      "contentHash": "6cde3b7f72409445ce130a8b81d5962d",
+      "custom": {}
     },
     "y0rpX1u3Lz3vpUFro9TcW": {
       "id": "y0rpX1u3Lz3vpUFro9TcW",
@@ -205,6 +245,48 @@
       "contentHash": "809e784a9948a4babe56b12b6fe78ed0",
       "custom": {}
     },
+    "FNflnQbSXuMwTtni2C8is": {
+      "id": "FNflnQbSXuMwTtni2C8is",
+      "title": "Time Series",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "Time_series",
+      "updated": 1636522415476,
+      "created": 1636522411165,
+      "parent": "PhD",
+      "children": [
+        "d8lw1Osg92jmpaCsgK4Tr"
+      ],
+      "data": {},
+      "contentHash": "967a6e1c433986a1d125b15fd9a00ff5",
+      "custom": {}
+    },
+    "d8lw1Osg92jmpaCsgK4Tr": {
+      "id": "d8lw1Osg92jmpaCsgK4Tr",
+      "title": "breaks",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "Time_series.breaks",
+      "updated": 1636525148960,
+      "created": 1636525148960,
+      "parent": "FNflnQbSXuMwTtni2C8is",
+      "children": [
+        "jMIh51K0sWXZgTJg24c1e",
+        "SKUZ6b0dCeZkJQWeJkLAZ"
+      ],
+      "data": {},
+      "stub": false
+    },
     "SKUZ6b0dCeZkJQWeJkLAZ": {
       "id": "SKUZ6b0dCeZkJQWeJkLAZ",
       "title": "Structural Break P Values",
@@ -244,13 +326,32 @@
           "column": 0
         }
       },
-      "fname": "breaks",
-      "updated": 1636284316460,
+      "fname": "Time_series.breaks.p_vals",
+      "updated": 1636522515830,
       "created": 1635212376940,
-      "parent": "PhD",
+      "parent": "d8lw1Osg92jmpaCsgK4Tr",
       "children": [],
       "data": {},
-      "contentHash": "53c170032788ecfafc2d9a766da1f4b0",
+      "contentHash": "026d72f6e63b7bbaddbed3d7ee4e7e01",
+      "custom": {}
+    },
+    "jMIh51K0sWXZgTJg24c1e": {
+      "id": "jMIh51K0sWXZgTJg24c1e",
+      "title": "Structural Break Critical Values",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "Time_series.breaks.critical_values",
+      "updated": 1636522448881,
+      "created": 1635143251667,
+      "parent": "d8lw1Osg92jmpaCsgK4Tr",
+      "children": [],
+      "data": {},
+      "contentHash": "5c57597748b94cdec20a58c09a456fb7",
       "custom": {}
     },
     "BMClpTRP3V8ITqM7R4kh0": {
@@ -261,52 +362,23 @@
       },
       "type": "note",
       "desc": "",
-      "links": [
-        {
-          "from": {
-            "fname": "root",
-            "vaultName": "vault"
-          },
-          "type": "backlink",
-          "position": {
-            "start": {
-              "line": 16,
-              "column": 1,
-              "offset": 477
-            },
-            "end": {
-              "line": 16,
-              "column": 9,
-              "offset": 485
-            },
-            "indent": []
-          },
-          "value": "TODO"
-        }
-      ],
+      "links": [],
       "anchors": {
-        "to-do-list": {
-          "type": "header",
-          "text": "To Do List",
-          "value": "to-do-list",
-          "line": 10,
-          "column": 0
-        },
         "cwf-project": {
           "type": "header",
           "text": "CWF Project",
           "value": "cwf-project",
-          "line": 49,
+          "line": 51,
           "column": 0
         }
       },
       "fname": "TODO",
-      "updated": 1636503427911,
+      "updated": 1636526148937,
       "created": 1635455071285,
       "parent": "PhD",
       "children": [],
       "data": {},
-      "contentHash": "e97c2c34b176c9f167bace73d0a7c0f4",
+      "contentHash": "f4d45aabe1390edca29886e50d362914",
       "custom": {}
     },
     "ElqQePaEuSSz7pSeO1gNc": {
@@ -721,25 +793,32 @@
       "desc": "",
       "links": [
         {
+          "type": "wiki",
           "from": {
-            "fname": "DFM",
+            "fname": "SFM",
+            "id": "0R61RLuT7e3hswR2v6o0w",
             "vaultName": "vault"
           },
-          "type": "backlink",
+          "value": "SFM.break",
+          "alias": "SFM.break",
           "position": {
             "start": {
-              "line": 20,
-              "column": 43,
-              "offset": 713
+              "line": 51,
+              "column": 165,
+              "offset": 4168
             },
             "end": {
-              "line": 20,
-              "column": 50,
-              "offset": 720
+              "line": 51,
+              "column": 178,
+              "offset": 4181
             },
             "indent": []
           },
-          "value": "SFM"
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "SFM.break"
+          }
         }
       ],
       "anchors": {},
@@ -3093,6 +3172,125 @@
       "contentHash": "e6f6f968bc0f2b462f51da8f89979673",
       "custom": {}
     },
+    "2qGHFR7CcKOE0Meu7UU6D": {
+      "id": "2qGHFR7CcKOE0Meu7UU6D",
+      "title": "Dendron Documentation",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Dendron",
+            "id": "2qGHFR7CcKOE0Meu7UU6D",
+            "vaultName": "vault"
+          },
+          "value": "https://github.com/dendronhq/dendron/issues/1605",
+          "alias": "https://github.com/dendronhq/dendron/issues/1605",
+          "position": {
+            "start": {
+              "line": 30,
+              "column": 1,
+              "offset": 1360
+            },
+            "end": {
+              "line": 30,
+              "column": 53,
+              "offset": 1412
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "https://github.com/dendronhq/dendron/issues/1605"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Dendron",
+            "id": "2qGHFR7CcKOE0Meu7UU6D",
+            "vaultName": "vault"
+          },
+          "value": "https://github.com/dendronhq/dendron/issues/547",
+          "alias": "https://github.com/dendronhq/dendron/issues/547",
+          "position": {
+            "start": {
+              "line": 32,
+              "column": 1,
+              "offset": 1414
+            },
+            "end": {
+              "line": 32,
+              "column": 52,
+              "offset": 1465
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "https://github.com/dendronhq/dendron/issues/547"
+          }
+        }
+      ],
+      "anchors": {
+        "technical-specifications": {
+          "type": "header",
+          "text": "Technical Specifications",
+          "value": "technical-specifications",
+          "line": 8,
+          "column": 0
+        },
+        "current-limitations": {
+          "type": "header",
+          "text": "Current Limitations",
+          "value": "current-limitations",
+          "line": 24,
+          "column": 0
+        },
+        "no-support-for-rendering-academic-citations": {
+          "type": "header",
+          "text": "No Support for rendering Academic Citations",
+          "value": "no-support-for-rendering-academic-citations",
+          "line": 26,
+          "column": 0
+        },
+        "no-renderexport-to-pdf": {
+          "type": "header",
+          "text": "No render/export to PDF",
+          "value": "no-renderexport-to-pdf",
+          "line": 40,
+          "column": 0
+        },
+        "narrow-stylesheet": {
+          "type": "header",
+          "text": "Narrow stylesheet",
+          "value": "narrow-stylesheet",
+          "line": 48,
+          "column": 0
+        },
+        "no-code-output": {
+          "type": "header",
+          "text": "No Code output",
+          "value": "no-code-output",
+          "line": 52,
+          "column": 0
+        }
+      },
+      "fname": "Dendron",
+      "updated": 1636514167375,
+      "created": 1636096635240,
+      "parent": "PhD",
+      "children": [],
+      "data": {},
+      "contentHash": "19e3eab91556ba93697eef01f1066d73",
+      "custom": {}
+    },
     "jtZSk246bVVDfJy6cdpS1": {
       "id": "jtZSk246bVVDfJy6cdpS1",
       "title": "Datasets",
@@ -3505,18 +3703,45 @@
             "id": "T4FN6sDHfA9wxiZ7Dg5WX",
             "vaultName": "vault"
           },
+          "value": "user.abarbanellAbnormalReturnsFundamental1998",
+          "alias": "@abarbanellAbnormalReturnsFundamental1998",
+          "position": {
+            "start": {
+              "line": 2,
+              "column": 2,
+              "offset": 2
+            },
+            "end": {
+              "line": 2,
+              "column": 43,
+              "offset": 43
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.abarbanellAbnormalReturnsFundamental1998"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "DFM",
+            "id": "T4FN6sDHfA9wxiZ7Dg5WX",
+            "vaultName": "vault"
+          },
           "value": "SFM",
           "alias": "SFM",
           "position": {
             "start": {
-              "line": 20,
+              "line": 22,
               "column": 43,
-              "offset": 713
+              "offset": 758
             },
             "end": {
-              "line": 20,
+              "line": 22,
               "column": 50,
-              "offset": 720
+              "offset": 765
             },
             "indent": []
           },
@@ -3532,41 +3757,41 @@
           "type": "header",
           "text": "Nomenclature",
           "value": "nomenclature",
-          "line": 12,
+          "line": 14,
           "column": 0
         },
         "dynamic-pca": {
           "type": "header",
           "text": "Dynamic PCA",
           "value": "dynamic-pca",
-          "line": 47,
+          "line": 49,
           "column": 0
         },
         "dynamic-pca-with-periodic-correlation": {
           "type": "header",
           "text": "Dynamic PCA with Periodic Correlation",
           "value": "dynamic-pca-with-periodic-correlation",
-          "line": 58,
+          "line": 60,
           "column": 0
         },
         "generalized-dynamic-pca": {
           "type": "header",
           "text": "Generalized Dynamic PCA",
           "value": "generalized-dynamic-pca",
-          "line": 63,
+          "line": 65,
           "column": 0
         }
       },
       "fname": "DFM",
-      "updated": 1636513951031,
+      "updated": 1636522732622,
       "created": 1634214992986,
       "parent": "PhD",
       "children": [
-        "1jV50YftmiErRFb7OgrEo",
-        "ghJgufNZMqDjTfu1EKtc1"
+        "ghJgufNZMqDjTfu1EKtc1",
+        "1jV50YftmiErRFb7OgrEo"
       ],
       "data": {},
-      "contentHash": "bf537688a5f54cf6285f6fb10da271a0",
+      "contentHash": "05d2140530e86534e35a115d5a7e212b",
       "custom": {
         "geometry": "margin=2cm",
         "bibliography": [
@@ -3574,6 +3799,71 @@
         ],
         "reference-section-title": "References"
       }
+    },
+    "1jV50YftmiErRFb7OgrEo": {
+      "id": "1jV50YftmiErRFb7OgrEo",
+      "title": "DFM Inference",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "DFM.inference",
+      "updated": 1636514974765,
+      "created": 1635336888631,
+      "parent": "T4FN6sDHfA9wxiZ7Dg5WX",
+      "children": [
+        "U0c40KtWCbQp02iuK28mt"
+      ],
+      "data": {},
+      "contentHash": "a981ad0b9d108a90b5bd19839eed2a10",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "U0c40KtWCbQp02iuK28mt": {
+      "id": "U0c40KtWCbQp02iuK28mt",
+      "title": "q Estimators",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "amengual-and-watson-aw07": {
+          "type": "header",
+          "text": "Amengual and Watson (AW07)",
+          "value": "amengual-and-watson-aw07",
+          "line": 14,
+          "column": 0
+        },
+        "bai-and-ng-2007-bn07": {
+          "type": "header",
+          "text": "Bai and Ng (2007) BN07",
+          "value": "bai-and-ng-2007-bn07",
+          "line": 18,
+          "column": 0
+        },
+        "hallin-and-liska-2007-hl07": {
+          "type": "header",
+          "text": "Hallin and Liska (2007) HL07",
+          "value": "hallin-and-liska-2007-hl07",
+          "line": 24,
+          "column": 0
+        }
+      },
+      "fname": "DFM.inference.q",
+      "updated": 1635335945368,
+      "created": 1635335632193,
+      "parent": "1jV50YftmiErRFb7OgrEo",
+      "children": [],
+      "data": {},
+      "contentHash": "48118b0698c5a2f3ec694d57e4783f60",
+      "custom": {}
     },
     "ghJgufNZMqDjTfu1EKtc1": {
       "id": "ghJgufNZMqDjTfu1EKtc1",
@@ -3634,72 +3924,7 @@
       "parent": "T4FN6sDHfA9wxiZ7Dg5WX",
       "children": [],
       "data": {},
-      "contentHash": "0ce84fa07b02209437ddea14f167d402",
-      "custom": {}
-    },
-    "1jV50YftmiErRFb7OgrEo": {
-      "id": "1jV50YftmiErRFb7OgrEo",
-      "title": "DFM Inference",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {},
-      "fname": "DFM.inference",
-      "updated": 1636514974765,
-      "created": 1635336888631,
-      "parent": "T4FN6sDHfA9wxiZ7Dg5WX",
-      "children": [
-        "U0c40KtWCbQp02iuK28mt"
-      ],
-      "data": {},
-      "contentHash": "c391ebe42d348d29c5fcc8e3bba73ad0",
-      "stub": false,
-      "custom": {
-        "stub": true
-      }
-    },
-    "U0c40KtWCbQp02iuK28mt": {
-      "id": "U0c40KtWCbQp02iuK28mt",
-      "title": "q Estimators",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {
-        "amengual-and-watson-aw07": {
-          "type": "header",
-          "text": "Amengual and Watson (AW07)",
-          "value": "amengual-and-watson-aw07",
-          "line": 14,
-          "column": 0
-        },
-        "bai-and-ng-2007-bn07": {
-          "type": "header",
-          "text": "Bai and Ng (2007) BN07",
-          "value": "bai-and-ng-2007-bn07",
-          "line": 18,
-          "column": 0
-        },
-        "hallin-and-liska-2007-hl07": {
-          "type": "header",
-          "text": "Hallin and Liska (2007) HL07",
-          "value": "hallin-and-liska-2007-hl07",
-          "line": 24,
-          "column": 0
-        }
-      },
-      "fname": "DFM.inference.q",
-      "updated": 1635335945368,
-      "created": 1635335632193,
-      "parent": "1jV50YftmiErRFb7OgrEo",
-      "children": [],
-      "data": {},
-      "contentHash": "48118b0698c5a2f3ec694d57e4783f60",
+      "contentHash": "f90e71e6afa6675fbd220adc70931893",
       "custom": {}
     },
     "MXHvc8bQbNRRVCB0UogRy": {
@@ -4477,25 +4702,6 @@
       "contentHash": "a42bdcc20380e88baadc5364d99805ef",
       "custom": {}
     },
-    "jMIh51K0sWXZgTJg24c1e": {
-      "id": "jMIh51K0sWXZgTJg24c1e",
-      "title": "Structural Break Critical Values",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {},
-      "fname": "Andrews_crit",
-      "updated": 1636263478903,
-      "created": 1635143251667,
-      "parent": "PhD",
-      "children": [],
-      "data": {},
-      "contentHash": "14ad8585972193355728e3b9c57ff051",
-      "custom": {}
-    },
     "changelog": {
       "id": "changelog",
       "title": "Changelog",
@@ -4507,8 +4713,8 @@
       "links": [],
       "anchors": {},
       "fname": "root.changelog",
-      "updated": 1636516875344,
-      "created": 1636516875344,
+      "updated": 1636526427870,
+      "created": 1636526427870,
       "parent": null,
       "children": [],
       "data": {}
@@ -4630,13 +4836,13 @@
       "created": 1595961348801,
       "parent": null,
       "children": [
-        "jMIh51K0sWXZgTJg24c1e",
         "CQTUwoXQNcd0Y7la7IaAn",
         "AiXOWFsdvi3BPZxcUMjIi",
         "MsmFdXyWfizd5g8GGcObD",
         "MXHvc8bQbNRRVCB0UogRy",
         "T4FN6sDHfA9wxiZ7Dg5WX",
         "jtZSk246bVVDfJy6cdpS1",
+        "2qGHFR7CcKOE0Meu7UU6D",
         "qGmGYptDKW2WLwlsu2xJw",
         "GvwoAWaYZxq1czYi3t3k4",
         "ZIDZSAYP9a9L7jYhVMgcz",
@@ -4651,17 +4857,18 @@
         "AuDqSlWn0PlsSo8JdLgrR",
         "ElqQePaEuSSz7pSeO1gNc",
         "BMClpTRP3V8ITqM7R4kh0",
-        "SKUZ6b0dCeZkJQWeJkLAZ",
-        "y0rpX1u3Lz3vpUFro9TcW"
+        "FNflnQbSXuMwTtni2C8is",
+        "y0rpX1u3Lz3vpUFro9TcW",
+        "sGWUUgm41qGe8ckqnF76R"
       ],
-      "body": "\nWelcome to my website!\n\nThis website has been built using Dendron, and each topic has been collated into collapsible sections on the left hand side. Below is a high level overview showing how each section is connected for ease of navigation.\n\n\n\nDendron has incredibly powerful search functionality due to good indexing, even outside of working in raw .md files. Simply use the search bar at the top of the website to find something.\n\n## Quick Links\n\n[[roadmap]]\n\n[[Meeting]]\n\n[[TODO]]\n\n## To do List\n\nType up Bai and Ng assumptions\n\nInvestigate Bates et al Assumptions\n\nInvestigate consistency of using an estimated break point in conjunction with BNIC\nThis seems to be consistent using k_tilde that itself may be Op(1)\n\nFix up BP test for better interface (low priority)\n\nImplement simulated Andrews exp and mean Wald/LM tests\n\n- look into RSpectra package (supposedly faster eigen)\n- not sure whether to rename this to SFM or not (lots of legacy code that needs to be changed)\n\nData\nFix and clean data for \n- AUMD (on hold, need to find date index)\n- FREDQD\n- CANMD (should be straightforward)\n- CANQD\n- UKMD (should be straightforward)\n\nInvestigate further sources of time series that could be used during COVID\n\nImplement truly dynamic factor models (Forni) using Dynamic PCA\n- BIG task\n- read into dynamic PCA\n- read into testing no. of dynamic factors\n- do not believe there is a literature focusing on breaks in the dynamic setup\n- implement dynamic PCA\n- implement testing no of factors, (look into ICshocks functions and make this interface better)\n- implement testing no of factors using AW test\n\nImplement BKW standard test (non sequential)\n\nFix up BKW test\n- implement a general plot method which plots *something* on the y axis, but most importantly, date on the x axis with estimated break dates, and each partition labelled with the no. of factors as determined by some consistent estimator\n\nFix up BE test\n- so that there is a consistent interface for accessing this\n\n\n\n",
       "data": {},
       "contentHash": "c6af9b2ed3aab77c392e8be93bbd7ee8",
       "custom": {
         "stub": false,
         "nav_order": 0,
         "permalink": "/"
-      }
+      },
+      "body": "\nWelcome to my website!\n\nThis website has been built using Dendron, and each topic has been collated into collapsible sections on the left hand side. Below is a high level overview showing how each section is connected for ease of navigation.\n\n\n\nDendron has incredibly powerful search functionality due to good indexing, even outside of working in raw .md files. Simply use the search bar at the top of the website to find something.\n\n## Quick Links\n\n[[roadmap]]\n\n[[Meeting]]\n\n[[TODO]]\n\n## To do List\n\nType up Bai and Ng assumptions\n\nInvestigate Bates et al Assumptions\n\nInvestigate consistency of using an estimated break point in conjunction with BNIC\nThis seems to be consistent using k_tilde that itself may be Op(1)\n\nFix up BP test for better interface (low priority)\n\nImplement simulated Andrews exp and mean Wald/LM tests\n\n- look into RSpectra package (supposedly faster eigen)\n- not sure whether to rename this to SFM or not (lots of legacy code that needs to be changed)\n\nData\nFix and clean data for \n- AUMD (on hold, need to find date index)\n- FREDQD\n- CANMD (should be straightforward)\n- CANQD\n- UKMD (should be straightforward)\n\nInvestigate further sources of time series that could be used during COVID\n\nImplement truly dynamic factor models (Forni) using Dynamic PCA\n- BIG task\n- read into dynamic PCA\n- read into testing no. of dynamic factors\n- do not believe there is a literature focusing on breaks in the dynamic setup\n- implement dynamic PCA\n- implement testing no of factors, (look into ICshocks functions and make this interface better)\n- implement testing no of factors using AW test\n\nImplement BKW standard test (non sequential)\n\nFix up BKW test\n- implement a general plot method which plots *something* on the y axis, but most importantly, date on the x axis with estimated break dates, and each partition labelled with the no. of factors as determined by some consistent estimator\n\nFix up BE test\n- so that there is a consistent interface for accessing this\n\n\n\n"
     }
   ],
   "noteIndex": {
@@ -4779,13 +4986,13 @@
     "created": 1595961348801,
     "parent": null,
     "children": [
-      "jMIh51K0sWXZgTJg24c1e",
       "CQTUwoXQNcd0Y7la7IaAn",
       "AiXOWFsdvi3BPZxcUMjIi",
       "MsmFdXyWfizd5g8GGcObD",
       "MXHvc8bQbNRRVCB0UogRy",
       "T4FN6sDHfA9wxiZ7Dg5WX",
       "jtZSk246bVVDfJy6cdpS1",
+      "2qGHFR7CcKOE0Meu7UU6D",
       "qGmGYptDKW2WLwlsu2xJw",
       "GvwoAWaYZxq1czYi3t3k4",
       "ZIDZSAYP9a9L7jYhVMgcz",
@@ -4800,17 +5007,18 @@
       "AuDqSlWn0PlsSo8JdLgrR",
       "ElqQePaEuSSz7pSeO1gNc",
       "BMClpTRP3V8ITqM7R4kh0",
-      "SKUZ6b0dCeZkJQWeJkLAZ",
-      "y0rpX1u3Lz3vpUFro9TcW"
+      "FNflnQbSXuMwTtni2C8is",
+      "y0rpX1u3Lz3vpUFro9TcW",
+      "sGWUUgm41qGe8ckqnF76R"
     ],
-    "body": "\nWelcome to my website!\n\nThis website has been built using Dendron, and each topic has been collated into collapsible sections on the left hand side. Below is a high level overview showing how each section is connected for ease of navigation.\n\n\n\nDendron has incredibly powerful search functionality due to good indexing, even outside of working in raw .md files. Simply use the search bar at the top of the website to find something.\n\n## Quick Links\n\n[[roadmap]]\n\n[[Meeting]]\n\n[[TODO]]\n\n## To do List\n\nType up Bai and Ng assumptions\n\nInvestigate Bates et al Assumptions\n\nInvestigate consistency of using an estimated break point in conjunction with BNIC\nThis seems to be consistent using k_tilde that itself may be Op(1)\n\nFix up BP test for better interface (low priority)\n\nImplement simulated Andrews exp and mean Wald/LM tests\n\n- look into RSpectra package (supposedly faster eigen)\n- not sure whether to rename this to SFM or not (lots of legacy code that needs to be changed)\n\nData\nFix and clean data for \n- AUMD (on hold, need to find date index)\n- FREDQD\n- CANMD (should be straightforward)\n- CANQD\n- UKMD (should be straightforward)\n\nInvestigate further sources of time series that could be used during COVID\n\nImplement truly dynamic factor models (Forni) using Dynamic PCA\n- BIG task\n- read into dynamic PCA\n- read into testing no. of dynamic factors\n- do not believe there is a literature focusing on breaks in the dynamic setup\n- implement dynamic PCA\n- implement testing no of factors, (look into ICshocks functions and make this interface better)\n- implement testing no of factors using AW test\n\nImplement BKW standard test (non sequential)\n\nFix up BKW test\n- implement a general plot method which plots *something* on the y axis, but most importantly, date on the x axis with estimated break dates, and each partition labelled with the no. of factors as determined by some consistent estimator\n\nFix up BE test\n- so that there is a consistent interface for accessing this\n\n\n\n",
     "data": {},
     "contentHash": "c6af9b2ed3aab77c392e8be93bbd7ee8",
     "custom": {
       "stub": false,
       "nav_order": 0,
       "permalink": "/"
-    }
+    },
+    "body": "\nWelcome to my website!\n\nThis website has been built using Dendron, and each topic has been collated into collapsible sections on the left hand side. Below is a high level overview showing how each section is connected for ease of navigation.\n\n\n\nDendron has incredibly powerful search functionality due to good indexing, even outside of working in raw .md files. Simply use the search bar at the top of the website to find something.\n\n## Quick Links\n\n[[roadmap]]\n\n[[Meeting]]\n\n[[TODO]]\n\n## To do List\n\nType up Bai and Ng assumptions\n\nInvestigate Bates et al Assumptions\n\nInvestigate consistency of using an estimated break point in conjunction with BNIC\nThis seems to be consistent using k_tilde that itself may be Op(1)\n\nFix up BP test for better interface (low priority)\n\nImplement simulated Andrews exp and mean Wald/LM tests\n\n- look into RSpectra package (supposedly faster eigen)\n- not sure whether to rename this to SFM or not (lots of legacy code that needs to be changed)\n\nData\nFix and clean data for \n- AUMD (on hold, need to find date index)\n- FREDQD\n- CANMD (should be straightforward)\n- CANQD\n- UKMD (should be straightforward)\n\nInvestigate further sources of time series that could be used during COVID\n\nImplement truly dynamic factor models (Forni) using Dynamic PCA\n- BIG task\n- read into dynamic PCA\n- read into testing no. of dynamic factors\n- do not believe there is a literature focusing on breaks in the dynamic setup\n- implement dynamic PCA\n- implement testing no of factors, (look into ICshocks functions and make this interface better)\n- implement testing no of factors using AW test\n\nImplement BKW standard test (non sequential)\n\nFix up BKW test\n- implement a general plot method which plots *something* on the y axis, but most importantly, date on the x axis with estimated break dates, and each partition labelled with the no. of factors as determined by some consistent estimator\n\nFix up BE test\n- so that there is a consistent interface for accessing this\n\n\n\n"
   },
   "vaults": [
     {
