@@ -1,5 +1,5 @@
 version: 3
-useFMTitle: true
+useFMTitle: false
 useNoteTitleForLink: true
 noLegacyNoteRef: true
 mermaid: true

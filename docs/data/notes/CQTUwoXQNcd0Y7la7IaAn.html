@@ -1,0 +1,47 @@
+<h1 id="appendix"><a aria-hidden="true" class="anchor-heading" href="#appendix"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Appendix</h1>
+<p>This appendix document includes general results that are broadly applicable, and other
+details that are otherwise too messy to include in the main body of the review.</p>
+<h2 id="long-run-covariance-matrices"><a aria-hidden="true" class="anchor-heading" href="#long-run-covariance-matrices"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Long Run Covariance Matrices</h2>
+<p>In the context of time dependent data, serial correlation is a common occurrence and can inflate the usual estimated standard errors, making inference invalid/unreliable. </p>
+<p>More precisely, serial correlation is when the innovations (error) terms in a stochastic process are themselves serially correlated. </p>
+<p>Suppose we are interested in estimating the covariance matrix of a vector of time series, say <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mrow><mi>i</mi><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">X_{it}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span>, subject to possible serial correlation. Then the correlation matrix via the standard way will result in a likely very dense covariance matrix, which is incorrect. </p>
+<p>Additionally, the individual time series may themselves be cross sectionally correlated, adding an additional source of error for covariance matrix estimate.</p>
+<p>This is solved via the use of heteroskedasticity and autocorrelation consistent estimators. </p>
+<p>In R, this is (and many other covariance matrix estimators) are implemented via the sandwich package.</p>
+<p>Note that sandwich implements many advanced features by default, such as using an adaptively choosing bandwidth. This is usually the ``better" way for better finite sample performance, but because this is more subjective, and the literature is lazy and prefers to use a simpler method, they typically do not do this.</p>
+<p>lrvar() and kernHAC() have extra arguments to facilitate a more DIY approach, and this is critical for replicating the results of various papers.</p>
+<pre class="language-{r}"><code class="language-{r}">library(sandwich)
+# Simulate some AR1 mts
+X &#x3C;- data.frame(
+  x1 = arima.sim(list(ar = 0.5), n = 100),
+  x2 = arima.sim(list(ar = 0.5), n = 100),
+  x3 = arima.sim(list(ar = 0.5), n = 100)
+) |> as.matrix()
+
+# Usual variance matrix (incorrect in presence of serial/cross sectional correlation)
+X |> var()
+
+# using lrvar (can take a while to run), by default an Andrews type
+X |> lrvar()
+
+# lrvar is that same as regressing ALL columns on a constant, then applying
+# an appropriate HAC mthod to it
+# This may be preferred if you wish to work with an lm() object environment
+lm(X ~ 1) |> kernHAC()
+
+# Newey West Type (prewhtie and adjust = TRUE by default)
+X |> lrvar("Newey-West")
+
+# Using lm interface
+lm(X ~ 1) |> NeweyWest(prewhite = TRUE, adjust = TRUE)
+
+# Specifying arguments, such as bandwdith
+X |> lrvar(bw = 0.15)
+</code></pre>
+<hr>
+<h2 id="children"><a aria-hidden="true" class="anchor-heading" href="#children"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Children</h2>
+<ol>
+<li><a href="/notes/1V9tDyQwkgBuhWMngZc6p">Limit Theorems</a></li>
+<li><a href="/notes/dailP0MR8nIVqoelobEaN">Linear_Algebra</a></li>
+<li><a href="/notes/VjFz27ulYSsBjd87IBLMa">Stochastic_order</a></li>
+</ol>

@@ -1,0 +1,22 @@
+<p>A document explaining the implementation of how datasets are stored/used generally in R.</p>
+<p>Note that this is mainly focused on the technical details, and notably omits anything to do with the actual data cleaning (see individual dataset pages for specifics).</p>
+<h2 id="macroxts-class"><a aria-hidden="true" class="anchor-heading" href="#macroxts-class"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>macroXTS class</h2>
+<p>All cleaned datasets are to be returned using the macroXTS class, which is a really just a wrapper around the wonderful xts() class.</p>
+<p>This is because xts() internally behaves like a numeric matrix, making it very easy to pass to things like scale(), unscale(), and most importantly, eigen() for DFM analysis.</p>
+<p>xts() itself also has helper methods which can easily extract/filter based on time.</p>
+<p>Additionally, ggfortify (despite it being large and clunky) provides many useful additional methods related to plotting.</p>
+<h3 id="methods-for-macroxts"><a aria-hidden="true" class="anchor-heading" href="#methods-for-macroxts"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Methods for macroXTS</h3>
+<p>macroXTS comes with unscale, level(), and descr() methods, in addition to the usual xts() methods we have access to.</p>
+<h2 id="constructor-function"><a aria-hidden="true" class="anchor-heading" href="#constructor-function"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Constructor Function</h2>
+<p>macroXTS() is the main constructor function, and takes in a level dataset, a corresponding vector of tcodes.</p>
+<p>The dataset can be of data.frame, xts, tsibble, as long as it has a valid date index.</p>
+<p>The general workflow should therefore be, clean using a data.frame() as a base class, then pass this + tcodes to macroXTS().</p>
+<div class="mermaid">
+  graph TD
+  A(data.csv) --> |Convert| B(data.frame/tsibble)
+  C(tcode.csv) --> |Convert| D(tcode vector)
+  B --> |Clean data using tidyverse/df| E(Cleaned df)
+  E --> |macroXTS| F(macroXTS obj)
+  D --> |macroXTS| F
+  F --> |eigen, etc| G(analysis)
+</div>

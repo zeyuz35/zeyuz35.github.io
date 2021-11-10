@@ -2,8 +2,11 @@
 id: T4FN6sDHfA9wxiZ7Dg5WX
 title: Dynamic Factor Models
 desc: ''
-updated: 1636422678205
+updated: 1636513951031
 created: 1634214992986
+geometry: margin=2cm
+bibliography: [references.bib]
+reference-section-title: References
 ---
 
 ## Nomenclature
@@ -51,6 +54,7 @@ Beware of other misnomers in the literature! Someone else somewhere referred to 
 freqdom package
 
 Will need to investigate how Barigozzi's factorcpt (which has been archived on CRAN for not passing checks) works.
+
 ## Dynamic PCA with Periodic Correlation
 
 pcdpca package
@@ -61,6 +65,5 @@ Need to spend time to play around with this.
 gdpc package (fucking mess)
 
 Methods etc are all broken and even the example code given does not work - no idea how this was approved on CRAN
-
 
 

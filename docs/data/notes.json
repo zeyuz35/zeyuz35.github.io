@@ -1,0 +1,4820 @@
+{
+  "notes": {
+    "403": {
+      "id": "403",
+      "title": "This page has not yet sprouted",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "403",
+      "updated": 1636516875344,
+      "created": 1636516875344,
+      "parent": null,
+      "children": [],
+      "data": {}
+    },
+    "PhD": {
+      "id": "PhD",
+      "title": "PhD Homepage",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "root",
+            "id": "PhD",
+            "vaultName": "vault"
+          },
+          "value": "roadmap",
+          "alias": "roadmap",
+          "position": {
+            "start": {
+              "line": 12,
+              "column": 1,
+              "offset": 451
+            },
+            "end": {
+              "line": 12,
+              "column": 12,
+              "offset": 462
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "roadmap"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "root",
+            "id": "PhD",
+            "vaultName": "vault"
+          },
+          "value": "Meeting",
+          "alias": "Meeting",
+          "position": {
+            "start": {
+              "line": 14,
+              "column": 1,
+              "offset": 464
+            },
+            "end": {
+              "line": 14,
+              "column": 12,
+              "offset": 475
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "Meeting"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "root",
+            "id": "PhD",
+            "vaultName": "vault"
+          },
+          "value": "TODO",
+          "alias": "TODO",
+          "position": {
+            "start": {
+              "line": 16,
+              "column": 1,
+              "offset": 477
+            },
+            "end": {
+              "line": 16,
+              "column": 9,
+              "offset": 485
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "TODO"
+          }
+        }
+      ],
+      "anchors": {
+        "quick-links": {
+          "type": "header",
+          "text": "Quick Links",
+          "value": "quick-links",
+          "line": 17,
+          "column": 0
+        },
+        "to-do-list": {
+          "type": "header",
+          "text": "To do List",
+          "value": "to-do-list",
+          "line": 25,
+          "column": 0
+        }
+      },
+      "fname": "root",
+      "updated": 1636511545745,
+      "created": 1595961348801,
+      "parent": null,
+      "children": [
+        "jMIh51K0sWXZgTJg24c1e",
+        "CQTUwoXQNcd0Y7la7IaAn",
+        "AiXOWFsdvi3BPZxcUMjIi",
+        "MsmFdXyWfizd5g8GGcObD",
+        "MXHvc8bQbNRRVCB0UogRy",
+        "T4FN6sDHfA9wxiZ7Dg5WX",
+        "jtZSk246bVVDfJy6cdpS1",
+        "qGmGYptDKW2WLwlsu2xJw",
+        "GvwoAWaYZxq1czYi3t3k4",
+        "ZIDZSAYP9a9L7jYhVMgcz",
+        "WOnXV41UlGcOQzEoTZzJU",
+        "fhf7Gdr3mhOUG1mU5twC6",
+        "AOvKFmg0tBcGmUASXaALX",
+        "qDVp6IFHf6FiUdSgxwZMA",
+        "fHzGITjWkNNkiwsQpdex4",
+        "umGHrdI4OaLoU8OOAOdkL",
+        "aQw5xJBpqunSJYCfXXAls",
+        "0R61RLuT7e3hswR2v6o0w",
+        "AuDqSlWn0PlsSo8JdLgrR",
+        "ElqQePaEuSSz7pSeO1gNc",
+        "BMClpTRP3V8ITqM7R4kh0",
+        "SKUZ6b0dCeZkJQWeJkLAZ",
+        "y0rpX1u3Lz3vpUFro9TcW"
+      ],
+      "data": {},
+      "contentHash": "c6af9b2ed3aab77c392e8be93bbd7ee8",
+      "custom": {
+        "stub": false,
+        "nav_order": 0,
+        "permalink": "/"
+      }
+    },
+    "y0rpX1u3Lz3vpUFro9TcW": {
+      "id": "y0rpX1u3Lz3vpUFro9TcW",
+      "title": "Research Roadmap",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "from": {
+            "fname": "root",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 12,
+              "column": 1,
+              "offset": 451
+            },
+            "end": {
+              "line": 12,
+              "column": 12,
+              "offset": 462
+            },
+            "indent": []
+          },
+          "value": "roadmap"
+        }
+      ],
+      "anchors": {},
+      "fname": "roadmap",
+      "updated": 1636339829125,
+      "created": 1636339774039,
+      "parent": "PhD",
+      "children": [],
+      "data": {},
+      "contentHash": "809e784a9948a4babe56b12b6fe78ed0",
+      "custom": {}
+    },
+    "SKUZ6b0dCeZkJQWeJkLAZ": {
+      "id": "SKUZ6b0dCeZkJQWeJkLAZ",
+      "title": "Structural Break P Values",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "andrews-critical-values": {
+          "type": "header",
+          "text": "Andrews critical Values",
+          "value": "andrews-critical-values",
+          "line": 8,
+          "column": 0
+        },
+        "andrews-asymptotic-p-values-by-bruce-hansen": {
+          "type": "header",
+          "text": "Andrews asymptotic p-values, by Bruce Hansen",
+          "value": "andrews-asymptotic-p-values-by-bruce-hansen",
+          "line": 10,
+          "column": 0
+        },
+        "bai-and-perron": {
+          "type": "header",
+          "text": "Bai and Perron",
+          "value": "bai-and-perron",
+          "line": 18,
+          "column": 0
+        },
+        "qu-and-perron": {
+          "type": "header",
+          "text": "Qu and Perron",
+          "value": "qu-and-perron",
+          "line": 30,
+          "column": 0
+        }
+      },
+      "fname": "breaks",
+      "updated": 1636284316460,
+      "created": 1635212376940,
+      "parent": "PhD",
+      "children": [],
+      "data": {},
+      "contentHash": "53c170032788ecfafc2d9a766da1f4b0",
+      "custom": {}
+    },
+    "BMClpTRP3V8ITqM7R4kh0": {
+      "id": "BMClpTRP3V8ITqM7R4kh0",
+      "title": "To Do List",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "from": {
+            "fname": "root",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 16,
+              "column": 1,
+              "offset": 477
+            },
+            "end": {
+              "line": 16,
+              "column": 9,
+              "offset": 485
+            },
+            "indent": []
+          },
+          "value": "TODO"
+        }
+      ],
+      "anchors": {
+        "to-do-list": {
+          "type": "header",
+          "text": "To Do List",
+          "value": "to-do-list",
+          "line": 10,
+          "column": 0
+        },
+        "cwf-project": {
+          "type": "header",
+          "text": "CWF Project",
+          "value": "cwf-project",
+          "line": 49,
+          "column": 0
+        }
+      },
+      "fname": "TODO",
+      "updated": 1636503427911,
+      "created": 1635455071285,
+      "parent": "PhD",
+      "children": [],
+      "data": {},
+      "contentHash": "e97c2c34b176c9f167bace73d0a7c0f4",
+      "custom": {}
+    },
+    "ElqQePaEuSSz7pSeO1gNc": {
+      "id": "ElqQePaEuSSz7pSeO1gNc",
+      "title": "State Space Approaches to DFMs",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "State_Space",
+            "id": "ElqQePaEuSSz7pSeO1gNc",
+            "vaultName": "vault"
+          },
+          "value": "Bayesian",
+          "alias": "Bayesian",
+          "position": {
+            "start": {
+              "line": 10,
+              "column": 128,
+              "offset": 675
+            },
+            "end": {
+              "line": 10,
+              "column": 140,
+              "offset": 687
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "Bayesian"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "State_Space",
+            "id": "ElqQePaEuSSz7pSeO1gNc",
+            "vaultName": "vault"
+          },
+          "value": "Kalman_Filter",
+          "alias": "Kalman_Filter",
+          "position": {
+            "start": {
+              "line": 14,
+              "column": 5,
+              "offset": 720
+            },
+            "end": {
+              "line": 14,
+              "column": 22,
+              "offset": 737
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "Kalman_Filter"
+          }
+        }
+      ],
+      "anchors": {
+        "numerical-computation": {
+          "type": "header",
+          "text": "Numerical Computation",
+          "value": "numerical-computation",
+          "line": 18,
+          "column": 0
+        }
+      },
+      "fname": "State_Space",
+      "updated": 1635379300131,
+      "created": 1635379022669,
+      "parent": "PhD",
+      "children": [],
+      "data": {},
+      "contentHash": "366791309464d3335c46709946b69584",
+      "custom": {}
+    },
+    "AuDqSlWn0PlsSo8JdLgrR": {
+      "id": "AuDqSlWn0PlsSo8JdLgrR",
+      "title": "Software",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Software",
+            "id": "AuDqSlWn0PlsSo8JdLgrR",
+            "vaultName": "vault"
+          },
+          "value": "Software.AWS",
+          "alias": "Software.AWS",
+          "position": {
+            "start": {
+              "line": 30,
+              "column": 5,
+              "offset": 738
+            },
+            "end": {
+              "line": 30,
+              "column": 21,
+              "offset": 754
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "Software.AWS"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Software",
+            "id": "AuDqSlWn0PlsSo8JdLgrR",
+            "vaultName": "vault"
+          },
+          "value": "Software.HPC",
+          "alias": "Software.HPC",
+          "position": {
+            "start": {
+              "line": 34,
+              "column": 5,
+              "offset": 776
+            },
+            "end": {
+              "line": 34,
+              "column": 21,
+              "offset": 792
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "Software.HPC"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Software",
+            "id": "AuDqSlWn0PlsSo8JdLgrR",
+            "vaultName": "vault"
+          },
+          "value": "Software.Git",
+          "alias": "Software.Git",
+          "position": {
+            "start": {
+              "line": 38,
+              "column": 5,
+              "offset": 806
+            },
+            "end": {
+              "line": 38,
+              "column": 21,
+              "offset": 822
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "Software.Git"
+          }
+        }
+      ],
+      "anchors": {
+        "r": {
+          "type": "header",
+          "text": "R",
+          "value": "r",
+          "line": 10,
+          "column": 0
+        },
+        "citrix": {
+          "type": "header",
+          "text": "Citrix",
+          "value": "citrix",
+          "line": 20,
+          "column": 0
+        },
+        "eviews": {
+          "type": "header",
+          "text": "EViews",
+          "value": "eviews",
+          "line": 28,
+          "column": 0
+        },
+        "aws": {
+          "type": "header",
+          "text": "AWS",
+          "value": "aws",
+          "line": 34,
+          "column": 0
+        },
+        "monarchhpc": {
+          "type": "header",
+          "text": "MONARCH/HPC",
+          "value": "monarchhpc",
+          "line": 38,
+          "column": 0
+        },
+        "git": {
+          "type": "header",
+          "text": "Git",
+          "value": "git",
+          "line": 42,
+          "column": 0
+        }
+      },
+      "fname": "Software",
+      "updated": 1636428260839,
+      "created": 1636427887650,
+      "parent": "PhD",
+      "children": [
+        "pHk638EFKNsd7l8ofo19m",
+        "DnfP7up0cIhvaUWp23Jtk",
+        "Pn4jty9CxKSvbfTSqLMj3"
+      ],
+      "data": {},
+      "contentHash": "29b8cb07378cdf30e90ae370747cb2ae",
+      "custom": {}
+    },
+    "Pn4jty9CxKSvbfTSqLMj3": {
+      "id": "Pn4jty9CxKSvbfTSqLMj3",
+      "title": "HPC",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "from": {
+            "fname": "Software",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 34,
+              "column": 5,
+              "offset": 776
+            },
+            "end": {
+              "line": 34,
+              "column": 21,
+              "offset": 792
+            },
+            "indent": []
+          },
+          "value": "Software.HPC"
+        }
+      ],
+      "anchors": {
+        "linux": {
+          "type": "header",
+          "text": "Linux",
+          "value": "linux",
+          "line": 12,
+          "column": 0
+        },
+        "submittingrunning-jobs": {
+          "type": "header",
+          "text": "Submitting/running Jobs",
+          "value": "submittingrunning-jobs",
+          "line": 16,
+          "column": 0
+        }
+      },
+      "fname": "Software.HPC",
+      "updated": 1636428362828,
+      "created": 1636428217183,
+      "parent": "AuDqSlWn0PlsSo8JdLgrR",
+      "children": [],
+      "data": {},
+      "contentHash": "a6d9d7be6792f4a28dfc99e3fbfb33ff",
+      "custom": {}
+    },
+    "DnfP7up0cIhvaUWp23Jtk": {
+      "id": "DnfP7up0cIhvaUWp23Jtk",
+      "title": "Git",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "from": {
+            "fname": "Software",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 38,
+              "column": 5,
+              "offset": 806
+            },
+            "end": {
+              "line": 38,
+              "column": 21,
+              "offset": 822
+            },
+            "indent": []
+          },
+          "value": "Software.Git"
+        }
+      ],
+      "anchors": {},
+      "fname": "Software.Git",
+      "updated": 1636428241249,
+      "created": 1636428241249,
+      "parent": "AuDqSlWn0PlsSo8JdLgrR",
+      "children": [],
+      "data": {},
+      "contentHash": "de339f101ccd6110d97c3a8738ea8453",
+      "custom": {}
+    },
+    "pHk638EFKNsd7l8ofo19m": {
+      "id": "pHk638EFKNsd7l8ofo19m",
+      "title": "Amazon Web Services",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "from": {
+            "fname": "Software",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 30,
+              "column": 5,
+              "offset": 738
+            },
+            "end": {
+              "line": 30,
+              "column": 21,
+              "offset": 754
+            },
+            "indent": []
+          },
+          "value": "Software.AWS"
+        }
+      ],
+      "anchors": {
+        "": {
+          "type": "header",
+          "text": "",
+          "value": "",
+          "line": 18,
+          "column": 0
+        },
+        "-1": {
+          "type": "header",
+          "text": "",
+          "value": "-1",
+          "line": 20,
+          "column": 0
+        },
+        "installing": {
+          "type": "header",
+          "text": "Installing",
+          "value": "installing",
+          "line": 22,
+          "column": 0
+        },
+        "ssh": {
+          "type": "header",
+          "text": "ssh",
+          "value": "ssh",
+          "line": 24,
+          "column": 0
+        }
+      },
+      "fname": "Software.AWS",
+      "updated": 1636428955792,
+      "created": 1636428177509,
+      "parent": "AuDqSlWn0PlsSo8JdLgrR",
+      "children": [],
+      "data": {},
+      "contentHash": "4ebb9abd439f4260987f5aef6948cf3e",
+      "custom": {}
+    },
+    "0R61RLuT7e3hswR2v6o0w": {
+      "id": "0R61RLuT7e3hswR2v6o0w",
+      "title": "Static Factor Models",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "from": {
+            "fname": "DFM",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 20,
+              "column": 43,
+              "offset": 713
+            },
+            "end": {
+              "line": 20,
+              "column": 50,
+              "offset": 720
+            },
+            "indent": []
+          },
+          "value": "SFM"
+        }
+      ],
+      "anchors": {},
+      "fname": "SFM",
+      "updated": 1636430576781,
+      "created": 1634735127231,
+      "parent": "PhD",
+      "children": [
+        "V5RkkOEtQUFg8rc2NA4D",
+        "2gbkoMtG1AFSSvJ8bApzQ",
+        "4jMb749QpRqPGt0QqKbZF",
+        "jSiN2bkem1FFXPxr496BQ",
+        "LvkZzWN557soKo2Cg4JAc",
+        "XiJC0xxXNzTGVmJGnTgDE",
+        "UCKQQIP3xmPCV4pYAWA4e",
+        "e2FJ7pgw5EQL0eELVXBaS"
+      ],
+      "data": {},
+      "contentHash": "f1de80c8239c890a80e7a501594e9a61",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "e2FJ7pgw5EQL0eELVXBaS": {
+      "id": "e2FJ7pgw5EQL0eELVXBaS",
+      "title": "Static Factor Models with Thresholding",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "SFM.threshold",
+            "id": "e2FJ7pgw5EQL0eELVXBaS",
+            "vaultName": "vault"
+          },
+          "value": "tags.threshold",
+          "alias": "#threshold",
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 11,
+              "offset": 10
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "tags.threshold"
+          }
+        }
+      ],
+      "anchors": {
+        "implementation": {
+          "type": "header",
+          "text": "Implementation",
+          "value": "implementation",
+          "line": 15,
+          "column": 0
+        }
+      },
+      "fname": "SFM.threshold",
+      "updated": 1635422533164,
+      "created": 1635421959801,
+      "parent": "0R61RLuT7e3hswR2v6o0w",
+      "children": [],
+      "data": {},
+      "contentHash": "c19c41c2e1324d8c61053d7e069f431b",
+      "custom": {}
+    },
+    "UCKQQIP3xmPCV4pYAWA4e": {
+      "id": "UCKQQIP3xmPCV4pYAWA4e",
+      "title": "Monte Carlo Designs",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "monte-carlo-designs": {
+          "type": "header",
+          "text": "Monte Carlo Designs",
+          "value": "monte-carlo-designs",
+          "line": 8,
+          "column": 0
+        },
+        "breitung-and-eickmeier-2011": {
+          "type": "header",
+          "text": "Breitung and Eickmeier (2011)",
+          "value": "breitung-and-eickmeier-2011",
+          "line": 14,
+          "column": 0
+        },
+        "bates-et-al-2013": {
+          "type": "header",
+          "text": "Bates et al (2013)",
+          "value": "bates-et-al-2013",
+          "line": 60,
+          "column": 0
+        },
+        "factor-space-consistency": {
+          "type": "header",
+          "text": "Factor Space Consistency",
+          "value": "factor-space-consistency",
+          "line": 107,
+          "column": 0
+        },
+        "information-criteria-no-of-factors-consistency": {
+          "type": "header",
+          "text": "Information Criteria (no. of factors) consistency",
+          "value": "information-criteria-no-of-factors-consistency",
+          "line": 109,
+          "column": 0
+        },
+        "chen-et-al-cdg-2014": {
+          "type": "header",
+          "text": "Chen et al (CDG) (2014)",
+          "value": "chen-et-al-cdg-2014",
+          "line": 112,
+          "column": 0
+        },
+        "corradi-and-swanson-2014": {
+          "type": "header",
+          "text": "Corradi and Swanson (2014)",
+          "value": "corradi-and-swanson-2014",
+          "line": 128,
+          "column": 0
+        },
+        "han-and-inoue-2014": {
+          "type": "header",
+          "text": "Han and Inoue (2014)",
+          "value": "han-and-inoue-2014",
+          "line": 160,
+          "column": 0
+        },
+        "baltagi-et-al-2017": {
+          "type": "header",
+          "text": "Baltagi et al (2017)",
+          "value": "baltagi-et-al-2017",
+          "line": 170,
+          "column": 0
+        },
+        "setup-1": {
+          "type": "header",
+          "text": "Setup 1",
+          "value": "setup-1",
+          "line": 194,
+          "column": 0
+        },
+        "setup-2": {
+          "type": "header",
+          "text": "Setup 2",
+          "value": "setup-2",
+          "line": 198,
+          "column": 0
+        },
+        "setup-3": {
+          "type": "header",
+          "text": "Setup 3",
+          "value": "setup-3",
+          "line": 202,
+          "column": 0
+        },
+        "common-setup-notes": {
+          "type": "header",
+          "text": "Common setup notes",
+          "value": "common-setup-notes",
+          "line": 206,
+          "column": 0
+        },
+        "baltagi-et-al-2021": {
+          "type": "header",
+          "text": "Baltagi et al (2021)",
+          "value": "baltagi-et-al-2021",
+          "line": 212,
+          "column": 0
+        },
+        "setup-1-1": {
+          "type": "header",
+          "text": "Setup 1",
+          "value": "setup-1-1",
+          "line": 228,
+          "column": 0
+        },
+        "setup-2-1": {
+          "type": "header",
+          "text": "Setup 2",
+          "value": "setup-2-1",
+          "line": 232,
+          "column": 0
+        },
+        "setup-3-1": {
+          "type": "header",
+          "text": "Setup 3",
+          "value": "setup-3-1",
+          "line": 236,
+          "column": 0
+        },
+        "common-setup-notes-1": {
+          "type": "header",
+          "text": "Common Setup Notes",
+          "value": "common-setup-notes-1",
+          "line": 240,
+          "column": 0
+        },
+        "other-notes": {
+          "type": "header",
+          "text": "Other notes",
+          "value": "other-notes",
+          "line": 248,
+          "column": 0
+        },
+        "ma-and-su-2021": {
+          "type": "header",
+          "text": "Ma and Su (2021)",
+          "value": "ma-and-su-2021",
+          "line": 254,
+          "column": 0
+        },
+        "dgp1-1-break": {
+          "type": "header",
+          "text": "DGP1 (1 break)",
+          "value": "dgp1-1-break",
+          "line": 269,
+          "column": 0
+        },
+        "dgp2-2-breaks": {
+          "type": "header",
+          "text": "DGP2 (2 breaks)",
+          "value": "dgp2-2-breaks",
+          "line": 281,
+          "column": 0
+        },
+        "dgp3-no-breaks-control": {
+          "type": "header",
+          "text": "DGP3 (no breaks, control)",
+          "value": "dgp3-no-breaks-control",
+          "line": 295,
+          "column": 0
+        },
+        "bai-han-and-shi-2021-forthcoming": {
+          "type": "header",
+          "text": "Bai, Han and Shi (2021, forthcoming)",
+          "value": "bai-han-and-shi-2021-forthcoming",
+          "line": 300,
+          "column": 0
+        },
+        "su-and-wang-2017": {
+          "type": "header",
+          "text": "Su and Wang (2017)",
+          "value": "su-and-wang-2017",
+          "line": 304,
+          "column": 0
+        },
+        "su-and-wang-2021": {
+          "type": "header",
+          "text": "Su and Wang (2021)",
+          "value": "su-and-wang-2021",
+          "line": 316,
+          "column": 0
+        }
+      },
+      "fname": "SFM.sim",
+      "updated": 1635206924224,
+      "created": 1635206782910,
+      "parent": "0R61RLuT7e3hswR2v6o0w",
+      "children": [
+        "lLflloV8xL2WPvlXN0DQQ"
+      ],
+      "data": {},
+      "contentHash": "82a9abe45a09f779d1acda18535aa988",
+      "custom": {}
+    },
+    "lLflloV8xL2WPvlXN0DQQ": {
+      "id": "lLflloV8xL2WPvlXN0DQQ",
+      "title": "Simulation Documentation",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "model-setup-and-notation": {
+          "type": "header",
+          "text": "Model Setup and Notation",
+          "value": "model-setup-and-notation",
+          "line": 14,
+          "column": 0
+        },
+        "function-objects-and-methods": {
+          "type": "header",
+          "text": "Function objects and methods",
+          "value": "function-objects-and-methods",
+          "line": 31,
+          "column": 0
+        },
+        "extra-methodshelpers": {
+          "type": "header",
+          "text": "Extra methods/helpers",
+          "value": "extra-methodshelpers",
+          "line": 49,
+          "column": 0
+        },
+        "plotting": {
+          "type": "header",
+          "text": "Plotting",
+          "value": "plotting",
+          "line": 57,
+          "column": 0
+        },
+        "specifications": {
+          "type": "header",
+          "text": "Specifications",
+          "value": "specifications",
+          "line": 63,
+          "column": 0
+        },
+        "breitung-and-eickmeier-2011": {
+          "type": "header",
+          "text": "Breitung and Eickmeier (2011)",
+          "value": "breitung-and-eickmeier-2011",
+          "line": 67,
+          "column": 0
+        },
+        "bates-et-al-2013": {
+          "type": "header",
+          "text": "Bates et al (2013)",
+          "value": "bates-et-al-2013",
+          "line": 113,
+          "column": 0
+        },
+        "factor-space-consistency": {
+          "type": "header",
+          "text": "Factor Space Consistency",
+          "value": "factor-space-consistency",
+          "line": 160,
+          "column": 0
+        },
+        "information-criteria-no-of-factors-consistency": {
+          "type": "header",
+          "text": "Information Criteria (no. of factors) consistency",
+          "value": "information-criteria-no-of-factors-consistency",
+          "line": 162,
+          "column": 0
+        },
+        "chen-et-al-cdg-2014": {
+          "type": "header",
+          "text": "Chen et al (CDG) (2014)",
+          "value": "chen-et-al-cdg-2014",
+          "line": 166,
+          "column": 0
+        },
+        "corradi-and-swanson-2014": {
+          "type": "header",
+          "text": "Corradi and Swanson (2014)",
+          "value": "corradi-and-swanson-2014",
+          "line": 184,
+          "column": 0
+        },
+        "han-and-inoue-2014": {
+          "type": "header",
+          "text": "Han and Inoue (2014)",
+          "value": "han-and-inoue-2014",
+          "line": 218,
+          "column": 0
+        },
+        "baltagi-et-al-2017": {
+          "type": "header",
+          "text": "Baltagi et al (2017)",
+          "value": "baltagi-et-al-2017",
+          "line": 230,
+          "column": 0
+        },
+        "setup-1": {
+          "type": "header",
+          "text": "Setup 1",
+          "value": "setup-1",
+          "line": 259,
+          "column": 0
+        },
+        "setup-2": {
+          "type": "header",
+          "text": "Setup 2",
+          "value": "setup-2",
+          "line": 263,
+          "column": 0
+        },
+        "setup-3": {
+          "type": "header",
+          "text": "Setup 3",
+          "value": "setup-3",
+          "line": 267,
+          "column": 0
+        },
+        "common-setup-notes": {
+          "type": "header",
+          "text": "Common setup notes",
+          "value": "common-setup-notes",
+          "line": 271,
+          "column": 0
+        },
+        "baltagi-et-al-2021": {
+          "type": "header",
+          "text": "Baltagi et al (2021)",
+          "value": "baltagi-et-al-2021",
+          "line": 277,
+          "column": 0
+        },
+        "setup-1-1": {
+          "type": "header",
+          "text": "Setup 1",
+          "value": "setup-1-1",
+          "line": 296,
+          "column": 0
+        },
+        "setup-2-1": {
+          "type": "header",
+          "text": "Setup 2",
+          "value": "setup-2-1",
+          "line": 300,
+          "column": 0
+        },
+        "setup-3-1": {
+          "type": "header",
+          "text": "Setup 3",
+          "value": "setup-3-1",
+          "line": 304,
+          "column": 0
+        },
+        "common-setup-notes-1": {
+          "type": "header",
+          "text": "Common Setup Notes",
+          "value": "common-setup-notes-1",
+          "line": 308,
+          "column": 0
+        },
+        "other-notes": {
+          "type": "header",
+          "text": "Other notes",
+          "value": "other-notes",
+          "line": 316,
+          "column": 0
+        },
+        "ma-and-su-2021": {
+          "type": "header",
+          "text": "Ma and Su (2021)",
+          "value": "ma-and-su-2021",
+          "line": 322,
+          "column": 0
+        },
+        "dgp1-1-break": {
+          "type": "header",
+          "text": "DGP1 (1 break)",
+          "value": "dgp1-1-break",
+          "line": 338,
+          "column": 0
+        },
+        "dgp2-2-breaks": {
+          "type": "header",
+          "text": "DGP2 (2 breaks)",
+          "value": "dgp2-2-breaks",
+          "line": 351,
+          "column": 0
+        },
+        "dgp3-no-breaks-control": {
+          "type": "header",
+          "text": "DGP3 (no breaks, control)",
+          "value": "dgp3-no-breaks-control",
+          "line": 366,
+          "column": 0
+        },
+        "bai-han-and-shi-2021-forthcoming": {
+          "type": "header",
+          "text": "Bai, Han and Shi (2021, forthcoming)",
+          "value": "bai-han-and-shi-2021-forthcoming",
+          "line": 370,
+          "column": 0
+        },
+        "su-and-wang-2017": {
+          "type": "header",
+          "text": "Su and Wang (2017)",
+          "value": "su-and-wang-2017",
+          "line": 372,
+          "column": 0
+        },
+        "su-and-wang-2021": {
+          "type": "header",
+          "text": "Su and Wang (2021)",
+          "value": "su-and-wang-2021",
+          "line": 382,
+          "column": 0
+        }
+      },
+      "fname": "SFM.sim.docs",
+      "updated": 1635319602978,
+      "created": 1634221372912,
+      "parent": "UCKQQIP3xmPCV4pYAWA4e",
+      "children": [],
+      "data": {},
+      "contentHash": "67a9daf1b08a3c3f27ef38e166357791",
+      "custom": {}
+    },
+    "XiJC0xxXNzTGVmJGnTgDE": {
+      "id": "XiJC0xxXNzTGVmJGnTgDE",
+      "title": "Static Factor Models with Markov Regime Switching",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "SFM.markov",
+            "id": "XiJC0xxXNzTGVmJGnTgDE",
+            "vaultName": "vault"
+          },
+          "value": "tags.markov",
+          "alias": "#markov",
+          "position": {
+            "start": {
+              "line": 2,
+              "column": 1,
+              "offset": 1
+            },
+            "end": {
+              "line": 2,
+              "column": 8,
+              "offset": 8
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "tags.markov"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "SFM.markov",
+            "id": "XiJC0xxXNzTGVmJGnTgDE",
+            "vaultName": "vault"
+          },
+          "value": "tags.regime",
+          "alias": "#regime",
+          "position": {
+            "start": {
+              "line": 2,
+              "column": 9,
+              "offset": 9
+            },
+            "end": {
+              "line": 2,
+              "column": 16,
+              "offset": 16
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "tags.regime"
+          }
+        }
+      ],
+      "anchors": {
+        "notes": {
+          "type": "header",
+          "text": "Notes",
+          "value": "notes",
+          "line": 20,
+          "column": 0
+        },
+        "implementation-details": {
+          "type": "header",
+          "text": "Implementation Details",
+          "value": "implementation-details",
+          "line": 32,
+          "column": 0
+        },
+        "dynamic-factor-model-with-markov-switching": {
+          "type": "header",
+          "text": "Dynamic Factor Model with Markov Switching",
+          "value": "dynamic-factor-model-with-markov-switching",
+          "line": 40,
+          "column": 0
+        },
+        "liu-and-chen-statistica-sinica-paper": {
+          "type": "header",
+          "text": "Liu and Chen (Statistica Sinica Paper)",
+          "value": "liu-and-chen-statistica-sinica-paper",
+          "line": 46,
+          "column": 0
+        },
+        "inference": {
+          "type": "header",
+          "text": "INFERENCE",
+          "value": "inference",
+          "line": 73,
+          "column": 0
+        },
+        "limitations-for-macroeconomics": {
+          "type": "header",
+          "text": "LIMITATIONS FOR MACROECONOMICS",
+          "value": "limitations-for-macroeconomics",
+          "line": 84,
+          "column": 0
+        }
+      },
+      "fname": "SFM.markov",
+      "updated": 1636283361568,
+      "created": 1635422015099,
+      "parent": "0R61RLuT7e3hswR2v6o0w",
+      "children": [],
+      "data": {},
+      "contentHash": "d4d3a5c091569dc3ed439ddb800774c7",
+      "custom": {}
+    },
+    "LvkZzWN557soKo2Cg4JAc": {
+      "id": "LvkZzWN557soKo2Cg4JAc",
+      "title": "Static Factor Model Inference",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "inference-for-pca-estimator": {
+          "type": "header",
+          "text": "Inference for PCA Estimator",
+          "value": "inference-for-pca-estimator",
+          "line": 11,
+          "column": 0
+        },
+        "bai-and-ng-2006": {
+          "type": "header",
+          "text": "Bai and Ng 2006",
+          "value": "bai-and-ng-2006",
+          "line": 65,
+          "column": 0
+        }
+      },
+      "fname": "SFM.inference",
+      "updated": 1636003717065,
+      "created": 1634735273785,
+      "parent": "0R61RLuT7e3hswR2v6o0w",
+      "children": [
+        "wQruEPvAQOC2xbS48WvgQ"
+      ],
+      "data": {},
+      "contentHash": "c51c87780dba3cfb82e5bd6cb4a0678f",
+      "custom": {}
+    },
+    "wQruEPvAQOC2xbS48WvgQ": {
+      "id": "wQruEPvAQOC2xbS48WvgQ",
+      "title": "r Estimators",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "bai-and-ng": {
+          "type": "header",
+          "text": "Bai and Ng",
+          "value": "bai-and-ng",
+          "line": 12,
+          "column": 0
+        },
+        "onatski-2009-on09": {
+          "type": "header",
+          "text": "Onatski (2009) ON09",
+          "value": "onatski-2009-on09",
+          "line": 16,
+          "column": 0
+        },
+        "onatski-2010-on10": {
+          "type": "header",
+          "text": "Onatski (2010) ON10",
+          "value": "onatski-2010-on10",
+          "line": 24,
+          "column": 0
+        },
+        "ahn-and-horenstein-2013-aher-ahgr": {
+          "type": "header",
+          "text": "Ahn and Horenstein 2013 (AHER, AHGR)",
+          "value": "ahn-and-horenstein-2013-aher-ahgr",
+          "line": 43,
+          "column": 0
+        }
+      },
+      "fname": "SFM.inference.r",
+      "updated": 1636079101626,
+      "created": 1635206494435,
+      "parent": "LvkZzWN557soKo2Cg4JAc",
+      "children": [],
+      "data": {},
+      "contentHash": "b65f9e23e7042b1fab8d6a1b87ae2dd4",
+      "custom": {
+        "bibliography": [
+          "references.bib"
+        ]
+      }
+    },
+    "jSiN2bkem1FFXPxr496BQ": {
+      "id": "jSiN2bkem1FFXPxr496BQ",
+      "title": "SFM Functions",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "sfm-functions": {
+          "type": "header",
+          "text": "SFM Functions",
+          "value": "sfm-functions",
+          "line": 7,
+          "column": 0
+        },
+        "sfmfit": {
+          "type": "header",
+          "text": "SFM.fit",
+          "value": "sfmfit",
+          "line": 15,
+          "column": 0
+        },
+        "vcov": {
+          "type": "header",
+          "text": "vcov",
+          "value": "vcov",
+          "line": 19,
+          "column": 0
+        },
+        "fitted": {
+          "type": "header",
+          "text": "fitted",
+          "value": "fitted",
+          "line": 29,
+          "column": 0
+        },
+        "resid": {
+          "type": "header",
+          "text": "resid",
+          "value": "resid",
+          "line": 33,
+          "column": 0
+        },
+        "": {
+          "type": "header",
+          "text": "",
+          "value": "",
+          "line": 37,
+          "column": 0
+        },
+        "-1": {
+          "type": "header",
+          "text": "",
+          "value": "-1",
+          "line": 38,
+          "column": 0
+        }
+      },
+      "fname": "SFM.functions",
+      "updated": 1635403737175,
+      "created": 1634869574306,
+      "parent": "0R61RLuT7e3hswR2v6o0w",
+      "children": [],
+      "data": {},
+      "contentHash": "455139a89274dad83f4840d34580eab7",
+      "custom": {}
+    },
+    "4jMb749QpRqPGt0QqKbZF": {
+      "id": "4jMb749QpRqPGt0QqKbZF",
+      "title": "Estimation",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "kalman-filter-state-space-approaches": {
+          "type": "header",
+          "text": "Kalman Filter (state space approaches)",
+          "value": "kalman-filter-state-space-approaches",
+          "line": 8,
+          "column": 0
+        },
+        "principal-components-non-parametric-approaches": {
+          "type": "header",
+          "text": "Principal Components (non-parametric approaches)",
+          "value": "principal-components-non-parametric-approaches",
+          "line": 12,
+          "column": 0
+        },
+        "missing-data": {
+          "type": "header",
+          "text": "Missing Data",
+          "value": "missing-data",
+          "line": 14,
+          "column": 0
+        }
+      },
+      "fname": "SFM.estimation",
+      "updated": 1636284603775,
+      "created": 1636284420462,
+      "parent": "0R61RLuT7e3hswR2v6o0w",
+      "children": [],
+      "data": {},
+      "contentHash": "38810f1696d4199c6f36245d8bdc73f8",
+      "custom": {}
+    },
+    "2gbkoMtG1AFSSvJ8bApzQ": {
+      "id": "2gbkoMtG1AFSSvJ8bApzQ",
+      "title": "Static Factor Model Implementation Docs",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "SFM.docs",
+      "updated": 1636430695718,
+      "created": 1636430581104,
+      "parent": "0R61RLuT7e3hswR2v6o0w",
+      "children": [],
+      "data": {},
+      "contentHash": "11c1defef028054b18ad8ac829f2be43",
+      "custom": {}
+    },
+    "V5RkkOEtQUFg8rc2NA4D": {
+      "id": "V5RkkOEtQUFg8rc2NA4D",
+      "title": "Breaks in SFMs",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "stock-and-watson": {
+          "type": "header",
+          "text": "Stock and Watson",
+          "value": "stock-and-watson",
+          "line": 18,
+          "column": 0
+        },
+        "breitung-and-eickmeier-and-stock-and-watson": {
+          "type": "header",
+          "text": "Breitung and Eickmeier and Stock and Watson",
+          "value": "breitung-and-eickmeier-and-stock-and-watson",
+          "line": 22,
+          "column": 0
+        },
+        "chen-et-al-2014-cdg": {
+          "type": "header",
+          "text": "Chen et al (2014) (CDG)",
+          "value": "chen-et-al-2014-cdg",
+          "line": 40,
+          "column": 0
+        },
+        "corradi-and-swanson": {
+          "type": "header",
+          "text": "Corradi and Swanson",
+          "value": "corradi-and-swanson",
+          "line": 46,
+          "column": 0
+        },
+        "": {
+          "type": "header",
+          "text": "",
+          "value": "",
+          "line": 48,
+          "column": 0
+        },
+        "baltagi-et-al-2017": {
+          "type": "header",
+          "text": "Baltagi et al 2017",
+          "value": "baltagi-et-al-2017",
+          "line": 50,
+          "column": 0
+        },
+        "baltagi-et-al-2020": {
+          "type": "header",
+          "text": "Baltagi et al 2020",
+          "value": "baltagi-et-al-2020",
+          "line": 52,
+          "column": 0
+        },
+        "su-and-wang-2017": {
+          "type": "header",
+          "text": "Su and Wang (2017)",
+          "value": "su-and-wang-2017",
+          "line": 54,
+          "column": 0
+        },
+        "su-and-wang-2021": {
+          "type": "header",
+          "text": "Su and Wang (2021)",
+          "value": "su-and-wang-2021",
+          "line": 64,
+          "column": 0
+        }
+      },
+      "fname": "SFM.break",
+      "updated": 1636281783456,
+      "created": 1635165514149,
+      "parent": "0R61RLuT7e3hswR2v6o0w",
+      "children": [
+        "nM6QOhzG0wwz1ncJ9eeTd",
+        "XhF6NWFcSaKbxN1wdaNdX",
+        "g3HkgqXlLubEdtE5zLfiN",
+        "T4apcqDvjFydx29a2fyaN",
+        "Nm1KrUYBazwT5ytD11Cre"
+      ],
+      "data": {},
+      "contentHash": "6bad3ec15770b1bff06ec573fe880965",
+      "custom": {}
+    },
+    "Nm1KrUYBazwT5ytD11Cre": {
+      "id": "Nm1KrUYBazwT5ytD11Cre",
+      "title": "SFM Break Theory",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "bates-et-al-2013": {
+          "type": "header",
+          "text": "Bates et al (2013)",
+          "value": "bates-et-al-2013",
+          "line": 8,
+          "column": 0
+        },
+        "baltagi-et-al": {
+          "type": "header",
+          "text": "Baltagi et al",
+          "value": "baltagi-et-al",
+          "line": 55,
+          "column": 0
+        }
+      },
+      "fname": "SFM.break.theory",
+      "updated": 1635403335200,
+      "created": 1635403256841,
+      "parent": "V5RkkOEtQUFg8rc2NA4D",
+      "children": [],
+      "data": {},
+      "contentHash": "d32a2847c1ecd2481a34b62010562266",
+      "custom": {}
+    },
+    "T4apcqDvjFydx29a2fyaN": {
+      "id": "T4apcqDvjFydx29a2fyaN",
+      "title": "Equivalent Representation Theorems",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "breitung-and-eickmeier": {
+          "type": "header",
+          "text": "Breitung and Eickmeier",
+          "value": "breitung-and-eickmeier",
+          "line": 14,
+          "column": 0
+        },
+        "han-and-inoue": {
+          "type": "header",
+          "text": "Han and Inoue",
+          "value": "han-and-inoue",
+          "line": 27,
+          "column": 0
+        },
+        "baltagi-et-al": {
+          "type": "header",
+          "text": "Baltagi et al",
+          "value": "baltagi-et-al",
+          "line": 31,
+          "column": 0
+        }
+      },
+      "fname": "SFM.break.representation",
+      "updated": 1636420161705,
+      "created": 1635165604337,
+      "parent": "V5RkkOEtQUFg8rc2NA4D",
+      "children": [],
+      "data": {},
+      "contentHash": "1579aa1ef0a54d79eef425d75a39a7ea",
+      "custom": {}
+    },
+    "g3HkgqXlLubEdtE5zLfiN": {
+      "id": "g3HkgqXlLubEdtE5zLfiN",
+      "title": "Non-parametric Approaches to Breaks",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "su-and-wang-2017": {
+          "type": "header",
+          "text": "Su and Wang (2017)",
+          "value": "su-and-wang-2017",
+          "line": 10,
+          "column": 0
+        },
+        "su-and-wang-2020": {
+          "type": "header",
+          "text": "Su and Wang (2020)",
+          "value": "su-and-wang-2020",
+          "line": 13,
+          "column": 0
+        },
+        "notes": {
+          "type": "header",
+          "text": "Notes",
+          "value": "notes",
+          "line": 18,
+          "column": 0
+        }
+      },
+      "fname": "SFM.break.nonparametric",
+      "updated": 1636329205748,
+      "created": 1636281792816,
+      "parent": "V5RkkOEtQUFg8rc2NA4D",
+      "children": [],
+      "data": {},
+      "contentHash": "af9c7219898ddd8dec902ce2fe7cfe1e",
+      "custom": {}
+    },
+    "XhF6NWFcSaKbxN1wdaNdX": {
+      "id": "XhF6NWFcSaKbxN1wdaNdX",
+      "title": "Empirical Motivation",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "SFM.break.empirical_motivation",
+            "id": "XhF6NWFcSaKbxN1wdaNdX",
+            "vaultName": "vault"
+          },
+          "value": "user.stockChapter10Forecasting2006",
+          "alias": "@stockChapter10Forecasting2006",
+          "position": {
+            "start": {
+              "line": 14,
+              "column": 1,
+              "offset": 1046
+            },
+            "end": {
+              "line": 14,
+              "column": 31,
+              "offset": 1076
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.stockChapter10Forecasting2006"
+          }
+        }
+      ],
+      "anchors": {},
+      "fname": "SFM.break.empirical_motivation",
+      "updated": 1636284998031,
+      "created": 1635318324314,
+      "parent": "V5RkkOEtQUFg8rc2NA4D",
+      "children": [],
+      "data": {},
+      "contentHash": "022a4cb9f00f797da7e4ad6420e7f8f3",
+      "custom": {
+        "bibliography": [
+          "references.bib"
+        ]
+      }
+    },
+    "nM6QOhzG0wwz1ncJ9eeTd": {
+      "id": "nM6QOhzG0wwz1ncJ9eeTd",
+      "title": "Empirical Study",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "": {
+          "type": "header",
+          "text": "",
+          "value": "",
+          "line": 10,
+          "column": 0
+        }
+      },
+      "fname": "SFM.break.empirical",
+      "updated": 1635320480507,
+      "created": 1635318288877,
+      "parent": "V5RkkOEtQUFg8rc2NA4D",
+      "children": [],
+      "data": {},
+      "contentHash": "8321b80238040f5de1019731f4bcf5f0",
+      "custom": {}
+    },
+    "aQw5xJBpqunSJYCfXXAls": {
+      "id": "aQw5xJBpqunSJYCfXXAls",
+      "title": "Random Thoughts",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "Random",
+      "updated": 1636427857736,
+      "created": 1636427728907,
+      "parent": "PhD",
+      "children": [],
+      "data": {},
+      "contentHash": "edbc9a49aa624e047941f80d0d88696d",
+      "custom": {}
+    },
+    "umGHrdI4OaLoU8OOAOdkL": {
+      "id": "umGHrdI4OaLoU8OOAOdkL",
+      "title": "Miscellaneous",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "Misc",
+      "updated": 1635337153486,
+      "created": 1635337141829,
+      "parent": "PhD",
+      "children": [
+        "8QKn1l2AfuAU6zvm2C1qf"
+      ],
+      "data": {},
+      "contentHash": "ae0dee18c32068f3d99edb2530054dca",
+      "custom": {}
+    },
+    "8QKn1l2AfuAU6zvm2C1qf": {
+      "id": "8QKn1l2AfuAU6zvm2C1qf",
+      "title": "BVAR Presentation Notes from Gary Koop",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "large-bayesian-var-presentation": {
+          "type": "header",
+          "text": "Large Bayesian VAR presentation",
+          "value": "large-bayesian-var-presentation",
+          "line": 7,
+          "column": 0
+        },
+        "summary": {
+          "type": "header",
+          "text": "Summary",
+          "value": "summary",
+          "line": 49,
+          "column": 0
+        },
+        "^-T": {
+          "type": "block",
+          "value": "-T",
+          "line": 135,
+          "column": 51
+        }
+      },
+      "fname": "Misc.BVAR_prezi",
+      "updated": 1635337173961,
+      "created": 1635212169623,
+      "parent": "umGHrdI4OaLoU8OOAOdkL",
+      "children": [],
+      "data": {},
+      "contentHash": "8491e1be6521089356ddb31a6d5557e4",
+      "custom": {}
+    },
+    "fHzGITjWkNNkiwsQpdex4": {
+      "id": "fHzGITjWkNNkiwsQpdex4",
+      "title": "Meeting",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Meeting",
+            "id": "fHzGITjWkNNkiwsQpdex4",
+            "vaultName": "vault"
+          },
+          "value": "user.stockChapter10Forecasting2006",
+          "alias": "@stockChapter10Forecasting2006",
+          "position": {
+            "start": {
+              "line": 7,
+              "column": 1,
+              "offset": 204
+            },
+            "end": {
+              "line": 7,
+              "column": 31,
+              "offset": 234
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.stockChapter10Forecasting2006"
+          }
+        },
+        {
+          "from": {
+            "fname": "root",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 14,
+              "column": 1,
+              "offset": 464
+            },
+            "end": {
+              "line": 14,
+              "column": 12,
+              "offset": 475
+            },
+            "indent": []
+          },
+          "value": "Meeting"
+        }
+      ],
+      "anchors": {
+        "meeting-notes": {
+          "type": "header",
+          "text": "Meeting Notes",
+          "value": "meeting-notes",
+          "line": 9,
+          "column": 0
+        },
+        "focus-question": {
+          "type": "header",
+          "text": "Focus Question",
+          "value": "focus-question",
+          "line": 16,
+          "column": 0
+        },
+        "roadmap": {
+          "type": "header",
+          "text": "Roadmap",
+          "value": "roadmap",
+          "line": 20,
+          "column": 0
+        },
+        "answers": {
+          "type": "header",
+          "text": "Answers",
+          "value": "answers",
+          "line": 30,
+          "column": 0
+        },
+        "empirical-motivation": {
+          "type": "header",
+          "text": "Empirical Motivation",
+          "value": "empirical-motivation",
+          "line": 44,
+          "column": 0
+        },
+        "other-empirical-notes": {
+          "type": "header",
+          "text": "Other empirical notes",
+          "value": "other-empirical-notes",
+          "line": 53,
+          "column": 0
+        },
+        "monte-carlo-study-results": {
+          "type": "header",
+          "text": "Monte Carlo Study Results",
+          "value": "monte-carlo-study-results",
+          "line": 59,
+          "column": 0
+        }
+      },
+      "fname": "Meeting",
+      "updated": 1635210616971,
+      "created": 1634221843124,
+      "parent": "PhD",
+      "children": [],
+      "data": {},
+      "contentHash": "03a4f011c19936961e5daab499727505",
+      "custom": {
+        "bibliography": [
+          "references.bib"
+        ]
+      }
+    },
+    "qDVp6IFHf6FiUdSgxwZMA": {
+      "id": "qDVp6IFHf6FiUdSgxwZMA",
+      "title": "LSE Notes",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "LSE",
+      "updated": 1635319103289,
+      "created": 1635122489982,
+      "parent": "PhD",
+      "children": [
+        "vH2bd3fg2wiAVlEYU7f5s",
+        "bwqmx24LGPIeMwqrHNii6",
+        "rhXFFbe0ZmCAbqcIGPuiV",
+        "as03RBJlTIFfB20VGXyNQ",
+        "AavBcuQY4HsfEEVlqK6iN",
+        "ueU5R8eOYbexoIjS7AmzN",
+        "1YM96sEzjQsZ7hfMhaXu2",
+        "gY4RSSjlqOvCvjlRsZSF4",
+        "o5p95ZOzuszn4wAUYarUr",
+        "rWnkiqLhaKZSm0XBPMtpJ"
+      ],
+      "data": {},
+      "contentHash": "0019bb4e1183a8061bac978a8b33a8a7",
+      "custom": {}
+    },
+    "rWnkiqLhaKZSm0XBPMtpJ": {
+      "id": "rWnkiqLhaKZSm0XBPMtpJ",
+      "title": "9 Structural DFM",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "factors-in-structural-vars": {
+          "type": "header",
+          "text": "Factors in Structural VARs",
+          "value": "factors-in-structural-vars",
+          "line": 8,
+          "column": 0
+        }
+      },
+      "fname": "LSE.9",
+      "updated": 1636096571515,
+      "created": 1635139970141,
+      "parent": "qDVp6IFHf6FiUdSgxwZMA",
+      "children": [],
+      "data": {},
+      "contentHash": "0d2766e5eec562d61552c2c8cbf5f3e5",
+      "custom": {}
+    },
+    "o5p95ZOzuszn4wAUYarUr": {
+      "id": "o5p95ZOzuszn4wAUYarUr",
+      "title": "8 Forecasting",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "forecasting": {
+          "type": "header",
+          "text": "Forecasting",
+          "value": "forecasting",
+          "line": 8,
+          "column": 0
+        },
+        "missing-data": {
+          "type": "header",
+          "text": "Missing Data",
+          "value": "missing-data",
+          "line": 21,
+          "column": 0
+        },
+        "omitted-variables-are-uncorrelated-with-factors": {
+          "type": "header",
+          "text": "Omitted variables are uncorrelated with factors",
+          "value": "omitted-variables-are-uncorrelated-with-factors",
+          "line": 25,
+          "column": 0
+        },
+        "omitted-variables-are-correlated-with-factors": {
+          "type": "header",
+          "text": "Omitted variables are correlated with factors",
+          "value": "omitted-variables-are-correlated-with-factors",
+          "line": 29,
+          "column": 0
+        },
+        "pca-regression-approach": {
+          "type": "header",
+          "text": "PCA Regression Approach",
+          "value": "pca-regression-approach",
+          "line": 33,
+          "column": 0
+        },
+        "genrealized-and-dynamic-pca-regression-approach": {
+          "type": "header",
+          "text": "Genrealized and Dynamic PCA Regression Approach",
+          "value": "genrealized-and-dynamic-pca-regression-approach",
+          "line": 35,
+          "column": 0
+        },
+        "state-space-approach": {
+          "type": "header",
+          "text": "State Space Approach",
+          "value": "state-space-approach",
+          "line": 37,
+          "column": 0
+        },
+        "mixed-frequencies-nowcaastingbackcasting": {
+          "type": "header",
+          "text": "Mixed Frequencies (Nowcaasting/Backcasting)",
+          "value": "mixed-frequencies-nowcaastingbackcasting",
+          "line": 39,
+          "column": 0
+        }
+      },
+      "fname": "LSE.8",
+      "updated": 1636096567801,
+      "created": 1635129375865,
+      "parent": "qDVp6IFHf6FiUdSgxwZMA",
+      "children": [],
+      "data": {},
+      "contentHash": "5ef94a18291489474383314f3b962a72",
+      "custom": {}
+    },
+    "gY4RSSjlqOvCvjlRsZSF4": {
+      "id": "gY4RSSjlqOvCvjlRsZSF4",
+      "title": "7 PCA, Kalman Filter, MLE",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "pca-kalman-filter-and-mle": {
+          "type": "header",
+          "text": "PCA, Kalman Filter and MLE",
+          "value": "pca-kalman-filter-and-mle",
+          "line": 8,
+          "column": 0
+        }
+      },
+      "fname": "LSE.7",
+      "updated": 1636096564498,
+      "created": 1635129343534,
+      "parent": "qDVp6IFHf6FiUdSgxwZMA",
+      "children": [],
+      "data": {},
+      "contentHash": "738f233aace92d133d92db0b41288cd7",
+      "custom": {}
+    },
+    "1YM96sEzjQsZ7hfMhaXu2": {
+      "id": "1YM96sEzjQsZ7hfMhaXu2",
+      "title": "6 State Space Form",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "approximate-dfm-in-state-space-form": {
+          "type": "header",
+          "text": "Approximate DFM in State Space Form",
+          "value": "approximate-dfm-in-state-space-form",
+          "line": 8,
+          "column": 0
+        }
+      },
+      "fname": "LSE.6",
+      "updated": 1636096561355,
+      "created": 1635129311506,
+      "parent": "qDVp6IFHf6FiUdSgxwZMA",
+      "children": [],
+      "data": {},
+      "contentHash": "79b2455cae90b27aed87276799447e26",
+      "custom": {}
+    },
+    "ueU5R8eOYbexoIjS7AmzN": {
+      "id": "ueU5R8eOYbexoIjS7AmzN",
+      "title": "4 GDFM Time/Frequency Domain",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "generalized-dynamic-factor-model": {
+          "type": "header",
+          "text": "Generalized Dynamic Factor Model",
+          "value": "generalized-dynamic-factor-model",
+          "line": 8,
+          "column": 0
+        },
+        "time-domain": {
+          "type": "header",
+          "text": "Time Domain",
+          "value": "time-domain",
+          "line": 14,
+          "column": 0
+        },
+        "frequency-domain": {
+          "type": "header",
+          "text": "Frequency Domain",
+          "value": "frequency-domain",
+          "line": 16,
+          "column": 0
+        }
+      },
+      "fname": "LSE.4",
+      "updated": 1636096555543,
+      "created": 1635129104377,
+      "parent": "qDVp6IFHf6FiUdSgxwZMA",
+      "children": [],
+      "data": {},
+      "contentHash": "fdf38ce791168d548afa5d020f2d1395",
+      "custom": {}
+    },
+    "AavBcuQY4HsfEEVlqK6iN": {
+      "id": "AavBcuQY4HsfEEVlqK6iN",
+      "title": "3 Approximate Factor Model",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "forni-assumptions": {
+          "type": "header",
+          "text": "Forni Assumptions",
+          "value": "forni-assumptions",
+          "line": 10,
+          "column": 0
+        },
+        "bai-and-ng-assumptions": {
+          "type": "header",
+          "text": "Bai and Ng Assumptions",
+          "value": "bai-and-ng-assumptions",
+          "line": 12,
+          "column": 0
+        },
+        "summary": {
+          "type": "header",
+          "text": "Summary",
+          "value": "summary",
+          "line": 14,
+          "column": 0
+        },
+        "reconstructing-the-factor-space": {
+          "type": "header",
+          "text": "Reconstructing the Factor Space",
+          "value": "reconstructing-the-factor-space",
+          "line": 23,
+          "column": 0
+        },
+        "estimation": {
+          "type": "header",
+          "text": "Estimation",
+          "value": "estimation",
+          "line": 25,
+          "column": 0
+        },
+        "": {
+          "type": "header",
+          "text": "",
+          "value": "",
+          "line": 27,
+          "column": 0
+        }
+      },
+      "fname": "LSE.3",
+      "updated": 1636420769060,
+      "created": 1635127716940,
+      "parent": "qDVp6IFHf6FiUdSgxwZMA",
+      "children": [],
+      "data": {},
+      "contentHash": "29cde40c16e13d1d215114368b49262e",
+      "custom": {}
+    },
+    "as03RBJlTIFfB20VGXyNQ": {
+      "id": "as03RBJlTIFfB20VGXyNQ",
+      "title": "12 Extensions",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "extensionsfurther-developments": {
+          "type": "header",
+          "text": "Extensions/further developments",
+          "value": "extensionsfurther-developments",
+          "line": 8,
+          "column": 0
+        },
+        "factor-models-in-presence-of-block-structureweak-factors": {
+          "type": "header",
+          "text": "Factor Models in presence of block structure/weak factors",
+          "value": "factor-models-in-presence-of-block-structureweak-factors",
+          "line": 10,
+          "column": 0
+        },
+        "dynamic-factor-models-for-volatility": {
+          "type": "header",
+          "text": "Dynamic Factor Models for Volatility",
+          "value": "dynamic-factor-models-for-volatility",
+          "line": 16,
+          "column": 0
+        },
+        "non-stationary-factor-models": {
+          "type": "header",
+          "text": "Non Stationary Factor Models",
+          "value": "non-stationary-factor-models",
+          "line": 20,
+          "column": 0
+        },
+        "factor-models-with-sturctural-breaks": {
+          "type": "header",
+          "text": "Factor Models with Sturctural Breaks",
+          "value": "factor-models-with-sturctural-breaks",
+          "line": 24,
+          "column": 0
+        }
+      },
+      "fname": "LSE.12",
+      "updated": 1636096583555,
+      "created": 1635140477093,
+      "parent": "qDVp6IFHf6FiUdSgxwZMA",
+      "children": [],
+      "data": {},
+      "contentHash": "1a5fca65271654a25718c14d2879e8d5",
+      "custom": {}
+    },
+    "rhXFFbe0ZmCAbqcIGPuiV": {
+      "id": "rhXFFbe0ZmCAbqcIGPuiV",
+      "title": "11 Number of Factors",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "number-of-factors": {
+          "type": "header",
+          "text": "Number of Factors",
+          "value": "number-of-factors",
+          "line": 8,
+          "column": 0
+        },
+        "static-factors": {
+          "type": "header",
+          "text": "Static Factors",
+          "value": "static-factors",
+          "line": 10,
+          "column": 0
+        },
+        "dynamic-factors": {
+          "type": "header",
+          "text": "Dynamic Factors",
+          "value": "dynamic-factors",
+          "line": 18,
+          "column": 0
+        }
+      },
+      "fname": "LSE.11",
+      "updated": 1636096578530,
+      "created": 1635140287248,
+      "parent": "qDVp6IFHf6FiUdSgxwZMA",
+      "children": [],
+      "data": {},
+      "contentHash": "972c1edb2f61e14f47590796b8fcf268",
+      "custom": {}
+    },
+    "bwqmx24LGPIeMwqrHNii6": {
+      "id": "bwqmx24LGPIeMwqrHNii6",
+      "title": "10 Factor Models in Finance",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "factor-models-in-finance": {
+          "type": "header",
+          "text": "Factor Models in Finance",
+          "value": "factor-models-in-finance",
+          "line": 8,
+          "column": 0
+        },
+        "apt": {
+          "type": "header",
+          "text": "APT",
+          "value": "apt",
+          "line": 16,
+          "column": 0
+        }
+      },
+      "fname": "LSE.10",
+      "updated": 1636096575041,
+      "created": 1635140055965,
+      "parent": "qDVp6IFHf6FiUdSgxwZMA",
+      "children": [],
+      "data": {},
+      "contentHash": "cbca4130a72734485e24357e3867611b",
+      "custom": {}
+    },
+    "vH2bd3fg2wiAVlEYU7f5s": {
+      "id": "vH2bd3fg2wiAVlEYU7f5s",
+      "title": "1 Introduction",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "static-factor-models": {
+          "type": "header",
+          "text": "Static Factor Models",
+          "value": "static-factor-models",
+          "line": 11,
+          "column": 0
+        },
+        "dynamic-factor-models": {
+          "type": "header",
+          "text": "Dynamic Factor Models",
+          "value": "dynamic-factor-models",
+          "line": 33,
+          "column": 0
+        },
+        "assumptions": {
+          "type": "header",
+          "text": "Assumptions",
+          "value": "assumptions",
+          "line": 46,
+          "column": 0
+        },
+        "representation-in-arma": {
+          "type": "header",
+          "text": "Representation in AR/MA",
+          "value": "representation-in-arma",
+          "line": 58,
+          "column": 0
+        }
+      },
+      "fname": "LSE.1",
+      "updated": 1636096545787,
+      "created": 1635122557135,
+      "parent": "qDVp6IFHf6FiUdSgxwZMA",
+      "children": [],
+      "data": {},
+      "contentHash": "91d9f7f8f9ef4c51e2f77059c902e7ea",
+      "custom": {}
+    },
+    "AOvKFmg0tBcGmUASXaALX": {
+      "id": "AOvKFmg0tBcGmUASXaALX",
+      "title": "Kalman Filter",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "from": {
+            "fname": "State_Space",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 14,
+              "column": 5,
+              "offset": 720
+            },
+            "end": {
+              "line": 14,
+              "column": 22,
+              "offset": 737
+            },
+            "indent": []
+          },
+          "value": "Kalman_Filter"
+        }
+      ],
+      "anchors": {},
+      "fname": "Kalman_Filter",
+      "updated": 1636279832356,
+      "created": 1635379272371,
+      "parent": "PhD",
+      "children": [],
+      "data": {},
+      "contentHash": "34f0b2227b8decc6322a2902c0d72aec",
+      "custom": {}
+    },
+    "fhf7Gdr3mhOUG1mU5twC6": {
+      "id": "fhf7Gdr3mhOUG1mU5twC6",
+      "title": "HAC",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "HAC",
+            "id": "fhf7Gdr3mhOUG1mU5twC6",
+            "vaultName": "vault"
+          },
+          "value": "user.stockChapter10Forecasting2006",
+          "alias": "@stockChapter10Forecasting2006",
+          "position": {
+            "start": {
+              "line": 7,
+              "column": 2,
+              "offset": 274
+            },
+            "end": {
+              "line": 7,
+              "column": 32,
+              "offset": 304
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.stockChapter10Forecasting2006"
+          }
+        }
+      ],
+      "anchors": {
+        "motivation": {
+          "type": "header",
+          "text": "Motivation",
+          "value": "motivation",
+          "line": 15,
+          "column": 0
+        },
+        "solution": {
+          "type": "header",
+          "text": "Solution",
+          "value": "solution",
+          "line": 33,
+          "column": 0
+        },
+        "kernels": {
+          "type": "header",
+          "text": "Kernels",
+          "value": "kernels",
+          "line": 35,
+          "column": 0
+        },
+        "historical": {
+          "type": "header",
+          "text": "Historical",
+          "value": "historical",
+          "line": 45,
+          "column": 0
+        },
+        "implementation-via-sandwich": {
+          "type": "header",
+          "text": "Implementation via sandwich",
+          "value": "implementation-via-sandwich",
+          "line": 47,
+          "column": 0
+        }
+      },
+      "fname": "HAC",
+      "updated": 1636329422041,
+      "created": 1634780245060,
+      "parent": "PhD",
+      "children": [],
+      "data": {},
+      "contentHash": "db1b5b57b7f886b4fceb4af7da92faee",
+      "custom": {}
+    },
+    "WOnXV41UlGcOQzEoTZzJU": {
+      "id": "WOnXV41UlGcOQzEoTZzJU",
+      "title": "Glossary",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "glossary": {
+          "type": "header",
+          "text": "Glossary",
+          "value": "glossary",
+          "line": 8,
+          "column": 0
+        }
+      },
+      "fname": "Glossary",
+      "updated": 1635210671788,
+      "created": 1635209708973,
+      "parent": "PhD",
+      "children": [],
+      "data": {},
+      "contentHash": "7f4029a6ecacd566eddc6b0d4977acb2",
+      "custom": {}
+    },
+    "ZIDZSAYP9a9L7jYhVMgcz": {
+      "id": "ZIDZSAYP9a9L7jYhVMgcz",
+      "title": "Frequency Domain",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "motivation": {
+          "type": "header",
+          "text": "Motivation",
+          "value": "motivation",
+          "line": 14,
+          "column": 0
+        },
+        "cycles": {
+          "type": "header",
+          "text": "Cycles",
+          "value": "cycles",
+          "line": 22,
+          "column": 0
+        },
+        "estimation": {
+          "type": "header",
+          "text": "Estimation",
+          "value": "estimation",
+          "line": 41,
+          "column": 0
+        },
+        "spectral-density": {
+          "type": "header",
+          "text": "Spectral Density",
+          "value": "spectral-density",
+          "line": 47,
+          "column": 0
+        },
+        "estimation-1": {
+          "type": "header",
+          "text": "Estimation",
+          "value": "estimation-1",
+          "line": 74,
+          "column": 0
+        },
+        "eigenvalues-and-eigenvectors-of-spectral-density-matrices": {
+          "type": "header",
+          "text": "Eigenvalues and Eigenvectors of Spectral Density Matrices",
+          "value": "eigenvalues-and-eigenvectors-of-spectral-density-matrices",
+          "line": 78,
+          "column": 0
+        }
+      },
+      "fname": "FreqDom",
+      "updated": 1636080760168,
+      "created": 1634885462726,
+      "parent": "PhD",
+      "children": [],
+      "data": {},
+      "contentHash": "3106f65fabce50cf5c8e323007314d52",
+      "custom": {}
+    },
+    "GvwoAWaYZxq1czYi3t3k4": {
+      "id": "GvwoAWaYZxq1czYi3t3k4",
+      "title": "Factor Models",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "factor-models": {
+          "type": "header",
+          "text": "Factor Models",
+          "value": "factor-models",
+          "line": 8,
+          "column": 0
+        },
+        "model-notation": {
+          "type": "header",
+          "text": "Model Notation",
+          "value": "model-notation",
+          "line": 14,
+          "column": 0
+        },
+        "classical-factor-mode": {
+          "type": "header",
+          "text": "Classical Factor Mode",
+          "value": "classical-factor-mode",
+          "line": 27,
+          "column": 0
+        },
+        "": {
+          "type": "header",
+          "text": "",
+          "value": "",
+          "line": 30,
+          "column": 0
+        }
+      },
+      "fname": "Factor-Models",
+      "updated": 1634876621699,
+      "created": 1634735821990,
+      "parent": "PhD",
+      "children": [],
+      "data": {},
+      "contentHash": "8f4b1a76393c9ab5300fa932b63c4e5c",
+      "custom": {}
+    },
+    "qGmGYptDKW2WLwlsu2xJw": {
+      "id": "qGmGYptDKW2WLwlsu2xJw",
+      "title": "Empirical Stylized Facts",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "energy-crisis-1973-and-1979": {
+          "type": "header",
+          "text": "Energy Crisis (1973 and 1979)",
+          "value": "energy-crisis-1973-and-1979",
+          "line": 16,
+          "column": 0
+        },
+        "1973-yom-kippur-war": {
+          "type": "header",
+          "text": "1973 Yom Kippur War",
+          "value": "1973-yom-kippur-war",
+          "line": 22,
+          "column": 0
+        },
+        "1979-iranian-revolution": {
+          "type": "header",
+          "text": "1979 Iranian Revolution",
+          "value": "1979-iranian-revolution",
+          "line": 23,
+          "column": 0
+        },
+        "great-moderation-1980s": {
+          "type": "header",
+          "text": "Great Moderation (1980s)",
+          "value": "great-moderation-1980s",
+          "line": 25,
+          "column": 0
+        },
+        "stock-market-slump-1987": {
+          "type": "header",
+          "text": "Stock Market Slump (1987)",
+          "value": "stock-market-slump-1987",
+          "line": 29,
+          "column": 0
+        },
+        "japanese-lost-decade-1990s": {
+          "type": "header",
+          "text": "Japanese Lost Decade (1990s)",
+          "value": "japanese-lost-decade-1990s",
+          "line": 37,
+          "column": 0
+        },
+        "australian-recession-1991": {
+          "type": "header",
+          "text": "Australian Recession (1991)",
+          "value": "australian-recession-1991",
+          "line": 41,
+          "column": 0
+        },
+        "asian-financial-crisis-1997": {
+          "type": "header",
+          "text": "Asian Financial Crisis (1997)",
+          "value": "asian-financial-crisis-1997",
+          "line": 45,
+          "column": 0
+        },
+        "dot-com-bubble-2000": {
+          "type": "header",
+          "text": "Dot com bubble (2000)",
+          "value": "dot-com-bubble-2000",
+          "line": 47,
+          "column": 0
+        },
+        "great-recession-20072008-gfc": {
+          "type": "header",
+          "text": "Great Recession (2007/2008 GFC)",
+          "value": "great-recession-20072008-gfc",
+          "line": 49,
+          "column": 0
+        },
+        "european-debt-crisis-2009-onwards-still-unresolved": {
+          "type": "header",
+          "text": "European Debt Crisis (2009 onwards, still unresolved?)",
+          "value": "european-debt-crisis-2009-onwards-still-unresolved",
+          "line": 51,
+          "column": 0
+        },
+        "covid19-2019---2020": {
+          "type": "header",
+          "text": "COVID19 (2019 - 2020)",
+          "value": "covid19-2019---2020",
+          "line": 53,
+          "column": 0
+        },
+        "oil-price-war": {
+          "type": "header",
+          "text": "Oil Price War",
+          "value": "oil-price-war",
+          "line": 55,
+          "column": 0
+        },
+        "covid19-mid-2021-onwards-right-now": {
+          "type": "header",
+          "text": "COVID19 (mid 2021 onwards, RIGHT NOW)",
+          "value": "covid19-mid-2021-onwards-right-now",
+          "line": 61,
+          "column": 0
+        },
+        "inflation": {
+          "type": "header",
+          "text": "Inflation",
+          "value": "inflation",
+          "line": 64,
+          "column": 0
+        }
+      },
+      "fname": "Empirical",
+      "updated": 1636333213887,
+      "created": 1636331831859,
+      "parent": "PhD",
+      "children": [
+        "gUjqjP03KOf46B4Kwgwp5",
+        "VdsFPLNgP5grh3zgh7StZ",
+        "S5vUvM5Dt30tyj9YfK9fy"
+      ],
+      "data": {},
+      "contentHash": "ea1bf17817608f893e71067b546cfb04",
+      "custom": {}
+    },
+    "S5vUvM5Dt30tyj9YfK9fy": {
+      "id": "S5vUvM5Dt30tyj9YfK9fy",
+      "title": "Great Recession",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "Empirical.great_recession",
+      "updated": 1636340099252,
+      "created": 1636340082451,
+      "parent": "qGmGYptDKW2WLwlsu2xJw",
+      "children": [],
+      "data": {},
+      "contentHash": "eb9cd98822d798780f67bdc3328ce486",
+      "custom": {}
+    },
+    "VdsFPLNgP5grh3zgh7StZ": {
+      "id": "VdsFPLNgP5grh3zgh7StZ",
+      "title": "Great Moderation",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "Empirical.great_moderation",
+      "updated": 1636340074890,
+      "created": 1636340055820,
+      "parent": "qGmGYptDKW2WLwlsu2xJw",
+      "children": [],
+      "data": {},
+      "contentHash": "4fa033cdff5b10e59373947087c85be9",
+      "custom": {}
+    },
+    "gUjqjP03KOf46B4Kwgwp5": {
+      "id": "gUjqjP03KOf46B4Kwgwp5",
+      "title": "COVID19",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "2020": {
+          "type": "header",
+          "text": "2020",
+          "value": "2020",
+          "line": 10,
+          "column": 0
+        },
+        "good": {
+          "type": "header",
+          "text": "Good",
+          "value": "good",
+          "line": 14,
+          "column": 0
+        },
+        "australia": {
+          "type": "header",
+          "text": "Australia",
+          "value": "australia",
+          "line": 16,
+          "column": 0
+        },
+        "japan": {
+          "type": "header",
+          "text": "Japan",
+          "value": "japan",
+          "line": 18,
+          "column": 0
+        },
+        "hong-kong": {
+          "type": "header",
+          "text": "Hong Kong",
+          "value": "hong-kong",
+          "line": 20,
+          "column": 0
+        },
+        "south-korea": {
+          "type": "header",
+          "text": "South Korea",
+          "value": "south-korea",
+          "line": 22,
+          "column": 0
+        },
+        "singapore": {
+          "type": "header",
+          "text": "Singapore",
+          "value": "singapore",
+          "line": 24,
+          "column": 0
+        },
+        "taiwan": {
+          "type": "header",
+          "text": "Taiwan",
+          "value": "taiwan",
+          "line": 26,
+          "column": 0
+        },
+        "bad": {
+          "type": "header",
+          "text": "Bad",
+          "value": "bad",
+          "line": 28,
+          "column": 0
+        },
+        "sweden": {
+          "type": "header",
+          "text": "Sweden",
+          "value": "sweden",
+          "line": 30,
+          "column": 0
+        },
+        "us": {
+          "type": "header",
+          "text": "US",
+          "value": "us",
+          "line": 34,
+          "column": 0
+        },
+        "uk": {
+          "type": "header",
+          "text": "UK",
+          "value": "uk",
+          "line": 36,
+          "column": 0
+        },
+        "2021-reopening-phase": {
+          "type": "header",
+          "text": "2021 Reopening Phase",
+          "value": "2021-reopening-phase",
+          "line": 38,
+          "column": 0
+        },
+        "race-for-vaccines": {
+          "type": "header",
+          "text": "Race for vaccines",
+          "value": "race-for-vaccines",
+          "line": 40,
+          "column": 0
+        },
+        "vaccine-hesitancy": {
+          "type": "header",
+          "text": "Vaccine Hesitancy",
+          "value": "vaccine-hesitancy",
+          "line": 42,
+          "column": 0
+        }
+      },
+      "fname": "Empirical.COVID",
+      "updated": 1636334455107,
+      "created": 1636334231592,
+      "parent": "qGmGYptDKW2WLwlsu2xJw",
+      "children": [],
+      "data": {},
+      "contentHash": "e6f6f968bc0f2b462f51da8f89979673",
+      "custom": {}
+    },
+    "jtZSk246bVVDfJy6cdpS1": {
+      "id": "jtZSk246bVVDfJy6cdpS1",
+      "title": "Datasets",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "macroeconomic-datasets-compilation": {
+          "type": "header",
+          "text": "Macroeconomic Datasets Compilation",
+          "value": "macroeconomic-datasets-compilation",
+          "line": 8,
+          "column": 0
+        },
+        "us-data": {
+          "type": "header",
+          "text": "US Data",
+          "value": "us-data",
+          "line": 16,
+          "column": 0
+        },
+        "stock-and-watson": {
+          "type": "header",
+          "text": "Stock and Watson",
+          "value": "stock-and-watson",
+          "line": 23,
+          "column": 0
+        },
+        "fred-md-us": {
+          "type": "header",
+          "text": "FRED-MD (US)",
+          "value": "fred-md-us",
+          "line": 34,
+          "column": 0
+        },
+        "missing-data": {
+          "type": "header",
+          "text": "Missing Data",
+          "value": "missing-data",
+          "line": 40,
+          "column": 0
+        },
+        "fred-qd-us": {
+          "type": "header",
+          "text": "FRED-QD (US)",
+          "value": "fred-qd-us",
+          "line": 57,
+          "column": 0
+        },
+        "au-md-australia": {
+          "type": "header",
+          "text": "AU-MD (Australia)",
+          "value": "au-md-australia",
+          "line": 61,
+          "column": 0
+        },
+        "uk-md-uk": {
+          "type": "header",
+          "text": "UK-MD (UK)",
+          "value": "uk-md-uk",
+          "line": 65,
+          "column": 0
+        },
+        "can-md-canada": {
+          "type": "header",
+          "text": "CAN-MD (Canada)",
+          "value": "can-md-canada",
+          "line": 72,
+          "column": 0
+        }
+      },
+      "fname": "Datasets",
+      "updated": 1636005066075,
+      "created": 1635213694758,
+      "parent": "PhD",
+      "children": [
+        "oxdsOpVcDvBS6LK2g2u5q",
+        "fcutUIFEqfglhag1gNlwj",
+        "PxJVVcxvyNz7ScqpSnMOV",
+        "OCBJDED8DhgRzfr9tuqIE",
+        "kdWEzmfE1rSZAZX1GwXsP",
+        "HQNSmh6LzNUMVucvj1RWZ",
+        "npnnYVoOyuix5N0kKhX2O",
+        "xOhZDUzpzI96q2dq7NOcn",
+        "qG2B481xSr0LdJZXApqjH",
+        "chmzLZHhU0FlSUga1u8jn"
+      ],
+      "data": {},
+      "contentHash": "433e4fddfa7eb1a490ae439f8858e35f",
+      "custom": {}
+    },
+    "chmzLZHhU0FlSUga1u8jn": {
+      "id": "chmzLZHhU0FlSUga1u8jn",
+      "title": "Dataset Extensions",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "dataset-extensions": {
+          "type": "header",
+          "text": "Dataset Extensions",
+          "value": "dataset-extensions",
+          "line": 8,
+          "column": 0
+        }
+      },
+      "fname": "Datasets.extensions",
+      "updated": 1635320565216,
+      "created": 1635213710403,
+      "parent": "jtZSk246bVVDfJy6cdpS1",
+      "children": [],
+      "data": {},
+      "contentHash": "f515ac18104f1e0915f778997d85e955",
+      "custom": {}
+    },
+    "qG2B481xSr0LdJZXApqjH": {
+      "id": "qG2B481xSr0LdJZXApqjH",
+      "title": "macroXTS Documentation",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "macroxts-class": {
+          "type": "header",
+          "text": "macroXTS class",
+          "value": "macroxts-class",
+          "line": 12,
+          "column": 0
+        },
+        "methods-for-macroxts": {
+          "type": "header",
+          "text": "Methods for macroXTS",
+          "value": "methods-for-macroxts",
+          "line": 22,
+          "column": 0
+        },
+        "constructor-function": {
+          "type": "header",
+          "text": "Constructor Function",
+          "value": "constructor-function",
+          "line": 26,
+          "column": 0
+        }
+      },
+      "fname": "Datasets.docs",
+      "updated": 1636427630120,
+      "created": 1635213741965,
+      "parent": "jtZSk246bVVDfJy6cdpS1",
+      "children": [],
+      "data": {},
+      "contentHash": "3dc31d2d8a5988a11aab29153d4079c7",
+      "custom": {}
+    },
+    "xOhZDUzpzI96q2dq7NOcn": {
+      "id": "xOhZDUzpzI96q2dq7NOcn",
+      "title": "WRDS",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "Datasets.WRDS",
+      "updated": 1636426903502,
+      "created": 1636426856833,
+      "parent": "jtZSk246bVVDfJy6cdpS1",
+      "children": [],
+      "data": {},
+      "contentHash": "37946b079e8d549d51c0bddcc25e0a85",
+      "custom": {}
+    },
+    "npnnYVoOyuix5N0kKhX2O": {
+      "id": "npnnYVoOyuix5N0kKhX2O",
+      "title": "UK",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "ukmd": {
+          "type": "header",
+          "text": "UKMD",
+          "value": "ukmd",
+          "line": 10,
+          "column": 0
+        }
+      },
+      "fname": "Datasets.UK",
+      "updated": 1636078245967,
+      "created": 1636077486998,
+      "parent": "jtZSk246bVVDfJy6cdpS1",
+      "children": [],
+      "data": {},
+      "contentHash": "fd2d4f21f3d273b74f8a067ab2dfc6a4",
+      "custom": {}
+    },
+    "HQNSmh6LzNUMVucvj1RWZ": {
+      "id": "HQNSmh6LzNUMVucvj1RWZ",
+      "title": "LCDMA (CAN-MD)",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "lcdma": {
+          "type": "header",
+          "text": "LCDMA",
+          "value": "lcdma",
+          "line": 16,
+          "column": 0
+        },
+        "lcdmaq": {
+          "type": "header",
+          "text": "LCDMAQ",
+          "value": "lcdmaq",
+          "line": 22,
+          "column": 0
+        }
+      },
+      "fname": "Datasets.LCDMA",
+      "updated": 1636284382081,
+      "created": 1636077385863,
+      "parent": "jtZSk246bVVDfJy6cdpS1",
+      "children": [],
+      "data": {},
+      "contentHash": "d610225612b3a3723d3066f6ba87a7ac",
+      "custom": {}
+    },
+    "kdWEzmfE1rSZAZX1GwXsP": {
+      "id": "kdWEzmfE1rSZAZX1GwXsP",
+      "title": "Fama_French",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "3-factor-model": {
+          "type": "header",
+          "text": "3 Factor Model",
+          "value": "3-factor-model",
+          "line": 16,
+          "column": 0
+        },
+        "5-factor-model": {
+          "type": "header",
+          "text": "5 Factor Model",
+          "value": "5-factor-model",
+          "line": 22,
+          "column": 0
+        }
+      },
+      "fname": "Datasets.Fama_French",
+      "updated": 1636427331154,
+      "created": 1636426914350,
+      "parent": "jtZSk246bVVDfJy6cdpS1",
+      "children": [],
+      "data": {},
+      "contentHash": "96abe4bcbbe64e1dde85b01462d9fd7a",
+      "custom": {}
+    },
+    "OCBJDED8DhgRzfr9tuqIE": {
+      "id": "OCBJDED8DhgRzfr9tuqIE",
+      "title": "FRED",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "fredmd": {
+          "type": "header",
+          "text": "FREDMD",
+          "value": "fredmd",
+          "line": 10,
+          "column": 0
+        },
+        "fredqd": {
+          "type": "header",
+          "text": "FREDQD",
+          "value": "fredqd",
+          "line": 45,
+          "column": 0
+        }
+      },
+      "fname": "Datasets.FRED",
+      "updated": 1636077341065,
+      "created": 1635402071090,
+      "parent": "jtZSk246bVVDfJy6cdpS1",
+      "children": [],
+      "data": {},
+      "contentHash": "cc9fe88f6ddc52cf2f5b9b2c12fb9a12",
+      "custom": {}
+    },
+    "PxJVVcxvyNz7ScqpSnMOV": {
+      "id": "PxJVVcxvyNz7ScqpSnMOV",
+      "title": "DataStream",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "Datasets.DataStream",
+      "updated": 1636427615671,
+      "created": 1636427563872,
+      "parent": "jtZSk246bVVDfJy6cdpS1",
+      "children": [],
+      "data": {},
+      "contentHash": "44fff9109d11f78ba47c693727189bd8",
+      "custom": {}
+    },
+    "fcutUIFEqfglhag1gNlwj": {
+      "id": "fcutUIFEqfglhag1gNlwj",
+      "title": "Datasets COVID issues",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "poorly-behaved-series": {
+          "type": "header",
+          "text": "Poorly Behaved Series",
+          "value": "poorly-behaved-series",
+          "line": 10,
+          "column": 0
+        },
+        "": {
+          "type": "header",
+          "text": "",
+          "value": "",
+          "line": 12,
+          "column": 0
+        },
+        "parametric-solutions": {
+          "type": "header",
+          "text": "Parametric Solutions",
+          "value": "parametric-solutions",
+          "line": 14,
+          "column": 0
+        },
+        "-1": {
+          "type": "header",
+          "text": "",
+          "value": "-1",
+          "line": 22,
+          "column": 0
+        }
+      },
+      "fname": "Datasets.COVID",
+      "updated": 1636076439048,
+      "created": 1635320576186,
+      "parent": "jtZSk246bVVDfJy6cdpS1",
+      "children": [],
+      "data": {},
+      "contentHash": "7e4392690eeda15ac1686ebe5d272869",
+      "custom": {}
+    },
+    "oxdsOpVcDvBS6LK2g2u5q": {
+      "id": "oxdsOpVcDvBS6LK2g2u5q",
+      "title": "AUMD",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "Datasets.AUMD",
+      "updated": 1636077326140,
+      "created": 1636077278616,
+      "parent": "jtZSk246bVVDfJy6cdpS1",
+      "children": [],
+      "data": {},
+      "contentHash": "a76eb31df9d9d789c901644b1881286b",
+      "custom": {}
+    },
+    "T4FN6sDHfA9wxiZ7Dg5WX": {
+      "id": "T4FN6sDHfA9wxiZ7Dg5WX",
+      "title": "Dynamic Factor Models",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "DFM",
+            "id": "T4FN6sDHfA9wxiZ7Dg5WX",
+            "vaultName": "vault"
+          },
+          "value": "SFM",
+          "alias": "SFM",
+          "position": {
+            "start": {
+              "line": 20,
+              "column": 43,
+              "offset": 713
+            },
+            "end": {
+              "line": 20,
+              "column": 50,
+              "offset": 720
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "SFM"
+          }
+        }
+      ],
+      "anchors": {
+        "nomenclature": {
+          "type": "header",
+          "text": "Nomenclature",
+          "value": "nomenclature",
+          "line": 12,
+          "column": 0
+        },
+        "dynamic-pca": {
+          "type": "header",
+          "text": "Dynamic PCA",
+          "value": "dynamic-pca",
+          "line": 47,
+          "column": 0
+        },
+        "dynamic-pca-with-periodic-correlation": {
+          "type": "header",
+          "text": "Dynamic PCA with Periodic Correlation",
+          "value": "dynamic-pca-with-periodic-correlation",
+          "line": 58,
+          "column": 0
+        },
+        "generalized-dynamic-pca": {
+          "type": "header",
+          "text": "Generalized Dynamic PCA",
+          "value": "generalized-dynamic-pca",
+          "line": 63,
+          "column": 0
+        }
+      },
+      "fname": "DFM",
+      "updated": 1636513951031,
+      "created": 1634214992986,
+      "parent": "PhD",
+      "children": [
+        "1jV50YftmiErRFb7OgrEo",
+        "ghJgufNZMqDjTfu1EKtc1"
+      ],
+      "data": {},
+      "contentHash": "bf537688a5f54cf6285f6fb10da271a0",
+      "custom": {
+        "geometry": "margin=2cm",
+        "bibliography": [
+          "references.bib"
+        ],
+        "reference-section-title": "References"
+      }
+    },
+    "ghJgufNZMqDjTfu1EKtc1": {
+      "id": "ghJgufNZMqDjTfu1EKtc1",
+      "title": "Breaks in Dynamic Factor Models",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "barigozzi-et-al-joe": {
+          "type": "header",
+          "text": "Barigozzi et al JoE",
+          "value": "barigozzi-et-al-joe",
+          "line": 8,
+          "column": 0
+        },
+        "summary-of-method": {
+          "type": "header",
+          "text": "Summary of Method",
+          "value": "summary-of-method",
+          "line": 20,
+          "column": 0
+        },
+        "framework": {
+          "type": "header",
+          "text": "Framework",
+          "value": "framework",
+          "line": 28,
+          "column": 0
+        },
+        "important-note-on-bai-and-ng-estimator": {
+          "type": "header",
+          "text": "Important note on Bai and Ng estimator",
+          "value": "important-note-on-bai-and-ng-estimator",
+          "line": 34,
+          "column": 0
+        },
+        "wavelets": {
+          "type": "header",
+          "text": "Wavelets",
+          "value": "wavelets",
+          "line": 42,
+          "column": 0
+        },
+        "double-cusum": {
+          "type": "header",
+          "text": "Double CUSUM",
+          "value": "double-cusum",
+          "line": 52,
+          "column": 0
+        }
+      },
+      "fname": "DFM.breaks",
+      "updated": 1636516500301,
+      "created": 1636514979868,
+      "parent": "T4FN6sDHfA9wxiZ7Dg5WX",
+      "children": [],
+      "data": {},
+      "contentHash": "0ce84fa07b02209437ddea14f167d402",
+      "custom": {}
+    },
+    "1jV50YftmiErRFb7OgrEo": {
+      "id": "1jV50YftmiErRFb7OgrEo",
+      "title": "DFM Inference",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "DFM.inference",
+      "updated": 1636514974765,
+      "created": 1635336888631,
+      "parent": "T4FN6sDHfA9wxiZ7Dg5WX",
+      "children": [
+        "U0c40KtWCbQp02iuK28mt"
+      ],
+      "data": {},
+      "contentHash": "c391ebe42d348d29c5fcc8e3bba73ad0",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "U0c40KtWCbQp02iuK28mt": {
+      "id": "U0c40KtWCbQp02iuK28mt",
+      "title": "q Estimators",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "amengual-and-watson-aw07": {
+          "type": "header",
+          "text": "Amengual and Watson (AW07)",
+          "value": "amengual-and-watson-aw07",
+          "line": 14,
+          "column": 0
+        },
+        "bai-and-ng-2007-bn07": {
+          "type": "header",
+          "text": "Bai and Ng (2007) BN07",
+          "value": "bai-and-ng-2007-bn07",
+          "line": 18,
+          "column": 0
+        },
+        "hallin-and-liska-2007-hl07": {
+          "type": "header",
+          "text": "Hallin and Liska (2007) HL07",
+          "value": "hallin-and-liska-2007-hl07",
+          "line": 24,
+          "column": 0
+        }
+      },
+      "fname": "DFM.inference.q",
+      "updated": 1635335945368,
+      "created": 1635335632193,
+      "parent": "1jV50YftmiErRFb7OgrEo",
+      "children": [],
+      "data": {},
+      "contentHash": "48118b0698c5a2f3ec694d57e4783f60",
+      "custom": {}
+    },
+    "MXHvc8bQbNRRVCB0UogRy": {
+      "id": "MXHvc8bQbNRRVCB0UogRy",
+      "title": "Code Resources",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "Code",
+      "updated": 1636426847911,
+      "created": 1636420962292,
+      "parent": "PhD",
+      "children": [],
+      "data": {},
+      "contentHash": "e1a08f7fe5c73242451d6e6c925487a2",
+      "custom": {}
+    },
+    "MsmFdXyWfizd5g8GGcObD": {
+      "id": "MsmFdXyWfizd5g8GGcObD",
+      "title": "Covariance Weighted Forecasting",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "model-setup-and-notation": {
+          "type": "header",
+          "text": "Model Setup and Notation",
+          "value": "model-setup-and-notation",
+          "line": 12,
+          "column": 0
+        },
+        "estimation": {
+          "type": "header",
+          "text": "Estimation",
+          "value": "estimation",
+          "line": 28,
+          "column": 0
+        },
+        "^2": {
+          "type": "block",
+          "value": "2",
+          "line": 44,
+          "column": 49
+        }
+      },
+      "fname": "CWF",
+      "updated": 1636330395777,
+      "created": 1636095097255,
+      "parent": "PhD",
+      "children": [
+        "6i624T8nKKcjbDLAbcjyi",
+        "vzwbMgEI0SwBP738oki5Z",
+        "GLHB2UVCnE6nVxFI7vDeE",
+        "4b8Oc35b3LgoPjcQsglCx",
+        "j8bWDt0HfTs9hvczwVNSi",
+        "FPGOIfZj4F6lT1ANrKWdX"
+      ],
+      "data": {},
+      "contentHash": "b88e3a0b1cfb40807675e230c7c417b9",
+      "custom": {}
+    },
+    "FPGOIfZj4F6lT1ANrKWdX": {
+      "id": "FPGOIfZj4F6lT1ANrKWdX",
+      "title": "CWF Simulation Study",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "motivation": {
+          "type": "header",
+          "text": "Motivation",
+          "value": "motivation",
+          "line": 10,
+          "column": 0
+        },
+        "experiment-1": {
+          "type": "header",
+          "text": "Experiment 1",
+          "value": "experiment-1",
+          "line": 18,
+          "column": 0
+        },
+        "experiment-2": {
+          "type": "header",
+          "text": "Experiment 2",
+          "value": "experiment-2",
+          "line": 26,
+          "column": 0
+        }
+      },
+      "fname": "CWF.sim",
+      "updated": 1636095383581,
+      "created": 1636095154775,
+      "parent": "MsmFdXyWfizd5g8GGcObD",
+      "children": [],
+      "data": {},
+      "contentHash": "45e793ed476c0ee9c77c7eccc11ba27d",
+      "custom": {}
+    },
+    "j8bWDt0HfTs9hvczwVNSi": {
+      "id": "j8bWDt0HfTs9hvczwVNSi",
+      "title": "Literature Review",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "CWF.review",
+      "updated": 1636095655596,
+      "created": 1636095609309,
+      "parent": "MsmFdXyWfizd5g8GGcObD",
+      "children": [],
+      "data": {},
+      "contentHash": "4844c3db00f844834b644a7304c10d9a",
+      "custom": {}
+    },
+    "4b8Oc35b3LgoPjcQsglCx": {
+      "id": "4b8Oc35b3LgoPjcQsglCx",
+      "title": "Candidate Models",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "univariate-models": {
+          "type": "header",
+          "text": "Univariate Models",
+          "value": "univariate-models",
+          "line": 10,
+          "column": 0
+        },
+        "multivariate-factor-models": {
+          "type": "header",
+          "text": "Multivariate (Factor) Models",
+          "value": "multivariate-factor-models",
+          "line": 25,
+          "column": 0
+        }
+      },
+      "fname": "CWF.models",
+      "updated": 1636095708420,
+      "created": 1636095674145,
+      "parent": "MsmFdXyWfizd5g8GGcObD",
+      "children": [],
+      "data": {},
+      "contentHash": "7a05d69ff2eef37faaf7f851f238b996",
+      "custom": {}
+    },
+    "GLHB2UVCnE6nVxFI7vDeE": {
+      "id": "GLHB2UVCnE6nVxFI7vDeE",
+      "title": "Empirical Study",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "inflation-forecasting": {
+          "type": "header",
+          "text": "Inflation Forecasting",
+          "value": "inflation-forecasting",
+          "line": 14,
+          "column": 0
+        },
+        "gdp-forecasting": {
+          "type": "header",
+          "text": "GDP forecasting",
+          "value": "gdp-forecasting",
+          "line": 19,
+          "column": 0
+        },
+        "unemployment-forecasting": {
+          "type": "header",
+          "text": "Unemployment forecasting",
+          "value": "unemployment-forecasting",
+          "line": 22,
+          "column": 0
+        }
+      },
+      "fname": "CWF.empirical",
+      "updated": 1636331440143,
+      "created": 1636095716715,
+      "parent": "MsmFdXyWfizd5g8GGcObD",
+      "children": [
+        "6jScjSKL9hxSIPTbWMgAH"
+      ],
+      "data": {},
+      "contentHash": "4ddc68b411fab7bb61f300f96eab7e99",
+      "custom": {}
+    },
+    "6jScjSKL9hxSIPTbWMgAH": {
+      "id": "6jScjSKL9hxSIPTbWMgAH",
+      "title": "Inflation Forecasting Review",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "real-world-motivation": {
+          "type": "header",
+          "text": "Real World Motivation",
+          "value": "real-world-motivation",
+          "line": 16,
+          "column": 0
+        },
+        "data-and-stylized-facts": {
+          "type": "header",
+          "text": "Data and stylized facts",
+          "value": "data-and-stylized-facts",
+          "line": 26,
+          "column": 0
+        },
+        "measure-of-inflation": {
+          "type": "header",
+          "text": "Measure of Inflation",
+          "value": "measure-of-inflation",
+          "line": 36,
+          "column": 0
+        },
+        "forecasting-methodology": {
+          "type": "header",
+          "text": "Forecasting Methodology",
+          "value": "forecasting-methodology",
+          "line": 67,
+          "column": 0
+        },
+        "forecasting-methods": {
+          "type": "header",
+          "text": "Forecasting Methods",
+          "value": "forecasting-methods",
+          "line": 73,
+          "column": 0
+        },
+        "results": {
+          "type": "header",
+          "text": "Results",
+          "value": "results",
+          "line": 134,
+          "column": 0
+        },
+        "subjective-forecasts-do-best": {
+          "type": "header",
+          "text": "Subjective Forecasts do best",
+          "value": "subjective-forecasts-do-best",
+          "line": 138,
+          "column": 0
+        },
+        "nowcast-comments": {
+          "type": "header",
+          "text": "Nowcast Comments",
+          "value": "nowcast-comments",
+          "line": 142,
+          "column": 0
+        },
+        "heavy-shrinkage-in-information-improves-inflation-forecasts": {
+          "type": "header",
+          "text": "Heavy shrinkage in information improves inflation forecasts",
+          "value": "heavy-shrinkage-in-information-improves-inflation-forecasts",
+          "line": 146,
+          "column": 0
+        },
+        "financial-crisis": {
+          "type": "header",
+          "text": "Financial Crisis",
+          "value": "financial-crisis",
+          "line": 148,
+          "column": 0
+        },
+        "phillips-curve": {
+          "type": "header",
+          "text": "Phillips Curve",
+          "value": "phillips-curve",
+          "line": 152,
+          "column": 0
+        },
+        "other-notes": {
+          "type": "header",
+          "text": "Other Notes",
+          "value": "other-notes",
+          "line": 156,
+          "column": 0
+        }
+      },
+      "fname": "CWF.empirical.inflation",
+      "updated": 1636339491300,
+      "created": 1636095787485,
+      "parent": "GLHB2UVCnE6nVxFI7vDeE",
+      "children": [],
+      "data": {},
+      "contentHash": "cb9d6f68ff761de8f7f49bc46da08ab7",
+      "custom": {}
+    },
+    "vzwbMgEI0SwBP738oki5Z": {
+      "id": "vzwbMgEI0SwBP738oki5Z",
+      "title": "Documentation",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "constituent-models": {
+          "type": "header",
+          "text": "Constituent Models",
+          "value": "constituent-models",
+          "line": 10,
+          "column": 0
+        },
+        "": {
+          "type": "header",
+          "text": "",
+          "value": "",
+          "line": 14,
+          "column": 0
+        }
+      },
+      "fname": "CWF.docs",
+      "updated": 1636283827560,
+      "created": 1636095392781,
+      "parent": "MsmFdXyWfizd5g8GGcObD",
+      "children": [],
+      "data": {},
+      "contentHash": "43caea003ac214ac85008a6a4d5b4814",
+      "custom": {}
+    },
+    "6i624T8nKKcjbDLAbcjyi": {
+      "id": "6i624T8nKKcjbDLAbcjyi",
+      "title": "Heather's Paper",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "motivation": {
+          "type": "header",
+          "text": "Motivation",
+          "value": "motivation",
+          "line": 10,
+          "column": 0
+        },
+        "summary": {
+          "type": "header",
+          "text": "Summary",
+          "value": "summary",
+          "line": 14,
+          "column": 0
+        }
+      },
+      "fname": "CWF.anderson",
+      "updated": 1636284046667,
+      "created": 1636283893853,
+      "parent": "MsmFdXyWfizd5g8GGcObD",
+      "children": [],
+      "data": {},
+      "contentHash": "e1bbaaff7e2511de44cb65b1cacf9548",
+      "custom": {}
+    },
+    "AiXOWFsdvi3BPZxcUMjIi": {
+      "id": "AiXOWFsdvi3BPZxcUMjIi",
+      "title": "Bayesian Approaches to DFMs",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Bayesian",
+            "id": "AiXOWFsdvi3BPZxcUMjIi",
+            "vaultName": "vault"
+          },
+          "value": "tags.hashtag",
+          "alias": "#hashtag",
+          "position": {
+            "start": {
+              "line": 2,
+              "column": 1,
+              "offset": 1
+            },
+            "end": {
+              "line": 2,
+              "column": 9,
+              "offset": 9
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "tags.hashtag"
+          }
+        },
+        {
+          "from": {
+            "fname": "State_Space",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 10,
+              "column": 128,
+              "offset": 675
+            },
+            "end": {
+              "line": 10,
+              "column": 140,
+              "offset": 687
+            },
+            "indent": []
+          },
+          "value": "Bayesian"
+        }
+      ],
+      "anchors": {
+        "del-negro-and-otrok": {
+          "type": "header",
+          "text": "del Negro and Otrok",
+          "value": "del-negro-and-otrok",
+          "line": 18,
+          "column": 0
+        },
+        "mumtaz-and-surico": {
+          "type": "header",
+          "text": "Mumtaz and Surico",
+          "value": "mumtaz-and-surico",
+          "line": 24,
+          "column": 0
+        },
+        "model": {
+          "type": "header",
+          "text": "Model",
+          "value": "model",
+          "line": 30,
+          "column": 0
+        },
+        "estimation": {
+          "type": "header",
+          "text": "Estimation",
+          "value": "estimation",
+          "line": 36,
+          "column": 0
+        },
+        "brjornland-and-thorsrud-2015a": {
+          "type": "header",
+          "text": "Brjornland and Thorsrud (2015a)",
+          "value": "brjornland-and-thorsrud-2015a",
+          "line": 40,
+          "column": 0
+        },
+        "stock-and-watson-2015": {
+          "type": "header",
+          "text": "Stock and Watson (2015)",
+          "value": "stock-and-watson-2015",
+          "line": 48,
+          "column": 0
+        }
+      },
+      "fname": "Bayesian",
+      "updated": 1635393722084,
+      "created": 1635317507547,
+      "parent": "PhD",
+      "children": [
+        "priZqtMQMMVysLh8pfkLm",
+        "AItpzXGZNSAujGo8zqpRi"
+      ],
+      "data": {},
+      "contentHash": "7e4e1006c10b6450e4fb08ae9167afa1",
+      "custom": {}
+    },
+    "AItpzXGZNSAujGo8zqpRi": {
+      "id": "AItpzXGZNSAujGo8zqpRi",
+      "title": "Bayesian Inference/Estimation",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "del-negro-and-otrok": {
+          "type": "header",
+          "text": "del Negro and Otrok",
+          "value": "del-negro-and-otrok",
+          "line": 10,
+          "column": 0
+        },
+        "bai-and-wang-2012": {
+          "type": "header",
+          "text": "Bai and Wang (2012)",
+          "value": "bai-and-wang-2012",
+          "line": 14,
+          "column": 0
+        }
+      },
+      "fname": "Bayesian.inference",
+      "updated": 1635400398253,
+      "created": 1635398777466,
+      "parent": "AiXOWFsdvi3BPZxcUMjIi",
+      "children": [],
+      "data": {},
+      "contentHash": "3ffc50466e63eaa0e410c7f7302c427f",
+      "custom": {}
+    },
+    "priZqtMQMMVysLh8pfkLm": {
+      "id": "priZqtMQMMVysLh8pfkLm",
+      "title": "Factor",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "Bayesian.factor",
+      "updated": 1636284202924,
+      "created": 1636284158595,
+      "parent": "AiXOWFsdvi3BPZxcUMjIi",
+      "children": [],
+      "data": {},
+      "contentHash": "82794076f5937f1f2e5757d1264bd002",
+      "custom": {}
+    },
+    "CQTUwoXQNcd0Y7la7IaAn": {
+      "id": "CQTUwoXQNcd0Y7la7IaAn",
+      "title": "Appendix",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "appendix": {
+          "type": "header",
+          "text": "Appendix",
+          "value": "appendix",
+          "line": 8,
+          "column": 0
+        },
+        "long-run-covariance-matrices": {
+          "type": "header",
+          "text": "Long Run Covariance Matrices",
+          "value": "long-run-covariance-matrices",
+          "line": 13,
+          "column": 0
+        }
+      },
+      "fname": "Appendix",
+      "updated": 1634214733718,
+      "created": 1634214393225,
+      "parent": "PhD",
+      "children": [
+        "1V9tDyQwkgBuhWMngZc6p",
+        "dailP0MR8nIVqoelobEaN",
+        "VjFz27ulYSsBjd87IBLMa"
+      ],
+      "data": {},
+      "contentHash": "ce68b0636db407f3a1459df0c4bbb018",
+      "custom": {
+        "nav_order": 20
+      }
+    },
+    "VjFz27ulYSsBjd87IBLMa": {
+      "id": "VjFz27ulYSsBjd87IBLMa",
+      "title": "Stochastic_order",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "order-notation-in-real-analysis": {
+          "type": "header",
+          "text": "Order Notation in Real Analysis",
+          "value": "order-notation-in-real-analysis",
+          "line": 8,
+          "column": 0
+        },
+        "properties": {
+          "type": "header",
+          "text": "Properties",
+          "value": "properties",
+          "line": 10,
+          "column": 0
+        },
+        "stochastic-order-notation": {
+          "type": "header",
+          "text": "Stochastic Order Notation",
+          "value": "stochastic-order-notation",
+          "line": 16,
+          "column": 0
+        },
+        "properties-1": {
+          "type": "header",
+          "text": "Properties",
+          "value": "properties-1",
+          "line": 18,
+          "column": 0
+        }
+      },
+      "fname": "Appendix.Stochastic_order",
+      "updated": 1636344096839,
+      "created": 1636343129803,
+      "parent": "CQTUwoXQNcd0Y7la7IaAn",
+      "children": [],
+      "data": {},
+      "contentHash": "e2292fd75fb565c688b85486a05e3dc7",
+      "custom": {}
+    },
+    "dailP0MR8nIVqoelobEaN": {
+      "id": "dailP0MR8nIVqoelobEaN",
+      "title": "Linear_Algebra",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "basic-definitions": {
+          "type": "header",
+          "text": "Basic Definitions",
+          "value": "basic-definitions",
+          "line": 8,
+          "column": 0
+        },
+        "square-matrices": {
+          "type": "header",
+          "text": "Square Matrices",
+          "value": "square-matrices",
+          "line": 11,
+          "column": 0
+        },
+        "positive-definite-matrices": {
+          "type": "header",
+          "text": "Positive Definite Matrices",
+          "value": "positive-definite-matrices",
+          "line": 22,
+          "column": 0
+        },
+        "matrix-decompositions": {
+          "type": "header",
+          "text": "Matrix Decompositions",
+          "value": "matrix-decompositions",
+          "line": 29,
+          "column": 0
+        },
+        "eigenvalues-and-eigenvectors": {
+          "type": "header",
+          "text": "Eigenvalues and Eigenvectors",
+          "value": "eigenvalues-and-eigenvectors",
+          "line": 31,
+          "column": 0
+        },
+        "singular-value-decomposition": {
+          "type": "header",
+          "text": "Singular Value Decomposition",
+          "value": "singular-value-decomposition",
+          "line": 36,
+          "column": 0
+        },
+        "principal-components-analysis": {
+          "type": "header",
+          "text": "Principal Components Analysis",
+          "value": "principal-components-analysis",
+          "line": 46,
+          "column": 0
+        },
+        "matrix-differentiation": {
+          "type": "header",
+          "text": "Matrix Differentiation",
+          "value": "matrix-differentiation",
+          "line": 63,
+          "column": 0
+        },
+        "kronecker-products": {
+          "type": "header",
+          "text": "Kronecker Products",
+          "value": "kronecker-products",
+          "line": 65,
+          "column": 0
+        },
+        "other-results": {
+          "type": "header",
+          "text": "Other Results",
+          "value": "other-results",
+          "line": 70,
+          "column": 0
+        }
+      },
+      "fname": "Appendix.Linear_Algebra",
+      "updated": 1636343740473,
+      "created": 1635165273731,
+      "parent": "CQTUwoXQNcd0Y7la7IaAn",
+      "children": [],
+      "data": {},
+      "contentHash": "60644798c03564ee52c97623ae863f1f",
+      "custom": {}
+    },
+    "1V9tDyQwkgBuhWMngZc6p": {
+      "id": "1V9tDyQwkgBuhWMngZc6p",
+      "title": "Limit Theorems",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "central-limit-theorem": {
+          "type": "header",
+          "text": "Central Limit Theorem",
+          "value": "central-limit-theorem",
+          "line": 8,
+          "column": 0
+        },
+        "law-of-large-numbers": {
+          "type": "header",
+          "text": "Law of Large Numbers",
+          "value": "law-of-large-numbers",
+          "line": 10,
+          "column": 0
+        },
+        "slutskycontinuous-mapping-theorem": {
+          "type": "header",
+          "text": "Slutsky/Continuous Mapping Theorem",
+          "value": "slutskycontinuous-mapping-theorem",
+          "line": 18,
+          "column": 0
+        },
+        "cramer-wold-device": {
+          "type": "header",
+          "text": "Cramer-Wold Device",
+          "value": "cramer-wold-device",
+          "line": 30,
+          "column": 0
+        },
+        "": {
+          "type": "header",
+          "text": "",
+          "value": "",
+          "line": 32,
+          "column": 0
+        }
+      },
+      "fname": "Appendix.Limit_theorems",
+      "updated": 1636418351270,
+      "created": 1636344103536,
+      "parent": "CQTUwoXQNcd0Y7la7IaAn",
+      "children": [],
+      "data": {},
+      "contentHash": "a42bdcc20380e88baadc5364d99805ef",
+      "custom": {}
+    },
+    "jMIh51K0sWXZgTJg24c1e": {
+      "id": "jMIh51K0sWXZgTJg24c1e",
+      "title": "Structural Break Critical Values",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "Andrews_crit",
+      "updated": 1636263478903,
+      "created": 1635143251667,
+      "parent": "PhD",
+      "children": [],
+      "data": {},
+      "contentHash": "14ad8585972193355728e3b9c57ff051",
+      "custom": {}
+    },
+    "changelog": {
+      "id": "changelog",
+      "title": "Changelog",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "root.changelog",
+      "updated": 1636516875344,
+      "created": 1636516875344,
+      "parent": null,
+      "children": [],
+      "data": {}
+    }
+  },
+  "domains": [
+    {
+      "id": "PhD",
+      "title": "PhD Homepage",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "root",
+            "id": "PhD",
+            "vaultName": "vault"
+          },
+          "value": "roadmap",
+          "alias": "roadmap",
+          "position": {
+            "start": {
+              "line": 12,
+              "column": 1,
+              "offset": 451
+            },
+            "end": {
+              "line": 12,
+              "column": 12,
+              "offset": 462
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "roadmap"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "root",
+            "id": "PhD",
+            "vaultName": "vault"
+          },
+          "value": "Meeting",
+          "alias": "Meeting",
+          "position": {
+            "start": {
+              "line": 14,
+              "column": 1,
+              "offset": 464
+            },
+            "end": {
+              "line": 14,
+              "column": 12,
+              "offset": 475
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "Meeting"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "root",
+            "id": "PhD",
+            "vaultName": "vault"
+          },
+          "value": "TODO",
+          "alias": "TODO",
+          "position": {
+            "start": {
+              "line": 16,
+              "column": 1,
+              "offset": 477
+            },
+            "end": {
+              "line": 16,
+              "column": 9,
+              "offset": 485
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "TODO"
+          }
+        }
+      ],
+      "anchors": {
+        "quick-links": {
+          "type": "header",
+          "text": "Quick Links",
+          "value": "quick-links",
+          "line": 17,
+          "column": 0
+        },
+        "to-do-list": {
+          "type": "header",
+          "text": "To do List",
+          "value": "to-do-list",
+          "line": 25,
+          "column": 0
+        }
+      },
+      "fname": "root",
+      "updated": 1636511545745,
+      "created": 1595961348801,
+      "parent": null,
+      "children": [
+        "jMIh51K0sWXZgTJg24c1e",
+        "CQTUwoXQNcd0Y7la7IaAn",
+        "AiXOWFsdvi3BPZxcUMjIi",
+        "MsmFdXyWfizd5g8GGcObD",
+        "MXHvc8bQbNRRVCB0UogRy",
+        "T4FN6sDHfA9wxiZ7Dg5WX",
+        "jtZSk246bVVDfJy6cdpS1",
+        "qGmGYptDKW2WLwlsu2xJw",
+        "GvwoAWaYZxq1czYi3t3k4",
+        "ZIDZSAYP9a9L7jYhVMgcz",
+        "WOnXV41UlGcOQzEoTZzJU",
+        "fhf7Gdr3mhOUG1mU5twC6",
+        "AOvKFmg0tBcGmUASXaALX",
+        "qDVp6IFHf6FiUdSgxwZMA",
+        "fHzGITjWkNNkiwsQpdex4",
+        "umGHrdI4OaLoU8OOAOdkL",
+        "aQw5xJBpqunSJYCfXXAls",
+        "0R61RLuT7e3hswR2v6o0w",
+        "AuDqSlWn0PlsSo8JdLgrR",
+        "ElqQePaEuSSz7pSeO1gNc",
+        "BMClpTRP3V8ITqM7R4kh0",
+        "SKUZ6b0dCeZkJQWeJkLAZ",
+        "y0rpX1u3Lz3vpUFro9TcW"
+      ],
+      "body": "\nWelcome to my website!\n\nThis website has been built using Dendron, and each topic has been collated into collapsible sections on the left hand side. Below is a high level overview showing how each section is connected for ease of navigation.\n\n\n\nDendron has incredibly powerful search functionality due to good indexing, even outside of working in raw .md files. Simply use the search bar at the top of the website to find something.\n\n## Quick Links\n\n[[roadmap]]\n\n[[Meeting]]\n\n[[TODO]]\n\n## To do List\n\nType up Bai and Ng assumptions\n\nInvestigate Bates et al Assumptions\n\nInvestigate consistency of using an estimated break point in conjunction with BNIC\nThis seems to be consistent using k_tilde that itself may be Op(1)\n\nFix up BP test for better interface (low priority)\n\nImplement simulated Andrews exp and mean Wald/LM tests\n\n- look into RSpectra package (supposedly faster eigen)\n- not sure whether to rename this to SFM or not (lots of legacy code that needs to be changed)\n\nData\nFix and clean data for \n- AUMD (on hold, need to find date index)\n- FREDQD\n- CANMD (should be straightforward)\n- CANQD\n- UKMD (should be straightforward)\n\nInvestigate further sources of time series that could be used during COVID\n\nImplement truly dynamic factor models (Forni) using Dynamic PCA\n- BIG task\n- read into dynamic PCA\n- read into testing no. of dynamic factors\n- do not believe there is a literature focusing on breaks in the dynamic setup\n- implement dynamic PCA\n- implement testing no of factors, (look into ICshocks functions and make this interface better)\n- implement testing no of factors using AW test\n\nImplement BKW standard test (non sequential)\n\nFix up BKW test\n- implement a general plot method which plots *something* on the y axis, but most importantly, date on the x axis with estimated break dates, and each partition labelled with the no. of factors as determined by some consistent estimator\n\nFix up BE test\n- so that there is a consistent interface for accessing this\n\n\n\n",
+      "data": {},
+      "contentHash": "c6af9b2ed3aab77c392e8be93bbd7ee8",
+      "custom": {
+        "stub": false,
+        "nav_order": 0,
+        "permalink": "/"
+      }
+    }
+  ],
+  "noteIndex": {
+    "id": "PhD",
+    "title": "PhD Homepage",
+    "vault": {
+      "fsPath": "vault"
+    },
+    "type": "note",
+    "desc": "",
+    "links": [
+      {
+        "type": "wiki",
+        "from": {
+          "fname": "root",
+          "id": "PhD",
+          "vaultName": "vault"
+        },
+        "value": "roadmap",
+        "alias": "roadmap",
+        "position": {
+          "start": {
+            "line": 12,
+            "column": 1,
+            "offset": 451
+          },
+          "end": {
+            "line": 12,
+            "column": 12,
+            "offset": 462
+          },
+          "indent": []
+        },
+        "xvault": false,
+        "sameFile": false,
+        "to": {
+          "fname": "roadmap"
+        }
+      },
+      {
+        "type": "wiki",
+        "from": {
+          "fname": "root",
+          "id": "PhD",
+          "vaultName": "vault"
+        },
+        "value": "Meeting",
+        "alias": "Meeting",
+        "position": {
+          "start": {
+            "line": 14,
+            "column": 1,
+            "offset": 464
+          },
+          "end": {
+            "line": 14,
+            "column": 12,
+            "offset": 475
+          },
+          "indent": []
+        },
+        "xvault": false,
+        "sameFile": false,
+        "to": {
+          "fname": "Meeting"
+        }
+      },
+      {
+        "type": "wiki",
+        "from": {
+          "fname": "root",
+          "id": "PhD",
+          "vaultName": "vault"
+        },
+        "value": "TODO",
+        "alias": "TODO",
+        "position": {
+          "start": {
+            "line": 16,
+            "column": 1,
+            "offset": 477
+          },
+          "end": {
+            "line": 16,
+            "column": 9,
+            "offset": 485
+          },
+          "indent": []
+        },
+        "xvault": false,
+        "sameFile": false,
+        "to": {
+          "fname": "TODO"
+        }
+      }
+    ],
+    "anchors": {
+      "quick-links": {
+        "type": "header",
+        "text": "Quick Links",
+        "value": "quick-links",
+        "line": 17,
+        "column": 0
+      },
+      "to-do-list": {
+        "type": "header",
+        "text": "To do List",
+        "value": "to-do-list",
+        "line": 25,
+        "column": 0
+      }
+    },
+    "fname": "root",
+    "updated": 1636511545745,
+    "created": 1595961348801,
+    "parent": null,
+    "children": [
+      "jMIh51K0sWXZgTJg24c1e",
+      "CQTUwoXQNcd0Y7la7IaAn",
+      "AiXOWFsdvi3BPZxcUMjIi",
+      "MsmFdXyWfizd5g8GGcObD",
+      "MXHvc8bQbNRRVCB0UogRy",
+      "T4FN6sDHfA9wxiZ7Dg5WX",
+      "jtZSk246bVVDfJy6cdpS1",
+      "qGmGYptDKW2WLwlsu2xJw",
+      "GvwoAWaYZxq1czYi3t3k4",
+      "ZIDZSAYP9a9L7jYhVMgcz",
+      "WOnXV41UlGcOQzEoTZzJU",
+      "fhf7Gdr3mhOUG1mU5twC6",
+      "AOvKFmg0tBcGmUASXaALX",
+      "qDVp6IFHf6FiUdSgxwZMA",
+      "fHzGITjWkNNkiwsQpdex4",
+      "umGHrdI4OaLoU8OOAOdkL",
+      "aQw5xJBpqunSJYCfXXAls",
+      "0R61RLuT7e3hswR2v6o0w",
+      "AuDqSlWn0PlsSo8JdLgrR",
+      "ElqQePaEuSSz7pSeO1gNc",
+      "BMClpTRP3V8ITqM7R4kh0",
+      "SKUZ6b0dCeZkJQWeJkLAZ",
+      "y0rpX1u3Lz3vpUFro9TcW"
+    ],
+    "body": "\nWelcome to my website!\n\nThis website has been built using Dendron, and each topic has been collated into collapsible sections on the left hand side. Below is a high level overview showing how each section is connected for ease of navigation.\n\n\n\nDendron has incredibly powerful search functionality due to good indexing, even outside of working in raw .md files. Simply use the search bar at the top of the website to find something.\n\n## Quick Links\n\n[[roadmap]]\n\n[[Meeting]]\n\n[[TODO]]\n\n## To do List\n\nType up Bai and Ng assumptions\n\nInvestigate Bates et al Assumptions\n\nInvestigate consistency of using an estimated break point in conjunction with BNIC\nThis seems to be consistent using k_tilde that itself may be Op(1)\n\nFix up BP test for better interface (low priority)\n\nImplement simulated Andrews exp and mean Wald/LM tests\n\n- look into RSpectra package (supposedly faster eigen)\n- not sure whether to rename this to SFM or not (lots of legacy code that needs to be changed)\n\nData\nFix and clean data for \n- AUMD (on hold, need to find date index)\n- FREDQD\n- CANMD (should be straightforward)\n- CANQD\n- UKMD (should be straightforward)\n\nInvestigate further sources of time series that could be used during COVID\n\nImplement truly dynamic factor models (Forni) using Dynamic PCA\n- BIG task\n- read into dynamic PCA\n- read into testing no. of dynamic factors\n- do not believe there is a literature focusing on breaks in the dynamic setup\n- implement dynamic PCA\n- implement testing no of factors, (look into ICshocks functions and make this interface better)\n- implement testing no of factors using AW test\n\nImplement BKW standard test (non sequential)\n\nFix up BKW test\n- implement a general plot method which plots *something* on the y axis, but most importantly, date on the x axis with estimated break dates, and each partition labelled with the no. of factors as determined by some consistent estimator\n\nFix up BE test\n- so that there is a consistent interface for accessing this\n\n\n\n",
+    "data": {},
+    "contentHash": "c6af9b2ed3aab77c392e8be93bbd7ee8",
+    "custom": {
+      "stub": false,
+      "nav_order": 0,
+      "permalink": "/"
+    }
+  },
+  "vaults": [
+    {
+      "fsPath": "vault"
+    }
+  ]
+}

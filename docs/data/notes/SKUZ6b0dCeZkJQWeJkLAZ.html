@@ -1,0 +1,16 @@
+<h2 id="andrews-critical-values"><a aria-hidden="true" class="anchor-heading" href="#andrews-critical-values"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Andrews critical Values</h2>
+<h2 id="andrews-asymptotic-p-values-by-bruce-hansen"><a aria-hidden="true" class="anchor-heading" href="#andrews-asymptotic-p-values-by-bruce-hansen"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Andrews asymptotic p-values, by Bruce Hansen</h2>
+<p>Asymptotic p values (as opposed to critical values, though practically the same) were produce by Bruce Hansen via apoproximating regressions. Bruce Hansen's original GAUSS code was then ported to R, which was then refined by the strucchange package.</p>
+<p>As such, the supF, aveF, and expF asymptotic p values are easily accessible.</p>
+<p>Unfortunately this was painstakingly implemented by hand from scratch before the Bruce Hansen paper was known to me... This has now been archived, in case there is some strange paper out there which specifically requires the quantiles, and not the p values of this distribution.</p>
+<h2 id="bai-and-perron"><a aria-hidden="true" class="anchor-heading" href="#bai-and-perron"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Bai and Perron</h2>
+<p>The main results that are used a lot in structural break analysis for time series.</p>
+<p>Essentially, this amounts to finding the break point such that the total sum of squared residuals from both partitions is minimized. This is implemented in the very old strucchange package, and interfacing with it is very tedious. Therefore, some wrapper functions had to be introduced.</p>
+<p>Note that it is impractical to re-implement this, as Bai and Perron came up with a specific algorithm which computes this minimization problem very efficiently.</p>
+<p>Note that because these are supremum type statistics, the critical values are non standard and need to be simulated, which is computationally demanding.</p>
+<p>In subsequent follow up, Bai and Perron provide simulated critical values in the form of surface response regressions/functions. Essentially, for space considerations they fit an almost perfectly fit regression to the critical values so that people can easily generate them in the future, and this is the implementation used.</p>
+<h2 id="qu-and-perron"><a aria-hidden="true" class="anchor-heading" href="#qu-and-perron"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Qu and Perron</h2>
+<p>The multivariate/multi-equation extension to Bai and Perron. </p>
+<p>This is much more complicated and to my knowledge does not seem much use in the literature, simply because it is difficult to think of any realistic models such that this test would actually be needed/wanted.</p>
+<p>Notably, there is no easily accessible implementation of this, and only Qu's GAUSS code which is terrible.</p>
+<p>A conversion project for this ongoing, but of very low priority.</p>

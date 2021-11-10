@@ -1,0 +1,113 @@
+{
+  "version": 3,
+  "useFMTitle": false,
+  "useNoteTitleForLink": true,
+  "noLegacyNoteRef": true,
+  "mermaid": true,
+  "useKatex": true,
+  "usePrettyRefs": true,
+  "dev": {
+    "enablePreviewV2": true
+  },
+  "site": {
+    "copyAssets": true,
+    "siteHierarchies": [
+      "root"
+    ],
+    "siteRootDir": "docs",
+    "usePrettyRefs": true,
+    "title": "Ze Yu",
+    "description": "Personal knowledge space",
+    "siteLastModified": true,
+    "gh_edit_branch": "main",
+    "duplicateNoteBehavior": {
+      "action": "useVault",
+      "payload": [
+        "vault"
+      ]
+    },
+    "siteUrl": "https://zeyuz35.github.io/",
+    "usePrettyLinks": true,
+    "siteNotesDir": "notes",
+    "siteFaviconPath": "favicon.ico",
+    "gh_edit_link": true,
+    "gh_edit_link_text": "Edit this page on GitHub",
+    "gh_root": "docs/",
+    "gh_edit_view_mode": "edit",
+    "writeStubs": true,
+    "siteIndex": "root"
+  },
+  "commands": {
+    "lookup": {
+      "note": {
+        "selectionMode": "extract",
+        "confirmVaultOnCreate": false,
+        "leaveTrace": false
+      }
+    },
+    "randomNote": {},
+    "insertNote": {
+      "initialValue": "templates"
+    },
+    "insertNoteLink": {
+      "aliasMode": "none",
+      "enableMultiSelect": false
+    },
+    "insertNoteIndex": {
+      "enableMarker": false
+    }
+  },
+  "workspace": {
+    "vaults": [
+      {
+        "fsPath": "vault"
+      }
+    ],
+    "journal": {
+      "dailyDomain": "daily",
+      "name": "journal",
+      "dateFormat": "y.MM.dd",
+      "addBehavior": "childOfDomain"
+    },
+    "scratch": {
+      "name": "scratch",
+      "dateFormat": "y.MM.dd.HHmmss",
+      "addBehavior": "asOwnDomain"
+    },
+    "graph": {
+      "zoomSpeed": 1
+    },
+    "enableAutoCreateOnDefinition": false,
+    "enableXVaultWikiLink": false,
+    "enableRemoteVaultInit": true,
+    "enableUserTags": true,
+    "enableHashTags": true,
+    "workspaceVaultSyncMode": "noCommit",
+    "enableAutoFoldFrontmatter": false,
+    "maxPreviewsCached": 10,
+    "maxNoteLength": 204800,
+    "task": {
+      "name": "",
+      "dateFormat": "",
+      "addBehavior": "childOfCurrent",
+      "statusSymbols": {
+        "": " ",
+        "wip": "w",
+        "done": "x",
+        "assigned": "a",
+        "moved": "m",
+        "blocked": "b",
+        "delegated": "l",
+        "dropped": "d",
+        "pending": "y"
+      },
+      "prioritySymbols": {
+        "H": "high",
+        "M": "medium",
+        "L": "low"
+      },
+      "todoIntegration": false,
+      "createTaskSelectionType": "selection2link"
+    }
+  }
+}

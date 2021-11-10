@@ -1,0 +1,124 @@
+<p>Inflation forecasting review section.</p>
+<p>Inflation forecasting is a prominent topic within the empirical forecasting literature. The results here are mainly a summary from Faust and Wright 2012 "Forecasting Inflation".</p>
+<p>Note that was state of the art as of 2012, and so by now is perhaps a little outdated. The authors note that as of the time of writing there was an explosion in the inflation forecasting literature. </p>
+<p>Also note that "vintage" datasets were considered to be quite difficult and new-fangled back then...</p>
+<h2 id="real-world-motivation"><a aria-hidden="true" class="anchor-heading" href="#real-world-motivation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Real World Motivation</h2>
+<p>In general, Central Banks aim to keep inflation stable, maintain an efficient level of employment, and contribute towards the economic prosperity and welfare of its citizens, via the use of monetary policy (this is what the Reserve Bank of Australia states, and is essence what most other central banks' mission statements are). With this in mind, the New Keynesian approach to monetary policy explicitly requires the use of optimal forecasts, is most effective when it is well understood by the public.</p>
+<p>It is for this reason that lead to central banks announcing forecasts of inflation and other key variables to the public, and is called "inflation targeting". </p>
+<p>A key note of this review is that subjective based models of inflation forecasting seem to still outperform actual model based forecasting. This is noted to be in stark contrast to GDP forecasting, where even very simple time series models do better than most subjective forecasts.</p>
+<p>Another key note is the inflation forecasting done by the central bank and inflation forecasting done by the general public are completely different ball games. The cental bank has control over monetary policy, which in turn affects inflation, so the central banks' forecasts depend on what they anticipate their future monetary policy decisions to be. This leaves central banks two options: integrate/average out over all possible policy decisions to yield an unconditional forecast, or produce <em>conditional</em> forecasts. The Fed's Greenbook and Bank of England's forecasts are both conditional forecasts. </p>
+<h2 id="data-and-stylized-facts"><a aria-hidden="true" class="anchor-heading" href="#data-and-stylized-facts"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Data and stylized facts</h2>
+<p>It is noted that inflation forecast evaluation is regarded as impossible before about 1980, simply due to data availability issues. </p>
+<p>US inflation is well known to be much more quiescent (dormant) and harder to forecast during the Great Moderation (1985 - 2007, though the exact timing is controversial)</p>
+<p>It is noted that most macroeconomic models are generally viewed as a sort of "first order approximation" around a local steady state. The implication of this is that it may ne unreasonable to expect any model to perform well in all scenarios. This is empirically what is seen on most macroeconomic models - the state of the art models are always reported to perform very well on the sample period the authors focus on, but when extrapolated, do not work very well.</p>
+<p>It is therefore suggested that it is more "reasonable" to focus on models that perform well in "normal" times, though again, this is hard to define.</p>
+<h3 id="measure-of-inflation"><a aria-hidden="true" class="anchor-heading" href="#measure-of-inflation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Measure of Inflation</h3>
+<p>Inflation is well defined as an economic concept, but rather poorly defined in a concrete way. </p>
+<p>Four price indices are considered:</p>
+<ul>
+<li>GDP Deflator</li>
+<li>Personal COnsumption Expenditures (PCE) Deflator</li>
+<li>Consumer Price Index (CPI)</li>
+<li>Core CPI (CPI excluding food and energy)</li>
+</ul>
+<p>Though some of the series above are now available at the monthly series, the focus is on using quarterly data. Note that the choice of which specific price index doesn't tend to matter too much, as they tend to move together, though their long run behaviour may differ somewhat.</p>
+<p>For example, CPI tends to be about 0.3% higher than PCE, because regular CPI does not use chain-weighting, and so has a well known upward substitution bias.</p>
+<p>The inflation rates are computed in an annualized way:</p>
+<div class="math math-display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>π</mi><mi>t</mi></msub><mo>=</mo><mn>400</mn><mi>l</mi><mi>o</mi><mi>g</mi><mo stretchy="false">(</mo><msub><mi>p</mi><mi>t</mi></msub><mi mathvariant="normal">/</mi><msub><mi>p</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\pi_t = 400 log(p_t / p_{t - 1})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">π</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">4</span><span class="mord">0</span><span class="mord">0</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">/</span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.301108em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.208331em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span></div>
+<p>where <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">p_t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span> is the price index at time <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathnormal">t</span></span></span></span></span>. </p>
+<p>Forecast errors are computed as actual - forecast value. Note that this is sometimes very difficult - the definition of different price indices can change over time. However, this is futile, and most sources, including the Greenbook, do not do anything special regarding this.</p>
+<p>Error metrics used are out of sample only, because in-sample metrics are dumb.</p>
+<p>Root Mean Square Percentage Error is reported. In addition, its relation to a benchmark is also reported, such that a ratio of &#x3C; 1 means that the model is doing better than the benchmark. </p>
+<p>The paper also does some hypothesis tests on the forecasts, such as Diebold Mariano tests, but these are controversial. </p>
+<h2 id="forecasting-methodology"><a aria-hidden="true" class="anchor-heading" href="#forecasting-methodology"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Forecasting Methodology</h2>
+<p>Quarterly inflation rates for the <em>middle</em> month of each quarter are made. The first set of forecasts is made in Feb 1985, and the last in Nov 2011. </p>
+<p>Forecasts are made for the current quarter (<span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">h = 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span></span>), corresponding to a nowcast, to the next 8 quarters (<span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mn>8</mn></mrow><annotation encoding="application/x-tex">h = 8</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">8</span></span></span></span></span>). </p>
+<h2 id="forecasting-methods"><a aria-hidden="true" class="anchor-heading" href="#forecasting-methods"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Forecasting Methods</h2>
+<ol>
+<li>
+<p>Direct Forecast, on lags</p>
+</li>
+<li>
+<p>Recursive Autoregression (RAR)</p>
+</li>
+<li>
+<p>Phillips Curve motivated forecast</p>
+</li>
+<li>
+<p>Random Walk Model</p>
+</li>
+<li>
+<p>Unosberved Component Stochastic Volatility Model</p>
+</li>
+</ol>
+<p>There does exist some Stock and Watson code for this, but this requires Bayes/MCMC and is too hard to implement fully.</p>
+<ol start="6">
+<li>
+<p>Autoregressive in Gap Form</p>
+</li>
+<li>
+<p>Fixed <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mi>h</mi><mi>o</mi></mrow><annotation encoding="application/x-tex">rho</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">h</span><span class="mord mathnormal">o</span></span></span></span></span> forecast</p>
+</li>
+<li>
+<p>Phillips Curve in Gap Form</p>
+</li>
+<li>
+<p>Phillips Curve in Gap Form, with time varying NAIRU</p>
+</li>
+<li>
+<p>Term Structure VAR based forecast</p>
+</li>
+<li>
+<p>Time Varying Parameter VAR (TVP VAR)</p>
+</li>
+<li>
+<p>Equal Weighted Averaging (EWA).
+This is a special case of covariance weighted forecasting, where the covariance matrix is simply ignored. This needs to be implemented as a sort of "control".</p>
+</li>
+<li>
+<p>Bayesian Model Averaging (BMA)</p>
+</li>
+</ol>
+<p>Assigns a prior over the parameters of the <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span></span></span></span></span> models used in EWA, and a flat prior that each model is equally likely to be true. </p>
+<p>This is quite complicated to set up, however, it would be nice if there exists some theoretical link between CWF and BMA.</p>
+<ol start="14">
+<li>Factor Augmented VAR (FAVAR)</li>
+</ol>
+<ol start="15">
+<li>Dynamic Stochastic General Equilibrium Model</li>
+</ol>
+<p>Complicated theoretical model. Best not to spend too much time reading into this and getting side tracked.</p>
+<ol start="16">
+<li>DSGE with shifting local mean.</li>
+</ol>
+<p>Similarly, ignore due to complexity.</p>
+<ol start="17">
+<li>Subjective Forecasts</li>
+</ol>
+<ul>
+<li>Blue Chip Survey</li>
+<li>Survery of Professional Forecasters</li>
+<li>Federal Reserve Greenbook</li>
+</ul>
+<p>In most propose models, <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mi>h</mi><mi>o</mi></mrow><annotation encoding="application/x-tex">rho</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">h</span><span class="mord mathnormal">o</span></span></span></span></span> is chosen via the BIC, and this no. of lags is kept constant across <em>all</em> models which use <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mi>h</mi><mi>o</mi></mrow><annotation encoding="application/x-tex">rho</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">h</span><span class="mord mathnormal">o</span></span></span></span></span> as a parameter. Note that there is some evidence that BIC does best for direct forecasts, whereas AIC does best for iterated forecasts.</p>
+<p>Some methods which are not included in this list include:</p>
+<ul>
+<li>Threshold Models</li>
+<li>LASSO and other selection models</li>
+<li>Bootstrap aggregation models</li>
+<li>Household survery expectations</li>
+<li>Extraction of inflation forecast from inflation related financial instruments</li>
+</ul>
+<h2 id="results"><a aria-hidden="true" class="anchor-heading" href="#results"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Results</h2>
+<p>The benchmark model chosen is a fixed <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mi>h</mi><mi>o</mi></mrow><annotation encoding="application/x-tex">rho</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">h</span><span class="mord mathnormal">o</span></span></span></span></span> AR model, because this is very simple.</p>
+<h3 id="subjective-forecasts-do-best"><a aria-hidden="true" class="anchor-heading" href="#subjective-forecasts-do-best"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Subjective Forecasts do best</h3>
+<p>Good forecasts must account for a slowly varying local mean. It is particularly noted that any models that assume stationarity do particularly bad.</p>
+<h3 id="nowcast-comments"><a aria-hidden="true" class="anchor-heading" href="#nowcast-comments"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Nowcast Comments</h3>
+<p>Often, there is special external information available at horizon zero, which can make subjective forecasts much better, and this is what is observed. An example given is how the Bank of Canada anticipated an enormous hike in lodging prices for the 2010 Canada Olympics, and took this information into account when constructing the relevant nowcast.
+Good forecasts begin with good nowcasts.</p>
+<h3 id="heavy-shrinkage-in-information-improves-inflation-forecasts"><a aria-hidden="true" class="anchor-heading" href="#heavy-shrinkage-in-information-improves-inflation-forecasts"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Heavy shrinkage in information improves inflation forecasts</h3>
+<h2 id="financial-crisis"><a aria-hidden="true" class="anchor-heading" href="#financial-crisis"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Financial Crisis</h2>
+<p>Surprisingly, the crisis period does not affect the relative performances of different models.</p>
+<h2 id="phillips-curve"><a aria-hidden="true" class="anchor-heading" href="#phillips-curve"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Phillips Curve</h2>
+<p>The Phillips curve motivated models all did very poorly.</p>
+<h2 id="other-notes"><a aria-hidden="true" class="anchor-heading" href="#other-notes"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Other Notes</h2>
