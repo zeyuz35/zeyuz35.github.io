@@ -2,7 +2,7 @@
 id: 1DyoojO5rIm0uTXOkxSuw
 title: Citations
 desc: ''
-updated: 1636514221785
+updated: 1636692826303
 created: 1636511956938
 ---
 
@@ -32,4 +32,16 @@ This method *should* be futureproof, because pandoc can directly convert .md fil
 
 Note that however, pandoc is not perfect. Although Dendron links can be done with `[[]]`, pandoc does not render this correctly.
 
+[[State_Space]]
+
 This should not be too much of an issue for now, given that anything that needs to be properly rendered via pandoc shouldn't need cross document referencing anyway.
+
+## Markdown Preview Enhanced
+
+An outdated forked version of this is forked by Dendron and available, but seems to be abandoned.
+
+Markdown Preview Enhanced is likely the most fully featured preview, but unfortunately does not seem to be working correctly.
+
+In particular, changing the parser to pandoc (in order to get citations working) somehow makes it break with using KaTeX. Using MathJaX is janky and not entirely compatible. 
+
+For this reason, the preferred method of previewing documents is via the Pandoc Markdown Preview extension, as the only feature that is not supported by this are Dendron's backlinks.

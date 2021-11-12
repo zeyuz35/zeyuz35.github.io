@@ -2,11 +2,11 @@
 id: ZIDZSAYP9a9L7jYhVMgcz
 title: Frequency Domain
 desc: ''
-updated: 1636080760168
+updated: 1636692897446
 created: 1634885462726
 ---
 
-A summary of the frequency domain approach to time series, which was initially borne out of signals processing. This exists mainly because there exists some tools from that strand of literature which have spilled over into econometrics, namely dynamic principal components.
+Frequency domain approaches to time series were initially borne out of signals processing. This exists mainly because there exists some tools from that strand of literature which have spilled over into econometrics, namely dynamic principal components.
 
 Most of this is taken from Time Series Analysis and Its Applications by Shumway and Stoffer.
 

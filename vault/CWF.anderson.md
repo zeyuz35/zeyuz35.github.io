@@ -2,7 +2,7 @@
 id: 6i624T8nKKcjbDLAbcjyi
 title: Heather's Paper
 desc: ''
-updated: 1636284046667
+updated: 1636685185568
 created: 1636283893853
 ---
 
@@ -11,6 +11,11 @@ Summary documentation for Heather's joint paper.
 ## Motivation
 
 Similarly, the motivation for this paper is 
+
+
+$$
+X_{it}
+$$
 
 ## Summary
 

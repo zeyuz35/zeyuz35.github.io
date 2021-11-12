@@ -2,18 +2,16 @@
 id: T4FN6sDHfA9wxiZ7Dg5WX
 title: Dynamic Factor Models
 desc: ''
-updated: 1636522732622
+updated: 1636686615124
 created: 1634214992986
 geometry: margin=2cm
 bibliography: [references.bib]
 reference-section-title: References
 ---
 
-[@abarbanellAbnormalReturnsFundamental1998]
-
 ## Nomenclature
 
-This thesis will refer to these as *dynamic* factor models, as opposed to *static* factor models. Confusingly, they are also referred to by Forni et al as *Generalized* Dynamic Factor Models. 
+This thesis will refer to these as *dynamic* factor models, as opposed to *static* factor models. Confusingly, they are also referred to by [@forniGeneralizedDynamicFactorModel2000] as *Generalized* Dynamic Factor Models. 
 
 Stock and Watson denote t a truly dynamic factor model as follows:
 
@@ -37,7 +35,9 @@ Originally, Brillinger (1981)'s estimation algorithm generalizes static PCA to t
 
 Note that because this was originally developed for classical factor analysis, the asymptotics of this under a large $N$ dimension were not developed by the original author, though as expected asymptotic normality results hold.
 
-Subsequently, Forni et al (2000, 2004) study the properties of this algorithm, and establish inferential results for the resulting common component estimator. Dyanmic PCA is shown to provide piecewise consistent estimation of the component as $N$, $T$ increase, and in their followup, this consistency holds if $N, T \rightarrow \infty$ and $N/T \rightarrow 0$, suggesting that some caution to be exercised in finite samples if $N$ is large relative to $T$.
+Subsequently, [@forniGeneralizedDynamicFactorModel2000] and [@forni 2004] study the properties of this algorithm, and establish inferential results for the resulting common component estimator. Dyanmic PCA is shown to provide piecewise consistent estimation of the component as $N$, $T$ increase, and in their followup, this consistency holds if $N, T \rightarrow \infty$ and $N/T \rightarrow 0$, suggesting that some caution to be exercised in finite samples if $N$ is large relative to $T$.
+
+Side note: Ben is not sure how often people actually estimate factor models via this method. Trudging through the literature, it seems that this strand was very exciting for a while, but either no one understood it well enough, or it had other significant limitations that no one actually uses it in applied research. In either case, it does not seem like a viable future path.
 
 Note that because DPCA does not yield a consistent estimator of the common component
 
