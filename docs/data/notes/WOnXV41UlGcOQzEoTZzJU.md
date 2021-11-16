@@ -1,7 +1,7 @@
 
 # Glossary
 
-Glossary of Mathematical symbols and terms to help keep track of notation
+Glossary of Mathematical symbols and terms to help keep track of notation - trying to be as consistent as possible, but this is not always feasible.
 
 As usual, anything with a hat over it denotes an estimator version, and no hat is assumed to be the true population.
 
@@ -17,5 +17,6 @@ $f_t$ | true factors | Typically used interchangeably to mean the true space spa
 $\lambda_i$ | true loadings | 
 $g_t$ | so called pseudo factors | static factors estimated without accounting for possible breaks
 $k$ | break point/break date |
-$\tau$ | break fraction | note that $\tau T = k$; Note that a consistent estimator for $k$ is much harder to get, as $\tau$ will typically achieve convergence much more easily as $T \rightarrow \infty$. The practical different between the two is mostly a finite sample problem and left as an open question.
+$\tau$ | break fraction | note that $\tau T = k$; Note that a consistent estimator for $k$ is much harder to get, as $\tau$ will typically achieve convergence much more easily as $T \rightarrow \infty$. The practical difference between the two is mostly a finite sample problem and left as an open question.
+
 

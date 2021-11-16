@@ -5,6 +5,11 @@ Summary documentation for Heather's joint paper.
 
 Similarly, the motivation for this paper is 
 
+
+$$
+X_{it}
+$$
+
 ## Summary
 
 The proposed procedure is consider constituent models with different break points. Then, weight these constiturent models according to a CUSUM test statistic. 

@@ -2,12 +2,12 @@
 id: fhf7Gdr3mhOUG1mU5twC6
 title: HAC
 desc: ''
-updated: 1636329422041
+updated: 1636693048287
 created: 1634780245060
+bibliography: [references.bib]
 ---
 
-
-This document gives a brief overview of Heteroskedasticity and Autocorrelation Consistent covariance matric estimation, and how to implement them.
+Brief overview of Heteroskedasticity and Autocorrelation Consistent covariance matric estimation, and how to implement them.
 
 As the focus is mostly on time series data, there is more of an emphasis on the long run covariance matrix aspect of HAC.
 
