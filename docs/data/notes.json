@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1637021777519,
-      "created": 1637021777519,
+      "updated": 1637032819972,
+      "created": 1637032819972,
       "parent": null,
       "children": [],
       "data": {}
@@ -109,6 +109,32 @@
           "to": {
             "fname": "TODO"
           }
+        },
+        {
+          "type": "linkCandidate",
+          "from": {
+            "fname": "root",
+            "id": "PhD",
+            "vaultName": "vault"
+          },
+          "value": "Dendron has incredibly powerful search functionality due to good indexing, even outside of working in raw .md files. Simply use the search bar at the top of the website to find something.",
+          "position": {
+            "start": {
+              "line": 8,
+              "column": 1,
+              "offset": 246
+            },
+            "end": {
+              "line": 8,
+              "column": 188,
+              "offset": 433
+            },
+            "indent": []
+          },
+          "to": {
+            "fname": "Dendron",
+            "vaultName": "vault"
+          }
         }
       ],
       "anchors": {
@@ -135,11 +161,11 @@
         "CQTUwoXQNcd0Y7la7IaAn",
         "9s2d4L1UHWFWCdtORYT2Q",
         "AiXOWFsdvi3BPZxcUMjIi",
-        "MsmFdXyWfizd5g8GGcObD",
         "MXHvc8bQbNRRVCB0UogRy",
-        "T4FN6sDHfA9wxiZ7Dg5WX",
+        "MsmFdXyWfizd5g8GGcObD",
         "jtZSk246bVVDfJy6cdpS1",
         "2qGHFR7CcKOE0Meu7UU6D",
+        "T4FN6sDHfA9wxiZ7Dg5WX",
         "qGmGYptDKW2WLwlsu2xJw",
         "GvwoAWaYZxq1czYi3t3k4",
         "ZIDZSAYP9a9L7jYhVMgcz",
@@ -150,12 +176,12 @@
         "fHzGITjWkNNkiwsQpdex4",
         "umGHrdI4OaLoU8OOAOdkL",
         "aQw5xJBpqunSJYCfXXAls",
-        "0R61RLuT7e3hswR2v6o0w",
+        "y0rpX1u3Lz3vpUFro9TcW",
         "AuDqSlWn0PlsSo8JdLgrR",
         "ElqQePaEuSSz7pSeO1gNc",
-        "BMClpTRP3V8ITqM7R4kh0",
+        "0R61RLuT7e3hswR2v6o0w",
         "FNflnQbSXuMwTtni2C8is",
-        "y0rpX1u3Lz3vpUFro9TcW"
+        "BMClpTRP3V8ITqM7R4kh0"
       ],
       "data": {},
       "contentHash": "d7de26282e04813f39247a66c191dd07",
@@ -165,9 +191,9 @@
         "permalink": "/"
       }
     },
-    "y0rpX1u3Lz3vpUFro9TcW": {
-      "id": "y0rpX1u3Lz3vpUFro9TcW",
-      "title": "Research Roadmap",
+    "BMClpTRP3V8ITqM7R4kh0": {
+      "id": "BMClpTRP3V8ITqM7R4kh0",
+      "title": "To Do List",
       "vault": {
         "fsPath": "vault"
       },
@@ -182,28 +208,36 @@
           "type": "backlink",
           "position": {
             "start": {
-              "line": 12,
+              "line": 16,
               "column": 1,
-              "offset": 451
+              "offset": 477
             },
             "end": {
-              "line": 12,
-              "column": 12,
-              "offset": 462
+              "line": 16,
+              "column": 9,
+              "offset": 485
             },
             "indent": []
           },
-          "value": "roadmap"
+          "value": "TODO"
         }
       ],
-      "anchors": {},
-      "fname": "roadmap",
-      "updated": 1636683997186,
-      "created": 1636339774039,
+      "anchors": {
+        "cwf-project": {
+          "type": "header",
+          "text": "CWF Project",
+          "value": "cwf-project",
+          "line": 51,
+          "column": 0
+        }
+      },
+      "fname": "TODO",
+      "updated": 1636526148937,
+      "created": 1635455071285,
       "parent": "PhD",
       "children": [],
       "data": {},
-      "contentHash": "b95b03ea42f32e5d53715cd73b48d53b",
+      "contentHash": "9e668ec470c9e0240868ba5a44c3989a",
       "custom": {}
     },
     "FNflnQbSXuMwTtni2C8is": {
@@ -319,478 +353,6 @@
       "contentHash": "5c57597748b94cdec20a58c09a456fb7",
       "custom": {}
     },
-    "BMClpTRP3V8ITqM7R4kh0": {
-      "id": "BMClpTRP3V8ITqM7R4kh0",
-      "title": "To Do List",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [
-        {
-          "from": {
-            "fname": "root",
-            "vaultName": "vault"
-          },
-          "type": "backlink",
-          "position": {
-            "start": {
-              "line": 16,
-              "column": 1,
-              "offset": 477
-            },
-            "end": {
-              "line": 16,
-              "column": 9,
-              "offset": 485
-            },
-            "indent": []
-          },
-          "value": "TODO"
-        }
-      ],
-      "anchors": {
-        "cwf-project": {
-          "type": "header",
-          "text": "CWF Project",
-          "value": "cwf-project",
-          "line": 51,
-          "column": 0
-        }
-      },
-      "fname": "TODO",
-      "updated": 1636526148937,
-      "created": 1635455071285,
-      "parent": "PhD",
-      "children": [],
-      "data": {},
-      "contentHash": "9e668ec470c9e0240868ba5a44c3989a",
-      "custom": {}
-    },
-    "ElqQePaEuSSz7pSeO1gNc": {
-      "id": "ElqQePaEuSSz7pSeO1gNc",
-      "title": "State Space Approaches to DFMs",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "State_Space",
-            "id": "ElqQePaEuSSz7pSeO1gNc",
-            "vaultName": "vault"
-          },
-          "value": "Bayesian",
-          "alias": "Bayesian",
-          "position": {
-            "start": {
-              "line": 10,
-              "column": 128,
-              "offset": 675
-            },
-            "end": {
-              "line": 10,
-              "column": 140,
-              "offset": 687
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "sameFile": false,
-          "to": {
-            "fname": "Bayesian"
-          }
-        },
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "State_Space",
-            "id": "ElqQePaEuSSz7pSeO1gNc",
-            "vaultName": "vault"
-          },
-          "value": "Kalman_Filter",
-          "alias": "Kalman_Filter",
-          "position": {
-            "start": {
-              "line": 14,
-              "column": 5,
-              "offset": 720
-            },
-            "end": {
-              "line": 14,
-              "column": 22,
-              "offset": 737
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "sameFile": false,
-          "to": {
-            "fname": "Kalman_Filter"
-          }
-        },
-        {
-          "from": {
-            "fname": "Dendron.citations",
-            "vaultName": "vault"
-          },
-          "type": "backlink",
-          "position": {
-            "start": {
-              "line": 28,
-              "column": 1,
-              "offset": 1091
-            },
-            "end": {
-              "line": 28,
-              "column": 16,
-              "offset": 1106
-            },
-            "indent": []
-          },
-          "value": "State_Space"
-        }
-      ],
-      "anchors": {
-        "numerical-computation": {
-          "type": "header",
-          "text": "Numerical Computation",
-          "value": "numerical-computation",
-          "line": 18,
-          "column": 0
-        }
-      },
-      "fname": "State_Space",
-      "updated": 1635379300131,
-      "created": 1635379022669,
-      "parent": "PhD",
-      "children": [],
-      "data": {},
-      "contentHash": "366791309464d3335c46709946b69584",
-      "custom": {}
-    },
-    "AuDqSlWn0PlsSo8JdLgrR": {
-      "id": "AuDqSlWn0PlsSo8JdLgrR",
-      "title": "Software",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "Software",
-            "id": "AuDqSlWn0PlsSo8JdLgrR",
-            "vaultName": "vault"
-          },
-          "value": "Software.AWS",
-          "alias": "Software.AWS",
-          "position": {
-            "start": {
-              "line": 30,
-              "column": 5,
-              "offset": 738
-            },
-            "end": {
-              "line": 30,
-              "column": 21,
-              "offset": 754
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "sameFile": false,
-          "to": {
-            "fname": "Software.AWS"
-          }
-        },
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "Software",
-            "id": "AuDqSlWn0PlsSo8JdLgrR",
-            "vaultName": "vault"
-          },
-          "value": "Software.HPC",
-          "alias": "Software.HPC",
-          "position": {
-            "start": {
-              "line": 34,
-              "column": 5,
-              "offset": 776
-            },
-            "end": {
-              "line": 34,
-              "column": 21,
-              "offset": 792
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "sameFile": false,
-          "to": {
-            "fname": "Software.HPC"
-          }
-        },
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "Software",
-            "id": "AuDqSlWn0PlsSo8JdLgrR",
-            "vaultName": "vault"
-          },
-          "value": "Software.Git",
-          "alias": "Software.Git",
-          "position": {
-            "start": {
-              "line": 38,
-              "column": 5,
-              "offset": 806
-            },
-            "end": {
-              "line": 38,
-              "column": 21,
-              "offset": 822
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "sameFile": false,
-          "to": {
-            "fname": "Software.Git"
-          }
-        }
-      ],
-      "anchors": {
-        "r": {
-          "type": "header",
-          "text": "R",
-          "value": "r",
-          "line": 10,
-          "column": 0
-        },
-        "citrix": {
-          "type": "header",
-          "text": "Citrix",
-          "value": "citrix",
-          "line": 20,
-          "column": 0
-        },
-        "eviews": {
-          "type": "header",
-          "text": "EViews",
-          "value": "eviews",
-          "line": 28,
-          "column": 0
-        },
-        "aws": {
-          "type": "header",
-          "text": "AWS",
-          "value": "aws",
-          "line": 34,
-          "column": 0
-        },
-        "monarchhpc": {
-          "type": "header",
-          "text": "MONARCH/HPC",
-          "value": "monarchhpc",
-          "line": 38,
-          "column": 0
-        },
-        "git": {
-          "type": "header",
-          "text": "Git",
-          "value": "git",
-          "line": 42,
-          "column": 0
-        }
-      },
-      "fname": "Software",
-      "updated": 1636428260839,
-      "created": 1636427887650,
-      "parent": "PhD",
-      "children": [
-        "pHk638EFKNsd7l8ofo19m",
-        "DnfP7up0cIhvaUWp23Jtk",
-        "Pn4jty9CxKSvbfTSqLMj3"
-      ],
-      "data": {},
-      "contentHash": "29b8cb07378cdf30e90ae370747cb2ae",
-      "custom": {}
-    },
-    "Pn4jty9CxKSvbfTSqLMj3": {
-      "id": "Pn4jty9CxKSvbfTSqLMj3",
-      "title": "HPC",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [
-        {
-          "from": {
-            "fname": "Software",
-            "vaultName": "vault"
-          },
-          "type": "backlink",
-          "position": {
-            "start": {
-              "line": 34,
-              "column": 5,
-              "offset": 776
-            },
-            "end": {
-              "line": 34,
-              "column": 21,
-              "offset": 792
-            },
-            "indent": []
-          },
-          "value": "Software.HPC"
-        }
-      ],
-      "anchors": {
-        "linux": {
-          "type": "header",
-          "text": "Linux",
-          "value": "linux",
-          "line": 12,
-          "column": 0
-        },
-        "submittingrunning-jobs": {
-          "type": "header",
-          "text": "Submitting/running Jobs",
-          "value": "submittingrunning-jobs",
-          "line": 16,
-          "column": 0
-        }
-      },
-      "fname": "Software.HPC",
-      "updated": 1636428362828,
-      "created": 1636428217183,
-      "parent": "AuDqSlWn0PlsSo8JdLgrR",
-      "children": [],
-      "data": {},
-      "contentHash": "a6d9d7be6792f4a28dfc99e3fbfb33ff",
-      "custom": {}
-    },
-    "DnfP7up0cIhvaUWp23Jtk": {
-      "id": "DnfP7up0cIhvaUWp23Jtk",
-      "title": "Git",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [
-        {
-          "from": {
-            "fname": "Software",
-            "vaultName": "vault"
-          },
-          "type": "backlink",
-          "position": {
-            "start": {
-              "line": 38,
-              "column": 5,
-              "offset": 806
-            },
-            "end": {
-              "line": 38,
-              "column": 21,
-              "offset": 822
-            },
-            "indent": []
-          },
-          "value": "Software.Git"
-        }
-      ],
-      "anchors": {},
-      "fname": "Software.Git",
-      "updated": 1636428241249,
-      "created": 1636428241249,
-      "parent": "AuDqSlWn0PlsSo8JdLgrR",
-      "children": [],
-      "data": {},
-      "contentHash": "de339f101ccd6110d97c3a8738ea8453",
-      "custom": {}
-    },
-    "pHk638EFKNsd7l8ofo19m": {
-      "id": "pHk638EFKNsd7l8ofo19m",
-      "title": "Amazon Web Services",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [
-        {
-          "from": {
-            "fname": "Software",
-            "vaultName": "vault"
-          },
-          "type": "backlink",
-          "position": {
-            "start": {
-              "line": 30,
-              "column": 5,
-              "offset": 738
-            },
-            "end": {
-              "line": 30,
-              "column": 21,
-              "offset": 754
-            },
-            "indent": []
-          },
-          "value": "Software.AWS"
-        }
-      ],
-      "anchors": {
-        "": {
-          "type": "header",
-          "text": "",
-          "value": "",
-          "line": 18,
-          "column": 0
-        },
-        "-1": {
-          "type": "header",
-          "text": "",
-          "value": "-1",
-          "line": 20,
-          "column": 0
-        },
-        "installing": {
-          "type": "header",
-          "text": "Installing",
-          "value": "installing",
-          "line": 22,
-          "column": 0
-        },
-        "ssh": {
-          "type": "header",
-          "text": "ssh",
-          "value": "ssh",
-          "line": 24,
-          "column": 0
-        }
-      },
-      "fname": "Software.AWS",
-      "updated": 1636428955792,
-      "created": 1636428177509,
-      "parent": "AuDqSlWn0PlsSo8JdLgrR",
-      "children": [],
-      "data": {},
-      "contentHash": "4ebb9abd439f4260987f5aef6948cf3e",
-      "custom": {}
-    },
     "0R61RLuT7e3hswR2v6o0w": {
       "id": "0R61RLuT7e3hswR2v6o0w",
       "title": "Static Factor Models",
@@ -801,25 +363,32 @@
       "desc": "",
       "links": [
         {
+          "type": "wiki",
           "from": {
-            "fname": "DFM",
+            "fname": "SFM",
+            "id": "0R61RLuT7e3hswR2v6o0w",
             "vaultName": "vault"
           },
-          "type": "backlink",
+          "value": "SFM.break",
+          "alias": "SFM.break",
           "position": {
             "start": {
-              "line": 20,
-              "column": 43,
-              "offset": 743
+              "line": 51,
+              "column": 165,
+              "offset": 4168
             },
             "end": {
-              "line": 20,
-              "column": 50,
-              "offset": 750
+              "line": 51,
+              "column": 178,
+              "offset": 4181
             },
             "indent": []
           },
-          "value": "SFM"
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "SFM.break"
+          }
         }
       ],
       "anchors": {},
@@ -1948,6 +1517,470 @@
       "children": [],
       "data": {},
       "contentHash": "8321b80238040f5de1019731f4bcf5f0",
+      "custom": {}
+    },
+    "ElqQePaEuSSz7pSeO1gNc": {
+      "id": "ElqQePaEuSSz7pSeO1gNc",
+      "title": "State Space Approaches to DFMs",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "State_Space",
+            "id": "ElqQePaEuSSz7pSeO1gNc",
+            "vaultName": "vault"
+          },
+          "value": "Bayesian",
+          "alias": "Bayesian",
+          "position": {
+            "start": {
+              "line": 10,
+              "column": 128,
+              "offset": 675
+            },
+            "end": {
+              "line": 10,
+              "column": 140,
+              "offset": 687
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "Bayesian"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "State_Space",
+            "id": "ElqQePaEuSSz7pSeO1gNc",
+            "vaultName": "vault"
+          },
+          "value": "Kalman_Filter",
+          "alias": "Kalman_Filter",
+          "position": {
+            "start": {
+              "line": 14,
+              "column": 5,
+              "offset": 720
+            },
+            "end": {
+              "line": 14,
+              "column": 22,
+              "offset": 737
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "Kalman_Filter"
+          }
+        },
+        {
+          "from": {
+            "fname": "Dendron.citations",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 28,
+              "column": 1,
+              "offset": 1091
+            },
+            "end": {
+              "line": 28,
+              "column": 16,
+              "offset": 1106
+            },
+            "indent": []
+          },
+          "value": "State_Space"
+        }
+      ],
+      "anchors": {
+        "numerical-computation": {
+          "type": "header",
+          "text": "Numerical Computation",
+          "value": "numerical-computation",
+          "line": 18,
+          "column": 0
+        }
+      },
+      "fname": "State_Space",
+      "updated": 1635379300131,
+      "created": 1635379022669,
+      "parent": "PhD",
+      "children": [],
+      "data": {},
+      "contentHash": "366791309464d3335c46709946b69584",
+      "custom": {}
+    },
+    "AuDqSlWn0PlsSo8JdLgrR": {
+      "id": "AuDqSlWn0PlsSo8JdLgrR",
+      "title": "Software",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Software",
+            "id": "AuDqSlWn0PlsSo8JdLgrR",
+            "vaultName": "vault"
+          },
+          "value": "Software.AWS",
+          "alias": "Software.AWS",
+          "position": {
+            "start": {
+              "line": 30,
+              "column": 5,
+              "offset": 738
+            },
+            "end": {
+              "line": 30,
+              "column": 21,
+              "offset": 754
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "Software.AWS"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Software",
+            "id": "AuDqSlWn0PlsSo8JdLgrR",
+            "vaultName": "vault"
+          },
+          "value": "Software.HPC",
+          "alias": "Software.HPC",
+          "position": {
+            "start": {
+              "line": 34,
+              "column": 5,
+              "offset": 776
+            },
+            "end": {
+              "line": 34,
+              "column": 21,
+              "offset": 792
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "Software.HPC"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Software",
+            "id": "AuDqSlWn0PlsSo8JdLgrR",
+            "vaultName": "vault"
+          },
+          "value": "Software.Git",
+          "alias": "Software.Git",
+          "position": {
+            "start": {
+              "line": 38,
+              "column": 5,
+              "offset": 806
+            },
+            "end": {
+              "line": 38,
+              "column": 21,
+              "offset": 822
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "Software.Git"
+          }
+        }
+      ],
+      "anchors": {
+        "r": {
+          "type": "header",
+          "text": "R",
+          "value": "r",
+          "line": 10,
+          "column": 0
+        },
+        "citrix": {
+          "type": "header",
+          "text": "Citrix",
+          "value": "citrix",
+          "line": 20,
+          "column": 0
+        },
+        "eviews": {
+          "type": "header",
+          "text": "EViews",
+          "value": "eviews",
+          "line": 28,
+          "column": 0
+        },
+        "aws": {
+          "type": "header",
+          "text": "AWS",
+          "value": "aws",
+          "line": 34,
+          "column": 0
+        },
+        "monarchhpc": {
+          "type": "header",
+          "text": "MONARCH/HPC",
+          "value": "monarchhpc",
+          "line": 38,
+          "column": 0
+        },
+        "git": {
+          "type": "header",
+          "text": "Git",
+          "value": "git",
+          "line": 42,
+          "column": 0
+        }
+      },
+      "fname": "Software",
+      "updated": 1636428260839,
+      "created": 1636427887650,
+      "parent": "PhD",
+      "children": [
+        "pHk638EFKNsd7l8ofo19m",
+        "DnfP7up0cIhvaUWp23Jtk",
+        "Pn4jty9CxKSvbfTSqLMj3"
+      ],
+      "data": {},
+      "contentHash": "29b8cb07378cdf30e90ae370747cb2ae",
+      "custom": {}
+    },
+    "Pn4jty9CxKSvbfTSqLMj3": {
+      "id": "Pn4jty9CxKSvbfTSqLMj3",
+      "title": "HPC",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "from": {
+            "fname": "Software",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 34,
+              "column": 5,
+              "offset": 776
+            },
+            "end": {
+              "line": 34,
+              "column": 21,
+              "offset": 792
+            },
+            "indent": []
+          },
+          "value": "Software.HPC"
+        }
+      ],
+      "anchors": {
+        "linux": {
+          "type": "header",
+          "text": "Linux",
+          "value": "linux",
+          "line": 12,
+          "column": 0
+        },
+        "submittingrunning-jobs": {
+          "type": "header",
+          "text": "Submitting/running Jobs",
+          "value": "submittingrunning-jobs",
+          "line": 16,
+          "column": 0
+        }
+      },
+      "fname": "Software.HPC",
+      "updated": 1636428362828,
+      "created": 1636428217183,
+      "parent": "AuDqSlWn0PlsSo8JdLgrR",
+      "children": [],
+      "data": {},
+      "contentHash": "a6d9d7be6792f4a28dfc99e3fbfb33ff",
+      "custom": {}
+    },
+    "DnfP7up0cIhvaUWp23Jtk": {
+      "id": "DnfP7up0cIhvaUWp23Jtk",
+      "title": "Git",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "from": {
+            "fname": "Software",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 38,
+              "column": 5,
+              "offset": 806
+            },
+            "end": {
+              "line": 38,
+              "column": 21,
+              "offset": 822
+            },
+            "indent": []
+          },
+          "value": "Software.Git"
+        }
+      ],
+      "anchors": {},
+      "fname": "Software.Git",
+      "updated": 1636428241249,
+      "created": 1636428241249,
+      "parent": "AuDqSlWn0PlsSo8JdLgrR",
+      "children": [],
+      "data": {},
+      "contentHash": "de339f101ccd6110d97c3a8738ea8453",
+      "custom": {}
+    },
+    "pHk638EFKNsd7l8ofo19m": {
+      "id": "pHk638EFKNsd7l8ofo19m",
+      "title": "Amazon Web Services",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "from": {
+            "fname": "Software",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 30,
+              "column": 5,
+              "offset": 738
+            },
+            "end": {
+              "line": 30,
+              "column": 21,
+              "offset": 754
+            },
+            "indent": []
+          },
+          "value": "Software.AWS"
+        }
+      ],
+      "anchors": {
+        "": {
+          "type": "header",
+          "text": "",
+          "value": "",
+          "line": 18,
+          "column": 0
+        },
+        "-1": {
+          "type": "header",
+          "text": "",
+          "value": "-1",
+          "line": 20,
+          "column": 0
+        },
+        "installing": {
+          "type": "header",
+          "text": "Installing",
+          "value": "installing",
+          "line": 22,
+          "column": 0
+        },
+        "ssh": {
+          "type": "header",
+          "text": "ssh",
+          "value": "ssh",
+          "line": 24,
+          "column": 0
+        }
+      },
+      "fname": "Software.AWS",
+      "updated": 1636428955792,
+      "created": 1636428177509,
+      "parent": "AuDqSlWn0PlsSo8JdLgrR",
+      "children": [],
+      "data": {},
+      "contentHash": "4ebb9abd439f4260987f5aef6948cf3e",
+      "custom": {}
+    },
+    "y0rpX1u3Lz3vpUFro9TcW": {
+      "id": "y0rpX1u3Lz3vpUFro9TcW",
+      "title": "Research Roadmap",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "from": {
+            "fname": "root",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 12,
+              "column": 1,
+              "offset": 451
+            },
+            "end": {
+              "line": 12,
+              "column": 12,
+              "offset": 462
+            },
+            "indent": []
+          },
+          "value": "roadmap"
+        }
+      ],
+      "anchors": {},
+      "fname": "roadmap",
+      "updated": 1636683997186,
+      "created": 1636339774039,
+      "parent": "PhD",
+      "children": [],
+      "data": {},
+      "contentHash": "b95b03ea42f32e5d53715cd73b48d53b",
       "custom": {}
     },
     "aQw5xJBpqunSJYCfXXAls": {
@@ -3177,6 +3210,300 @@
       "contentHash": "e6f6f968bc0f2b462f51da8f89979673",
       "custom": {}
     },
+    "T4FN6sDHfA9wxiZ7Dg5WX": {
+      "id": "T4FN6sDHfA9wxiZ7Dg5WX",
+      "title": "Dynamic Factor Models",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "DFM",
+            "id": "T4FN6sDHfA9wxiZ7Dg5WX",
+            "vaultName": "vault"
+          },
+          "value": "user.forniGeneralizedDynamicFactorModel2000",
+          "alias": "@forniGeneralizedDynamicFactorModel2000",
+          "position": {
+            "start": {
+              "line": 4,
+              "column": 142,
+              "offset": 159
+            },
+            "end": {
+              "line": 4,
+              "column": 181,
+              "offset": 198
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.forniGeneralizedDynamicFactorModel2000"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "DFM",
+            "id": "T4FN6sDHfA9wxiZ7Dg5WX",
+            "vaultName": "vault"
+          },
+          "value": "SFM",
+          "alias": "SFM",
+          "position": {
+            "start": {
+              "line": 20,
+              "column": 43,
+              "offset": 743
+            },
+            "end": {
+              "line": 20,
+              "column": 50,
+              "offset": 750
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "SFM"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "DFM",
+            "id": "T4FN6sDHfA9wxiZ7Dg5WX",
+            "vaultName": "vault"
+          },
+          "value": "user.forniGeneralizedDynamicFactorModel2000",
+          "alias": "@forniGeneralizedDynamicFactorModel2000",
+          "position": {
+            "start": {
+              "line": 28,
+              "column": 16,
+              "offset": 1944
+            },
+            "end": {
+              "line": 28,
+              "column": 55,
+              "offset": 1983
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.forniGeneralizedDynamicFactorModel2000"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "DFM",
+            "id": "T4FN6sDHfA9wxiZ7Dg5WX",
+            "vaultName": "vault"
+          },
+          "value": "user.forni",
+          "alias": "@forni",
+          "position": {
+            "start": {
+              "line": 28,
+              "column": 62,
+              "offset": 1990
+            },
+            "end": {
+              "line": 28,
+              "column": 68,
+              "offset": 1996
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.forni"
+          }
+        }
+      ],
+      "anchors": {
+        "nomenclature": {
+          "type": "header",
+          "text": "Nomenclature",
+          "value": "nomenclature",
+          "line": 12,
+          "column": 0
+        },
+        "dynamic-pca": {
+          "type": "header",
+          "text": "Dynamic PCA",
+          "value": "dynamic-pca",
+          "line": 49,
+          "column": 0
+        },
+        "dynamic-pca-with-periodic-correlation": {
+          "type": "header",
+          "text": "Dynamic PCA with Periodic Correlation",
+          "value": "dynamic-pca-with-periodic-correlation",
+          "line": 60,
+          "column": 0
+        },
+        "generalized-dynamic-pca": {
+          "type": "header",
+          "text": "Generalized Dynamic PCA",
+          "value": "generalized-dynamic-pca",
+          "line": 65,
+          "column": 0
+        }
+      },
+      "fname": "DFM",
+      "updated": 1636686615124,
+      "created": 1634214992986,
+      "parent": "PhD",
+      "children": [
+        "ghJgufNZMqDjTfu1EKtc1",
+        "1jV50YftmiErRFb7OgrEo"
+      ],
+      "data": {},
+      "contentHash": "f4a1a9f5f6d425a522302ef457c034d4",
+      "custom": {
+        "geometry": "margin=2cm",
+        "bibliography": [
+          "references.bib"
+        ],
+        "reference-section-title": "References"
+      }
+    },
+    "1jV50YftmiErRFb7OgrEo": {
+      "id": "1jV50YftmiErRFb7OgrEo",
+      "title": "DFM Inference",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "DFM.inference",
+      "updated": 1636514974765,
+      "created": 1635336888631,
+      "parent": "T4FN6sDHfA9wxiZ7Dg5WX",
+      "children": [
+        "U0c40KtWCbQp02iuK28mt"
+      ],
+      "data": {},
+      "contentHash": "a981ad0b9d108a90b5bd19839eed2a10",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "U0c40KtWCbQp02iuK28mt": {
+      "id": "U0c40KtWCbQp02iuK28mt",
+      "title": "q Estimators",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "amengual-and-watson-aw07": {
+          "type": "header",
+          "text": "Amengual and Watson (AW07)",
+          "value": "amengual-and-watson-aw07",
+          "line": 14,
+          "column": 0
+        },
+        "bai-and-ng-2007-bn07": {
+          "type": "header",
+          "text": "Bai and Ng (2007) BN07",
+          "value": "bai-and-ng-2007-bn07",
+          "line": 18,
+          "column": 0
+        },
+        "hallin-and-liska-2007-hl07": {
+          "type": "header",
+          "text": "Hallin and Liska (2007) HL07",
+          "value": "hallin-and-liska-2007-hl07",
+          "line": 24,
+          "column": 0
+        }
+      },
+      "fname": "DFM.inference.q",
+      "updated": 1635335945368,
+      "created": 1635335632193,
+      "parent": "1jV50YftmiErRFb7OgrEo",
+      "children": [],
+      "data": {},
+      "contentHash": "48118b0698c5a2f3ec694d57e4783f60",
+      "custom": {}
+    },
+    "ghJgufNZMqDjTfu1EKtc1": {
+      "id": "ghJgufNZMqDjTfu1EKtc1",
+      "title": "Breaks in Dynamic Factor Models",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "barigozzi-et-al-joe": {
+          "type": "header",
+          "text": "Barigozzi et al JoE",
+          "value": "barigozzi-et-al-joe",
+          "line": 8,
+          "column": 0
+        },
+        "summary-of-method": {
+          "type": "header",
+          "text": "Summary of Method",
+          "value": "summary-of-method",
+          "line": 20,
+          "column": 0
+        },
+        "framework": {
+          "type": "header",
+          "text": "Framework",
+          "value": "framework",
+          "line": 28,
+          "column": 0
+        },
+        "important-note-on-bai-and-ng-estimator": {
+          "type": "header",
+          "text": "Important note on Bai and Ng estimator",
+          "value": "important-note-on-bai-and-ng-estimator",
+          "line": 34,
+          "column": 0
+        },
+        "wavelets": {
+          "type": "header",
+          "text": "Wavelets",
+          "value": "wavelets",
+          "line": 42,
+          "column": 0
+        },
+        "double-cusum": {
+          "type": "header",
+          "text": "Double CUSUM",
+          "value": "double-cusum",
+          "line": 52,
+          "column": 0
+        }
+      },
+      "fname": "DFM.breaks",
+      "updated": 1636516500301,
+      "created": 1636514979868,
+      "parent": "T4FN6sDHfA9wxiZ7Dg5WX",
+      "children": [],
+      "data": {},
+      "contentHash": "f90e71e6afa6675fbd220adc70931893",
+      "custom": {}
+    },
     "2qGHFR7CcKOE0Meu7UU6D": {
       "id": "2qGHFR7CcKOE0Meu7UU6D",
       "title": "Dendron Documentation",
@@ -3750,319 +4077,6 @@
       "contentHash": "a76eb31df9d9d789c901644b1881286b",
       "custom": {}
     },
-    "T4FN6sDHfA9wxiZ7Dg5WX": {
-      "id": "T4FN6sDHfA9wxiZ7Dg5WX",
-      "title": "Dynamic Factor Models",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "DFM",
-            "id": "T4FN6sDHfA9wxiZ7Dg5WX",
-            "vaultName": "vault"
-          },
-          "value": "user.forniGeneralizedDynamicFactorModel2000",
-          "alias": "@forniGeneralizedDynamicFactorModel2000",
-          "position": {
-            "start": {
-              "line": 4,
-              "column": 142,
-              "offset": 159
-            },
-            "end": {
-              "line": 4,
-              "column": 181,
-              "offset": 198
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "to": {
-            "fname": "user.forniGeneralizedDynamicFactorModel2000"
-          }
-        },
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "DFM",
-            "id": "T4FN6sDHfA9wxiZ7Dg5WX",
-            "vaultName": "vault"
-          },
-          "value": "SFM",
-          "alias": "SFM",
-          "position": {
-            "start": {
-              "line": 20,
-              "column": 43,
-              "offset": 743
-            },
-            "end": {
-              "line": 20,
-              "column": 50,
-              "offset": 750
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "sameFile": false,
-          "to": {
-            "fname": "SFM"
-          }
-        },
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "DFM",
-            "id": "T4FN6sDHfA9wxiZ7Dg5WX",
-            "vaultName": "vault"
-          },
-          "value": "user.forniGeneralizedDynamicFactorModel2000",
-          "alias": "@forniGeneralizedDynamicFactorModel2000",
-          "position": {
-            "start": {
-              "line": 28,
-              "column": 16,
-              "offset": 1944
-            },
-            "end": {
-              "line": 28,
-              "column": 55,
-              "offset": 1983
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "to": {
-            "fname": "user.forniGeneralizedDynamicFactorModel2000"
-          }
-        },
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "DFM",
-            "id": "T4FN6sDHfA9wxiZ7Dg5WX",
-            "vaultName": "vault"
-          },
-          "value": "user.forni",
-          "alias": "@forni",
-          "position": {
-            "start": {
-              "line": 28,
-              "column": 62,
-              "offset": 1990
-            },
-            "end": {
-              "line": 28,
-              "column": 68,
-              "offset": 1996
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "to": {
-            "fname": "user.forni"
-          }
-        }
-      ],
-      "anchors": {
-        "nomenclature": {
-          "type": "header",
-          "text": "Nomenclature",
-          "value": "nomenclature",
-          "line": 12,
-          "column": 0
-        },
-        "dynamic-pca": {
-          "type": "header",
-          "text": "Dynamic PCA",
-          "value": "dynamic-pca",
-          "line": 49,
-          "column": 0
-        },
-        "dynamic-pca-with-periodic-correlation": {
-          "type": "header",
-          "text": "Dynamic PCA with Periodic Correlation",
-          "value": "dynamic-pca-with-periodic-correlation",
-          "line": 60,
-          "column": 0
-        },
-        "generalized-dynamic-pca": {
-          "type": "header",
-          "text": "Generalized Dynamic PCA",
-          "value": "generalized-dynamic-pca",
-          "line": 65,
-          "column": 0
-        }
-      },
-      "fname": "DFM",
-      "updated": 1636686615124,
-      "created": 1634214992986,
-      "parent": "PhD",
-      "children": [
-        "ghJgufNZMqDjTfu1EKtc1",
-        "1jV50YftmiErRFb7OgrEo"
-      ],
-      "data": {},
-      "contentHash": "f4a1a9f5f6d425a522302ef457c034d4",
-      "custom": {
-        "geometry": "margin=2cm",
-        "bibliography": [
-          "references.bib"
-        ],
-        "reference-section-title": "References"
-      }
-    },
-    "1jV50YftmiErRFb7OgrEo": {
-      "id": "1jV50YftmiErRFb7OgrEo",
-      "title": "DFM Inference",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {},
-      "fname": "DFM.inference",
-      "updated": 1636514974765,
-      "created": 1635336888631,
-      "parent": "T4FN6sDHfA9wxiZ7Dg5WX",
-      "children": [
-        "U0c40KtWCbQp02iuK28mt"
-      ],
-      "data": {},
-      "contentHash": "a981ad0b9d108a90b5bd19839eed2a10",
-      "stub": false,
-      "custom": {
-        "stub": true
-      }
-    },
-    "U0c40KtWCbQp02iuK28mt": {
-      "id": "U0c40KtWCbQp02iuK28mt",
-      "title": "q Estimators",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {
-        "amengual-and-watson-aw07": {
-          "type": "header",
-          "text": "Amengual and Watson (AW07)",
-          "value": "amengual-and-watson-aw07",
-          "line": 14,
-          "column": 0
-        },
-        "bai-and-ng-2007-bn07": {
-          "type": "header",
-          "text": "Bai and Ng (2007) BN07",
-          "value": "bai-and-ng-2007-bn07",
-          "line": 18,
-          "column": 0
-        },
-        "hallin-and-liska-2007-hl07": {
-          "type": "header",
-          "text": "Hallin and Liska (2007) HL07",
-          "value": "hallin-and-liska-2007-hl07",
-          "line": 24,
-          "column": 0
-        }
-      },
-      "fname": "DFM.inference.q",
-      "updated": 1635335945368,
-      "created": 1635335632193,
-      "parent": "1jV50YftmiErRFb7OgrEo",
-      "children": [],
-      "data": {},
-      "contentHash": "48118b0698c5a2f3ec694d57e4783f60",
-      "custom": {}
-    },
-    "ghJgufNZMqDjTfu1EKtc1": {
-      "id": "ghJgufNZMqDjTfu1EKtc1",
-      "title": "Breaks in Dynamic Factor Models",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {
-        "barigozzi-et-al-joe": {
-          "type": "header",
-          "text": "Barigozzi et al JoE",
-          "value": "barigozzi-et-al-joe",
-          "line": 8,
-          "column": 0
-        },
-        "summary-of-method": {
-          "type": "header",
-          "text": "Summary of Method",
-          "value": "summary-of-method",
-          "line": 20,
-          "column": 0
-        },
-        "framework": {
-          "type": "header",
-          "text": "Framework",
-          "value": "framework",
-          "line": 28,
-          "column": 0
-        },
-        "important-note-on-bai-and-ng-estimator": {
-          "type": "header",
-          "text": "Important note on Bai and Ng estimator",
-          "value": "important-note-on-bai-and-ng-estimator",
-          "line": 34,
-          "column": 0
-        },
-        "wavelets": {
-          "type": "header",
-          "text": "Wavelets",
-          "value": "wavelets",
-          "line": 42,
-          "column": 0
-        },
-        "double-cusum": {
-          "type": "header",
-          "text": "Double CUSUM",
-          "value": "double-cusum",
-          "line": 52,
-          "column": 0
-        }
-      },
-      "fname": "DFM.breaks",
-      "updated": 1636516500301,
-      "created": 1636514979868,
-      "parent": "T4FN6sDHfA9wxiZ7Dg5WX",
-      "children": [],
-      "data": {},
-      "contentHash": "f90e71e6afa6675fbd220adc70931893",
-      "custom": {}
-    },
-    "MXHvc8bQbNRRVCB0UogRy": {
-      "id": "MXHvc8bQbNRRVCB0UogRy",
-      "title": "Code Resources",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {},
-      "fname": "Code",
-      "updated": 1636426847911,
-      "created": 1636420962292,
-      "parent": "PhD",
-      "children": [],
-      "data": {},
-      "contentHash": "e1a08f7fe5c73242451d6e6c925487a2",
-      "custom": {}
-    },
     "MsmFdXyWfizd5g8GGcObD": {
       "id": "MsmFdXyWfizd5g8GGcObD",
       "title": "Covariance Weighted Forecasting",
@@ -4419,6 +4433,25 @@
       "contentHash": "40f26dd03514b20f64bbd3c0f4d0b083",
       "custom": {}
     },
+    "MXHvc8bQbNRRVCB0UogRy": {
+      "id": "MXHvc8bQbNRRVCB0UogRy",
+      "title": "Code Resources",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "Code",
+      "updated": 1636426847911,
+      "created": 1636420962292,
+      "parent": "PhD",
+      "children": [],
+      "data": {},
+      "contentHash": "e1a08f7fe5c73242451d6e6c925487a2",
+      "custom": {}
+    },
     "AiXOWFsdvi3BPZxcUMjIi": {
       "id": "AiXOWFsdvi3BPZxcUMjIi",
       "title": "Bayesian Approaches to DFMs",
@@ -4595,100 +4628,18 @@
       "type": "note",
       "desc": "",
       "links": [],
-      "anchors": {
-        "matrix-algebra": {
-          "type": "header",
-          "text": "Matrix Algebra",
-          "value": "matrix-algebra",
-          "line": 8,
-          "column": 0
-        },
-        "linear-models": {
-          "type": "header",
-          "text": "Linear Models",
-          "value": "linear-models",
-          "line": 10,
-          "column": 0
-        },
-        "likelihood": {
-          "type": "header",
-          "text": "Likelihood",
-          "value": "likelihood",
-          "line": 12,
-          "column": 0
-        },
-        "notation": {
-          "type": "header",
-          "text": "Notation",
-          "value": "notation",
-          "line": 16,
-          "column": 0
-        },
-        "inference": {
-          "type": "header",
-          "text": "Inference",
-          "value": "inference",
-          "line": 29,
-          "column": 0
-        },
-        "wald-test": {
-          "type": "header",
-          "text": "Wald Test",
-          "value": "wald-test",
-          "line": 35,
-          "column": 0
-        },
-        "lmgradient-test": {
-          "type": "header",
-          "text": "LM/Gradient Test",
-          "value": "lmgradient-test",
-          "line": 39,
-          "column": 0
-        },
-        "likelihood-ratio-criterion-differnce-test": {
-          "type": "header",
-          "text": "Likelihood Ratio (criterion differnce) test",
-          "value": "likelihood-ratio-criterion-differnce-test",
-          "line": 43,
-          "column": 0
-        },
-        "stochastic-order": {
-          "type": "header",
-          "text": "Stochastic Order",
-          "value": "stochastic-order",
-          "line": 47,
-          "column": 0
-        },
-        "generalised-method-of-moments": {
-          "type": "header",
-          "text": "Generalised Method of Moments",
-          "value": "generalised-method-of-moments",
-          "line": 51,
-          "column": 0
-        },
-        "notation-1": {
-          "type": "header",
-          "text": "Notation",
-          "value": "notation-1",
-          "line": 53,
-          "column": 0
-        },
-        "inference-1": {
-          "type": "header",
-          "text": "Inference",
-          "value": "inference-1",
-          "line": 55,
-          "column": 0
-        }
-      },
+      "anchors": {},
       "fname": "BEX6510",
-      "updated": 1636777306347,
+      "updated": 1637032110552,
       "created": 1636775361328,
       "parent": "PhD",
       "children": [],
       "data": {},
-      "contentHash": "9c440d304ab3f707e3a1f64c73abe760",
-      "custom": {}
+      "contentHash": "3b24dd3f6579df95a3dbc8a99603fa35",
+      "custom": {
+        "geometry": "margin=2cm",
+        "template": "default.latex"
+      }
     },
     "CQTUwoXQNcd0Y7la7IaAn": {
       "id": "CQTUwoXQNcd0Y7la7IaAn",
@@ -5017,6 +4968,32 @@
           "to": {
             "fname": "TODO"
           }
+        },
+        {
+          "type": "linkCandidate",
+          "from": {
+            "fname": "root",
+            "id": "PhD",
+            "vaultName": "vault"
+          },
+          "value": "Dendron has incredibly powerful search functionality due to good indexing, even outside of working in raw .md files. Simply use the search bar at the top of the website to find something.",
+          "position": {
+            "start": {
+              "line": 8,
+              "column": 1,
+              "offset": 246
+            },
+            "end": {
+              "line": 8,
+              "column": 188,
+              "offset": 433
+            },
+            "indent": []
+          },
+          "to": {
+            "fname": "Dendron",
+            "vaultName": "vault"
+          }
         }
       ],
       "anchors": {
@@ -5043,11 +5020,11 @@
         "CQTUwoXQNcd0Y7la7IaAn",
         "9s2d4L1UHWFWCdtORYT2Q",
         "AiXOWFsdvi3BPZxcUMjIi",
-        "MsmFdXyWfizd5g8GGcObD",
         "MXHvc8bQbNRRVCB0UogRy",
-        "T4FN6sDHfA9wxiZ7Dg5WX",
+        "MsmFdXyWfizd5g8GGcObD",
         "jtZSk246bVVDfJy6cdpS1",
         "2qGHFR7CcKOE0Meu7UU6D",
+        "T4FN6sDHfA9wxiZ7Dg5WX",
         "qGmGYptDKW2WLwlsu2xJw",
         "GvwoAWaYZxq1czYi3t3k4",
         "ZIDZSAYP9a9L7jYhVMgcz",
@@ -5058,12 +5035,12 @@
         "fHzGITjWkNNkiwsQpdex4",
         "umGHrdI4OaLoU8OOAOdkL",
         "aQw5xJBpqunSJYCfXXAls",
-        "0R61RLuT7e3hswR2v6o0w",
+        "y0rpX1u3Lz3vpUFro9TcW",
         "AuDqSlWn0PlsSo8JdLgrR",
         "ElqQePaEuSSz7pSeO1gNc",
-        "BMClpTRP3V8ITqM7R4kh0",
+        "0R61RLuT7e3hswR2v6o0w",
         "FNflnQbSXuMwTtni2C8is",
-        "y0rpX1u3Lz3vpUFro9TcW"
+        "BMClpTRP3V8ITqM7R4kh0"
       ],
       "data": {},
       "contentHash": "d7de26282e04813f39247a66c191dd07",
@@ -5167,6 +5144,32 @@
         "to": {
           "fname": "TODO"
         }
+      },
+      {
+        "type": "linkCandidate",
+        "from": {
+          "fname": "root",
+          "id": "PhD",
+          "vaultName": "vault"
+        },
+        "value": "Dendron has incredibly powerful search functionality due to good indexing, even outside of working in raw .md files. Simply use the search bar at the top of the website to find something.",
+        "position": {
+          "start": {
+            "line": 8,
+            "column": 1,
+            "offset": 246
+          },
+          "end": {
+            "line": 8,
+            "column": 188,
+            "offset": 433
+          },
+          "indent": []
+        },
+        "to": {
+          "fname": "Dendron",
+          "vaultName": "vault"
+        }
       }
     ],
     "anchors": {
@@ -5193,11 +5196,11 @@
       "CQTUwoXQNcd0Y7la7IaAn",
       "9s2d4L1UHWFWCdtORYT2Q",
       "AiXOWFsdvi3BPZxcUMjIi",
-      "MsmFdXyWfizd5g8GGcObD",
       "MXHvc8bQbNRRVCB0UogRy",
-      "T4FN6sDHfA9wxiZ7Dg5WX",
+      "MsmFdXyWfizd5g8GGcObD",
       "jtZSk246bVVDfJy6cdpS1",
       "2qGHFR7CcKOE0Meu7UU6D",
+      "T4FN6sDHfA9wxiZ7Dg5WX",
       "qGmGYptDKW2WLwlsu2xJw",
       "GvwoAWaYZxq1czYi3t3k4",
       "ZIDZSAYP9a9L7jYhVMgcz",
@@ -5208,12 +5211,12 @@
       "fHzGITjWkNNkiwsQpdex4",
       "umGHrdI4OaLoU8OOAOdkL",
       "aQw5xJBpqunSJYCfXXAls",
-      "0R61RLuT7e3hswR2v6o0w",
+      "y0rpX1u3Lz3vpUFro9TcW",
       "AuDqSlWn0PlsSo8JdLgrR",
       "ElqQePaEuSSz7pSeO1gNc",
-      "BMClpTRP3V8ITqM7R4kh0",
+      "0R61RLuT7e3hswR2v6o0w",
       "FNflnQbSXuMwTtni2C8is",
-      "y0rpX1u3Lz3vpUFro9TcW"
+      "BMClpTRP3V8ITqM7R4kh0"
     ],
     "data": {},
     "contentHash": "d7de26282e04813f39247a66c191dd07",
