@@ -21,7 +21,7 @@ site:
         action: useVault
         payload:
             - vault
-    siteUrl: 'https://zeyuz35.github.io'
+    siteUrl: 'https://zeyuz35.github.io/'
 commands:
     lookup:
         note:
