@@ -1,4 +1,10 @@
 
+## Resources for getting paths working
+
+https://www.randigriffin.com/2017/04/25/how-to-knit-for-mysite.html
+
+https://nb.balaji.blog/posts/pandoc-extract-images/
+
 ## Matrix Algebra
 
 
@@ -7,7 +13,7 @@
 
 Notation
 
-![](./assets/images/2021-11-16-11-50-24.png)
+![](/assets/images/2021-11-16-11-50-24.png)
 
 Assumptions/regularity conditions
 
