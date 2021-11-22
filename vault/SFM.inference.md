@@ -2,7 +2,7 @@
 id: LvkZzWN557soKo2Cg4JAc
 title: Static Factor Model Inference
 desc: ''
-updated: 1637545452235
+updated: 1637556550868
 created: 1634735273785
 bibliography: [references.bib]
 reference-section-title: References
@@ -16,6 +16,13 @@ reference-section-title: References
 \newcommand{\convd}{\overset{d}{\to}}
 \newcommand{\limN}{\lim_{N \to \infty}}
 \newcommand{\limT}{\lim_{T \to \infty}}
+\newcommand{\plimT}{\operatorname{plim}_{T \to \infty}}
+\newcommand{\plimN}{\operatorname{plim}_{N \to \infty}}
+\newcommand{\plimNT}{\operatorname{plim}_{N,T \to \infty}}
+\newcommand{\ceil}[1]{\left \lceil #1 \right \rceil }
+\newcommand{\floor}[1]{\left \lfloor #1 \right \rfloor }
+\newcommand{\sumTfloor}{\sum_{t = 1}^{\floor{\tau T}}}
+\newcommand{\sumTfloort}{\sum_{t = \floor{\tau T + 1}}^{T}}
 
 ## High Level Overview
 
@@ -67,6 +74,13 @@ b. $E(e_{it} e_{js}) = \sigma_{ij, ts}, \\
 
 $E(1/N \sumN ||T^{-1/2} \sumT F_t e_{it}) ||^2 \leq M$
 
+Under these 4 assumptions, [@bai_determining_2002] show that the PCA estimator $\widehat{F}_t$ is able to consistently estimate the true factors up to an arbitrary rotation:
+
+$$
+\frac{1}{T} \sumT ||\widehat{F}_t - H'F_t|| = O_P(\delta_{NT}^{-2})
+$$
+where $\delta_{NT} = \operatorname{min}({\sqrt{T}, \sqrt{N}})$, $H = (\Lambda' \Lambda/N)(F' \widehat{F}/T)V_{NT}^{-1}$, and $V_{NT}$ is a diagonal matrix consisting of the first $r eigenvalues of $XX'/NT$ in descending order.
+
 [@bai_inferential_2003] then further develop/supplement the previous 4 assumptions with the following, in order to develop the *asymptotic* behaviour of the PCA estimator for the factors and their loadings. Note that because the previous 4 assumptions can already achieve consistency of the PCA estimator (which is what most people care about anyway), the following 4 assumptions are not as well used.
 
 5. Strengthening of Assumption 3 earlier. 
@@ -92,20 +106,66 @@ $$
 \Phi_i = \limT 1/T \sumTs \sumT E(F_t^0 F_s^{0 \prime} e_{is} e_{it})
 $$
 
-7. The eigenvalues of $\Sigma_\Lambda, \Sigma_F$ are distinct. 
-
 This assumption allows the number of strongly correlated errors to grow at a rate slower than $\sqrt{N}$. Note that the last two parts are basically CLTs. 
 
+7. The eigenvalues of $\Sigma_\Lambda, \Sigma_F$ are distinct. 
+
 These make up the total 7 assumptions/regularity conditions, typically referred to as the Bai and Ng regularity conditions.
+
+### PCA Asymptotics
+
+Let:
+
+- $V = \plimNT V_{NT}$
+- $Q = \plimNT \frac{\widehat{F}_t' F}{T}$
+
+Under the previous 7 assumptions, [@bai_critical_2003] shows that:
+
+1. Asymptotic Normality of Factors. If $\sqrt{N}/T \to 0$, then for each $t$
+$$
+\sqrt{N}(\widehat{F_t} - H' F_t^0) = V_{NT}^{-1} \left( \frac{\widehat{F}' F}{T} \right) \frac{1}{\sqrt{N}} \sumN \lambda_i e_{it} + o_p(1) \\
+\convd N(0, V^{-1} Q \Gamma_t Q' V^{-1})
+$$
+
+2. Asymptotic Normality of loadings. If $\sqrt{T}/N \to 0$, then for each $i$
+$$
+\sqrt{T}(\widehat{\lambda_i} - H^{-1}\lambda_i) = \left( \frac{\widehat{F}_t' F}{T} \right) \left( \frac{\Lambda' \Lambda}{N} \right) \frac{1}{\sqrt{T}} \sumT F_t e_{it} + o_p(1) \\
+\convd N(0, Q^{-\prime} \Phi_i Q^{-1})
+$$
+
+3. Asymptotic Normality of Common Component. 
+
+Note that because $N$ and $T$ are likely to be similar to in size to one another in practice, both of the above results are likely to hold, and the above distributions are regarded as good approximations in good samples.
+
+### PCA Identification
+
+Confusingly, due to the multiplicative structure of $F \Lambda'$, there is a notable identification issue: $FA (\Lambda A^{-1})'$ are observationally equivalent for any arbitrary non-singular $A$ matrix. Because of this, at least $r^2$ restrictions need to be imposed to separately identify the $F$ and $\Lambda$.
+
+PCA implicitly imposes the following identification schemes:
+
+1. $\widehat{F}_t' \widehat{F}/T = I_r$, and $\widehat{\Lambda}' \widehat{\Lambda}$ is diagonal. This corresponds to the "tilde" normalisation. The estimated factors are set to $\sqrt{T}$ times the eigenvectors corresponding to the eigenvalues of $XX', T \times T$
+
+2. $\widehat{\Lambda}_t' \widehat{\Lambda}/N = I_r$, and $\widehat{\F}' \widehat{\F}$ is diagonal. This corresponds to the "bar" normalisation. The estimated factors are set to $\sqrt{N}$ times the eigenvectors corresponding to the eigenvalues of $X'X, N \times N$.
+
+In order to deal with the possible structural breaks, several authors bring in:
+
+8. Identification condition for structural changes in factor loadings
+
+$$
+T^{-1} \sumTfloor F_t F_t' \convp \tau \Sigma_F \\
+T^{-1} \sumTfloort F_t F_t' \convp (1 - \tau) \Sigma_F
+$$
+Note that we have used $\tau$ instead of $\pi$, as some other authors do. 
 
 ## Bai and Ng 2006
 
 [@bai_confidence_2006] derive additional convergence rates for the PC estimator. Notably, due to the convergence rates derived, they show that it is OK to treat the estimated factors as subsequent regressors.
 
 This is mostly relevant for formally justifying the use of estimated factors in a subsequent regression, say a FAVAR model.
+
 ## Barigozzi Assumptions
 
-[@barigozzi_simultaneous_2018] instead follows the stranf of literature in the *generalized* dynamic factor models (truly dynamic) and uses an alternative set of assumptions.
+[@barigozzi_simultaneous_2018] instead follows the strand of literature in the *generalized* dynamic factor models (truly dynamic) and uses an alternative set of assumptions.
 
 For the most part, these are very similar.
 

@@ -2,7 +2,7 @@
 id: HgXYpL8CJLCszNUOmbHhP
 title: Macroeconomics
 desc: ''
-updated: 1637547461441
+updated: 1637548820305
 created: 1637546194021
 ---
 
@@ -21,6 +21,18 @@ How many shocks there are, and whether these shocks are interchangeable, identif
 ## Frequency Bands
 
 $[1 \pi / 32, 2 \pi / 6]$ is the frequency band typically associated with the business cycle, in terms of quarterly data.
+
+## Phillips Curve
+
+A hypothesis between the rates fo unemployment and wage rises. That is, decreased unemployment in an economy should correlate with higher rates of wage rises. 
+
+Originally, this did not say anything about inflation; however, this is a trivial deduction from Phillip's statistical findings.
+
+There is a documented short run tradeoff between unemployment and inflation, but this has not been observed in the long run. In the long run, economists has argued that inflationary policies cannot decrease unemployment. 
+
+The "slope" of the Phillips curve refers to the coefficient (sensitivity) between unemployment and inflation. In recent years (2010s), the slope has been noted to become much flatter - this is, the relationship has weakened, and its role in actually prediction has been questioned.
+
+Nonetheless, it is useful as a primary framework for understanding and forecasting inflation, particularly by centrla banks. 
 
 ## Stylized Facts
 

@@ -2,7 +2,7 @@
 id: ZIDZSAYP9a9L7jYhVMgcz
 title: Frequency Domain
 desc: ''
-updated: 1636692897446
+updated: 1637549094476
 created: 1634885462726
 ---
 
@@ -80,3 +80,8 @@ The sample periodogram is a sample estimate of the population spectral density.
 
 Pulled from Brillinger textbook.
 
+## Band pass Filters
+
+Band pass filters are used to extract the business cycle component in economic time series. This can reveal the expansions and contractions in economic activity. 
+
+Some people have used band pass filters in order to get a filter variable which has its business cycle frequencies (fluctuations) removed, then run something else, say PCA on the filtered variables. This intuitively estimates PCA and factor analysis, but removes the potentially confounding effects of business cycles.
