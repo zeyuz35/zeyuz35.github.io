@@ -48,3 +48,33 @@ Built websites using Dendron have a narrow stylesheet by default,
 Dendron does not implement any ability to easily run/integrate code output, so annoyingly any output will need to be explicitly outputted from R, and inserted as "normal" images or tables. On the plus side, this is likely the approach I will have to go for more "proper" submissions using LaTeX proper anyway.
 
 Advice: Keep code output separate, and save into a folder called "plots" or something, then directly insert them in .md files.
+
+## LaTeX Macros
+
+Most Pandoc preview/knitting has the latex_macros extension enabled by default.
+
+Simply drop 
+
+```
+\newcommand{\sumT}{\sum_{t = 1}^{T}}
+```
+
+RAW near the start of the document to define any macros. 
+
+## Building to website
+
+Install the dendron CLI first
+
+```
+npm install -g @dendronhq/dendron-cli@latest
+```
+
+Run the command palette and follow the prompts to build for the first time. This required to clone the nextJS template.
+
+Once this has been cloned once, publish your site by running
+
+```
+dendron publish export --target github
+```
+
+

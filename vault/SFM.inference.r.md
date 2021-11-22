@@ -2,9 +2,10 @@
 id: wQruEPvAQOC2xbS48WvgQ
 title: r Estimators
 desc: ''
-updated: 1636079101626
+updated: 1637536029370
 created: 1635206494435
 bibliography: [references.bib]
+reference-section-title: References
 ---
 
 A summary for estimators of $r$, the number of static factors.
