@@ -2,7 +2,7 @@
 id: 2qGHFR7CcKOE0Meu7UU6D
 title: Dendron Documentation
 desc: ''
-updated: 1636514167375
+updated: 1637538634237
 created: 1636096635240
 ---
 
@@ -55,3 +55,17 @@ Built websites using Dendron have a narrow stylesheet by default,
 Dendron does not implement any ability to easily run/integrate code output, so annoyingly any output will need to be explicitly outputted from R, and inserted as "normal" images or tables. On the plus side, this is likely the approach I will have to go for more "proper" submissions using LaTeX proper anyway.
 
 Advice: Keep code output separate, and save into a folder called "plots" or something, then directly insert them in .md files.
+
+## LaTeX Macros
+
+Most Pandoc preview/knitting has the latex_macros extension enabled by default.
+
+Simply drop 
+
+```
+\newcommand{\sumT}{\sum_{t = 1}^{T}}
+```
+
+RAW near the start of the document to define any macros. 
+
+
