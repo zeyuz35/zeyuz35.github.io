@@ -2,7 +2,7 @@
 id: 2qGHFR7CcKOE0Meu7UU6D
 title: Dendron Documentation
 desc: ''
-updated: 1637560552390
+updated: 1637560923710
 created: 1636096635240
 ---
 
@@ -78,10 +78,10 @@ npm install -g @dendronhq/dendron-cli@latest
 
 Run the command palette and follow the prompts to build for the first time. This required to clone the nextJS template.
 
-Once this has been cloned once, publish your site by running
+Once this has been cloned once, publish your site (to GitHub) by running
 
 ```
-dendron publish export
+dendron publish export --target github
 ```
 
 

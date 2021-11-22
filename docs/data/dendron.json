@@ -42,7 +42,8 @@
       "note": {
         "selectionMode": "extract",
         "confirmVaultOnCreate": false,
-        "leaveTrace": false
+        "leaveTrace": false,
+        "bubbleUpCreateNew": true
       }
     },
     "randomNote": {},
@@ -109,5 +110,12 @@
       "todoIntegration": false,
       "createTaskSelectionType": "selection2link"
     }
+  },
+  "preview": {
+    "enableFMTitle": true,
+    "enableNoteTitleForLink": true,
+    "enableMermaid": true,
+    "enablePrettyRefs": true,
+    "enableKatex": true
   }
 }

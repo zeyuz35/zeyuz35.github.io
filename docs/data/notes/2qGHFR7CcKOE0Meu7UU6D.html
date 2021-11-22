@@ -26,8 +26,23 @@ literature review tool.</p>
 <h2 id="no-code-output"><a aria-hidden="true" class="anchor-heading" href="#no-code-output"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>No Code output</h2>
 <p>Dendron does not implement any ability to easily run/integrate code output, so annoyingly any output will need to be explicitly outputted from R, and inserted as "normal" images or tables. On the plus side, this is likely the approach I will have to go for more "proper" submissions using LaTeX proper anyway.</p>
 <p>Advice: Keep code output separate, and save into a folder called "plots" or something, then directly insert them in .md files.</p>
+<h2 id="latex-macros"><a aria-hidden="true" class="anchor-heading" href="#latex-macros"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>LaTeX Macros</h2>
+<p>Most Pandoc preview/knitting has the latex_macros extension enabled by default.</p>
+<p>Simply drop </p>
+<pre><code>\newcommand{\sumT}{\sum_{t = 1}^{T}}
+</code></pre>
+<p>RAW near the start of the document to define any macros. </p>
+<h2 id="building-to-website"><a aria-hidden="true" class="anchor-heading" href="#building-to-website"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Building to website</h2>
+<p>Install the dendron CLI first</p>
+<pre><code>npm install -g @dendronhq/dendron-cli@latest
+</code></pre>
+<p>Run the command palette and follow the prompts to build for the first time. This required to clone the nextJS template.</p>
+<p>Once this has been cloned once, publish your site by running</p>
+<pre><code>dendron publish export --target github
+</code></pre>
 <hr>
 <h2 id="children"><a aria-hidden="true" class="anchor-heading" href="#children"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Children</h2>
 <ol>
 <li><a href="/notes/1DyoojO5rIm0uTXOkxSuw">Citations</a></li>
+<li><a href="/notes/nbiBCI3xaHaKbGmARND3Y">Macros for Maths</a></li>
 </ol>
