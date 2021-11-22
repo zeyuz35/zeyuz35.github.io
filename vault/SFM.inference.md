@@ -2,7 +2,7 @@
 id: LvkZzWN557soKo2Cg4JAc
 title: Static Factor Model Inference
 desc: ''
-updated: 1637545170363
+updated: 1637545452235
 created: 1634735273785
 bibliography: [references.bib]
 reference-section-title: References
@@ -19,9 +19,10 @@ reference-section-title: References
 
 ## High Level Overview
 
-See [[LSE]] notes for a broader, high level interpretation of these. (Will try to merge these together).
+See [[LSE]] notes for a broader, high level interpretation of these. In summary, a set of valid regularity conditions requires that:
 
-
+1. The factors to be *pervaisve*, i.e. have non-neglibile effects on most of the variables
+2. The idiosyncratic components to be *weakly* cross-correlated
 
 ## Bai and Ng Regularity Conditions
 
@@ -102,4 +103,11 @@ These make up the total 7 assumptions/regularity conditions, typically referred 
 [@bai_confidence_2006] derive additional convergence rates for the PC estimator. Notably, due to the convergence rates derived, they show that it is OK to treat the estimated factors as subsequent regressors.
 
 This is mostly relevant for formally justifying the use of estimated factors in a subsequent regression, say a FAVAR model.
+## Barigozzi Assumptions
+
+[@barigozzi_simultaneous_2018] instead follows the stranf of literature in the *generalized* dynamic factor models (truly dynamic) and uses an alternative set of assumptions.
+
+For the most part, these are very similar.
+
+For practical purposes, it does not matter which set - simply choose whichever one is easier for the problem at hand.
 
