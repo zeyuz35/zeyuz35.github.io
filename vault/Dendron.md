@@ -2,7 +2,7 @@
 id: 2qGHFR7CcKOE0Meu7UU6D
 title: Dendron Documentation
 desc: ''
-updated: 1637538634237
+updated: 1637560552390
 created: 1636096635240
 ---
 
@@ -67,5 +67,21 @@ Simply drop
 ```
 
 RAW near the start of the document to define any macros. 
+
+## Building to website
+
+Install the dendron CLI first
+
+```
+npm install -g @dendronhq/dendron-cli@latest
+```
+
+Run the command palette and follow the prompts to build for the first time. This required to clone the nextJS template.
+
+Once this has been cloned once, publish your site by running
+
+```
+dendron publish export
+```
 
 
