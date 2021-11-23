@@ -2,11 +2,29 @@
 id: DnfP7up0cIhvaUWp23Jtk
 title: Gir Workshop and Notes
 desc: ''
-updated: 1637627720860
+updated: 1637632501751
 created: 1636428241249
 ---
 
 https://monashdatafluency.github.io/git-tutorial/
+
+## Notes
+
+```
+git add
+git commit -m
+git commit -am
+git status
+git log
+git checkout
+git switch
+
+# danger !
+git merge
+git rebase
+
+git reset
+```
 
 ## Installation and Setup
 
@@ -133,7 +151,32 @@ You can save any changes in this temporary branch by saving it as a new branch. 
 
 Or, you can discard changes by running git switch -
 
+Note that all commit history IS properly reflected in the final GitHub repo. 
 
+Note that branches which have not yet been merged will be reflected online.
+
+However, if all branches have been merged, there are no remaining branches, and the main GitHub site will reflect this.
+
+#### Git is a mess
+
+The below all do (more or less) the same thing. 
+
+This is because git checkout is too overloaded and has too much functionality. So, switch was created to lighten its workload. It is a newer command, so this is why some people do not use it.
+
+For the most part, checkout and switch do the same thing.
+
+Note that switch is created ONLY for switching to the HEAD (latest) version of any branch. 
+
+checkout lets you, by design, checkout ANY pervious version of any branch, as opposed to JUST the latest (HEAD).
+
+```
+git switch -c "new-branch"
+git checkout -c "new-branch"
+# git branch does not automatically switch
+git branch -c "new-branch"
+```
+
+git reflog is the closest to an undo button.
 
 ### Merging Conflicts
 
@@ -143,5 +186,12 @@ It is recommend to use VScode for this. VScode offers a very nice built in UI fo
 
 ## Advanced Topics
 
-## Released under MIT License
+This tutorial did not go through git rebase.
+
+Apparently rebase and merge were both created to solve the same problem, but do so in different ways.
+
+It seems that either is controversial, like tabs vs spaces sort of thing.
+
+Majority of people seem to just use merge.
+
 
