@@ -2,9 +2,11 @@
 id: BMClpTRP3V8ITqM7R4kh0
 title: To Do List
 desc: ''
-updated: 1636526148937
+updated: 1637563664481
 created: 1635455071285
 ---
+
+## Main Thesis
 
 Focus Question: How many factors are detected in the presences of breaks?
 
@@ -49,6 +51,8 @@ Break Date estimators
 
 Run the estimators across the dataset over time
 
+Type up AWS Guide
+
 ## CWF Project
 
 
@@ -63,3 +67,7 @@ Simulation Study
 
 - Type up formally, the one with multiple fixed $rho$ as constituent models
 - 
+
+## Honours Thesis
+
+Not exactly sure how this can

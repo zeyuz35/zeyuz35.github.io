@@ -2,11 +2,13 @@
 id: nbiBCI3xaHaKbGmARND3Y
 title: Macros for Maths
 desc: ''
-updated: 1637557479382
+updated: 1637563295299
 created: 1637549840978
 ---
 
 Collection of macros used iun equations. Copy and paste below. 
+
+Hopefully Dendron implements passing these as a macros option to katex so it renders properly on built websites. In the meantime, they are broken.
 
 ```
 \newcommand{\sumT}{\sum_{t = 1}^{T}}
