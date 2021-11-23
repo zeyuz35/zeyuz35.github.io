@@ -1,8 +1,8 @@
 ---
 id: qDVp6IFHf6FiUdSgxwZMA
-title: LSE Notes
+title: Barigozzi LSE Notes
 desc: ''
-updated: 1635319103289
+updated: 1637709850693
 created: 1635122489982
 ---
 
