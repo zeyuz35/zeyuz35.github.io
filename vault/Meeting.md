@@ -21,7 +21,7 @@ How many static factors are estimated by various information criteria in the pre
 
 A collection of unanswered questions which may have potential.
 
-It is currently known that the most innovative and latest break fraction/points estimator rely on the second moments matrix of the pseudo factors. Unofortuntely this method cannot distinguish between a break in the factor variance and the factor loadings, because of a non-identification issue.
+It is currently known that the most innovative and latest break fraction/points estimator rely on the second moments matrix of the pseudo factors. Unfortuntely this method cannot distinguish between a break in the factor variance and the factor loadings, because of a non-identification issue.
 
 Currently, everything is estimated and done via the static model setup. It is arguable that this is all that is necessary, but to date no attempt has been made to reconcile this with the dynamic factor model literature (this is quite difficult). 
 
