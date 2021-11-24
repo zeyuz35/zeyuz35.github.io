@@ -2,8 +2,10 @@
 id: FPGOIfZj4F6lT1ANrKWdX
 title: CWF Simulation Study
 desc: ''
-updated: 1636095383581
+updated: 1637719739047
 created: 1636095154775
+bibliography: [references.bib]
+reference-section-title: References
 ---
 
 Simulation study for covariance weighted forecasting.

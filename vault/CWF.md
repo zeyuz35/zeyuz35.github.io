@@ -2,8 +2,10 @@
 id: MsmFdXyWfizd5g8GGcObD
 title: Covariance Weighted Forecasting
 desc: ''
-updated: 1636330395777
+updated: 1637719730408
 created: 1636095097255
+bibliography: [references.bib]
+reference-section-title: References
 ---
 
 Homepage section for covariance weighted forecasting, just to keep all notes and academic stuff related in the same note database.

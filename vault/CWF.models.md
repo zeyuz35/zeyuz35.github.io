@@ -2,11 +2,15 @@
 id: 4b8Oc35b3LgoPjcQsglCx
 title: Candidate Models
 desc: ''
-updated: 1636095708420
+updated: 1637719894990
 created: 1636095674145
+bibliography: [references.bib]
+reference-section-title: References
 ---
 
 We detail our candidate models we consider. Most of these models are taken from the survey of inflation forecasting. The models are detailed below broadly from simplest to most complex.
+
+Most of this is from the very comprehensive survey by [@faust_chapter_2013].
 
 ## Univariate Models
 

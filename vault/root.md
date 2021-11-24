@@ -2,7 +2,7 @@
 id: PhD
 title: PhD Homepage
 desc: ''
-updated: 1637563604861
+updated: 1637720471653
 created: 1595961348801
 stub: false
 ---
@@ -22,3 +22,5 @@ Dendron has incredibly powerful search functionality due to good indexing, even 
 [[Meeting]]
 
 [[TODO]]
+
+[[Misc]]

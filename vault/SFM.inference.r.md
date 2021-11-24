@@ -2,7 +2,7 @@
 id: wQruEPvAQOC2xbS48WvgQ
 title: r Estimators
 desc: ''
-updated: 1637536029370
+updated: 1637725607748
 created: 1635206494435
 bibliography: [references.bib]
 reference-section-title: References
@@ -35,7 +35,7 @@ Empirically on non-synthetic data, Onatski's method tends to estimate less facto
 
 They do especially note however, that their estimator tends to underestimate when some of the static factors are very weak. This is plausible, if some of the lags of the factors (true dynamic factors) have very weak correlation coefficients. 
 
-Esitmate r as the largest value of $k$ for which the different between the $k$ and $k + 1$ eigenvalues of the covariance matrix exceeds a threshold.
+Estimate r as the largest value of $k$ for which the different between the $k$ and $k + 1$ eigenvalues of the covariance matrix exceeds a threshold. This overall corresponds to finding the "largest cliff" in a scree plot.
 
 Implementation converted to R from Onatski's MATLAB code.
 
@@ -43,8 +43,27 @@ Note that this is essentially runs sequential tests for the number of factors in
 
 ## Ahn and Horenstein 2013 (AHER, AHGR)
 
-Ahn and Horenstein derive an alternative estiamtor for r based on the behaviour of how the eigenvalues change/grow. 
+Ahn and Horenstein derive an alternative estimator for r based on the behaviour of how the eigenvalues change/grow. 
 
-This is basically a fancier scree plot.
+This is corresponds to finding the largest "relative cliff" in a scree plot.
+
+There is the standard "eigenvalue ratio" and "growth ratio". 
+
+## Notes
+
+On simulated data, these all perform quite well. However, empirically, it has been observed that they perform very differently.
+
+In particular, it has been noted that:
+
+- 
+- 
+- 
+
+This can partially be explained by:
+
+- 
+- 
+- 
+
 
 
