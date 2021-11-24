@@ -1,11 +1,15 @@
 
-# Macroeconomic Datasets Compilation
+## Macroeconomic Datasets Compilation
 
 This document contains a compilation of various macroeconomic datasets, and notes for any details that are necessary 
 
 This is mostly because the documentation sources for all of these is messy and all over the place, are constantly updated, and are overall hard to keep track of in one place.
 
 Specific details about missing data (important!) etc are documented.
+
+## Checklist
+
+[x] 
 
 ## US Data
 

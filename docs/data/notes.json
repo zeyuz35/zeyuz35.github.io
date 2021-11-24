@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1637713214120,
-      "created": 1637713214120,
+      "updated": 1637714588083,
+      "created": 1637714588083,
       "parent": null,
       "children": [],
       "data": {}
@@ -1112,25 +1112,32 @@
       "desc": "",
       "links": [
         {
+          "type": "wiki",
           "from": {
-            "fname": "DFM",
+            "fname": "SFM",
+            "id": "0R61RLuT7e3hswR2v6o0w",
             "vaultName": "vault"
           },
-          "type": "backlink",
+          "value": "SFM.break",
+          "alias": "SFM.break",
           "position": {
             "start": {
-              "line": 20,
-              "column": 43,
-              "offset": 743
+              "line": 51,
+              "column": 165,
+              "offset": 4168
             },
             "end": {
-              "line": 20,
-              "column": 50,
-              "offset": 750
+              "line": 51,
+              "column": 178,
+              "offset": 4181
             },
             "indent": []
           },
-          "value": "SFM"
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "SFM.break"
+          }
         }
       ],
       "anchors": {},
@@ -4847,7 +4854,7 @@
     },
     "jtZSk246bVVDfJy6cdpS1": {
       "id": "jtZSk246bVVDfJy6cdpS1",
-      "title": "Datasets",
+      "title": "Macroeconomic Datasets Compilation",
       "vault": {
         "fsPath": "vault"
       },
@@ -4862,108 +4869,88 @@
           "line": 8,
           "column": 0
         },
+        "checklist": {
+          "type": "header",
+          "text": "Checklist",
+          "value": "checklist",
+          "line": 16,
+          "column": 0
+        },
         "us-data": {
           "type": "header",
           "text": "US Data",
           "value": "us-data",
-          "line": 16,
+          "line": 20,
           "column": 0
         },
         "stock-and-watson": {
           "type": "header",
           "text": "Stock and Watson",
           "value": "stock-and-watson",
-          "line": 23,
+          "line": 27,
           "column": 0
         },
         "fred-md-us": {
           "type": "header",
           "text": "FRED-MD (US)",
           "value": "fred-md-us",
-          "line": 34,
+          "line": 38,
           "column": 0
         },
         "missing-data": {
           "type": "header",
           "text": "Missing Data",
           "value": "missing-data",
-          "line": 40,
+          "line": 44,
           "column": 0
         },
         "fred-qd-us": {
           "type": "header",
           "text": "FRED-QD (US)",
           "value": "fred-qd-us",
-          "line": 57,
+          "line": 61,
           "column": 0
         },
         "au-md-australia": {
           "type": "header",
           "text": "AU-MD (Australia)",
           "value": "au-md-australia",
-          "line": 61,
+          "line": 65,
           "column": 0
         },
         "uk-md-uk": {
           "type": "header",
           "text": "UK-MD (UK)",
           "value": "uk-md-uk",
-          "line": 65,
+          "line": 69,
           "column": 0
         },
         "can-md-canada": {
           "type": "header",
           "text": "CAN-MD (Canada)",
           "value": "can-md-canada",
-          "line": 72,
+          "line": 76,
           "column": 0
         }
       },
       "fname": "Datasets",
-      "updated": 1636005066075,
+      "updated": 1637714584110,
       "created": 1635213694758,
       "parent": "PhD",
       "children": [
         "oxdsOpVcDvBS6LK2g2u5q",
-        "fcutUIFEqfglhag1gNlwj",
         "PxJVVcxvyNz7ScqpSnMOV",
+        "chmzLZHhU0FlSUga1u8jn",
+        "fcutUIFEqfglhag1gNlwj",
         "OCBJDED8DhgRzfr9tuqIE",
         "kdWEzmfE1rSZAZX1GwXsP",
         "HQNSmh6LzNUMVucvj1RWZ",
         "npnnYVoOyuix5N0kKhX2O",
         "xOhZDUzpzI96q2dq7NOcn",
-        "qG2B481xSr0LdJZXApqjH",
-        "chmzLZHhU0FlSUga1u8jn"
+        "qG2B481xSr0LdJZXApqjH"
       ],
       "data": {},
-      "contentHash": "433e4fddfa7eb1a490ae439f8858e35f",
-      "custom": {}
-    },
-    "chmzLZHhU0FlSUga1u8jn": {
-      "id": "chmzLZHhU0FlSUga1u8jn",
-      "title": "Dataset Extensions",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {
-        "dataset-extensions": {
-          "type": "header",
-          "text": "Dataset Extensions",
-          "value": "dataset-extensions",
-          "line": 8,
-          "column": 0
-        }
-      },
-      "fname": "Datasets.extensions",
-      "updated": 1635320565216,
-      "created": 1635213710403,
-      "parent": "jtZSk246bVVDfJy6cdpS1",
-      "children": [],
-      "data": {},
-      "contentHash": "f515ac18104f1e0915f778997d85e955",
+      "contentHash": "400ec179f219b824c28b5bf266a9a522",
       "custom": {}
     },
     "qG2B481xSr0LdJZXApqjH": {
@@ -5155,25 +5142,6 @@
       "contentHash": "cc9fe88f6ddc52cf2f5b9b2c12fb9a12",
       "custom": {}
     },
-    "PxJVVcxvyNz7ScqpSnMOV": {
-      "id": "PxJVVcxvyNz7ScqpSnMOV",
-      "title": "DataStream",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {},
-      "fname": "Datasets.DataStream",
-      "updated": 1636427615671,
-      "created": 1636427563872,
-      "parent": "jtZSk246bVVDfJy6cdpS1",
-      "children": [],
-      "data": {},
-      "contentHash": "44fff9109d11f78ba47c693727189bd8",
-      "custom": {}
-    },
     "fcutUIFEqfglhag1gNlwj": {
       "id": "fcutUIFEqfglhag1gNlwj",
       "title": "Datasets COVID issues",
@@ -5220,6 +5188,52 @@
       "children": [],
       "data": {},
       "contentHash": "7e4392690eeda15ac1686ebe5d272869",
+      "custom": {}
+    },
+    "chmzLZHhU0FlSUga1u8jn": {
+      "id": "chmzLZHhU0FlSUga1u8jn",
+      "title": "Dataset Extensions",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "dataset-extensions": {
+          "type": "header",
+          "text": "Dataset Extensions",
+          "value": "dataset-extensions",
+          "line": 8,
+          "column": 0
+        }
+      },
+      "fname": "Datasets.extensions",
+      "updated": 1635320565216,
+      "created": 1635213710403,
+      "parent": "jtZSk246bVVDfJy6cdpS1",
+      "children": [],
+      "data": {},
+      "contentHash": "f515ac18104f1e0915f778997d85e955",
+      "custom": {}
+    },
+    "PxJVVcxvyNz7ScqpSnMOV": {
+      "id": "PxJVVcxvyNz7ScqpSnMOV",
+      "title": "DataStream",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "Datasets.DataStream",
+      "updated": 1636427615671,
+      "created": 1636427563872,
+      "parent": "jtZSk246bVVDfJy6cdpS1",
+      "children": [],
+      "data": {},
+      "contentHash": "44fff9109d11f78ba47c693727189bd8",
       "custom": {}
     },
     "oxdsOpVcDvBS6LK2g2u5q": {
