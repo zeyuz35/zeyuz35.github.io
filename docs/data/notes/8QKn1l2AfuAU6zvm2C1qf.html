@@ -1,0 +1,106 @@
+<h1 id="bvar-presentation-notes-from-gary-koop"><a aria-hidden="true" class="anchor-heading" href="#bvar-presentation-notes-from-gary-koop"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>BVAR Presentation Notes from Gary Koop</h1>
+<h1 id="large-bayesian-var-presentation"><a aria-hidden="true" class="anchor-heading" href="#large-bayesian-var-presentation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Large Bayesian VAR presentation</h1>
+<p>Two main approaches to large datasets in Macroeconomcis</p>
+<p>Gary Koop</p>
+<p>DFM
+Efficient, not prone to overfitting
+Model specification somewhat involved (no. of factors, identification)
+What if the data does no co move? (or only a subset co moves?)</p>
+<p>VAR
+Highly flexible, close connection to DFM
+SUitable priors leads to computational efficiency
+CUrse of dimensionality</p>
+<p>Empirical work tends to find that large VARs forecast better somehow</p>
+<p>Bayesian Prior
+Conjugate priors are very easy to work with
+Other more fancier priors (e.g. LASSO, etc) are more algorithmically based (ML like)
+However, these require MCMC which can be computationally demanding</p>
+<p>How to decide between the methods?
+Do a pseudo out of sample exercise, whichever one does better is better
+However, this is time consuming, and can be sensitive to period chosen
+IC or Marginal Likelihoods
+However, these are hard to calculate, or sensitive to priors chosen (for likelihoods)
+Numerical issues in large dimesnions
+Implicitly reward one step ahead predictive capabilities of th Model</p>
+<p>Summary of Paper
+Develop an alternative method for choosing between factor models and large VARs
+But why is there a need to choos ebetween? WHy not combine them together?
+Use a new Bayesian VAR prior centred over restrictions implied by DFM (alternative interpretation)
+E.g. Minnestoa prior is centered over values of parameters that people thought were sensible</p>
+<p>Inspriation from SHIN Bhattacharya, Johnson
+The idea behind this was to shrink possibly non robust non parametric methods towards a linear model</p>
+<p>We use Gaussian (conjugate) priors as theoretical derivations exact</p>
+<h2 id="summary"><a aria-hidden="true" class="anchor-heading" href="#summary"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Summary</h2>
+<p>Conventional Bayesian priors shrink estimates of a parameter towards its prior mean
+Subspsace shrinkage priors are priors on function spaces
+Shrink towards a class of functions
+E.g. Bayesian non parametric model can shrink towards linearity
+Here, we propose a new subspace shrinkage prior for the VAR which shrinks towards a factor model
+This prior is conjugate and easy to implement
+Scales very well to high dimensions</p>
+<p>Ben made a good note about this, VAR is empirically better, however, this is shrinking towards a DFM, and this does not make intuitive sense
+Loosely speaking, this new method is a Bayesian weighting scheme between DFM and large VAR
+Empirically, they find about 20% DFM, 80% VAR</p>
+<p>VAR tends to work better for US based datasets</p>
+<p>Overview
+Develop two version of this shrinkage prior
+Non informative VAR prior + subspace shrinkage prior
+Minnesota VAR prior + subspace shrinkage prior</p>
+<p>Parameter w controls the degree of shrinkage towards the factor model</p>
+<p>Estimate of w produces best combination of VAR DFM or can be used to select one or the other</p>
+<p>Number of factors can also be estimated (co author is more exicted by this)</p>
+<p>Allows dor selecting the number of factors and the weight associated with the DFM within a unified framework</p>
+<p>Model properties illustrated using artificial data and a macroeconomic forecasting exercise
+Seems to work well for simulated data
+Seems to work slightly better for empirical data</p>
+<p>See hjandwritten notes for model notation</p>
+<p>Next step, combine this with traditional Minnesota Prior</p>
+<p>This proves another result
+Can be proven to </p>
+<p>Final
+Need to choose
+number of factors q
+weight attached to VAR relative w
+shrinkage (v)</p>
+<p>A conjugate prior makes this trivially easy</p>
+<p>Just use Monte Carlo integration over the three parameters (this is still reasonable)</p>
+<p>Forecasting Exercise
+FRED QD, 1960 - 2020
+FRED transfomrations
+Forecast GDP growth, inflation and Fed Funds Rates
+forecast evaluation from 1990 to 2020
+one quarter and one year ahead
+RMSFEs and log predictive likelihoods
+COnsider 12, 22, 78, 166 variable VARS
+FOur subspace VAR approaches
+Also include conventional Minnesota prior VAR and FAVAR
+All VARs have lag length 2</p>
+<p>Check actual paper for all results</p>
+<p>No consistent results, however
+Minnesota prior VAR forecasts better
+But there are some cases where factor model forecasts better
+Perhaps combination could lead to something better?</p>
+<p>subVAR approach which combined Minnestoa prior and DFM
+Most of the time this forecasts best
+Choice of prior on w makes little difference</p>
+<p>What about subVAR approach which combined flat prior VAR and DFM
+small and medium VARs forecast well
+However, subspace shrinkage (unless extremely strong) not enough in large and extra large VARs</p>
+<p>SOmetimes, there are large changes in parameters in crises
+E.g. VAR w weights switches from 0.1 to 0.8 in financial crisis thens witches back after end of crisis
+I.e. time varying w
+Authors note that w is never fully 0 or 1
+However, a prior on w with specific mass on 0 or 1 could try to get around this issue</p>
+<p>Extensions
+Lots of other Bayesian VARs priors are being used
+Stochastic Volatility extension?</p>
+<ul>
+<li>yes, this is possible, but no analytic results</li>
+<li><a aria-hidden="true" class="block-anchor anchor-heading" id="^-T" href="#^-T"><svg viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Decompose error covariance matrix into A0^-1 D A0This allows us eto work with one variable at atime, which is massively quicker with MCMC
+COnujugate version of Minnesota prior has one shrinkage parameter v
+Might want several: own lag shrinkage different from other lags, different equations having different shrinkage
+Straightforward to develop MCM algo
+These are all interesting extensions and feasible, as long as dimensionality isn't too large
+Chan 2020 considers Bayesian VARs with erro covariance sigma kron sigma
+Different sigma choices lead to SV, MA, fat tails, etc</li>
+</ul>
