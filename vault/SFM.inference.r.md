@@ -2,7 +2,7 @@
 id: wQruEPvAQOC2xbS48WvgQ
 title: r Estimators
 desc: ''
-updated: 1637725607748
+updated: 1637726186001
 created: 1635206494435
 bibliography: [references.bib]
 reference-section-title: References
@@ -12,7 +12,9 @@ A summary for estimators of $r$, the number of static factors.
 
 ## Bai and Ng
 
-The most famous and widely used estimator. 
+The most famous and widely used estimator. For practical purposes, they introduce 3 different IC, which are asymptotoically identical. However, in finite sample, IC1 > IC2 > IC3, and IC2 is the most used one in practice. 
+
+Note that these are only reasonably behaved for a data sample that is large enough, relative the maximum no. of factors. If rmax is too large, the IC will diverge, and simply estimate as many factors as you allow it to. 
 
 ## Onatski (2009) ON09
 
@@ -59,11 +61,9 @@ In particular, it has been noted that:
 - 
 - 
 
-This can partially be explained by:
+This can partially explained by the following conjectures:
 
-- 
-- 
-- 
-
-
+- the degree of auto correlation is the idiosyncratic errors terms is high
+- asd
+- asd
 
