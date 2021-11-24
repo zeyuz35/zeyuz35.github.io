@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "useFMTitle": false,
+  "useFMTitle": true,
   "useNoteTitleForLink": true,
   "mermaid": true,
   "useKatex": true,
@@ -8,23 +8,24 @@
     "enablePreviewV2": true
   },
   "site": {
+    "siteUrl": "https://zeyuz35.github.io",
     "copyAssets": true,
     "siteHierarchies": [
       "root"
     ],
     "siteRootDir": "docs",
     "usePrettyRefs": true,
-    "title": "Ze Yu",
+    "title": "Dendron",
     "description": "Personal knowledge space",
     "siteLastModified": true,
     "gh_edit_branch": "main",
     "duplicateNoteBehavior": {
       "action": "useVault",
       "payload": [
-        "vault"
+        "vault",
+        "dendron.templates"
       ]
     },
-    "siteUrl": "https://zeyuz35.github.io/",
     "usePrettyLinks": true,
     "siteNotesDir": "notes",
     "siteFaviconPath": "favicon.ico",
@@ -59,6 +60,11 @@
   "workspace": {
     "vaults": [
       {
+        "fsPath": "templates",
+        "seed": "dendron.templates",
+        "name": "dendron.templates"
+      },
+      {
         "fsPath": "vault"
       }
     ],
@@ -73,18 +79,6 @@
       "dateFormat": "y.MM.dd.HHmmss",
       "addBehavior": "asOwnDomain"
     },
-    "graph": {
-      "zoomSpeed": 1
-    },
-    "enableAutoCreateOnDefinition": false,
-    "enableXVaultWikiLink": false,
-    "enableRemoteVaultInit": true,
-    "enableUserTags": true,
-    "enableHashTags": true,
-    "workspaceVaultSyncMode": "noCommit",
-    "enableAutoFoldFrontmatter": false,
-    "maxPreviewsCached": 10,
-    "maxNoteLength": 204800,
     "task": {
       "name": "",
       "dateFormat": "",
@@ -108,10 +102,24 @@
       "todoIntegration": false,
       "createTaskSelectionType": "selection2link"
     },
-    "dendronVersion": "0.70.0"
+    "graph": {
+      "zoomSpeed": 1
+    },
+    "enableAutoCreateOnDefinition": false,
+    "enableXVaultWikiLink": false,
+    "enableRemoteVaultInit": true,
+    "enableUserTags": true,
+    "enableHashTags": true,
+    "workspaceVaultSyncMode": "noCommit",
+    "enableAutoFoldFrontmatter": false,
+    "maxPreviewsCached": 10,
+    "maxNoteLength": 204800,
+    "seeds": {
+      "dendron.templates": {}
+    }
   },
   "preview": {
-    "enableFMTitle": false,
+    "enableFMTitle": true,
     "enableNoteTitleForLink": true,
     "enableMermaid": true,
     "enablePrettyRefs": true,

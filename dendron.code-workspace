@@ -1,6 +1,10 @@
 {
     "folders": [
         {
+            "path": "seeds/dendron.templates/templates",
+            "name": "dendron.templates"
+        },
+        {
             "path": "vault"
         }
     ],
@@ -8,6 +12,7 @@
         "dendron.rootDir": ".",
         "files.autoSave": "onFocusChange",
         "pasteImage.path": "${currentFileDir}/assets/images",
+        "pasteImage.prefix": "/",
         "markdown-preview-enhanced.enableWikiLinkSyntax": true,
         "markdown-preview-enhanced.wikiLinkFileExtension": ".md",
         "editor.snippetSuggestions": "inline",
