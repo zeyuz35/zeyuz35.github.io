@@ -9,7 +9,12 @@ Specific details about missing data (important!) etc are documented.
 
 ## Checklist
 
-[x] 
+[x] FREDMD
+[] FREDQD
+[x] LCDMA
+[x] LCMMAQ
+[x] UKMD
+[] AUMD
 
 ## US Data
 
