@@ -1,11 +1,9 @@
 {
-  "version": 3,
+  "version": 4,
   "useFMTitle": false,
   "useNoteTitleForLink": true,
-  "noLegacyNoteRef": true,
   "mermaid": true,
   "useKatex": true,
-  "usePrettyRefs": true,
   "dev": {
     "enablePreviewV2": true
   },
@@ -109,10 +107,11 @@
       },
       "todoIntegration": false,
       "createTaskSelectionType": "selection2link"
-    }
+    },
+    "dendronVersion": "0.70.0"
   },
   "preview": {
-    "enableFMTitle": true,
+    "enableFMTitle": false,
     "enableNoteTitleForLink": true,
     "enableMermaid": true,
     "enablePrettyRefs": true,

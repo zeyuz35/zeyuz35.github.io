@@ -71,7 +71,7 @@ npm install -g @dendronhq/dendron-cli@latest
 
 Run the command palette and follow the prompts to build for the first time. This required to clone the nextJS template.
 
-Once this has been cloned once, publish your site by running
+Once this has been cloned once, publish your site (to GitHub) by running
 
 ```
 dendron publish export --target github

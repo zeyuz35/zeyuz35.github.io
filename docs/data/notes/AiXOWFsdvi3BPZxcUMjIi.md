@@ -1,5 +1,5 @@
 
-#hashtag 
+#bayes
 
 A section dedicated to any Bayesian approaches found in the literature.
 
@@ -7,15 +7,29 @@ DFM estimation via Bayes methods exist, however, it is unknown if they offer any
 
 The main draw of Bayesian approaches seems to be the access to the Bayesian framework, which can allow for more complicated inference.
 
-For example, if one were interested in modelling time varying factor loadings, then they could specify a law of motion for the loadings, factors and error term, and derive any relevant marginal posteriors directly via the Bayesian framework. This is the approach of del Negro and Otrok.
+For example, if one were interested in modelling time varying factor loadings, then they could specify a law of motion for the loadings, factors and error term, and derive any relevant marginal posteriors directly via the Bayesian framework. This is the approach of [@del_negro_dynamic_2008].
+
+To date and the best of our knowledge, there has been no attempt at reconciling this with the PCA literature.
+
+Also to date, there has been no attempt at modelling structural breaks in the Bayesian Paradigm.
+
+Idea:
+
+- Use different break points as different candidates or parameters
+- and directly compute the posterior of the break date parameter
 
 ## del Negro and Otrok
 
-The main paper which does DFMs with time varying parameters, and is the basis algorithm for many otehr subsequent papers to come. They allow for stochastic volatility in the innovations to the factors and the idiosyncratic disturbances. This means that the resulting DFM has a nonlinear state evolution in this dynamics, and so can no longer be estimated via traditional means such as a Kalman Filter. Their main contribution is the development of numerical Bayes methods to estimate such a model.
+[@del_negro_dynamic_2008].
+
+The main paper which does DFMs with time varying parameters, and is the basis algorithm for many other subsequent papers to come. They allow for stochastic volatility in the innovations to the factors and the idiosyncratic disturbances. This means that the resulting DFM has a nonlinear state evolution in this dynamics, and so can no longer be estimated via traditional means such as a Kalman Filter. Their main contribution is the development of numerical Bayes methods to estimate such a model.
 
 It seems that all other subsequent papers used this algorithm/approach, or variants of it.
 
 ## Mumtaz and Surico
+
+[@mumtaz_evolving_2012].
+[@mumtaz_impact_2013].
 
 An application of a time varying DFM estimated via Bayes in order to to study inflation persistence and predictiability across industrialized economies.
 
@@ -33,6 +47,8 @@ Apparently they have their code, data etc available in the online appendix, will
 
 ## Brjornland and Thorsrud (2015a)
 
+[@bjornland_commodity_2019].
+
 These authors focus on investigating whether the adoption of a fiscal rule is able to insulate a domestic economy from commodity price fluctuations. That is, do government spending limitations help with smoothing out fluctuations caused by commodity prices. Specifically, they focus on Norway, whose GDP growth and public sector spending is highly correlated with oil prices, and whether this is effective at actually stabilizing the Norwegian economy.
 
 They do this via an application of a time varying DFM. 
@@ -41,6 +57,10 @@ Note that the authors make special note that as an alternative to something more
 
 ## Stock and Watson (2015)
 
+[@stock_core_2016]
+
 An application of something similar to del Negro and Otrok's work. 
+
+An application of dynamic factor models with time varying parameters and stochastic volatility.
 
 

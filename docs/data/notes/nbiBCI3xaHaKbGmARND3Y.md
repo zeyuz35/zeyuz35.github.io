@@ -1,6 +1,8 @@
 
 Collection of macros used iun equations. Copy and paste below. 
 
+Hopefully Dendron implements passing these as a macros option to katex so it renders properly on built websites. In the meantime, they are broken.
+
 ```
 \newcommand{\sumT}{\sum_{t = 1}^{T}}
 \newcommand{\sumTs}{\sum_{s = 1}^{T}}

@@ -19,7 +19,7 @@
 
 See [[LSE]] notes for a broader, high level interpretation of these. In summary, a set of valid regularity conditions requires that:
 
-1. The factors to be *pervaisve*, i.e. have non-neglibile effects on most of the variables
+1. The factors to be *pervasive*, i.e. have non-negligible effects on most of the variables
 2. The idiosyncratic components to be *weakly* cross-correlated
 
 ## Bai and Ng Regularity Conditions

@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1637560906683,
-      "created": 1637560906683,
+      "updated": 1637712845472,
+      "created": 1637712845472,
       "parent": null,
       "children": [],
       "data": {}
@@ -118,17 +118,10 @@
           "value": "quick-links",
           "line": 17,
           "column": 0
-        },
-        "to-do-list": {
-          "type": "header",
-          "text": "To do List",
-          "value": "to-do-list",
-          "line": 25,
-          "column": 0
         }
       },
       "fname": "root",
-      "updated": 1636683885086,
+      "updated": 1637563604861,
       "created": 1595961348801,
       "parent": null,
       "children": [
@@ -146,6 +139,7 @@
         "fhf7Gdr3mhOUG1mU5twC6",
         "AOvKFmg0tBcGmUASXaALX",
         "qDVp6IFHf6FiUdSgxwZMA",
+        "P1J9LjuSdOyvsaftSsUci",
         "HgXYpL8CJLCszNUOmbHhP",
         "fHzGITjWkNNkiwsQpdex4",
         "umGHrdI4OaLoU8OOAOdkL",
@@ -159,7 +153,7 @@
         "y0rpX1u3Lz3vpUFro9TcW"
       ],
       "data": {},
-      "contentHash": "d7de26282e04813f39247a66c191dd07",
+      "contentHash": "46408353aaea1b79a1a45eb6aeb78f3d",
       "custom": {
         "stub": false,
         "nav_order": 0,
@@ -335,10 +329,101 @@
       "created": 1637022796363,
       "parent": "PhD",
       "children": [
-        "ft8FKM7E3SGq5sdSKKc9f"
+        "ft8FKM7E3SGq5sdSKKc9f",
+        "hvZDIGOc5JxRs3IIwQAij"
       ],
       "data": {},
       "contentHash": "7a2a84790274bf268f80a642530befcb",
+      "custom": {}
+    },
+    "hvZDIGOc5JxRs3IIwQAij": {
+      "id": "hvZDIGOc5JxRs3IIwQAij",
+      "title": "Milestones",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "overall-requirements": {
+          "type": "header",
+          "text": "Overall Requirements",
+          "value": "overall-requirements",
+          "line": 8,
+          "column": 0
+        },
+        "confirmation-1st-year": {
+          "type": "header",
+          "text": "Confirmation (1st year)",
+          "value": "confirmation-1st-year",
+          "line": 12,
+          "column": 0
+        },
+        "oral-presentation": {
+          "type": "header",
+          "text": "Oral Presentation",
+          "value": "oral-presentation",
+          "line": 18,
+          "column": 0
+        },
+        "written-submission": {
+          "type": "header",
+          "text": "Written Submission",
+          "value": "written-submission",
+          "line": 23,
+          "column": 0
+        },
+        "progress-review-2nd-year": {
+          "type": "header",
+          "text": "Progress Review (2nd Year)",
+          "value": "progress-review-2nd-year",
+          "line": 38,
+          "column": 0
+        },
+        "oral-presentation-1": {
+          "type": "header",
+          "text": "Oral Presentation",
+          "value": "oral-presentation-1",
+          "line": 40,
+          "column": 0
+        },
+        "written-submission-1": {
+          "type": "header",
+          "text": "Written Submission",
+          "value": "written-submission-1",
+          "line": 48,
+          "column": 0
+        },
+        "final-review-3rd-year-pre-submission": {
+          "type": "header",
+          "text": "Final Review (3rd year, pre-submission!)",
+          "value": "final-review-3rd-year-pre-submission",
+          "line": 62,
+          "column": 0
+        },
+        "oral-presentation-2": {
+          "type": "header",
+          "text": "Oral Presentation",
+          "value": "oral-presentation-2",
+          "line": 64,
+          "column": 0
+        },
+        "written-submission-2": {
+          "type": "header",
+          "text": "Written Submission",
+          "value": "written-submission-2",
+          "line": 70,
+          "column": 0
+        }
+      },
+      "fname": "Thesis.milestones",
+      "updated": 1637710858485,
+      "created": 1637710027186,
+      "parent": "1ruiVSk3lFpEOUNqPnYti",
+      "children": [],
+      "data": {},
+      "contentHash": "001f155e6827f0d440c3d02986057914",
       "custom": {}
     },
     "ft8FKM7E3SGq5sdSKKc9f": {
@@ -350,16 +435,24 @@
       "type": "note",
       "desc": "",
       "links": [],
-      "anchors": {},
+      "anchors": {
+        "requirements": {
+          "type": "header",
+          "text": "Requirements",
+          "value": "requirements",
+          "line": 8,
+          "column": 0
+        }
+      },
       "fname": "Thesis.confirmation",
-      "updated": 1637022829314,
+      "updated": 1637709889082,
       "created": 1637022819573,
       "parent": "1ruiVSk3lFpEOUNqPnYti",
       "children": [
         "3RtD305EvXc6EBxOMW4hK"
       ],
       "data": {},
-      "contentHash": "462938a47680b96ae35843bb4d3341b3",
+      "contentHash": "13064e272dcdaad4a4d55951d2e09a16",
       "custom": {}
     },
     "3RtD305EvXc6EBxOMW4hK": {
@@ -413,21 +506,35 @@
         }
       ],
       "anchors": {
+        "main-thesis": {
+          "type": "header",
+          "text": "Main Thesis",
+          "value": "main-thesis",
+          "line": 8,
+          "column": 0
+        },
         "cwf-project": {
           "type": "header",
           "text": "CWF Project",
           "value": "cwf-project",
-          "line": 51,
+          "line": 55,
+          "column": 0
+        },
+        "honours-thesis": {
+          "type": "header",
+          "text": "Honours Thesis",
+          "value": "honours-thesis",
+          "line": 70,
           "column": 0
         }
       },
       "fname": "TODO",
-      "updated": 1636526148937,
+      "updated": 1637563664481,
       "created": 1635455071285,
       "parent": "PhD",
       "children": [],
       "data": {},
-      "contentHash": "9e668ec470c9e0240868ba5a44c3989a",
+      "contentHash": "5d67b35c4bda6790e5f1861897cf25c0",
       "custom": {}
     },
     "ElqQePaEuSSz7pSeO1gNc": {
@@ -680,10 +787,74 @@
       "children": [
         "pHk638EFKNsd7l8ofo19m",
         "DnfP7up0cIhvaUWp23Jtk",
-        "Pn4jty9CxKSvbfTSqLMj3"
+        "Pn4jty9CxKSvbfTSqLMj3",
+        "3aMMcBxQ33Km5ovBrmbT6"
       ],
       "data": {},
       "contentHash": "29b8cb07378cdf30e90ae370747cb2ae",
+      "custom": {}
+    },
+    "3aMMcBxQ33Km5ovBrmbT6": {
+      "id": "3aMMcBxQ33Km5ovBrmbT6",
+      "title": "Tensorflow",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "from": {
+            "fname": "ML.models",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 22,
+              "column": 5,
+              "offset": 715
+            },
+            "end": {
+              "line": 22,
+              "column": 28,
+              "offset": 738
+            },
+            "indent": []
+          },
+          "value": "Software.tensorflow"
+        }
+      ],
+      "anchors": {
+        "keras-setup": {
+          "type": "header",
+          "text": "Keras setup",
+          "value": "keras-setup",
+          "line": 12,
+          "column": 0
+        },
+        "normal-installation": {
+          "type": "header",
+          "text": "Normal Installation",
+          "value": "normal-installation",
+          "line": 16,
+          "column": 0
+        },
+        "gpu": {
+          "type": "header",
+          "text": "GPU",
+          "value": "gpu",
+          "line": 18,
+          "column": 0
+        }
+      },
+      "fname": "Software.tensorflow",
+      "updated": 1637709776869,
+      "created": 1637709721478,
+      "parent": "AuDqSlWn0PlsSo8JdLgrR",
+      "children": [],
+      "data": {},
+      "contentHash": "d2aa257028aa8d0882f39a0225ef3f2d",
       "custom": {}
     },
     "Pn4jty9CxKSvbfTSqLMj3": {
@@ -744,7 +915,7 @@
     },
     "DnfP7up0cIhvaUWp23Jtk": {
       "id": "DnfP7up0cIhvaUWp23Jtk",
-      "title": "Git",
+      "title": "Gir Workshop and Notes",
       "vault": {
         "fsPath": "vault"
       },
@@ -773,14 +944,71 @@
           "value": "Software.Git"
         }
       ],
-      "anchors": {},
+      "anchors": {
+        "notes": {
+          "type": "header",
+          "text": "Notes",
+          "value": "notes",
+          "line": 10,
+          "column": 0
+        },
+        "installation-and-setup": {
+          "type": "header",
+          "text": "Installation and Setup",
+          "value": "installation-and-setup",
+          "line": 28,
+          "column": 0
+        },
+        "ssh-keys": {
+          "type": "header",
+          "text": "SSH keys",
+          "value": "ssh-keys",
+          "line": 62,
+          "column": 0
+        },
+        "git-theory": {
+          "type": "header",
+          "text": "Git Theory",
+          "value": "git-theory",
+          "line": 82,
+          "column": 0
+        },
+        "branches": {
+          "type": "header",
+          "text": "Branches",
+          "value": "branches",
+          "line": 114,
+          "column": 0
+        },
+        "git-is-a-mess": {
+          "type": "header",
+          "text": "Git is a mess",
+          "value": "git-is-a-mess",
+          "line": 159,
+          "column": 0
+        },
+        "merging-conflicts": {
+          "type": "header",
+          "text": "Merging Conflicts",
+          "value": "merging-conflicts",
+          "line": 180,
+          "column": 0
+        },
+        "advanced-topics": {
+          "type": "header",
+          "text": "Advanced Topics",
+          "value": "advanced-topics",
+          "line": 186,
+          "column": 0
+        }
+      },
       "fname": "Software.Git",
-      "updated": 1636428241249,
+      "updated": 1637709642418,
       "created": 1636428241249,
       "parent": "AuDqSlWn0PlsSo8JdLgrR",
       "children": [],
       "data": {},
-      "contentHash": "de339f101ccd6110d97c3a8738ea8453",
+      "contentHash": "2d7256f1eb50a3433d6b1d53d4560130",
       "custom": {}
     },
     "pHk638EFKNsd7l8ofo19m": {
@@ -808,6 +1036,27 @@
               "line": 30,
               "column": 21,
               "offset": 754
+            },
+            "indent": []
+          },
+          "value": "Software.AWS"
+        },
+        {
+          "from": {
+            "fname": "ML.models",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 43,
+              "column": 48,
+              "offset": 1907
+            },
+            "end": {
+              "line": 43,
+              "column": 64,
+              "offset": 1923
             },
             "indent": []
           },
@@ -1562,12 +1811,12 @@
             "start": {
               "line": 27,
               "column": 2,
-              "offset": 1057
+              "offset": 1058
             },
             "end": {
               "line": 27,
               "column": 23,
-              "offset": 1078
+              "offset": 1079
             },
             "indent": []
           },
@@ -1589,12 +1838,12 @@
             "start": {
               "line": 68,
               "column": 29,
-              "offset": 2989
+              "offset": 2990
             },
             "end": {
               "line": 68,
               "column": 50,
-              "offset": 3010
+              "offset": 3011
             },
             "indent": []
           },
@@ -1616,12 +1865,12 @@
             "start": {
               "line": 75,
               "column": 2,
-              "offset": 3439
+              "offset": 3440
             },
             "end": {
               "line": 75,
               "column": 23,
-              "offset": 3460
+              "offset": 3461
             },
             "indent": []
           },
@@ -1643,12 +1892,12 @@
             "start": {
               "line": 113,
               "column": 36,
-              "offset": 5162
+              "offset": 5163
             },
             "end": {
               "line": 113,
               "column": 54,
-              "offset": 5180
+              "offset": 5181
             },
             "indent": []
           },
@@ -1670,12 +1919,12 @@
             "start": {
               "line": 153,
               "column": 2,
-              "offset": 7333
+              "offset": 7334
             },
             "end": {
               "line": 153,
               "column": 22,
-              "offset": 7353
+              "offset": 7354
             },
             "indent": []
           },
@@ -1697,12 +1946,12 @@
             "start": {
               "line": 159,
               "column": 2,
-              "offset": 7694
+              "offset": 7695
             },
             "end": {
               "line": 159,
               "column": 30,
-              "offset": 7722
+              "offset": 7723
             },
             "indent": []
           },
@@ -1757,14 +2006,14 @@
         }
       },
       "fname": "SFM.inference",
-      "updated": 1637556550868,
+      "updated": 1637712444020,
       "created": 1634735273785,
       "parent": "0R61RLuT7e3hswR2v6o0w",
       "children": [
         "wQruEPvAQOC2xbS48WvgQ"
       ],
       "data": {},
-      "contentHash": "26f4524247667c4adc2dd0325a33b3e5",
+      "contentHash": "dff8ba58da13937fa89c29f6c9967db2",
       "custom": {
         "bibliography": [
           "references.bib"
@@ -3046,7 +3295,7 @@
       "parent": "PhD",
       "children": [],
       "data": {},
-      "contentHash": "03a4f011c19936961e5daab499727505",
+      "contentHash": "38ba2e735be698bd9b17cf188d2f9db3",
       "custom": {
         "bibliography": [
           "references.bib"
@@ -3158,9 +3407,182 @@
       "contentHash": "e6f6ed82be15e764c020d496d220e747",
       "custom": {}
     },
+    "P1J9LjuSdOyvsaftSsUci": {
+      "id": "P1J9LjuSdOyvsaftSsUci",
+      "title": "Machine Learning Project",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "ML",
+            "id": "P1J9LjuSdOyvsaftSsUci",
+            "vaultName": "vault"
+          },
+          "value": "user.gu_empirical_2019",
+          "alias": "@gu_empirical_2019",
+          "position": {
+            "start": {
+              "line": 8,
+              "column": 25,
+              "offset": 265
+            },
+            "end": {
+              "line": 8,
+              "column": 43,
+              "offset": 283
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.gu_empirical_2019"
+          }
+        }
+      ],
+      "anchors": {},
+      "fname": "ML",
+      "updated": 1637708900227,
+      "created": 1637563671245,
+      "parent": "PhD",
+      "children": [
+        "kpyziz7LBSpI1Aqnx23nL"
+      ],
+      "data": {},
+      "contentHash": "0c2f432b62d458db1765ff330c6daa6a",
+      "custom": {
+        "bibliography": [
+          "references.bib"
+        ],
+        "reference-section-title": "References"
+      }
+    },
+    "kpyziz7LBSpI1Aqnx23nL": {
+      "id": "kpyziz7LBSpI1Aqnx23nL",
+      "title": "Machine Learning Models",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "ML.models",
+            "id": "kpyziz7LBSpI1Aqnx23nL",
+            "vaultName": "vault"
+          },
+          "value": "Software.tensorflow",
+          "alias": "Software.tensorflow",
+          "position": {
+            "start": {
+              "line": 22,
+              "column": 5,
+              "offset": 715
+            },
+            "end": {
+              "line": 22,
+              "column": 28,
+              "offset": 738
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "Software.tensorflow"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "ML.models",
+            "id": "kpyziz7LBSpI1Aqnx23nL",
+            "vaultName": "vault"
+          },
+          "value": "Software.AWS",
+          "alias": "Software.AWS",
+          "position": {
+            "start": {
+              "line": 43,
+              "column": 48,
+              "offset": 1907
+            },
+            "end": {
+              "line": 43,
+              "column": 64,
+              "offset": 1923
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "Software.AWS"
+          }
+        }
+      ],
+      "anchors": {
+        "linear-models": {
+          "type": "header",
+          "text": "Linear Models",
+          "value": "linear-models",
+          "line": 8,
+          "column": 0
+        },
+        "penalized-linear-models": {
+          "type": "header",
+          "text": "Penalized Linear Models",
+          "value": "penalized-linear-models",
+          "line": 14,
+          "column": 0
+        },
+        "random-forests": {
+          "type": "header",
+          "text": "Random Forests",
+          "value": "random-forests",
+          "line": 18,
+          "column": 0
+        },
+        "neural-networks": {
+          "type": "header",
+          "text": "Neural Networks",
+          "value": "neural-networks",
+          "line": 22,
+          "column": 0
+        },
+        "fforma-model-averaging": {
+          "type": "header",
+          "text": "FFORMA Model Averaging",
+          "value": "fforma-model-averaging",
+          "line": 30,
+          "column": 0
+        },
+        "aws-deepar": {
+          "type": "header",
+          "text": "AWS DeepAR",
+          "value": "aws-deepar",
+          "line": 38,
+          "column": 0
+        }
+      },
+      "fname": "ML.models",
+      "updated": 1637709749471,
+      "created": 1637708903278,
+      "parent": "P1J9LjuSdOyvsaftSsUci",
+      "children": [],
+      "data": {},
+      "contentHash": "55054b8e3ec4156b0d8b774d1ccf39b9",
+      "custom": {}
+    },
     "qDVp6IFHf6FiUdSgxwZMA": {
       "id": "qDVp6IFHf6FiUdSgxwZMA",
-      "title": "LSE Notes",
+      "title": "Barigozzi LSE Notes",
       "vault": {
         "fsPath": "vault"
       },
@@ -3191,7 +3613,7 @@
       ],
       "anchors": {},
       "fname": "LSE",
-      "updated": 1635319103289,
+      "updated": 1637709850693,
       "created": 1635122489982,
       "parent": "PhD",
       "children": [
@@ -3207,7 +3629,7 @@
         "rWnkiqLhaKZSm0XBPMtpJ"
       ],
       "data": {},
-      "contentHash": "0019bb4e1183a8061bac978a8b33a8a7",
+      "contentHash": "355f4de59351244c38c1f28b29dc5621",
       "custom": {}
     },
     "rWnkiqLhaKZSm0XBPMtpJ": {
@@ -4337,7 +4759,7 @@
         }
       },
       "fname": "Dendron",
-      "updated": 1637560901478,
+      "updated": 1637560923710,
       "created": 1636096635240,
       "parent": "PhD",
       "children": [
@@ -4345,7 +4767,7 @@
         "nbiBCI3xaHaKbGmARND3Y"
       ],
       "data": {},
-      "contentHash": "82f69a2b4d940582345e3acead789c3a",
+      "contentHash": "99b9d2cdf382ff7000751794f25048bd",
       "custom": {}
     },
     "nbiBCI3xaHaKbGmARND3Y": {
@@ -4359,12 +4781,12 @@
       "links": [],
       "anchors": {},
       "fname": "Dendron.macros",
-      "updated": 1637557479382,
+      "updated": 1637563295299,
       "created": 1637549840978,
       "parent": "2qGHFR7CcKOE0Meu7UU6D",
       "children": [],
       "data": {},
-      "contentHash": "9204fa1706a336c7c1bd18ba04ecafd5",
+      "contentHash": "9c6760014f83d07e07d69e49d4f354bc",
       "custom": {}
     },
     "1DyoojO5rIm0uTXOkxSuw": {
@@ -5504,8 +5926,8 @@
             "id": "AiXOWFsdvi3BPZxcUMjIi",
             "vaultName": "vault"
           },
-          "value": "tags.hashtag",
-          "alias": "#hashtag",
+          "value": "tags.bayes",
+          "alias": "#bayes",
           "position": {
             "start": {
               "line": 2,
@@ -5514,14 +5936,176 @@
             },
             "end": {
               "line": 2,
-              "column": 9,
-              "offset": 9
+              "column": 7,
+              "offset": 7
             },
             "indent": []
           },
           "xvault": false,
           "to": {
-            "fname": "tags.hashtag"
+            "fname": "tags.bayes"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Bayesian",
+            "id": "AiXOWFsdvi3BPZxcUMjIi",
+            "vaultName": "vault"
+          },
+          "value": "user.del_negro_dynamic_2008",
+          "alias": "@del_negro_dynamic_2008",
+          "position": {
+            "start": {
+              "line": 10,
+              "column": 268,
+              "offset": 617
+            },
+            "end": {
+              "line": 10,
+              "column": 291,
+              "offset": 640
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.del_negro_dynamic_2008"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Bayesian",
+            "id": "AiXOWFsdvi3BPZxcUMjIi",
+            "vaultName": "vault"
+          },
+          "value": "user.del_negro_dynamic_2008",
+          "alias": "@del_negro_dynamic_2008",
+          "position": {
+            "start": {
+              "line": 23,
+              "column": 2,
+              "offset": 1018
+            },
+            "end": {
+              "line": 23,
+              "column": 25,
+              "offset": 1041
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.del_negro_dynamic_2008"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Bayesian",
+            "id": "AiXOWFsdvi3BPZxcUMjIi",
+            "vaultName": "vault"
+          },
+          "value": "user.mumtaz_evolving_2012",
+          "alias": "@mumtaz_evolving_2012",
+          "position": {
+            "start": {
+              "line": 31,
+              "column": 2,
+              "offset": 1659
+            },
+            "end": {
+              "line": 31,
+              "column": 23,
+              "offset": 1680
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.mumtaz_evolving_2012"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Bayesian",
+            "id": "AiXOWFsdvi3BPZxcUMjIi",
+            "vaultName": "vault"
+          },
+          "value": "user.mumtaz_impact_2013",
+          "alias": "@mumtaz_impact_2013",
+          "position": {
+            "start": {
+              "line": 32,
+              "column": 2,
+              "offset": 1684
+            },
+            "end": {
+              "line": 32,
+              "column": 21,
+              "offset": 1703
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.mumtaz_impact_2013"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Bayesian",
+            "id": "AiXOWFsdvi3BPZxcUMjIi",
+            "vaultName": "vault"
+          },
+          "value": "user.bjornland_commodity_2019",
+          "alias": "@bjornland_commodity_2019",
+          "position": {
+            "start": {
+              "line": 50,
+              "column": 2,
+              "offset": 2890
+            },
+            "end": {
+              "line": 50,
+              "column": 27,
+              "offset": 2915
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.bjornland_commodity_2019"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Bayesian",
+            "id": "AiXOWFsdvi3BPZxcUMjIi",
+            "vaultName": "vault"
+          },
+          "value": "user.stock_core_2016",
+          "alias": "@stock_core_2016",
+          "position": {
+            "start": {
+              "line": 60,
+              "column": 2,
+              "offset": 3887
+            },
+            "end": {
+              "line": 60,
+              "column": 18,
+              "offset": 3903
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.stock_core_2016"
           }
         },
         {
@@ -5551,47 +6135,47 @@
           "type": "header",
           "text": "del Negro and Otrok",
           "value": "del-negro-and-otrok",
-          "line": 18,
+          "line": 30,
           "column": 0
         },
         "mumtaz-and-surico": {
           "type": "header",
           "text": "Mumtaz and Surico",
           "value": "mumtaz-and-surico",
-          "line": 24,
+          "line": 38,
           "column": 0
         },
         "model": {
           "type": "header",
           "text": "Model",
           "value": "model",
-          "line": 30,
+          "line": 47,
           "column": 0
         },
         "estimation": {
           "type": "header",
           "text": "Estimation",
           "value": "estimation",
-          "line": 36,
+          "line": 53,
           "column": 0
         },
         "brjornland-and-thorsrud-2015a": {
           "type": "header",
           "text": "Brjornland and Thorsrud (2015a)",
           "value": "brjornland-and-thorsrud-2015a",
-          "line": 40,
+          "line": 57,
           "column": 0
         },
         "stock-and-watson-2015": {
           "type": "header",
           "text": "Stock and Watson (2015)",
           "value": "stock-and-watson-2015",
-          "line": 48,
+          "line": 67,
           "column": 0
         }
       },
       "fname": "Bayesian",
-      "updated": 1635393722084,
+      "updated": 1637712359509,
       "created": 1635317507547,
       "parent": "PhD",
       "children": [
@@ -5599,8 +6183,13 @@
         "AItpzXGZNSAujGo8zqpRi"
       ],
       "data": {},
-      "contentHash": "7e4e1006c10b6450e4fb08ae9167afa1",
-      "custom": {}
+      "contentHash": "ecfdb6b8f7e01f1250881fbfd928dc2d",
+      "custom": {
+        "bibliography": [
+          "references.bib"
+        ],
+        "reference-section-title": "References"
+      }
     },
     "AItpzXGZNSAujGo8zqpRi": {
       "id": "AItpzXGZNSAujGo8zqpRi",
@@ -5991,17 +6580,10 @@
           "value": "quick-links",
           "line": 17,
           "column": 0
-        },
-        "to-do-list": {
-          "type": "header",
-          "text": "To do List",
-          "value": "to-do-list",
-          "line": 25,
-          "column": 0
         }
       },
       "fname": "root",
-      "updated": 1636683885086,
+      "updated": 1637563604861,
       "created": 1595961348801,
       "parent": null,
       "children": [
@@ -6019,6 +6601,7 @@
         "fhf7Gdr3mhOUG1mU5twC6",
         "AOvKFmg0tBcGmUASXaALX",
         "qDVp6IFHf6FiUdSgxwZMA",
+        "P1J9LjuSdOyvsaftSsUci",
         "HgXYpL8CJLCszNUOmbHhP",
         "fHzGITjWkNNkiwsQpdex4",
         "umGHrdI4OaLoU8OOAOdkL",
@@ -6032,13 +6615,13 @@
         "y0rpX1u3Lz3vpUFro9TcW"
       ],
       "data": {},
-      "contentHash": "d7de26282e04813f39247a66c191dd07",
+      "contentHash": "46408353aaea1b79a1a45eb6aeb78f3d",
       "custom": {
         "stub": false,
         "nav_order": 0,
         "permalink": "/"
       },
-      "body": "\nWelcome to my website!\n\nThis website has been built using Dendron, and each topic has been collated into collapsible sections on the left hand side. Below is a high level overview showing how each section is connected for ease of navigation.\n\n\n\nDendron has incredibly powerful search functionality due to good indexing, even outside of working in raw .md files. Simply use the search bar at the top of the website to find something.\n\n## Quick Links\n\n[[roadmap]]\n\n[[Meeting]]\n\n[[TODO]]\n\n## To do List\n\nType up Bai and Ng assumptions\n\nInvestigate Bates et al Assumptions\n\nInvestigate consistency of using an estimated break point in conjunction with BNIC\nThis seems to be consistent using k_tilde that itself may be Op(1)\n\nFix up BP test for better interface (low priority)\n\nImplement simulated Andrews exp and mean Wald/LM tests\n\n- look into RSpectra package (supposedly faster eigen)\n- not sure whether to rename this to SFM or not (lots of legacy code that needs to be changed)\n\nData\nFix and clean data for \n- AUMD (on hold, need to find date index)\n- FREDQD\n- CANMD (should be straightforward)\n- CANQD\n- UKMD (should be straightforward)\n\nInvestigate further sources of time series that could be used during COVID\n\nImplement truly dynamic factor models (Forni) using Dynamic PCA\n- BIG task\n- read into dynamic PCA\n- read into testing no. of dynamic factors\n- do not believe there is a literature focusing on breaks in the dynamic setup\n- implement dynamic PCA\n- implement testing no of factors, (look into ICshocks functions and make this interface better)\n- implement testing no of factors using AW test\n\nImplement BKW standard test (non sequential)\n\nFix up BKW test\n- implement a general plot method which plots *something* on the y axis, but most importantly, date on the x axis with estimated break dates, and each partition labelled with the no. of factors as determined by some consistent estimator\n\nFix up BE test\n- so that there is a consistent interface for accessing this\n\n\n\n"
+      "body": "\nWelcome to my website!\n\nThis website has been built using Dendron, and each topic has been collated into collapsible sections on the left hand side. Below is a high level overview showing how each section is connected for ease of navigation.\n\n\n\nDendron has incredibly powerful search functionality due to good indexing, even outside of working in raw .md files. Simply use the search bar at the top of the website to find something.\n\n## Quick Links\n\n[[roadmap]]\n\n[[Meeting]]\n\n[[TODO]]"
     }
   ],
   "noteIndex": {
@@ -6142,17 +6725,10 @@
         "value": "quick-links",
         "line": 17,
         "column": 0
-      },
-      "to-do-list": {
-        "type": "header",
-        "text": "To do List",
-        "value": "to-do-list",
-        "line": 25,
-        "column": 0
       }
     },
     "fname": "root",
-    "updated": 1636683885086,
+    "updated": 1637563604861,
     "created": 1595961348801,
     "parent": null,
     "children": [
@@ -6170,6 +6746,7 @@
       "fhf7Gdr3mhOUG1mU5twC6",
       "AOvKFmg0tBcGmUASXaALX",
       "qDVp6IFHf6FiUdSgxwZMA",
+      "P1J9LjuSdOyvsaftSsUci",
       "HgXYpL8CJLCszNUOmbHhP",
       "fHzGITjWkNNkiwsQpdex4",
       "umGHrdI4OaLoU8OOAOdkL",
@@ -6183,13 +6760,13 @@
       "y0rpX1u3Lz3vpUFro9TcW"
     ],
     "data": {},
-    "contentHash": "d7de26282e04813f39247a66c191dd07",
+    "contentHash": "46408353aaea1b79a1a45eb6aeb78f3d",
     "custom": {
       "stub": false,
       "nav_order": 0,
       "permalink": "/"
     },
-    "body": "\nWelcome to my website!\n\nThis website has been built using Dendron, and each topic has been collated into collapsible sections on the left hand side. Below is a high level overview showing how each section is connected for ease of navigation.\n\n\n\nDendron has incredibly powerful search functionality due to good indexing, even outside of working in raw .md files. Simply use the search bar at the top of the website to find something.\n\n## Quick Links\n\n[[roadmap]]\n\n[[Meeting]]\n\n[[TODO]]\n\n## To do List\n\nType up Bai and Ng assumptions\n\nInvestigate Bates et al Assumptions\n\nInvestigate consistency of using an estimated break point in conjunction with BNIC\nThis seems to be consistent using k_tilde that itself may be Op(1)\n\nFix up BP test for better interface (low priority)\n\nImplement simulated Andrews exp and mean Wald/LM tests\n\n- look into RSpectra package (supposedly faster eigen)\n- not sure whether to rename this to SFM or not (lots of legacy code that needs to be changed)\n\nData\nFix and clean data for \n- AUMD (on hold, need to find date index)\n- FREDQD\n- CANMD (should be straightforward)\n- CANQD\n- UKMD (should be straightforward)\n\nInvestigate further sources of time series that could be used during COVID\n\nImplement truly dynamic factor models (Forni) using Dynamic PCA\n- BIG task\n- read into dynamic PCA\n- read into testing no. of dynamic factors\n- do not believe there is a literature focusing on breaks in the dynamic setup\n- implement dynamic PCA\n- implement testing no of factors, (look into ICshocks functions and make this interface better)\n- implement testing no of factors using AW test\n\nImplement BKW standard test (non sequential)\n\nFix up BKW test\n- implement a general plot method which plots *something* on the y axis, but most importantly, date on the x axis with estimated break dates, and each partition labelled with the no. of factors as determined by some consistent estimator\n\nFix up BE test\n- so that there is a consistent interface for accessing this\n\n\n\n"
+    "body": "\nWelcome to my website!\n\nThis website has been built using Dendron, and each topic has been collated into collapsible sections on the left hand side. Below is a high level overview showing how each section is connected for ease of navigation.\n\n\n\nDendron has incredibly powerful search functionality due to good indexing, even outside of working in raw .md files. Simply use the search bar at the top of the website to find something.\n\n## Quick Links\n\n[[roadmap]]\n\n[[Meeting]]\n\n[[TODO]]"
   },
   "vaults": [
     {

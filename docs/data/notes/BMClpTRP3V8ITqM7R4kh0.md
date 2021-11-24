@@ -1,4 +1,6 @@
 
+## Main Thesis
+
 Focus Question: How many factors are detected in the presences of breaks?
 
 Busywork
@@ -42,6 +44,8 @@ Break Date estimators
 
 Run the estimators across the dataset over time
 
+Type up AWS Guide
+
 ## CWF Project
 
 
@@ -56,3 +60,7 @@ Simulation Study
 
 - Type up formally, the one with multiple fixed $rho$ as constituent models
 - 
+
+## Honours Thesis
+
+Not exactly sure how this can
