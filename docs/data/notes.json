@@ -13,8 +13,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1637715593933,
-      "created": 1637715593933,
+      "updated": 1637715760542,
+      "created": 1637715760542,
       "parent": null,
       "children": [],
       "data": {}
@@ -127,9 +127,10 @@
       "created": 1595961348801,
       "parent": null,
       "children": [
-        "t58wEmhAtf1GlHmO",
         "Wz0WznIhCmtGKE6qHTh2M",
+        "t58wEmhAtf1GlHmO",
         "CQTUwoXQNcd0Y7la7IaAn",
+        "9s2d4L1UHWFWCdtORYT2Q",
         "AiXOWFsdvi3BPZxcUMjIi",
         "MsmFdXyWfizd5g8GGcObD",
         "MXHvc8bQbNRRVCB0UogRy",
@@ -6255,6 +6256,311 @@
       "contentHash": "82794076f5937f1f2e5757d1264bd002",
       "custom": {}
     },
+    "9s2d4L1UHWFWCdtORYT2Q": {
+      "id": "9s2d4L1UHWFWCdtORYT2Q",
+      "title": "BEX6510 Notes",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "resources-for-getting-paths-working": {
+          "type": "header",
+          "text": "Resources for getting paths working",
+          "value": "resources-for-getting-paths-working",
+          "line": 11,
+          "column": 0
+        },
+        "matrix-algebra": {
+          "type": "header",
+          "text": "Matrix Algebra",
+          "value": "matrix-algebra",
+          "line": 23,
+          "column": 0
+        },
+        "linear-models": {
+          "type": "header",
+          "text": "Linear Models",
+          "value": "linear-models",
+          "line": 27,
+          "column": 0
+        },
+        "fwl-theorem": {
+          "type": "header",
+          "text": "FWL Theorem",
+          "value": "fwl-theorem",
+          "line": 41,
+          "column": 0
+        },
+        "statistical-properties-of-ols": {
+          "type": "header",
+          "text": "Statistical Properties of OLS",
+          "value": "statistical-properties-of-ols",
+          "line": 45,
+          "column": 0
+        },
+        "inference": {
+          "type": "header",
+          "text": "Inference",
+          "value": "inference",
+          "line": 53,
+          "column": 0
+        },
+        "chow-test": {
+          "type": "header",
+          "text": "Chow test",
+          "value": "chow-test",
+          "line": 73,
+          "column": 0
+        },
+        "likelihood": {
+          "type": "header",
+          "text": "Likelihood",
+          "value": "likelihood",
+          "line": 91,
+          "column": 0
+        },
+        "notation": {
+          "type": "header",
+          "text": "Notation",
+          "value": "notation",
+          "line": 103,
+          "column": 0
+        },
+        "conditions": {
+          "type": "header",
+          "text": "Conditions",
+          "value": "conditions",
+          "line": 115,
+          "column": 0
+        },
+        "statistical-properties-of-mle": {
+          "type": "header",
+          "text": "Statistical Properties of MLE",
+          "value": "statistical-properties-of-mle",
+          "line": 133,
+          "column": 0
+        },
+        "ols-mle": {
+          "type": "header",
+          "text": "OLS MLE",
+          "value": "ols-mle",
+          "line": 145,
+          "column": 0
+        },
+        "asymptotic-properties": {
+          "type": "header",
+          "text": "Asymptotic Properties",
+          "value": "asymptotic-properties",
+          "line": 151,
+          "column": 0
+        },
+        "inference-1": {
+          "type": "header",
+          "text": "Inference",
+          "value": "inference-1",
+          "line": 159,
+          "column": 0
+        },
+        "wald-test": {
+          "type": "header",
+          "text": "Wald Test",
+          "value": "wald-test",
+          "line": 165,
+          "column": 0
+        },
+        "lmgradient-test": {
+          "type": "header",
+          "text": "LM/Gradient Test",
+          "value": "lmgradient-test",
+          "line": 171,
+          "column": 0
+        },
+        "likelihood-ratio-criterion-differnce-test": {
+          "type": "header",
+          "text": "Likelihood Ratio (criterion differnce) test",
+          "value": "likelihood-ratio-criterion-differnce-test",
+          "line": 177,
+          "column": 0
+        },
+        "stochastic-order": {
+          "type": "header",
+          "text": "Stochastic Order",
+          "value": "stochastic-order",
+          "line": 185,
+          "column": 0
+        },
+        "generalised-method-of-moments": {
+          "type": "header",
+          "text": "Generalised Method of Moments",
+          "value": "generalised-method-of-moments",
+          "line": 189,
+          "column": 0
+        },
+        "asymptotics": {
+          "type": "header",
+          "text": "Asymptotics",
+          "value": "asymptotics",
+          "line": 207,
+          "column": 0
+        },
+        "weighting-matrix": {
+          "type": "header",
+          "text": "Weighting matrix",
+          "value": "weighting-matrix",
+          "line": 221,
+          "column": 0
+        },
+        "ols": {
+          "type": "header",
+          "text": "OLS",
+          "value": "ols",
+          "line": 231,
+          "column": 0
+        },
+        "iv-regression": {
+          "type": "header",
+          "text": "IV Regression",
+          "value": "iv-regression",
+          "line": 237,
+          "column": 0
+        },
+        "mle": {
+          "type": "header",
+          "text": "MLE",
+          "value": "mle",
+          "line": 245,
+          "column": 0
+        },
+        "inference-2": {
+          "type": "header",
+          "text": "Inference",
+          "value": "inference-2",
+          "line": 250,
+          "column": 0
+        },
+        "j-test-test-oof-overidentifying-restrictions": {
+          "type": "header",
+          "text": "J Test (test oof overidentifying restrictions)",
+          "value": "j-test-test-oof-overidentifying-restrictions",
+          "line": 252,
+          "column": 0
+        },
+        "notation-1": {
+          "type": "header",
+          "text": "Notation",
+          "value": "notation-1",
+          "line": 257,
+          "column": 0
+        },
+        "wald-test-1": {
+          "type": "header",
+          "text": "Wald Test",
+          "value": "wald-test-1",
+          "line": 262,
+          "column": 0
+        },
+        "lmgradient-test-1": {
+          "type": "header",
+          "text": "LM/Gradient Test",
+          "value": "lmgradient-test-1",
+          "line": 268,
+          "column": 0
+        },
+        "criterion-difference-test": {
+          "type": "header",
+          "text": "Criterion Difference Test",
+          "value": "criterion-difference-test",
+          "line": 272,
+          "column": 0
+        },
+        "min-chi-squared-test": {
+          "type": "header",
+          "text": "Min Chi Squared Test",
+          "value": "min-chi-squared-test",
+          "line": 279,
+          "column": 0
+        },
+        "auxiliary-moment-tests": {
+          "type": "header",
+          "text": "Auxiliary Moment Tests",
+          "value": "auxiliary-moment-tests",
+          "line": 284,
+          "column": 0
+        },
+        "conditional-moment-test": {
+          "type": "header",
+          "text": "Conditional Moment Test",
+          "value": "conditional-moment-test",
+          "line": 294,
+          "column": 0
+        },
+        "extremum-estimators": {
+          "type": "header",
+          "text": "Extremum Estimators",
+          "value": "extremum-estimators",
+          "line": 295,
+          "column": 0
+        },
+        "m-estimators": {
+          "type": "header",
+          "text": "M Estimators",
+          "value": "m-estimators",
+          "line": 297,
+          "column": 0
+        },
+        "censoring-and-truncation": {
+          "type": "header",
+          "text": "Censoring and Truncation",
+          "value": "censoring-and-truncation",
+          "line": 300,
+          "column": 0
+        },
+        "truncated": {
+          "type": "header",
+          "text": "Truncated",
+          "value": "truncated",
+          "line": 304,
+          "column": 0
+        },
+        "censored": {
+          "type": "header",
+          "text": "Censored",
+          "value": "censored",
+          "line": 308,
+          "column": 0
+        },
+        "generalised-linear-models-glms": {
+          "type": "header",
+          "text": "Generalised Linear Models (GLMs)",
+          "value": "generalised-linear-models-glms",
+          "line": 314,
+          "column": 0
+        },
+        "deviance": {
+          "type": "header",
+          "text": "Deviance",
+          "value": "deviance",
+          "line": 338,
+          "column": 0
+        }
+      },
+      "fname": "BEX6510",
+      "updated": 1637715760274,
+      "created": 1636775361328,
+      "parent": "PhD",
+      "children": [],
+      "data": {},
+      "contentHash": "765127bed8764f37633391d0cbe498e4",
+      "custom": {
+        "geometry": "margin=2cm",
+        "bibliography": [
+          "references.bib"
+        ]
+      }
+    },
     "CQTUwoXQNcd0Y7la7IaAn": {
       "id": "CQTUwoXQNcd0Y7la7IaAn",
       "title": "Appendix",
@@ -6486,247 +6792,6 @@
       "children": [],
       "data": {},
       "contentHash": "a42bdcc20380e88baadc5364d99805ef",
-      "custom": {}
-    },
-    "Wz0WznIhCmtGKE6qHTh2M": {
-      "id": "Wz0WznIhCmtGKE6qHTh2M",
-      "title": "Schemas",
-      "vault": {
-        "fsPath": "templates",
-        "seed": "dendron.templates",
-        "name": "dendron.templates"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {},
-      "fname": "schemas",
-      "updated": 1637715474276,
-      "created": 1637715474276,
-      "parent": "PhD",
-      "children": [
-        "yz7BaxKE7IssV5Go"
-      ],
-      "data": {},
-      "stub": false
-    },
-    "yz7BaxKE7IssV5Go": {
-      "id": "yz7BaxKE7IssV5Go",
-      "title": "Module",
-      "vault": {
-        "fsPath": "templates",
-        "seed": "dendron.templates",
-        "name": "dendron.templates"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "schemas.module",
-            "id": "yz7BaxKE7IssV5Go",
-            "vaultName": "dendron.templates"
-          },
-          "value": "dendron.concepts",
-          "alias": "Concepts",
-          "position": {
-            "start": {
-              "line": 20,
-              "column": 12,
-              "offset": 833
-            },
-            "end": {
-              "line": 20,
-              "column": 41,
-              "offset": 862
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "sameFile": false,
-          "to": {
-            "fname": "dendron.concepts"
-          }
-        },
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "schemas.module",
-            "id": "yz7BaxKE7IssV5Go",
-            "vaultName": "dendron.templates"
-          },
-          "value": "pkg.dendron-plugin.ops",
-          "alias": "Ops",
-          "position": {
-            "start": {
-              "line": 52,
-              "column": 12,
-              "offset": 1669
-            },
-            "end": {
-              "line": 52,
-              "column": 42,
-              "offset": 1699
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "sameFile": false,
-          "to": {
-            "fname": "pkg.dendron-plugin.ops"
-          }
-        },
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "schemas.module",
-            "id": "yz7BaxKE7IssV5Go",
-            "vaultName": "dendron.templates"
-          },
-          "value": "pkg.dendron-plugin.quickstart",
-          "alias": "Quickstart",
-          "position": {
-            "start": {
-              "line": 69,
-              "column": 12,
-              "offset": 1972
-            },
-            "end": {
-              "line": 69,
-              "column": 56,
-              "offset": 2016
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "sameFile": false,
-          "to": {
-            "fname": "pkg.dendron-plugin.quickstart"
-          }
-        }
-      ],
-      "anchors": {
-        "summary": {
-          "type": "header",
-          "text": "Summary",
-          "value": "summary",
-          "line": 8,
-          "column": 0
-        },
-        "nodes": {
-          "type": "header",
-          "text": "Nodes",
-          "value": "nodes",
-          "line": 17,
-          "column": 0
-        },
-        "quickstart": {
-          "type": "header",
-          "text": "quickstart",
-          "value": "quickstart",
-          "line": 19,
-          "column": 0
-        },
-        "concepts": {
-          "type": "header",
-          "text": "concepts",
-          "value": "concepts",
-          "line": 23,
-          "column": 0
-        },
-        "concepts-1": {
-          "type": "header",
-          "text": "concepts",
-          "value": "concepts-1",
-          "line": 25,
-          "column": 0
-        },
-        "architecture": {
-          "type": "header",
-          "text": "architecture",
-          "value": "architecture",
-          "line": 30,
-          "column": 0
-        },
-        "dev": {
-          "type": "header",
-          "text": "dev",
-          "value": "dev",
-          "line": 41,
-          "column": 0
-        },
-        "quickstart-1": {
-          "type": "header",
-          "text": "quickstart",
-          "value": "quickstart-1",
-          "line": 45,
-          "column": 0
-        },
-        "faq": {
-          "type": "header",
-          "text": "faq",
-          "value": "faq",
-          "line": 53,
-          "column": 0
-        },
-        "ops": {
-          "type": "header",
-          "text": "ops",
-          "value": "ops",
-          "line": 57,
-          "column": 0
-        },
-        "qa": {
-          "type": "header",
-          "text": "qa",
-          "value": "qa",
-          "line": 62,
-          "column": 0
-        },
-        "test": {
-          "type": "header",
-          "text": "test",
-          "value": "test",
-          "line": 66,
-          "column": 0
-        },
-        "performance": {
-          "type": "header",
-          "text": "performance",
-          "value": "performance",
-          "line": 70,
-          "column": 0
-        },
-        "quickstart-2": {
-          "type": "header",
-          "text": "quickstart",
-          "value": "quickstart-2",
-          "line": 74,
-          "column": 0
-        },
-        "topic": {
-          "type": "header",
-          "text": "topic",
-          "value": "topic",
-          "line": 79,
-          "column": 0
-        },
-        "wip": {
-          "type": "header",
-          "text": "wip",
-          "value": "wip",
-          "line": 84,
-          "column": 0
-        }
-      },
-      "fname": "schemas.module",
-      "updated": 1633299013130,
-      "created": 1627924831114,
-      "parent": "Wz0WznIhCmtGKE6qHTh2M",
-      "children": [],
-      "data": {},
-      "contentHash": "bd2435b00821ea6c8c8e95fc3f4c34ef",
       "custom": {}
     },
     "t58wEmhAtf1GlHmO": {
@@ -7196,13 +7261,108 @@
       "children": [
         "wpixDwK6nWSsGr8wJygM0",
         "jU02nYSOp3VgANjM",
+        "ex59n7qUJyHf8j0PUDIiF",
         "WXSAaFaXKrsQd07dXfKJl",
-        "p1CSWjsY6fGAK69FbXkVa",
-        "ex59n7qUJyHf8j0PUDIiF"
+        "p1CSWjsY6fGAK69FbXkVa"
       ],
       "data": {},
       "contentHash": "a68e39d1b075f84158fed51e27320dd6",
       "custom": {}
+    },
+    "p1CSWjsY6fGAK69FbXkVa": {
+      "id": "p1CSWjsY6fGAK69FbXkVa",
+      "title": "Topic",
+      "vault": {
+        "fsPath": "templates",
+        "seed": "dendron.templates",
+        "name": "dendron.templates"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "summary": {
+          "type": "header",
+          "text": "Summary",
+          "value": "summary",
+          "line": 8,
+          "column": 0
+        },
+        "lifecycle": {
+          "type": "header",
+          "text": "Lifecycle",
+          "value": "lifecycle",
+          "line": 11,
+          "column": 0
+        },
+        "changelog": {
+          "type": "header",
+          "text": "Changelog",
+          "value": "changelog",
+          "line": 14,
+          "column": 0
+        }
+      },
+      "fname": "templates.module.topic",
+      "updated": 1635718795595,
+      "created": 1635718764530,
+      "parent": "xIwvEqQ71wRQ4wWk",
+      "children": [],
+      "data": {},
+      "contentHash": "6dbf1b594bc65a86b7c9eeebe3679419",
+      "custom": {}
+    },
+    "WXSAaFaXKrsQd07dXfKJl": {
+      "id": "WXSAaFaXKrsQd07dXfKJl",
+      "title": "Quickstart",
+      "vault": {
+        "fsPath": "templates",
+        "seed": "dendron.templates",
+        "name": "dendron.templates"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "prerequisites": {
+          "type": "header",
+          "text": "Prerequisites",
+          "value": "prerequisites",
+          "line": 9,
+          "column": 0
+        },
+        "build": {
+          "type": "header",
+          "text": "Build",
+          "value": "build",
+          "line": 12,
+          "column": 0
+        },
+        "run": {
+          "type": "header",
+          "text": "Run",
+          "value": "run",
+          "line": 15,
+          "column": 0
+        },
+        "troubleshooting": {
+          "type": "header",
+          "text": "Troubleshooting",
+          "value": "troubleshooting",
+          "line": 18,
+          "column": 0
+        }
+      },
+      "fname": "templates.module.quickstart",
+      "updated": 1636215950743,
+      "created": 1634590001871,
+      "parent": "xIwvEqQ71wRQ4wWk",
+      "children": [],
+      "data": {},
+      "contentHash": "f3c10f18756567506c43ce13e065ce89",
+      "custom": {
+        "example": "https://wiki.dendron.so/notes/64f0e2d5-2c83-43df-9144-40f2c68935aa.html#steps"
+      }
     },
     "ex59n7qUJyHf8j0PUDIiF": {
       "id": "ex59n7qUJyHf8j0PUDIiF",
@@ -7225,7 +7385,11 @@
         "hpEdCpUITvOQQ7wQ"
       ],
       "data": {},
-      "stub": false
+      "contentHash": "b86ab64c9d528488a0ef711452c6af8b",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
     },
     "hpEdCpUITvOQQ7wQ": {
       "id": "hpEdCpUITvOQQ7wQ",
@@ -7333,101 +7497,6 @@
       "data": {},
       "contentHash": "fbf2f0d4e086c4597994023ce7a2828b",
       "custom": {}
-    },
-    "p1CSWjsY6fGAK69FbXkVa": {
-      "id": "p1CSWjsY6fGAK69FbXkVa",
-      "title": "Topic",
-      "vault": {
-        "fsPath": "templates",
-        "seed": "dendron.templates",
-        "name": "dendron.templates"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {
-        "summary": {
-          "type": "header",
-          "text": "Summary",
-          "value": "summary",
-          "line": 8,
-          "column": 0
-        },
-        "lifecycle": {
-          "type": "header",
-          "text": "Lifecycle",
-          "value": "lifecycle",
-          "line": 11,
-          "column": 0
-        },
-        "changelog": {
-          "type": "header",
-          "text": "Changelog",
-          "value": "changelog",
-          "line": 14,
-          "column": 0
-        }
-      },
-      "fname": "templates.module.topic",
-      "updated": 1635718795595,
-      "created": 1635718764530,
-      "parent": "xIwvEqQ71wRQ4wWk",
-      "children": [],
-      "data": {},
-      "contentHash": "6dbf1b594bc65a86b7c9eeebe3679419",
-      "custom": {}
-    },
-    "WXSAaFaXKrsQd07dXfKJl": {
-      "id": "WXSAaFaXKrsQd07dXfKJl",
-      "title": "Quickstart",
-      "vault": {
-        "fsPath": "templates",
-        "seed": "dendron.templates",
-        "name": "dendron.templates"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {
-        "prerequisites": {
-          "type": "header",
-          "text": "Prerequisites",
-          "value": "prerequisites",
-          "line": 9,
-          "column": 0
-        },
-        "build": {
-          "type": "header",
-          "text": "Build",
-          "value": "build",
-          "line": 12,
-          "column": 0
-        },
-        "run": {
-          "type": "header",
-          "text": "Run",
-          "value": "run",
-          "line": 15,
-          "column": 0
-        },
-        "troubleshooting": {
-          "type": "header",
-          "text": "Troubleshooting",
-          "value": "troubleshooting",
-          "line": 18,
-          "column": 0
-        }
-      },
-      "fname": "templates.module.quickstart",
-      "updated": 1636215950743,
-      "created": 1634590001871,
-      "parent": "xIwvEqQ71wRQ4wWk",
-      "children": [],
-      "data": {},
-      "contentHash": "f3c10f18756567506c43ce13e065ce89",
-      "custom": {
-        "example": "https://wiki.dendron.so/notes/64f0e2d5-2c83-43df-9144-40f2c68935aa.html#steps"
-      }
     },
     "jU02nYSOp3VgANjM": {
       "id": "jU02nYSOp3VgANjM",
@@ -7750,6 +7819,251 @@
       "data": {},
       "contentHash": "43cca82a7f3e3a513bcbdab3bf2ea644",
       "custom": {}
+    },
+    "Wz0WznIhCmtGKE6qHTh2M": {
+      "id": "Wz0WznIhCmtGKE6qHTh2M",
+      "title": "Schemas",
+      "vault": {
+        "fsPath": "templates",
+        "seed": "dendron.templates",
+        "name": "dendron.templates"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "schemas",
+      "updated": 1637715474276,
+      "created": 1637715474276,
+      "parent": "PhD",
+      "children": [
+        "yz7BaxKE7IssV5Go"
+      ],
+      "data": {},
+      "contentHash": "e736595552cd1a5b2118538eb45d5d31",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "yz7BaxKE7IssV5Go": {
+      "id": "yz7BaxKE7IssV5Go",
+      "title": "Module",
+      "vault": {
+        "fsPath": "templates",
+        "seed": "dendron.templates",
+        "name": "dendron.templates"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "schemas.module",
+            "id": "yz7BaxKE7IssV5Go",
+            "vaultName": "dendron.templates"
+          },
+          "value": "dendron.concepts",
+          "alias": "Concepts",
+          "position": {
+            "start": {
+              "line": 20,
+              "column": 12,
+              "offset": 833
+            },
+            "end": {
+              "line": 20,
+              "column": 41,
+              "offset": 862
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "dendron.concepts"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "schemas.module",
+            "id": "yz7BaxKE7IssV5Go",
+            "vaultName": "dendron.templates"
+          },
+          "value": "pkg.dendron-plugin.ops",
+          "alias": "Ops",
+          "position": {
+            "start": {
+              "line": 52,
+              "column": 12,
+              "offset": 1669
+            },
+            "end": {
+              "line": 52,
+              "column": 42,
+              "offset": 1699
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "pkg.dendron-plugin.ops"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "schemas.module",
+            "id": "yz7BaxKE7IssV5Go",
+            "vaultName": "dendron.templates"
+          },
+          "value": "pkg.dendron-plugin.quickstart",
+          "alias": "Quickstart",
+          "position": {
+            "start": {
+              "line": 69,
+              "column": 12,
+              "offset": 1972
+            },
+            "end": {
+              "line": 69,
+              "column": 56,
+              "offset": 2016
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "pkg.dendron-plugin.quickstart"
+          }
+        }
+      ],
+      "anchors": {
+        "summary": {
+          "type": "header",
+          "text": "Summary",
+          "value": "summary",
+          "line": 8,
+          "column": 0
+        },
+        "nodes": {
+          "type": "header",
+          "text": "Nodes",
+          "value": "nodes",
+          "line": 17,
+          "column": 0
+        },
+        "quickstart": {
+          "type": "header",
+          "text": "quickstart",
+          "value": "quickstart",
+          "line": 19,
+          "column": 0
+        },
+        "concepts": {
+          "type": "header",
+          "text": "concepts",
+          "value": "concepts",
+          "line": 23,
+          "column": 0
+        },
+        "concepts-1": {
+          "type": "header",
+          "text": "concepts",
+          "value": "concepts-1",
+          "line": 25,
+          "column": 0
+        },
+        "architecture": {
+          "type": "header",
+          "text": "architecture",
+          "value": "architecture",
+          "line": 30,
+          "column": 0
+        },
+        "dev": {
+          "type": "header",
+          "text": "dev",
+          "value": "dev",
+          "line": 41,
+          "column": 0
+        },
+        "quickstart-1": {
+          "type": "header",
+          "text": "quickstart",
+          "value": "quickstart-1",
+          "line": 45,
+          "column": 0
+        },
+        "faq": {
+          "type": "header",
+          "text": "faq",
+          "value": "faq",
+          "line": 53,
+          "column": 0
+        },
+        "ops": {
+          "type": "header",
+          "text": "ops",
+          "value": "ops",
+          "line": 57,
+          "column": 0
+        },
+        "qa": {
+          "type": "header",
+          "text": "qa",
+          "value": "qa",
+          "line": 62,
+          "column": 0
+        },
+        "test": {
+          "type": "header",
+          "text": "test",
+          "value": "test",
+          "line": 66,
+          "column": 0
+        },
+        "performance": {
+          "type": "header",
+          "text": "performance",
+          "value": "performance",
+          "line": 70,
+          "column": 0
+        },
+        "quickstart-2": {
+          "type": "header",
+          "text": "quickstart",
+          "value": "quickstart-2",
+          "line": 74,
+          "column": 0
+        },
+        "topic": {
+          "type": "header",
+          "text": "topic",
+          "value": "topic",
+          "line": 79,
+          "column": 0
+        },
+        "wip": {
+          "type": "header",
+          "text": "wip",
+          "value": "wip",
+          "line": 84,
+          "column": 0
+        }
+      },
+      "fname": "schemas.module",
+      "updated": 1633299013130,
+      "created": 1627924831114,
+      "parent": "Wz0WznIhCmtGKE6qHTh2M",
+      "children": [],
+      "data": {},
+      "contentHash": "bd2435b00821ea6c8c8e95fc3f4c34ef",
+      "custom": {}
     }
   },
   "domains": [
@@ -7861,9 +8175,10 @@
       "created": 1595961348801,
       "parent": null,
       "children": [
-        "t58wEmhAtf1GlHmO",
         "Wz0WznIhCmtGKE6qHTh2M",
+        "t58wEmhAtf1GlHmO",
         "CQTUwoXQNcd0Y7la7IaAn",
+        "9s2d4L1UHWFWCdtORYT2Q",
         "AiXOWFsdvi3BPZxcUMjIi",
         "MsmFdXyWfizd5g8GGcObD",
         "MXHvc8bQbNRRVCB0UogRy",
@@ -8008,9 +8323,10 @@
     "created": 1595961348801,
     "parent": null,
     "children": [
-      "t58wEmhAtf1GlHmO",
       "Wz0WznIhCmtGKE6qHTh2M",
+      "t58wEmhAtf1GlHmO",
       "CQTUwoXQNcd0Y7la7IaAn",
+      "9s2d4L1UHWFWCdtORYT2Q",
       "AiXOWFsdvi3BPZxcUMjIi",
       "MsmFdXyWfizd5g8GGcObD",
       "MXHvc8bQbNRRVCB0UogRy",

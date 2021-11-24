@@ -8,7 +8,9 @@
     "enablePreviewV2": true
   },
   "site": {
-    "siteUrl": "https://zeyuz35.github.io",
+    "siteUrl": {
+      "https://zeyuz35.github.io": null
+    },
     "copyAssets": true,
     "siteHierarchies": [
       "root"
