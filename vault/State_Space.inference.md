@@ -2,7 +2,7 @@
 id: snykjBrzkelYqLVX3wo8V
 title: State Space Inference
 desc: ''
-updated: 1637800527903
+updated: 1637805451852
 created: 1637800393017
 bibliography: [references.bib]
 reference-section-title: References
@@ -19,6 +19,8 @@ H_0: \lambda_i = \lambda_j
 $$
 
 for two different *sets* of loadings, which imply $r$ restrictions (recall that there are in total $r$ loadings for each variable).
+
+This practically isn't actually too useful - mostly there for testing whether two sets of loadings are the same or not. This could actually already be done with the standard [@bai_inferential_2003] PC inferential results. However, the QML method links the state space framework, and this could potentially be more flexible in the future.
 
 It is unclear whether these sorts of inferential results can be extended to to include a structural stability test. 
 

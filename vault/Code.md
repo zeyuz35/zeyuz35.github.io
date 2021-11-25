@@ -2,7 +2,7 @@
 id: MXHvc8bQbNRRVCB0UogRy
 title: Code Resources
 desc: ''
-updated: 1637799763926
+updated: 1637818762195
 created: 1636420962292
 bibliography: [references.bib]
 reference-section-title: References
@@ -45,6 +45,10 @@ https://sites.google.com/site/garykoop/home/computer-code-2?authuser=0
 James Morley 
 
 https://sites.google.com/site/jamescmorley/code?authuser=0
+
+Ludvigson Data
+
+https://www.sydneyludvigson.com/data-and-appendixes
 
 ## Other Sources (direct from email)
 

@@ -2,7 +2,7 @@
 id: U0c40KtWCbQp02iuK28mt
 title: q Estimators
 desc: ''
-updated: 1637727044453
+updated: 1637818725343
 created: 1635335632193
 bibliography: [references.bib]
 reference-section-title: References
@@ -20,9 +20,11 @@ Truly dynamic factor models tend to be very underdeveloped in general. Stock and
 
 ## Bai and Ng (2007) BN07
 
-[@bai_determining_2007] work directly with the factor and uise an information criteria to estimate the rank of the residual covariance matrix of a VAR estimated using the r estimated principal components.
+[@bai_determining_2007] work directly with the factor and use an information criteria to estimate the rank of the residual covariance matrix of a VAR estimated using the r estimated principal components.
 
 There is an implemention in the nowcasting package, which is in the process of being gutted and tailored to our needs.
+
+
 
 ## Hallin and Liska (2007) HL07
 
@@ -31,5 +33,4 @@ In a completely different approach, [@hallin_determining_2007] propose a frequen
 Note that this was referenced and used in [@ma_estimation_2018], although this was not entirely understood at the time of reading.
 
 Read into [@ma_estimation_2018]'s code again, likely this will contain something related to spectral density!
-
 

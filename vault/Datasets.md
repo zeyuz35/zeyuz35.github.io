@@ -1,16 +1,14 @@
 ---
 id: jtZSk246bVVDfJy6cdpS1
-title: Macroeconomic Datasets Compilation
+title: Macroeconomic Datasets
 desc: ''
-updated: 1637714623114
+updated: 1637820847607
 created: 1635213694758
+bibliography: [references.bib]
+reference-section-title: References
 ---
 
-## Macroeconomic Datasets Compilation
-
-This document contains a compilation of various macroeconomic datasets, and notes for any details that are necessary 
-
-This is mostly because the documentation sources for all of these is messy and all over the place, are constantly updated, and are overall hard to keep track of in one place.
+This document contains a compilation of various macroeconomic datasets, and notes for any details that are necessary.
 
 Specific details about missing data (important!) etc are documented.
 
@@ -43,6 +41,8 @@ SW2009
 
 ### FRED-MD (US)
 
+[@mccracken_fred-md_nodate]
+
 The most well known dataset, and the focus of many papers. 
 
 The implementation of this is in FREDMD.R. This currently uses the fbi package as a pseudo-wrapper for applying the transformations, but this is not strictly necessary.
@@ -70,11 +70,11 @@ The ISM series are:
 
 ## AU-MD (Australia)
 
+[@hartigan_factor_2020]
+
 Luke Hartigan's website provides an AUMD dataset, which though not continously updated, is quite large and available.
 
 ## UK-MD (UK)
-
-Phillipe Coulombe
 
 Can Machine Learning catch the COVID19 recession?
 
@@ -82,3 +82,31 @@ Can Machine Learning catch the COVID19 recession?
 ## CAN-MD (Canada)
 
 CAN MD 
+
+[@fortin-gagnon_large_nodate].
+
+## Wharton Data Research Services (WRDS)
+
+## Thomson Reuters DataStream
+
+## Ludvigson
+
+There is an old macro + financial dataset; however, this is consdiered to be very outdated.
+
+The most up to date dataset is macro + financial, as described in the dat appendix. Unexcitingly, the macro dataset is just FREDMD. 
+
+However, the financial dataset is a mish mash of Kenneth French and CRSP data. This unfortunately does not seem to be provided at all, though there are instructions for how one would be able to construct it themselves.
+
+Presumably, this is because CRSP has some strict rules on sharing the data.
+
+https://www.sydneyludvigson.com/data-and-appendixes
+
+
+## Notes on Transformations
+
+Transformations do matter a lot for macroeconomic analysis, though this is arguably less pronounced for large dimensional methods, such as PCA, which are inherently robust.
+
+Some potentially unreasonable decisions are:
+
+- keeping unemployment or interest rates in levels rather
+than applying first differences, or vice versa
