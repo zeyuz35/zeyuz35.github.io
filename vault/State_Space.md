@@ -1,9 +1,11 @@
 ---
 id: ElqQePaEuSSz7pSeO1gNc
-title: State Space Approaches to DFMs
+title: State Space Models
 desc: ''
-updated: 1635379300131
+updated: 1637800447875
 created: 1635379022669
+bibliography: [references.bib]
+reference-section-title: References
 ---
 
 A document summarizing state space approaches to estimating DFMs. 
@@ -20,3 +22,8 @@ However, note that a natural extension to these is done via a Bayesian framework
 
 See [[Kalman_Filter]] for details.
 
+## EM Algorithm
+
+[@barigozzi_quasi_2020] provides a strong theoretical results for the EM estimator, as viewed as a QML estimator.
+
+See [[State_Space.inference]] for more details.

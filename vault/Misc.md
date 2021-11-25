@@ -2,7 +2,7 @@
 id: umGHrdI4OaLoU8OOAOdkL
 title: Miscellaneous Ideas
 desc: ''
-updated: 1637738329308
+updated: 1637798762898
 created: 1635337141829
 bibliography: [references.bib]
 reference-section-title: References
@@ -99,4 +99,9 @@ In particular, under similar assumption for the PCA estimator, they prove that:
 
 Takeaway: justifies using EM for estimating DFMs, and provides a new, potentially very neat framework for this!
 
-Read up on this at home.
+Takeaway:
+
+This is a strong theoretical paper which provides the theoretical justification of the EM algorithm/method of estimating DFMs.
+
+In particular, through the prism of viewing the EM algorithm as a QML estimator, they show that the EM estimator is consistent and surprisingly efficient. Although the assumption is that the errors are homoskedastic, the mis specification only seems to manifest itself in the efficiency of the estimated factors.
+
