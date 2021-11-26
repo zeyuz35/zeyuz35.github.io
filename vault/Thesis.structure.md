@@ -2,7 +2,7 @@
 id: ac125dUeDVsMicETsuzFD
 title: Structure
 desc: ''
-updated: 1637898854457
+updated: 1637898979049
 created: 1637897925721
 ---
 
@@ -18,7 +18,9 @@ Literature Review.
 
 Empirical Motivation, maybe a study or two?
 
-Monte Carlo Study
+Same as previous empirical studies, but now more expansive with more datasets
+
+Monte Carlo Study, same vein as previous Monte Carlo, but now more expansive
 
 ## Chapter 3
 
