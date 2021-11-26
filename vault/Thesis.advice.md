@@ -2,14 +2,22 @@
 id: tpEdCD47bDkWqJCrnZxOq
 title: General Advice
 desc: ''
-updated: 1637727645763
+updated: 1637897908599
 created: 1637722333592
 ---
 
 ## General
 
 
+## Writing Tips
 
+John H. Cochrane is very opinionated, but provides some solid advice:
+
+https://static1.squarespace.com/static/5e6033a4ea02d801f37e15bb/t/5eea8ee7c4488718b640f3c6/1592430312374/phd_paper_writing.pdf
+
+As usual, make sure to tailor the advice to your own needs. John Cochrane presumably doesn't follow his own advice.
+
+Additionally, although John is a fellow of the Econometric Society, he is more of an empirical finance/macroeconomics person, and as such his advice is more tailored towards empirical papers. 
 ## Frequentist Advice
 
 1. Come up with an empirical motivation - for theory, this does not have to be too strong

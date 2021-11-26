@@ -2,7 +2,7 @@
 id: U0c40KtWCbQp02iuK28mt
 title: q Estimators
 desc: ''
-updated: 1637818725343
+updated: 1637881766476
 created: 1635335632193
 bibliography: [references.bib]
 reference-section-title: References
@@ -22,7 +22,7 @@ Truly dynamic factor models tend to be very underdeveloped in general. Stock and
 
 [@bai_determining_2007] work directly with the factor and use an information criteria to estimate the rank of the residual covariance matrix of a VAR estimated using the r estimated principal components.
 
-There is an implemention in the nowcasting package, which is in the process of being gutted and tailored to our needs.
+There is an implementation in the nowcasting package, which is in the process of being gutted and tailored to our needs.
 
 
 

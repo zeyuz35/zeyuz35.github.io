@@ -2,7 +2,7 @@
 id: jtZSk246bVVDfJy6cdpS1
 title: Macroeconomic Datasets
 desc: ''
-updated: 1637820847607
+updated: 1637882341092
 created: 1635213694758
 bibliography: [references.bib]
 reference-section-title: References
@@ -101,6 +101,17 @@ Presumably, this is because CRSP has some strict rules on sharing the data.
 
 https://www.sydneyludvigson.com/data-and-appendixes
 
+For more details, see [[Datasets.JLN_financial]].
+
+## Fama French
+
+Fama French factors and portfolios are available from Kenneth French's website:
+
+https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html
+
+However, these are all offered in the form of excel files which are notorious to work with. 
+
+See [[Datasets.Fama_French]] for more info.
 
 ## Notes on Transformations
 
