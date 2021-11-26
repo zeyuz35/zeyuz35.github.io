@@ -6,7 +6,7 @@ useKatex: true
 dev:
     enablePreviewV2: true
 site:
-    siteUrl: {https://zeyuz35.github.io/}
+    siteUrl: {}
     copyAssets: true
     siteHierarchies:
         - root
@@ -86,6 +86,7 @@ workspace:
     maxNoteLength: 204800
     seeds:
         dendron.templates: {}
+    dendronVersion: 0.70.0
 preview:
     enableFMTitle: true
     enableNoteTitleForLink: true
