@@ -98,19 +98,7 @@ nano ~/.R/Makevars
 and make it contain the following:
 
 ```
-CC = gcc 
-CXX = g++ 
-CXX98 = g++ 
-CXX11 = g++ 
-CXX14 = g++ 
-CXX17 = g++ 
-CXX20 = g++ 
-CXXCPP = g++ 
-FC = gfortran 
-F77 = gfortran   
-OBJC = gcc 
-OBJCXX = g++
-FLIBS= -L`gfortran -print-file-name=libgfortran.dylib | xargs dirname`
+n
 ```
 
 Note that FLIBS will require you to specify which specific path for gfortran explicitly. A workaround for this is provided in the stackexchange link, which directly queries gfortran to get the proper lib path automatically. This should be stable enough even with updates.

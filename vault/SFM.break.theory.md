@@ -2,7 +2,7 @@
 id: Nm1KrUYBazwT5ytD11Cre
 title: SFM Break Theory
 desc: ''
-updated: 1637728138296
+updated: 1638163428614
 created: 1635403256841
 bibliography: [references.bib]
 reference-section-title: References
@@ -28,6 +28,11 @@ reference-section-title: References
 ## Bates et al (2013)
 
 [@bates_consistent_2013] is the first (and only) paper which establishes specified conditions on how large structural breaks can be allowed to be, without affecting the consistency of PCA. As such, it can be viewed in general as an attempt to see how far the original Bai and Ng regularity conditions can be loosened.
+
+Basically, breaks are considered to be "small" and not affect the consistency rate of the PCA esitmator if:
+
+1. The break affects a fraction of series that is decreasing as $N \to \infty$
+2. 
 
 Note that the focus here is on the *consistency of PCA*, and *not* how how various different tests would necessarily pick up on this. For example, it is entirely possible that there are "breaks" which are picked up by various tests, but these breaks are sufficiently small enough that they *do not* affect the consistency of the PCA estimator. 
 

@@ -2,7 +2,7 @@
 id: T4FN6sDHfA9wxiZ7Dg5WX
 title: Dynamic Factor Models
 desc: ''
-updated: 1636686615124
+updated: 1638162715776
 created: 1634214992986
 geometry: margin=2cm
 bibliography: [references.bib]
@@ -39,12 +39,13 @@ Subsequently, [@forniGeneralizedDynamicFactorModel2000] and [@forni 2004] study 
 
 Side note: Ben is not sure how often people actually estimate factor models via this method. Trudging through the literature, it seems that this strand was very exciting for a while, but either no one understood it well enough, or it had other significant limitations that no one actually uses it in applied research. In either case, it does not seem like a viable future path.
 
-Note that because DPCA does not yield a consistent estimator of the common component
+Note that because DPCA does not yield a consistent estimator of the common component.
 
-Forni's one sided filter approach....
+The generalized factors are preferably to the static factors in the following ways:
 
-Note that the
-
+1. The generalized factors can be directly interpreted as primitive macroeconomic shocks
+2. The generalized factors' dynamics can often be of interest to applied macreconomists
+3. 
 
 ## Dynamic PCA
 
@@ -68,4 +69,13 @@ gdpc package (fucking mess)
 
 Methods etc are all broken and even the example code given does not work - no idea how this was approved on CRAN
 
+
+## Two sided GDFM
+
+[@forni_generalized_2000]
+
+## One sided GDFM
+
+[@forni_generalized_2005]
+## Unrestricted GDFM
 
