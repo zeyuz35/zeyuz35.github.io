@@ -2,7 +2,7 @@
 id: T4apcqDvjFydx29a2fyaN
 title: Equivalent Representation Theorems
 desc: ''
-updated: 1637560056880
+updated: 1638253182712
 created: 1635165604337
 bibliography: [references.bib]
 reference-section-title: References
@@ -23,7 +23,7 @@ reference-section-title: References
 \newcommand{\floor}[1]{\left \lfloor #1 \right \rfloor }
 \newcommand{\sumTfloor}{\sum_{t = 1}^{\floor{\tau T}}}
 \newcommand{\sumTfloort}{\sum_{t = \floor{\tau T + 1}}^{T}}
-\newcommand{\rank}[1]{\operatorname{rank} \left( #1 \right) }
+\newcommand{\rank}[1]{\operatorname{rank} #1 }
 
 An equivalent representation theorem in the context of dynamic factor models with breaks shows how a dynamic factor model with a structural break can equivalently (in the observational sense) be represents as a factor model without any breaks. 
 
@@ -44,7 +44,13 @@ y_{it} = f_t' \lambda_i^{(1)} + e_{it} \\
 y_{it} = f_t' \lambda_i^{(2)} + e_{it}
 $$
 
+## CDG
 
+[@chen_detecting_2014] propose a simply method for detecting big breaks in factor loadings.
+
+This method was developed ONLY for breaks in factor loadings, even though breaks in loadings vs factors themselves cannot be separately identified.
+
+They postulate that such a differentiation technique could be based on the estimated rank of the loading matrices in each subsample - essentially pointing towards the break classification system later proposed by [@han_tests_2015].
 
 ## Han and Inoue
 
@@ -84,7 +90,9 @@ Note that the number of factors above is possible larger than $r$, and depends o
 
 The changes in $\lambda_{1, i} - \lambda_{2, i}$ need to be so idiosyncratic across $i$ such that $\Lambda_1$ and $\Lambda_2$ are linearly independent.
 
-How precisely this is to be achieved in unknown.
+An attempt to interpret this is as follows.
+
+The change in teh factor structure ultimately reflects a change in cross-correlations between variables related to common factors, that is, the loadings must change, given a set of estimated factors, to accurately capture (or represent) the change.
 
 2. $r \lt rank(\Theta) \lt r + q$, Type 2 Break
 
@@ -96,6 +104,8 @@ Note that $Z_0$ is allowed to be singular, in which case there will be emerging(
 
 This singular transformation case is the most topical for practical applications, as people tend to be interested in emerging factors.
 
+The practical interpretation of this is that the change in the factor strcuture ultimately reflects a change in the voltatility related to common factors, but with stable cross-correlations between variables related to common factors, such that a the loadings themselves are stable, given a set of estimated factors. Still, this is hard to interpret.
+
 3. $rank(\Theta) = q$, Type 3 Break
 
 This is a combination of Type 1 and Type 2 break.
@@ -103,6 +113,8 @@ This is a combination of Type 1 and Type 2 break.
 What this precisely means heuristically is unknown, and this seems to be just a technical existence sort of thing. 
 
 ## Baltagi et al
+
+### Singular Break
 
 This was proposed by [@baltagi_identification_2017] as an extension to Han and Inoue's work.
 
@@ -176,4 +188,16 @@ The above representation is useful, as it is clear that the PCA estimator will a
 How precisely this affect forecast performance however, is unclear.
 
 The above representation theorem states clearly how many factor will be determined by any consistent estimator of $r$. The literature has actually stopped short of stating this definitively, presumably because the representation theorems do not cover all possible types of breaks. 
+
+### Multiple Breaks
+
+[@baltagi_estimating_2021]'s extension of their previous framework to the general case of multiple breaks.
+
+## Notes
+
+Changes in the variance of the dynamic factor idiosyncratic shocks seems to be something reasonable, but too difficult to cater for in practice.
+
+This is because everything is based off of [@bai_determining_2002] assumptions, which require that the factors themselves have a constant second moment. 
+
+The latter point is of interest, but I'm unclear how this may be achieved - ask supervisors.
 

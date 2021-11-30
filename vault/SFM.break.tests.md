@@ -2,7 +2,7 @@
 id: xGM4xjoc3Gk4zgs7IzdKK
 title: DFM Structural Break Tests
 desc: ''
-updated: 1637560257804
+updated: 1638253620838
 created: 1637560121296
 bibliography: [references.bib]
 reference-section-title: References
@@ -28,6 +28,14 @@ reference-section-title: References
 ## Han and Inoue's Test
 
 [@han_tests_2015]
+
+$$
+asd \convp asd 
+$$
+
+## CDG Test
+
+https://www.eco.uc3m.es/~jgonzalo/
 
 ## Baltagi et al
 

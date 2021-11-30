@@ -2,9 +2,15 @@
 id: SKUZ6b0dCeZkJQWeJkLAZ
 title: Structural Break P Values
 desc: ''
-updated: 1636522515830
+updated: 1638228285822
 created: 1635212376940
+bibliography: [references.bib]
+reference-section-title: References
 ---
+
+## Optimal Tests
+
+
 
 ## Andrews critical Values
 

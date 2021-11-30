@@ -2,7 +2,7 @@
 id: wQruEPvAQOC2xbS48WvgQ
 title: r Estimators
 desc: ''
-updated: 1637726186001
+updated: 1638244459282
 created: 1635206494435
 bibliography: [references.bib]
 reference-section-title: References
@@ -42,6 +42,14 @@ Estimate r as the largest value of $k$ for which the different between the $k$ a
 Implementation converted to R from Onatski's MATLAB code.
 
 Note that this is essentially runs sequential tests for the number of factors in a DFM, and therefore only results in an estimate. There is no corresponding plot function for this, accordingly.
+
+## ABC 2010
+
+The estimator of [@alessi_improved_2010], which is a modification to the [@bai_determining_2002]'s IC for improved penalization. 
+
+However, this method requires the sepcification and tuning of two extra hyperparameters, and how to do this is unclear.
+
+There is MATLAB code for this, and conversion is put on hold.
 
 ## Ahn and Horenstein 2013 (AHER, AHGR)
 
