@@ -2,7 +2,7 @@
 id: fHzGITjWkNNkiwsQpdex4
 title: Meeting
 desc: ''
-updated: 1638365678122
+updated: 1638366016319
 created: 1634221843124
 bibliography: [references.bib]
 reference-section-title: References
@@ -110,9 +110,7 @@ Simulation set up: factor process changes from AR1 to AR2 (made sure it was stat
 
 Conjecture: if one can find a way to find the break, then conditional on partitioning the break, the number of factors in each should be consistent.
 
-However, this leads to the problem of testing for such a break.
-
-Simulation shows that existing tests are mixed against this. [@han_tests_2015] has some power, but [@baltagi_identification_2017] does not.
+Simulation shows that existing tests are mixed against this. [@han_tests_2015] has some power, but [@baltagi_identification_2017] does not. Simulation also shows that in general, the number of factors estimated does not increase - but this needs more looking into.
 
 [@bai_determining_2007] provide a representation theorem for how a dynamic factor model can always be written as a static one. However, the actual no. of factors can be ambiguous depending on the what the dynamics precisely are.
 
