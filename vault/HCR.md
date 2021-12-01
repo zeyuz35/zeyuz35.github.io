@@ -2,7 +2,7 @@
 id: 4GXJm4YpHBWVu5WnZKVm4
 title: Hausdorff Critical Region
 desc: ''
-updated: 1637928946457
+updated: 1637978717482
 created: 1637927430959
 ---
 
@@ -74,3 +74,10 @@ Work is mostly done, and code is on GitHub.
 
 ## MONARCH
 
+## Exporting to Excel
+
+Don (and many other less technical people) prefer the format of an Excel spreadsheet.
+
+The easiest way to do this is via the xlsx package, which uses java.
+
+rJava will require a valid installation of both a JRE (for running java) and JDK (for compiling). Make sure you install these!
