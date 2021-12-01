@@ -2,7 +2,7 @@
 id: UCKQQIP3xmPCV4pYAWA4e
 title: Monte Carlo Designs
 desc: ''
-updated: 1635206924224
+updated: 1638337297495
 created: 1635206782910
 ---
 
@@ -11,6 +11,16 @@ created: 1635206782910
 A collection of Monte Carlo designs used in the literature.
 
 Detailed specifications for each simulation specification is included in this section of document. This should be self contained enough, but occasionally extra consultation from the original paper(s) may be necessary.
+
+## General Notes
+
+For macroeconomics, it is thought that:
+
+AR(-0.5)
+
+and AR(1.2, -0.5) are empirically relevant.
+
+Use these to simulate series, such as factors.
 
 ## Breitung and Eickmeier (2011)
 

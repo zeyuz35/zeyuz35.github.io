@@ -86,7 +86,7 @@ workspace:
     maxNoteLength: 204800
     seeds:
         dendron.templates: {}
-    dendronVersion: 0.70.0
+    dendronVersion: 0.71.0
 preview:
     enableFMTitle: true
     enableNoteTitleForLink: true
