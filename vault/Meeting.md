@@ -2,7 +2,7 @@
 id: fHzGITjWkNNkiwsQpdex4
 title: Meeting
 desc: ''
-updated: 1638244859674
+updated: 1638327440089
 created: 1634221843124
 bibliography: [references.bib]
 reference-section-title: References
@@ -22,8 +22,6 @@ Answer:
 The number of factors of as estimated by any consistent estimator is consistent for an equivalent representation of the model, with constant loadings. Such an equivalent representation needs to be given by an equivalent representation theorem, see [@han_tests_2015] or [@baltagi_identification_2017], [@baltagi_estimating_2021]. These are the only representation theorems known to exist.
 
 [@han_tests_2015] and [@baltagi_identification_2017] both have this as propositions, but strangely do not emphasize this. Presumably, this is because representation theorems are not comprehensive enough yet.
-
-
 
 ## Roadmap
 
@@ -66,7 +64,7 @@ Each change has been studied in the context of Monte Carlo simulations. Results
 Change | Effect | Comments | Confirmed in literature?
 ------------ | ------------- | -------- | ----------------------
 Changes in variance of error term | No change | Perhaps unexpected, large changes in idiosyncratic term have no effect on factor estimation | Yes, see Bates et al
-Change in loading matrix | Changes the number of factors | See equivalent representation theorem in  for precise number of factors | Yes, see Han and Inoue or Baltagi et al
+Change in loading matrix | Changes the number of factors | See equivalent representation theorem in  for precise number of factors | Yes, see [@han_tests_2015] or [@baltagi_identification_2017]
 Change in individual loadings | Doubles factors | Special case of change in loading matrix - type 1 break (all columns of loadings break idiosyncratically), however, how large this needs to be to affect it is unclear | Yes, but no results on orders
 Change in variance of factors | NO change | This doesn't make sense, should be observationally equivalent to change in loadings | Baltagi et al make a comment that this cannot be distinguished from a change in loadings
 Change in dynamics of factors | NO change | More work needed, but at present, does not make sense | No work on how to reconcile static with dynamic factors - not sure if necessary if static ones are consistent for dynamic space anyway?

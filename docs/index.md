@@ -1,26 +1,40 @@
 --- 
-title: "A Minimal Book Example"
-author: "John Doe"
+title: "PhD"
+author: "Ze Yu Zhong"
 date: "2021-12-01"
-site: bookdown::bookdown_site
 documentclass: book
-bibliography: [book.bib, packages.bib]
+site: bookdown::bookdown_site
+output: 
+  bookdown::pdf_book:
+    includes:
+      in_header: preamble.tex
+  bookdown::bs4_book:
+    includes:
+      in_header: preamble.tex
+    keep_tex: yes
+bibliography: [references.bib, book.bib, packages.bib]
 # url: your book url like https://bookdown.org/yihui/bookdown
 # cover-image: path to the social sharing image like images/cover.jpg
 description: |
-  This is a minimal example of using the bookdown package to write a book.
-  The HTML output format for this example is bookdown::bs4_book,
-  set in the _output.yml file.
+  PhD Thesis 
 biblio-style: apalike
 csl: chicago-fullnote-bibliography.csl
 ---
+
+<!--- For HTML Only --->
+
+$\DeclareMathOperator*{\argmin}{argmin}$
+$\newcommand{\convp}{\overset{p}{\to}}$
+
+
+\newcommand{\convp}{\overset{p}{\to}}
 
 # About
 
 This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports; for example, a math equation $a^2 + b^2 = c^2$.
 
 $$
-asd
+\convp
 $$
 
 ## Usage 

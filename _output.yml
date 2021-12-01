@@ -3,6 +3,8 @@ bookdown::bs4_book:
   theme:
     primary: "#096B72"
   repo: https://github.com/rstudio/bookdown-demo
+  includes:
+    in_header: preamble.tex
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
