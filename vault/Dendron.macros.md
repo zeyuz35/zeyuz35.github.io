@@ -2,7 +2,7 @@
 id: nbiBCI3xaHaKbGmARND3Y
 title: Macros for Maths
 desc: ''
-updated: 1637563295299
+updated: 1638240949346
 created: 1637549840978
 ---
 
@@ -26,5 +26,5 @@ Hopefully Dendron implements passing these as a macros option to katex so it ren
 \newcommand{\floor}[1]{\left \lfloor #1 \right \rfloor }
 \newcommand{\sumTfloor}{\sum_{t = 1}^{\floor{\tau T}}}
 \newcommand{\sumTfloort}{\sum_{t = \floor{\tau T + 1}}^{T}}
-\newcommand{\rank}[1]{\operatorname{rank} \left( #1 \right) }
+\newcommand{\rank}[1]{\operatorname{rank} #1 }
 ```

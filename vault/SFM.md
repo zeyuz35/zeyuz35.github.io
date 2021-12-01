@@ -2,7 +2,7 @@
 id: 0R61RLuT7e3hswR2v6o0w
 title: Static Factor Models
 desc: ''
-updated: 1636430576781
+updated: 1638253366374
 created: 1634735127231
 stub: true
 ---
@@ -58,4 +58,22 @@ In a follow up, Bai provides inferential results on the asymptotic distributions
 
 This is the main focus of the thesis, although note that breaks in DFMs have currently only been done in the context of static factor models. For more details, see [[SFM.break]].
 
+
+## Feasible Generalized PCA
+
+Choi citation
+
+[@Choi] proposes a feasible generalized PCA estimator of the factor and laodings for a static factor model.
+
+This parallels FGLS to OLS a lot.
+
+Essentially:
+
+1. Use some consitent estimator of the factors/loadings as a first step, such as PCA
+2. Using the residuals, construct $\Omega$, the varcov matrix of the errors
+3. Re-weight the data with its inverse, and run PCA on it again, with a slight scaling difference
+
+The resulting estimator can be shown to be asymptotically more efficient
+
+Not sure why people don't use this in applied work, perhaps doesn't actually do very well in practice?
 

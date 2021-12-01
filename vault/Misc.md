@@ -2,7 +2,7 @@
 id: umGHrdI4OaLoU8OOAOdkL
 title: Miscellaneous Ideas
 desc: ''
-updated: 1637798762898
+updated: 1638228204077
 created: 1635337141829
 bibliography: [references.bib]
 reference-section-title: References
@@ -84,7 +84,7 @@ However, this is a case of two steps forward, one step back. This estimator does
 
 Still, an important theoretical contribution.
 
-[@duan_quasi-maximum_2021] is 
+[@duan_quasi-maximum_2021] is the most up to date, though this is still a draft paper at the moment. This method 
 
 ## New Barigozzi Paper
 [@barigozzi_simultaneous_2018]'s preprint shows a few exciting results which tie together the EM Kalman Smoother with that of PCA.
@@ -104,4 +104,23 @@ Takeaway:
 This is a strong theoretical paper which provides the theoretical justification of the EM algorithm/method of estimating DFMs.
 
 In particular, through the prism of viewing the EM algorithm as a QML estimator, they show that the EM estimator is consistent and surprisingly efficient. Although the assumption is that the errors are homoskedastic, the mis specification only seems to manifest itself in the efficiency of the estimated factors.
+
+## Other Ideas
+
+Sizing the break, once identified
+
+There does not exist any literature on actually sizing the break at all
+
+Presumably because this is much too difficult
+
+naive idea: just use some matrix norm on the pre and post sample loading matrices, which is what the assumptions are based off of originally
+
+## Applied Forecasting
+
+## New covid datasets
+
+How to deal with covid, or really any breaks in general
+
+covid can be treated as an outlier, health shock that has macroeconomic consequences, or an economic shock
+
 

@@ -2,44 +2,43 @@
 id: fHzGITjWkNNkiwsQpdex4
 title: Meeting
 desc: ''
-updated: 1635210616971
+updated: 1638244859674
 created: 1634221843124
 bibliography: [references.bib]
+reference-section-title: References
 ---
 # Meeting Notes
 
 Bring our main focus and try to answer a much more precise question:
-what happens to so called consistent estimators of the no. of factors when
-there is a structural break of some some?
+what happens to so called consistent estimators of the no. of factors when there is a structural break of some sort?
 
 @stockChapter10Forecasting2006
 ## Focus Question
 
 How many static factors are estimated by various information criteria in the presence of structural breaks? 
 
+Answer:
+
+The number of factors of as estimated by any consistent estimator is consistent for an equivalent representation of the model, with constant loadings. Such an equivalent representation needs to be given by an equivalent representation theorem, see [@han_tests_2015] or [@baltagi_identification_2017], [@baltagi_estimating_2021]. These are the only representation theorems known to exist.
+
+[@han_tests_2015] and [@baltagi_identification_2017] both have this as propositions, but strangely do not emphasize this. Presumably, this is because representation theorems are not comprehensive enough yet.
+
+
+
 ## Roadmap
 
-A collection of unanswered questions which may have potential.
+- Show how a change in factor dynamics can be represented as a change in the static factor representation (there was only one mention of this in the literature)
+- Show how a change in the factor variance process cannot be represented at present
 
-It is currently known that the most innovative and latest break fraction/points estimator rely on the second moments matrix of the pseudo factors. Unfortuntely this method cannot distinguish between a break in the factor variance and the factor loadings, because of a non-identification issue.
 
-Currently, everything is estimated and done via the static model setup. It is arguable that this is all that is necessary, but to date no attempt has been made to reconcile this with the dynamic factor model literature (this is quite difficult). 
+## Potential Ideas
 
-As an easy path into doing something for this, derive some results and show how breaks in dynamic factors can be represented as breaks in equivalent static factors? (don't seem too hard and hasn't been done so far).
+Hartigan's Chapter 2 directly uses the estimated pseudo factors and tries to estimate Markov Switching on them to disentangle the actual dynamics.
 
-## Answers
+He goes further and tries to do regime dependent factor loadings, but we now know that this methods should be invalid due to a lack of separate identification.
 
-Existing information criteria are consistent for the number of static factors, under the assumption of no structural breaks at all (no breaks in loadings or factors). The conjecture (and what seems to be correct so far) is that existing methods will consistently estimate the number of factors, as given by equivalent representation, such that there are no structural breaks in the factors/factor loadings.
 
-However, finding such an equivalent representation has not been fully explored yet.
 
-BKW and HI formulate an equivalent representation theorem, which can precisely answer and 
-reformulate breaks in the factor loading matrix as (potentially) extra factors. 
-
-However, this is looking at breaks in the entire loading matrix itself.
-
-Also, this does not address how breaks in the factor dynamics or factor variance can affect
-the number of factors estimated.
 
 ## Empirical Motivation
 

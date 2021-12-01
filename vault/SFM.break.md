@@ -2,7 +2,7 @@
 id: V5RkkOEtQUFg8rc2NA4D
 title: Breaks in SFMs
 desc: ''
-updated: 1637556486583
+updated: 1638254400516
 created: 1635165514149
 bibliography: [references.bib]
 reference-section-title: References
@@ -62,6 +62,12 @@ Empirically, an interesting result to note is seemingly different *groups* of va
 [@chen_detecting_2014] propose a test for the break in the factor loading matrix by regressing one of the principal components against the remaining components, and conducting a standard time structural break test.
 
 They note that because it is essentially a standard time series structural break regression, theoretically one could consider a more flexible framework. In particular, more sophisticated approaches can be used to test for more exotic forms of structural instability. For example, the authors suggest that [@chen_testing_2012] non parametric test for smooth changes in time varying parameters could be considered to test for possible smooth changes in the factor loadings, though this is delegated to future research.
+
+Limitations:
+
+- assumes number of factors is constant over time
+- test ONLY formulated for changes in loadings ONLY
+- but is very easy to implement
 
 ## Corradi and Swanson
 
