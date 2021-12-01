@@ -6,7 +6,7 @@ This thesis will refer to these as *dynamic* factor models, as opposed to *stati
 Stock and Watson denote t a truly dynamic factor model as follows:
 
 $$
-X_{it} = \lambda_i (L)'f_t + e_{it}
+X_{it} = \lambda_i (L)'f_t + \epsilon_{it}
 $$
 
 where $f_t$ is a $q$ dimensional vector of dynamic factors, also known as primitive shocks, and $\lambda_i(L)'$ denotes the $q$ dimensional lag polynomial, also called the "dynamic factor loadings".

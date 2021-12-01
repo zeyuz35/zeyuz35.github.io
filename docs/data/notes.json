@@ -13,8 +13,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1638361225055,
-      "created": 1638361225055,
+      "updated": 1638365732317,
+      "created": 1638365732317,
       "parent": null,
       "children": [],
       "data": {}
@@ -2041,12 +2041,12 @@
             "start": {
               "line": 20,
               "column": 43,
-              "offset": 743
+              "offset": 750
             },
             "end": {
               "line": 20,
               "column": 50,
-              "offset": 750
+              "offset": 757
             },
             "indent": []
           },
@@ -4757,45 +4757,18 @@
             "id": "fHzGITjWkNNkiwsQpdex4",
             "vaultName": "vault"
           },
-          "value": "user.stockChapter10Forecasting2006",
-          "alias": "@stockChapter10Forecasting2006",
-          "position": {
-            "start": {
-              "line": 6,
-              "column": 1,
-              "offset": 204
-            },
-            "end": {
-              "line": 6,
-              "column": 31,
-              "offset": 234
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "to": {
-            "fname": "user.stockChapter10Forecasting2006"
-          }
-        },
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "Meeting",
-            "id": "fHzGITjWkNNkiwsQpdex4",
-            "vaultName": "vault"
-          },
           "value": "user.han_tests_2015",
           "alias": "@han_tests_2015",
           "position": {
             "start": {
-              "line": 13,
+              "line": 25,
               "column": 250,
-              "offset": 622
+              "offset": 1112
             },
             "end": {
-              "line": 13,
+              "line": 25,
               "column": 265,
-              "offset": 637
+              "offset": 1127
             },
             "indent": []
           },
@@ -4815,14 +4788,14 @@
           "alias": "@baltagi_identification_2017",
           "position": {
             "start": {
-              "line": 13,
+              "line": 25,
               "column": 271,
-              "offset": 643
+              "offset": 1133
             },
             "end": {
-              "line": 13,
+              "line": 25,
               "column": 299,
-              "offset": 671
+              "offset": 1161
             },
             "indent": []
           },
@@ -4842,14 +4815,14 @@
           "alias": "@baltagi_estimating_2021",
           "position": {
             "start": {
-              "line": 13,
+              "line": 25,
               "column": 303,
-              "offset": 675
+              "offset": 1165
             },
             "end": {
-              "line": 13,
+              "line": 25,
               "column": 327,
-              "offset": 699
+              "offset": 1189
             },
             "indent": []
           },
@@ -4869,14 +4842,14 @@
           "alias": "@han_tests_2015",
           "position": {
             "start": {
-              "line": 15,
-              "column": 2,
-              "offset": 763
+              "line": 31,
+              "column": 133,
+              "offset": 1656
             },
             "end": {
-              "line": 15,
-              "column": 17,
-              "offset": 778
+              "line": 31,
+              "column": 148,
+              "offset": 1671
             },
             "indent": []
           },
@@ -4896,14 +4869,14 @@
           "alias": "@baltagi_identification_2017",
           "position": {
             "start": {
-              "line": 15,
-              "column": 24,
-              "offset": 785
+              "line": 31,
+              "column": 155,
+              "offset": 1678
             },
             "end": {
-              "line": 15,
-              "column": 52,
-              "offset": 813
+              "line": 31,
+              "column": 183,
+              "offset": 1706
             },
             "indent": []
           },
@@ -4919,18 +4892,126 @@
             "id": "fHzGITjWkNNkiwsQpdex4",
             "vaultName": "vault"
           },
+          "value": "user.chen_detecting_2014",
+          "alias": "@chen_detecting_2014",
+          "position": {
+            "start": {
+              "line": 31,
+              "column": 395,
+              "offset": 1918
+            },
+            "end": {
+              "line": 31,
+              "column": 415,
+              "offset": 1938
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.chen_detecting_2014"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Meeting",
+            "id": "fHzGITjWkNNkiwsQpdex4",
+            "vaultName": "vault"
+          },
+          "value": "user.bai_determining_2002",
+          "alias": "@bai_determining_2002",
+          "position": {
+            "start": {
+              "line": 76,
+              "column": 91,
+              "offset": 4049
+            },
+            "end": {
+              "line": 76,
+              "column": 112,
+              "offset": 4070
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.bai_determining_2002"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Meeting",
+            "id": "fHzGITjWkNNkiwsQpdex4",
+            "vaultName": "vault"
+          },
+          "value": "user.bai_inferential_2003",
+          "alias": "@bai_inferential_2003",
+          "position": {
+            "start": {
+              "line": 76,
+              "column": 119,
+              "offset": 4077
+            },
+            "end": {
+              "line": 76,
+              "column": 140,
+              "offset": 4098
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.bai_inferential_2003"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Meeting",
+            "id": "fHzGITjWkNNkiwsQpdex4",
+            "vaultName": "vault"
+          },
+          "value": "user.bai_determining_2007",
+          "alias": "@bai_determining_2007",
+          "position": {
+            "start": {
+              "line": 94,
+              "column": 2,
+              "offset": 4907
+            },
+            "end": {
+              "line": 94,
+              "column": 23,
+              "offset": 4928
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.bai_determining_2007"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Meeting",
+            "id": "fHzGITjWkNNkiwsQpdex4",
+            "vaultName": "vault"
+          },
           "value": "user.han_tests_2015",
           "alias": "@han_tests_2015",
           "position": {
             "start": {
-              "line": 36,
+              "line": 106,
               "column": 63,
-              "offset": 2348
+              "offset": 5683
             },
             "end": {
-              "line": 36,
+              "line": 106,
               "column": 78,
-              "offset": 2363
+              "offset": 5698
             },
             "indent": []
           },
@@ -4950,14 +5031,14 @@
           "alias": "@baltagi_identification_2017",
           "position": {
             "start": {
-              "line": 36,
+              "line": 106,
               "column": 101,
-              "offset": 2386
+              "offset": 5721
             },
             "end": {
-              "line": 36,
+              "line": 106,
               "column": 129,
-              "offset": 2414
+              "offset": 5749
             },
             "indent": []
           },
@@ -4977,14 +5058,14 @@
           "alias": "@bai_determining_2007",
           "position": {
             "start": {
-              "line": 38,
+              "line": 108,
               "column": 2,
-              "offset": 2428
+              "offset": 5763
             },
             "end": {
-              "line": 38,
+              "line": 108,
               "column": 23,
-              "offset": 2449
+              "offset": 5784
             },
             "indent": []
           },
@@ -5000,24 +5081,24 @@
             "id": "fHzGITjWkNNkiwsQpdex4",
             "vaultName": "vault"
           },
-          "value": "user.bates_consistent_2013",
-          "alias": "@bates_consistent_2013",
+          "value": "user.cheng_shrinkage_2016",
+          "alias": "@cheng_shrinkage_2016",
           "position": {
             "start": {
-              "line": 100,
-              "column": 153,
-              "offset": 5671
+              "line": 150,
+              "column": 4,
+              "offset": 8090
             },
             "end": {
-              "line": 100,
-              "column": 175,
-              "offset": 5693
+              "line": 150,
+              "column": 25,
+              "offset": 8111
             },
             "indent": []
           },
           "xvault": false,
           "to": {
-            "fname": "user.bates_consistent_2013"
+            "fname": "user.cheng_shrinkage_2016"
           }
         },
         {
@@ -5027,24 +5108,24 @@
             "id": "fHzGITjWkNNkiwsQpdex4",
             "vaultName": "vault"
           },
-          "value": "user.han_tests_2015",
-          "alias": "@han_tests_2015",
+          "value": "user.stock_forecasting_2021",
+          "alias": "@stock_forecasting_2021",
           "position": {
             "start": {
-              "line": 101,
-              "column": 144,
-              "offset": 5838
+              "line": 159,
+              "column": 10,
+              "offset": 8517
             },
             "end": {
-              "line": 101,
-              "column": 159,
-              "offset": 5853
+              "line": 159,
+              "column": 33,
+              "offset": 8540
             },
             "indent": []
           },
           "xvault": false,
           "to": {
-            "fname": "user.han_tests_2015"
+            "fname": "user.stock_forecasting_2021"
           }
         },
         {
@@ -5054,24 +5135,78 @@
             "id": "fHzGITjWkNNkiwsQpdex4",
             "vaultName": "vault"
           },
-          "value": "user.baltagi_identification_2017",
-          "alias": "@baltagi_identification_2017",
+          "value": "user.mccracken_fred-md_nodate",
+          "alias": "@mccracken_fred-md_nodate",
           "position": {
             "start": {
-              "line": 101,
-              "column": 165,
-              "offset": 5859
+              "line": 161,
+              "column": 9,
+              "offset": 8551
             },
             "end": {
-              "line": 101,
-              "column": 193,
-              "offset": 5887
+              "line": 161,
+              "column": 34,
+              "offset": 8576
             },
             "indent": []
           },
           "xvault": false,
           "to": {
-            "fname": "user.baltagi_identification_2017"
+            "fname": "user.mccracken_fred-md_nodate"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Meeting",
+            "id": "fHzGITjWkNNkiwsQpdex4",
+            "vaultName": "vault"
+          },
+          "value": "user.fortin-gagnon_large_nodate",
+          "alias": "@fortin-gagnon_large_nodate",
+          "position": {
+            "start": {
+              "line": 163,
+              "column": 8,
+              "offset": 8586
+            },
+            "end": {
+              "line": 163,
+              "column": 35,
+              "offset": 8613
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.fortin-gagnon_large_nodate"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Meeting",
+            "id": "fHzGITjWkNNkiwsQpdex4",
+            "vaultName": "vault"
+          },
+          "value": "user.hartigan_factor_2020",
+          "alias": "@hartigan_factor_2020",
+          "position": {
+            "start": {
+              "line": 165,
+              "column": 7,
+              "offset": 8622
+            },
+            "end": {
+              "line": 165,
+              "column": 28,
+              "offset": 8643
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.hartigan_factor_2020"
           }
         },
         {
@@ -5101,65 +5236,204 @@
           "type": "header",
           "text": "Meeting Notes",
           "value": "meeting-notes",
-          "line": 10,
+          "line": 27,
           "column": 0
         },
         "focus-question": {
           "type": "header",
           "text": "Focus Question",
           "value": "focus-question",
-          "line": 16,
+          "line": 28,
           "column": 0
         },
-        "roadmap": {
+        "answer": {
           "type": "header",
-          "text": "Roadmap",
-          "value": "roadmap",
-          "line": 71,
+          "text": "Answer:",
+          "value": "answer",
+          "line": 32,
+          "column": 0
+        },
+        "sources-of-possible-breaks": {
+          "type": "header",
+          "text": "Sources of possible breaks",
+          "value": "sources-of-possible-breaks",
+          "line": 42,
+          "column": 0
+        },
+        "gap-break-in-factor-dynamics": {
+          "type": "header",
+          "text": "Gap: Break in Factor Dynamics",
+          "value": "gap-break-in-factor-dynamics",
+          "line": 79,
+          "column": 0
+        },
+        "how-to-model-breaks-in-dynamics": {
+          "type": "header",
+          "text": "How to model breaks in dynamics?",
+          "value": "how-to-model-breaks-in-dynamics",
+          "line": 99,
+          "column": 0
+        },
+        "small-simulation-set-up": {
+          "type": "header",
+          "text": "Small Simulation Set up",
+          "value": "small-simulation-set-up",
+          "line": 107,
+          "column": 0
+        },
+        "new-research-question": {
+          "type": "header",
+          "text": "New Research Question",
+          "value": "new-research-question",
+          "line": 119,
           "column": 0
         },
         "potential-ideas": {
           "type": "header",
           "text": "Potential Ideas",
           "value": "potential-ideas",
-          "line": 77,
+          "line": 142,
+          "column": 0
+        },
+        "other-unrelated-ideas": {
+          "type": "header",
+          "text": "Other unrelated ideas",
+          "value": "other-unrelated-ideas",
+          "line": 153,
           "column": 0
         },
         "empirical-motivation": {
           "type": "header",
           "text": "Empirical Motivation",
           "value": "empirical-motivation",
-          "line": 86,
-          "column": 0
-        },
-        "other-empirical-notes": {
-          "type": "header",
-          "text": "Other empirical notes",
-          "value": "other-empirical-notes",
-          "line": 93,
-          "column": 0
-        },
-        "monte-carlo-study-results": {
-          "type": "header",
-          "text": "Monte Carlo Study Results",
-          "value": "monte-carlo-study-results",
-          "line": 99,
+          "line": 164,
           "column": 0
         }
       },
       "fname": "Meeting",
-      "updated": 1638346582929,
+      "updated": 1638365678122,
       "created": 1634221843124,
       "parent": "PhD",
-      "children": [],
+      "children": [
+        "4kcN5tQwWMhFwJI02wRs6"
+      ],
       "data": {},
-      "contentHash": "b024434568aa486977f6b26f12e11c06",
+      "contentHash": "eec9079602af82e3016098188b4bcb69",
       "custom": {
         "bibliography": [
           "references.bib"
         ],
         "reference-section-title": "References"
       }
+    },
+    "4kcN5tQwWMhFwJI02wRs6": {
+      "id": "4kcN5tQwWMhFwJI02wRs6",
+      "title": "old",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Meeting.old",
+            "id": "4kcN5tQwWMhFwJI02wRs6",
+            "vaultName": "vault"
+          },
+          "value": "user.bates_consistent_2013",
+          "alias": "@bates_consistent_2013",
+          "position": {
+            "start": {
+              "line": 12,
+              "column": 153,
+              "offset": 603
+            },
+            "end": {
+              "line": 12,
+              "column": 175,
+              "offset": 625
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.bates_consistent_2013"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Meeting.old",
+            "id": "4kcN5tQwWMhFwJI02wRs6",
+            "vaultName": "vault"
+          },
+          "value": "user.han_tests_2015",
+          "alias": "@han_tests_2015",
+          "position": {
+            "start": {
+              "line": 13,
+              "column": 144,
+              "offset": 770
+            },
+            "end": {
+              "line": 13,
+              "column": 159,
+              "offset": 785
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.han_tests_2015"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Meeting.old",
+            "id": "4kcN5tQwWMhFwJI02wRs6",
+            "vaultName": "vault"
+          },
+          "value": "user.baltagi_identification_2017",
+          "alias": "@baltagi_identification_2017",
+          "position": {
+            "start": {
+              "line": 13,
+              "column": 165,
+              "offset": 791
+            },
+            "end": {
+              "line": 13,
+              "column": 193,
+              "offset": 819
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.baltagi_identification_2017"
+          }
+        }
+      ],
+      "anchors": {
+        "monte-carlo-study-results": {
+          "type": "header",
+          "text": "Monte Carlo Study Results",
+          "value": "monte-carlo-study-results",
+          "line": 8,
+          "column": 0
+        }
+      },
+      "fname": "Meeting.old",
+      "updated": 1638362839564,
+      "created": 1638362832368,
+      "parent": "fHzGITjWkNNkiwsQpdex4",
+      "children": [],
+      "data": {},
+      "contentHash": "119bc7fbe34555c92ae22009c34c9f3a",
+      "custom": {}
     },
     "HgXYpL8CJLCszNUOmbHhP": {
       "id": "HgXYpL8CJLCszNUOmbHhP",
@@ -7793,12 +8067,12 @@
             "start": {
               "line": 20,
               "column": 43,
-              "offset": 743
+              "offset": 750
             },
             "end": {
               "line": 20,
               "column": 50,
-              "offset": 750
+              "offset": 757
             },
             "indent": []
           },
@@ -7821,12 +8095,12 @@
             "start": {
               "line": 28,
               "column": 16,
-              "offset": 1944
+              "offset": 1951
             },
             "end": {
               "line": 28,
               "column": 55,
-              "offset": 1983
+              "offset": 1990
             },
             "indent": []
           },
@@ -7848,12 +8122,12 @@
             "start": {
               "line": 28,
               "column": 62,
-              "offset": 1990
+              "offset": 1997
             },
             "end": {
               "line": 28,
               "column": 68,
-              "offset": 1996
+              "offset": 2003
             },
             "indent": []
           },
@@ -7875,12 +8149,12 @@
             "start": {
               "line": 65,
               "column": 2,
-              "offset": 3927
+              "offset": 3934
             },
             "end": {
               "line": 65,
               "column": 25,
-              "offset": 3950
+              "offset": 3957
             },
             "indent": []
           },
@@ -7902,12 +8176,12 @@
             "start": {
               "line": 69,
               "column": 2,
-              "offset": 3973
+              "offset": 3980
             },
             "end": {
               "line": 69,
               "column": 25,
-              "offset": 3996
+              "offset": 4003
             },
             "indent": []
           },
@@ -7969,7 +8243,7 @@
         }
       },
       "fname": "DFM",
-      "updated": 1638162715776,
+      "updated": 1638365125988,
       "created": 1634214992986,
       "parent": "PhD",
       "children": [
@@ -7977,7 +8251,7 @@
         "1jV50YftmiErRFb7OgrEo"
       ],
       "data": {},
-      "contentHash": "9ce103243e368a3e4ef572c899694bb2",
+      "contentHash": "78a77b687f8c4a2c0b1aeaac077af1eb",
       "custom": {
         "geometry": "margin=2cm",
         "bibliography": [

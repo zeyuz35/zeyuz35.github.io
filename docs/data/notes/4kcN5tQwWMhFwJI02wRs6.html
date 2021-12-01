@@ -1,0 +1,48 @@
+<h1 id="old"><a aria-hidden="true" class="anchor-heading" href="#old"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>old</h1>
+<h3 id="monte-carlo-study-results"><a aria-hidden="true" class="anchor-heading" href="#monte-carlo-study-results"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Monte Carlo Study Results</h3>
+<p>Below is summary table of how a DFM can "break" and what effect (if any) this has on the
+number of static factors in a representation. Presumably, any consistent criteria
+will estimate the number of static factors.</p>
+<p>Each change has been studied in the context of Monte Carlo simulations. Results </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Change</th><th>Effect</th><th>Comments</th><th>Confirmed in literature?</th></tr></thead><tbody><tr><td>Changes in variance of error term</td><td>No change</td><td>Perhaps unexpected, large changes in idiosyncratic term have no effect on factor estimation</td><td>Yes, see [<a title="Private" style="color: brown" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank">@bates_consistent_2013 (Private)</a>]</td></tr><tr><td>Change in loading matrix</td><td>Changes the number of factors</td><td>See equivalent representation theorem in  for precise number of factors</td><td>Yes, see [<a title="Private" style="color: brown" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank">@han_tests_2015 (Private)</a>] or [<a title="Private" style="color: brown" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank">@baltagi_identification_2017 (Private)</a>]</td></tr><tr><td>Change in individual loadings</td><td>Doubles factors</td><td>Special case of change in loading matrix - type 1 break (all columns of loadings break idiosyncratically), however, how large this needs to be to affect it is unclear</td><td>Yes, but no results on orders</td></tr><tr><td>Change in variance of factors</td><td>NO change</td><td>This doesn't make sense, should be observationally equivalent to change in loadings</td><td>Baltagi et al make a comment that this cannot be distinguished from a change in loadings</td></tr><tr><td>Change in dynamics of factors</td><td>NO change</td><td>More work needed, but at present, does not make sense</td><td>No work on how to reconcile static with dynamic factors - not sure if necessary if static ones are consistent for dynamic space anyway?</td></tr></tbody></table>
