@@ -1,0 +1,25 @@
+<h1 id="machine-learning-models"><a aria-hidden="true" class="anchor-heading" href="#machine-learning-models"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Machine Learning Models</h1>
+<h2 id="linear-models"><a aria-hidden="true" class="anchor-heading" href="#linear-models"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Linear Models</h2>
+<p>The standard linear model. </p>
+<p>Note that these are also fit with quantile loss to yield the LADS estimator.</p>
+<h2 id="penalized-linear-models"><a aria-hidden="true" class="anchor-heading" href="#penalized-linear-models"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Penalized Linear Models</h2>
+<h2 id="random-forests"><a aria-hidden="true" class="anchor-heading" href="#random-forests"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Random Forests</h2>
+<p>Note that randomforestSRC seems to be the most fully featured and optimized package for actually fitting random forests.</p>
+<h2 id="neural-networks"><a aria-hidden="true" class="anchor-heading" href="#neural-networks"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Neural Networks</h2>
+<p>A disaster, and it seems that shallow learning (simpler models) tend to outperform deeper models.</p>
+<p>Use tensorflow to fit these. A GPU is not strictly necessary, as the data and models are not actually complex enough. The bottleneck seems to be transferring the data from the CPU to the GPU, not the actual fitting. Still, it is marginally faster, so it is recommended to set this up properly.</p>
+<p>See <a href="/notes/3aMMcBxQ33Km5ovBrmbT6">Tensorflow</a> for details on setting this up.</p>
+<h2 id="fforma-model-averaging"><a aria-hidden="true" class="anchor-heading" href="#fforma-model-averaging"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>FFORMA Model Averaging</h2>
+<p>This was the second place winner of the M4 competition.
+<a href="https://github.com/pmontman/fforma">https://github.com/pmontman/fforma</a></p>
+<p>Note that the actual winner of the M4 competition used a smooth recurring neural network (ES RNN) method, by an Uber data scientist.
+<a href="https://eng.uber.com/m4-forecasting-competition/">https://eng.uber.com/m4-forecasting-competition/</a>)</p>
+<h2 id="aws-deepar"><a aria-hidden="true" class="anchor-heading" href="#aws-deepar"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>AWS DeepAR</h2>
+<p>AWS DeepAR is a state of art RNN based model, which is essentially a VAR (despite its name being AR), but instead of a strict VAR structure, regressors and the feature space are learned via an ML based approach.</p>
+<p>The strength of DeepAR lies in</p>
+<ol>
+<li>Being scalable, and easily deployable on AWS infrastructure</li>
+<li>Being able to learn hidden features among a very large number of time series</li>
+</ol>
+<p>The latter point is very important, as DeepAR was mostly formulated to forecast things such as consumer demand for products, and in this context DeepAR reportedly does well with an input of all possible catalogued sales data. DeepAR's own white paper even suggests that for simpler data structures with not as much data, simpler methods such as AR, ETS, etc perform much better.</p>
+<p>Setting this up is not easy and expensive. See <a href="/notes/pHk638EFKNsd7l8ofo19m">Amazon Web Services</a> for details.</p>

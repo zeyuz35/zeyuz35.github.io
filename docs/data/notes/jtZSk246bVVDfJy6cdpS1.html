@@ -1,0 +1,88 @@
+<h1 id="macroeconomic-datasets"><a aria-hidden="true" class="anchor-heading" href="#macroeconomic-datasets"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Macroeconomic Datasets</h1>
+<p>This document contains a compilation of various macroeconomic datasets, and notes for any details that are necessary.</p>
+<p>Specific details about missing data (important!) etc are documented.</p>
+<h2 id="checklist"><a aria-hidden="true" class="anchor-heading" href="#checklist"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Checklist</h2>
+<p>[x] FREDMD
+[] FREDQD
+[x] LCDMA
+[x] LCMMAQ
+[x] UKMD
+[] AUMD</p>
+<h2 id="us-data"><a aria-hidden="true" class="anchor-heading" href="#us-data"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>US Data</h2>
+<p>A note on transformation codes (from Ben).</p>
+<p>The SW and FREDMD tcodes are completely consistent with one another, despite what Ben suspected.</p>
+<p>However, some of these codes are controversial(?) in the literature. E.g. Unemployment should be kept level, FEDFUND should be kept level.</p>
+<h3 id="stock-and-watson"><a aria-hidden="true" class="anchor-heading" href="#stock-and-watson"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Stock and Watson</h3>
+<p>Stock and Watson pioneered the collection of macroeconomic datasets, and this is a pre-cursor/inspiration for the FRED databases later on. </p>
+<p>Although considered to be outdated, they remain popular even among newer papers, in order for authors to reconcile/compare their results to what has been previously done.</p>
+<p>The following two are the most revelant ones that appear in the literature.</p>
+<p>SW2005
+SW2009</p>
+<h3 id="fred-md-us"><a aria-hidden="true" class="anchor-heading" href="#fred-md-us"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>FRED-MD (US)</h3>
+<p>[<a title="Private" style="color: brown" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank">@mccracken_fred-md_nodate (Private)</a>]</p>
+<p>The most well known dataset, and the focus of many papers. </p>
+<p>The implementation of this is in FREDMD.R. This currently uses the fbi package as a pseudo-wrapper for applying the transformations, but this is not strictly necessary.</p>
+<h3 id="missing-data"><a aria-hidden="true" class="anchor-heading" href="#missing-data"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Missing Data</h3>
+<ul>
+<li>ANDENOx = New Orders for Nondefense Capital Goods, starts from 1968 03</li>
+<li>TWEXMMTH = Trade Weighted US DOllar Index , starts from 1973 02</li>
+<li>UMCSNETx = Consumer Sentiment Index, starts from 1978 02</li>
+<li>ACOGNO = New orders for Consumer Goods, starts from 1992 02</li>
+<li>VXOCLSx = VXO index, starts from 1962 07</li>
+</ul>
+<p>ISM series were discontinued after 2016 after a falling out between FRED and ISM. These were kept in the dataset for legacy reasons, but present a missing data problem.
+The ISM series are:</p>
+<ul>
+<li>ID 19 NAPMPI</li>
+<li>ID 49 NAPMEI</li>
+<li>ID 60 NAPM</li>
+<li>ID 61 NAPMNOI</li>
+<li>ID 62 NAPMSDI</li>
+<li>ID 63 MAPMII</li>
+<li>ID 112 NAPMPRI</li>
+</ul>
+<h2 id="fred-qd-us"><a aria-hidden="true" class="anchor-heading" href="#fred-qd-us"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>FRED-QD (US)</h2>
+<h2 id="au-md-australia"><a aria-hidden="true" class="anchor-heading" href="#au-md-australia"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>AU-MD (Australia)</h2>
+<p>[<a title="Private" style="color: brown" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank">@hartigan_factor_2020 (Private)</a>]</p>
+<p>Luke Hartigan's website provides an AUMD dataset, which though not continously updated, is quite large and available.</p>
+<h2 id="uk-md-uk"><a aria-hidden="true" class="anchor-heading" href="#uk-md-uk"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>UK-MD (UK)</h2>
+<p>Can Machine Learning catch the COVID19 recession?</p>
+<h2 id="can-md-canada"><a aria-hidden="true" class="anchor-heading" href="#can-md-canada"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>CAN-MD (Canada)</h2>
+<p>CAN MD </p>
+<p>[<a title="Private" style="color: brown" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank">@fortin-gagnon_large_nodate (Private)</a>].</p>
+<h2 id="wharton-data-research-services-wrds"><a aria-hidden="true" class="anchor-heading" href="#wharton-data-research-services-wrds"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Wharton Data Research Services (WRDS)</h2>
+<h2 id="thomson-reuters-datastream"><a aria-hidden="true" class="anchor-heading" href="#thomson-reuters-datastream"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Thomson Reuters DataStream</h2>
+<h2 id="ludvigson"><a aria-hidden="true" class="anchor-heading" href="#ludvigson"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Ludvigson</h2>
+<p>There is an old macro + financial dataset; however, this is consdiered to be very outdated.</p>
+<p>The most up to date dataset is macro + financial, as described in the dat appendix. Unexcitingly, the macro dataset is just FREDMD. </p>
+<p>However, the financial dataset is a mish mash of Kenneth French and CRSP data. This unfortunately does not seem to be provided at all, though there are instructions for how one would be able to construct it themselves.</p>
+<p>Presumably, this is because CRSP has some strict rules on sharing the data.</p>
+<p><a href="https://www.sydneyludvigson.com/data-and-appendixes">https://www.sydneyludvigson.com/data-and-appendixes</a></p>
+<p>For more details, see <a href="/notes/aeRLPLhAQFy8PWqRNmTpG">JLN Financial Data</a>.</p>
+<h2 id="fama-french"><a aria-hidden="true" class="anchor-heading" href="#fama-french"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Fama French</h2>
+<p>Fama French factors and portfolios are available from Kenneth French's website:</p>
+<p><a href="https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html">https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html</a></p>
+<p>However, these are all offered in the form of excel files which are notorious to work with. </p>
+<p>See <a href="/notes/kdWEzmfE1rSZAZX1GwXsP">Fama French</a> for more info.</p>
+<h2 id="notes-on-transformations"><a aria-hidden="true" class="anchor-heading" href="#notes-on-transformations"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Notes on Transformations</h2>
+<p>Transformations do matter a lot for macroeconomic analysis, though this is arguably less pronounced for large dimensional methods, such as PCA, which are inherently robust.</p>
+<p>Some potentially unreasonable decisions are:</p>
+<ul>
+<li>keeping unemployment or interest rates in levels rather
+than applying first differences, or vice versa</li>
+</ul>
+<hr>
+<h2 id="children"><a aria-hidden="true" class="anchor-heading" href="#children"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Children</h2>
+<ol>
+<li><a href="/notes/oxdsOpVcDvBS6LK2g2u5q">AUMD</a></li>
+<li><a href="/notes/PxJVVcxvyNz7ScqpSnMOV">DataStream</a></li>
+<li><a href="/notes/chmzLZHhU0FlSUga1u8jn">Dataset Extensions</a></li>
+<li><a href="/notes/fcutUIFEqfglhag1gNlwj">Datasets COVID issues</a></li>
+<li><a href="/notes/OCBJDED8DhgRzfr9tuqIE">FRED</a></li>
+<li><a href="/notes/kdWEzmfE1rSZAZX1GwXsP">Fama French</a></li>
+<li><a href="/notes/aeRLPLhAQFy8PWqRNmTpG">JLN Financial Data</a></li>
+<li><a href="/notes/HQNSmh6LzNUMVucvj1RWZ">LCDMA (CAN-MD)</a></li>
+<li><a href="/notes/npnnYVoOyuix5N0kKhX2O">UK</a></li>
+<li><a href="/notes/xOhZDUzpzI96q2dq7NOcn">WRDS</a></li>
+<li><a href="/notes/qG2B481xSr0LdJZXApqjH">macroXTS Documentation</a></li>
+</ol>

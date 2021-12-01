@@ -1,0 +1,32 @@
+<h1 id="bookdown"><a aria-hidden="true" class="anchor-heading" href="#bookdown"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Bookdown</h1>
+<h2 id="using-bookdown"><a aria-hidden="true" class="anchor-heading" href="#using-bookdown"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Using Bookdown</h2>
+<p>This is certainly the preferred method of actually writing the thesis/confirmation.</p>
+<p>However, it is a fucking mess.</p>
+<p>The preamble option only works for pdf outputs. This is problematic for trying to convert this to a html website which you can deploy.</p>
+<p>Additionally, it imposes too much of a strict hierarchy. I.e. it is not straightforward to scale and add more and more subsections over time.</p>
+<p>Changing between html and pdf formats is not as straightforward as it may seem.</p>
+<p>Changing the output format by itself is not enough. </p>
+<p>You will need to change/remvoe _output.yml to the corresponding format, and back again. </p>
+<p>Recommend to just comment the relevant lines out, etc.</p>
+<h2 id="yaml"><a aria-hidden="true" class="anchor-heading" href="#yaml"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>YAML</h2>
+<p>use this yaml:</p>
+<pre><code>title: "PhD"
+author: "Ze Yu Zhong"
+date: "`r Sys.Date()`"
+documentclass: book
+site: bookdown::bookdown_site
+output: 
+  bookdown::bs4_book:
+    header_includes: |
+      \newcommand{\convp}{\overset{p}{\to}}
+      \newcommand{\convd}{\overset{d}{\to}}
+bibliography: [references.bib, book.bib, packages.bib]
+# url: your book url like https://bookdown.org/yihui/bookdown
+# cover-image: path to the social sharing image like images/cover.jpg
+description: |
+  PhD Thesis 
+biblio-style: apalike
+csl: chicago-fullnote-bibliography.csl
+</code></pre>
+<p>Unfortunately this is a little janky, because it runs the header_includes once for each rmd file and is therefore redefining the same macros a lot</p>
+<p>However, this is the only way I coul dget it to work consistently across both html and pdf formats</p>

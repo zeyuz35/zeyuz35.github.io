@@ -1,0 +1,47 @@
+<h1 id="hausdorff-critical-region"><a aria-hidden="true" class="anchor-heading" href="#hausdorff-critical-region"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Hausdorff Critical Region</h1>
+<p>Hausdorff Critical Region project (simulation work for Don and Xueyan).</p>
+<h2 id="literature-overview-and-motivation"><a aria-hidden="true" class="anchor-heading" href="#literature-overview-and-motivation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Literature Overview and Motivation</h2>
+<p>There is a literature that exists called set identification of average treatment effects. This occurs when we loosen our assumptions on a standard treatment effect model, and loose point identification of the ATE, but are still able to identify a "set" of viable ATEs which are compatible. These are also referred to as ATE bounds.</p>
+<p>There exist many different ways to actually get these bounds. E.g. SV bounds, Manski bounds, Chesher bounds. We focus on Chesher Bounds, which are one such formulation of the ATE bound.</p>
+<p>As a natural consequence, one may be interested in conducting inference on the entire set of ATEs, and produce confidence "intervals", which are now called "confidence regions", to distinguish them. </p>
+<p>There is a literature on producing such confidence regions, the most prominent of which are CLR's half median unbiased estimator.</p>
+<p>Chuhui's earlier paper had a finding which discovered that the QMLE RVBP's confidence interval of the ATE (not ATE set), naively used as a confidence region, produced somewhat reasonable results.</p>
+<p>This leads us to Don and Xueyan's current paper, which is a bootstrap based approach to calculating the confidence region.</p>
+<p>The approach is simple: use a bootstrap to simple calculate the ATE set, and use the quantiles of each of the sets as a confidence region estimate. </p>
+<p>Don is interested in seeing how this performs in the context as a QMLE (ie mis specified) estimator. </p>
+<p>Results:</p>
+<ul>
+<li>works well on gaussian errors</li>
+<li>works reasonably well on skew errors</li>
+<li>works absolutely terribly on log normal errors</li>
+</ul>
+<p>Note that this required a LOT of monte carlo simulation, which because this was based on a bootstrap, was very computationally demanding.</p>
+<p>A full set of experiments take about a week on MONARCH/my desktop PC/macbook (these are all fairly similar in computational power).</p>
+<p>MONARCH is currently in the process of upgrading its compute nodes, will be exciting to see how fast they are!</p>
+<h2 id="skew-normal-and-log-normal"><a aria-hidden="true" class="anchor-heading" href="#skew-normal-and-log-normal"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Skew normal and log normal</h2>
+<p>Note that to be a valid error process, these need to be 0 mean, and standardized. Hence, these have a very different parameterization compared to the literature and what is avialable in terms of statistical packages.</p>
+<p>Much of this need to be translated from Chuhui's GAUSS code, which was very tortuous.</p>
+<p>The Chesher Bound function was ported to Cpp, resulting in a massive speedup.</p>
+<h2 id="monte-carlo"><a aria-hidden="true" class="anchor-heading" href="#monte-carlo"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Monte Carlo</h2>
+<p>Be very careful with the Monte Carlo design.</p>
+<p>Essentially, we want the design to be "reasonable". All X cells must occur fairly frequently, and need to actually have a large enough effect, but not large enough to drown out the treatment. The treatment itself also has a similar balancing act.</p>
+<p>This is very difficult, and if this is ill behaved it WILL show up later on, particularly in the calculation of CLR bounds, which require a derivative calculation.</p>
+<p>Finding a reasonable monte carlo design was by and large, a tortuous trial and error exercise, and playing around with the theoretical true ATEs, bounds, etc.</p>
+<h2 id="numerical-issues"><a aria-hidden="true" class="anchor-heading" href="#numerical-issues"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Numerical Issues</h2>
+<p>The calculation of the CLR bounds requires the use of a gradient, which is provided numerically. Unfortunately on some more poorly specified simulation designs, the function can be very flat, resulting in a 0 gradient, in turn resulting in something that is undefined.</p>
+<p>A numerical gradient is necessary, because the Chesher Bound involves the use of a inf/sup operator.</p>
+<p>Note that this inf/sup operator is also a huge bottleneck in the code atm. I can't figure out how to port this, and calculating its derivative in C++, so it is very slow in R.</p>
+<p>The HCRs for the log normal errors can also be very ill behaved.</p>
+<h2 id="github"><a aria-hidden="true" class="anchor-heading" href="#github"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>GitHub</h2>
+<p>Work is mostly done, and code is on GitHub.</p>
+<h2 id="plotting"><a aria-hidden="true" class="anchor-heading" href="#plotting"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Plotting</h2>
+<h2 id="monarch"><a aria-hidden="true" class="anchor-heading" href="#monarch"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>MONARCH</h2>
+<h2 id="exporting-to-excel"><a aria-hidden="true" class="anchor-heading" href="#exporting-to-excel"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Exporting to Excel</h2>
+<p>Don (and many other less technical people) prefer the format of an Excel spreadsheet.</p>
+<p>The easiest way to do this is via the xlsx package, which uses java.</p>
+<p>rJava will require a valid installation of both a JRE (for running java) and JDK (for compiling). Make sure you install these!</p>
+<hr>
+<h2 id="children"><a aria-hidden="true" class="anchor-heading" href="#children"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Children</h2>
+<ol>
+<li><a href="/notes/RMtik1c7Vr5UJfrORItCr">Simulation Design</a></li>
+</ol>

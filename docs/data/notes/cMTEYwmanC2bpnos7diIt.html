@@ -1,0 +1,50 @@
+<h1 id="r"><a aria-hidden="true" class="anchor-heading" href="#r"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>R</h1>
+<p>Some notes for more advanced topics in R.</p>
+<h2 id="s3-classes"><a aria-hidden="true" class="anchor-heading" href="#s3-classes"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>S3 Classes</h2>
+<p>The most basic, and honestly most useful class. Almost everything is done using S3.</p>
+<p>Make sure you register custom methods FIRST, then define the method.</p>
+<h2 id="reference-classes"><a aria-hidden="true" class="anchor-heading" href="#reference-classes"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Reference Classes</h2>
+<p>Don't even bother - just something that R uses internally.</p>
+<h2 id="s4-classes"><a aria-hidden="true" class="anchor-heading" href="#s4-classes"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>S4 Classes</h2>
+<p>The most formal class system of R, but even then this is a huge mess. </p>
+<p>Don't try to actually implement something using this system, too much hassle.</p>
+<p>However, it is important to learn how to interface. Use the @ symbol to access items within S4 objects.</p>
+<pre><code>S4_obj@
+</code></pre>
+<h2 id="r6-classes"><a aria-hidden="true" class="anchor-heading" href="#r6-classes"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>R6 Classes</h2>
+<p>These are the mainstream alternative to S3 for when you want something more advanced.</p>
+<p>In general, a pure OOP approach isn't actually that good for most data science related things.</p>
+<p>R6 is mostly useful for other applications, such as ggplot (famously). </p>
+<p>Data science workflows tend to benefit more from a functional approach. OOP systems such as R6 encourage less functional approaches, where methods can update objects in place. This is messy, not recommended, and certainly not to my taste.</p>
+<h2 id="general-speed-up"><a aria-hidden="true" class="anchor-heading" href="#general-speed-up"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>General Speed up</h2>
+<p>Try to vectorise code as much as possible, and use built in functions. Usually many base R functions are directly calling optimized LAPACK or underlying C/C++ code anyway.</p>
+<p>A notable exception to this is the tidyverse, which is stubbornly entirely written in R itself.</p>
+<p>In terms of data structures, data frames/tibbles are required for tidyverse, which is unfortunate.</p>
+<p>But, for other uses, try to stick it either data.table, or matrix (or equivalents such as arrays, xts, etc).</p>
+<h2 id="paralllelization"><a aria-hidden="true" class="anchor-heading" href="#paralllelization"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Paralllelization</h2>
+<p>Multiple so called backends exist for multicore. The best and most consistent of these is just doFuture, as this is a generalization of other parallel backends.</p>
+<p>The enable multifork = TRUE is unstable with GUIs and disabled by default, but in my experience seems stable enough.</p>
+<p>Use options to force enable it.</p>
+<p>This is by far the easiest way to speed up code.</p>
+<h2 id="rcpp"><a aria-hidden="true" class="anchor-heading" href="#rcpp"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Rcpp</h2>
+<p>When multicore isn't enough, and vectorisation isn't enough, you will unfortunately need to use Rcpp, which involves re-writing slow functions in C++ code. </p>
+<p>Often, these will be linear algebra manipulations. DO NOT use anything other than RcppArmadillo - this is the most full featured and easiest one to work with. It is also well documented.</p>
+<p>Re-writing stuff in C++ is very time consuming, and potentially does not have much payoff, depending on the function. Use the R profiler to see where your code is slow, and most of those sections. </p>
+<p>In general, loops, etc are obvious candidates for C++.</p>
+<h2 id="rcpp-errors-on-macos"><a aria-hidden="true" class="anchor-heading" href="#rcpp-errors-on-macos"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Rcpp Errors on MacOS</h2>
+<p>Linux plays perfectly with Rcpp, but MacOS is a fucking mess.</p>
+<p>Taken from this guide:
+<a href="https://yiqingxu.org/public/BigSurError.pdf">https://yiqingxu.org/public/BigSurError.pdf</a></p>
+<p><a href="https://stackoverflow.com/questions/29992066/rcpp-warning-directory-not-found-for-option-l-usr-local-cellar-gfortran-4-8">https://stackoverflow.com/questions/29992066/rcpp-warning-directory-not-found-for-option-l-usr-local-cellar-gfortran-4-8</a></p>
+<p>Also, openMP is finicky and actually requires you to explicitly declare loops to be parallelized. Simply enabling the plugin should not do anything.</p>
+<p>The previous point is important because Apple sucks and the clang they ship with macOS has openMP disabled. Apparently there are ways to enable this, but this was messy and i haven't gotten this to work.</p>
+<p>Rcpp will love to throw hissy fits about not having gfortran installed. gfortran has not yet been ported to ARM64 yet, so currently just install the intel version and have it work via Rosetta 2. </p>
+<p>Even so, the paths for gfortran are screwed up.</p>
+<p>Several conflicting sources, but seemingly the easiest way to is to edit your makevars file:</p>
+<pre><code>nano ~/.R/Makevars
+</code></pre>
+<p>and make it contain the following:</p>
+<pre><code>n
+</code></pre>
+<p>Note that FLIBS will require you to specify which specific path for gfortran explicitly. A workaround for this is provided in the stackexchange link, which directly queries gfortran to get the proper lib path automatically. This should be stable enough even with updates.</p>
+<p>Holy hell!</p>
