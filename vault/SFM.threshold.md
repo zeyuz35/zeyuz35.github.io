@@ -4,6 +4,8 @@ title: Static Factor Models with Thresholding
 desc: ''
 updated: 1635422533164
 created: 1635421959801
+bibliography: [references.bib]
+reference-section-title: References
 ---
 #threshold
 

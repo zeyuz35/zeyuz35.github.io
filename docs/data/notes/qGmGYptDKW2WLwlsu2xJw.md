@@ -1,11 +1,17 @@
 
-A collection of so called "stylized facts" in the empirical literature. This is listed in chronological order. 
+A collection of notable economic events, in chronological order.
 
 Note that because these are all stylized facts in economics, these are *all* controversial. Particularly controversial bits are emphasized.
 
 The plus side of this controversy is that if something strange happens in the data, you can come here and pick and choose possible explanations.
 
 Most stylized facts and events are noted here, even if they are a bit minor. The minor events may be useful for counterfactual analysis. 
+
+## 1971
+
+Not that serious, but ask Ben for some opinions.
+
+https://wtfhappenedin1971.com/
 
 ## Energy Crisis (1973 and 1979)
 

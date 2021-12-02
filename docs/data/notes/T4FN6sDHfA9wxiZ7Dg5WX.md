@@ -67,5 +67,9 @@ Methods etc are all broken and even the example code given does not work - no id
 ## One sided GDFM
 
 [@forni_generalized_2005]
+
+Note that this method is stated by [@stock_dynamic_2011] as not *adjusting* for any serial correlation in the errors, and therefore may be inefficient. 
+
+The actual method does not have strict assumptions on the errors. The error term just needs to be completely orthogonal to the primitive shocks, zero mean and stationary, and have limited cross sectional correlation.
 ## Unrestricted GDFM
 

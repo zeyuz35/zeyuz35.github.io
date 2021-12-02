@@ -125,7 +125,5 @@
     "enableMermaid": true,
     "enablePrettyRefs": true,
     "enableKatex": true
-  },
-  "noLegacyNoteRef": true,
-  "usePrettyRefs": true
+  }
 }

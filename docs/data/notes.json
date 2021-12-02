@@ -13,8 +13,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1638365732317,
-      "created": 1638365732317,
+      "updated": 1638408012812,
+      "created": 1638408012812,
       "parent": null,
       "children": [],
       "data": {}
@@ -216,7 +216,7 @@
       "created": 1595961348801,
       "parent": null,
       "children": [
-        "nA5LxTgruLEzcUt6tzsJT",
+        "Wnsnl9Ff8hLGapBoL37BK",
         "t58wEmhAtf1GlHmO",
         "CQTUwoXQNcd0Y7la7IaAn",
         "9s2d4L1UHWFWCdtORYT2Q",
@@ -2055,7 +2055,7 @@
       ],
       "anchors": {},
       "fname": "SFM",
-      "updated": 1638253366374,
+      "updated": 1638400631326,
       "created": 1634735127231,
       "parent": "PhD",
       "children": [
@@ -2069,10 +2069,14 @@
         "e2FJ7pgw5EQL0eELVXBaS"
       ],
       "data": {},
-      "contentHash": "e1d31f570df129e6a0ac9cdef9e33957",
+      "contentHash": "24f8713d16c01d3d3ee3bffa6ac972a1",
       "stub": false,
       "custom": {
-        "stub": true
+        "stub": true,
+        "bibliography": [
+          "references.bib"
+        ],
+        "reference-section-title": "References"
       }
     },
     "e2FJ7pgw5EQL0eELVXBaS": {
@@ -2117,7 +2121,7 @@
           "type": "header",
           "text": "Implementation",
           "value": "implementation",
-          "line": 15,
+          "line": 18,
           "column": 0
         }
       },
@@ -2127,8 +2131,13 @@
       "parent": "0R61RLuT7e3hswR2v6o0w",
       "children": [],
       "data": {},
-      "contentHash": "c19c41c2e1324d8c61053d7e069f431b",
-      "custom": {}
+      "contentHash": "5b0d10d72180e77d2c8a054c5b72ede8",
+      "custom": {
+        "bibliography": [
+          "references.bib"
+        ],
+        "reference-section-title": "References"
+      }
     },
     "UCKQQIP3xmPCV4pYAWA4e": {
       "id": "UCKQQIP3xmPCV4pYAWA4e",
@@ -2144,182 +2153,182 @@
           "type": "header",
           "text": "Monte Carlo Designs",
           "value": "monte-carlo-designs",
-          "line": 8,
+          "line": 11,
           "column": 0
         },
         "breitung-and-eickmeier-2011": {
           "type": "header",
           "text": "Breitung and Eickmeier (2011)",
           "value": "breitung-and-eickmeier-2011",
-          "line": 14,
+          "line": 17,
           "column": 0
         },
         "bates-et-al-2013": {
           "type": "header",
           "text": "Bates et al (2013)",
           "value": "bates-et-al-2013",
-          "line": 60,
+          "line": 63,
           "column": 0
         },
         "factor-space-consistency": {
           "type": "header",
           "text": "Factor Space Consistency",
           "value": "factor-space-consistency",
-          "line": 107,
+          "line": 110,
           "column": 0
         },
         "information-criteria-no-of-factors-consistency": {
           "type": "header",
           "text": "Information Criteria (no. of factors) consistency",
           "value": "information-criteria-no-of-factors-consistency",
-          "line": 109,
+          "line": 112,
           "column": 0
         },
         "chen-et-al-cdg-2014": {
           "type": "header",
           "text": "Chen et al (CDG) (2014)",
           "value": "chen-et-al-cdg-2014",
-          "line": 112,
+          "line": 115,
           "column": 0
         },
         "corradi-and-swanson-2014": {
           "type": "header",
           "text": "Corradi and Swanson (2014)",
           "value": "corradi-and-swanson-2014",
-          "line": 128,
+          "line": 131,
           "column": 0
         },
         "han-and-inoue-2014": {
           "type": "header",
           "text": "Han and Inoue (2014)",
           "value": "han-and-inoue-2014",
-          "line": 160,
+          "line": 163,
           "column": 0
         },
         "baltagi-et-al-2017": {
           "type": "header",
           "text": "Baltagi et al (2017)",
           "value": "baltagi-et-al-2017",
-          "line": 170,
+          "line": 173,
           "column": 0
         },
         "setup-1": {
           "type": "header",
           "text": "Setup 1",
           "value": "setup-1",
-          "line": 194,
+          "line": 197,
           "column": 0
         },
         "setup-2": {
           "type": "header",
           "text": "Setup 2",
           "value": "setup-2",
-          "line": 198,
+          "line": 201,
           "column": 0
         },
         "setup-3": {
           "type": "header",
           "text": "Setup 3",
           "value": "setup-3",
-          "line": 202,
+          "line": 205,
           "column": 0
         },
         "common-setup-notes": {
           "type": "header",
           "text": "Common setup notes",
           "value": "common-setup-notes",
-          "line": 206,
+          "line": 209,
           "column": 0
         },
         "baltagi-et-al-2021": {
           "type": "header",
           "text": "Baltagi et al (2021)",
           "value": "baltagi-et-al-2021",
-          "line": 212,
+          "line": 215,
           "column": 0
         },
         "setup-1-1": {
           "type": "header",
           "text": "Setup 1",
           "value": "setup-1-1",
-          "line": 228,
+          "line": 231,
           "column": 0
         },
         "setup-2-1": {
           "type": "header",
           "text": "Setup 2",
           "value": "setup-2-1",
-          "line": 232,
+          "line": 235,
           "column": 0
         },
         "setup-3-1": {
           "type": "header",
           "text": "Setup 3",
           "value": "setup-3-1",
-          "line": 236,
+          "line": 239,
           "column": 0
         },
         "common-setup-notes-1": {
           "type": "header",
           "text": "Common Setup Notes",
           "value": "common-setup-notes-1",
-          "line": 240,
+          "line": 243,
           "column": 0
         },
         "other-notes": {
           "type": "header",
           "text": "Other notes",
           "value": "other-notes",
-          "line": 248,
+          "line": 251,
           "column": 0
         },
         "ma-and-su-2021": {
           "type": "header",
           "text": "Ma and Su (2021)",
           "value": "ma-and-su-2021",
-          "line": 254,
+          "line": 257,
           "column": 0
         },
         "dgp1-1-break": {
           "type": "header",
           "text": "DGP1 (1 break)",
           "value": "dgp1-1-break",
-          "line": 269,
+          "line": 272,
           "column": 0
         },
         "dgp2-2-breaks": {
           "type": "header",
           "text": "DGP2 (2 breaks)",
           "value": "dgp2-2-breaks",
-          "line": 281,
+          "line": 284,
           "column": 0
         },
         "dgp3-no-breaks-control": {
           "type": "header",
           "text": "DGP3 (no breaks, control)",
           "value": "dgp3-no-breaks-control",
-          "line": 295,
+          "line": 298,
           "column": 0
         },
         "bai-han-and-shi-2021-forthcoming": {
           "type": "header",
           "text": "Bai, Han and Shi (2021, forthcoming)",
           "value": "bai-han-and-shi-2021-forthcoming",
-          "line": 300,
+          "line": 303,
           "column": 0
         },
         "su-and-wang-2017": {
           "type": "header",
           "text": "Su and Wang (2017)",
           "value": "su-and-wang-2017",
-          "line": 304,
+          "line": 307,
           "column": 0
         },
         "su-and-wang-2021": {
           "type": "header",
           "text": "Su and Wang (2021)",
           "value": "su-and-wang-2021",
-          "line": 316,
+          "line": 319,
           "column": 0
         }
       },
@@ -2332,8 +2341,13 @@
         "mC4GglXOGYJJAMdwMCE4j"
       ],
       "data": {},
-      "contentHash": "b92235827b7e356e5680ee3492de28c3",
-      "custom": {}
+      "contentHash": "05b18d13ff549fa74b94d9dc40087e34",
+      "custom": {
+        "bibliography": [
+          "references.bib"
+        ],
+        "reference-section-title": "References"
+      }
     },
     "mC4GglXOGYJJAMdwMCE4j": {
       "id": "mC4GglXOGYJJAMdwMCE4j",
@@ -2961,14 +2975,14 @@
         }
       },
       "fname": "SFM.inference",
-      "updated": 1637908288609,
+      "updated": 1638400583724,
       "created": 1634735273785,
       "parent": "0R61RLuT7e3hswR2v6o0w",
       "children": [
         "wQruEPvAQOC2xbS48WvgQ"
       ],
       "data": {},
-      "contentHash": "3d54a72261c7bab0e29308fb5506c493",
+      "contentHash": "8f8d4719e8c0be7cb1da595f38462145",
       "custom": {
         "bibliography": [
           "references.bib"
@@ -3843,12 +3857,12 @@
         }
       },
       "fname": "SFM.break.theory",
-      "updated": 1638253194738,
+      "updated": 1638257921885,
       "created": 1635403256841,
       "parent": "V5RkkOEtQUFg8rc2NA4D",
       "children": [],
       "data": {},
-      "contentHash": "86548b9bace162ee8d8d1380d2492ee5",
+      "contentHash": "65d5188d5d3913a9b1ace94a5c948e3d",
       "custom": {
         "bibliography": [
           "references.bib"
@@ -4923,14 +4937,14 @@
           "alias": "@bai_determining_2002",
           "position": {
             "start": {
-              "line": 76,
+              "line": 94,
               "column": 91,
-              "offset": 4049
+              "offset": 4802
             },
             "end": {
-              "line": 76,
+              "line": 94,
               "column": 112,
-              "offset": 4070
+              "offset": 4823
             },
             "indent": []
           },
@@ -4950,14 +4964,14 @@
           "alias": "@bai_inferential_2003",
           "position": {
             "start": {
-              "line": 76,
+              "line": 94,
               "column": 119,
-              "offset": 4077
+              "offset": 4830
             },
             "end": {
-              "line": 76,
+              "line": 94,
               "column": 140,
-              "offset": 4098
+              "offset": 4851
             },
             "indent": []
           },
@@ -4973,18 +4987,72 @@
             "id": "fHzGITjWkNNkiwsQpdex4",
             "vaultName": "vault"
           },
+          "value": "user.stock_chapter_2016",
+          "alias": "@stock_chapter_2016",
+          "position": {
+            "start": {
+              "line": 108,
+              "column": 60,
+              "offset": 5596
+            },
+            "end": {
+              "line": 108,
+              "column": 79,
+              "offset": 5615
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.stock_chapter_2016"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Meeting",
+            "id": "fHzGITjWkNNkiwsQpdex4",
+            "vaultName": "vault"
+          },
+          "value": "user.cheng_shrinkage_2016",
+          "alias": "@cheng_shrinkage_2016",
+          "position": {
+            "start": {
+              "line": 110,
+              "column": 22,
+              "offset": 5895
+            },
+            "end": {
+              "line": 110,
+              "column": 43,
+              "offset": 5916
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.cheng_shrinkage_2016"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Meeting",
+            "id": "fHzGITjWkNNkiwsQpdex4",
+            "vaultName": "vault"
+          },
           "value": "user.bai_determining_2007",
           "alias": "@bai_determining_2007",
           "position": {
             "start": {
-              "line": 94,
+              "line": 116,
               "column": 2,
-              "offset": 4907
+              "offset": 6237
             },
             "end": {
-              "line": 94,
+              "line": 116,
               "column": 23,
-              "offset": 4928
+              "offset": 6258
             },
             "indent": []
           },
@@ -5004,14 +5072,14 @@
           "alias": "@han_tests_2015",
           "position": {
             "start": {
-              "line": 106,
+              "line": 126,
               "column": 63,
-              "offset": 5683
+              "offset": 6948
             },
             "end": {
-              "line": 106,
+              "line": 126,
               "column": 78,
-              "offset": 5698
+              "offset": 6963
             },
             "indent": []
           },
@@ -5031,14 +5099,14 @@
           "alias": "@baltagi_identification_2017",
           "position": {
             "start": {
-              "line": 106,
+              "line": 126,
               "column": 101,
-              "offset": 5721
+              "offset": 6986
             },
             "end": {
-              "line": 106,
+              "line": 126,
               "column": 129,
-              "offset": 5749
+              "offset": 7014
             },
             "indent": []
           },
@@ -5058,14 +5126,14 @@
           "alias": "@bai_determining_2007",
           "position": {
             "start": {
-              "line": 108,
+              "line": 128,
               "column": 2,
-              "offset": 5763
+              "offset": 7153
             },
             "end": {
-              "line": 108,
+              "line": 128,
               "column": 23,
-              "offset": 5784
+              "offset": 7174
             },
             "indent": []
           },
@@ -5085,14 +5153,14 @@
           "alias": "@cheng_shrinkage_2016",
           "position": {
             "start": {
-              "line": 150,
+              "line": 170,
               "column": 4,
-              "offset": 8090
+              "offset": 9480
             },
             "end": {
-              "line": 150,
+              "line": 170,
               "column": 25,
-              "offset": 8111
+              "offset": 9501
             },
             "indent": []
           },
@@ -5112,14 +5180,14 @@
           "alias": "@stock_forecasting_2021",
           "position": {
             "start": {
-              "line": 159,
+              "line": 179,
               "column": 10,
-              "offset": 8517
+              "offset": 9907
             },
             "end": {
-              "line": 159,
+              "line": 179,
               "column": 33,
-              "offset": 8540
+              "offset": 9930
             },
             "indent": []
           },
@@ -5139,14 +5207,14 @@
           "alias": "@mccracken_fred-md_nodate",
           "position": {
             "start": {
-              "line": 161,
+              "line": 181,
               "column": 9,
-              "offset": 8551
+              "offset": 9941
             },
             "end": {
-              "line": 161,
+              "line": 181,
               "column": 34,
-              "offset": 8576
+              "offset": 9966
             },
             "indent": []
           },
@@ -5166,14 +5234,14 @@
           "alias": "@fortin-gagnon_large_nodate",
           "position": {
             "start": {
-              "line": 163,
+              "line": 183,
               "column": 8,
-              "offset": 8586
+              "offset": 9976
             },
             "end": {
-              "line": 163,
+              "line": 183,
               "column": 35,
-              "offset": 8613
+              "offset": 10003
             },
             "indent": []
           },
@@ -5193,14 +5261,14 @@
           "alias": "@hartigan_factor_2020",
           "position": {
             "start": {
-              "line": 165,
+              "line": 185,
               "column": 7,
-              "offset": 8622
+              "offset": 10012
             },
             "end": {
-              "line": 165,
+              "line": 185,
               "column": 28,
-              "offset": 8643
+              "offset": 10033
             },
             "indent": []
           },
@@ -5264,176 +5332,65 @@
           "type": "header",
           "text": "Gap: Break in Factor Dynamics",
           "value": "gap-break-in-factor-dynamics",
-          "line": 79,
+          "line": 97,
           "column": 0
         },
         "how-to-model-breaks-in-dynamics": {
           "type": "header",
           "text": "How to model breaks in dynamics?",
           "value": "how-to-model-breaks-in-dynamics",
-          "line": 99,
+          "line": 121,
           "column": 0
         },
         "small-simulation-set-up": {
           "type": "header",
           "text": "Small Simulation Set up",
           "value": "small-simulation-set-up",
-          "line": 107,
+          "line": 129,
           "column": 0
         },
         "new-research-question": {
           "type": "header",
           "text": "New Research Question",
           "value": "new-research-question",
-          "line": 119,
+          "line": 139,
           "column": 0
         },
         "potential-ideas": {
           "type": "header",
           "text": "Potential Ideas",
           "value": "potential-ideas",
-          "line": 142,
+          "line": 162,
           "column": 0
         },
         "other-unrelated-ideas": {
           "type": "header",
           "text": "Other unrelated ideas",
           "value": "other-unrelated-ideas",
-          "line": 153,
+          "line": 173,
           "column": 0
         },
         "empirical-motivation": {
           "type": "header",
           "text": "Empirical Motivation",
           "value": "empirical-motivation",
-          "line": 164,
+          "line": 184,
           "column": 0
         }
       },
       "fname": "Meeting",
-      "updated": 1638365678122,
+      "updated": 1638406199153,
       "created": 1634221843124,
       "parent": "PhD",
-      "children": [
-        "4kcN5tQwWMhFwJI02wRs6"
-      ],
+      "children": [],
       "data": {},
-      "contentHash": "eec9079602af82e3016098188b4bcb69",
+      "contentHash": "ccac808584e027fbcdd1b005da6cda57",
       "custom": {
         "bibliography": [
           "references.bib"
         ],
         "reference-section-title": "References"
       }
-    },
-    "4kcN5tQwWMhFwJI02wRs6": {
-      "id": "4kcN5tQwWMhFwJI02wRs6",
-      "title": "old",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "Meeting.old",
-            "id": "4kcN5tQwWMhFwJI02wRs6",
-            "vaultName": "vault"
-          },
-          "value": "user.bates_consistent_2013",
-          "alias": "@bates_consistent_2013",
-          "position": {
-            "start": {
-              "line": 12,
-              "column": 153,
-              "offset": 603
-            },
-            "end": {
-              "line": 12,
-              "column": 175,
-              "offset": 625
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "to": {
-            "fname": "user.bates_consistent_2013"
-          }
-        },
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "Meeting.old",
-            "id": "4kcN5tQwWMhFwJI02wRs6",
-            "vaultName": "vault"
-          },
-          "value": "user.han_tests_2015",
-          "alias": "@han_tests_2015",
-          "position": {
-            "start": {
-              "line": 13,
-              "column": 144,
-              "offset": 770
-            },
-            "end": {
-              "line": 13,
-              "column": 159,
-              "offset": 785
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "to": {
-            "fname": "user.han_tests_2015"
-          }
-        },
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "Meeting.old",
-            "id": "4kcN5tQwWMhFwJI02wRs6",
-            "vaultName": "vault"
-          },
-          "value": "user.baltagi_identification_2017",
-          "alias": "@baltagi_identification_2017",
-          "position": {
-            "start": {
-              "line": 13,
-              "column": 165,
-              "offset": 791
-            },
-            "end": {
-              "line": 13,
-              "column": 193,
-              "offset": 819
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "to": {
-            "fname": "user.baltagi_identification_2017"
-          }
-        }
-      ],
-      "anchors": {
-        "monte-carlo-study-results": {
-          "type": "header",
-          "text": "Monte Carlo Study Results",
-          "value": "monte-carlo-study-results",
-          "line": 8,
-          "column": 0
-        }
-      },
-      "fname": "Meeting.old",
-      "updated": 1638362839564,
-      "created": 1638362832368,
-      "parent": "fHzGITjWkNNkiwsQpdex4",
-      "children": [],
-      "data": {},
-      "contentHash": "119bc7fbe34555c92ae22009c34c9f3a",
-      "custom": {}
     },
     "HgXYpL8CJLCszNUOmbHhP": {
       "id": "HgXYpL8CJLCszNUOmbHhP",
@@ -6797,7 +6754,7 @@
     },
     "qGmGYptDKW2WLwlsu2xJw": {
       "id": "qGmGYptDKW2WLwlsu2xJw",
-      "title": "Empirical Stylized Facts",
+      "title": "Empirical Timeline",
       "vault": {
         "fsPath": "vault"
       },
@@ -6805,124 +6762,169 @@
       "desc": "",
       "links": [],
       "anchors": {
+        "1971": {
+          "type": "header",
+          "text": "1971",
+          "value": "1971",
+          "line": 19,
+          "column": 0
+        },
         "energy-crisis-1973-and-1979": {
           "type": "header",
           "text": "Energy Crisis (1973 and 1979)",
           "value": "energy-crisis-1973-and-1979",
-          "line": 16,
+          "line": 25,
           "column": 0
         },
         "1973-yom-kippur-war": {
           "type": "header",
           "text": "1973 Yom Kippur War",
           "value": "1973-yom-kippur-war",
-          "line": 22,
+          "line": 31,
           "column": 0
         },
         "1979-iranian-revolution": {
           "type": "header",
           "text": "1979 Iranian Revolution",
           "value": "1979-iranian-revolution",
-          "line": 23,
+          "line": 32,
           "column": 0
         },
         "great-moderation-1980s": {
           "type": "header",
           "text": "Great Moderation (1980s)",
           "value": "great-moderation-1980s",
-          "line": 25,
+          "line": 34,
           "column": 0
         },
         "stock-market-slump-1987": {
           "type": "header",
           "text": "Stock Market Slump (1987)",
           "value": "stock-market-slump-1987",
-          "line": 29,
+          "line": 38,
           "column": 0
         },
         "japanese-lost-decade-1990s": {
           "type": "header",
           "text": "Japanese Lost Decade (1990s)",
           "value": "japanese-lost-decade-1990s",
-          "line": 37,
+          "line": 46,
           "column": 0
         },
         "australian-recession-1991": {
           "type": "header",
           "text": "Australian Recession (1991)",
           "value": "australian-recession-1991",
-          "line": 41,
+          "line": 50,
           "column": 0
         },
         "asian-financial-crisis-1997": {
           "type": "header",
           "text": "Asian Financial Crisis (1997)",
           "value": "asian-financial-crisis-1997",
-          "line": 45,
+          "line": 54,
           "column": 0
         },
         "dot-com-bubble-2000": {
           "type": "header",
           "text": "Dot com bubble (2000)",
           "value": "dot-com-bubble-2000",
-          "line": 47,
+          "line": 56,
           "column": 0
         },
         "great-recession-20072008-gfc": {
           "type": "header",
           "text": "Great Recession (2007/2008 GFC)",
           "value": "great-recession-20072008-gfc",
-          "line": 49,
+          "line": 58,
           "column": 0
         },
         "european-debt-crisis-2009-onwards-still-unresolved": {
           "type": "header",
           "text": "European Debt Crisis (2009 onwards, still unresolved?)",
           "value": "european-debt-crisis-2009-onwards-still-unresolved",
-          "line": 51,
+          "line": 60,
           "column": 0
         },
         "covid19-2019---2020": {
           "type": "header",
           "text": "COVID19 (2019 - 2020)",
           "value": "covid19-2019---2020",
-          "line": 53,
+          "line": 62,
           "column": 0
         },
         "oil-price-war": {
           "type": "header",
           "text": "Oil Price War",
           "value": "oil-price-war",
-          "line": 55,
+          "line": 64,
           "column": 0
         },
         "covid19-mid-2021-onwards-right-now": {
           "type": "header",
           "text": "COVID19 (mid 2021 onwards, RIGHT NOW)",
           "value": "covid19-mid-2021-onwards-right-now",
-          "line": 61,
+          "line": 70,
           "column": 0
         },
         "inflation": {
           "type": "header",
           "text": "Inflation",
           "value": "inflation",
-          "line": 64,
+          "line": 73,
           "column": 0
         }
       },
       "fname": "Empirical",
-      "updated": 1636333213887,
+      "updated": 1638403024026,
       "created": 1636331831859,
       "parent": "PhD",
       "children": [
         "gUjqjP03KOf46B4Kwgwp5",
         "VdsFPLNgP5grh3zgh7StZ",
-        "S5vUvM5Dt30tyj9YfK9fy"
+        "S5vUvM5Dt30tyj9YfK9fy",
+        "dA7oyWAzPm353NkTj6EYg"
       ],
       "data": {},
-      "contentHash": "ea1bf17817608f893e71067b546cfb04",
-      "custom": {}
+      "contentHash": "5cc697ed533dafafc179f7c157df2363",
+      "custom": {
+        "bibliography": [
+          "references.bib"
+        ],
+        "reference-section-title": "References"
+      }
+    },
+    "dA7oyWAzPm353NkTj6EYg": {
+      "id": "dA7oyWAzPm353NkTj6EYg",
+      "title": "stylized",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "increasing-number-of-factors": {
+          "type": "header",
+          "text": "Increasing number of factors",
+          "value": "increasing-number-of-factors",
+          "line": 11,
+          "column": 0
+        }
+      },
+      "fname": "Empirical.stylized",
+      "updated": 1638403294465,
+      "created": 1638403028012,
+      "parent": "qGmGYptDKW2WLwlsu2xJw",
+      "children": [],
+      "data": {},
+      "contentHash": "33dadae1d26d1ea58df73d1a9c99a5d4",
+      "custom": {
+        "bibliography": [
+          "references.bib"
+        ],
+        "reference-section-title": "References"
+      }
     },
     "S5vUvM5Dt30tyj9YfK9fy": {
       "id": "S5vUvM5Dt30tyj9YfK9fy",
@@ -8189,6 +8191,33 @@
           "to": {
             "fname": "user.forni_generalized_2005"
           }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "DFM",
+            "id": "T4FN6sDHfA9wxiZ7Dg5WX",
+            "vaultName": "vault"
+          },
+          "value": "user.stock_dynamic_2011",
+          "alias": "@stock_dynamic_2011",
+          "position": {
+            "start": {
+              "line": 71,
+              "column": 37,
+              "offset": 4042
+            },
+            "end": {
+              "line": 71,
+              "column": 56,
+              "offset": 4061
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.stock_dynamic_2011"
+          }
         }
       ],
       "anchors": {
@@ -8238,12 +8267,12 @@
           "type": "header",
           "text": "Unrestricted GDFM",
           "value": "unrestricted-gdfm",
-          "line": 80,
+          "line": 84,
           "column": 0
         }
       },
       "fname": "DFM",
-      "updated": 1638365125988,
+      "updated": 1638404953025,
       "created": 1634214992986,
       "parent": "PhD",
       "children": [
@@ -8251,7 +8280,7 @@
         "1jV50YftmiErRFb7OgrEo"
       ],
       "data": {},
-      "contentHash": "78a77b687f8c4a2c0b1aeaac077af1eb",
+      "contentHash": "ede1c91f113aa5875b311bbb11c56be7",
       "custom": {
         "geometry": "margin=2cm",
         "bibliography": [
@@ -9753,7 +9782,7 @@
         }
       },
       "fname": "BEX6510",
-      "updated": 1637834394178,
+      "updated": 1637716395227,
       "created": 1636775361328,
       "parent": "PhD",
       "children": [],
@@ -10466,7 +10495,7 @@
       "children": [
         "wpixDwK6nWSsGr8wJygM0",
         "jU02nYSOp3VgANjM",
-        "PuRxmr9AjXevfJszWacMA",
+        "15KcvCpeocL83yR9lLCnt",
         "WXSAaFaXKrsQd07dXfKJl",
         "p1CSWjsY6fGAK69FbXkVa"
       ],
@@ -10569,8 +10598,8 @@
         "example": "https://wiki.dendron.so/notes/64f0e2d5-2c83-43df-9144-40f2c68935aa.html#steps"
       }
     },
-    "PuRxmr9AjXevfJszWacMA": {
-      "id": "PuRxmr9AjXevfJszWacMA",
+    "15KcvCpeocL83yR9lLCnt": {
+      "id": "15KcvCpeocL83yR9lLCnt",
       "title": "Qa",
       "vault": {
         "fsPath": "templates",
@@ -10582,15 +10611,15 @@
       "links": [],
       "anchors": {},
       "fname": "templates.module.qa",
-      "updated": 1638333631426,
-      "created": 1638333631426,
+      "updated": 1637716395219,
+      "created": 1637716395219,
       "parent": "xIwvEqQ71wRQ4wWk",
       "children": [
         "37atxdsQM4EZsvtg",
         "hpEdCpUITvOQQ7wQ"
       ],
       "data": {},
-      "contentHash": "a8c42218b9f6b69c0c9d61255bb548a3",
+      "contentHash": "704b0bb3385dda44cd3d44b51f747623",
       "stub": false,
       "custom": {
         "stub": true
@@ -10661,7 +10690,7 @@
       "fname": "templates.module.qa.test",
       "updated": 1631471787624,
       "created": 1627135950477,
-      "parent": "PuRxmr9AjXevfJszWacMA",
+      "parent": "15KcvCpeocL83yR9lLCnt",
       "children": [],
       "data": {},
       "contentHash": "51ca05de70b1232850e37c6b465fea88",
@@ -10697,7 +10726,7 @@
       "fname": "templates.module.qa.debug",
       "updated": 1627140460425,
       "created": 1627140450911,
-      "parent": "PuRxmr9AjXevfJszWacMA",
+      "parent": "15KcvCpeocL83yR9lLCnt",
       "children": [],
       "data": {},
       "contentHash": "fbf2f0d4e086c4597994023ce7a2828b",
@@ -11025,8 +11054,8 @@
       "contentHash": "43cca82a7f3e3a513bcbdab3bf2ea644",
       "custom": {}
     },
-    "nA5LxTgruLEzcUt6tzsJT": {
-      "id": "nA5LxTgruLEzcUt6tzsJT",
+    "Wnsnl9Ff8hLGapBoL37BK": {
+      "id": "Wnsnl9Ff8hLGapBoL37BK",
       "title": "Schemas",
       "vault": {
         "fsPath": "templates",
@@ -11038,14 +11067,14 @@
       "links": [],
       "anchors": {},
       "fname": "schemas",
-      "updated": 1638333631425,
-      "created": 1638333631425,
+      "updated": 1637716395216,
+      "created": 1637716395216,
       "parent": "PhD",
       "children": [
         "yz7BaxKE7IssV5Go"
       ],
       "data": {},
-      "contentHash": "303b3ec253d70b0f55b4cac840e0b888",
+      "contentHash": "f35545df1eeff445d17ccff4f5432436",
       "stub": false,
       "custom": {
         "stub": true
@@ -11264,7 +11293,7 @@
       "fname": "schemas.module",
       "updated": 1633299013130,
       "created": 1627924831114,
-      "parent": "nA5LxTgruLEzcUt6tzsJT",
+      "parent": "Wnsnl9Ff8hLGapBoL37BK",
       "children": [],
       "data": {},
       "contentHash": "bd2435b00821ea6c8c8e95fc3f4c34ef",
@@ -11469,7 +11498,7 @@
       "created": 1595961348801,
       "parent": null,
       "children": [
-        "nA5LxTgruLEzcUt6tzsJT",
+        "Wnsnl9Ff8hLGapBoL37BK",
         "t58wEmhAtf1GlHmO",
         "CQTUwoXQNcd0Y7la7IaAn",
         "9s2d4L1UHWFWCdtORYT2Q",
@@ -11713,7 +11742,7 @@
     "created": 1595961348801,
     "parent": null,
     "children": [
-      "nA5LxTgruLEzcUt6tzsJT",
+      "Wnsnl9Ff8hLGapBoL37BK",
       "t58wEmhAtf1GlHmO",
       "CQTUwoXQNcd0Y7la7IaAn",
       "9s2d4L1UHWFWCdtORYT2Q",

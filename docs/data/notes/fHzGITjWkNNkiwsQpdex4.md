@@ -36,7 +36,7 @@ Let us recall that a dynamic factor model can be written in the following static
 
 $$
 X_{it} = \lambda_{it}' F_t + e_{it} \\
-X_t = \Lambda_t F_t + e_t \\
+X_t = \Lambda F_t + e_t \\
 X = F \Lambda' + \mathbf{e}.
 $$
 which correspond to the individual, time slice, and whole panel representations respectively. 
@@ -44,23 +44,41 @@ which correspond to the individual, time slice, and whole panel representations 
 This is an equivalent representation of the true, dynamic form:
 
 $$
-X_{it} = \lambda_i (L)'f_t + \epsilon_{it}
+X_{t} = B (L)f_t + e_{t} \\
+A(L) f_t = \eta_t
 $$
 
-where $f_t$ is a $q$ dimensional vector of dynamic factors, also known as primitive shocks, and $\lambda_i(L)'$ denotes the $q$ dimensional lag polynomial, also called the "dynamic factor loadings".
+where $f_t$ is a $q$ dimensional vector of dynamic factors, and is itself a VAR process ($\eta_t$ can then be interpreted as the primitive shocks), and $B(L)$ denotes the $q$ dimensional lag polynomial, also called the "dynamic factor loadings".
+
+Note that there always exists a relationship between the two representations:
+
+$$
+\begin{aligned}
+X_t &= B(L) f_t + e_t \\
+X_t &= \begin{bmatrix}
+B_0 & B_1 & \dots & B_s
+\end{bmatrix} 
+\begin{bmatrix}
+f_t' & f_{t - 1}' & \dots & f_{t - s}' 
+\end{bmatrix}' + e_t \\
+X_t &= CF_t + e_t
+\end{aligned}
+$$
+
+Importantly, the relationship that $r = q(s + 1)$ always holds. Confusingly, because $F_t$ in this representation may be singular, the number of static factors estimated by IC is $r^* \leq r$, because some static factors may be perfect linear combinations of leads and lags of $f_t$.
 
 With the above, breaks can occur in the following ways:
 
 1. Breaks in the intercept of $x_{it}$ (mean shift)
 2. Breaks in the loadings $\lambda_{it}$
 3. Breaks in the idiosyncratic errors $e_{it}$
-4. Breaks in the true dynamic factors:
+4. Breaks in the true dynamic factor process:
     - Breaks in the dynamics of the factors
     - Breaks in the idiosyncratic shocks $\epsilon$
 
 It can be shown that a break in the intercept can be equivalent to a break in the loading (set one factor to be constant).
 
-Currently, representation theorems handle the cases of breaks in factor loadings quite comprehensively.
+Currently, representation theorems handle the cases of breaks in factor loadings quite comprehensively. These were all formulated for the static factor representation, and *only* for the case of breaks in $\Lambda$.
 
 Breaks in idiosyncratic errors, assuming that the errors are still independent of the factors and loadings, do not affect estimation, except for the general case of changing the signal to noise ratio.
 
@@ -87,6 +105,10 @@ A break in factor dynamics is something I think is empirically relevant:
   - the dynamic factors can be interpreted as the primitive shocks which propagate through the economy, in the context of factor models
   - Even if one is not inclined to believe in a change in dynamics of the factors, it could be more easily argued that a change in the variance of the idiosyncratic shocks to the factors is believable
 
+A break in the factor VAR dynamics is also something that [@stock_chapter_2016] explicitly calls for. They note that at least some of the tests proposed by the literature thus far will have some power against these sorts of breaks in factor dynamics, and the result of these tests is quite ambiguous for the purposes of interpretation.
+
+They also note that [@cheng_shrinkage_2016]'s normalization of the factor innovations to be homoskedastic implies that the a break in the factor innovation errors will show up as a break in loadings. However, this latter point is unclear.
+
 #### How to model breaks in dynamics?
 
 Literature linking the dynamic factors and the static factors tends to be scarce.
@@ -101,9 +123,7 @@ Simulation set up: factor process changes from AR1 to AR2 (made sure it was stat
 
 Conjecture: if one can find a way to find the break, then conditional on partitioning the break, the number of factors in each should be consistent.
 
-However, this leads to the problem of testing for such a break.
-
-Simulation shows that existing tests are mixed against this. [@han_tests_2015] has some power, but [@baltagi_identification_2017] does not.
+Simulation shows that existing tests are mixed against this. [@han_tests_2015] has some power, but [@baltagi_identification_2017] does not. Simulation also shows that in general, the number of factors estimated does not increase - but this needs more looking into.
 
 [@bai_determining_2007] provide a representation theorem for how a dynamic factor model can always be written as a static one. However, the actual no. of factors can be ambiguous depending on the what the dynamics precisely are.
 

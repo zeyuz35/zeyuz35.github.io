@@ -4,6 +4,8 @@ title: Monte Carlo Designs
 desc: ''
 updated: 1638337652911
 created: 1635206782910
+bibliography: [references.bib]
+reference-section-title: References
 ---
 
 # Monte Carlo Designs

@@ -2,7 +2,7 @@
 id: LvkZzWN557soKo2Cg4JAc
 title: Static Factor Model Inference
 desc: ''
-updated: 1637908288609
+updated: 1638400583724
 created: 1634735273785
 bibliography: [references.bib]
 reference-section-title: References

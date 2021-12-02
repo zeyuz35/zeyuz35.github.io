@@ -2,7 +2,7 @@
 id: T4FN6sDHfA9wxiZ7Dg5WX
 title: Dynamic Factor Models
 desc: ''
-updated: 1638365125988
+updated: 1638404953025
 created: 1634214992986
 geometry: margin=2cm
 bibliography: [references.bib]
@@ -77,5 +77,9 @@ Methods etc are all broken and even the example code given does not work - no id
 ## One sided GDFM
 
 [@forni_generalized_2005]
+
+Note that this method is stated by [@stock_dynamic_2011] as not *adjusting* for any serial correlation in the errors, and therefore may be inefficient. 
+
+The actual method does not have strict assumptions on the errors. The error term just needs to be completely orthogonal to the primitive shocks, zero mean and stationary, and have limited cross sectional correlation.
 ## Unrestricted GDFM
 

@@ -61,11 +61,15 @@ This parallels FGLS to OLS a lot.
 
 Essentially:
 
-1. Use some consitent estimator of the factors/loadings as a first step, such as PCA
+1. Use some consistent estimator of the factors/loadings as a first step, such as PCA
 2. Using the residuals, construct $\Omega$, the varcov matrix of the errors
 3. Re-weight the data with its inverse, and run PCA on it again, with a slight scaling difference
 
 The resulting estimator can be shown to be asymptotically more efficient
 
 Not sure why people don't use this in applied work, perhaps doesn't actually do very well in practice?
+
+## Other Issues
+
+[@boivin_are_2006] show empirically that adding groups of highly correlated variables tends to deteriorate PCA's ability to recover the factor space.
 

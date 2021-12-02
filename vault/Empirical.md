@@ -1,18 +1,26 @@
 ---
 id: qGmGYptDKW2WLwlsu2xJw
-title: Empirical Stylized Facts
+title: Empirical Timeline
 desc: ''
-updated: 1636333213887
+updated: 1638403024026
 created: 1636331831859
+bibliography: [references.bib]
+reference-section-title: References
 ---
 
-A collection of so called "stylized facts" in the empirical literature. This is listed in chronological order. 
+A collection of notable economic events, in chronological order.
 
 Note that because these are all stylized facts in economics, these are *all* controversial. Particularly controversial bits are emphasized.
 
 The plus side of this controversy is that if something strange happens in the data, you can come here and pick and choose possible explanations.
 
 Most stylized facts and events are noted here, even if they are a bit minor. The minor events may be useful for counterfactual analysis. 
+
+## 1971
+
+Not that serious, but ask Ben for some opinions.
+
+https://wtfhappenedin1971.com/
 
 ## Energy Crisis (1973 and 1979)
 

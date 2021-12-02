@@ -31,12 +31,14 @@ stills allows for factors to be a dynamic process.</p>
 <p>This parallels FGLS to OLS a lot.</p>
 <p>Essentially:</p>
 <ol>
-<li>Use some consitent estimator of the factors/loadings as a first step, such as PCA</li>
+<li>Use some consistent estimator of the factors/loadings as a first step, such as PCA</li>
 <li>Using the residuals, construct <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">\Omega</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Ω</span></span></span></span></span>, the varcov matrix of the errors</li>
 <li>Re-weight the data with its inverse, and run PCA on it again, with a slight scaling difference</li>
 </ol>
 <p>The resulting estimator can be shown to be asymptotically more efficient</p>
 <p>Not sure why people don't use this in applied work, perhaps doesn't actually do very well in practice?</p>
+<h2 id="other-issues"><a aria-hidden="true" class="anchor-heading" href="#other-issues"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Other Issues</h2>
+<p>[<a title="Private" style="color: brown" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank">@boivin_are_2006 (Private)</a>] show empirically that adding groups of highly correlated variables tends to deteriorate PCA's ability to recover the factor space.</p>
 <hr>
 <h2 id="children"><a aria-hidden="true" class="anchor-heading" href="#children"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Children</h2>
 <ol>
