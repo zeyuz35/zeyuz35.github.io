@@ -2,7 +2,7 @@
 id: U0c40KtWCbQp02iuK28mt
 title: q Estimators
 desc: ''
-updated: 1637881766476
+updated: 1638857036030
 created: 1635335632193
 bibliography: [references.bib]
 reference-section-title: References
@@ -18,13 +18,15 @@ Truly dynamic factor models tend to be very underdeveloped in general. Stock and
 
 [@amengual_consistent_2007] first compute the residuals of the projection of $X_t$ onto the lagged values of the principal components of $F_t$, then apply [@bai_determining_2002]'s IC on the covariance matrix of those residuals. 
 
+There is some MATLAB code, which needs to be translated to R. 
+
 ## Bai and Ng (2007) BN07
 
 [@bai_determining_2007] work directly with the factor and use an information criteria to estimate the rank of the residual covariance matrix of a VAR estimated using the r estimated principal components.
 
 There is an implementation in the nowcasting package, which is in the process of being gutted and tailored to our needs.
 
-
+The nowcasting package has a working implementation of this that we can use directly.
 
 ## Hallin and Liska (2007) HL07
 
@@ -34,3 +36,6 @@ Note that this was referenced and used in [@ma_estimation_2018], although this w
 
 Read into [@ma_estimation_2018]'s code again, likely this will contain something related to spectral density!
 
+[@barigozzi_simultaneous_2018] has some MATLAB code, but needs to be translated to R.
+
+A stopgap solution is using the POET package which is something unrelated, but has the HL estiamtor implemented.
