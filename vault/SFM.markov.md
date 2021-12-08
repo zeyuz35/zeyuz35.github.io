@@ -1,15 +1,17 @@
 ---
 id: XiJC0xxXNzTGVmJGnTgDE
-title: Static Factor Models with Markov Regime Switching
-updated: 1636283361568
+title: Markov Regime Switching
+updated: 1638412893730
 created: 1635422015099
+bibliography: [references.bib]
+reference-section-title: References
 ---
 
 #markov #regime
 
 Luke Hartigan's thesis also contains an approach to markov switching for factor models, however, haven't spent the time needed to read into it too much yet.
 
-Liu and Chen 2016 Statistica Sinica
+[@liu_regime-switching_2017]
 
 Does not seem to be a very well known paper, despite arguably being technically sound.
 
@@ -81,7 +83,7 @@ This is particularly popular for analysing uncertainty shocks. I.e. shocks to th
 The extension of this to DFM, is not so straightforward.
 Ben says that something like specifying a law of motion of the variance is necessary in this case.
 
-##### LIMITATIONS FOR MACROECONOMICS
+##### Limitations for Macroeconomics
 
 The estimated regimes switch a LOT. 
 

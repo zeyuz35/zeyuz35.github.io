@@ -2,7 +2,7 @@
 id: MsmFdXyWfizd5g8GGcObD
 title: Covariance Weighted Forecasting
 desc: ''
-updated: 1637719730408
+updated: 1638772644766
 created: 1636095097255
 bibliography: [references.bib]
 reference-section-title: References
@@ -32,8 +32,8 @@ Instead, we aim to restrict assumptions to the *data* and the *losses* of each c
 
 We estimate the weights based on the covariance matrix of the loss vectors. Define the loss vector (using MSE) as:
 $$
-\begin{align}
-\mathcal{L} = 
+\begin{aligned}
+\mathcal{L} =
 \begin{bmatrix}
 L(M_1) \\
 L(M_2) \\
@@ -46,13 +46,13 @@ L(M_k)
 	\vdots \\
 	\frac{1}{T} \sum_{i = 1}^T (y_i - \widehat{f}_k)^2
 \end{bmatrix}
-\end{align}
+\end{aligned}
 $$
 
 We estimate the weights based on the covariance matrix of the loss vectors. Define the (weighted) loss vector as:
 
 $$
-\begin{align}
+\begin{aligned}
 \mathcal{L(\mathbf{w})} = 
 \begin{bmatrix}
 w_1 L(M_1) \\
@@ -66,17 +66,17 @@ w_k L(M_k)
 	\vdots \\
 	w_k \frac{1}{H} \sum_{h = 1}^H (y_{t + h} - \widehat{f}_{t + h, k})
 \end{bmatrix},
-\end{align}
+\end{aligned}
 $$
 and its corresponding variance-covariance matrix:
 $$
-\begin{align}
+\begin{aligned}
 J = \begin{bmatrix} 
 \operatorname{cov}(L(M_1), L(M_1) & \dots & \operatorname{cov}(L(M_1), L(M_k)) \\
 \vdots & \ddots & \vdots \\
 \operatorname{cov}(L(M_k), L(M_1) & \dots & \operatorname{cov}(L(M_k), L(M_k)) \\
 \end{bmatrix}
-\end{align}
+\end{aligned}
 $$
 The weights for each model are then constructed using $J$. Ideally, the weights will be constructed using a scheme that takes into account the correlation between the losses of different models. 
 
@@ -88,21 +88,21 @@ Further note that similar to GMM, our loss vector may be subject to problems of 
 
 The weights for each model are estimated by the minimizing a quadratic loss form:
 $$
-\begin{align}
+\begin{aligned}
 	\underset{\mathbf{w}}{\operatorname{argmin}} \  \mathcal{L}(\mathbf{w})' \Sigma \mathcal{L}(\mathbf{w})
-\end{align}
+\end{aligned}
 $$ 
 
 subject to the constraints $\mathbf{w} \mathbf{1} = 1$ and $w_i \geq 0$ for all $i$. This can be easily translated into the following quadratic programming form:
 
 $$
-\begin{align}
+\begin{aligned}
 \underset{\mathbf{w}}{\operatorname{argmin}} \  \mathcal{L}(\mathbf{w})' \Sigma \mathcal{L}(\mathbf{w})
-\end{align}
+\end{aligned}
 $$
 subject to
 $$
-\begin{align}
+\begin{aligned}
 A' \mathbf{w} = 
 \begin{pmatrix}
 1 & 1 & \dots & 1 \\
@@ -118,7 +118,7 @@ A' \mathbf{w} =
 0 \\
 0
 \end{pmatrix}
-\end{align}
+\end{aligned}
 $$
 
 This method is aimed at leveraging a large number of models (i.e. $k \rightarrow \infty$), and hence its implementation may need to use methods from the high dimensional covariance matrix literature, which can be more efficient by exploiting the increasing sparsity as an increasingly number of different models are considered. 

@@ -2,7 +2,7 @@
 id: T4apcqDvjFydx29a2fyaN
 title: Equivalent Representation Theorems
 desc: ''
-updated: 1638253182712
+updated: 1638424040734
 created: 1635165604337
 bibliography: [references.bib]
 reference-section-title: References
@@ -51,6 +51,8 @@ $$
 This method was developed ONLY for breaks in factor loadings, even though breaks in loadings vs factors themselves cannot be separately identified.
 
 They postulate that such a differentiation technique could be based on the estimated rank of the loading matrices in each subsample - essentially pointing towards the break classification system later proposed by [@han_tests_2015].
+
+[@chen_detecting_2014] have a primitive version of an equivalent representation theorem, and a proof of an implication of the BNIC is provided in their appendix.
 
 ## Han and Inoue
 

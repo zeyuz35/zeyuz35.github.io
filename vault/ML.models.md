@@ -2,7 +2,7 @@
 id: kpyziz7LBSpI1Aqnx23nL
 title: Machine Learning Models
 desc: ''
-updated: 1637709749471
+updated: 1638413027059
 created: 1637708903278
 ---
 
@@ -19,6 +19,8 @@ Note that these are also fit with quantile loss to yield the LADS estimator.
 ## Random Forests
 
 Note that randomforestSRC seems to be the most fully featured and optimized package for actually fitting random forests.
+
+randomforestSRC is actually multithreaded properly, and supports MSE, quantile losses, survival losses, etc.
 
 ## Neural Networks
 

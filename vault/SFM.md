@@ -2,11 +2,10 @@
 id: 0R61RLuT7e3hswR2v6o0w
 title: Static Factor Models
 desc: ''
-updated: 1638400631326
+updated: 1638412909398
 created: 1634735127231
 stub: true
-bibliography:
-  - references.bib
+bibliography: references.bib
 reference-section-title: References
 ---
 

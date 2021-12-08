@@ -2,7 +2,7 @@
 id: U0c40KtWCbQp02iuK28mt
 title: q Estimators
 desc: ''
-updated: 1638857036030
+updated: 1638925202429
 created: 1635335632193
 bibliography: [references.bib]
 reference-section-title: References
@@ -27,6 +27,22 @@ There is some MATLAB code, which needs to be translated to R.
 There is an implementation in the nowcasting package, which is in the process of being gutted and tailored to our needs.
 
 The nowcasting package has a working implementation of this that we can use directly.
+
+High level overview:
+
+1. Estimate the *static* factors (including use of BNIC to get consistent estimate of factors), which will consistently span the space of, and therefore can be used as an estimator, for the space spanned by the dynamic factors
+2. Then, estimate a VAR(p) in the estimated factors
+3. Use the estimated residuals for the VAR
+4. By a lemma, the estimated residuals can be used to yield a consistent estimate of the covariance matrix of the true innovations
+5. Apply a matrix rank testing procedure to determine the rank of the var covariance matrix (they provide two new ones due to some technicalities)
+
+### Limitations
+
+Covariance matrix of static factors are same (slightly adjusted) version of [@bai_determining_2002], which requires stationary factor processes
+
+
+
+
 
 ## Hallin and Liska (2007) HL07
 
