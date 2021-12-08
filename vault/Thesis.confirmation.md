@@ -2,7 +2,7 @@
 id: ft8FKM7E3SGq5sdSKKc9f
 title: Confirmation
 desc: ''
-updated: 1638162295809
+updated: 1638935975084
 created: 1637022819573
 bibliography: [references.bib]
 reference-section-title: References
@@ -69,4 +69,22 @@ These are FRED-MD []
 
 ## References
 
+
+## Ideas
+
+We are interested in 
+
+1. how many factors are estimated if there are breaks in the factor dynamics
+  - autocorrelation parameters
+  - breaks in factor innovations
+2. how many dynamic factors are estimated if there are breaks in the factor dynamics
+3. a procedure to determine the no. of static factors in presence of breaks in factors
+4. a procedure to determine the no. of dynamic factors in presence of breaks in factors.
+
+Method:
+
+1. Derive a representation theorem for SFM, when there is a break in factor dynamics (HARD)
+2. Using the representation theorem, can simply apply any existing testing procedure, and test for the location of the break (should be easy, just need to verify assumptions)
+3. Using representation theorem, prove that existing methods can accurately determine no. of static factors
+4. Using representation theorem, prove that existing methods can accurately determine no. of dynamic factors
 

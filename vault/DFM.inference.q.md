@@ -2,7 +2,7 @@
 id: U0c40KtWCbQp02iuK28mt
 title: q Estimators
 desc: ''
-updated: 1638925202429
+updated: 1638935703534
 created: 1635335632193
 bibliography: [references.bib]
 reference-section-title: References
@@ -14,11 +14,32 @@ Note that in general, because truly dynamic factors are very difficult to estima
 
 Truly dynamic factor models tend to be very underdeveloped in general. Stock and Watson note in their more recent handbook chapter that there does not exist a comparison between these methods.
 
+## Stock and Watson 2005
+
+[@stock_implications_2005] propose the first procedure, which is a modified version of BNIC. However, they did not study the consistency properties of this, and such properties are worked out by [@amengual_consistent_2007].
 ## Amengual and Watson (AW07)
 
 [@amengual_consistent_2007] first compute the residuals of the projection of $X_t$ onto the lagged values of the principal components of $F_t$, then apply [@bai_determining_2002]'s IC on the covariance matrix of those residuals. 
 
 There is some MATLAB code, which needs to be translated to R. 
+
+As far as I can tell, the same assumptions as [@bai_determining_2002] are used. That is, factors are assumed to be stationary.
+
+High level overview:
+
+1. Re-parameterize the model, such that Y = X - lags of Ft. Y therefore corresponds to a factor model with $q$ factors, which correspond to the unobserved factors
+2. Y itself then can be expressed as a static factor model, with q factors, and the factors themselves corresponding to the factor innovations
+3. For the above to work, you need to construct an accurate enough estimator for the Y, which in turn requires an accurate estimator for the factors (and their lags)
+
+Note that the assumptions that underlie this requires that the Y parameterization to satisfy the BNIC assumptions, because we are essentially running BNIC on Y instead.
+
+Note that also, in order to get an accurate estimate of the loadings and factors, standard BN assumptions also need to be satisfied by the original static factor model representation.
+
+Therefore, Y itself needs to satisfy the BN assumptions, and the estimators of F, Lambda, Phi and/or Pi are sufficiently accurate.
+
+The latter point is usually not a big deal, because under standard VAR assumptions, the VAR estimator (via OLS) is consistent for Phi and/or Pi. Even the optimal lag order (p) to be used can be estimated consistenly via BIC.
+
+This sort of brings us to the original problem: come up with an equivalent representation theorem for breaks int he facotr dynamics.
 
 ## Bai and Ng (2007) BN07
 
@@ -55,3 +76,7 @@ Read into [@ma_estimation_2018]'s code again, likely this will contain something
 [@barigozzi_simultaneous_2018] has some MATLAB code, but needs to be translated to R.
 
 A stopgap solution is using the POET package which is something unrelated, but has the HL estiamtor implemented.
+
+High level overview:
+
+1. 
