@@ -2,7 +2,7 @@
 id: cTD6yfaUjMoFn0WeWb2jS
 title: Forecasting
 desc: ''
-updated: 1638255595579
+updated: 1639532651385
 created: 1638254411282
 bibliography: [references.bib]
 reference-section-title: References
@@ -32,7 +32,14 @@ I am skeptical fo this, however.
 
 This last point is similar in spirit to [@corradi_testing_2014], though CS do something a bit different.
 
+[@chen_detecting_2014] provide some simulation evidence. Their simulation setup consists of 2 true factors, but both of their respective factor loadings are subject to an idiosyncratic break (type 1). The number of pseudo factors is therefore $2 \times 2 = 4$. They compare three different strategies:
 
+1. Estimate 2 factors using the whole sample
+2. Estimate 2 factors using the whole sample, but zero out the information before the break
+3. Estimate the 4 pseudo factors (naively what one would do anyway without knowledge of breaks)
 
+Strategy 1 is shown to be the worst. Strategy 2 and 3 are shown to be similar in performance, but 2 seems to be very slightly better as the break magnitude increases.
+
+In light of this, there does not seem to exist a bias variance tradeoff in general, though more formal research is needed.
 ### Factor Augmented VAR (FAVAR)
 

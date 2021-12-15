@@ -2,7 +2,7 @@
 id: 9k2yfrjFHuORo1it5z5j6
 title: New Representation Theorem
 desc: ''
-updated: 1638945575522
+updated: 1639024922337
 created: 1638938730345
 bibliography: [references.bib]
 reference-section-title: References
@@ -41,6 +41,8 @@ This necessitates an introduction of 1 extra factor, for each factor innovation 
 Because the break on this one extra factor is simply a multiplicative one (rotation), this corresponds to a type 2 break on its loading, as classified by the existing representation theorems.
 
 Hence, the overall net effect of such a break is one extra factor being estimated.
+
+Simulation shows that this is not the case. Not sure what is going on.
 
 The implication of this is that any break in the factor innovations manifests itself as an extra factor (holding all others constant), when estimated via PCA. 
 

@@ -2,7 +2,7 @@
 id: LvkZzWN557soKo2Cg4JAc
 title: Static Factor Model Inference
 desc: ''
-updated: 1638400583724
+updated: 1639351429976
 created: 1634735273785
 bibliography: [references.bib]
 reference-section-title: References
@@ -48,7 +48,19 @@ $$
 
 This assumption allows $F_t$ to be dynamic such that $A(L)F_t = \epsilon_t$, but does not allow the dynamics to enter into $X_{it}$ directly, and is therefore still a static relationship. 
 
-It is in essence a moment condition ensuring that each factor has non-trivial contribution to the variance of $X_{it}$. Note that the true factors $F_t^0$ are assumed to be *stationary*.
+It is in essence a moment condition ensuring that each factor has non-trivial contribution to the variance of $X_{it}$. 
+
+The assumption here is a little confusing - as written this is simply saying that the the factor matrix $F$ is asymptotically full rank and that the second moment is finite, but [@bai_large_2008] incorrectly refer to this as a stationarity assumption in their review.
+
+The break literature has need to bring in an extra identification condition:
+
+$$
+E(f_t f_t') = \Sigma_F \\
+\frac{1}{k_0} \sum_{t = 1}^{k_0} f_t f_t' \convp \Sigma_F \\
+\frac{1}{T - k_0} \sum_{t = k_0 + 1}^{T} f_t f_t' \convp \Sigma_F
+$$
+
+which explicitly assumes that the second moment matrix of the factors is stationary (constant) over time. [@baltagi_identification_2017] explicitly states that it is unclear how a break in this matrix (non stationary factors) would map over to the loadings.
 
 2. Factor Loadings  
 
@@ -170,4 +182,70 @@ This is mostly relevant for formally justifying the use of estimated factors in 
 For the most part, these are very similar.
 
 For practical purposes, it does not matter which set - simply choose whichever one is easier for the problem at hand.
+
+## Disentangling breaks in dynamic factor models
+
+PCA is still consistent for the factors, if the factors themselves have breaks in their dynamics. However, it is still assuming that the loadings are time invariant.
+
+Conjecture:
+
+Breaks in factor dynamics are indistinguishable from rotational changes in the loading matrix. 
+
+Therefore, a fundamental flaw in all of the literature thus far is that they have power against breaks in factor dynamics. This is why almost every structural break test paper assumes that the factors themselves are stationary as a regularity condition. 
+
+I do think this is misleading, because all of these tests are essentially testing whether the covariance of the so called pseudo factors change. This means that even in absence of factor loading breaks, these tests will have power against non stationary factors.
+
+[@chen_detecting_2014] suggests that a rank based strategy could be used to disentangle breaks in the dynamics of the factors from the loadings.
+
+## New Idea
+
+Two ideas from here on out:
+
+### Disentangling the breaks from factor loadings and factor dynamics
+
+Currently, structural break tests assume that that factors are stationary. This is not true, as PCA is still consistent for non stationary factors. I.e. pseudo factors themselves are non stationary.
+
+As such, these tests are really testing for non stationarity of factors, as testing for non stationarity in factors is equivalent to testing loading breaks.
+
+### Testing for the number of dynamic factors in the presence of breaks
+
+Breaks in either loadings or dynamics result in pseudo factors which are non stationary
+
+Dynamic factor IC require the assumption that the dynamic factors are stationary processes. This translates to the static factor space also being stationary, as many methods require you to fit a VAR to them.
+
+However, structural breaks can directly affect the stationarity of the factor space. Loading breaks will make the pseudo factors exhibit non stationarity. 
+
+Additionally, the dynamic factors themselves may originally have breaks in them, making estimation of the no. of dynamic factors difficult. 
+
+How to tell the difference between emergence/disappearance of new factor and a change in factor loading?
+
+Sizing the break is also impossible, until this is sorted out. This is because any attempts at sizing such breaks will simply be sizing the change in factor dynamics as well. 
+
+Breaks in the dynamics of factors in correspond to type 2 breaks. 
+
+Breaks in dynamics (factor innovation autocorrelation, autocorrelation) do not augment the factor space. Therefore, they correspond to type 2 breaks. However, breaks in the lag order in general *do* augment the factor space (although this is not guaranteed, if the new lag order is a perfect linear combination of existing leads and lags). 
+
+However, there is still the edge case where a factor may emerge and another disappear at the same time.
+
+
+
+### Heterogeneous breaks
+
+The idea of heterogeneous breaks in supported by simpler tests such as BE, which suggest that different groups of variables break together. Not surprising, but this suggests that depending on forecasting purposes, it may be better to ignore the break entirely, depending on the series you are interested in.
+
+The asymptotics of such a procedure however, seem to be diffcult to work out. This is because in the DFM setup, there are both large $N$ and $T$ requirements. 
+
+### Threshold Breaks
+
+This was something the Ben was keen on. 
+
+Going back to this, [@liu_regime-switching_2017] and [@liu_threshold_2020] have tackled this, but confusingly, this was actually in relation to a completely different framework, known as latent factor models proposed by Lam.
+
+Therefore, the extension of threshold type models in the context of traditional DFMs has not been tackled or solved yet.
+
+If we are prepared to assume piece wise stationarity as an identification condition, then extending this to threshold type models should be straightforward, using similar arguments and model setups as the pseudo factor setup.
+
+
+
+
 

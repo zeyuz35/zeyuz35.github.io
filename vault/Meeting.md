@@ -2,7 +2,7 @@
 id: fHzGITjWkNNkiwsQpdex4
 title: Meeting
 desc: ''
-updated: 1638406199153
+updated: 1639357583412
 created: 1634221843124
 bibliography: [references.bib]
 reference-section-title: References
@@ -50,31 +50,35 @@ X = F \Lambda' + \mathbf{e}.
 $$
 which correspond to the individual, time slice, and whole panel representations respectively. 
 
-This is an equivalent representation of the true, dynamic form:
+Alternatively, there exists a strand of literature which prefers to work with the original *dynamic* form of the dynamic factor model:
 
 $$
-X_{t} = B (L)f_t + e_{t} \\
-A(L) f_t = \eta_t
+x_{it} = \lambda_i'(L)f_t + e_{it}
 $$
 
-where $f_t$ is a $q$ dimensional vector of dynamic factors, and is itself a VAR process ($\eta_t$ can then be interpreted as the primitive shocks), and $B(L)$ denotes the $q$ dimensional lag polynomial, also called the "dynamic factor loadings".
-
-Note that there always exists a relationship between the two representations:
+where $\lambda_i(L) = (1 - \lambda_{1i}L ) - \dots - \lambda_{is}(L)) f_t$ is a vector fo dynamic loadings of order $s$. Note that some authors distinguish a dynamic factor model to be models such that $s$ is finite from a *generalized* dynamic factor model where $s$ is allowed to be infinite. In either case, the vector of dynamic factors $f_t$ (also referred to as primitive shocks) is assumed to evolve according to:
 
 $$
-\begin{aligned}
-X_t &= B(L) f_t + e_t \\
-X_t &= \begin{bmatrix}
-B_0 & B_1 & \dots & B_s
-\end{bmatrix} 
-\begin{bmatrix}
-f_t' & f_{t - 1}' & \dots & f_{t - s}' 
-\end{bmatrix}' + e_t \\
-X_t &= CF_t + e_t
-\end{aligned}
+f_t = C(L) \epsilon_t
 $$
 
-Importantly, the relationship that $r = q(s + 1)$ always holds. Confusingly, because $F_t$ in this representation may be singular, the number of static factors estimated by IC is $r^* \leq r$, because some static factors may be perfect linear combinations of leads and lags of $f_t$.
+where $\epsilon_t$ are assumed to be zero mean, i.i.d. factor innovations, and both $f_t$ and $\epsilon_t$ are $q$ dimensional. 
+
+Putting the two together, we have:
+
+$$
+x_{it} = \lambda_i(L)' C(L) \epsilon_t + e_{it}
+$$
+
+corresponding to the notation used in [@bai_large_2008]'s review chapter. Note that [@stock_chapter_2016], [@forni_generalized_2000] each use somewhat different notation.
+
+This in turn can be shown shown to have a direct mapping to the static factor model representation:
+
+$$
+X_t = \Lambda F_t + e_t
+$$
+
+where $F_t$ is interpreted to contain the leads and lags of $f_t$. More generally, the relationship that $r = q(s + 1)$ always holds. Confusingly, because $F_t$ in this representation may be singular, the number of static factors estimated by IC is $r^* \leq r$, because some static factors may be perfect linear combinations of leads and lags of $f_t$.
 
 With the above, breaks can occur in the following ways:
 
@@ -82,41 +86,44 @@ With the above, breaks can occur in the following ways:
 2. Breaks in the loadings $\lambda_{it}$
 3. Breaks in the idiosyncratic errors $e_{it}$
 4. Breaks in the true dynamic factor process:
-    - Breaks in the dynamics of the factors
-    - Breaks in the idiosyncratic shocks $\epsilon$
+    - Breaks in the dynamics of the factors, either in the autocorrelation, or the number of lags included
+    - Breaks in the factor innovations  $\epsilon$
 
 It can be shown that a break in the intercept can be equivalent to a break in the loading (set one factor to be constant).
 
-Currently, representation theorems handle the cases of breaks in factor loadings quite comprehensively. These were all formulated for the static factor representation, and *only* for the case of breaks in $\Lambda$.
-
-Breaks in idiosyncratic errors, assuming that the errors are still independent of the factors and loadings, do not affect estimation, except for the general case of changing the signal to noise ratio.
-
 Breaks in the intercept of the series can be easily viewed as breaks in the loadings (an intercept is really just a constant factor).
+
+Currently, representation theorems handle the cases of breaks in factor loadings quite comprehensively. These were all formulated for the static factor representation, and *only* for the case of breaks in $\Lambda$.
 
 
 #### Gap: Break in Factor Dynamics
 
 However, a notable gap is what happens when there is a break in the factor dynamics. This is because all of the theory developed thus far has been working within the static factor model framework.
 
-This is extra complicated because a break in the loadings cannot be distinguished from a break in the factors.
-
-All of the literature explicitly have the same assumptions (or some slight variation) as [@bai_determining_2002] and [@bai_inferential_2003], which crucially have:
+Crucially, due tot eh multiplicative relationship between the loadings and factors, it is not possible (at least to the best of our knowledge) to disentangle breaks in the loadings from breaks in the factors. All papers working within the static framework have required to following strengthened assumption:
 
 $$
-E||F_t^0|| < \infty \\
-\frac{1}{T} \sumT F_t^0 F_t^{0 \prime} \convp \Sigma_{F, (r \times r)} \geq 0
+E(f_t f_t') = \Sigma_F \\
+\frac{1}{k_0} \sum_{t = 1}^{k_0} f_t f_t' \convp \Sigma_F \\
+\frac{1}{T - k_0} \sum_{t = k_0 + 1}^{T} f_t f_t' \convp \Sigma_F
 $$
 
-Even all papers which are designed to test for structural breaks actually assume that the factor process is stationary across all regimes.
+which explicitly assumes piecewise stationarity in the static factor space. This has been waved off as an identification condition (which it is), but has very profound practical impacts for the interpretation of these resulting tests. Namely, due to this identifying assumption, *all* breaks are absorbed as breaks in the loadings. Therefore, these tests are really testing for breaks in the loadings, intercept, factor dynamics and factor loadings all at once. [@stock_chapter_2016]'s conjecture that these tests have power against factor dynamics is correct, and work is needed to help disentangle this.
 
 A break in factor dynamics is something I think is empirically relevant:
 
   - the dynamic factors can be interpreted as the primitive shocks which propagate through the economy, in the context of factor models
   - Even if one is not inclined to believe in a change in dynamics of the factors, it could be more easily argued that a change in the variance of the idiosyncratic shocks to the factors is believable
 
-A break in the factor VAR dynamics is also something that [@stock_chapter_2016] explicitly calls for. They note that at least some of the tests proposed by the literature thus far will have some power against these sorts of breaks in factor dynamics, and the result of these tests is quite ambiguous for the purposes of interpretation.
+#### Issues
 
-They also note that [@cheng_shrinkage_2016]'s normalization of the factor innovations to be homoskedastic implies that the a break in the factor innovation errors will show up as a break in loadings. However, this latter point is unclear.
+[@breitung_testing_2011]'s seminal paper on testing for structural breaks *can* be interpreted correctly as a break in loadings. Unfortunately, this is very simply and univariate, and does not generalise to multiple series because 1. the error terms are allowed to be cross sectionally and serially correlated, and 2. the cross sectional dimension is allowed to go to infinity, which results in further issues (e.g. inverting an infinitely large covariance matrix).
+
+[@han_tests_2015] and [@baltagi_identification_2017] introduce the identification condition above, and artificially cast the issue of breaks in possible infinitely many series into the issue of breaks in finitely many factors. But this results in the identification issues.
+
+Directly working with the original model is conceptually the most direct and preferred approach, if you can work around the infinite dimensions. [@ma_estimation_2018] are the only paper which do this via a shrinkage approach, but it is very complicated, and does not allow for a differing no. of factors.
+
+
 
 #### How to model breaks in dynamics?
 
@@ -124,15 +131,13 @@ Literature linking the dynamic factors and the static factors tends to be scarce
 
 [@bai_determining_2007] is the best resource on this - they propose an IC for $q$, the number of dynamic factors. Crucially, they also prove that any dynamic factors in a DFM have an equivalent static factor model representation.
 
-However, the actual no. of factors can be ambiguous depending on the what the dynamics precisely are, and I'm less comfortable with this.
-
 ### Small Simulation Set up
 
 Simulation set up: factor process changes from AR1 to AR2 (made sure it was stationary this time!).
 
 Conjecture: if one can find a way to find the break, then conditional on partitioning the break, the number of factors in each should be consistent.
 
-Simulation shows that existing tests are mixed against this. [@han_tests_2015] has some power, but [@baltagi_identification_2017] does not. Simulation also shows that in general, the number of factors estimated does not increase - but this needs more looking into.
+Simulation results confirm that these tests all have power against detecting these breaks in factor dynamics.
 
 [@bai_determining_2007] provide a representation theorem for how a dynamic factor model can always be written as a static one. However, the actual no. of factors can be ambiguous depending on the what the dynamics precisely are.
 
@@ -175,6 +180,7 @@ Feasible generalized PCA (two step)
 Sizing the break, conditional on a consistent break date estimator
 
 - this is not intuitive, need to do something like $||\Lambda_1 - \Lambda_0||$ as a measure of break size, and I'm not sure how well this can be interpreted anyway
+- this is also unfeasible due to the infinite dimension of such a matrix
 - Or, more ambitiously, come up with an estimation method which estimates the same set of factors, but allows the loadings to be different in each regime
 - [@cheng_shrinkage_2016] in their last section provides the closest thing to a decomposition of breaks
 - could try to apply this decomposition for various datasets and find something interesting as an empirical paper...
@@ -197,7 +203,17 @@ There does exist a UKMD as well, but I don't recall the authors having run PCA o
 
 There is a monte carlo study which shows that sometimes the number of static factors is not strictly increasing - this was done using expanding windows, and happened low enough times that I'm willing to chalk it up to consistency.
 
-
-However, interestingly, 
-
 Keep in mind that the economics literature tends to identify at most 4 primitive shocks, theoretically and empirically via estimation methods. 
+
+## Threshold Idea
+
+Skeleton of what this paper would look like
+
+Already confirmed that second moments process of pseudo factors is highly correlated with breaks in mid 1970s, late 1970s, early 2000s, and GFC. Finding a suitable threshold should be very easy to justify this.
+
+If we are prepared to assume piece wise stationarity, and inability to separately identify factor loadings and factor dynamic changes, these we can use this directly with some multivariate threshold model. 
+
+The last two points should be fairly straightforward.
+
+The main draw of this paper will then be the development of some new representation theorem which shows that existence of some threshold mechanism will result in possibly more factors. This is much trickier, but just follow in the footsteps of [@han_tests_2015].
+

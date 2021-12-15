@@ -2,7 +2,7 @@
 id: BYVYRGj8HV4cxZX1SLbeR
 title: CWF Meeting
 desc: ''
-updated: 1638768376166
+updated: 1639029551264
 created: 1638767677915
 ---
 
@@ -46,6 +46,18 @@ Note that this relies on some helper functions from my PhD:
 ## Roadmap
 
 Bonsoo mentioned that some theoretical properties would be nice to established, at least with the introduction of some stricter regularity conditions.
+
+## Suggestions
+
+Try to use different data, e.g. Unemployment (tends to be regarded as easier to forecast)
+
+Also consider 2nd log diff of CPI, because sometimes people (such as McCracken) document this as being I(2).
+
+Plot the series of covariance matrices, correlation matrices, etc over time
+
+Investigate why using a correlation matrix instead gives more "equal" weighting
+
+Investigate with simulation mixture models (this should give equal weighting)
 
 
 

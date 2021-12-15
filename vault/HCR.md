@@ -2,7 +2,7 @@
 id: 4GXJm4YpHBWVu5WnZKVm4
 title: Hausdorff Critical Region
 desc: ''
-updated: 1637978717482
+updated: 1639029243437
 created: 1637927430959
 ---
 
@@ -72,6 +72,10 @@ Work is mostly done, and code is on GitHub.
 
 ## Plotting
 
+Standard plots are implemented.
+
+Don has implemented a different style of graph, which visualizes the joint distribution of the estimated regions.
+
 ## MONARCH
 
 ## Exporting to Excel
@@ -81,3 +85,21 @@ Don (and many other less technical people) prefer the format of an Excel spreads
 The easiest way to do this is via the xlsx package, which uses java.
 
 rJava will require a valid installation of both a JRE (for running java) and JDK (for compiling). Make sure you install these!
+
+## Quick Notes
+
+0 instrument strength results in no identification and therefore error.
+
+Instruments that are too strong results in point identification and also therefore error in this case. z_str of 2 is already too big.
+
+Log normal is too different and not too exciting to talk about.
+
+Skew normal is more interesting as it is not too misspecified.
+
+The goal of this is to show that the new bootstrap procedure:
+
+1. works
+2. is "better" than the existing CLR
+  - better power
+  - and/or shorter intervals (purple distance)
+
