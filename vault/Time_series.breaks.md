@@ -2,11 +2,23 @@
 id: d8lw1Osg92jmpaCsgK4Tr
 title: Structural Breaks
 desc: ''
-updated: 1638229948918
+updated: 1639963112387
 created: 1636525148960
 bibliography: [references.bib]
 reference-section-title: References
 ---
+
+Takeaway:
+
+Structural Break tests are terrible and never agree with one another.
+
+There are broadly two options: supWald/supF, or supLM.
+
+Most supLM tests use a full sample estimator for an estimator of the variance, and theoretically this therefore should have more power. However, in practice the results of supLM and supWald are unclear.
+
+[@andrews_optimal_1994] notes that exp and mean versions of these tests should be more optimal. mean test is better for small changes, but exp is better for big changes. However, these do not provide a natural estimator of the break fraction. In addition, simulation shows that the power loss from using a standard sup test is not too large, therefore these tend not to be popular. Good option if you want better Monte Carlo simulation results though.
+
+
 
 ## Bai and Perron
 
@@ -62,7 +74,7 @@ Practically, one may not wish to specify a number of breaks to test against.
 
 The limit distribution is this case corresponds to double maximums.
 
-Critical values are provided in the form of surface response regressions.
+Critical values are provided in the form of surface response regressions, but only up to 10 regressors.
 
 ## Multivariate Systems
 

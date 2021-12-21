@@ -2,7 +2,7 @@
 id: 4GXJm4YpHBWVu5WnZKVm4
 title: Hausdorff Critical Region
 desc: ''
-updated: 1639029243437
+updated: 1639972452753
 created: 1637927430959
 ---
 
@@ -102,4 +102,20 @@ The goal of this is to show that the new bootstrap procedure:
 2. is "better" than the existing CLR
   - better power
   - and/or shorter intervals (purple distance)
+
+## Notes
+
+1000 Rep is most important
+
+Stick with 2.75k (Don says this is good enough)
+
+BS
+
+Investigate Curvature of BS effect
+
+Go up in increments in 1000 (hope it is good enough)
+
+Run skew normal ones as well
+
+CLR sample no. 1000
 

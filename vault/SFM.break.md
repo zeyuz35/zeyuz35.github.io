@@ -2,7 +2,7 @@
 id: V5RkkOEtQUFg8rc2NA4D
 title: Breaks in SFMs
 desc: ''
-updated: 1639526548515
+updated: 1639631832739
 created: 1635165514149
 bibliography: [references.bib]
 reference-section-title: References
@@ -71,7 +71,17 @@ Limitations:
 
 ## Corradi and Swanson
 
-[@corradi_testing_2014## 
+[@corradi_testing_2014
+
+## Han and Inoue
+
+[@han_tests_2015].
+
+Note that they do not provide an estimate of the break date/fraction. A break fraction happens to drop out of the testing procedure as a result of the sup type test, but consistency of this is not formally proved.
+
+## Chen
+
+@chen_estimating_2015 provide a very short and limited paper that provides a consistent estimator of the break fraction.
 
 ## Baltagi et al 2017
 
