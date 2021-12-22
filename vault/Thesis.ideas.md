@@ -2,7 +2,7 @@
 id: vo34RUxa4zvz90eFELX5O
 title: Thesis Ideas
 desc: ''
-updated: 1639540769579
+updated: 1640155453637
 created: 1639441845917
 bibliography: [references.bib]
 reference-section-title: References
@@ -36,6 +36,62 @@ Problem:
 This change is not separately identifiable from type 2 breaks in general. For example, if for some reason the second factor become much more important than the first one after a break consistently across the entire cross section. Additionally, the current type 2 break framework still allows for disappearing/emerging factors.
 
 So, all changes in factor dynamics are type 2 breaks that results in no change in factors, but not all type 2 breaks have no change in no. of factors, and not all type 2 breaks are changes in factor dynamics.
+
+### Extra Notes
+
+The existing [@chen_detecting_2014] test already exists, and more or less achieves the same practical results.
+
+This was noted by the literature, but perhaps wasn't quite picked up on why it works, and why this was important?
+
+CDG test still has a hole, which is that it cannot handle (dis)appearing factors by default.
+
+Also, no test has considered the case for breaks in factor dynamics.
+
+Breaks in factor dynamics are presumably from innovations (empirically relevant), but can also arise from
+change in AR coefficient
+appearance of extra lag
+
+Need to find some shortcoming of CDG test
+
+Shortcoming found. CDG test requires that original factors are stationary, in order for asymptotic distribution to hold. This results in the case of there being both idiosyncratic breaks in loadings, and common breaks in variance, as a case which CDG does not cover, yet arguably is most relevant. This would correspond to type 3 break.
+
+CDG test therefore ONLY has power against type 1 break, has power but test distribution is unknown for type 3 break.
+
+#### Other Notes
+
+The Wald test is much more powerful than the LM test, for structural breaks.
+
+Note exactly too sure why yet.
+
+#### Purpose
+
+Purpose of this paper is to provide a framework which shows clearly how factor dynamics can be misinterpreted as breaks in factor loadings, and a unifying procedure to deal with this.
+
+Factor Dynamic Changes are common, and therefore under this framework, they are classified as so called type 2 breaks in HI framework.
+
+Existing tests which are powerful against this may therefore be erroneously interpreted as changes in loadings, when in fact they are just picking up on variance.
+
+Remarkable to note that CDG's procedure also achieves this, but perhaps they did not realise these implications.
+
+Note that it is not possible to distinguish between a common break in loading and break in factor dynamics, as they are observationally equivalent. 
+
+Goal:
+
+Formally derive and prove the proposed procedure of adjusting the X series directly, and show how this works.
+
+Show that the procedure has correctly identify different types of breaks, and has an asymptotically valid testing procedure in all cases (even if it is piggy backing off previous results)
+
+Type 1: idiosyncratic break in loadings
+
+Type 2a: break in factor dynamics OR common break in loadings (cannot be separately identified)
+
+Type 2b: Disappearance/emergence of new factor
+
+Type 3: Both of the above occurring at same time
+
+- our procedure should convert a type 3 break 
+
+
 
 ## Covariance Weighted Forecasting
 

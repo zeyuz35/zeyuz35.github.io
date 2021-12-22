@@ -2,7 +2,7 @@
 id: BMClpTRP3V8ITqM7R4kh0
 title: To Do List
 desc: ''
-updated: 1637563664481
+updated: 1640140782895
 created: 1635455071285
 ---
 
@@ -34,16 +34,10 @@ Dynamic Factors
 - BN07
 - DFM Function, using dpca, etc
 
-Backend Stuff
-
-- Bessell Process p values, using strucchange::: (Hansen's approximation)
-- Look into BP critical values and see if there are any implementations
-
 Break Date estimators
 
 - BE Estimator (tedious)
-- Han and Inoue HI
-- BKW Baltagi (simple one and sequential one)
+- Han and Inoue HI, wald test seems way higher, investigate!
 - CDG
 - MS Ma and Su
 - BHS (Bai, Han and Shi)
