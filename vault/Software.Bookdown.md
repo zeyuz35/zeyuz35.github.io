@@ -2,11 +2,23 @@
 id: dfB6JRk5URkjMorEglLFE
 title: Bookdown
 desc: ''
-updated: 1638333436702
+updated: 1641273257761
 created: 1638323538556
 ---
 
 ## Using Bookdown
+
+
+```mermaid
+stateDiagram-v2
+    [*] --> Still
+    Still --> [*]
+
+    Still --> Moving
+    Moving --> Still
+    Moving --> Crash
+    Crash --> [*]
+```
 
 This is certainly the preferred method of actually writing the thesis/confirmation.
 
@@ -50,4 +62,10 @@ csl: chicago-fullnote-bibliography.csl
 
 Unfortunately this is a little janky, because it runs the header_includes once for each rmd file and is therefore redefining the same macros a lot
 
-However, this is the only way I coul dget it to work consistently across both html and pdf formats
+However, this is the only way I could get it to work consistently across both html and pdf formats
+
+## Mermaid Diagrams
+
+Mermaid diagrams are supported, but done via a DiagrammeR package (which parses mermaid and outputs the graph directly). Not the most elegant, but possible.
+
+https://rich-iannone.github.io/DiagrammeR/io.html
