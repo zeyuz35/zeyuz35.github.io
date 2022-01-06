@@ -2,7 +2,7 @@
 id: 2qGHFR7CcKOE0Meu7UU6D
 title: Dendron Documentation
 desc: ''
-updated: 1637560923710
+updated: 1641348164320
 created: 1636096635240
 ---
 
@@ -84,4 +84,27 @@ Once this has been cloned once, publish your site (to GitHub) by running
 dendron publish export --target github
 ```
 
+## Cross references
 
+Use pandoc-crossref (installed from homebrew) for cross referencing. 
+
+$$
+\begin{aligned}
+asd
+\end{aligned}
+$$ {#eq:line}
+
+@eq:line
+
+
+Unfortunately this syntax does not seem to be compatible with the syntax used by rmarkdown/bookdown at all. 
+
+```{=tex}
+\begin{equation}
+asd
+(\#eq:line)
+\end{equation}
+```
+\@ref(eq:line)
+
+rmarkdown/bookdown's implementation seems to really just be a hacky version of \tag. 

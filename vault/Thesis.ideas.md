@@ -2,7 +2,7 @@
 id: vo34RUxa4zvz90eFELX5O
 title: Thesis Ideas
 desc: ''
-updated: 1640155453637
+updated: 1641359757990
 created: 1639441845917
 bibliography: [references.bib]
 reference-section-title: References
@@ -89,9 +89,31 @@ Type 2b: Disappearance/emergence of new factor
 
 Type 3: Both of the above occurring at same time
 
-- our procedure should convert a type 3 break 
+Our procedure should get rid of any possible type 2 breaks in a preliminary step
 
+Other approaches
 
+Using Hansen 2000 JoE, we can use a fixed regressor bootstrap to get around possible non-stationarity in the pseudo factors. 
+
+This could be adapted to the CDG framework, because that test assumes that the factors do not experience any breaks (implicitly, as required by the supWald test application)
+
+This does not seem amenable to the setup as considered by Han and Inoue, however
+
+More accurately, the betas are the pseudo factors as written by Andrews and Bruce Hansen's framework actually correspond to the second moments process of the pseudo factors
+
+This means that if we wish to explore Bruce Hansen's bootstrap approximation, we need to re-jig the code a fair bit...
+
+## End of sample instability tests for dynamic factor models
+
+Extension/adjustment of existing testing procedures to deal with end of sample
+
+This is empirically very relevant, as practically the existing tests cannot get around end of sample trimming at all
+
+Refer to Andrews 2003 for a possible way to do this
+
+This is way harder and not quite good enough - you need to specify the location of the changepoint
+
+Still, may be potentially useful
 
 ## Covariance Weighted Forecasting
 

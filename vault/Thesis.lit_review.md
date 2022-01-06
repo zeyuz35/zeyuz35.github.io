@@ -2,7 +2,7 @@
 id: Eao3HsBMWoKOJ6YjwKV1u
 title: Literature Review
 desc: ''
-updated: 1641277967885
+updated: 1641359879020
 created: 1641256729309
 bibliography: [references.bib]
 reference-section-title: References
@@ -390,7 +390,15 @@ It is remarkable that a large amount of the earlier literature identified the Gr
 
 #### FREDMD
 
+@mccracken_fred-md_2015 provides a large, monthly frequency, macroeconomic database based on US data. This is emerged in more recent times to be the *de facto* standard for large empirical macroeconomic databases, and is aimed to be broadly compatible and equivalent to the vintages prepared by Stock and Watson.
+
+Any series with missing observations 
+
 #### FREDQD
+
+@mccracken_fred-qd_2020 provides a large, quarterly frequency, macroeconomic database based on US data - the quarterly counterpart to FREDMD. 
+
+
 
 ### Empirical Results
 
@@ -401,6 +409,7 @@ The work presented thus far has identified notable gap in the literature, namely
 It remains as future work to formally prove and establish the asymptotic validity of the proposed procedure. 
 
 It is noteworthy that the procedure bears some resemblance to the Feasible Generalised Principal Components estimator proposed by @choi_efficient_2012. 
+
 
 ### Timeline
 
