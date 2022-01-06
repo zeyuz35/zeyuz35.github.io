@@ -1,0 +1,406 @@
+<p>We begin by providing a broad overview of the literature thus far.</p>
+<h2 id="exact-factor-models">Exact Factor Models</h2>
+<p>A factor model for a <span class="math inline"><em>T</em> × <em>N</em></span> panel of time series <span class="math inline"><em>X</em></span> assumes that <span class="math inline"><em>X</em></span> is generated from lower dimensional factor structure:</p>
+<p><span class="math display">$$
+X_{it} = \lambda_{it}' F_t + e_{it} \\
+X_t = \Lambda_t F_t + e_t \\
+X = F \Lambda' + \mathbf{e}.
+$$</span> which correspond to the individual, time slice, and whole panel representations respectively.</p>
+<p>An exact factor model assumes that the idiosyncratic shocks <span class="math inline"><em>e</em><sub><em>i</em><em>t</em></sub></span> do not have any serial correlation or cross sectional correlation, a strict assumption that is unrealistic for empirical applications.</p>
+<h2 id="approximate-factor-models">Approximate Factor Models</h2>
+<p>The <em>exact</em> factor model can be subsequently loosened to an <em>approximate</em> factor model, in the sense that the idiosyncratic shocks are now allowed to have a limited degree of serial and cross sectional correlation.</p>
+<p>An approximate factor model has the <em>static</em> representation if the factors <span class="math inline"><em>F</em><sub><em>t</em></sub></span> can only affect <span class="math inline"><em>X</em><sub><em>t</em></sub></span> directly, and not through its lags:</p>
+<p><span class="math display"><em>X</em><sub><em>t</em></sub> = <em>Λ</em><em>F</em><sub><em>t</em></sub> + <em>e</em><sub><em>t</em></sub></span></p>
+<p>The above formulation is to be contrasted with the dynamic form of the dynamic factor model, where the factors themselves are allowed to evolve dynamically:</p>
+<p><span class="math display"><em>X</em><sub><em>i</em><em>t</em></sub> = <em>λ</em><sub><em>i</em></sub>′(<em>L</em>)<em>f</em><sub><em>t</em></sub> + <em>e</em><sub><em>i</em><em>t</em></sub></span></p>
+<p>where <span class="math inline"><em>λ</em><sub><em>i</em></sub>′(<em>L</em>) = (1−<em>λ</em><sub>1<em>i</em></sub><em>L</em>−…−<em>λ</em><sub><em>i</em><em>s</em></sub><em>L</em><sup><em>s</em></sup>)</span> is a vector of dynamic factor loadings or order <span class="math inline"><em>s</em></span>. We focus on a finite <span class="math inline"><em>s</em></span>, in contrast to the separate strand of literature focused on <em>generalized</em> dynamic factor models which allows <span class="math inline"><em>s</em></span> to be infinite (see <span class="citation" data-cites="forni_generalized_2000">(Forni et al. 2000)</span> and later section for a short review). In either case, the factors themselves are allowed to evolve according to:</p>
+<p><span class="math display"><em>f</em><sub><em>t</em></sub> = <em>C</em>(<em>L</em>)<em>ϵ</em><sub><em>t</em></sub></span></p>
+<p>where <span class="math inline"><em>ϵ</em><sub><em>t</em></sub></span> are <span class="math inline"><em>q</em> × 1</span> $i.i.d. errors, which can be interpreted as the <em>primitive shocks</em> in an economic model. The literature which focuses on these primitive shocks refers to <span class="math inline"><em>q</em></span> as the number of <em>dynamic</em> factors.</p>
+<p>The dynamic factor model with <span class="math inline"><em>q</em></span> <em>dynamic</em> factors can always be re-written as a static factor model with <span class="math inline"><em>r</em></span> <em>static</em> factors, where <span class="math inline"><em>r</em></span> is finite. More generally, <span class="math inline"><em>q</em> ≤ <em>q</em>(<em>s</em>+1) = <em>r</em></span>, because <span class="math inline"><em>F</em><sub><em>t</em></sub></span> will contain the leads and lags of <span class="math inline"><em>f</em><sub><em>t</em></sub></span>.</p>
+<p>It is because of this relationship that the literature usually does not explicitly differentiate between the two, referring (somewhat confusingly) to both the Static Factor Model and Dynamic Factor Model as simply Dynamic Factor Models, with the former referred to as the <em>static representation</em> of the Dynamic Factor Model when necessary.</p>
+<p>Empirically, it has been noted that forecasting approaches using either formulation perform rather similarly. However, for the purposes of interpretation such as the identification of primitive shocks, distinction is important.</p>
+<h3 id="generalized-dynamic-factor-models">Generalized Dynamic Factor Models</h3>
+<p>In a separate, but related literature, <span class="citation" data-cites="forni_generalized_2000">(Forni et al. 2000)</span> develop so the called <em>Generalized</em> Dynamic Factor Model (GDFM) in which <span class="math inline"><em>s</em></span> is explicitly allowed to <span class="math inline"> → ∞</span>. Estimation and analysis of this model instead focuses on the spectral density of <span class="math inline"><em>X</em></span>.</p>
+<p>However, this approach is noticeably more complicated, and is still subject to its own issues, such as increased computational intensity, and the necessity of formulating a “one-sided” filter in order to reliably estimate the factors towards the end of the sample for forecasting purposes.</p>
+<p>It is perhaps due to these difficulties that in spite of the dynamic factors as estimated via spectral analysis have been shown to have good performance by its authors, that the applied forecasting literature has, at large, stuck to using traditional static factor models, usually as estimated via the principal components estimator.</p>
+<h2 id="latent-factor-models">Latent Factor Models</h2>
+<p>More recently, <span class="citation" data-cites="lam_estimation_2011">(Lam, Yao, and Bathia 2011)</span> develop and formulate the <em>Latent</em> Factor Model (LFM).</p>
+<p>The key difference in this formulation is that serial correlation in the error term is explicitly allowed for, and in fact, <em>required</em> to achieve identification. Estimation of the factors and loadings is done via applying an eigendecomposition of the empirical autocovariance matrices of the data.</p>
+<p><span class="citation" data-cites="lam_factor_2012">Lam and Yao (2012)</span> subsequently develop the inferential theory for the number of <em>latent</em> factors.</p>
+<p>Although there has been some work done with this model as a basis, (see <span class="citation" data-cites="liu_regime-switching_2017">Liu and Zhang (2022)</span>), in general, this has not proven to be a popular way to estimate factor models.</p>
+<p>The precise relationship between this latent factor model with the existing literature is an unanswered question.</p>
+<h2 id="structural-breaks-in-dfms">Structural Breaks in DFMs</h2>
+<p>The topic of structural breaks in the context of Dynamic Factor Models has received much attention recently.</p>
+<p>Due to simplicity, almost all of the literature thus far has focused on the the Dynamic Factor Model as estimated (statically) via the PC estimator.</p>
+<h3 id="small-changes-in-factor-loadings">Small Changes in Factor Loadings</h3>
+<p>We first make a preliminary note that there exists a necessary distinction between so called “small” and “large” breaks in dynamic factor models. Heuristically, the estimation of <span class="math inline"><em>F</em><sub><em>t</em></sub></span> via the principal components estimator is not affected asymptotically if the breaks in the factor loadings is “small”. <span class="citation" data-cites="bates_consistent_2013">Bates et al. (2013)</span> establish the conditions under which the changes in <span class="math inline"><em>Λ</em></span> can be ignored for the estimation of <span class="math inline"><em>F</em><sub><em>t</em></sub></span>. They consider the following formulation:</p>
+<p><span class="math display"><em>X</em><sub><em>i</em><em>t</em></sub> = <em>λ</em><sub><em>i</em><em>t</em></sub>′<em>F</em><sub><em>t</em></sub> + <em>e</em><sub><em>i</em><em>t</em></sub>, <em>i</em> = 1, …, <em>N</em>, <em>t</em> = 1, …, <em>T</em>.</span></p>
+<p>where <span class="math inline"><em>λ</em><sub><em>i</em><em>t</em></sub></span> is now allowed to be time-varying. Define <span class="math inline"><em>Λ</em><sub><em>t</em></sub> = (<em>λ</em><sub>1<em>t</em></sub>,…,<em>λ</em><sub><em>N</em><em>t</em></sub>)′</span> and let the initial factor loading <span class="math inline"><em>Λ</em><sub>0</sub></span> be fixed. The factor loading at time <span class="math inline"><em>t</em></span> is then allowed to evolve over time according to:</p>
+<p><span class="math display"><em>Λ</em><sub><em>t</em></sub> = <em>Λ</em><sub>0</sub> + <em>h</em><sub><em>N</em><em>T</em></sub><em>ξ</em><sub><em>t</em></sub></span></p>
+<p>where <span class="math inline"><em>h</em><sub><em>N</em><em>T</em></sub></span> is a deterministic scalar allowed to depend on <span class="math inline"><em>N</em>, <em>T</em></span>, <span class="math inline"><em>ξ</em><sub><em>t</em></sub> = (<em>ξ</em><sub>1<em>t</em></sub>,…,<em>ξ</em><sub><em>N</em><em>t</em></sub>)′</span> is an <span class="math inline"><em>N</em> × <em>r</em></span> stochastic process which governs the dynamics of <span class="math inline"><em>Λ</em><sub><em>t</em></sub></span>.</p>
+<p>Combining the above, we have:</p>
+<p><span class="math display"><em>X</em><sub><em>t</em></sub> = <em>Λ</em><sub>0</sub><em>F</em><sub><em>t</em></sub> + <em>h</em><sub><em>N</em><em>T</em></sub><em>ξ</em><sub><em>t</em></sub><em>F</em><sub><em>t</em></sub> + <em>e</em><sub><em>t</em></sub>.</span></p>
+<p><span class="citation" data-cites="bates_consistent_2013">Bates et al. (2013)</span> treat <span class="math inline"><em>h</em><sub><em>N</em><em>T</em></sub><em>ξ</em><sub><em>t</em></sub><em>F</em><sub><em>t</em></sub> + <em>e</em><sub><em>t</em></sub></span> as the combined idiosyncratic error for the factor model, and develop conditions under which the combined idiosyncratic error does not affect the consistency of the PCA estimator <span class="math inline"><em>F̂</em></span> in <span class="citation" data-cites="bai_determining_2002">Bai and Ng (2002)</span>. Although a rigorous set of conditions on <span class="math inline"><em>h</em><sub><em>N</em><em>T</em></sub></span> is provided, for brevity, we provide the three most empirically relevant cases as derived by <span class="citation" data-cites="bates_consistent_2013">Bates et al. (2013)</span></p>
+<p>Example 1 White Noise: <span class="math inline"><em>h</em><sub><em>N</em><em>T</em></sub></span> are i.i.d. across all <span class="math inline"><em>i</em>, <em>t</em></span> and <span class="math inline"><em>E</em>||<em>ξ</em><sub><em>i</em><em>t</em></sub>||<sup>4</sup> &lt; ∞</span>. If <span class="math inline"><em>h</em><sub><em>N</em><em>T</em></sub> = <em>O</em>(1)</span>, then consistency holds.</p>
+<p>Example 2 Random Walk: <span class="math inline"><em>h</em><sub><em>N</em><em>T</em></sub></span> are random walk processes, i.e. <span class="math inline">$\xi_{it} = \sum_{s = 1}^{t} \zeta_{is}$</span>, where <span class="math inline"><em>ζ</em><sub><em>i</em><em>s</em></sub></span> are i.i.d. across all <span class="math inline"><em>i</em>, <em>t</em></span> and <span class="math inline"><em>E</em>||<em>ξ</em><sub><em>i</em><em>t</em></sub>||<sup>4</sup> &lt; ∞</span>. A sufficient condition for consistency is <span class="math inline"><em>h</em><sub><em>N</em><em>T</em></sub> = <em>o</em>(<em>T</em><sup>−1/2</sup>)</span>. Heuristically, this means that as long as the factor loading innovations shrink sufficiently fast enough, then PCA will not be affected.</p>
+<p>Example 3 Single Large Break: let <span class="math inline"><em>δ</em><sub><em>i</em></sub> ∈ ℝ<sup><em>r</em></sup></span> be a shift parameter. Then assume that the factor loadings are subject to a one time shift:</p>
+<p><span class="math display">$$
+\xi_{it} = \begin{cases}
+0_{r \times 1} \; &amp;t = 1, \dots, \left \lfloor \pi_0 T \right \rfloor  \\
+\delta_i \; &amp;t = \left \lfloor \pi_0 T \right \rfloor  + 1, \dots, T.
+\end{cases}
+$$</span> If <span class="math inline"><em>h</em><sub><em>N</em><em>T</em></sub> = <em>O</em>(1)</span> <em>and</em> at most <span class="math inline"><em>O</em>(<em>N</em><sup>1/2</sup>)</span> series undergo a break, then PCA is still consistent. Example 3 is perhaps the most directly relevant case in the analysis which follows. Heuristically, PCA is still consistent as long as the break affects a shrinking fraction of all series asymptotically, and the their sizes are fixed.</p>
+<p>It is important to note that the above conditions are stated only for the consistency of <span class="math inline"><em>F</em></span>, and <em>not</em> for the number of factors, which in general <em>is</em> affected even by the presence of small breaks. It is for this reason that a more recent strand of literature has emerged, focusing on the detection of small breaks to facilitate accurate estimation of the number of factors can be accurately determined before and after possible <em>small</em> breaks (see <span class="citation" data-cites="bai_estimation_2020">Bai, Han, and Shi (2020)</span> and <span class="citation" data-cites="duan_quasi-maximum_2021">Duan, Bai, and Han (2021)</span> forthcoming).</p>
+<p>In what follows, we focus on <em>large</em>, one time breaks (Example 3) in dynamic factor models.</p>
+<h2 id="model-setup-and-notation">Model Setup and Notation</h2>
+<p>We focus on the case of <em>large</em>, one time breaks in dynamic factor models. To begin, we consider the singular break case in the factor loadings within the static model notation as proposed by <span class="citation" data-cites="han_tests_2015">Han and Inoue (2015)</span>:</p>
+<p><span class="math display">$$
+X_{it} = \begin{cases}
+F_{0, t}' \lambda_{0, i} + F_{1, t}' \lambda_{1, i} + e_{it}\ \quad \text{for} \quad t = 1, \dots, \left \lfloor \tau T \right \rfloor  \\
+F_{0, t}' \lambda_{0, i} + F_{1, t}' \lambda_{2, i} + e_{it}\ \quad \text{for} \quad t = \left \lfloor \tau T \right \rfloor  + 1, \dots, T,
+\end{cases}
+$$</span> where <span class="math inline"><em>F</em><sub>0, <em>t</em></sub></span> is a <span class="math inline">(<em>r</em>−<em>q</em>) × 1</span> vector of time invariant factors, <span class="math inline"><em>F</em><sub>1, <em>t</em></sub></span> is a <span class="math inline"><em>q</em> × 1</span> dimensional factor whose loadings undergo structural change.</p>
+<p>The matrix representation of the the previous setup is:</p>
+<p><span class="math display">$$
+\begin{aligned}
+X &amp;= 
+\begin{bmatrix}
+F^{0, 1} \Lambda_0' + F^{1, 1} \Lambda_1' \\
+F^{0, 2} \Lambda_0' + F^{1, 2} \Lambda_1'
+\end{bmatrix} + e \\
+&amp;= \begin{bmatrix}
+F^{0, 1} &amp; F^{1, 1} &amp; 0 \\
+F^{0, 2} &amp; 0 &amp; F^{1, 2}
+\end{bmatrix} 
+\begin{bmatrix} \Lambda_0 &amp; \Lambda_1 &amp; \Lambda_2 \end{bmatrix}' + e \\
+&amp;= \mathcal{F} \Theta + e.
+\end{aligned}
+$$</span></p>
+<p>Note that the number of factors above is possible larger than <span class="math inline"><em>r</em></span>, and depends on the rank of <span class="math inline"><em>Θ</em></span>. In general, <span class="math inline"><em>r</em> ≤ rank <em>Θ</em> ≤ <em>r</em> = <em>q</em></span> and <span class="math inline">rank <em>Θ</em></span>. <span class="citation" data-cites="han_tests_2015">(Han and Inoue 2015)</span> further classify breaks into 3 different types:</p>
+<ol type="1">
+<li><span class="math inline"><em>r</em><em>a</em><em>n</em><em>k</em>(<em>Θ</em>) = <em>r</em></span>, Type 1 Break</li>
+</ol>
+<p>The changes in <span class="math inline"><em>λ</em><sub>1, <em>i</em></sub> − <em>λ</em><sub>2, <em>i</em></sub></span> need to be so idiosyncratic across <span class="math inline"><em>i</em></span> such that <span class="math inline"><em>Λ</em><sub>1</sub></span> and <span class="math inline"><em>Λ</em><sub>2</sub></span> are linearly independent. The type of breaks in loadings considered by <span class="citation" data-cites="breitung_testing_2011">Breitung and Eickmeier (2011)</span> corresponds to a Type 1 Break.</p>
+<ol start="2" type="1">
+<li><span class="math inline"><em>r</em> &lt; <em>r</em><em>a</em><em>n</em><em>k</em>(<em>Θ</em>) &lt; <em>r</em> + <em>q</em></span>, Type 2 Break</li>
+</ol>
+<p>The column rank of <span class="math inline">[<em>Λ</em><sub>1</sub>:<em>Λ</em><sub>2</sub>]</span> is <span class="math inline"><em>q</em></span>, so that there exists a <span class="math inline"><em>q</em> × <em>q</em></span> matrix <span class="math inline"><em>Z</em><sub>0</sub></span> such that <span class="math inline"><em>Λ</em><sub>2</sub> = <em>Λ</em><sub>1</sub><em>Z</em><sub>0</sub></span>.</p>
+<p>A type 2 break implies that the “break” is simply a rotation or scaling of the existing loadings. The practical interpretation of a type 2 break is that <em>all</em> loadings change in a homogeneous way. It is remarkable that type 2 changes can be interpreted as either a change in the common dynamic factors, or a homogeneous change in all factor loadings - it is not possible to separately identify the two cases.</p>
+<p>Although <span class="citation" data-cites="han_tests_2015">Han and Inoue (2015)</span> allow <span class="math inline"><em>Z</em><sub>0</sub></span> is allowed to be singular, in which case there will be emerging (disappearing) factors after the break, we further distinguish the singular case, as it turns out that different tests can treat this in a distinctly different way.</p>
+<p>Type 2a: <span class="math inline"><em>Z</em><sub>0</sub></span> is singular</p>
+<p>The singular transformation case is the most topical for practical applications, as people tend to be interested in emerging or disappearing factors.</p>
+<p>Type 2b: <span class="math inline"><em>Z</em><sub>0</sub></span> is non-singular</p>
+<p>The non-singular case corresponds to the more general case where factors have their loadings changed in a homogeneous way across <em>all</em> series. Although ruled out by <span class="citation" data-cites="han_tests_2015">Han and Inoue (2015)</span>’s regularity assumption, this in fact more generally corresponds to the case where there is a break in the dynamic factors, such as a change in the dynamic factor loadings, or a change in factor variance.</p>
+<ol start="3" type="1">
+<li><span class="math inline"><em>r</em><em>a</em><em>n</em><em>k</em>(<em>Θ</em>) = <em>q</em></span>, Type 3 Break</li>
+</ol>
+<p>A type 3 break is simply any combination of both a type 1 and type 2 break, which arises out of technical necessity.</p>
+<p>Although <span class="citation" data-cites="breitung_testing_2011">Breitung and Eickmeier (2011)</span>’s test does legitimately identify and test for a break in the factor loadings from the factor dynamics, it does not generalise to the entire cross section of data. This is because in the approximate model setup, the idiosyncratic shocks are allowed to have (a limited degree of) serial and cross sectional correlation, making it invalid to simply pooled these tests, and additionally, <span class="math inline"><em>N</em> → ∞</span>, which results in difficulties in establishing valid asymptotics.</p>
+<p><span class="citation" data-cites="chen_detecting_2014">Chen, Dolado, and Gonzalo (2014)</span>, <span class="citation" data-cites="han_tests_2015">Han and Inoue (2015)</span> and <span class="citation" data-cites="baltagi_identification_2017">Baltagi, Kao, and Wang (2017)</span> propose tests for structural breaks in the factor loadings. However, because breaks in the factor loadings and factor dynamics are in general not separately identifiable, they all assume, as an identification condition that the factors are are stationary before and after the break (have the same variance). <span class="citation" data-cites="han_tests_2015">Han and Inoue (2015)</span> and <span class="citation" data-cites="baltagi_identification_2017">Baltagi, Kao, and Wang (2017)</span> both formulate Equivalent Representation Theorems, which state that PCA will estimate an equivalent factor model with time invariant loadings, but with all breaks in the loadings transmitted to the estimated pseudo factor space. Based on this, they formulate a est statistic based on the second moments process of the pseudo factors.</p>
+<p>However, procedures based on the pseudo factors cannot be accurately stated to be a test against breaks in factor loadings, because breaks in the pseudo factors may be in fact due to any combination of the following:</p>
+<ol type="1">
+<li>breaks in the loadings and/or</li>
+<li>breaks in the factor dynamics and/or</li>
+<li>breaks in the factor innovations.</li>
+</ol>
+<p>The identification assumption of stationary factors explicitly rules out points 2 and 3, even though the distinction and resulting interpretation in the differences between these cases are different. <span class="citation" data-cites="stock_chapter_2016">Stock and Watson (2016)</span> in their review chapter on Dynamic Factor Models remarks that many of these tests are new, and may have power against breaks in the factor dynamics as well.</p>
+<p>In our following simulation study, we investigate the performance and properties of these tests in various cases.</p>
+<p><span class="citation" data-cites="ma_estimation_2018">Ma and Su (2018)</span> provides a methodology to identify breaks in the loadings without assuming stationary factors. However, their method does not allow for a differing number of factors across regimes. More importantly, their method, being motivated via the LASSO literature, requires the specification of hyperparameters, and is very sensitive to this arbitrary choice. Practically, and it is unclear how to choose these for outside of synthetic data, as results are very non-robust.</p>
+<h2 id="disentangling-breaks-in-factor-loadings-and-breaks-in-factor-dynamics">Disentangling Breaks in Factor Loadings and Breaks in Factor Dynamics</h2>
+<p>The below table summarises available tests. Yes means that the</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 15%" />
+<col style="width: 17%" />
+<col style="width: 20%" />
+<col style="width: 17%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Test</th>
+<th>Type 1</th>
+<th>Type 2a</th>
+<th>Type 2b</th>
+<th>Type 3</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="citation" data-cites="breitung_testing_2011">Breitung and Eickmeier (2011)</span></td>
+<td>Yes*</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>Only for single series <span class="math inline"><em>i</em></span></td>
+</tr>
+<tr class="even">
+<td><span class="citation" data-cites="chen_detecting_2014">Chen, Dolado, and Gonzalo (2014)</span></td>
+<td>Yes</td>
+<td>Yes*</td>
+<td>No</td>
+<td>Yes*</td>
+<td>Test statistic has power against Type 2a, but no theoretical result</td>
+</tr>
+<tr class="odd">
+<td><span class="citation" data-cites="han_tests_2015">Han and Inoue (2015)</span></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Cannot distinguish between different types</td>
+</tr>
+<tr class="even">
+<td><span class="citation" data-cites="baltagi_identification_2017">Baltagi, Kao, and Wang (2017)</span></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Cannot distinguish between different types</td>
+</tr>
+<tr class="odd">
+<td><span class="citation" data-cites="baltagi_estimating_2021">Baltagi, Kao, and Wang (2021)</span></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Cannot distinguish between different types</td>
+</tr>
+<tr class="even">
+<td><span class="citation" data-cites="bai_estimation_2020">Bai, Han, and Shi (2020)</span></td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Cannot distinguish between different types</td>
+</tr>
+<tr class="odd">
+<td><span class="citation" data-cites="bai_estimation_2020">Bai, Han, and Shi (2020)</span></td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Cannot distinguish between different types</td>
+</tr>
+</tbody>
+</table>
+<p>Thus, ignoring the separability issue, the problem of disentangling the breaks in factor loadings and those in factor dynamics can be be reduced down to the same problem as distinguishing between the different <em>types</em> of breaks.</p>
+<p>Our goal is to propose a methodology that is able to detect all types of breaks, as well as classify <em>which</em> type of break they are, in order to pin down the precise source of the break (at least up to the separability constraint).</p>
+<p><span class="citation" data-cites="chen_detecting_2014">Chen, Dolado, and Gonzalo (2014)</span> provides the closest methodology is achieving this - their method has power against type 1 and type 2a breaks and no power against type 2b breaks - however, the asymptotics of their statistic has only been formally established for type 1 breaks.</p>
+<p>It is also remarkable that another possible way to disentangle the breaks follows the remark by <span class="citation" data-cites="chen_detecting_2014">Chen, Dolado, and Gonzalo (2014)</span> - type 2b breaks do never augment the estimated factor space with more factors, and a method based on the estimated number of factors before and after the break compared to the full sample may be possible.</p>
+<p>We do not pursue this method, for two reasons. First, it has been noted that estimators of the number of factors are sensitive to even small breaks, and empirically, are often in disagreement with one another. Second, recall that both type 1 and type 2a breaks can affect the no. of factors, meaning that this strategy still cannot disentangle between breaks in factor loadings and factor dynamics. That is, all breaks which do not change the no. of pseudo factors are type 2 breaks (corresponding to breaks in factor dynamics), but not all type 2 breaks change the no. of pseudo factors. The fact that it is ultimately unable to distinguish between these two beaks means it it is ultimately unsuitable even when used in conjunction with any pre-existing method.</p>
+<h2 id="proposed-procedure">Proposed Procedure</h2>
+<p>We propose a two step procedure in order to identify which kind of break, and therefore disentangle the source of the break.</p>
+<p>The intuition behind our procedure is motivated by the fact that a type 2b break affects <em>all</em> series in a very homogeneous way. Noting that this sort of break can be detected via existing methods, in the absence of other sorts of breaks, it stands to reason then that a simple estimate of long run variance for each series, averaged over the entire cross section will yield an estimator for the factor variance.</p>
+<p>As a first step procedure, we propose to “standardize” the data by the inverse of this estimate of the factor variance. The resulting data should therefore not exhibit any “breaks” induced by changes in factor dynamics.</p>
+<p>This adjusted data then satisfies the piecewise stationary factors identification condition (which was unreasonable) that existing methods assume, and thus these can then used as the second step in a 2 stage procedure to disentangle the breaks.</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAxAAAAEjCAYAAACiiOfXAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3Xd8FHX+x/HX7qZsGiSbQiAhJIFAgBA6hAACNkBEUFH0BLGcBezn6XnFn+U8KwqcCBLFUzqCHp4ehxVFpAuEmlBCSUJ6JWWTTXZ/f0QWAqgrBALh/Xw88kB3vvOdz8xuYN77nfmOweFwOBAREREREXGBsbELEBERERGRi4cChIiIiIiIuEwBQkREREREXKYAISIiIiIiLlOAEBERERERlylAiIiIiIiIyxQgRERERETEZQoQIiIiIiLiMgUIERERERFxmQKEiIiIiIi4TAFCRERERERcpgAhIiIiIiIuU4AQERERERGXKUCIiIiIiIjLFCBERERERMRlChAiIiIiIuIyBQgREREREXGZAoSIiIiIiLhMAUJERERERFymACEiIiIiIi5TgBAREREREZcpQIiIiIiIiMsUIERERERExGUKECIiIiIi4jIFCBERERERcZkChIiIiIiIuEwBQkREREREXKYAISIiIiIiLlOAEBERERERlylAiIiIiIiIyxQgRERERETEZQoQIiIiIiLiMgUIERERERFxmQKEiIiIiIi4TAFCRERERERcpgAhIiIiIiIuU4AQERERERGXKUCIiIiIiIjLFCBERERERMRlChAiIiIiIuIyBQgREREREXGZAoSIiIiIiLhMAUJERERERFymACEiIiIiIi5TgBAREREREZcpQIiIiIiIiMsUIERERERExGUKECIiIiIi4jIFCBERERERcZkChIiIiIiIuEwBQkREREREXKYAISIiIiIiLlOAEBERERERlylAiIiIiIiIyxQgRERERETEZQoQIiIiIiLiMgUIERERERFxmQKEiIiIiIi4TAFCRERERERcpgAhIiIiIiIuU4AQERERERGXKUCIiIiIiIjLFCBERERERMRlChAiIiIiIuIyBQgREREREXGZAoSIiIiIiLhMAUJERERERFymACEiIiIiIi5TgBAREREREZcpQIiIiIiIiMsUIERERERExGUKECIiIiIi4jIFCBERERERcZkChIiIiIiIuEwBQkREREREXKYAISIiIiIiLlOAEBERERERlylAiIiIiIiIyxQgRERERETEZQoQIiIiIiLiMgUIERERERFxmQKEiIiIiIi4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LKSl7XEGiI4du7BzZzJhYRGYTCZCQkIxmdzYsWML/foNonnzAPLycrj66uvIzDzMpk1rGT58NADu7h7ccsudzJ//Lnl52YSHtyEiIor//vcjOnbsQmZmOh4enlgsQdhsNnbu3ArArFlvMG7cvZjN5tPuY6tW4aSnHyQj4yD9+1+Or68fPXok8PHH8xkw4Ap8ff0oKMjjyJF0TCYT119/K6+88jSjR9/CtGkvOo/dwYP7efTRv5Kbm83KlSuwWIIYOPDKhvkwnyUFCJEmJCgoiBEjRjBixAgKCgpYt26d81uwyMhI+vXrpzAhInIWbrjhBj7++GMMBgOGn64zOnbyfozD4aj357ETzdjYWG677TaKiopYtWoVvXv3pqqqirS0NCoqKggICCA3N5cXX5yOr68X6enZmM2emM0emM2eBAdbqKy04uHhjru7O0FB/pSVVWA0GjAajTRr5ktFhRWoe/ZQZaUVg8GAj48X5eWV9fajurqGvLxCqqqqnK/5+Phy+PAB5/+vWfPtSftSt49eXj6YTCbsdodz363Wuu0aDAbsP91XUVFR5nyttrYWAIsliPHj76OoqJCAgPpTlcfFdWf58n/j5eVNUFBIvWUGg4HBg68mPr4nxcVFzte3b99CauoObrrpdg4c2IfRaOS6627m9defZfPm9XTr1psvv/wMg8GAw+Go9z4ZTrpOzGz2AupCyfjx91FYWMC3335O374DsVqt7N+fCkBQUAg7d24lJGRYvb6O7WNi4hCWL/+Y5s0DTjpedj75ZBGPPfY0CxbMxm634+Xl7Tz2J3M46o5jVZWVG264jczMw0yf/jJPP/0qRmPjPQMCFCBEmqzAwEBnmCguLmbNmjUsWLCA7OxsEhISSExMVJgQEfmNWrRogZeXF1arlUGDBjF79mwqKyuZMGGCs82RI0dYuHAhrVq1cr7WunVriouLmT17NoGBgbRr147ly5cTHR1NamoqFouFu+66ixkzZvCPfzyKj48Zd/eGP0178815REaGMXRof4ZdeSUluUHOZW5ublxxxQheeumvuLu70759J/r3v5z589/B3d2doUOvY82ab53tg4NbsGHDav75z5fo06c/UHciXFCQx6efLsFoNNG7d3/mzHmbsLAIADp0iCMpaQpVVVU89NBTzr6Kiws5ciQdb28fQkPrjltm5mHmz3+XVq1ak5g4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" alt="" /></p>
+<h2 id="simulation-setup">Simulation Setup</h2>
+<p>We consider 9 different simulation specifications to explore how different types of breaks are handled by different tests.</p>
+<ol type="1">
+<li>Null Case - no breaks</li>
+</ol>
+<p>The first experiment contains no breaks and thus acts as a control.</p>
+<p><span class="math display"><em>X</em><sub><em>i</em><em>t</em></sub> = <em>F</em><sub><em>t</em></sub>′<em>λ</em><sub><em>i</em></sub> + <em>e</em><sub><em>i</em><em>t</em></sub>   </span></p>
+<p>where <span class="math inline"><em>F</em><sub><em>t</em></sub></span> is a <span class="math inline">(3×1)</span> vector of static factors, and each <span class="math inline"><em>λ</em><sub><em>i</em></sub> ∼ <em>i</em>.<em>i</em>.<em>d</em>.<em>N</em>(0<sub>3</sub>,<em>I</em><sub>3</sub>)</span>.</p>
+<ol start="2" type="1">
+<li>Idiosyncratic Break in Factor Loadings (Type 1)</li>
+</ol>
+<p><span class="math display">$$
+X_{it} = \begin{cases}
+F_{t}' \lambda_{1i} + e_{it}\ \quad \text{for} \quad t = 1, \dots, \left \lfloor \tau T \right \rfloor  \\
+F_{t}' \lambda_{2i} + e_{it}\ \quad \text{for} \quad t = \left \lfloor \tau T \right \rfloor  + 1, \dots, T,
+\end{cases}
+$$</span></p>
+<p>where <span class="math inline"><em>λ</em><sub>1<em>i</em></sub> ∼ <em>i</em>.<em>i</em>.<em>d</em>.<em>N</em>(0,<em>I</em><sub><em>N</em> × <em>r</em></sub>)</span>, which changes to <span class="math inline"><em>λ</em><sub>2<em>i</em></sub> ∼ <em>i</em>.<em>i</em>.<em>d</em>.<em>N</em>(0,<em>I</em><sub><em>N</em> × <em>r</em></sub>)</span>.</p>
+<ol start="3" type="1">
+<li>Break in Factor Dynamics (Type 2b)</li>
+</ol>
+<p><span class="math display">$$
+\begin{aligned}
+X_{it} &amp;= 
+f_t' \lambda_{i} + e_{it}, \\
+f_t &amp;= \begin{cases}
+\rho_1 + f_{t - 1} + \epsilon_{t}\ \quad \text{for} \quad t = 1, \dots, \left \lfloor \tau T \right \rfloor  \\
+\rho_1 + f_{t - 1} + 2\epsilon_{t}\ \quad \text{for} \quad t = \left \lfloor \tau T \right \rfloor  + 1, \dots, T,
+\end{cases}
+\end{aligned}
+$$</span> where the factor variance (via the innovations) undergoes a break. This corresponds to hetereoskedasticity in the underlying factors.</p>
+<ol start="4" type="1">
+<li>Break in Factor Loadings and Factor Dynamics (Type 3)</li>
+</ol>
+<p><span class="math display">$$
+X_{it} = \begin{cases}
+F_{t}' \lambda_{1i} + e_{it}\ \quad \text{for} \quad t = 1, \dots, \left \lfloor \tau T \right \rfloor  \\
+F_{t}' \lambda_{1i} + e_{it}\ \quad \text{for} \quad t = \left \lfloor \tau T \right \rfloor  + 1, \dots, T,
+\end{cases}
+$$</span></p>
+<ol start="5" type="1">
+<li>Common Break in Factor Loadings (Type 2b)</li>
+</ol>
+<p>All factor loadings are assumed to undergo the <em>same</em> type of break. This is mathematically identical to a break in factor dynamics.</p>
+<p><span class="math display">$$
+X_{it} = \begin{cases}
+F_{t}' \lambda_{1i} + e_{it}\ \quad \text{for} \quad t = 1, \dots, \left \lfloor \tau T \right \rfloor  \\
+F_{t}' (2\lambda_{1i}) + e_{it}\ \quad \text{for} \quad t = \left \lfloor \tau T \right \rfloor  + 1, \dots, T,
+\end{cases}
+$$</span> in which the factor loadings are all multiplied by the same constant after the break.</p>
+<ol start="6" type="1">
+<li>Common Break in Idiosyncratic Error</li>
+</ol>
+<p><span class="math display">$$
+X_{it} = \begin{cases}
+F_{t}' \lambda_{i} + e_{it}\ \quad \text{for} \quad t = 1, \dots, \left \lfloor \tau T \right \rfloor  \\
+F_{t}' \lambda_{i} + 2e_{it}\ \quad \text{for} \quad t = \left \lfloor \tau T \right \rfloor  + 1, \dots, T,
+\end{cases}
+$$</span> where the “break” is now in the idiosyncratic error term.</p>
+<ol start="7" type="1">
+<li>Break in Factor Autocorrelation (Type 2b)</li>
+</ol>
+<p><span class="math display">$$
+\begin{aligned}
+X_{it} &amp;= 
+f_t' \lambda_{i} + e_{it}, \\
+f_t &amp;= \begin{cases}
+\rho_1 + f_{t - 1} + \epsilon_{t}\ \quad \text{for} \quad t = 1, \dots, \left \lfloor \tau T \right \rfloor  \\
+\rho_2 + f_{t - 1} + 2\epsilon_{t}\ \quad \text{for} \quad t = \left \lfloor \tau T \right \rfloor  + 1, \dots, T,
+\end{cases}
+\end{aligned}
+$$</span> where <span class="math inline"><em>ρ</em><sub>1</sub> = 0.7</span>, <span class="math inline"><em>ρ</em><sub>2</sub> = 0.3</span>. Clearly, a change in the autocorrelation coefficient of the factor process will also change the factor variance.</p>
+<ol start="8" type="1">
+<li>Appearance of Extra Factor Lag (Type 2a)</li>
+</ol>
+<p><span class="math display">$$
+X_{it} = \begin{cases}
+F_{t}' \lambda_{1i} + e_{it}\ \quad \text{for} \quad t = 1, \dots, \left \lfloor \tau T \right \rfloor  \\
+F_{t}' \lambda_{2i} + e_{it}\ \quad \text{for} \quad t = \left \lfloor \tau T \right \rfloor  + 1, \dots, T,
+\end{cases}
+$$</span></p>
+<ol start="9" type="1">
+<li>Disappearing Factor (Type 2a)</li>
+</ol>
+<p><span class="math display">$$
+X_{it} = \begin{cases}
+F_{t}' \lambda_{1i} + e_{it}\ \quad \text{for} \quad t = 1, \dots, \left \lfloor \tau T \right \rfloor  \\
+F_{t}' \lambda_{2i} + e_{it}\ \quad \text{for} \quad t = \left \lfloor \tau T \right \rfloor  + 1, \dots, T,
+\end{cases}
+$$</span></p>
+<h3 id="simulation-results">Simulation Results</h3>
+<p>We present the results of the simulation study.</p>
+<p>Unsurprisingly,</p>
+<p>Perhaps most interesting is the result of <span class="citation" data-cites="chen_detecting_2014">Chen, Dolado, and Gonzalo (2014)</span>’s test statistic, which seems to exhibit power against Type 2a breaks. However, the distribution of their test statistic under such breaks has not been formally derived.</p>
+<h2 id="empirical-study">Empirical Study</h2>
+<p>To date, there is limited empirical work conducted on the detection of structural breaks in dynamic factor models, although there is a consensus that there are structural instabilities that exist. This is due to a number of reasons:</p>
+<ol type="1">
+<li>Possibility of multiple breaks</li>
+</ol>
+<p>Most of the literature thus far has only considered the case of a single break, but the empirical data may be subject to multiple breaks. Although it is well known that single break tests do have power against multiple breaks, the finite sample performance of such tests is notorious for being unreliable, in the sense that they do not always agree which break is the biggest.</p>
+<ol start="2" type="1">
+<li>Possibility of non-smooth breaks</li>
+</ol>
+<p>It is also well known in the structural break literature that structural break tests may perform poorly when instead of large sudden breaks, the DGP instead exhibits small, smooth changes over time. <span class="citation" data-cites="su_time-varying_2017">Su and Wang (2017)</span> and <span class="citation" data-cites="su_testing_2020">Su and Wang (2020)</span> show in simulation evidence for this, and propose a non-parametric framework to estimate and test for smooth changes. However, their method cannot distinguish between smooth changes and sudden changes.</p>
+<ol start="3" type="1">
+<li>Lack of data in the <span class="math inline"><em>T</em></span> dimension</li>
+</ol>
+<p>The previous two points compound the main issue of there not being enough data in each subsample. This issue is profound in the structural break literature - whether using the framework proposed by <span class="citation" data-cites="andrews_tests_1993">Andrews (1993)</span> or <span class="citation" data-cites="bai_estimating_1998">Bai and Perron (1998)</span>, the resulting test statistics are poorly behaved towards the start and end of the subsample, and hence a proportional of the data, denoted by <span class="math inline"><em>ϵ</em></span>, usually around 0.1 or 0.15, is needed to trimmed from both the start and end.</p>
+<p>These problems often mean that practically, a practitioner must be careful of making sure that the sample is large enough to avoid boundary issues, but also not large enough that it may include another possible break. As such, the practitioner must have a pre-existing idea of where such breaks may occur already, and “pre-treat” the data accordingly beforehand.</p>
+<p>Popular breaks that are typically suggested and/or identified by the literature are:</p>
+<ul>
+<li>Great Moderation, early 1980s</li>
+<li>Dot-com bubble, early 2000s</li>
+<li>GFC, late 2007/early 2008</li>
+<li>COVID pandemic, late 2019/early 2020</li>
+</ul>
+<p>It is remarkable that a large amount of the earlier literature identified the Great Moderation as a potential break date, but this may due to the data from the 2000s onwards being trimmed out due to lack of data back then.</p>
+<h3 id="data">Data</h3>
+<h4 id="stock-and-watson-2005">Stock and Watson 2005</h4>
+<h4 id="stock-and-watson-2009">Stock and Watson 2009</h4>
+<h4 id="stock-and-watson-2012">Stock and Watson 2012</h4>
+<h4 id="fredmd">FREDMD</h4>
+<p><span class="citation" data-cites="mccracken_fred-md_2015">McCracken and Ng (2015)</span> provides a large, monthly frequency, macroeconomic database based on US data. This is emerged in more recent times to be the <em>de facto</em> standard for large empirical macroeconomic databases, and is aimed to be broadly compatible and equivalent to the vintages prepared by Stock and Watson.</p>
+<p>Any series with missing observations</p>
+<h4 id="fredqd">FREDQD</h4>
+<p><span class="citation" data-cites="mccracken_fred-qd_2020">McCracken and Ng (2020)</span> provides a large, quarterly frequency, macroeconomic database based on US data - the quarterly counterpart to FREDMD.</p>
+<h3 id="empirical-results">Empirical Results</h3>
+<h2 id="future-work">Future Work</h2>
+<p>The work presented thus far has identified notable gap in the literature, namely disentangling</p>
+<p>It remains as future work to formally prove and establish the asymptotic validity of the proposed procedure.</p>
+<p>It is noteworthy that the procedure bears some resemblance to the Feasible Generalised Principal Components estimator proposed by <span class="citation" data-cites="choi_efficient_2012">Choi (2012)</span>.</p>
+<h3 id="timeline">Timeline</h3>
+<h1 class="unnumbered" id="bibliography">References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-andrews_tests_1993" class="csl-entry" role="doc-biblioentry">
+Andrews, Donald W. K. 1993. <span>“Tests for Parameter Instability and Structural Change with Unknown Change Point.”</span> <em>Econometrica</em> 61 (4): 821–56. <a href="https://doi.org/10.2307/2951764">https://doi.org/10.2307/2951764</a>.
+</div>
+<div id="ref-bai_estimation_2020" class="csl-entry" role="doc-biblioentry">
+Bai, Jushan, Xu Han, and Yutang Shi. 2020. <span>“Estimation and Inference of Change Points in High-Dimensional Factor Models.”</span> <em>Journal of Econometrics</em> 219 (1): 66–100. <a href="https://doi.org/10.1016/j.jeconom.2019.08.013">https://doi.org/10.1016/j.jeconom.2019.08.013</a>.
+</div>
+<div id="ref-bai_determining_2002" class="csl-entry" role="doc-biblioentry">
+Bai, Jushan, and Serena Ng. 2002. <span>“Determining the Number of Factors in Approximate Factor Models.”</span> <em>Econometrica</em> 70 (1): 191–221. <a href="https://doi.org/10.1111/1468-0262.00273">https://doi.org/10.1111/1468-0262.00273</a>.
+</div>
+<div id="ref-bai_estimating_1998" class="csl-entry" role="doc-biblioentry">
+Bai, Jushan, and Pierre Perron. 1998. <span>“Estimating and Testing Linear Models with Multiple Structural Changes.”</span> <em>Econometrica</em> 66 (1): 47. <a href="https://doi.org/10.2307/2998540">https://doi.org/10.2307/2998540</a>.
+</div>
+<div id="ref-baltagi_identification_2017" class="csl-entry" role="doc-biblioentry">
+Baltagi, Badi H., Chihwa Kao, and Fa Wang. 2017. <span>“Identification and Estimation of a Large Factor Model with Structural Instability.”</span> <em>Journal of Econometrics</em> 197 (1): 87–100. <a href="https://doi.org/10.1016/j.jeconom.2016.10.007">https://doi.org/10.1016/j.jeconom.2016.10.007</a>.
+</div>
+<div id="ref-baltagi_estimating_2021" class="csl-entry" role="doc-biblioentry">
+———. 2021. <span>“Estimating and Testing High Dimensional Factor Models with Multiple Structural Changes.”</span> <em>Journal of Econometrics</em>, Annals issue: Celebrating 40 years of panel data analysis: Past, present and future, 220 (2): 349–65. <a href="https://doi.org/10.1016/j.jeconom.2020.04.005">https://doi.org/10.1016/j.jeconom.2020.04.005</a>.
+</div>
+<div id="ref-bates_consistent_2013" class="csl-entry" role="doc-biblioentry">
+Bates, Brandon J., Mikkel Plagborg-Møller, James H. Stock, and Mark W. Watson. 2013. <span>“Consistent Factor Estimation in Dynamic Factor Models with Structural Instability.”</span> <em>Journal of Econometrics</em>, Dynamic econometric modeling and forecasting, 177 (2): 289–304. <a href="https://doi.org/10.1016/j.jeconom.2013.04.014">https://doi.org/10.1016/j.jeconom.2013.04.014</a>.
+</div>
+<div id="ref-breitung_testing_2011" class="csl-entry" role="doc-biblioentry">
+Breitung, Jörg, and Sandra Eickmeier. 2011. <span>“Testing for Structural Breaks in Dynamic Factor Models.”</span> <em>Journal of Econometrics</em>, Factor structures in panel and multivariate time series data, 163 (1): 71–84. <a href="https://doi.org/10.1016/j.jeconom.2010.11.008">https://doi.org/10.1016/j.jeconom.2010.11.008</a>.
+</div>
+<div id="ref-chen_detecting_2014" class="csl-entry" role="doc-biblioentry">
+Chen, Liang, Juan J. Dolado, and Jesús Gonzalo. 2014. <span>“Detecting Big Structural Breaks in Large Factor Models.”</span> <em>Journal of Econometrics</em> 180 (1): 30–48. <a href="https://doi.org/10.1016/j.jeconom.2014.01.006">https://doi.org/10.1016/j.jeconom.2014.01.006</a>.
+</div>
+<div id="ref-choi_efficient_2012" class="csl-entry" role="doc-biblioentry">
+Choi, In. 2012. <span>“<span>EFFICIENT</span> <span>ESTIMATION</span> <span>OF</span> <span>FACTOR</span> <span>MODELS</span>.”</span> <em>Econometric Theory</em> 28 (2): 274–308. <a href="https://doi.org/10.1017/S0266466611000338">https://doi.org/10.1017/S0266466611000338</a>.
+</div>
+<div id="ref-duan_quasi-maximum_2021" class="csl-entry" role="doc-biblioentry">
+Duan, Jiangtao, Jushan Bai, and Xu Han. 2021. <span>“Quasi-Maximum Likelihood Estimation of Break Point in High-Dimensional Factor Models.”</span> <em><span>arXiv</span>:2102.12666 [Econ]</em>, March. <a href="http://arxiv.org/abs/2102.12666">http://arxiv.org/abs/2102.12666</a>.
+</div>
+<div id="ref-forni_generalized_2000" class="csl-entry" role="doc-biblioentry">
+Forni, Mario, Marc Hallin, Marco Lippi, and Lucrezia Reichlin. 2000. <span>“The Generalized Dynamic-Factor Model: Identification and Estimation.”</span> <em>The Review of Economics and Statistics</em> 82 (4): 540–54. <a href="https://doi.org/10.1162/003465300559037">https://doi.org/10.1162/003465300559037</a>.
+</div>
+<div id="ref-han_tests_2015" class="csl-entry" role="doc-biblioentry">
+Han, Xu, and Atsushi Inoue. 2015. <span>“<span>TESTS</span> <span>FOR</span> <span>PARAMETER</span> <span>INSTABILITY</span> <span>IN</span> <span>DYNAMIC</span> <span>FACTOR</span> <span>MODELS</span>.”</span> <em>Econometric Theory</em> 31 (5): 1117–52. <a href="https://doi.org/10.1017/S0266466614000486">https://doi.org/10.1017/S0266466614000486</a>.
+</div>
+<div id="ref-lam_factor_2012" class="csl-entry" role="doc-biblioentry">
+Lam, Clifford, and Qiwei Yao. 2012. <span>“Factor Modeling for High-Dimensional Time Series: Inference for the Number of Factors.”</span> <em>The Annals of Statistics</em> 40 (2). <a href="https://doi.org/10.1214/12-AOS970">https://doi.org/10.1214/12-AOS970</a>.
+</div>
+<div id="ref-lam_estimation_2011" class="csl-entry" role="doc-biblioentry">
+Lam, Clifford, Qiwei Yao, and Neil Bathia. 2011. <span>“Estimation of Latent Factors for High-Dimensional Time Series.”</span> <em>Biometrika</em> 98 (4): 901–18. <a href="https://doi.org/10.1093/biomet/asr048">https://doi.org/10.1093/biomet/asr048</a>.
+</div>
+<div id="ref-liu_regime-switching_2017" class="csl-entry" role="doc-biblioentry">
+Liu, Xialu, and Rong Chen. 2017. <span>“Regime-Switching Factor Models for High-Dimensional Time Series.”</span> <em>Statistica Sinica</em>. <a href="https://doi.org/10.5705/ss.2014.265t">https://doi.org/10.5705/ss.2014.265t</a>.
+</div>
+<div id="ref-liu_threshold_2020" class="csl-entry" role="doc-biblioentry">
+———. 2020. <span>“Threshold Factor Models for High-Dimensional Time Series.”</span> <em>Journal of Econometrics</em>, Annals issue in honor of george tiao: Statistical learning for dependent data, 216 (1): 53–70. <a href="https://doi.org/10.1016/j.jeconom.2020.01.005">https://doi.org/10.1016/j.jeconom.2020.01.005</a>.
+</div>
+<div id="ref-liu_estimating_2022" class="csl-entry" role="doc-biblioentry">
+Liu, Xialu, and Ting Zhang. 2022. <span>“Estimating Change-Point Latent Factor Models for High-Dimensional Time Series.”</span> <em>Journal of Statistical Planning and Inference</em> 217 (March): 69–91. <a href="https://doi.org/10.1016/j.jspi.2021.07.006">https://doi.org/10.1016/j.jspi.2021.07.006</a>.
+</div>
+<div id="ref-ma_estimation_2018" class="csl-entry" role="doc-biblioentry">
+Ma, Shujie, and Liangjun Su. 2018. <span>“Estimation of Large Dimensional Factor Models with an Unknown Number of Breaks.”</span> <em>Journal of Econometrics</em> 207 (1): 1–29. <a href="https://doi.org/10.1016/j.jeconom.2018.06.019">https://doi.org/10.1016/j.jeconom.2018.06.019</a>.
+</div>
+<div id="ref-mccracken_fred-md_2015" class="csl-entry" role="doc-biblioentry">
+McCracken, Michael W., and Serena Ng. 2015. <span>“<span>FRED</span>-<span>MD</span>: A Monthly Database for Macroeconomic Research.”</span> <a href="https://doi.org/10.20955/wp.2015.012">https://doi.org/10.20955/wp.2015.012</a>.
+</div>
+<div id="ref-mccracken_fred-qd_2020" class="csl-entry" role="doc-biblioentry">
+———. 2020. <span>“<span>FRED</span>-<span>QD</span>: A Quarterly Database for Macroeconomic Research.”</span> <a href="https://doi.org/10.20955/wp.2020.005">https://doi.org/10.20955/wp.2020.005</a>.
+</div>
+<div id="ref-stock_chapter_2016" class="csl-entry" role="doc-biblioentry">
+Stock, J. H., and M. W. Watson. 2016. <span>“Chapter 8 - Dynamic Factor Models, Factor-Augmented Vector Autoregressions, and Structural Vector Autoregressions in Macroeconomics.”</span> In <em>Handbook of Macroeconomics</em>, edited by John B. Taylor and Harald Uhlig, 2:415–525. Elsevier. <a href="https://doi.org/10.1016/bs.hesmac.2016.04.002">https://doi.org/10.1016/bs.hesmac.2016.04.002</a>.
+</div>
+<div id="ref-su_time-varying_2017" class="csl-entry" role="doc-biblioentry">
+Su, Liangjun, and Xia Wang. 2017. <span>“On Time-Varying Factor Models: Estimation and Testing.”</span> <em>Journal of Econometrics</em> 198 (1): 84–101. <a href="https://doi.org/10.1016/j.jeconom.2016.12.004">https://doi.org/10.1016/j.jeconom.2016.12.004</a>.
+</div>
+<div id="ref-su_testing_2020" class="csl-entry" role="doc-biblioentry">
+———. 2020. <span>“<span>TESTING</span> <span>FOR</span> <span>STRUCTURAL</span> <span>CHANGES</span> <span>IN</span> <span>FACTOR</span> <span>MODELS</span> <span>VIA</span> a <span>NONPARAMETRIC</span> <span>REGRESSION</span>.”</span> <em>Econometric Theory</em> 36 (6): 1127–58. <a href="https://doi.org/10.1017/S0266466619000446">https://doi.org/10.1017/S0266466619000446</a>.
+</div>
+</div>

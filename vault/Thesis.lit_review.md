@@ -2,10 +2,12 @@
 id: Eao3HsBMWoKOJ6YjwKV1u
 title: Literature Review
 desc: ''
-updated: 1641359879020
+updated: 1641475959423
 created: 1641256729309
 bibliography: [references.bib]
 reference-section-title: References
+csl: econometrica.csl
+geometry: margin=2cm
 ---
 
 \newcommand{\sumT}{\sum_{t = 1}^{T}}
@@ -24,24 +26,44 @@ reference-section-title: References
 \newcommand{\sumTfloor}{\sum_{t = 1}^{\floor{\tau T}}}
 \newcommand{\sumTfloort}{\sum_{t = \floor{\tau T + 1}}^{T}}
 \newcommand{\rank}[1]{\operatorname{rank} #1 }
+\newcommand{\gt}{>}
+\newcommand{\lt}{<}
 
 We begin by providing a broad overview of the literature thus far.
 
-## Exact Factor Models
+## Empirical Motivation
 
-A factor model for a $T \times N$ panel of time series $X$ assumes that $X$ is generated from lower dimensional factor structure:
+A factor model for a $T \times N$ panel of time series $X$ assumes that $X$ is generated from lower dimensional "factor structure":
 
 $$
+\begin{aligned}
 X_{it} = \lambda_{it}' F_t + e_{it} \\
 X_t = \Lambda_t F_t + e_t \\
 X = F \Lambda' + \mathbf{e}.
-$$ which correspond to the individual, time slice, and whole panel representations respectively.
+\end{aligned}
+$$ which correspond to the individual, time based, and whole panel representations respectively, and are equivalent.
+
+There are broadly two motivations for the use of factor models in environments with both a large number of cross sectional units and large number of observations. The first is that factor models correspond to the "factor structure" model assumption, where it is implicitly assumed that there exists a small number of true latent factors which propagate throughout the data. Such a motivation is popular in economics for interpretative purposes, as these true latent factorsc an be interpreted as 
+
+## Exact Factor Models
+
+A factor model for a $T \times N$ panel of time series $X$ assumes that $X$ is generated from lower dimensional "factor structure":
+
+$$
+\begin{aligned}
+X_{it} &= \lambda_{it}' F_t + e_{it} \\
+X_t &= \Lambda_t F_t + e_t \\
+X &= F \Lambda' + \mathbf{e}.
+\end{aligned}
+$$ which correspond to the individual, time based, and whole panel representations respectively, and are equivalent.
+
+The first representation is useful for analysing idiosyncratic disturbances, the second is useful for analysing changes that are common across the entire cross section, and the third is useful for splitting the entire panel into different time based subsamples. 
 
 An exact factor model assumes that the idiosyncratic shocks $e_{it}$ do not have any serial correlation or cross sectional correlation, a strict assumption that is unrealistic for empirical applications.
 
 ## Approximate Factor Models
 
-The *exact* factor model can be subsequently loosened to an *approximate* factor model, in the sense that the idiosyncratic shocks are now allowed to have a limited degree of serial and cross sectional correlation.
+The *exact* factor model can be subsequently loosened to an *approximate* factor model, in the sense that the idiosyncratic shocks are now allowed to have a limited degree of serial and cross sectional correlation. A precise definition of this degree is provided by @bai_determining_2002 and @bai_inferential_2003.
 
 An approximate factor model has the *static* representation if the factors $F_t$ can only affect $X_t$ directly, and not through its lags:
 
@@ -49,29 +71,31 @@ $$
 X_t = \Lambda F_t + e_t
 $$
 
-The above formulation is to be contrasted with the dynamic form of the dynamic factor model, where the factors themselves are allowed to evolve dynamically:
+The above formulation is to be contrasted with the *dynamic* form of the dynamic factor model, where the fact that the factors themselves are allowed to evolve dynamically is made more explicit:
 
 $$
 X_{it} = \lambda_i'(L) f_t + e_{it}
 $$
 
-where $\lambda_{i}'(L) = (1 - \lambda_{1i}L - \dots - \lambda_{is}L^s)$ is a vector of dynamic factor loadings or order $s$. We focus on a finite $s$, in contrast to the separate strand of literature focused on *generalized* dynamic factor models which allows $s$ to be infinite (see [@forni_generalized_2000] and later section for a short review). In either case, the factors themselves are allowed to evolve according to:
+where $\lambda_{i}'(L) = (1 - \lambda_{1i}L - \dots - \lambda_{is}L^s)$ is a vector of dynamic factor loadings or order $s$. Thus, the static factors $F_t$ refers to space spanned by the leads and lags of the dynamic factors $f_t$. We focus on a finite $s$, in contrast to the separate strand of literature focused on *generalized* dynamic factor models which allows $s$ to be infinite (see @forni_generalized_2000 and later section for a short review). 
+
+In either the static or dynamic formulations, the factors themselves are allowed to evolve according to:
 
 $$
-f_t = C(L)\epsilon_t
+f_t = C(L) \epsilon_t
 $$
 
-where $\epsilon_t$ are $q \times 1$ $i.i.d. errors, which can be interpreted as the *primitive shocks* in an economic model. The literature which focuses on these primitive shocks refers to $q$ as the number of *dynamic* factors.
+where $\epsilon_t$ are $q \times 1$ i.i.d. errors, which can be interpreted as the *primitive shocks* in an economic model. The literature which focuses on these primitive shocks refers to $q$ as the number of *dynamic* factors.
 
-The dynamic factor model with $q$ *dynamic* factors can always be re-written as a static factor model with $r$ *static* factors, where $r$ is finite. More generally, $q \leq q(s + 1) = r$, because $F_t$ will contain the leads and lags of $f_t$. 
+The dynamic factor model with $q$ *dynamic* factors can always be re-written as a static factor model with $r$ *static* factors, where $r$ is finite. Because $F_t$ will contain the leads and lags of $f_t$, the general relationship $q \leq q(s + 1) = r$ always holds (@bai_determining_2007).
 
-It is because of this relationship that the literature usually does not explicitly differentiate between the two, referring (somewhat confusingly) to both the Static Factor Model and Dynamic Factor Model as simply Dynamic Factor Models, with the former referred to as the *static representation* of the Dynamic Factor Model when necessary. 
+It is because of this relationship that the literature usually does not explicitly differentiate between the two, referring (somewhat confusingly) to both the Static Factor Model and Dynamic Factor Model as simply Dynamic Factor Models, with the former referred to as the *static representation* of the Dynamic Factor Model when distinction is necessary.
 
 Empirically, it has been noted that forecasting approaches using either formulation perform rather similarly. However, for the purposes of interpretation such as the identification of primitive shocks, distinction is important. 
 
 ### Generalized Dynamic Factor Models
 
-In a separate, but related literature, [@forni_generalized_2000] develop so the called *Generalized* Dynamic Factor Model (GDFM) in which $s$ is explicitly allowed to $\to \infty$. Estimation and analysis of this model instead focuses on the spectral density of $X$.
+In a separate, but related literature, @forni_generalized_2000 develop so the called *Generalized* Dynamic Factor Model (GDFM) in which $s$ is explicitly allowed to $\to \infty$. Estimation and analysis of this model instead focuses on the spectral density of $X$.
 
 However, this approach is noticeably more complicated, and is still subject to its own issues, such as increased computational intensity, and the necessity of formulating a "one-sided" filter in order to reliably estimate the factors towards the end of the sample for forecasting purposes.
 
@@ -79,13 +103,13 @@ It is perhaps due to these difficulties that in spite of the dynamic factors as 
 
 ## Latent Factor Models
 
-More recently, [@lam_estimation_2011] develop and formulate the *Latent* Factor Model (LFM). 
+More recently, @lam_estimation_2011 develop and formulate the *Latent* Factor Model (LFM). 
 
 The key difference in this formulation is that serial correlation in the error term is explicitly allowed for, and in fact, *required* to achieve identification. Estimation of the factors and loadings is done via applying an eigendecomposition of the empirical autocovariance matrices of the data. 
 
 @lam_factor_2012 subsequently develop the inferential theory for the number of *latent* factors. 
 
-Although there has been some work done with this model as a basis, (see [@liu_regime-switching_2017, @liu_threshold_2020, @liu_estimating_2022]), in general, this has not proven to be a popular way to estimate factor models. 
+Although there has been some work done with this model as a basis, (see @liu_regime-switching_2017, @liu_threshold_2020, @liu_estimating_2022), in general, this has not proven to be a popular way to estimate factor models. 
 
 The precise relationship between this latent factor model with the existing literature is an unanswered question. 
 
@@ -97,7 +121,7 @@ Due to simplicity, almost all of the literature thus far has focused on the the 
 
 ### Small Changes in Factor Loadings
 
-We first make a preliminary note that there exists a necessary distinction between so called "small" and "large" breaks in dynamic factor models. Heuristically, the estimation of $F_t$ via the principal components estimator is not affected asymptotically if the breaks in the factor loadings is "small". @bates_consistent_2013 establish the conditions under which the changes in $\Lambda$ can be ignored for the estimation of $F_t$. They consider the following formulation:
+We first make a preliminary and necessary distinction between so called "small" and "large" breaks in dynamic factor models. Heuristically, the estimation of $F_t$ via the principal components estimator is not affected asymptotically if the breaks in the factor loadings is "small". @bates_consistent_2013 establish the conditions under which the changes in $\Lambda$ can be ignored for the estimation of $F_t$. They consider the following formulation:
 
 $$
 X_{it} = \lambda_{it}' F_t + e_{it}, \; i = 1, \dots, N, t = 1, \dots, T.
@@ -167,7 +191,7 @@ F^{0, 2} & 0 & F^{1, 2}
 \end{aligned}
 $$
 
-Note that the number of factors above is possible larger than $r$, and depends on the rank of $\Theta$. In general, $r \leq \rank{\Theta} \leq r = q$ and $\rank{\Theta}$. [@han_tests_2015] further classify breaks into 3 different types:
+Note that the number of factors above is possible larger than $r$, and depends on the rank of $\Theta$. In general, $r \leq \rank{\Theta} \leq r = q$ and $\rank{\Theta}$. @han_tests_2015 further classify breaks into 3 different types:
 
 1. $rank(\Theta) = r$, Type 1 Break
 
@@ -177,13 +201,13 @@ The changes in $\lambda_{1, i} - \lambda_{2, i}$ need to be so idiosyncratic acr
 
 The column rank of $[\Lambda_1 : \Lambda_2]$ is $q$, so that there exists a $q \times q$ matrix $Z_0$ such that $\Lambda_2 = \Lambda_1 Z_0$. 
 
-A type 2 break implies that the "break" is simply a rotation or scaling of the existing loadings. The practical interpretation of a type 2 break is that *all* loadings change in a homogeneous way. It is remarkable that type 2 changes can be interpreted as either a change in the common dynamic factors, or a homogeneous change in all factor loadings - it is not possible to separately identify the two cases. 
+A type 2 break implies that the "break" is simply a rotation or scaling of the existing loadings. The practical interpretation of a type 2 break is that *all* loadings change in a homogeneous way. It is remarkable that type 2 changes can be interpreted as either a change in the common dynamic factors, or a homogeneous change in all factor loadings - it is not possible to separately identify the two cases. From a practical perspective however, a change in the underlying factor dynamics is more plausible than all factor loadings changing in a homogeneous way, and as such, it is arguably more reasonable to interpret type 2 breaks as breaks in factor dynamics, rather than breaks in factor loadings.
 
 Although @han_tests_2015 allow $Z_0$ is allowed to be singular, in which case there will be emerging (disappearing) factors after the break, we further distinguish the singular case, as it turns out that different tests can treat this in a distinctly different way. 
 
 Type 2a: $Z_0$ is singular
 
-The singular transformation case is the most topical for practical applications, as people tend to be interested in emerging or disappearing factors. 
+The singular transformation case is the most topical for practical applications, as people tend to be interested in emerging or disappearing factors. Note that this type of break is explicitly ruled out by assumption by @chen_detecting_2014, though the authors remark that their test appears to have power against this type of break. Intuitively, from the perspective of changing factor loadings, a type 2a break where one dynamic factor disappears can be equivalently viewed as a break where *all* of its associated factor loadings change to 0. 
 
 Type 2b: $Z_0$ is non-singular
 
@@ -193,15 +217,13 @@ The non-singular case corresponds to the more general case where factors have th
 
 A type 3 break is simply any combination of both a type 1 and type 2 break, which arises out of technical necessity. 
 
-Although @breitung_testing_2011's test does legitimately identify and test for a break in the factor loadings from the factor dynamics, it does not generalise to the entire cross section of data. This is because in the approximate model setup, the idiosyncratic shocks are allowed to have (a limited degree of) serial and cross sectional correlation, making it invalid to simply pooled these tests, and additionally, $N \to \infty$, which results in difficulties in establishing valid asymptotics.
-
 @chen_detecting_2014, @han_tests_2015 and @baltagi_identification_2017 propose tests for structural breaks in the factor loadings. However, because breaks in the factor loadings and factor dynamics are in general not separately identifiable, they all assume, as an identification condition that the factors are are stationary before and after the break (have the same variance). @han_tests_2015 and @baltagi_identification_2017 both formulate Equivalent Representation Theorems, which state that PCA will estimate an equivalent factor model with time invariant loadings, but with all breaks in the loadings transmitted to the estimated pseudo factor space. Based on this, they formulate a est statistic based on the second moments process of the pseudo factors.
 
 However, procedures based on the pseudo factors cannot be accurately stated to be a test against breaks in factor loadings, because breaks in the pseudo factors may be in fact due to any combination of the following:
 
-1.  breaks in the loadings and/or
-2.  breaks in the factor dynamics and/or
-3.  breaks in the factor innovations.
+1. breaks in the loadings and/or
+2. breaks in the factor dynamics and/or
+3. breaks in the factor innovations.
 
 The identification assumption of stationary factors explicitly rules out points 2 and 3, even though the distinction and resulting interpretation in the differences between these cases are different. @stock_chapter_2016 in their review chapter on Dynamic Factor Models remarks that many of these tests are new, and may have power against breaks in the factor dynamics as well.
 
@@ -211,35 +233,57 @@ In our following simulation study, we investigate the performance and properties
 
 ## Disentangling Breaks in Factor Loadings and Breaks in Factor Dynamics
 
-The below table summarises available tests. Yes means that the 
+The below table summarises available tests. 
 
 |Test | Type 1 | Type 2a | Type 2b | Type 3 | Notes |
 ------|------- | --------|---------|--------|-------|
 | @breitung_testing_2011 | Yes* | n/a | n/a | n/a | Only for single series $i$
+| @yamamoto_testing_2015 | Yes* | n/a | n/a | n/a | Only for single series $i$
 | @chen_detecting_2014 | Yes | Yes* | No | Yes* | Test statistic has power against Type 2a, but no theoretical result
 | @han_tests_2015 | Yes | Yes | Yes | Yes | Cannot distinguish between different types
 | @baltagi_identification_2017 | Yes | Yes | Yes | Yes | Cannot distinguish between different types
 | @baltagi_estimating_2021 | Yes | Yes | Yes | Yes | Cannot distinguish between different types
 | @bai_estimation_2020 | Yes | No | Yes | Yes | Cannot distinguish between different types
-| @bai_estimation_2020 | Yes | No | Yes | Yes | Cannot distinguish between different types
+| @duan_quasi-maximum_2021 | Yes | No | Yes | Yes | Cannot distinguish between different types, extremely large trimming
 
 Thus, ignoring the separability issue, the problem of disentangling the breaks in factor loadings and those in factor dynamics can be be reduced down to the same problem as distinguishing between the different *types* of breaks. 
 
 Our goal is to propose a methodology that is able to detect all types of breaks, as well as classify *which* type of break they are, in order to pin down the precise source of the break (at least up to the separability constraint).
 
-@chen_detecting_2014 provides the closest methodology is achieving this - their method has power against type 1 and type 2a breaks and no power against type 2b breaks - however, the asymptotics of their statistic has only been formally established for type 1 breaks. 
+Of particular note is the test proposed by @breitung_testing_2011 and by extension, @yamamoto_testing_2015, as this does appear to legitimately correctly test for breaks in loadings. However, one crucial assumption for this test is that the true factors are correctly estimated (at least up to a rotation) in a first step procedure, though this is somewhat alleviated by @yamamoto_testing_2015. Additionally, because @breitung_testing_2011's test is formulated under the null hypothesis than *all* factor loadings are constant over time, it has the tendency to over reject the null hypothesis for a single series, if a fraction of $N$ other series have breaks in their loadings. However, more importantly, @bai_structural_2016 note that this sort of test has power against small breaks, and as such their results may be misleading if one is interested in estimating large common breaks. Additionally, @breitung_testing_2011's test is only formulated for a single series, and cannot be generalized to the entire panel without restrictive assumptions on the error terms. 
 
-It is also remarkable that another possible way to disentangle the breaks follows the remark by @chen_detecting_2014 - type 2b breaks do never augment the estimated factor space with more factors, and a method based on the estimated number of factors before and after the break compared to the full sample may be possible. We do not pursue this method, because it has been noted that estimators of the number of factors are sensitive to even small breaks, and empirically, are often in disagreement with one another. 
+@chen_detecting_2014 provides the closest methodology is achieving our goal of disentangling the source of breaks - their method has power against type 1 and type 2a breaks and no power against type 2b breaks - however, the asymptotics of their statistic has only been formally established for type 1 breaks. 
+
+It is also remarkable that another possible way to disentangle the breaks follows the remark by @chen_detecting_2014 - type 2b breaks do never augment the estimated factor space with more factors, and a method based on the estimated number of factors before and after the break compared to the full sample may be possible. 
+
+We do not pursue this method for two reasons. First, it has been noted that estimators of the number of factors are sensitive to even small breaks, and empirically, are often in disagreement with one another. Second, recall that both type 1 and type 2a breaks can affect the no. of factors, meaning that this strategy still cannot disentangle between breaks in factor loadings and factor dynamics. That is, all breaks which do not change the no. of pseudo factors are type 2 breaks (corresponding to breaks in factor dynamics), but not all type 2 breaks change the no. of pseudo factors. This limitation makes it ultimately unsuitable even when used in conjunction with any pre-existing method. 
 
 ## Proposed Procedure
 
 We propose a two step procedure in order to identify which kind of break, and therefore disentangle the source of the break.
 
-The intuition behind our procedure is motivated by the fact that a type 2b break affects *all* series in a very homogeneous way. Noting that this sort of break can be detected via existing methods, in the absence of other sorts of breaks, it stands to reason then that a simple estimate of long run variance for each series, averaged over the entire cross section will yield an estimator for the factor variance. 
+The intuition behind our procedure is motivated by the fact that a type 2 break affects *all* series in a homogeneous way. Noting that this sort of break can be detected via existing methods, in the absence of other sorts of breaks, it stands to reason then that a simple estimate of long run variance for each series, averaged over the entire cross section will yield an estimator for the factor variance. 
 
 As a first step procedure, we propose to "standardize" the data by the inverse of this estimate of the factor variance. The resulting data should therefore not exhibit any "breaks" induced by changes in factor dynamics.
 
 This adjusted data then satisfies the piecewise stationary factors identification condition (which was unreasonable) that existing methods assume, and thus these can then used as the second step in a 2 stage procedure to disentangle the breaks.
+
+```{.mermaid format=svg}
+flowchart LR
+subgraph Step 1
+A(Data) ----> B(Run HI/BKW test);
+B -- No Break --> C(Conclude there are no breaks in loadings OR factors);
+end
+B -- Break Detected --> D(Break in loadings and/or dynamics);
+D --> E(Variance Adjust Data);
+subgraph Step 2
+E --> F(Run HI/BKW test)
+F -- No break --> G(Conclude type 2a/b break dynamics);
+F -- Break detected --> H(Conclude Type 1 and/or 3 break loadings)
+end
+```
+
+The asymptotic inferential validity of the proposed procedure are yet to be established.
 
 ## Simulation Setup
 
@@ -345,6 +389,8 @@ F_{t}' \lambda_{2i} + e_{it}\ \quad \text{for} \quad t = \floor{\tau T} + 1, \do
 \end{cases}
 $$
 
+The proposed procedure thus far cannot deal with type 2a breaks. 
+
 ### Simulation Results
 
 We present the results of the simulation study.
@@ -353,21 +399,25 @@ Unsurprisingly,
 
 Perhaps most interesting is the result of @chen_detecting_2014's test statistic, which seems to exhibit power against Type 2a breaks. However, the distribution of their test statistic under such breaks has not been formally derived. 
 
+\newpage
+
 ## Empirical Study
 
-To date, there is limited empirical work conducted on the detection of structural breaks in dynamic factor models, although there is a consensus that there are structural instabilities that exist. This is due to a number of reasons:
+To date, there is limited empirical work conducted on the detection of structural breaks in dynamic factor models. However, there exists a strong consensus that structural instabilities in dynamic factor models do exist. For example, @stock_forecasting_2021 show in a seminal study that forecasting using factor models while ignoring potential breaks leads to lower performance, and @breitung_testing_2011, @baltagi_estimating_2021, @ma_estimation_2018, suggest evidence in empirical data for the structural break tests they propose. As such, the notion of possibility of structural instabilities has reached the point where many large macroeconomic datasets provide a simple rolling/recursive window study into possible instability, particularly with the changing no. of factors (see @mccracken_fred-md_2015 and @mccracken_fred-qd_2020 for evidence in more contemporary US data, @hartigan_factor_2020 for evidence in Australian data, @coulombe_can_2021 for evidence in UK data, @fortin-gagnon_large_nodate for evidence in Canadian data).
+
+The lack of precise empirical results is perhaps due to a number of reasons:
 
 1. Possibility of multiple breaks
 
-Most of the literature thus far has only considered the case of a single break, but the empirical data may be subject to multiple breaks. Although it is well known that single break tests do have power against multiple breaks, the finite sample performance of such tests is notorious for being unreliable, in the sense that they do not always agree which break is the biggest.
+The majority of the literature thus far has only considered the case of a single break, but the empirical data may be subject to multiple breaks. Although it is well known that single break tests do have power against multiple breaks, the finite sample performance of such tests is notorious for being unreliable, in the sense that they do not always agree which break is the biggest.
 
 2. Possibility of non-smooth breaks
 
-It is also well known in the structural break literature that structural break tests may perform poorly when instead of large sudden breaks, the DGP instead exhibits small, smooth changes over time. @su_time-varying_2017 and @su_testing_2020 show in simulation evidence for this, and propose a non-parametric framework to estimate and test for smooth changes. However, their method cannot distinguish between smooth changes and sudden changes.
+It is also well known that structural break tests may perform poorly when instead of large sudden breaks, the DGP instead exhibits small, smooth changes over time. @su_time-varying_2017 and @su_testing_2020 show in simulation evidence for this, and propose a non-parametric framework to estimate and test for smooth changes. However, their method tests the null hypothesis of no structural change at all, against the alternative of *any* structural change, and cannot distinguish between smooth changes and sudden changes.
 
 3. Lack of data in the $T$ dimension
 
-The previous two points compound the main issue of there not being enough data in each subsample. This issue is profound in the structural break literature - whether using the framework proposed by @andrews_tests_1993 or @bai_estimating_1998, the resulting test statistics are poorly behaved towards the start and end of the subsample, and hence a proportional of the data, denoted by $\epsilon$, usually around 0.1 or 0.15, is needed to trimmed from both the start and end. 
+The previous two points generally compound the main issue of there not being enough data in each subsample. This issue is profound in the structural break literature - whether using the framework proposed by @andrews_tests_1993 or @bai_estimating_1998, the resulting test statistics are poorly behaved towards the start and end of the subsample, and hence a proportional of the data, denoted by $\epsilon$, usually around 0.1 or 0.15, is needed to trimmed from both the start and end. 
 
 These problems often mean that practically, a practitioner must be careful of making sure that the sample is large enough to avoid boundary issues, but also not large enough that it may include another possible break. As such, the practitioner must have a pre-existing idea of where such breaks may occur already, and "pre-treat" the data accordingly beforehand.
 
@@ -378,26 +428,35 @@ Popular breaks that are typically suggested and/or identified by the literature 
 - GFC, late 2007/early 2008
 - COVID pandemic, late 2019/early 2020
 
-It is remarkable that a large amount of the earlier literature identified the Great Moderation as a potential break date, but this may due to the data from the 2000s onwards being trimmed out due to lack of data back then.
+It is remarkable that a large amount of the earlier literature has only identified the Great Moderation as a potential break date, but this is due to the data from the 2000s onwards being trimmed out due to lack of data back then.
+
+When these tests are run on more contemporary samples, they tend to also find some of the later break dates.
 
 ### Data 
 
 #### Stock and Watson 2005
 
+@stock_implications_2005 provides a balanced dataset.
+
 #### Stock and Watson 2009
 
+@stock_forecasting_2021 provides a balanced dataset.
+
 #### Stock and Watson 2012
+
+@stock_disentangling_2012 provides a balanced dataset.
 
 #### FREDMD
 
 @mccracken_fred-md_2015 provides a large, monthly frequency, macroeconomic database based on US data. This is emerged in more recent times to be the *de facto* standard for large empirical macroeconomic databases, and is aimed to be broadly compatible and equivalent to the vintages prepared by Stock and Watson.
 
-Any series with missing observations 
+We pre-treat the data by removing any series that have missing data. Alternatively, we also consider using imputation via an EM algorithm which uses PCA, and imputation via . All approaches mirror that of @mccracken_fred-md_2015, and in general does not affect the general result much.
+
+We do not do anything special with regards to periods related to COVID19 because it generally falls within the period that is to be trimmed off for structural break tests anyway.
 
 #### FREDQD
 
 @mccracken_fred-qd_2020 provides a large, quarterly frequency, macroeconomic database based on US data - the quarterly counterpart to FREDMD. 
-
 
 
 ### Empirical Results

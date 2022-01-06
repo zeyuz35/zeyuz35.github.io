@@ -2,7 +2,7 @@
 id: vo34RUxa4zvz90eFELX5O
 title: Thesis Ideas
 desc: ''
-updated: 1641359757990
+updated: 1641432154542
 created: 1639441845917
 bibliography: [references.bib]
 reference-section-title: References
@@ -27,19 +27,29 @@ Average out the variance across all series, the idea being that this averaging p
 Standardize the data across the samples such that any variance from the factor dynamic changes is removed. The result is an adjusted dataset that theoretically has no changes in factor dynamics, and thus fulfills the regularity conditions and assumptions that have been made for existing tests.
 
 Alternative Idea:
-
 When there is a break in the factor dynamics, this will correspond to a type 2 break (in general), and hence this will not result in an extra factors being estimated.
 
 This could form a basis of a disentangling strategy - if the no. of factors before and after the break point are the same, then there is no change in factor loadings.
 
+This leads to:
+
+    - no change in no. of factors = type 2 break
+    - double the no. of factors = type 1 break
+    - otherwise, type 3 break
+
 Problem:
-This change is not separately identifiable from type 2 breaks in general. For example, if for some reason the second factor become much more important than the first one after a break consistently across the entire cross section. Additionally, the current type 2 break framework still allows for disappearing/emerging factors.
+
+This approach seems nice, but has some severe limitations in the presence of type 2a breaks. 
+
+Because both type 2a breaks and type 1 breaks can both affect the no. of pseudo factors, this rank based identification strategy still cannot distinguish between the two. 
+
+Using this rank based test in conjunction with CDG also does not help, because CDG test has power against both type 1 and type 2a breaks, precisely the two cases we which to distinguish from. 
 
 So, all changes in factor dynamics are type 2 breaks that results in no change in factors, but not all type 2 breaks have no change in no. of factors, and not all type 2 breaks are changes in factor dynamics.
 
 ### Extra Notes
 
-The existing [@chen_detecting_2014] test already exists, and more or less achieves the same practical results.
+The existing [@chen_detecting_2014] test already exists, and more or less achieves similar practical results.
 
 This was noted by the literature, but perhaps wasn't quite picked up on why it works, and why this was important?
 
@@ -83,9 +93,9 @@ Show that the procedure has correctly identify different types of breaks, and ha
 
 Type 1: idiosyncratic break in loadings
 
-Type 2a: break in factor dynamics OR common break in loadings (cannot be separately identified)
+Type 2a: Disappearance/emergence of new factor
 
-Type 2b: Disappearance/emergence of new factor
+Type 2b: Break in factor dynamics OR common break in loadings (cannot be separately identified)
 
 Type 3: Both of the above occurring at same time
 
