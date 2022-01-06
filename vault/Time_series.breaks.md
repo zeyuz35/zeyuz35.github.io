@@ -2,7 +2,7 @@
 id: d8lw1Osg92jmpaCsgK4Tr
 title: Structural Breaks
 desc: ''
-updated: 1640055041621
+updated: 1641430475594
 created: 1636525148960
 bibliography: [references.bib]
 reference-section-title: References
@@ -14,19 +14,11 @@ Structural Break tests are terrible and never agree with one another.
 
 There are broadly two options: supWald/supF, or supLM.
 
+supF requires homoskedasticity, whereas the other sup tests do not, and hence it is recommended to use supWald (supWald allows for an arbitrary variance estimate). They all have the same asymptotic distribution.
+
 Most supLM tests use a full sample estimator for an estimator of the variance, and theoretically this therefore should have more power. However, in practice the results of supLM and supWald are unclear.
 
 [@andrews_optimal_1994] notes that exp and mean versions of these tests should be more optimal. mean test is better for small changes, but exp is better for big changes. However, these do not provide a natural estimator of the break fraction. In addition, simulation shows that the power loss from using a standard sup test is not too large, therefore these tend not to be popular. Good option if you want better Monte Carlo simulation results though.
-
-
-
-## Bai and Perron
-
-
-## Perron and Qu
-
-## Qu and Perron
-
 
 ## Single Break Asymptotics
 
@@ -86,6 +78,10 @@ The limit distribution is this case corresponds to double maximums.
 
 Critical values are provided in the form of surface response regressions, but only up to 10 regressors.
 
+This is different to the previous Andrews tests, because there are an asymptotic generalization of that distribution to the case of multiple breaks. 
+
+Note that estimation of 2 breaks is $O(n^2)$ which is cumbersome, but still feasible, but estimation of 3 breaks is $O(n^3)$ which is unfeasible. Hence, another large part of their contribution is the development of an efficient algorithm which can sequentially estimate an arbitrary number of breaks with computational burden of $O(n^2)$.
+
 ## Multivariate Systems
 
 [@qu_estimating_2007] extend the analysis of structural breaks to multiple strcutural changes in multiple equation systems. 
@@ -103,3 +99,11 @@ This latter point is perhaps why tests in changes of covariance matrix are not s
 However, even so, this does allow for things such as testing for changes in the variance of errors, and the framework actually for things such as a change in the mean at a different time as a change in the variance.
 
 Not sure how useful this may be, will need to clean up Qu and Perron code (big task...).
+
+### Empirical Notes
+
+Bruce Hansen has some lecture notes which are a nice summary/overview.
+
+https://www.ssc.wisc.edu/~bhansen/crete/crete5.pdf
+
+Note that he uses GDP 
