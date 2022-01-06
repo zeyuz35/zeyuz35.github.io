@@ -2,7 +2,7 @@
 id: U0c40KtWCbQp02iuK28mt
 title: q Estimators
 desc: ''
-updated: 1638935703534
+updated: 1640053027200
 created: 1635335632193
 bibliography: [references.bib]
 reference-section-title: References
@@ -22,6 +22,8 @@ Truly dynamic factor models tend to be very underdeveloped in general. Stock and
 [@amengual_consistent_2007] first compute the residuals of the projection of $X_t$ onto the lagged values of the principal components of $F_t$, then apply [@bai_determining_2002]'s IC on the covariance matrix of those residuals. 
 
 There is some MATLAB code, which needs to be translated to R. 
+
+The procedure itself seems very simple though...
 
 As far as I can tell, the same assumptions as [@bai_determining_2002] are used. That is, factors are assumed to be stationary.
 

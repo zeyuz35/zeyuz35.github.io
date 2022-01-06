@@ -2,7 +2,7 @@
 id: d8lw1Osg92jmpaCsgK4Tr
 title: Structural Breaks
 desc: ''
-updated: 1639963112387
+updated: 1640055041621
 created: 1636525148960
 bibliography: [references.bib]
 reference-section-title: References
@@ -42,6 +42,16 @@ Note that this test has a tradeoff between the trimming on either side. Hence, t
 
 Although the above seems computationally intensive, recall that the optimal break is always the one which minimizes the SSR. For some problems, this then becomes a much easier least squares estimation.
 
+#### Practical Issues
+
+These tests were all formulated for the case of ONE break.
+
+Theoretically, they all have power against cases with multiple breaks, but their behaviour under such circumstances is less understood.
+
+In particular, if there are multiple breaks, ideally the test stat maximiser will be at the "biggest" break. In practice however, the supWald, supLM and supLR test stats may disagree with one another in finite samples, even though they have the same limiting distribution.
+
+There is also the theoretical issue of proving consistency of the test stat maximiser. Although the maximiser provides a natural estimator for the break date, in practice one would also need to *prove* the consistency of this estimator, which is a separate issue.
+
 #### P Values by Bruce Hansen
 
 Asymptotic p values (as opposed to critical values, though practically the same) were produce by Bruce Hansen via apoproximating regressions. Bruce Hansen's original GAUSS code was then ported to R, which was then refined by the strucchange package.
@@ -70,7 +80,7 @@ Also note that this test requires the pre specification of the number of breaks.
 
 Practically, one may not wish to specify a number of breaks to test against.
 
-[@bai_estimating_1998] discuss this issue, and also provide a way to simultaneously estimate and test for breaks, or seqyentially test them.
+[@bai_estimating_1998] discuss this issue, and also provide a way to simultaneously estimate and test for breaks, or sequentially test them.
 
 The limit distribution is this case corresponds to double maximums.
 
