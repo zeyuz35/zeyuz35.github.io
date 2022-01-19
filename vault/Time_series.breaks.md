@@ -2,7 +2,7 @@
 id: d8lw1Osg92jmpaCsgK4Tr
 title: Structural Breaks
 desc: ''
-updated: 1641430475594
+updated: 1641531813666
 created: 1636525148960
 bibliography: [references.bib]
 reference-section-title: References
@@ -99,6 +99,18 @@ This latter point is perhaps why tests in changes of covariance matrix are not s
 However, even so, this does allow for things such as testing for changes in the variance of errors, and the framework actually for things such as a change in the mean at a different time as a change in the variance.
 
 Not sure how useful this may be, will need to clean up Qu and Perron code (big task...).
+
+### Notes on Qu and Perron
+
+This a QMLE procedure, and as such tends to have weak assumptions governing the entire system.
+
+It is of practical note that this doesn't scale to extremely large systems, and tends to only really work with say, 3 equations. This is of significant practical consequence, as we would like to use this with 
+
+### Potential Ben Idea
+
+There is a potential idea floated by Ben.
+
+This is to simply take the pseudo factors 
 
 ### Empirical Notes
 

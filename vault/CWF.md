@@ -2,15 +2,17 @@
 id: MsmFdXyWfizd5g8GGcObD
 title: Covariance Weighted Forecasting
 desc: ''
-updated: 1638772644766
+updated: 1641804621913
 created: 1636095097255
 bibliography: [references.bib]
 reference-section-title: References
 ---
 
-Homepage section for covariance weighted forecasting, just to keep all notes and academic stuff related in the same note database.
+## Literature Review
 
-This is lifted straight from the motivation document that was put together at the start of this project. This was inexplicably jumbled up for some reason...
+To our knowledge, the closest works to our proposed methods are @; however, their focus can be more accurately described as using a GMM based approach to estimate and conduct inference for mixture models, in the context of conditional variance forecasting.
+
+
 
 ## Model Setup and Notation
 
@@ -71,7 +73,9 @@ $$
 and its corresponding variance-covariance matrix:
 $$
 \begin{aligned}
-J = \begin{bmatrix} 
+J = 
+\operatorname{cov}(\mathcal{L(\mathbf{w})}) =
+\begin{bmatrix} 
 \operatorname{cov}(L(M_1), L(M_1) & \dots & \operatorname{cov}(L(M_1), L(M_k)) \\
 \vdots & \ddots & \vdots \\
 \operatorname{cov}(L(M_k), L(M_1) & \dots & \operatorname{cov}(L(M_k), L(M_k)) \\
@@ -123,5 +127,111 @@ $$
 
 This method is aimed at leveraging a large number of models (i.e. $k \rightarrow \infty$), and hence its implementation may need to use methods from the high dimensional covariance matrix literature, which can be more efficient by exploiting the increasing sparsity as an increasingly number of different models are considered. 
 
-Further note that similar to GMM, our loss vector may be subject to problems of serial correlation, and it is likely to require an intial stage to correct for this, in order to consistently estimate $\Sigma$.
+Further note that similar to GMM, our loss vector may be subject to problems of serial correlation, and it is likely to require an initial stage to correct for this, in order to consistently estimate $\Sigma$.
 
+Under optimal forecasts, the standardized residuals should be a sequence of zero mean.
+
+Additional idea:
+Add in the square of the residuals to proxy for the variance. Sometimes the variance of the residuals of different methods may also be correlated, and we wish to control for this. This is done by simply demeaning and squaring the residuals to yield a realized volatility series, which in turn proxies for the latent volatility.
+
+We could introduce further moment conditions based on higher order moments. E.g. realized quadricity to proxy for kurtosis, etc.
+
+## Interpretations
+
+It is possible to cast the proposed methodology within the framework of GMM and use this as a basis for developing further inferential theory. To see this, note the following GMM based setup:
+
+Parameter Vector
+
+Moment Conditions
+
+Notice that due to the moment conditions, the model in this case is exactly specified.
+
+Variance Matrix of Moment Conditions (for asymptotically efficient GMM)
+
+Optimization
+
+Regularity Assumptions
+
+Wheel in some regularity assumptions standard to GMM here
+
+## Testing for validity of extra models
+
+Often, when using 
+
+
+## Extensions to infinitely many series and models
+
+In the future, we are interested in extending the framework to infinitely many series and/or models, in addition to the standard $T$ asymptotics.
+
+Ideally, one would expect that any new models introduced would introduce less and less information already available. Hence, it is expected that adding more models would eventually add all possible information available for forecasting, and it is from this perspective which we wish to develop asymptotic theory for. 
+
+Note that this introduces notable challenges. The optimization requires the calculation of weights, which involves 1. estimating a covariance matrix of residuals related to the models, and 2. inverting this covariance matrix, both of which are difficult tasks when the dimension is taken to infinity.
+
+## Simulation Study
+
+We conduct a simulation to study the finite sample properties of the proposed procedure. 
+
+### Simulation Design
+
+1. Null Case, AR1
+
+2. Mixture Model
+
+3. Mixture Model
+
+4. Structural Break Model
+
+5. Dynamic Factor Model
+
+6. White Noise
+
+7. Mis specified Case
+
+The goal of this setup is to see what the procedure does when none of the candidate models are correctly specified. Heuristically, we expect that the "closest" model is given all of the weight.
+
+### Results
+
+### Notes
+
+The forecast residuals cannot be too collinear, otherwise this results in a near singularity for the variance matrix. This is subtly different to the models themselves being identical, because it is possible for different models to perform similarly in certain periods of time.
+
+
+
+## Empirical Study
+
+We conduct two separate empirical studies to demonstrate the performance of our proposed procedure: inflation forecasting and unemployment forecasting.
+
+### Inflation Forecasting
+
+#### Motivation
+
+#### Data
+
+#### Constituent Models
+
+#### Results
+
+### Unemployment Forecasting
+
+#### Motivation
+
+#### Data
+
+#### Constituent Models
+
+#### Results
+
+
+### Other Notes
+
+Bruce Hansen made some slides which summarize what has been done so far very nicely...
+
+https://www.ssc.wisc.edu/~bhansen/cfe2021/CFE2021_BruceHansen_Part_2.pdf
+
+Fall back idea
+
+Develop a GMM framework which generalizes what ahs been done in the literature
+
+Notes
+
+Simplexes are spiky, so optimizing over them will tend to set 0 weights on most models

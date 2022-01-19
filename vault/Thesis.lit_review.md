@@ -2,12 +2,13 @@
 id: Eao3HsBMWoKOJ6YjwKV1u
 title: Literature Review
 desc: ''
-updated: 1641475959423
+updated: 1642031625244
 created: 1641256729309
 bibliography: [references.bib]
 reference-section-title: References
 csl: econometrica.csl
 geometry: margin=2cm
+keep_tex: true
 ---
 
 \newcommand{\sumT}{\sum_{t = 1}^{T}}
@@ -191,15 +192,15 @@ F^{0, 2} & 0 & F^{1, 2}
 \end{aligned}
 $$
 
-Note that the number of factors above is possible larger than $r$, and depends on the rank of $\Theta$. In general, $r \leq \rank{\Theta} \leq r = q$ and $\rank{\Theta}$. @han_tests_2015 further classify breaks into 3 different types:
+Note that the number of factors above is possible larger than $r$, and depends on the rank of $\lim_{N \to \infty} \Theta' \Theta/N$ or more succintly (and equivalently) the row rank of $\Theta$. In general, $r \leq \rank{\Theta' \Theta/N} \leq r = q$ and $\rank{\Theta}$. @han_tests_2015 further classify breaks into 3 different types:
 
-1. $rank(\Theta) = r$, Type 1 Break
+1. $rank(\Theta) = r + q_1$, Type 1 Break
 
 The changes in $\lambda_{1, i} - \lambda_{2, i}$ need to be so idiosyncratic across $i$ such that $\Lambda_1$ and $\Lambda_2$ are linearly independent. The type of breaks in loadings considered by @breitung_testing_2011 corresponds to a Type 1 Break.
 
-2. $r \lt rank(\Theta) \lt r + q$, Type 2 Break
+2. $rank(\Theta) = r$, Type 2 Break
 
-The column rank of $[\Lambda_1 : \Lambda_2]$ is $q$, so that there exists a $q \times q$ matrix $Z_0$ such that $\Lambda_2 = \Lambda_1 Z_0$. 
+The column rank of $[\Lambda_1 : \Lambda_2]$ is $q_1$, so that there exists a $q \times q_1$ matrix $Z_0$ such that $\Lambda_2 = \Lambda_1 Z_0$. 
 
 A type 2 break implies that the "break" is simply a rotation or scaling of the existing loadings. The practical interpretation of a type 2 break is that *all* loadings change in a homogeneous way. It is remarkable that type 2 changes can be interpreted as either a change in the common dynamic factors, or a homogeneous change in all factor loadings - it is not possible to separately identify the two cases. From a practical perspective however, a change in the underlying factor dynamics is more plausible than all factor loadings changing in a homogeneous way, and as such, it is arguably more reasonable to interpret type 2 breaks as breaks in factor dynamics, rather than breaks in factor loadings.
 
@@ -213,7 +214,7 @@ Type 2b: $Z_0$ is non-singular
 
 The non-singular case corresponds to the more general case where factors have their loadings changed in a homogeneous way across *all* series. Although ruled out by @han_tests_2015's regularity assumption, this in fact more generally corresponds to the case where there is a break in the dynamic factors, such as a change in the dynamic factor loadings, or a change in factor variance. 
 
-3. $rank(\Theta) = q$, Type 3 Break
+3. $r < rank(\Theta) < r + q_1$, Type 3 Break
 
 A type 3 break is simply any combination of both a type 1 and type 2 break, which arises out of technical necessity. 
 
@@ -284,6 +285,16 @@ end
 ```
 
 The asymptotic inferential validity of the proposed procedure are yet to be established.
+
+### Differentiating between Type 1 and Type 2 breaks
+
+Our proposed procedure is in essence a way to "undo" the common rotational type break implied by type 2 breaks as a first stage procedure. However, the treatment between the type 2a break and type 2b break are notably quite different.
+
+Type 2a breaks imply that the rotational change is singular, and therefore there are disappearing/emerging factors. This break is useful, as it is the only mechanism in which certain types of factor dynamic changes can be incorporated, namely appearance/disappearance of lags, or an introduction of a new factor entirely.
+
+However, this type of break also implies that the rotation brings about completely new information, and as such, "undoing" this sort of change is very difficult.
+
+In contrast, the type 2b break is much easier, and seems to be working for now.
 
 ## Simulation Setup
 
@@ -468,6 +479,57 @@ The work presented thus far has identified notable gap in the literature, namely
 It remains as future work to formally prove and establish the asymptotic validity of the proposed procedure. 
 
 It is noteworthy that the procedure bears some resemblance to the Feasible Generalised Principal Components estimator proposed by @choi_efficient_2012. 
+
+
+## VAR approaches to Disentangling Breaks
+
+@han_tests_2015 in their thesis/working version of their paper do have an empirical section with uses @stock_forecasting_2021's 2009 dataset.
+
+They find that if the break date of 1984 is known and used a priori, then there is some mixed evidence for there being a break.
+
+However, if the break date itself is unknown and treated as a nuisance parameter, then they cannot reject the null of there being any breaks in the dynamic factor model.
+
+@han_tests_2015 also make an attempt at disentangling breaks from the factor loadings and factor dynamics/variance, but I do not believe this approach is legitimate, and perhaps why it was omitted from the final published paper.
+
+Essentially, they estimate a VAR for the estimated factors, and run standard VAR based tests. Specifically, this is a test for changes in coefficients and/or variance of residuals in the VAR system. Note that because there are many pseudo factors, instead of a joint test, they instead test the coefficients of each equation and variance of the residuals separately, adn then combine them with a Bonferri correction. They report the results of the test using HAC.
+
+This was also what Ben was hinting towards, i.e. using Qu and Perron type of test.
+
+However, estimation of a VAR requires that the data series be stationary, something which is explicitly not true with pseudo factors, so I am unclear as to how this procedure is valid (it is likely not valid).
+
+
+
+## Meeting Notes
+
+Type 2a break issue
+
+This is the only way that diappearing/emerging factors are incorporated in the current framework. However, the proposed procedure cannot disentangle this from a type 1 break, which is problematic.
+
+Ben says that this type of break may be ignored for practical purposes, if the empirical data does not show a large amount of evidence for this of break. E.g. a change from 3 factors to 4 factors due to a break does not mean too much, whereas an change from say 3 to 10 factors would be more alarming. Double check on empirical data to see how relevant this is. However, as I recall, the changes tend to be small.
+
+Bonsoo suggested that I look into some related literature based on the singular matrix Z0. Because this matrix is singular, what this would mean is that 
+
+Empirical Data Issue
+
+There is some very limited evidence that the proposed correction method is working, at least mildly. There is limited evidence to suggest that the Great Moderation is a change in factor dynamics that is being erroneously picked out, and that the 2000s recession and GFC are "larger" changes where both the factor loadings and factor dynamics have changed. Ben said that this was a promising looking result, but more work would need to be done.
+
+Suggestions:
+Use the exact same dataset and see what happens.
+
+BE test
+This consistently finds a break in factor loadings at 1984, for many series. However, as mentioned before, a limitation of this test is that it may be detecting so called small breaks, or mistakenly rejecting the null hypothesis due to the fact that the pseudofactors are being used. 
+
+Practical interpretation: the Great Moderation break did indeed induce some breaks in factor loadings for a substantial fraction of series. However, when looking at the entire cross section as a whole, this "break" in facotr loadings is not large enough to constitute a "large" break. Instead, it may be mroe accurate to say that any large break is described as a break in factor dynamics instead.
+
+HI test
+The working/thesis version of this paper found mixed evidence for the Great Moderation break.
+
+When the break is treated as known a priori, there is mixed evidence. When the break date itself is treated as a nuisance parameter, this evidence falls away. 
+
+Proposed Procedure
+The proposed procedure in general lessens the evidence in support for any kind of break around the Great Moderation.
+
+
 
 
 ### Timeline

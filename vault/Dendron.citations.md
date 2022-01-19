@@ -2,7 +2,7 @@
 id: 1DyoojO5rIm0uTXOkxSuw
 title: Citations
 desc: ''
-updated: 1636692826303
+updated: 1642039877668
 created: 1636511956938
 ---
 
@@ -45,3 +45,12 @@ Markdown Preview Enhanced is likely the most fully featured preview, but unfortu
 In particular, changing the parser to pandoc (in order to get citations working) somehow makes it break with using KaTeX. Using MathJaX is janky and not entirely compatible. 
 
 For this reason, the preferred method of previewing documents is via the Pandoc Markdown Preview extension, as the only feature that is not supported by this are Dendron's backlinks.
+
+## LaTeX
+
+Ignore the above. 
+
+Pandoc citeproc filters are a very hacky way. If you look at the intermediate tex file, you can see that the citations are plain text and not precisely legitimate. 
+
+Thus, although pandoc/dendron is a nice way to quickly get notes down, it is still recommended to use latex as a "proper" typesetting tool.
+

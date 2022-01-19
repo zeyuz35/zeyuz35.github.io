@@ -1,0 +1,55 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Introduction}{2}{section*.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Factor Models with Structural Changes}{2}{section*.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Factor Models Properties}{2}{section*.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Exact Factor Models}{2}{section*.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Approximate Factor Models}{2}{section*.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Generalized Dynamic Factor Models}{3}{section*.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Latent Factor Models}{3}{section*.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Structural Breaks in DFMs}{4}{section*.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Small Changes in Factor Loadings}{4}{section*.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Model Setup and Notation}{5}{section*.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Disentangling Breaks in Factor Loadings and Breaks in Factor Dynamics}{6}{section*.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Proposed Procedure}{7}{section*.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Differentiating between Type 1 and Type 2 breaks}{8}{section*.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Simulation Study}{8}{section*.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Simulation Results}{9}{section*.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Empirical Study}{10}{section*.17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Data}{10}{section*.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Stock and Watson 2005}{10}{section*.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Stock and Watson 2009}{10}{section*.20}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Stock and Watson 2012}{10}{section*.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{FREDMD}{11}{section*.22}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{FREDQD}{11}{section*.23}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Empirical Results}{11}{section*.24}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Future Work}{11}{section*.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{VAR approaches to Disentangling Breaks}{11}{section*.26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Meeting Notes}{11}{section*.27}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Timeline}{12}{section*.28}%
