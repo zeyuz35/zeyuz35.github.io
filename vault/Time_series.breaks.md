@@ -2,7 +2,7 @@
 id: d8lw1Osg92jmpaCsgK4Tr
 title: Structural Breaks
 desc: ''
-updated: 1641531813666
+updated: 1643248335026
 created: 1636525148960
 bibliography: [references.bib]
 reference-section-title: References
@@ -19,6 +19,20 @@ supF requires homoskedasticity, whereas the other sup tests do not, and hence it
 Most supLM tests use a full sample estimator for an estimator of the variance, and theoretically this therefore should have more power. However, in practice the results of supLM and supWald are unclear.
 
 [@andrews_optimal_1994] notes that exp and mean versions of these tests should be more optimal. mean test is better for small changes, but exp is better for big changes. However, these do not provide a natural estimator of the break fraction. In addition, simulation shows that the power loss from using a standard sup test is not too large, therefore these tend not to be popular. Good option if you want better Monte Carlo simulation results though.
+
+## Implementations
+
+strucchange remains to date the premiere and only package so far that implements these sorts of things
+
+Unfortunately the package itself is more focused on empirical fluctuation (i.e. CUSUM based stats) as opposed to structural break tests specifically
+
+As such it leaves a lot to be desired
+
+It comes with a lot fo helper functions, such as computation of sup/exp/mean critical values (though these are all hidden...)
+
+And, it implements Bai and Perron's algorithm for estimation of LM models subject ot breaks, once a break numebr is specified
+
+However, I cannot find a way to actually conduct any testing of no. of breaks, apart from visual inspection of RSS and BIC, which is what the package documentation recommends
 
 ## Single Break Asymptotics
 

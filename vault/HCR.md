@@ -2,7 +2,7 @@
 id: 4GXJm4YpHBWVu5WnZKVm4
 title: Hausdorff Critical Region
 desc: ''
-updated: 1639972452753
+updated: 1643247970929
 created: 1637927430959
 ---
 
@@ -118,4 +118,22 @@ Go up in increments in 1000 (hope it is good enough)
 Run skew normal ones as well
 
 CLR sample no. 1000
+
+## New problems
+
+coverage ocassionally decreases a lot for no reason, as nobs or btsp increase
+
+presumably, this is because the X and Z are different, and subsequent iterations are very 
+sensitive to this initialization
+
+tried to explore the X, Z across different replications, which this was not fruitful...
+
+solution: just fix X and Z for a given NOBS
+
+when you increase NOBS, make the first NOBS still the same
+
+Xueyan says to also set seed when generating the disturbances, in case
+
+Quick janky solution:
+just pre generate X, Z, and use the first {nobs} rows
 

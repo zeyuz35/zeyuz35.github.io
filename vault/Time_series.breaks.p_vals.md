@@ -2,11 +2,13 @@
 id: SKUZ6b0dCeZkJQWeJkLAZ
 title: Structural Break P Values
 desc: ''
-updated: 1638228285822
+updated: 1643248278089
 created: 1635212376940
 bibliography: [references.bib]
 reference-section-title: References
 ---
+
+
 
 ## Optimal Tests
 
@@ -21,6 +23,11 @@ Asymptotic p values (as opposed to critical values, though practically the same)
 As such, the supF, aveF, and expF asymptotic p values are easily accessible.
 
 Unfortunately this was painstakingly implemented by hand from scratch before the Bruce Hansen paper was known to me... This has now been archived, in case there is some strange paper out there which specifically requires the quantiles, and not the p values of this distribution.
+
+EDIT
+Once you have a function to get the p values, you can ALWAYS get the critical values, and vice versa
+
+This is essentially a reverse root search/lookup, and is the approach used by strucchange package
 
 ## Bai and Perron
 

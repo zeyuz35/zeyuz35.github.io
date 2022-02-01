@@ -2,7 +2,7 @@
 id: fHzGITjWkNNkiwsQpdex4
 title: Meeting
 desc: ''
-updated: 1639357583412
+updated: 1642598168190
 created: 1634221843124
 bibliography: [references.bib]
 reference-section-title: References
@@ -25,6 +25,19 @@ reference-section-title: References
 \newcommand{\sumTfloort}{\sum_{t = \floor{\tau T + 1}}^{T}}
 
 # Meeting Notes
+
+Latest agenda
+
+Go through what has been done, in a very rudimentary presentation
+
+Mainly focus on the empirical result, this was quickest to put together
+
+Ask about steps in helping to prove consistency results (skeleton of proof)
+
+Monte Carlo questions
+
+Simulate factors and loadings, and hold them fixed across replications?
+
 ## Focus Question
 
 How many static factors are estimated by various information criteria in the presence of structural breaks? 

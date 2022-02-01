@@ -2,7 +2,7 @@
 id: 1V9tDyQwkgBuhWMngZc6p
 title: Limit Theorems
 desc: ''
-updated: 1636418351270
+updated: 1643247995182
 created: 1636344103536
 ---
 
@@ -30,4 +30,9 @@ Note that the above is a very simplified version! To get the more complicated ve
 
 ## Cramer-Wold Device
 
-## 
+
+## Bootstrap Proofs
+
+### Glivenko Cantelli Theorem for Bootstrap proofs
+
+## HAC 
