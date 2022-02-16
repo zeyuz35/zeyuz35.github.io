@@ -2,7 +2,7 @@
 id: 3RtD305EvXc6EBxOMW4hK
 title: Confirmation Presentation
 desc: ''
-updated: 1642997316420
+updated: 1644970071254
 created: 1637022841285
 ---
 
@@ -110,9 +110,10 @@ However, when the break date is treated as known, the tests are able to reject i
 
 This evidence for a structural break disappears further when we control for factor variance (via our new procedure). The Great Moderation is typically associated with the mid 1980s, 
 
-
-
-
-
-
 ## Version 2 Notes
+
+## Making Sense of Empirical Data
+
+Original Stock and Watson FA forecasting required stationary factors
+
+However, Bai and Ng 2006 later loosened this, and showed that non stationary factors are still OK
