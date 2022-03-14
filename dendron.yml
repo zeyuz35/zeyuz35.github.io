@@ -1,26 +1,6 @@
-version: 4
-useFMTitle: true
-useNoteTitleForLink: true
-mermaid: true
-useKatex: true
+version: 5
 dev:
     enablePreviewV2: true
-site:
-    siteUrl: {}
-    copyAssets: true
-    siteHierarchies:
-        - root
-    siteRootDir: docs
-    usePrettyRefs: true
-    title: Ze Yu
-    description: Personal knowledge space
-    siteLastModified: true
-    gh_edit_branch: main
-    duplicateNoteBehavior:
-        action: useVault
-        payload:
-            - vault
-            - dendron.templates
 commands:
     lookup:
         note:
@@ -28,6 +8,8 @@ commands:
             confirmVaultOnCreate: false
             leaveTrace: false
             bubbleUpCreateNew: true
+            vaultSelectionModeOnCreate: smart
+            fuzzThreshold: 0.2
     randomNote: {}
     insertNote:
         initialValue: templates
@@ -36,6 +18,7 @@ commands:
         enableMultiSelect: false
     insertNoteIndex:
         enableMarker: false
+    copyNoteLink: {}
 workspace:
     vaults:
         -
@@ -86,10 +69,44 @@ workspace:
     maxNoteLength: 204800
     seeds:
         dendron.templates: {}
-    dendronVersion: 0.71.0
+    dendronVersion: 0.85.0
+    enableEditorDecorations: true
 preview:
     enableFMTitle: true
     enableNoteTitleForLink: true
     enableMermaid: true
     enablePrettyRefs: true
     enableKatex: true
+    enableFrontmatterTags: true
+    enableHashesForFMTags: false
+    automaticallyShowPreview: false
+publishing:
+    enableFMTitle: true
+    enableNoteTitleForLink: true
+    enableMermaid: true
+    enablePrettyRefs: true
+    enableKatex: true
+    copyAssets: true
+    siteHierarchies:
+        - root
+    enableSiteLastModified: true
+    siteRootDir: docs
+    siteUrl: {}
+    enableFrontmatterTags: true
+    enableHashesForFMTags: false
+    enableRandomlyColoredTags: true
+    duplicateNoteBehavior:
+        action: useVault
+        payload:
+            - vault
+            - dendron.templates
+    writeStubs: false
+    seo:
+        title: Ze Yu
+        description: Personal knowledge space
+    github:
+        enableEditLink: true
+        editLinkText: Edit this page on GitHub
+        editBranch: main
+        editViewMode: tree
+    enablePrettyLinks: true
