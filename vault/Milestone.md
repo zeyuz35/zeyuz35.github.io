@@ -2,7 +2,7 @@
 id: dd60rjxfs9snlsi3pj5luy0
 title: Milestone
 desc: ''
-updated: 1647221711852
+updated: 1647409674619
 created: 1646968107029
 ---
 
@@ -253,4 +253,207 @@ How did she get the bibliography to span multiple pages?
 Where exactly is the nonlinearity coming from?
 
 
+
+
+# Ashley Andrews - DOes Information Leakage Compromise the Use of News as a Forward Looking Indicator for Short Term Volatility
+
+Sueprvised by Klaus, Wei Wei and Bonsoo
+
+63 Slides!
+
+The slides are very sparse, only about 2 bullet points per slide
+
+He is going at about 1 minute per slide
+
+This was rough, only on slide 34/63, but 5 minutes left to go
+
+Ran severely over time
+
+Gael however is nice and gave the extra time
+
+Appreciate the sparse slides, but sometimes relevant things are spread out too much
+
+Sections/subsections would be nice
+
+Mid Candidature Review
+
+They get 35 minutes
+
+Seems like a very ambitious applied paper
+
+At times, it feels like there is a little too much detail
+
+Lots of praise for the amount fo work put in, agree
+
+## Terminology
+
+Does volatility arrive more timely than news arrival?
+
+Does this compromise FOMC announcements?
+
+See if text derived measures can have any relationship with news impacts
+
+
+## Data 
+
+Ravenpack is a database for news input
+
+Ravenpack already processes the news and sentiment for you
+
+Convert sentiment to a factor variables, separated into groups
+
+Volatility for interday is done via realized volatility
+
+Intraday volatility uses realized kernel, which si robust to microstructure noise
+
+
+
+## Model
+
+Basically a FE model for the panel of data, y = realized volatility
+
+Why 7 lags? Shouldn't this be 5 days? etc
+
+Seems like a weak point, the data is organised around a 5 day week structure, but he's added in a 7 day lag 
+
+## Results
+
+Some fo the tables look slightly janky (esp with the colours)
+
+Some fo the graphs are done via STATA
+
+## Conclusion
+
+He's only just finishing up the final write up of paper 1 and submitting
+
+It looks like you need to submit he actual thesis 6 months before the end of the degree, to allow for feedback
+
+
+
+# Ryan Thompson - Pre Submission
+
+This is meant to be a full 45 minutes!
+
+Apparently the report was very well written and summarized the papers very nicely
+
+Report needs to report any changes to the papers, if any
+
+Nice clean slides! Only 30 slides!
+
+Pre submission seminars are allowed to be interrupted throughout the presentation
+
+he talks like Filthy Robot and is very first person narrative
+
+\pause without transparency, not something that I like personally
+## Classical Inference
+
+Hypotheses however usually are concerned about the centre of the distribution
+
+However, the choice of which centre of the distribution is a little unclear
+
+Usually mean, but could be median, mode...
+
+Reproducvibility crisis in science
+
+The choice of which centre to test can be cherry picked
+
+## Familial Inference
+
+Rather than test a single centre, test a family of plausible centres
+
+Study and focus on the family induced by the Huber Loss Function, a mixture of MAE and MSE
+
+It seems that this would be restricted to testing mixtures of the median/mean
+
+## Method
+
+bayesian nonparametric test
+
+Pathwise optimisation routie
+
+Exploits structure of Huber function
+
+Implemented in R familial package, with familiar interface
+
+## Data
+
+Do mammal spend as much time sleeping as awake?
+
+Bayesian procedure produces a posterior for the Huber family
+
+## Testing Procedure
+
+Target of inference is the Huber Family
+
+Figures not labelled
+
+Put prior directly on P
+
+Drichlet Process (DP) a distribution on distributions
+
+## Bayesian Bootstrap
+
+Draw weights from dirichlet (1, ...)
+
+Compute the minimization problem using the drawn weights
+
+Highly scalable and trivially parallelisable
+
+Using the bootstraps, compute the prob of null hypothesis
+
+Count how many of the bootstrap samples was in the null hypothesis
+
+Correspondingly, same for alternative hypothesis probability
+
+Decision Rule:
+
+Optimal decision minimises loss Lp
+
+Matrix is setup such that it corresponds to the 0.95 level
+
+## Optimization
+
+Explort insight that mu(lambda) is piecewise linear in lambda
+
+and thereforem the solution path is characterised by a series of n knots
+
+Similar to lasso or something
+
+This is actually genius!
+
+Huber function is funadamentally realted to LASSO
+
+These results are all really well explained, but I think it would have been better to organise these into lemmas, theorems, etc, though this is not Ryan's style for presentations
+
+Note that LARS algorithm does apply to this problem, but turns out to be slower
+
+## Monte Carlo
+
+Figures not clearly labelled
+
+Clearly explained (I think)
+
+Similar results for other distributions, but Poisson one seems a bit strange...
+
+## Empirical
+
+Body Posture Study
+
+Body Posture affects selective attention - do standing desks etc make a difference
+
+Conduct a Stroop test (brain teaser) to 50 people with different postures
+
+In their paper they conduct a bunch of individual test, all reject the null hypothesis
+
+Multi task framing affects task performance
+
+Transcibe the audiotrack of a video, but just the way the problem is presented
+
+t test suggests rejecting the null
+
+But the median, rank sum and new familial test are all not exactly robust to these choices!
+
+## Discussion
+
+Very good on timing!
 

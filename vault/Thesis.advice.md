@@ -2,7 +2,7 @@
 id: tpEdCD47bDkWqJCrnZxOq
 title: General Advice
 desc: ''
-updated: 1638856835521
+updated: 1647404872053
 created: 1637722333592
 ---
 
@@ -40,3 +40,31 @@ Additionally, although John is a fellow of the Econometric Society, he is more o
 4. Try to get some interesting results, but also not too interesting such that they completely contradict the literature
 5. Make sure results are robust to some degree, you will need to run numerous robustness checks
 
+
+# Chapter 1 Comments
+
+Bin and Bonsoo say that the notation for ERT needs to be clearer (hard to do this for presentation)
+
+Bin was a little confused about how the cross product of loadings would tease out the factor variance
+
+Bin said to ignore earlier comments
+
+## Bin
+
+Personalyl much prefers Latent Factor Model formulation which uses Random Matrix Theory, but IMO this is completely different
+
+Also prefers use of Ahn and Horenstein Estimator, because apparently this has a numerator/denominator mechanism to already control for factor variance? Need to look into this. Even so, should not be an issue because changes in factor variance do not affect PCA assumptions
+
+ERT notation is confusing, needs to be made better somehow...
+
+Partial breaks would be interesting, but obviously beyond the scope of the paper
+
+## Natalia
+
+Issue of potentially weak factors and loadings (this is showing up in simulations already)
+
+Robustness with regards to weak factors/loadings
+
+Entire analysis hinges on accurate estimation of break fraction, as well as no. of factors
+
+Natalia is of the belief that small breaks may be more empirically prevalent, relevant and interesting. This may necessitate the use of additional regularity assumptions to ensure that breaks are "large" - also something that seems to be creeping up on simulation study right now

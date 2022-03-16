@@ -2,7 +2,7 @@
 id: 3RtD305EvXc6EBxOMW4hK
 title: Confirmation Presentation
 desc: ''
-updated: 1644970071254
+updated: 1647404437857
 created: 1637022841285
 ---
 
@@ -117,3 +117,5 @@ This evidence for a structural break disappears further when we control for fact
 Original Stock and Watson FA forecasting required stationary factors
 
 However, Bai and Ng 2006 later loosened this, and showed that non stationary factors are still OK
+
+
