@@ -2,7 +2,7 @@
 id: dd60rjxfs9snlsi3pj5luy0
 title: Milestone
 desc: ''
-updated: 1647409674619
+updated: 1647572351282
 created: 1646968107029
 ---
 
@@ -456,4 +456,38 @@ But the median, rank sum and new familial test are all not exactly robust to the
 ## Discussion
 
 Very good on timing!
+
+# Ying Zhou - Parametric Index Models
+
+Jiti Gao, Dr Kew
+
+46 Slides, Pre submission milestone
+
+Econometric Estimation for non linear models with stationary and non stationary regressors
+
+## Chapter 3
+
+This single index model only allowed non stationary regressors, adn cannot include lagged dependent variables
+
+## Chapter 4
+
+Modify the previous model to allow additional stationary variables, and lagged dependent variables
+
+Slides are clean, but there is too much maths... Lots of substituting
+
+Use the derivatives (Taylor approximation) to linearize, and use this as a staring value etc
+
+This is quite rough to follow (eel tired), and I don't think there is an easier way to present this
+
+Tables not labelled, and they all look too similar
+
+Ying's work is mechanically sound, but not sold or well presented (motivated)
+
+And is getting roasted by Mervyn's on style...
+
+The writing apparently has improved dramatically a lot...
+
+
+
+
 
