@@ -2,7 +2,7 @@
 id: dd60rjxfs9snlsi3pj5luy0
 title: Milestone
 desc: ''
-updated: 1647572351282
+updated: 1647826343876
 created: 1646968107029
 ---
 
@@ -490,4 +490,52 @@ The writing apparently has improved dramatically a lot...
 
 
 
+
+
+
+
+# Cheok - Bayesian Case Influence Analysis for Spatial Autoregressive Models
+
+Catherine Forbes, Natalia Bailey
+
+Looks like a lot of slides...
+
+Wasting a lot of time on talking about the structure of the presentation...
+
+Internet connection on his end is bad
+
+5 minutes left, but only about halfway through
+
+Slides are waay too sparse
+
+## Introduction
+
+Consider a dataset with some distinct clusters
+
+Goal is to detect observations with detectable impact
+
+## Model
+
+Never formally defines SAR
+
+p is a SAR parameter that controls degree of spatial dependence
+
+W is a matrix of non stochastic spatial distances
+
+Beta are some unknown regression coefficients
+
+Can derive a full data likelihood from the expresson
+
+Can introduce a set of priors 
+
+## Bayesian case influence analysis
+
+Introduces influence by deleting the kth observation
+
+Recall that in AR1 case, we can still formulate the likelihood for kth observation removed
+
+Introduce selection vector
+## Illustration
+
+## Future Work
 
