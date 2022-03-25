@@ -2,7 +2,7 @@
 id: GvwoAWaYZxq1czYi3t3k4
 title: Factor Models
 desc: ''
-updated: 1634876621699
+updated: 1648166460897
 created: 1634735821990
 ---
 
@@ -25,8 +25,9 @@ where $X_{it}$ is decomposed into common component $C_{it}$ that is orthogonal t
 If $e_{it}$ is assumed to strictly independent (mutually orthogonal across all $i, t$), this leads to the so called "exact" or "strong factor model" initially considered by Geweke and Sargent and Sims. Although this, in conjunction with a standard gaussian assumption on the error terms leads to straightfoward estimation via ML/Kalman filter, it is understandably completely unrealistic.
 
 
-## Classical Factor Mode
-ls
+## Classical Factor Model
+
+
 
 ## 
 
