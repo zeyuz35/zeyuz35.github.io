@@ -2,7 +2,7 @@
 id: BMClpTRP3V8ITqM7R4kh0
 title: To Do List
 desc: ''
-updated: 1648167974687
+updated: 1648508528830
 created: 1635455071285
 ---
 
@@ -46,6 +46,43 @@ Not sure if Type 3 is needed, hopefully not (this would constitute another 2 pro
 
 Show that the projected dataset from either procedure will behave correctly under the 
 null hypothesis
+
+NEVERMIND, Bonsoo was just a bit concerned that I didn't think the skeleton of this through
+
+Anyways, the skeleton is still the same, and the main thing to do is to prove that the
+adjustment procedures can legitimately remove their respective breaks.
+
+However, before we do this, the simulation results look a little strange
+
+I think this is because the Z matrix or whatever can sometime not result in a guaranteed
+positive definite matrix (although it is always invertible)
+
+Will need to brainstorm a way to get around this
+
+And, also look into other matrix decompositions, because sometimes the eigendecomp 
+doesn't actually converge...
+
+Checked other papers' simulation setups
+
+Han and Inoue only consider a scalar scaling for Type 2 breaks (essentially equal to diagonal Z)
+
+Baltagi do not even focus on it
+
+DBH provide the closest, and restrict C to be lower triangular (not sure why...)
+
+I think it is not really possible to recover Z in a meaningful way
+
+Instead, make it simpler (?) and just focus on a pseudo Generalised PCA procedure
+
+Type 2 adjustment does indeed seem to work on simulations (and quite well, usually)
+
+Even though on a basic statistical level it does not - this is due to the way that eigen transformations work, I think
+
+The convergence property is close, but not exact, and I think this is because
+
+eigen(XX') could be including effects of the noise as well, in finite sample
+
+eigen(XX') include effects of the noise, but the noise is shrinking as T, N go to infinity, so this is usually not as issue
 
 ## Forecasting Chapter
 

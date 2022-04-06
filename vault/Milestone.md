@@ -2,7 +2,7 @@
 id: dd60rjxfs9snlsi3pj5luy0
 title: Milestone
 desc: ''
-updated: 1647826343876
+updated: 1648598013735
 created: 1646968107029
 ---
 
@@ -538,4 +538,106 @@ Introduce selection vector
 ## Illustration
 
 ## Future Work
+
+
+# Ryan Zische - Sampling Variability on Forecast Combinations
+
+Only 21 slides!
+
+Forecast combinations are weighted combinations of forecasts
+
+These are highly competitive (Makridakis, et al), dominated M4, M5
+
+However, there is little attention paid to the impact of sampling variability
+
+Optimally weighted two step combinations do not outperform equally weighted two step combinations
+This is the forecast combination puzzle
+
+Speculated to be because equal weights have no sampling variability
+
+How does finite sample estimation error impact the performance of joint and distributional forecast combinations and the hypothesis tests thereof?
+
+## Overview
+
+Paper 1
+
+One step is asymptotically superior to two step
+
+All asymptotic sampling variability of two step performance comes from constituents
+
+Paper 2
+
+New insights into forecast combinations
+
+One step beats two step in hypothesis tests of predictive accuracy
+
+Tests of predictive accuracy have no size control and no local power for two step combinations
+
+Paper 3
+
+Parametric bootstrap and the distribution forecast combination puzzle
+
+Two step combinations estimated using MLE
+
+Sampling distribution estimated with parametric bootstrap
+
+This presentation is focused on Paper 2
+
+## Forecast combinations
+
+Recipe
+
+Obtain constituent models, parameterised by \gamma
+
+Specify combination function, parameterised by \eta weights (Stone, Bates and Granger 1969)
+
+Specify reward function S, or alternatively loss function L = -S (Hyndman and Koehler, Gneiting and Raftery)
+
+Optimise \eta and \gamma wrt S, somehow
+
+## One Step
+
+Optimise \theta = \gamma and \eta, average reward S
+
+## Two Step
+
+\gamma maximises average reward S of model j
+
+\eta then maximises the average reward, given \gamma (conditional on first step)
+
+OR \eta is just a simple average
+
+He should have defined notation first...
+
+## Method
+
+Measure forecast performance: expected out of sample reward S
+
+Under regularity, one step estimator maximises the performance, but two step estimators do not
+
+one step > optimal two step > equal weighted, asymptotically
+
+One step is n consistent, but two steps are root n consistent, one step is super consistent
+
+## Hypothesis Testing
+
+Null:
+
+No inferior predictive accuracy
+
+Test statistics is similar in spirit to a Diebold Mariano test.
+
+## Graphs
+
+He spends way too much time on too many graphs on the same slide...
+
+Important take away: outside of their theory, it is unclear what exactly happens
+
+## Conclusion
+
+Mervyn seemed to really like the presentation
+
+But a common bit of feedback was that there were too many small ideas in one paper
+
+Needed to brainstorm how to edit and sell the contribution for publication/referees
 
