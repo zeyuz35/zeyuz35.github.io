@@ -2,7 +2,7 @@
 id: BMClpTRP3V8ITqM7R4kh0
 title: To Do List
 desc: ''
-updated: 1648508528830
+updated: 1650854931979
 created: 1635455071285
 ---
 
@@ -18,16 +18,25 @@ You will need to code up forecasting related functions later on - this will be t
 
 ### Other Factor Models
 
-ALso will need to code up LFM and GDFM properly.
+LFM is done
 
-LFM is different and originally discarded, but now it is of somewhat interest.
+GDFM is pending, this is a pain to understand and get working, but seems as if the theory 
+is more tasteful, like LFM
 
-Bin is very keen on this. Although Bonsoo is in the same boat as me and thinks this is a 
-completely different model, it nevertheless is of interest to see a comparison.
+## Empirical Chapter
 
-Email sent to Liu and Zhang for replication code for their changepoint estimator for LFMs.
+Main empirical motivating chapter
 
-GDFM is also of low priority...
+This is not a main chapter per se, and it basically an expanded version of the work that is
+presented as a motivating example
+
+Several other people do PhDs in this areas all provide similar chapters as a Chapter 1
+
+My contribution of this should be the comprehensive expansion of this to all datasets, 
+not just FREDMD and an empirical discussion on how these instabilities are different, if
+at all
+
+
 
 ## Disentangle Chapter
 
@@ -84,6 +93,26 @@ eigen(XX') could be including effects of the noise as well, in finite sample
 
 eigen(XX') include effects of the noise, but the noise is shrinking as T, N go to infinity, so this is usually not as issue
 
+### Thinking of projection
+
+Bonsoo suggested that makybe some sort of projection for Type 1 would be better
+
+Type 1 Break is by definition an idiosyncratic break, i.e. there does not exist a translation
+
+The issue is that after PCA, a semi translation may exist - but does this count as Type 3?
+
+I think Type 3 is strictly when some factors undergo Type 1, and others Type 3
+
+Because if a factor undergoes Type 1 and Type 3, this is technically just a Type 1, for that
+one particular factor
+
+Again, HI did not focus too much on defining/differentiating the different types of breaks
+
+
+
+
+
+
 ## Forecasting Chapter
 
 Need to discuss with Ben further. However, as a good starting point, just start from
@@ -103,6 +132,11 @@ with a forecasting regression.
 
 Baltagi thinks that a type 2 break necessarily introduce a break in the intercept, but
 this is due to their own interpretation of the break.
+
+Refer to [[Thesis.forecasting]] for more details.
+
+Ben reckons that instead of forecasting, a more precise analysis in terms of implications
+for what to do with estimated factors in a FAVAR context is better
 
 ## Threshold Chapter
 
