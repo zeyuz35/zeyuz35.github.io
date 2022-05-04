@@ -2,7 +2,7 @@
 id: BMClpTRP3V8ITqM7R4kh0
 title: To Do List
 desc: ''
-updated: 1650854931979
+updated: 1651211582142
 created: 1635455071285
 ---
 
@@ -108,8 +108,110 @@ one particular factor
 
 Again, HI did not focus too much on defining/differentiating the different types of breaks
 
+Idea
 
+Projection should be consistent for Z up to a rotation
 
+If there exists such a Z, then projection should find it "well" and the residuals should
+be "small"
+
+If not, then the residuals will be "large"
+
+I.e. the residuals represent the bits that cannot be explained by the projection, if there
+is any
+
+Alternative Type 2 Adjustment idea:
+Set Lambda2 = Lambda1 + the errors from this projection
+I.e. Lambda1 without the projection/rotation, but with th errors added on
+
+The errors represent any possible type 1 breaks...
+We wish to get rid of any type 1 breaks, but preserve any Type 2 breaks
+
+Therefore, set Lambda2 = Lambda2' Lambda1 (the projected version)
+
+This method has some major issues, the convergence to a "good" Z is very poor, though
+does improve with larger N
+
+I'm fairly certain this is because PCA will estimate two arbitrary rotations
+
+Idea: 
+Change both sets of loadings to the same basis, by multiplying F1 Lambda2
+Then use the changed basis version of Lambda 2...
+
+The projection formulation is very good for characterizing Type 1 and Type 2 breaks
+
+Working from this, it is easy to come with a test that only has power against Type 1 breaks
+
+However, it is difficult to come up with a test statistic that only has power against Type 2
+breaks, because this happens to have power against Type 0 breaks (no breaks) as well
+
+This is because Type 2 breaks are currently characterized as there existing some Z that is not 0, 
+which the identity matrix technically does qualify for
+
+SCRATCH the ABOVE.
+
+Recall that we are working with the assumption that THERE IS A BREAK already in the model.
+
+Indeed, if there is no break, then Lambda_2 and Lambda_1 do not actually exist 
+(they would be in Lambda_0) and so the exercise is not identified/strange anyway
+
+Same idea to if you try to estimate a threshold model, when there is no threshold effect
+(things behave very strangely because of a lack of identification issue)
+
+So, Bonsoo and Ben both say that this is not an issue
+
+TODO FOR NOW
+
+Try to get a very vague idea of what the distribution looks like
+
+and we can do this via a simple Bootstrap procedure (residual)
+
+Deriving the distribution for each singular test should actually be farily straightforward
+
+HOWEVER, the issue lies in the fact that the two tests need to be combined together
+and they are very likely (almost certainly) correlated
+
+Deriving a proper expression/theory for how to control the distribution/significance level properly
+could be very difficult
+
+So we need to consider a bootstrap. How to set up this bootstrap is itself difficult
+
+but FOR NOW, just consider a standard residual bootstrap (this should be easy to implement)
+
+Fit a DFM to the data, then bootstrap the residuals to generate more bootstrap realisations
+
+Remember that the goal is to simulate the distribution UNDER THE NULL HYPOTHESIS
+
+Use these empirical distributions very simply for now...
+
+Question:
+How exactly to convert Wtilde and Ztilde to a formal test statistic?
+
+Should be easy, just consider the norm of them... or something similar...
+
+Type sof Bootstrap:
+
+i.i.d. Simple Residual Bootstrap
+
+Cross sectional correlation  - WILD Bootstrap
+
+Serial Correlation - Block Bootstrap
+
+Cross sectional + serial - Block Wild Bootstrap
+
+The simple residual bootstrap loses power if there is extra correlation in the residuals
+
+Therefore, focus on simple bootstrap for now, and see if how the power is
+
+If the power is very good anyway, then this is promising! THEN we can follow through and 
+focus on more difficult bootstraps
+
+boot package is the premier package for bootstraps, but it doesn't seem to implement the above...
+
+Also, everything in the literature is focused on either cross sectional, or time series data
+not really panel data
+
+Code up some functions to bootstrap panel data specifically... (large N and T)
 
 
 
