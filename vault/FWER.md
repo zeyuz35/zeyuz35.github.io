@@ -2,7 +2,7 @@
 id: ce4n0eeatts2pl5w3623mr9
 title: Family Wise Error Rates
 desc: ''
-updated: 1651558633146
+updated: 1651802087742
 created: 1651556089174
 ---
 
@@ -130,5 +130,9 @@ I believe this is one of the most up to date developments in the literature
 I don't think this is applicable to my thesis, it is much more concerned with say, testing
 many different returns against a benchmark
 
+## TODO
 
+FOR NOW, only focus on Bonferroni and Holm, as these are easy and seem to work well enough anyway
+
+Bonsoo's point is that, for publication, we need to at least show some sort of attempt/knowledge of state of the art approaches to controlling FWER and similar rates, which are based on the bootstrap
 

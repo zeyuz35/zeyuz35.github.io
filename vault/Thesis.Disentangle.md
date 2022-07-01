@@ -2,9 +2,11 @@
 id: 3CJuINQspPvgBEeXkWbrU
 title: Disentangle
 desc: ''
-updated: 1647301193411
+updated: 1652675319774
 created: 1643941577338
 ---
+
+## Brief Review
 
 PCA is consistent for time invariant loadings, and non stationary factors.
 
@@ -16,53 +18,60 @@ Therefore, from an applied perspective, time varying loadings are problematic as
 
 Note that there is the special case of integrated factors/series, but this is a whole different literature
 
-It was using this logic that practitioners arguably should not care about Type 1 Breaks
+It should be interest to researchers applied or otherwise to sufficiently differentiate the *types* of breaks that have occurred
 
-This led to the current proposed procedure:
+This is because:
 
-Idea: adjust the data so that type 2 breaks do not exist anymore, then re run the existing estimator
+1. the interpretation of the breaks in arguably different (Type 1 is shift in loadings), Type 2 is rotation in ALL loadings, or arguably more simply, a change in factor dynamics
+2. their effects on PCA are different, Type 1 augments and leads to more factors, but Type 2 does not (usually)
 
-Procedure:
+Existing papers can tests for the existence of these breaks and estimate them, but to date nothing has been accomplished that can distinguish between them
 
-Partition data
-estimate no. of factors in each
-Choose the lower no. of factors
-Project/get the fitted values for each dataset, using the lower no. of factors
-Based on the projection, calculate the variance of each series
-Average the variance of each series
-This average variance is an estimate of underlying factor variance
+The closest are CDG test, which has no power against special kinds of Type 2 breaks (and works based on this), and DBH estimator, which has different properties for different types
 
-It seems to work well on simulated data, and seems to make some sense on empirical data
+Initially, the idea was to try to adjust the dataset so that only a certain type of break remained, then tease out the type of break that way
 
-However, now Bonsoo says that this is not quite enough, and true break disentanglement is needed
+But this framework was much too clunky, and I did not believe this was possible for Type 1 breaks, due to the setup
 
-Idea: Similar to before, adjust the data so that type 1 breaks do not exist in the data, and only type 2 breaks do
+## Proposal
 
-Procedure Ideas:
+Now, we to propose two different tests:
 
-## Issues
+Z test, testing whether Type 2 break exists and
 
-### Singular covariance matrices for psuedo second moments processes
+W test, testing whether Type 1 breaks exists
 
-The factor adjust procedure can remove too much noise and result in an adjusted dataset that is "too perfect". This results in PCA producing close to a perfect fit, and is most obvious when using type 2 adjustment on type 1 breaks. 
+The main empirical story (and there is some evidence for) is that the Great Moderation was just a rotational change, or change in factor variance, vs GFC, which is a change in loadings AND factor dynamics
 
-HI is able to circumvent this by swapping out solve() to ginv() which tends to handle near singular matrices better. BKW actually needs lrvar() to be able to work on the pseudo second moments. 
+Using the result of the two results, it is possible to tease out which type of break is present
 
-Solution: add on the original estimated noise from naive dfm projection, does not seem to affect results, and fixes this strange issue.
+This is working very well in simulations
 
-The loading adjust procedure similarly can sometimes do this. Similar solution where adding on the original estimated noise seems to solve this.
+HOWEVER, the main issue is that the null hypothesis may be too "strict"
 
-Note that this issue tends to only appear on data that is too perfect, i.e. simulations. Empirical data does not tend to have this issue.
+in the sense that because Z and W are both rather large matrices, any slight violation of this is technically in the null hypothesis
 
-### Parts of Proof
+This is manifesting itself in the empirical data rejecting both of these tests... 
 
-Need to show that the factor variance procedure is consistent for the Z matrix
+Even though the story for the GM is that it is only a Type 2 break, and should only be rejecting on the Z test, and does exhibit a comparatively smaller W test statistic
 
-This is confirmed numerically in Monte Carlo
+Therefore, need to reformulate/loosen null hypothesis
 
-Specifically, the eigenvalues of the Vnt matrix of each subsample are consistent for the eigenvalues of the Z matrix...
+An idea to do this is to get inspiration from the Bates paper, because there a looser conditions on the size of the break, in some sense anyway
 
-Need to show that Type 1 break does not translate over to the eigenvalues in a meaningful way
+## Testing
+
+There are a few different options for us to take if we go for actual testing
+
+We could try to come up with our own test, this will likely require formulating a test based on eigenvalues, which is not straightforward
+
+OR, we could try to cast our test in the framework of say, a Hausman test...
+
+Not sure how the Hausman test would work
+
+OR, we could try to leverage an existing test, such as Han and Inoue or BKW
+
+It seems that Tracy WIdom Distribution is used for distribution of eigenvalues...
 
 ## Empirical Results
 
