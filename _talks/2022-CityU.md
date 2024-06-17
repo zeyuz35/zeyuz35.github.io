@@ -2,10 +2,9 @@
 title: "Disentangling Structural Breaks in Factor Models for Macroeconomic Data"
 collection: talks
 type: "Talk"
-permalink: /talks/2022-11
+permalink: /talks/2022-CityU
 venue: "City University of Hong Kong"
 date: 2022-11
 location: "Hong Kong, Hong Kong"
 ---
 
-This is a description of your talk, which is a markdown files that can be all markdown-ified like any other post. Yay markdown!
