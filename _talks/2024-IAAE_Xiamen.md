@@ -4,7 +4,7 @@ collection: talks
 type: "Talk"
 permalink: /talks/2023-IAAE_Xiamen
 venue: "Xiamen University"
-date: 2023-09-01
+date: 2024-06-01
 location: "Xiamen, China"
 ---
 

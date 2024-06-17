@@ -11,35 +11,39 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Econometrics, Monash University, 2024 (expected)
+* Bachelor of Commerce (Honours), Monash University, 2019
+* Bachelor of Actuarial Science, Monash University, 2018
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2019-2020: Research Assistant
+  * Monash University
+  * Duties: Evaluation of Machine learning in Empirical Finance
+  * Supervisor: David Frazier
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 2020-2022: Research Assistant
+  * Monash University
+  * Duties: Implementation of Bootstrap Based Confidence Regions of Haussdorff Distances for Partial Identification
+  * Supervisors: Donald Poskitt and Xueyan Zhao
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2019-2023: Research Assistant
+  * Monash University
+  * Duties: Implementation of Kernel Estimation and Testing of Threshold Models
+  * Supervisors: Bonsoo Koo
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming
+  * R
+  * Python
+  * C++
+
+Languages
+======
+* English, Native
+* Chnese (Mandarin), Native
+* Japanese (JLPT N3)
 
 Publications
 ======
@@ -59,6 +63,7 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
+Professional Memberships
 ======
-* Currently signed in to 43 different slack teams
+* Econometric Society
+* IAAE
