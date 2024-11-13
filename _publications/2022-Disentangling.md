@@ -7,6 +7,6 @@ date: 2022-10-01
 venue: 'Working Paper'
 slidesurl: 'http://zeyuz35.github.io/files/KWZ_slides.pdf'
 paperurl: 'http://zeyuz35.github.io/files/KWZ_draft.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+citation: ''
 ---
 
