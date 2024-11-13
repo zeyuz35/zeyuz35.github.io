@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Econometrics, Monash University, 2024 (expected)
+* Ph.D in Econometrics, Monash University, 2024/25 (expected)
 * Bachelor of Commerce (Honours), Monash University, 2019
 * Bachelor of Actuarial Science, Monash University, 2018
 
@@ -38,6 +38,7 @@ Skills
   * R
   * Python
   * C++
+  * HPC and bash scripting
 
 Languages
 ======
@@ -66,4 +67,5 @@ Teaching
 Professional Memberships
 ======
 * Econometric Society
-* IAAE
+* International Association for Applied Econometrics (IAAE)
+* International Institute of Forecasters (IIF)
