@@ -8,6 +8,8 @@ date: 2020-01-01
 location: "Melbourne, Australia"
 ---
 
+Introductory and masters level courses in econometrics, covering topics such as linear regression, binary outcome models, statistical inference, computational statistics, data visualisation and analytics
+
 Semester 1:
 - ETC2410 Introductory Econometrics
 - ETC3410 Applied Econometrics
