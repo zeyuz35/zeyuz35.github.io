@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+Download: 'http://zeyuz35.github.io/files/CV.pdf'
+
 Education
 ======
 * Ph.D in Econometrics, Monash University, 2024/25 (expected)
