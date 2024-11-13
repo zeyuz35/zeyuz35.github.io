@@ -10,11 +10,9 @@ location: "Melbourne, Australia"
 
 ## Semester 1
 
-ETC3410 Applied Econometrics
-======
+- ETC3410 Applied Econometrics
 
 ## Semester 2
 
-ETC2420 Statistical Thinking
-======
+- ETC2420 Statistical Thinking
 

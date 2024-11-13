@@ -10,18 +10,14 @@ location: "Melbourne, Australia"
 
 ## Semester 1
 
-ETC3410 Applied Econometrics
-======
+- ETC3410 Applied Econometrics
 
 ## Semester 2
 
-ETC3410 Statistical Thinking
-======
-
-ETX2250 Data Visualization and Analytics
-======
+- ETC1000 Business and Economic Statistics
+- ETC3410 Statistical Thinking
+- ETX2250 Data Visualization and Analytics
 
 ## Summer
 
-ETC2250 Data Visualization and Analytics
-======
+- ETC2250 Data Visualization and Analytics

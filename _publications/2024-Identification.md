@@ -2,12 +2,11 @@
 title: "Identification and Estimation of Structural Factor Models with External Instruments"
 collection: publications
 permalink: /publication/2024-Identification
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
+excerpt: '
+We develop a new estimator for the impulse response functions structural factor models with the use of external instruments. The proposed estimator is able to allow for the number of primitive shocks to be less than the number of static factors, and via the use of a minimum distance framework, jointly utilize multiple instruments. The minimum distance framework naturally leads to an overidentification test for the joint validity of instruments, and an auto- matic moment selection procedure to select the correct instruments. Simulation results show the improvement in the estimation accuracy of impulse response functions when more than one valid instrument is used, as well as the size and consistency of the overidentification test and automatic moment selection procedures. We apply the proposed methodology to estimate the effects of a monetary policy shock using a U.S. macroeconomic dataset with the use of popular monetary policy instruments. The results show these monetary policy instruments are all jointly valid, and that their joint use can result in more accurate and reasonable estimates of the impulse response functions.'
 date: 2024-09-01
-venue: 'Journal 1'
+venue: 'Working Paper'
 slidesurl: 'http://zeyuz35.github.io/files/ZZ_slides.pdf'
 paperurl: 'http://zeyuz35.github.io/files/ZZ_draft.pdf'
 citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
-
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.

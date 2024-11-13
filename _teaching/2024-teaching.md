@@ -10,6 +10,10 @@ location: "Melbourne, Australia"
 
 ## Semester 1
 
-ETC3410 Applied Econometrics
-======
+- ETC3410 Applied Econometrics
+
+## Semester 2
+
+- ETC1000 Business and Economic Statistics
+- ETC2410 Introductory Econometrics
 
