@@ -1,6 +1,7 @@
 ---
 title: "Teaching 2023"
 collection: teaching
+type: "Courses"
 permalink: /teaching/teaching-2023
 venue: "Monash University, Department of Econometrics and Business Statistics"
 date: 2023-01-01
