@@ -12,8 +12,10 @@ Semester 1:
 - ETC2410 Introductory Econometrics
 - ETC3410 Applied Econometrics
 - ETC4420 Microeconometrics
+
 Semester 2:
 - ETC2420 Introductory Econometrics
 - ETC2410 Statistical Thinking
+
 Summer:
 - ETX2250 Data Visualization and Analytics
