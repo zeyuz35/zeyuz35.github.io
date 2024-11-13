@@ -1,7 +1,6 @@
 ---
 title: "Teaching 2021"
 collection: teaching
-type: "Courses"
 permalink: /teaching/teaching-2021
 venue: "Monash University, Department of Econometrics and Business Statistics"
 date: 2021-01-01
