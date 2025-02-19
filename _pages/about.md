@@ -13,7 +13,9 @@ PhD Candidate at Monash University, Department of Econometrics and Business Stat
 
 My research interest lies in high dimensional factor models, structural breaks, and econometric theory for macroeconomics.
 
-I am close to my submission date in late August, and will be on the job market for 2024/2025.
+I am on the 2024/2025 job market.
+
+My Job Market Paper, "Identification of Structural Factor Models with External Instruments," won the Best Presentation by a young researcher Prize at the Australian and New Zealand Econometrics Study Group (ANZESG) conference.
 
 # Background
 
