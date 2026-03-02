@@ -1,0 +1,4 @@
+## 2024-05-23 - Unescaped User Input in Markdown Generation
+**Vulnerability:** YAML injection and Cross-Site Scripting (XSS) via unescaped user input (`title`, `url`, `type`, `venue`, `paper_url`, `location`, `citation`) concatenated directly into generated Markdown and YAML front-matter by `markdown_generator` scripts.
+**Learning:** Python scripts generating static site content were bypassing standard escaping mechanisms, assuming safe input from TSV/BibTeX files. Furthermore, the `html_escape` utility function would fail on non-string inputs (like Pandas `NaN` floats), creating a barrier to safely wrapping all fields.
+**Prevention:** Ensure all user-controlled data is passed through `html_escape()` before string concatenation in static site generators. Update `html_escape` to cast its input to `str` to handle non-string types safely.
