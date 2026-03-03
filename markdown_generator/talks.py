@@ -51,7 +51,7 @@ html_escape_table = {
 
 def html_escape(text):
     if type(text) is str:
-        return "".join(html_escape_table.get(c,c) for c in text)
+        return "".join(html_escape_table.get(c,c) for c in str(text))
     else:
         return "False"
 
@@ -70,30 +70,30 @@ for row, item in talks.iterrows():
     html_filename = str(item.date) + "-" + item.url_slug 
     year = item.date[:4]
     
-    md = "---\ntitle: \""   + item.title + '"\n'
+    md = "---\ntitle: \""   + html_escape(item.title) + '"\n'
     md += "collection: talks" + "\n"
     
     if len(str(item.type)) > 3:
-        md += 'type: "' + item.type + '"\n'
+        md += 'type: "' + html_escape(item.type) + '"\n'
     else:
         md += 'type: "Talk"\n'
     
     md += "permalink: /talks/" + html_filename + "\n"
     
     if len(str(item.venue)) > 3:
-        md += 'venue: "' + item.venue + '"\n'
+        md += 'venue: "' + html_escape(item.venue) + '"\n'
         
     if len(str(item.location)) > 3:
         md += "date: " + str(item.date) + "\n"
     
     if len(str(item.location)) > 3:
-        md += 'location: "' + str(item.location) + '"\n'
+        md += 'location: "' + html_escape(str(item.location)) + '"\n'
            
     md += "---\n"
     
     
     if len(str(item.talk_url)) > 3:
-        md += "\n[More information here](" + item.talk_url + ")\n" 
+        md += "\n[More information here](" + html_escape(item.talk_url) + ")\n"
         
     
     if len(str(item.description)) > 3:

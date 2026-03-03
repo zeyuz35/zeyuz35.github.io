@@ -1,0 +1,4 @@
+## 2024-05-01 - Prevent YAML Injection and XSS via Unescaped User Input
+**Vulnerability:** User-controlled inputs such as `title`, `url`, `venue`, `type`, `location` were inserted directly into YAML front matter and Markdown files without escaping, creating a vulnerability for YAML injection and Stored XSS if the data contained malicious characters. Additionally, `html_escape` was causing attribute errors with non-string values.
+**Learning:** Even internal build or markdown generation scripts must escape values loaded from external files (like TSVs and BibTeX) because these files might be populated by third parties or contain unexpected special characters.
+**Prevention:** Always wrap variables passed into templates or written directly to output files using a robust escaping function, such as `html_escape`. The escaping function should cast inputs to strings to avoid errors on `None` or float values.
