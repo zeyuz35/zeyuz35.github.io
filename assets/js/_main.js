@@ -14,12 +14,6 @@ $(document).ready(function(){
   $(window).resize(function() {
     didResize = true;
   });
-  setInterval(function() {
-    if (didResize) {
-      didResize = false;
-      bumpIt();
-    }
-  }, 250);
   // FitVids init
   $("#main").fitVids();
 
@@ -54,9 +48,16 @@ $(document).ready(function(){
 
   stickySideBar();
 
-  $(window).resize(function(){
-    stickySideBar();
-  });
+  // ⚡ Bolt: Throttled resize listener for performance
+  // Combines bumpIt and stickySideBar updates into a single 250ms interval
+  // preventing layout thrashing and unnecessary DOM queries during continuous window resizing.
+  setInterval(function() {
+    if (didResize) {
+      didResize = false;
+      bumpIt();
+      stickySideBar();
+    }
+  }, 250);
 
   // Follow menu drop down
   $(".author__urls-wrapper button").on("click", function() {
