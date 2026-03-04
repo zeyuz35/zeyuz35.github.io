@@ -1,0 +1,5 @@
+## 2024-06-15 - YAML Injection & XSS Vulnerability in Markdown Generators
+
+**Vulnerability:** Found multiple instances where user-controlled input (from TSV or BibTeX files) was inserted into YAML front matter blocks and Markdown link attributes without proper HTML entity escaping. Although `html_escape` was partially implemented, it missed several variables like `item.paper_url`, `item.venue`, `b["url"]`, `item.citation`, `item.type`, `item.talk_url` and didn't gracefully handle non-string inputs.
+**Learning:** These vulnerabilities exist because generating static files via string concatenation bypasses context-aware escaping. When building YAML front matter or Markdown files, every user-controlled variable, even those that seem harmless (like URLs or citations), must be carefully sanitized.
+**Prevention:** Always use `html_escape(str(text))` to cast inputs to strings and escape them prior to insertion into `.md` or YAML templates. Furthermore, consistently apply this escaping to all interpolated data fields.
