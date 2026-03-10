@@ -47,12 +47,14 @@ publications
 html_escape_table = {
     "&": "&amp;",
     '"': "&quot;",
-    "'": "&apos;"
+    "'": "&apos;",
+    ">": "&gt;",
+    "<": "&lt;"
     }
 
 def html_escape(text):
     """Produce entities within text."""
-    return "".join(html_escape_table.get(c,c) for c in text)
+    return "".join(html_escape_table.get(c,c) for c in str(text))
 
 
 # ## Creating the markdown files
@@ -70,7 +72,7 @@ for row, item in publications.iterrows():
     
     ## YAML variables
     
-    md = "---\ntitle: \""   + item.title + '"\n'
+    md = "---\ntitle: \""   + html_escape(item.title) + '"\n'
     
     md += """collection: publications"""
     

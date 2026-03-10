@@ -46,14 +46,13 @@ talks
 html_escape_table = {
     "&": "&amp;",
     '"': "&quot;",
-    "'": "&apos;"
+    "'": "&apos;",
+    ">": "&gt;",
+    "<": "&lt;"
     }
 
 def html_escape(text):
-    if type(text) is str:
-        return "".join(html_escape_table.get(c,c) for c in text)
-    else:
-        return "False"
+    return "".join(html_escape_table.get(c,c) for c in str(text))
 
 
 # ## Creating the markdown files
@@ -70,7 +69,7 @@ for row, item in talks.iterrows():
     html_filename = str(item.date) + "-" + item.url_slug 
     year = item.date[:4]
     
-    md = "---\ntitle: \""   + item.title + '"\n'
+    md = "---\ntitle: \""   + html_escape(item.title) + '"\n'
     md += "collection: talks" + "\n"
     
     if len(str(item.type)) > 3:
