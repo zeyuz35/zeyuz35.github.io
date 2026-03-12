@@ -6,9 +6,8 @@ excerpt: 'We develop a projection-based decomposition to disentangle structural 
 date: 2025-11-09
 venue: 'Journal of Business and Economic Statistics'
 slidesurl: TBA
-paperurl: [https://doi.org/10.1080/07350015.2025.2583205](https://doi.org/10.1080/07350015.2025.2583205)
-citation: '
-Koo, B., Wong, B., & Zhong, Z. Y. (2014). Disentangling Structural Breaks in Factor Models for Macroeconomic Data*. Journal of Business &amp; Economic Statistics, 1–25. https://doi.org/10.1080/07350015.2025.2583205
-'
+paperurl: '[https://doi.org/10.1080/07350015.2025.2583205](https://doi.org/10.1080/07350015.2025.2583205)'
+citation: >-
+  Koo, B., Wong, B., & Zhong, Z. Y. (2014). Disentangling Structural Breaks in Factor Models for Macroeconomic Data*. Journal of Business &amp; Economic Statistics, 1–25. https://doi.org/10.1080/07350015.2025.2583205
 ---
 
