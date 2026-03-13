@@ -1,0 +1,1 @@
+## 2024-03-13 - Add ARIA label to masthead navigation menu button\n**Learning:** The masthead navigation menu button lacked an ARIA label, which is critical for screen reader accessibility on responsive mobile views.\n**Action:** Add `aria-label="Toggle Menu"` to the masthead toggle button.
