@@ -1,0 +1,4 @@
+## 2024-05-24 - Fix Tabnabbing in Generated Markdown
+**Vulnerability:** Found `target="_blank"` without `rel="noopener noreferrer"` (or `rel="noopener"`) in Python scripts and Jupyter notebooks that generate markdown links. This allows the newly opened tab to retain a reference to the opening window via `window.opener` and potentially replace the opening window's content (tabnabbing).
+**Learning:** This vulnerability existed because the generators manually format Markdown links and did not consider the side effects of `target="_blank"` on modern and older browsers that do not automatically isolate openers.
+**Prevention:** Always add `rel="noopener"` (or `rel="noopener noreferrer"`) alongside `target="_blank"` when manually constructing HTML tags or Markdown link attributes.

@@ -145,9 +145,9 @@ for pubsource in publist:
                 md += "\n" + html_escape(b["note"]) + "\n"
 
             if url:
-                md += "\n[Access paper here](" + b["url"] + "){:target=\"_blank\"}\n" 
+                md += "\n[Access paper here](" + b["url"] + "){:target=\"_blank\" rel=\"noopener\"}\n"
             else:
-                md += "\nUse [Google Scholar](https://scholar.google.com/scholar?q="+html.escape(clean_title.replace("-","+"))+"){:target=\"_blank\"} for full citation"
+                md += "\nUse [Google Scholar](https://scholar.google.com/scholar?q="+html.escape(clean_title.replace("-","+"))+"){:target=\"_blank\" rel=\"noopener\"} for full citation"
 
             md_filename = os.path.basename(md_filename)
 
