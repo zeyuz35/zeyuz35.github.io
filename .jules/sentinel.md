@@ -1,0 +1,4 @@
+## 2024-05-19 - Incomplete HTML Escaping Mitigated
+**Vulnerability:** The custom `html_escape()` functions in `markdown_generator/` scripts/notebooks (`publications.py`, `talks.py`, `pubsFromBib.py`, and `.ipynb` equivalents) only mapped `&`, `"`, and `'` to their HTML entities, but omitted `<` and `>`. When this data is used directly in Markdown links or other content, it could allow XSS if `>` or `<` are present in user-supplied TSV/BibTeX fields.
+**Learning:** `html_escape_table` should comprehensively include all potentially dangerous HTML injection characters, not just quotes and ampersands. The memory explicitly required `<` and `>` mapping to mitigate XSS in HTML/Markdown string attributes.
+**Prevention:** Always use established libraries (like `html.escape()` from standard Python) when sanitizing strings, rather than writing custom escape tables.
