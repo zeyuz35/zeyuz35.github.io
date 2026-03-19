@@ -96,20 +96,25 @@ for pubsource in publist:
             html_filename = (str(pub_date) + "-" + url_slug).replace("--","-")
 
             #Build Citation from text
-            citation = ""
+            # ⚡ Bolt Optimization: Use list append and join() instead of string concatenation inside the loop
+            # This avoids creating multiple intermediate string objects, reducing memory allocation overhead
+            # Expected impact: Faster execution when processing citations with many authors
+            citation_parts = []
 
             #citation authors - todo - add highlighting for primary author?
             for author in bibdata.entries[bib_id].persons["author"]:
-                citation = citation+" "+author.first_names[0]+" "+author.last_names[0]+", "
+                citation_parts.append(f" {author.first_names[0]} {author.last_names[0]}, ")
 
             #citation title
-            citation = citation + "\"" + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + ".\""
+            citation_parts.append("\"" + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + ".\"")
 
             #add venue logic depending on citation type
             venue = publist[pubsource]["venue-pretext"]+b[publist[pubsource]["venuekey"]].replace("{", "").replace("}","").replace("\\","")
 
-            citation = citation + " " + html_escape(venue)
-            citation = citation + ", " + pub_year + "."
+            citation_parts.append(" " + html_escape(venue))
+            citation_parts.append(", " + pub_year + ".")
+
+            citation = "".join(citation_parts)
 
             
             ## YAML variables
