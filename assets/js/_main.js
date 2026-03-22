@@ -62,6 +62,8 @@ $(document).ready(function(){
   $(".author__urls-wrapper button").on("click", function() {
     $(".author__urls").fadeToggle("fast", function() {});
     $(".author__urls-wrapper button").toggleClass("open");
+    var $button = $(this);
+    $button.attr("aria-expanded", $button.attr("aria-expanded") === "true" ? "false" : "true");
   });
 
   // init smooth scroll, this needs to be slightly more than then fixed masthead height
