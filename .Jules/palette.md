@@ -1,0 +1,2 @@
+## 2024-03-25 - Initializing Palette Journal\n**Learning:** Started keeping track of critical UX/A11y learnings.\n**Action:** Will document non-routine learnings here.
+## 2024-03-25 - Mobile Menu Toggle ARIA Label\n**Learning:** Found an icon-only button without an ARIA label in `_includes/masthead.html`. Adding `aria-label="Toggle Menu"` helps screen reader users identify the purpose of this mobile menu toggle.\n**Action:** Always add ARIA labels to icon-only buttons to improve accessibility.
