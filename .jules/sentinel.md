@@ -1,0 +1,4 @@
+## 2024-05-23 - Prevent XSS in Markdown Generators
+**Vulnerability:** The HTML escape dictionaries used in `markdown_generator` scripts (`publications.py`, `talks.py`, `pubsFromBib.py` and their `.ipynb` counterparts) lacked escaping for `<` and `>`, leading to a potential Cross-Site Scripting (XSS) vulnerability. If TSV or BibTex fields contain untrusted `<script>` tags, the resulting Markdown/HTML output on the Jekyll site could execute arbitrary JavaScript.
+**Learning:** Security vulnerabilities often hide in custom input sanitation routines. It's easy to overlook crucial characters like `<` and `>` when manually defining escape maps, especially when the focus is just on breaking YAML (like quotes and ampersands).
+**Prevention:** Always use established libraries for encoding/sanitization if possible. When creating custom escape tables, ensure standard HTML entities (`<` to `&lt;` and `>` to `&gt;`) are included to prevent XSS.
