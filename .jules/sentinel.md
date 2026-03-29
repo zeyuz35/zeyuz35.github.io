@@ -1,0 +1,4 @@
+## 2024-03-29 - Incomplete Custom HTML Escaping Logic
+**Vulnerability:** The custom `html_escape` function and its underlying `html_escape_table` dictionary failed to map the characters `<` and `>` to their HTML entities `&lt;` and `&gt;`. When processing possibly untrusted string input from TSV or BibTeX sources, this could lead to Cross-Site Scripting (XSS) if `<script>` or other malicious tags were injected.
+**Learning:** Homegrown HTML escaping functions can easily miss critical character mappings that standard libraries include by default. It's important to verify that at least all standard characters (`&`, `<`, `>`, `"`, `'`) are properly mapped.
+**Prevention:** In the future, prefer using built-in standard library functions like `html.escape()` for string escaping instead of manually building and maintaining character replacement tables.
