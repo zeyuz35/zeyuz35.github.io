@@ -99,17 +99,18 @@ for pubsource in publist:
             citation = ""
 
             #citation authors - todo - add highlighting for primary author?
-            for author in bibdata.entries[bib_id].persons["author"]:
-                citation = citation+" "+author.first_names[0]+" "+author.last_names[0]+", "
+            #⚡ Bolt Performance Optimization: Replace O(N^2) string concatenation in loop with list comprehension and "".join()
+            authors = [author.first_names[0] + " " + author.last_names[0] for author in bibdata.entries[bib_id].persons["author"]]
+            citation = " " + ",  ".join(authors) + ", "
 
             #citation title
-            citation = citation + "\"" + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + ".\""
+            citation += "\"" + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + ".\""
 
             #add venue logic depending on citation type
             venue = publist[pubsource]["venue-pretext"]+b[publist[pubsource]["venuekey"]].replace("{", "").replace("}","").replace("\\","")
 
-            citation = citation + " " + html_escape(venue)
-            citation = citation + ", " + pub_year + "."
+            citation += " " + html_escape(venue)
+            citation += ", " + pub_year + "."
 
             
             ## YAML variables

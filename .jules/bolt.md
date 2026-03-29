@@ -1,0 +1,3 @@
+## 2024-05-15 - Optimizing Citation Generation Loops
+**Learning:** String concatenation using `+` inside a loop (like `citation = citation + ...`) creates a new string object in memory on each iteration, which becomes an O(N^2) operation in Python. This is a common bottleneck in scripts generating markdown content (like `pubsFromBib.py` and `PubsFromBib.ipynb`), especially when processing large arrays of authors.
+**Action:** Replace manual string concatenation loops with a list-based approach (e.g., using list comprehensions) and `"".join()`, and use `+=` for subsequent additions to the final string block to improve memory efficiency and execution speed.
