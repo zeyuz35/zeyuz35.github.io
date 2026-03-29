@@ -1,4 +1,6 @@
 source "https://rubygems.org"
+ruby "2.6.10"
+gem "ffi", "< 1.16.0"
 
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
@@ -24,5 +26,5 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem 'jekyll-sitemap'
   gem 'hawkins'
-  gem "webrick", "~> 1.8"
+  gem "webrick", "~> 1.7"
 end
