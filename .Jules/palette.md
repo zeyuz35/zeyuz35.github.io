@@ -1,0 +1,3 @@
+## 2023-10-27 - Added ARIA label to mobile navicon
+**Learning:** The mobile masthead menu button in Jekyll (`_includes/masthead.html`) was purely visually indicated via CSS classes (`.navicon`) without any semantic text or `aria-label`, leaving it entirely opaque to screen readers navigating the site in mobile viewports.
+**Action:** Always verify that purely CSS-drawn icons (like Hamburger menus using `.navicon`) have an explicit `aria-label` attribute on their enclosing `<button>` elements to ensure screen reader compatibility.
