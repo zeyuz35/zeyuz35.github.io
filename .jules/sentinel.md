@@ -1,0 +1,4 @@
+## 2024-03-30 - Fix XSS vulnerabilities in markdown generators
+**Vulnerability:** The `html_escape` function in `markdown_generator` scripts failed to escape `<` and `>` characters, allowing arbitrary HTML/JS (XSS) to be injected from TSV/BibTeX data into generated site files. Also failed to handle non-string values safely.
+**Learning:** Security controls like input sanitization must explicitly cover all dangerous characters. Hardcoding string assertions (`type(text) is str`) can be brittle; casting (`str(text)`) is often safer when interacting with unstructured data.
+**Prevention:** Always use well-established sanitization libraries, or if implementing custom escaping, ensure all characters with special meaning in the target context (HTML) are fully accounted for.
