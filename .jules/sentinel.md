@@ -1,0 +1,4 @@
+## 2024-04-03 - Missing HTML Entity Escaping in Custom Markdown Generators
+**Vulnerability:** The custom markdown generation scripts (`pubsFromBib.py`, `publications.py`, `talks.py` and their `.ipynb` counterparts) lacked escaping for `<` and `>` characters in their `html_escape_table`, leaving the site vulnerable to XSS if untrusted input (e.g., from BibTeX fields or TSVs) contained malicious HTML/JavaScript tags.
+**Learning:** Custom sanitization tables often miss critical characters compared to using established libraries. The absence of `<` and `>` mapping explicitly breaks the prevention of XSS in generated HTML.
+**Prevention:** Always use established HTML escaping libraries (like `html.escape` in Python) when available. If a custom escape table must be used, ensure it explicitly includes `<` (`&lt;`) and `>` (`&gt;`) at a minimum to neutralize HTML injection.
