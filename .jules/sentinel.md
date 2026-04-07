@@ -1,0 +1,4 @@
+## 2024-04-07 - Missing HTML Entity Escaping in Markdown Generators
+**Vulnerability:** The `html_escape_table` in the `.py` and `.ipynb` files under `markdown_generator/` only escaped `&`, `"`, and `'`. This left the generators vulnerable to Cross-Site Scripting (XSS), as `<` and `>` were unescaped when untrusted input (e.g., TSV or BibTeX content) was processed.
+**Learning:** Custom markdown generators using naive character replacement dictionaries must be carefully reviewed to ensure all necessary characters (`<` and `>`) are mapped correctly to their HTML entities (`&lt;` and `&gt;`).
+**Prevention:** Always use established HTML escaping libraries, or when maintaining manual translation tables, verify they exhaustively cover all high-risk XSS characters.
