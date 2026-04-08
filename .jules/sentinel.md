@@ -1,0 +1,4 @@
+## 2025-04-08 - Missing XSS Escaping in Markdown Generators
+**Vulnerability:** The custom `html_escape_table` mapping in the markdown generator scripts (`pubsFromBib.py`, `talks.py`, `publications.py` and corresponding Notebooks) lacked escape rules for angle brackets (`<` and `>`), allowing potential Cross-Site Scripting (XSS) if untrusted TSV/BibTeX content includes raw HTML tags.
+**Learning:** Custom HTML sanitization dictionaries often miss critical elements. It's essential to always explicitly cover at minimum `<`, `>`, `&`, `"`, and `'`.
+**Prevention:** Use standardized sanitization libraries when possible, or systematically audit custom escape dictionaries against standard XSS vectors.
