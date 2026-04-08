@@ -96,11 +96,10 @@ for pubsource in publist:
             html_filename = (str(pub_date) + "-" + url_slug).replace("--","-")
 
             #Build Citation from text
-            citation = ""
+            # ⚡ Bolt: Use "".join() for faster string concatenation of author names
+            citation = "".join(f" {author.first_names[0]} {author.last_names[0]}, " for author in bibdata.entries[bib_id].persons["author"])
 
             #citation authors - todo - add highlighting for primary author?
-            for author in bibdata.entries[bib_id].persons["author"]:
-                citation = citation+" "+author.first_names[0]+" "+author.last_names[0]+", "
 
             #citation title
             citation = citation + "\"" + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + ".\""
