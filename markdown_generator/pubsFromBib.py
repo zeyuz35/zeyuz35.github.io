@@ -98,9 +98,10 @@ for pubsource in publist:
             #Build Citation from text
             citation = ""
 
+            # ⚡ Bolt: Optimize string concatenation for performance
             #citation authors - todo - add highlighting for primary author?
-            for author in bibdata.entries[bib_id].persons["author"]:
-                citation = citation+" "+author.first_names[0]+" "+author.last_names[0]+", "
+            author_strings = [" " + author.first_names[0] + " " + author.last_names[0] + ", " for author in bibdata.entries[bib_id].persons["author"]]
+            citation += "".join(author_strings)
 
             #citation title
             citation = citation + "\"" + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + ".\""
