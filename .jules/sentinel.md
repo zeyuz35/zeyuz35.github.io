@@ -1,0 +1,4 @@
+## YYYY-MM-DD - Missing XSS Escaping in Markdown Generators
+**Vulnerability:** The `html_escape` function used across markdown generator scripts (`pubsFromBib.py`, `talks.py`, `publications.py` and their respective Jupyter notebooks) explicitly mapped `&`, `"`, and `'` to their HTML entities, but critically omitted `<` and `>`.
+**Learning:** This missing configuration creates an XSS vulnerability when processing untrusted TSV/BibTeX fields. If an attacker controls input (e.g. publication notes), they can inject arbitrary HTML tags (`<script>`) directly into the generated markdown files, leading to XSS when the site is built.
+**Prevention:** Always ensure custom HTML escape implementations comprehensively escape `<` and `>` to `&lt;` and `&gt;` when processing potentially untrusted data to prevent script injection.
