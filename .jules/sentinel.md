@@ -1,0 +1,4 @@
+## YYYY-MM-DD - Missing Angle Bracket Escaping in SSG Scripts
+**Vulnerability:** The `html_escape` utility in the markdown generator scripts failed to escape `<` and `>` characters from TSV/BibTeX data.
+**Learning:** In static site generation pipelines, data ingestion scripts must perform full HTML entity encoding. Missing angle brackets allows arbitrary HTML/JS (like `<script>`) from untrusted data sources to bypass sanitation and result in stored XSS when the markdown is rendered into the final static HTML.
+**Prevention:** Always use robust escaping libraries or ensure manual escape tables comprehensively map all critical HTML entities (`&`, `"`, `'`, `<`, `>`).
