@@ -1,0 +1,4 @@
+## 2024-05-23 - XSS Vulnerability in Markdown Generation
+**Vulnerability:** The HTML escape functions in the `markdown_generator` scripts (`pubsFromBib.py`, `publications.py`, `talks.py` and their Jupyter Notebook counterparts) failed to escape `<` and `>` characters, leaving the site vulnerable to Cross-Site Scripting (XSS) if malicious payloads were included in TSV/BibTeX inputs.
+**Learning:** Even internal static site generators need robust HTML escaping, as untrusted data (like publication notes or talk descriptions) injected directly into Markdown files could break the structure or introduce malicious HTML/JavaScript tags if not properly escaped.
+**Prevention:** Ensure any hand-rolled HTML escaping tables always include `<` and `>` alongside quotes and ampersands. Better yet, use established libraries (like `html.escape`) instead of custom dictionary mappings.

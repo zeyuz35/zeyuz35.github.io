@@ -46,7 +46,9 @@ publist = {
 html_escape_table = {
     "&": "&amp;",
     '"': "&quot;",
-    "'": "&apos;"
+    "'": "&apos;",
+    ">": "&gt;",
+    "<": "&lt;"
     }
 
 def html_escape(text):
