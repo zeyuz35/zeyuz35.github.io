@@ -1,0 +1,4 @@
+## YYYY-MM-DD - Incomplete HTML Escaping in Generator Scripts
+**Vulnerability:** The `html_escape_table` in the python scripts and jupyter notebooks only escaped `&`, `"`, and `'`. It missed `<` and `>`, allowing potential XSS vulnerabilities when markdown is generated from user-provided TSV/BibTeX files.
+**Learning:** Incomplete escaping functions can leave XSS vectors open. `<` and `>` are critical characters to escape in HTML contexts.
+**Prevention:** Ensure standard and comprehensive HTML escaping libraries or complete tables are used when handling unsanitized inputs for static site generation.
