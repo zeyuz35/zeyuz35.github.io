@@ -1,0 +1,4 @@
+## 2024-05-23 - XSS Vulnerability in Markdown Generators
+**Vulnerability:** Cross-Site Scripting (XSS) vulnerability due to missing HTML escaping of the `<` and `>` characters in the markdown generator scripts (`publications.py`, `talks.py`, `pubsFromBib.py`).
+**Learning:** The `html_escape_table` dictionary was missing standard HTML escaping for `<` and `>` characters. While quotes and ampersands were escaped, angle brackets were not, which could allow malicious users to inject raw HTML or JavaScript if they control the content of the `talks.tsv`, `publications.tsv`, or `.bib` files used for markdown generation.
+**Prevention:** Always ensure standard HTML characters (`&`, `<`, `>`, `"`, `'`) are properly escaped when reflecting data from user-controlled files into HTML or Markdown files rendered by Jekyll. Use complete HTML escape tables or standardized escaping libraries like `html.escape()` when dealing with external inputs.
