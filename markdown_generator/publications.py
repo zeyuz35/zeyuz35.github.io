@@ -62,7 +62,9 @@ def html_escape(text):
 # In[5]:
 
 import os
-for row, item in publications.iterrows():
+# Bolt optimization: Replace iterrows() with itertuples() for DataFrame iteration
+# Expected performance impact: Reduces iteration overhead significantly (~10-100x faster)
+for item in publications.itertuples():
     
     md_filename = str(item.pub_date) + "-" + item.url_slug + ".md"
     html_filename = str(item.pub_date) + "-" + item.url_slug
