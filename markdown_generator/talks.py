@@ -64,7 +64,9 @@ def html_escape(text):
 
 loc_dict = {}
 
-for row, item in talks.iterrows():
+# Bolt optimization: Replaced iterrows() with itertuples() for faster DataFrame iteration.
+# Expected performance impact: Up to 10-50x faster DataFrame iteration.
+for item in talks.itertuples():
     
     md_filename = str(item.date) + "-" + item.url_slug + ".md"
     html_filename = str(item.date) + "-" + item.url_slug 
