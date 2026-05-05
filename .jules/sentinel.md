@@ -1,0 +1,4 @@
+## YYYY-MM-DD - Reverse Tabnabbing Vulnerability
+**Vulnerability:** External links generated with `target="_blank"` using Kramdown inline attributes were missing the `rel="noopener noreferrer"` attribute, exposing the application to reverse tabnabbing attacks.
+**Learning:** This repo generates static site markdown files from Python scripts and Jupyter notebooks. Missing security attributes in these generator templates will propagate to multiple pages, increasing the attack surface.
+**Prevention:** Always verify external links in static site generators, and explicitly add `rel="noopener noreferrer"` to any dynamically generated markdown producing external links.
