@@ -35,8 +35,11 @@ for file in g:
             location = lines_trim[:loc_end]
                             
            
-        location_dict[location] = geocoder.geocode(location)
-        print(location, "\n", location_dict[location])
+        # Bolt optimization: Cache geocoding results to avoid redundant API calls.
+        # Expected performance impact: Significantly reduces network bottleneck by avoiding duplicate geocoding API requests.
+        if location not in location_dict:
+            location_dict[location] = geocoder.geocode(location)
+            print(location, "\n", location_dict[location])
 
 
 m = getorg.orgmap.create_map_obj()
