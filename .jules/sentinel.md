@@ -1,0 +1,4 @@
+## YYYY-MM-DD - Missing HTML Escaping for XSS Prevention
+**Vulnerability:** The `html_escape` function across multiple markdown generation scripts and notebooks did not escape `<` and `>` characters, allowing potential Cross-Site Scripting (XSS) if malicious data was passed from input TSV/BibTeX files.
+**Learning:** Incomplete implementations of HTML escaping are common when standard libraries (like `html.escape`) are bypassed in favor of custom replacement tables. The codebase used a custom dictionary that missed the most critical characters for script injection.
+**Prevention:** Always use standard libraries (like `html.escape` in Python) when available, or ensure all critical HTML entities (including `<` and `>`) are strictly escaped when processing external inputs into HTML/Markdown files.
