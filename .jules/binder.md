@@ -1,0 +1,3 @@
+## 2024-05-10 - Remove unused python imports
+**Learning:** Unused imports like `string` and redundant imports like `import pybtex.database.input.bibtex` were found in `markdown_generator/pubsFromBib.py` and its jupyter notebook equivalent.
+**Action:** In the future, I will remember to check the python scripts and their `.ipynb` counterparts to ensure imports remain in-sync and unused ones are scrubbed from both.
