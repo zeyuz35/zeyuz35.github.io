@@ -46,12 +46,17 @@ publist = {
 html_escape_table = {
     "&": "&amp;",
     '"': "&quot;",
-    "'": "&apos;"
+    "'": "&apos;",
+    ">": "&gt;",
+    "<": "&lt;",
     }
 
 def html_escape(text):
     """Produce entities within text."""
-    return "".join(html_escape_table.get(c,c) for c in text)
+    if isinstance(text, str):
+        return "".join(html_escape_table.get(c,c) for c in text)
+    else:
+        return ""
 
 
 for pubsource in publist:
@@ -145,9 +150,9 @@ for pubsource in publist:
                 md += "\n" + html_escape(b["note"]) + "\n"
 
             if url:
-                md += "\n[Access paper here](" + b["url"] + "){:target=\"_blank\"}\n" 
+                md += "\n[Access paper here](" + b["url"] + "){:target=\"_blank\" rel=\"noopener noreferrer\"}\n"
             else:
-                md += "\nUse [Google Scholar](https://scholar.google.com/scholar?q="+html.escape(clean_title.replace("-","+"))+"){:target=\"_blank\"} for full citation"
+                md += "\nUse [Google Scholar](https://scholar.google.com/scholar?q="+html.escape(clean_title.replace("-","+"))+"){:target=\"_blank\" rel=\"noopener noreferrer\"} for full citation"
 
             md_filename = os.path.basename(md_filename)
 
