@@ -22,6 +22,8 @@ from time import strptime
 import string
 import html
 import os
+import logging
+logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 import re
 
 #todo: incorporate different collection types rather than a catch all publications, requires other changes to template
@@ -153,8 +155,8 @@ for pubsource in publist:
 
             with open("../_publications/" + md_filename, 'w', encoding="utf-8") as f:
                 f.write(md)
-            print(f'SUCESSFULLY PARSED {bib_id}: \"', b["title"][:60],"..."*(len(b['title'])>60),"\"")
+            logging.info(f\'Successfully parsed {bib_id}: "{b["title"][:60]}{"..." if len(b["title"])>60 else ""}"\')
         # field may not exist for a reference
         except KeyError as e:
-            print(f'WARNING Missing Expected Field {e} from entry {bib_id}: \"', b["title"][:30],"..."*(len(b['title'])>30),"\"")
+            logging.warning(f\'Missing expected field {e} from entry {bib_id}: "{b["title"][:30]}{"..." if len(b["title"])>30 else ""}"\')
             continue
