@@ -1,0 +1,3 @@
+## 2024-05-12 - Replace raw prints with proper logging in markdown generator
+**Learning:** Found raw `print()` statements in `markdown_generator/pubsFromBib.py` used to report parsed entries and warnings, as well as commented-out debug prints in `markdown_generator/talks.py`.
+**Action:** Replaced `print()` with standard Python `logging` for cleaner and more professional output representation, and removed the unused debug print. Ensured Jupyter notebook `.ipynb` equivalents were updated synchronously.

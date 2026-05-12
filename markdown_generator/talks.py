@@ -101,7 +101,6 @@ for row, item in talks.iterrows():
         
         
     md_filename = os.path.basename(md_filename)
-    #print(md)
     
     with open("../_talks/" + md_filename, 'w') as f:
         f.write(md)
