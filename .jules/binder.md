@@ -1,0 +1,3 @@
+## 2024-05-14 - Redundant Imports in Notebooks
+**Learning:** Python scripts derived from Jupyter Notebooks (like `pubsFromBib.py`) sometimes inherit redundant imports (like `import pybtex.database.input.bibtex`) and unused imports (like `import string`) that were likely left over from interactive experimentation.
+**Action:** Always check both the .py script and the corresponding .ipynb notebook for unused or redundant imports and remove them in tandem using JSON parsing for the notebook to maintain file integrity.
