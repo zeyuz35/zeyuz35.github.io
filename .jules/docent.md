@@ -1,0 +1,3 @@
+## 2024-05-13 - Structured Logging for Generation Scripts
+**Learning:** Utility scripts in `markdown_generator/` utilized raw `print()` statements for diagnostic output, which included an unprofessional typo ("SUCESSFULLY") and lacked structured severity.
+**Action:** Replaced raw prints with `logging.info()` and `logging.warning()`, and corrected typos to adhere to professional communication standards.
