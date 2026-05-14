@@ -1,0 +1,3 @@
+## 2024-05-24 - Unused and redundant imports in bibliography scripts
+**Learning:** Found unused `import string` and redundant `import pybtex.database.input.bibtex` in `markdown_generator/pubsFromBib.py` and its companion notebook `markdown_generator/PubsFromBib.ipynb`.
+**Action:** When acting as Binder, routinely check both `.py` scripts and their corresponding `.ipynb` notebooks to ensure import hygiene is maintained uniformly across parallel files.
