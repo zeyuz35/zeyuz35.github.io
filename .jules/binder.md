@@ -1,0 +1,3 @@
+## 2025-02-18 - Remove unused imports in publications generator
+**Learning:** When cleaning up unused imports in data generation scripts (like `pubsFromBib.py`), the identical changes must be meticulously mirrored in their companion `.ipynb` notebooks. Jupyter notebook modifications should be done programmatically with JSON to avoid breaking internal structure, ensuring a trailing newline is added and `indent=1` is preserved.
+**Action:** Always check for companion notebooks and use Python's `json` library rather than string replacement/diff tools to safely clean up dependencies within notebook cell sources.
