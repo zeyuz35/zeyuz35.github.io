@@ -1,0 +1,3 @@
+## 2025-02-23 - Replacing pandas iterrows() with itertuples()
+**Learning:** `itertuples()` returns namedtuples making column access by attribute (e.g., `item.title`) directly compatible with the existing `item.<col>` syntax used previously, and is generally faster and more idiomatic than `iterrows()`.
+**Action:** Use `itertuples()` instead of `iterrows()` for dataframe row iterations when attribute access is sufficient, while retaining proper comments about the performance upgrade.
