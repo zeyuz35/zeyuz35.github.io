@@ -1,0 +1,3 @@
+## 2025-03-05 - Enforcing Clear Messaging with Logging
+**Learning:** Raw `print()` statements in data processing scripts (like `pubsFromBib.py`) often contain informal language and typos (e.g., 'SUCESSFULLY PARSED'), which diminishes the professional presentation of the codebase.
+**Action:** Replace `print()` with Python's standard `logging` module to enforce structured messaging, and ensure companion `.ipynb` files are kept fully synchronized using safe programmatic updates.
