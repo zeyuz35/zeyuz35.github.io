@@ -46,14 +46,15 @@ talks
 html_escape_table = {
     "&": "&amp;",
     '"': "&quot;",
-    "'": "&apos;"
+    "'": "&apos;",
+    ">": "&gt;",
+    "<": "&lt;",
     }
 
 def html_escape(text):
-    if type(text) is str:
+    if isinstance(text, str):
         return "".join(html_escape_table.get(c,c) for c in text)
-    else:
-        return "False"
+    return ""
 
 
 # ## Creating the markdown files
