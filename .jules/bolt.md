@@ -1,0 +1,3 @@
+## 2024-05-18 - Optimized Pandas Iteration in Markdown Generators
+**Learning:** `iterrows()` in Pandas is a known performance bottleneck as it creates a Series object for each row during iteration. Using `itertuples()` is significantly faster because it returns namedtuples and avoids type inference overhead, improving the efficiency of data generator scripts like `publications.py` and `talks.py`. Also learned that Jupyter Notebooks (`.ipynb`) containing similar code must be synchronized with their `.py` counterparts.
+**Action:** When working with Pandas dataframes that require row-by-row iteration (especially in scripting or data export contexts), always prefer `itertuples()` or vectorized operations over `iterrows()` to ensure optimal performance.
