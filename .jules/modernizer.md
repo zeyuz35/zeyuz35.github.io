@@ -1,0 +1,3 @@
+## 2024-05-20 - Optimize Pandas Iteration
+**Learning:** The codebase relies on `iterrows()` for iterating through pandas DataFrames in markdown generators (publications and talks). `iterrows()` is a known anti-pattern in pandas because it creates Series objects for each row, adding significant overhead and stripping dtype information.
+**Action:** Replace `iterrows()` with `itertuples()`. `itertuples()` returns namedtuples which are much faster and preserve data types, significantly improving performance while remaining highly readable.
