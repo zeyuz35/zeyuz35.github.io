@@ -18,6 +18,8 @@
 
 from pybtex.database.input import bibtex
 import pybtex.database.input.bibtex 
+import logging
+logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 from time import strptime
 import string
 import html
@@ -153,8 +155,10 @@ for pubsource in publist:
 
             with open("../_publications/" + md_filename, 'w', encoding="utf-8") as f:
                 f.write(md)
-            print(f'SUCESSFULLY PARSED {bib_id}: \"', b["title"][:60],"..."*(len(b['title'])>60),"\"")
+            title_str = b["title"][:60] + ("..." if len(b["title"]) > 60 else "")
+            logging.info(f'Successfully parsed {bib_id}: "{title_str}"')
         # field may not exist for a reference
         except KeyError as e:
-            print(f'WARNING Missing Expected Field {e} from entry {bib_id}: \"', b["title"][:30],"..."*(len(b['title'])>30),"\"")
+            title_str = b["title"][:30] + ("..." if len(b["title"]) > 30 else "")
+            logging.warning(f'Missing Expected Field {e} from entry {bib_id}: "{title_str}"')
             continue
