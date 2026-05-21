@@ -57,7 +57,7 @@ def html_escape(text):
 
 # ## Creating the markdown files
 # 
-# This is where the heavy lifting is done. This loops through all the rows in the TSV dataframe, then starts to concatentate a big string (```md```) that contains the markdown for each type. It does the YAML metadata first, then does the description for the individual page. If you don't want something to appear (like the "Recommended citation")
+# This is where the core execution occurs. This loops through all the rows in the TSV dataframe, then starts to concatenate a string (```md```) that contains the markdown for each type. It processes the YAML metadata first, then the description for the individual page. If you do not want a specific field to appear (such as the "Recommended citation")
 
 # In[5]:
 
