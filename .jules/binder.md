@@ -1,0 +1,3 @@
+## 2024-05-23 - Synchronize Jupyter Notebook and Python Script Imports
+**Learning:** The `markdown_generator` directory contains tightly coupled Python scripts and `.ipynb` files. Modifying imports in one requires identical changes in the other via programmatically editing the JSON cells to preserve unescaped string formatting.
+**Action:** Always write a temporary Python script utilizing the `json` module to update the `.ipynb` files when cleaning up dependencies.
