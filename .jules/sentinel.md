@@ -1,0 +1,4 @@
+## 2024-05-22 - Missing `<` and `>` in HTML Escaping Allows XSS
+**Vulnerability:** The `html_escape_table` in markdown generator scripts omitted escaping for `<` and `>`, leading to potential Cross-Site Scripting (XSS) if unverified input is injected into the generated markdown fields. The function also previously lacked consistent type-checking.
+**Learning:** Custom HTML escape utilities often miss critical characters compared to established libraries. Unescaped angled brackets directly allow script injection in resulting static sites.
+**Prevention:** Always escape `<` and `>` when manually sanitizing for HTML/Markdown output, and use robust `isinstance(text, str)` type-checking to fail securely (return empty strings) for non-string input, avoiding rendering artifacts like `"False"`.
