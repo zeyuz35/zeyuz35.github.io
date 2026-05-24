@@ -1,0 +1,3 @@
+## 2024-05-24 - Pandas iterrows Modernization
+**Learning:** `iterrows()` is slow and returns rows as Series (which does not preserve type). It is a legacy pattern often used for simple iterations. Replacing it with `itertuples()` provides faster execution and returns namedtuples, which correctly maintain data types and are accessed using standard dot notation (e.g., `item.title`), perfectly matching the existing property access syntax used in the loop bodies.
+**Action:** Replace `for row, item in df.iterrows():` with `for item in df.itertuples():` across Python scripts and Jupyter notebooks. Use programmatic json modifications for notebooks to avoid regex failures due to JSON escaping. Ensure exact matching of outputs.
