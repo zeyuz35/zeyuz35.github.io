@@ -1,0 +1,3 @@
+## 2024-05-25 - Prevent secondary crashes in KeyError handlers
+**Learning:** In `markdown_generator/pubsFromBib.py`, the `KeyError` exception handler attempts to log the missing field by referencing the exact key (`b["title"]`) that might have caused the error, which would cause a secondary crash.
+**Action:** Always use safe dictionary access methods like `.get()` when logging context inside exception handlers to avoid secondary crashes.
