@@ -44,15 +44,9 @@ publications
 
 # In[4]:
 
-html_escape_table = {
-    "&": "&amp;",
-    '"': "&quot;",
-    "'": "&apos;"
-    }
-
 def html_escape(text):
     """Produce entities within text."""
-    return "".join(html_escape_table.get(c,c) for c in text)
+    return text.replace("&", "&amp;").replace('"', "&quot;").replace("'", "&apos;")
 
 
 # ## Creating the markdown files
