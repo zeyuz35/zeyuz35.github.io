@@ -1,0 +1,1 @@
+## 2024-05-24 - pandas iterrows performance\n**Learning:** When iterating through a DataFrame in pandas, using `itertuples()` is vastly more performant and idiomatic than `iterrows()` as it yields a namedtuple instead of allocating and unboxing into Series objects.\n**Action:** Always prefer `itertuples()` or vectorization over `iterrows()`.
