@@ -1,0 +1,3 @@
+## 2024-05-27 - Unused Imports in Publication Generator
+**Learning:** The codebase includes Jupyter Notebooks alongside Python scripts. Modifying only the `.py` files causes the `.ipynb` files to become out of sync. Unused imports like `import string` and `import pybtex.database.input.bibtex` were found in both.
+**Action:** When cleaning up imports in scripts, always check for and parse the corresponding `.ipynb` file programmatically via the `json` module to ensure consistency across the project's generator files.
