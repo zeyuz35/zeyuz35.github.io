@@ -1,0 +1,1 @@
+## 2024-05-26 - Replace raw prints with logging in pubsFromBib\n**Learning:** Raw print statements with unsafe dictionary accesses in exception handlers can cause secondary crashes, masking the original error.\n**Action:** Use the `logging` module with safe `.get()` dictionary access for robust error reporting instead of raw prints.
