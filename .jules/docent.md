@@ -1,0 +1,3 @@
+## 2024-05-28 - Replace raw print with structured logging
+**Learning:** Raw print statements in generation scripts (like `pubsFromBib.py`) lack severity levels and standard formatting, leading to informal and unstructured output.
+**Action:** Consistently replace `print()` calls for success/warning messages with the `logging` module (e.g., `logging.info`, `logging.warning`) to enforce a professional and robust messaging standard, while taking care to handle missing keys with `.get()` to avoid secondary crashes.
