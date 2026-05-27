@@ -1,0 +1,3 @@
+## 2026-05-27 - Maintain parity in markdown generator scripts
+**Learning:** Python scripts in `markdown_generator/` often have counterpart Jupyter Notebook (`.ipynb`) files.
+**Action:** When removing unused imports (like `string` and redundant `pybtex.database.input.bibtex`) from a python script, programmatically update the corresponding Notebook file using the `json` module to maintain consistency.
