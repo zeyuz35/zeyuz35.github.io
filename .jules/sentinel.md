@@ -1,0 +1,4 @@
+## 2024-05-24 - Cross-Site Scripting (XSS) in Markdown Generators
+**Vulnerability:** The `html_escape` function in `markdown_generator/*.py` and `markdown_generator/*.ipynb` only escaped `&`, `"`, and `'`. It failed to escape `<` and `>`, allowing Cross-Site Scripting (XSS) via injected HTML tags in TSV/BibTeX inputs which get rendered on the generated markdown files.
+**Learning:** Custom HTML escaping tables need to include all critical characters, particularly `<` and `>`, to properly sanitize input. If an application relies on a generator script to create static HTML/Markdown, vulnerabilities in the generator script directly translate to vulnerabilities in the generated site.
+**Prevention:** Use standard library functions like `html.escape()` which include all necessary HTML entities by default, rather than maintaining custom character mapping tables.
