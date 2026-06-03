@@ -18,7 +18,7 @@ from geopy import Nominatim
 g = glob.glob("*.md")
 
 
-geocoder = Nominatim()
+geocoder = Nominatim(user_agent="academicpages")
 location_dict = {}
 location = ""
 permalink = ""
@@ -34,8 +34,10 @@ for file in g:
             loc_end = lines_trim.find('"')
             location = lines_trim[:loc_end]
                             
-           
-        location_dict[location] = geocoder.geocode(location)
+        # Bolt: Caching location coordinates to avoid redundant N+1 external API calls
+        if location not in location_dict:
+            location_dict[location] = geocoder.geocode(location)
+
         print(location, "\n", location_dict[location])
 
 
