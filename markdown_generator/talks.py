@@ -39,7 +39,7 @@ talks
 
 # ## Escape special characters
 # 
-# YAML is very picky about how it takes a valid string, so we are replacing single and double quotes (and ampersands) with their HTML encoded equivilents. This makes them look not so readable in raw format, but they are parsed and rendered nicely.
+# YAML is very picky about how it takes a valid string, so we are replacing single and double quotes (and ampersands) with their HTML encoded equivalents. This makes them look not so readable in raw format, but they are parsed and rendered nicely.
 
 # In[4]:
 
@@ -58,7 +58,7 @@ def html_escape(text):
 
 # ## Creating the markdown files
 # 
-# This is where the heavy lifting is done. This loops through all the rows in the TSV dataframe, then starts to concatentate a big string (```md```) that contains the markdown for each type. It does the YAML metadata first, then does the description for the individual page.
+# This is where the heavy lifting is done. This loops through all the rows in the TSV dataframe, then starts to concatenate a big string (```md```) that contains the markdown for each type. It does the YAML metadata first, then does the description for the individual page.
 
 # In[5]:
 
