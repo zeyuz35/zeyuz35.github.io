@@ -1,0 +1,3 @@
+## 2024-05-24 - Replace print statements with proper logging in publications script
+**Learning:** Found raw `print` statements in `markdown_generator/pubsFromBib.py` used for progress and error reporting. The codebase lacked structured logging in these scripts. Additionally, the corresponding `.ipynb` file (`PubsFromBib.ipynb`) needs to be modified concurrently via JSON parsing.
+**Action:** Replaced `print` statements with python `logging.info` and `logging.warning`. Also fixed the spelling typo `SUCESSFULLY` -> `Successfully`. Used a helper script to modify the Jupyter Notebook appropriately.
