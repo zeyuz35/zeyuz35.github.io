@@ -62,13 +62,11 @@ def html_escape(text):
 
 # In[5]:
 
-loc_dict = {}
 
-for row, item in talks.iterrows():
+for _, item in talks.iterrows():
     
     md_filename = str(item.date) + "-" + item.url_slug + ".md"
     html_filename = str(item.date) + "-" + item.url_slug 
-    year = item.date[:4]
     
     md = "---\ntitle: \""   + item.title + '"\n'
     md += "collection: talks" + "\n"

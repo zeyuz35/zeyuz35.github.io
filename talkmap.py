@@ -18,11 +18,9 @@ from geopy import Nominatim
 g = glob.glob("*.md")
 
 
-geocoder = Nominatim()
+geocoder = Nominatim(user_agent="academicpages")
 location_dict = {}
 location = ""
-permalink = ""
-title = ""
 
 
 for file in g:
@@ -39,7 +37,6 @@ for file in g:
         print(location, "\n", location_dict[location])
 
 
-m = getorg.orgmap.create_map_obj()
 getorg.orgmap.output_html_cluster_map(location_dict, folder_name="../talkmap", hashed_usernames=False)
 
 

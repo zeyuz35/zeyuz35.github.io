@@ -1,0 +1,3 @@
+## 2025-03-01 - Preventing noisy execution artifacts in Jupyter Notebooks
+**Learning:** When using python helper scripts to modify jupyter notebooks programmatically, executing the notebook code blocks locally for testing will generate new output and execution counts. This violates the 'Prefer surgical, isolated changes' directive by committing massive git diffs.
+**Action:** When programmatically modifying `.ipynb` code, ensure you use a python helper script to iterate through the json structure and explicitly clear `cell['outputs'] = []` and reset `cell['execution_count'] = None` prior to adding the files to staging, to prevent committing execution artifacts.
