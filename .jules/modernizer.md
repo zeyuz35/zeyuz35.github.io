@@ -1,0 +1,3 @@
+## 2024-05-24 - Pandas iterrows to itertuples Refactoring
+**Learning:** Legacy pandas loop patterns like `iterrows()` are inefficient due to the overhead of creating Pandas Series objects per row. The `itertuples()` generator operates via namedtuples which provide a significantly faster baseline performance without any changes to property access patterns.
+**Action:** Always refactor legacy `iterrows()` data exploration loops in academic Python tooling (e.g. data generators) to `itertuples()` for faster iteration without sacrificing script clarity. Make sure to update corresponding Jupyter `.ipynb` notebooks if they contain the duplicate source code snippets.
