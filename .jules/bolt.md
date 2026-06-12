@@ -1,0 +1,3 @@
+## 2025-02-28 - Optimizing pandas iteration in generator scripts
+**Learning:** Iterating over large pandas DataFrames using `iterrows()` is extremely slow due to the overhead of creating a Series object for each row. Furthermore, the generated Jupyter Notebooks (`.ipynb`) must be kept in sync programmatically to avoid discrepancies when executing via `publications.py` or `.ipynb`.
+**Action:** Always replace `iterrows()` with `itertuples()` when sequential access to row elements via attribute dot-notation is sufficient. When making such changes, always inspect the corresponding Jupyter Notebook representations, dynamically update them (including zeroing execution metrics) using the `json` module, and unstage any untracked outputs directly.
