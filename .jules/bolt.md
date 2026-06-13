@@ -1,0 +1,3 @@
+## 2025-02-17 - Itertuples optimization in markdown generators
+**Learning:** The Python scripts generating the markdown for academic pages loop over pandas dataframes using `iterrows()`. This is notoriously slow because it constructs a pandas Series object for each row.
+**Action:** Replaced `iterrows()` with `itertuples()` which yields namedtuples and avoids Series construction overhead. Ensured compatibility as the loop bodies rely on attribute access, which is fully supported by the namedtuples returned by `itertuples()`. Also propagated these changes to their corresponding Jupyter Notebook (`.ipynb`) source files to maintain consistency across the generation logic.
