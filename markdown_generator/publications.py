@@ -62,7 +62,8 @@ def html_escape(text):
 # In[5]:
 
 import os
-for row, item in publications.iterrows():
+# Modernizer: Using itertuples() instead of iterrows() for significantly better performance
+for item in publications.itertuples():
     
     md_filename = str(item.pub_date) + "-" + item.url_slug + ".md"
     html_filename = str(item.pub_date) + "-" + item.url_slug
