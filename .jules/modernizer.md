@@ -1,0 +1,3 @@
+## 2024-06-15 - Replace iterrows with itertuples in markdown generators
+**Learning:** `pandas.DataFrame.iterrows()` is notoriously slow because it type-checks each row and yields Series objects. If the loop index is not needed, `itertuples()` is a much faster alternative that yields namedtuples, which preserves data types and is significantly faster for large dataframes.
+**Action:** When refactoring pandas iteration, always consider replacing `iterrows()` with `itertuples()` if the row variable is only used to access named columns, as `item.column_name` syntax works exactly the same for both. Check and update both the `.py` files and the original `.ipynb` notebooks to keep them synchronized. Ensure execution outputs and counts are cleared when updating notebooks.
