@@ -1,0 +1,3 @@
+## 2025-02-14 - Temporarily Moving Files During Jekyll Builds
+**Learning:** When a pre-existing YAML parsing error in markdown frontmatter prevents `jekyll build` during frontend verification, temporarily move the offending file entirely outside the Jekyll source directory (e.g., `/tmp/`), run the build, and then move it back. If you fail to restore it, Git will track the file as deleted, resulting in code review rejection for data loss.
+**Action:** Always wrap temporary file moving commands in symmetrical operations (`mv <file> /tmp/` followed by `mv /tmp/<file> <file>`) to ensure tracked files are not accidentally staged for deletion before requesting a review.
