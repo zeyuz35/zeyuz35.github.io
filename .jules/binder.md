@@ -1,0 +1,3 @@
+## 2024-06-16 - Keep Python Generator Scripts and Notebooks in Sync
+**Learning:** The `markdown_generator` directory contains Python scripts and matching `.ipynb` Jupyter notebooks for generating markdown from bibliographies and TSVs. When making structural improvements (like removing unused imports), modifications must be applied to both the Python source files and the corresponding Jupyter Notebook code cells to ensure the generator suite remains synchronized.
+**Action:** When auditing generator scripts (like `pubsFromBib.py`), check for and programmatically update corresponding notebooks (`PubsFromBib.ipynb`) using Python's `json` module.
