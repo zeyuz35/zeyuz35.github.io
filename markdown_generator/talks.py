@@ -64,7 +64,8 @@ def html_escape(text):
 
 loc_dict = {}
 
-for row, item in talks.iterrows():
+# Optimization: using itertuples() instead of iterrows() for significant performance speedup
+for item in talks.itertuples():
     
     md_filename = str(item.date) + "-" + item.url_slug + ".md"
     html_filename = str(item.date) + "-" + item.url_slug 
