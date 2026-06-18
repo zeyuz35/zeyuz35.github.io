@@ -40,7 +40,7 @@ publications
 
 # ## Escape special characters
 # 
-# YAML is very picky about how it takes a valid string, so we are replacing single and double quotes (and ampersands) with their HTML encoded equivilents. This makes them look not so readable in raw format, but they are parsed and rendered nicely.
+# YAML is very picky about how it takes a valid string, so we are replacing single and double quotes (and ampersands) with their HTML encoded equivalents. This makes them look not so readable in raw format, but they are parsed and rendered nicely.
 
 # In[4]:
 
